@@ -19,13 +19,15 @@ public partial class Phim
 
     public string? MoTa { get; set; }
 
+    public int MaTl { get; set; }
+
     public virtual ICollection<DanhGium> DanhGia { get; set; } = new List<DanhGium>();
 
     public virtual ICollection<HinhAnhTrailer> HinhAnhTrailers { get; set; } = new List<HinhAnhTrailer>();
 
     public virtual ICollection<KhuyenMai> KhuyenMais { get; set; } = new List<KhuyenMai>();
 
-    public virtual ICollection<TheLoai> TheLoais { get; set; } = new List<TheLoai>();
+    public virtual TheLoai MaTlNavigation { get; set; } = null!;
 
     public virtual ICollection<VeXemPhim> VeXemPhims { get; set; } = new List<VeXemPhim>();
 }

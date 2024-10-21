@@ -11,7 +11,5 @@ public partial class TheLoai
 
     public string? MoTa { get; set; }
 
-    public int? MaPhim { get; set; }
-
-    public virtual Phim? MaPhimNavigation { get; set; }
+    public virtual ICollection<Phim> Phims { get; set; } = new List<Phim>();
 }
