@@ -4100,24 +4100,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AD\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Ki 5\\Web\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj",
+      "projectUniqueName": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj",
       "projectName": "BTLRapChieuPhim",
-      "projectPath": "D:\\Ki 5\\Web\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj",
-      "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
-      "outputPath": "D:\\Ki 5\\Web\\BTLRapChieuPhim\\obj\\",
+      "projectPath": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\AD\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
