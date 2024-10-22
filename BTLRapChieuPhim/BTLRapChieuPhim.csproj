@@ -25,6 +25,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.6" />
     <PackageReference Include="X.PagedList" Version="10.2.1" />
     <PackageReference Include="X.PagedList.Mvc.Core" Version="10.2.1" />
   </ItemGroup>
@@ -32,6 +33,11 @@
   <ItemGroup>
     <None Include="wwwroot\Template\fonts\.vs\fonts\FileContentIndex\b85b2e2b-e996-417e-aea5-03a78eed7eef.vsidx" />
     <None Include="wwwroot\Template\fonts\.vs\slnx.sqlite" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
   </ItemGroup>
 
 </Project>
