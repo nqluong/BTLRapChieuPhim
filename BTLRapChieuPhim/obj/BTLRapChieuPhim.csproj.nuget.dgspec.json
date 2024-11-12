@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\HocTap\\Web\\BaiTapLon\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj": {}
+    "C:\\Users\\PC\\source\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj": {}
   },
   "projects": {
-    "D:\\HocTap\\Web\\BaiTapLon\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj": {
+    "C:\\Users\\PC\\source\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HocTap\\Web\\BaiTapLon\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\source\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj",
         "projectName": "BTLRapChieuPhim",
-        "projectPath": "D:\\HocTap\\Web\\BaiTapLon\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj",
-        "packagesPath": "C:\\Users\\chung\\.nuget\\packages\\",
-        "outputPath": "D:\\HocTap\\Web\\BaiTapLon\\BTLRapChieuPhim\\BTLRapChieuPhim\\obj\\",
+        "projectPath": "C:\\Users\\PC\\source\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\source\\BTLRapChieuPhim\\BTLRapChieuPhim\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\chung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

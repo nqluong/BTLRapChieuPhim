@@ -1,0 +1,62 @@
+﻿@model BTLRapChieuPhim.Models.Phim
+
+@{
+    ViewData["Title"] = "ChiTietPhim";
+    Layout = "~/Views/Shared/_LayoutChiTietPhim.cshtml";
+}
+<!-- prs ms trailer wrapper Start -->
+	<div class="prs_ms_trailer_vid_main_wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="prs_heading_section_wrapper">
+						<h2>Movie Trailer</h2>
+					</div>
+				</div>
+				<div class="col-lg-12 col-lg-12 col-lg-12 col-lg-12">
+				@foreach(var image in ViewBag.anhphim)
+				{
+							<div class="prs_ms_trailer_vid_wrapper" bis_skin_checked="1">
+							<div class="prs_ms_trailer_vid_icon_wrapper" bis_skin_checked="1">
+								<ul>
+									<li><a href="@Url.Content(image.DuongDanTrailer)" target="_blank">View Trailer</a>
+									</li>
+								</ul>
+								<h2>View Trailer</h2>
+							</div>
+						</div>
+				}
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- prs ms trailer wrapper End -->
+	<!-- prs syn Slider Start -->
+	<div class="prs_syn_main_section_wrapper">
+		<div class="container">
+			<div class="row">
+			@foreach(var image in ViewBag.anhphim)
+				{
+					
+				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+				<div class="prs_syn_cont_wrapper">
+						<h3>Synopsis</h3>
+						<h4>Genre- @image.Loai </h4>
+						<h4>Tên phim: @Model.TenPhim</h4>
+						<p>Đạo diễn: @Model.DaoDien</p>
+						<p>Mô tả: @Model.MoTa</p>
+						<p>Bộ phim dành cho lứa tuổi: @Model.DoTuoi</p>
+						<p>Quốc gia: @Model.NuocSx</p>
+						<p>Thời lượng: @Model.ThoiLuong phút</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<div class="prs_syn_img_wrapper">
+						<img src="@Url.Content("../Template/AnhPhim/"+image.DuongDanAnh)" alt="syn_img">
+					</div>
+				</div>
+				}
+			</div>
+		</div>
+	</div>
+	<!-- prs syn Slider End -->

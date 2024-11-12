@@ -1,11 +1,13 @@
 using BTLRapChieuPhim.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace BTLRapChieuPhim.Controllers
 {
     public class HomeController : Controller
     {
+        QuanLyRapPhimContext ql=new QuanLyRapPhimContext();
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -15,9 +17,16 @@ namespace BTLRapChieuPhim.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var hinhAnh = ql.HinhAnhTrailers.AsNoTracking().OrderBy(x => x.MaPhim);
+			return View(hinhAnh);
+		}
+        public IActionResult ChiTietPhim(int maphim)
+        {
+            var phim = ql.Phims.SingleOrDefault(x => x.MaPhim == maphim);
+            var anhphim = ql.HinhAnhTrailers.Where(x=>x.MaPhim==maphim).ToList();
+            ViewBag.anhphim=anhphim;
+            return View(phim);
         }
-
         public IActionResult Privacy()
         {
             return View();

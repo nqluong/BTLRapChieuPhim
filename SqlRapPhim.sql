@@ -486,49 +486,65 @@ INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [TrangThai]) VALUES (49, N'Thư�
 GO
 INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [TrangThai]) VALUES (50, N'Thường', N'Còn trống')
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (1, N'https://upload.wikimedia.org/wikipedia/vi/thumb/1/11/Inception_poster_1.jpg/220px-Inception_poster_1.jpg', N'https://www.youtube.com/watch?v=YoHD9XEInc0', N'Khoa học viễn tưởng', N'Phim khoa học viễn tưởng với các cảnh hành động đỉnh cao.', 1)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (1, N'AP1.jpg', N'https://www.youtube.com/watch?v=YoHD9XEInc0', N'Khoa học viễn tưởng', N'Phim khoa học viễn tưởng với các cảnh hành động đỉnh cao.', 1)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (2, N'https://upload.wikimedia.org/wikipedia/vi/thumb/c/cc/Poster_phim_Parasite_2019.jpg/220px-Poster_phim_Parasite_2019.jpg', N'https://www.youtube.com/watch?v=5xH0HfJHsaY', N'Tâm lý', N'Phim tâm lý xã hội về chênh lệch giàu nghèo.', 2)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (2, N'AP2.jpg', N'https://www.youtube.com/watch?v=5xH0HfJHsaY', N'Tâm lý', N'Phim tâm lý xã hội về chênh lệch giàu nghèo.', 2)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (3, N'https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Spirited_Away_Japanese_poster.png/220px-Spirited_Away_Japanese_poster.png', N'https://www.youtube.com/watch?v=ByXuk9QqQkk', N'Hoạt hình', N'Tác phẩm hoạt hình nổi tiếng về cuộc hành trình kỳ diệu.', 3)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (3, N'AP3.jpg', N'https://www.youtube.com/watch?v=ByXuk9QqQkk', N'Hoạt hình', N'Tác phẩm hoạt hình nổi tiếng về cuộc hành trình kỳ diệu.', 3)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (4, N'https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Amelie_poster.jpg/220px-Amelie_poster.jpg', N'https://www.youtube.com/watch?v=Py7cDXQae2U', N'Hài', N'Phim hài lãng mạn về cuộc sống của cô gái Amélie.', 4)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (4, N'AP4.jpg', N'https://www.youtube.com/watch?v=Py7cDXQae2U', N'Hài', N'Phim hài lãng mạn về cuộc sống của cô gái Amélie.', 4)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (5, N'https://upload.wikimedia.org/wikipedia/vi/thumb/a/a2/The_Handmaiden_film.png/220px-The_Handmaiden_film.png', N'https://www.youtube.com/watch?v=whldChqCsYk', N'Tâm lý', N'Phim tâm lý hồi hợp với nhiều tình tiết bất ngờ.', 5)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (5, N'AP5.jpg', N'https://www.youtube.com/watch?v=whldChqCsYk', N'Tâm lý', N'Phim tâm lý hồi hợp với nhiều tình tiết bất ngờ.', 5)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (6, N'https://upload.wikimedia.org/wikipedia/vi/thumb/a/ab/Titanic_3D_poster_Vietnam.jpg/220px-Titanic_3D_poster_Vietnam.jpg', N'https://www.youtube.com/watch?v=gs5GwXOgumc', N'Tình cảm', N'Chuyện tình lãng mạn giữa Jack và Rose trên con tàu Titanic.', 6)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (6, N'AP6.jpg', N'https://www.youtube.com/watch?v=gs5GwXOgumc', N'Tình cảm', N'Chuyện tình lãng mạn giữa Jack và Rose trên con tàu Titanic.', 6)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (7, N'https://upload.wikimedia.org/wikipedia/en/thumb/2/27/Crouching_Tiger%2C_Hidden_Dragon_%28Chinese_poster%29.png/220px-Crouching_Tiger%2C_Hidden_Dragon_%28Chinese_poster%29.png', N'https://www.youtube.com/watch?v=-jTdOdcMKoY', N'Võ thuật', N'Phim võ thuật với các cảnh quay tuyệt đẹp.', 7)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (7, N'AP7.jpg', N'https://www.youtube.com/watch?v=-jTdOdcMKoY', N'Võ thuật', N'Phim võ thuật với các cảnh quay tuyệt đẹp.', 7)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (8, N'https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Pan%27s_Labyrinth.jpg/220px-Pan%27s_Labyrinth.jpg', N'https://www.youtube.com/watch?v=jVZRnnVSQ8k', N'Giả tưởng', N'Phim giả tưởng với yếu tố phép thuật trong bối cảnh chiến tranh.', 8)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (8, N'AP8.jpg', N'https://www.youtube.com/watch?v=jVZRnnVSQ8k', N'Giả tưởng', N'Phim giả tưởng với yếu tố phép thuật trong bối cảnh chiến tranh.', 8)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (9, N'https://upload.wikimedia.org/wikipedia/vi/thumb/2/2d/Poster_phim_K%E1%BB%B9_s%C4%A9_b%C3%B3ng_%C4%91%C3%AAm_2008.jpg/220px-Poster_phim_K%E1%BB%B9_s%C4%A9_b%C3%B3ng_%C4%91%C3%AAm_2008.jpg', N'https://www.youtube.com/watch?v=EXeTwQWrcwY', N'Siêu anh hùng', N'Phim siêu anh hùng với diễn xuất tuyệt vời của Heath Ledger.', 9)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (9, N'AP9.jpg', N'https://www.youtube.com/watch?v=EXeTwQWrcwY', N'Siêu anh hùng', N'Phim siêu anh hùng với diễn xuất tuyệt vời của Heath Ledger.', 9)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (10, N'https://upload.wikimedia.org/wikipedia/en/6/6e/Mad_Max_Fury_Road.jpg', N'https://www.youtube.com/watch?v=hEJnMQG9ev8', N'Hành động', N'Phim hành động hậu tận thế với các pha rượt đuổi kịch tính.', 10)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (10, N'AP10.jpg', N'https://www.youtube.com/watch?v=hEJnMQG9ev8', N'Hành động', N'Phim hành động hậu tận thế với các pha rượt đuổi kịch tính.', 10)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (11, N'https://upload.wikimedia.org/wikipedia/vi/thumb/4/4a/Bo_gia_poster.jpg/220px-Bo_gia_poster.jpg', N'https://www.youtube.com/watch?v=UaVTIH8mujA', N'Tội phạm', N'Phim kinh điển về thế giới mafia của M.', 11)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (11, N'AP11.jpg', N'https://www.youtube.com/watch?v=UaVTIH8mujA', N'Tội phạm', N'Phim kinh điển về thế giới mafia của M.', 11)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (12, N'https://upload.wikimedia.org/wikipedia/vi/c/c1/The_Matrix_Poster.jpg', N'https://www.youtube.com/watch?v=vKQi3bBA1y8', N'Khoa học viễn tưởng', N'Phim hành động khoa học viễn tưởng về thế giới ảo.', 12)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (12, N'AP12.jpg', N'https://www.youtube.com/watch?v=vKQi3bBA1y8', N'Khoa học viễn tưởng', N'Phim hành động khoa học viễn tưởng về thế giới ảo.', 12)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (13, N'https://upload.wikimedia.org/wikipedia/vi/thumb/f/f8/Toithayhoavangtrencoxanh.jpg/280px-Toithayhoavangtrencoxanh.jpg', N'https://www.youtube.com/watch?v=wmjiCP6R-7I', N'Tâm lý', N'Phim tâm lý tình cảm về tuổi trẻ và sự trưởng thành.', 13)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (13, N'AP13.jpg', N'https://www.youtube.com/watch?v=wmjiCP6R-7I', N'Tâm lý', N'Phim tâm lý tình cảm về tuổi trẻ và sự trưởng thành.', 13)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (14, N'https://upload.wikimedia.org/wikipedia/en/thumb/0/02/My_Neighbor_Totoro_-_Tonari_no_Totoro_%28Movie_Poster%29.jpg/220px-My_Neighbor_Totoro_-_Tonari_no_Totoro_%28Movie_Poster%29.jpg', N'https://www.youtube.com/watch?v=92a7Hj0ijLs', N'Hoạt hình', N'Phim hoạt hình với câu chuyện cảm động về tình bạn và gia đình.', 14)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (14, N'AP14.jpg', N'https://www.youtube.com/watch?v=92a7Hj0ijLs', N'Hoạt hình', N'Phim hoạt hình với câu chuyện cảm động về tình bạn và gia đình.', 14)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (15, N'https://upload.wikimedia.org/wikipedia/en/thumb/9/92/Slumdog_Millionaire_poster.png/220px-Slumdog_Millionaire_poster.png', N'https://www.youtube.com/watch?v=AIzbwV7on6Q', N'Tâm lý', N'Phim về hành trình vượt khó và tham gia gameshow của một cậu bé ăn xin.', 15)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (15, N'AP15.jpg', N'https://www.youtube.com/watch?v=AIzbwV7on6Q', N'Tâm lý', N'Phim về hành trình vượt khó và tham gia gameshow của một cậu bé ăn xin.', 15)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (16, N'https://upload.wikimedia.org/wikipedia/en/9/93/The_Intouchables.jpg', N'https://www.youtube.com/watch?v=34WIbmXkewU', N'Hài', N'Câu chuyện hài hước và cảm động về tình bạn giữa một quý ông và người chăm sóc.', 16)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (16, N'AP16.jpg', N'https://www.youtube.com/watch?v=34WIbmXkewU', N'Hài', N'Câu chuyện hài hước và cảm động về tình bạn giữa một quý ông và người chăm sóc.', 16)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (17, N'https://upload.wikimedia.org/wikipedia/en/3/34/Kong_Skull_Island_poster.jpg', N'https://www.youtube.com/watch?v=44LdLqgOpjo', N'Hành động', N'Phim phiêu lưu hành động về cuộc chiến của King Kong trên đảo đầu lâu.', 17)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (17, N'AP17.jpg', N'https://www.youtube.com/watch?v=44LdLqgOpjo', N'Hành động', N'Phim phiêu lưu hành động về cuộc chiến của King Kong trên đảo đầu lâu.', 17)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (18, N'https://upload.wikimedia.org/wikipedia/en/thumb/5/55/The_Host_film_poster.jpg/220px-The_Host_film_poster.jpg', N'https://www.youtube.com/watch?v=xrLY0wO06l4', N'Quái vật', N'Phim quái vật với thông điệp về môi trường.', 18)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (18, N'AP18.jpg', N'https://www.youtube.com/watch?v=xrLY0wO06l4', N'Quái vật', N'Phim quái vật với thông điệp về môi trường.', 18)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (19, N'https://upload.wikimedia.org/wikipedia/vi/thumb/6/62/L%E1%BA%ADt_m%E1%BA%B7t_48h_poster.jpg/220px-L%E1%BA%ADt_m%E1%BA%B7t_48h_poster.jpg', N'https://www.youtube.com/watch?v=Fw3NAveg578', N'Kinh dị hài', N'Phim kinh dị hài về một gia đình và câu chuyện ma quái.', 19)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (19, N'AP19.jpg', N'https://www.youtube.com/watch?v=Fw3NAveg578', N'Kinh dị hài', N'Phim kinh dị hài về một gia đình và câu chuyện ma quái.', 19)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (20, N'https://upload.wikimedia.org/wikipedia/en/f/f0/Lion_%282016_film%29.png', N'https://www.youtube.com/watch?v=-RNI9o06vqo', N'Tiểu sử', N'Phim tiểu sử về hành trình tìm kiếm gia đình của một cậu bé ăn xin.', 20)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (20, N'AP20.jpg', N'https://www.youtube.com/watch?v=-RNI9o06vqo', N'Tiểu sử', N'Phim tiểu sử về hành trình tìm kiếm gia đình của một cậu bé ăn xin.', 20)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (21, N'https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Vengeance_%282022_film%29.jpg/220px-Vengeance_%282022_film%29.jpg', N'https://www.youtube.com/watch?v=1GT1jFsNnPw', N'Hành động', N'Phim hành động về cuộc trả thù của một người cha.', 21)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (21, N'AP21.jpg', N'https://www.youtube.com/watch?v=1GT1jFsNnPw', N'Hành động', N'Phim hành động về cuộc trả thù của một người cha.', 21)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (22, N'https://image.sggp.org.vn/w1000/Uploaded/2024/chuabhu/2023_11_30/ngay-xua-co-1-chuyen-tinh-1-1-6.jpg', N'https://www.youtube.com/watch?v=dQw4w9WgXcQ', N'Tình cảm', N'Câu chuyện tình yêu cảm động giữa hai người trẻ.', 22)
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (22, N'AP22.jpg', N'https://www.youtube.com/watch?v=vf3em6Nm05o', N'Tình cảm', N'Câu chuyện tình yêu cảm động giữa hai người trẻ.', 22)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (23, N'AP23.jpg', N'https://www.youtube.com/watch?v=38A__WT3-o0', N'Tội phạm', N'Trò chơi sinh tử giữa kẻ giết người hàng loạt và một người đàn ông.', 23)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (24, N'AP24.jpg', N'https://www.youtube.com/watch?v=GAq31U-fOS0', N'Võ thuật', N'Phim võ thuật cổ trang về cuộc chiến giành lại công lý.', 24)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (25, N'AP25.jpg', N'https://www.youtube.com/watch?v=ZilChxy-PM4', N'Hài hước', N'Câu chuyện về tình bạn cảm động giữa một quý tộc giàu có và người chăm sóc của ông.', 25)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (26, N'AP26.jpg', N'https://www.youtube.com/watch?v=82t6j056IcA', N'Tâm lý', N'Phim kinh dị tâm lý xoay quanh sự mất tích bí ẩn của một phụ nữ.', 26)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (27, N'AP27.jpg', N'https://www.youtube.com/watch?v=K0eDlFX9GMc', N'Hài hước', N'Phim hài về ba người bạn và câu chuyện về hệ thống giáo dục.', 27)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (28, N'AP28.jpg', N'https://www.youtube.com/watch?v=6BS27ngZtxg', N'Tâm lý', N'Phim trắng đen miêu tả cuộc sống của một gia đình trung lưu tại Mexico.', 28)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (29, N'AP29.jpg', N'https://www.youtube.com/watch?v=Wd5Pz8KJeU4', N'Chiến tranh', N'Tái hiện cuộc chiến giành độc lập của Algeria khỏi thực dân Pháp.', 29)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (30, N'AP30.jpg', N'https://www.youtube.com/watch?v=wBPBSroi_VE', N'Tâm lý', N'Phim nghệ thuật về cuộc sống và những biến cố của một gia đình trong chiến tranh.', 30)
 GO
 INSERT [dbo].[HoaDon] ([MaHD], [SoLuongVe], [SoLuongDA], [TongTienVe], [TongTienDA], [TongTienHD], [MaDA], [MaKH]) VALUES (1, 2, 1, CAST(200000.00 AS Decimal(18, 2)), CAST(50000.00 AS Decimal(18, 2)), CAST(250000.00 AS Decimal(18, 2)), 1, 5)
 GO
@@ -814,7 +830,7 @@ INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [Nuo
 GO
 INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (21, N'Vengeance', 108, N'Johnnie To', 16, N'Hồng Kông', N'Phim hành động về cuộc trả thù của một người cha.', 2)
 GO
-INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (22, N'Ve Rang Ngày Ấy', 90, N'Nguyễn Hữu Tuấn', 13, N'Việt Nam', N'Phim tâm lý tình cảm về gia đình và sự kiện lịch sử ở Huế.', 3)
+INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (22, N'Thị xã trong tầm tay', 90, N'Đặng Nhật Minh', 13, N'Việt Nam', N'Phim tâm lý tình cảm của 2 bạn trẻ trong thời chiến.', 3)
 GO
 INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (23, N'No Country for Old Men', 122, N'Coen Brothers', 16, N'Mỹ', N'Trò chơi sinh tử giữa kẻ giết người hàng loạt và một người đàn ông.', 11)
 GO
