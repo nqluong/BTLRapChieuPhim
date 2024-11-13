@@ -224,6 +224,10 @@ public partial class QuanLyRapPhimContext : DbContext
                 .HasForeignKey(d => d.MaPc)
                 .HasConstraintName("FK__LichChieu__MaPC__6E01572D");
 
+            entity.HasOne(d => d.MaPhimNavigation).WithMany(p => p.LichChieus)
+                .HasForeignKey(d => d.MaPhim)
+                .HasConstraintName("FK_LichChieu_Phim");
+
             entity.HasOne(d => d.MaQlNavigation).WithMany(p => p.LichChieus)
                 .HasForeignKey(d => d.MaQl)
                 .HasConstraintName("FK__LichChieu__MaQL__6EF57B66");
@@ -384,10 +388,6 @@ public partial class QuanLyRapPhimContext : DbContext
             entity.HasOne(d => d.MaLcNavigation).WithMany(p => p.VeXemPhims)
                 .HasForeignKey(d => d.MaLc)
                 .HasConstraintName("FK__VeXemPhim__MaLC__75A278F5");
-
-            entity.HasOne(d => d.MaPhimNavigation).WithMany(p => p.VeXemPhims)
-                .HasForeignKey(d => d.MaPhim)
-                .HasConstraintName("FK__VeXemPhim__MaPhi__76969D2E");
         });
 
         OnModelCreatingPartial(modelBuilder);

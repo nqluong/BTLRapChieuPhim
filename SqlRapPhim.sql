@@ -1,6 +1,6 @@
 USE [QuanLyRapPhim]
 GO
-/****** Object:  Table [dbo].[DanhGia]    Script Date: 10/22/2024 12:07:49 AM ******/
+/****** Object:  Table [dbo].[DanhGia]    Script Date: 10/24/2024 6:18:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -18,7 +18,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[DoAn]    Script Date: 10/22/2024 12:07:49 AM ******/
+/****** Object:  Table [dbo].[DoAn]    Script Date: 10/24/2024 6:18:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -36,7 +36,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[GheXemPhim]    Script Date: 10/22/2024 12:07:49 AM ******/
+/****** Object:  Table [dbo].[GheXemPhim]    Script Date: 10/24/2024 6:18:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -51,7 +51,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[HinhAnhTrailer]    Script Date: 10/22/2024 12:07:49 AM ******/
+/****** Object:  Table [dbo].[HinhAnhTrailer]    Script Date: 10/24/2024 6:18:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -69,7 +69,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[HoaDon]    Script Date: 10/22/2024 12:07:49 AM ******/
+/****** Object:  Table [dbo].[HoaDon]    Script Date: 10/24/2024 6:18:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -89,7 +89,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[KhachHang]    Script Date: 10/22/2024 12:07:49 AM ******/
+/****** Object:  Table [dbo].[KhachHang]    Script Date: 10/24/2024 6:18:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -108,7 +108,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[KhuyenMai]    Script Date: 10/22/2024 12:07:49 AM ******/
+/****** Object:  Table [dbo].[KhuyenMai]    Script Date: 10/24/2024 6:18:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -127,7 +127,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[LichChieu]    Script Date: 10/22/2024 12:07:49 AM ******/
+/****** Object:  Table [dbo].[LichChieu]    Script Date: 10/24/2024 6:18:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -137,13 +137,14 @@ CREATE TABLE [dbo].[LichChieu](
 	[ThoiGianChieu] [datetime] NULL,
 	[MaQL] [int] NULL,
 	[MaPC] [int] NULL,
+	[MaPhim] [int] NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[MaLC] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Phim]    Script Date: 10/22/2024 12:07:49 AM ******/
+/****** Object:  Table [dbo].[Phim]    Script Date: 10/24/2024 6:18:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -163,7 +164,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[PhongChieu]    Script Date: 10/22/2024 12:07:49 AM ******/
+/****** Object:  Table [dbo].[PhongChieu]    Script Date: 10/24/2024 6:18:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -180,7 +181,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[QuanLy]    Script Date: 10/22/2024 12:07:49 AM ******/
+/****** Object:  Table [dbo].[QuanLy]    Script Date: 10/24/2024 6:18:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -198,7 +199,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[RapPhim]    Script Date: 10/22/2024 12:07:49 AM ******/
+/****** Object:  Table [dbo].[RapPhim]    Script Date: 10/24/2024 6:18:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -215,7 +216,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TaiKhoan]    Script Date: 10/22/2024 12:07:49 AM ******/
+/****** Object:  Table [dbo].[TaiKhoan]    Script Date: 10/24/2024 6:18:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -232,7 +233,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ThanhToan]    Script Date: 10/22/2024 12:07:49 AM ******/
+/****** Object:  Table [dbo].[ThanhToan]    Script Date: 10/24/2024 6:18:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -249,7 +250,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TheLoai]    Script Date: 10/22/2024 12:07:49 AM ******/
+/****** Object:  Table [dbo].[TheLoai]    Script Date: 10/24/2024 6:18:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -264,7 +265,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[VeXemPhim]    Script Date: 10/22/2024 12:07:49 AM ******/
+/****** Object:  Table [dbo].[VeXemPhim]    Script Date: 10/24/2024 6:18:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -592,185 +593,185 @@ INSERT [dbo].[KhuyenMai] ([MaKM], [TenKM], [DieuKienKM], [HanKM], [MaPhim], [MaQ
 GO
 INSERT [dbo].[KhuyenMai] ([MaKM], [TenKM], [DieuKienKM], [HanKM], [MaPhim], [MaQL], [PhanTramKM]) VALUES (6, N'Khuyến mãi sinh nhật', N'Giảm giá 50% cho người có sinh nhật trong tháng', CAST(N'2024-12-31' AS Date), 9, 5, CAST(50.00 AS Decimal(5, 2)))
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (1, CAST(N'2024-10-31T19:00:00.000' AS DateTime), 1, 1)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (1, CAST(N'2024-10-31T19:00:00.000' AS DateTime), 1, 1, 1)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (2, CAST(N'2024-10-31T20:30:00.000' AS DateTime), 1, 1)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (2, CAST(N'2024-10-31T20:30:00.000' AS DateTime), 1, 1, 2)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (3, CAST(N'2024-10-31T22:00:00.000' AS DateTime), 1, 1)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (3, CAST(N'2024-10-31T22:00:00.000' AS DateTime), 1, 1, 3)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (4, CAST(N'2024-10-30T19:15:00.000' AS DateTime), 1, 2)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (4, CAST(N'2024-10-30T19:15:00.000' AS DateTime), 1, 2, 4)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (5, CAST(N'2024-10-30T20:00:00.000' AS DateTime), 1, 2)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (5, CAST(N'2024-10-30T20:00:00.000' AS DateTime), 1, 2, 5)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (6, CAST(N'2024-10-30T21:10:00.000' AS DateTime), 1, 2)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (6, CAST(N'2024-10-30T21:10:00.000' AS DateTime), 1, 2, 6)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (7, CAST(N'2024-10-20T19:30:00.000' AS DateTime), 1, 3)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (7, CAST(N'2024-10-20T19:30:00.000' AS DateTime), 1, 3, 7)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (8, CAST(N'2024-10-20T20:45:00.000' AS DateTime), 1, 3)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (8, CAST(N'2024-10-20T20:45:00.000' AS DateTime), 1, 3, 8)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (9, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 1, 3)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (9, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 1, 3, 9)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (10, CAST(N'2024-10-21T19:00:00.000' AS DateTime), 1, 4)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (10, CAST(N'2024-10-21T19:00:00.000' AS DateTime), 1, 4, 7)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (11, CAST(N'2024-10-21T20:15:00.000' AS DateTime), 1, 4)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (11, CAST(N'2024-10-21T20:15:00.000' AS DateTime), 1, 4, 4)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (12, CAST(N'2024-10-21T22:00:00.000' AS DateTime), 1, 4)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (12, CAST(N'2024-10-21T22:00:00.000' AS DateTime), 1, 4, 2)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (13, CAST(N'2024-10-31T19:00:00.000' AS DateTime), 1, 5)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (13, CAST(N'2024-10-31T19:00:00.000' AS DateTime), 1, 5, 4)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (14, CAST(N'2024-10-31T20:30:00.000' AS DateTime), 1, 5)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (14, CAST(N'2024-10-31T20:30:00.000' AS DateTime), 1, 5, 5)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (15, CAST(N'2024-10-31T22:00:00.000' AS DateTime), 1, 5)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (15, CAST(N'2024-10-31T22:00:00.000' AS DateTime), 1, 5, 6)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (16, CAST(N'2024-10-30T19:00:00.000' AS DateTime), 1, 6)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (16, CAST(N'2024-10-30T19:00:00.000' AS DateTime), 1, 6, 10)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (17, CAST(N'2024-10-30T20:30:00.000' AS DateTime), 1, 6)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (17, CAST(N'2024-10-30T20:30:00.000' AS DateTime), 1, 6, 11)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (18, CAST(N'2024-10-30T22:00:00.000' AS DateTime), 1, 6)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (18, CAST(N'2024-10-30T22:00:00.000' AS DateTime), 1, 6, 15)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (19, CAST(N'2024-10-21T19:00:00.000' AS DateTime), 1, 7)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (19, CAST(N'2024-10-21T19:00:00.000' AS DateTime), 1, 7, 17)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (20, CAST(N'2024-10-21T20:30:00.000' AS DateTime), 1, 7)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (20, CAST(N'2024-10-21T20:30:00.000' AS DateTime), 1, 7, 19)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (21, CAST(N'2024-10-21T22:00:00.000' AS DateTime), 1, 7)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (21, CAST(N'2024-10-21T22:00:00.000' AS DateTime), 1, 7, 20)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (22, CAST(N'2024-10-20T19:00:00.000' AS DateTime), 1, 8)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (22, CAST(N'2024-10-20T19:00:00.000' AS DateTime), 1, 8, 13)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (23, CAST(N'2024-10-20T20:30:00.000' AS DateTime), 1, 8)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (23, CAST(N'2024-10-20T20:30:00.000' AS DateTime), 1, 8, 14)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (24, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 1, 8)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (24, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 1, 8, 16)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (25, CAST(N'2024-10-25T19:00:00.000' AS DateTime), 1, 9)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (25, CAST(N'2024-10-25T19:00:00.000' AS DateTime), 1, 9, 17)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (26, CAST(N'2024-10-25T20:30:00.000' AS DateTime), 1, 9)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (26, CAST(N'2024-10-25T20:30:00.000' AS DateTime), 1, 9, 19)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (27, CAST(N'2024-10-25T22:00:00.000' AS DateTime), 1, 9)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (27, CAST(N'2024-10-25T22:00:00.000' AS DateTime), 1, 9, 21)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (28, CAST(N'2024-10-26T19:00:00.000' AS DateTime), 1, 10)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (28, CAST(N'2024-10-26T19:00:00.000' AS DateTime), 1, 10, 22)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (29, CAST(N'2024-10-26T20:30:00.000' AS DateTime), 1, 10)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (29, CAST(N'2024-10-26T20:30:00.000' AS DateTime), 1, 10, 23)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (30, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 1, 10)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (30, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 1, 10, 24)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (31, CAST(N'2024-10-25T19:00:00.000' AS DateTime), 2, 11)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (31, CAST(N'2024-10-25T19:00:00.000' AS DateTime), 2, 11, 25)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (32, CAST(N'2024-10-25T20:30:00.000' AS DateTime), 2, 11)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (32, CAST(N'2024-10-25T20:30:00.000' AS DateTime), 2, 11, 26)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (33, CAST(N'2024-10-25T22:15:00.000' AS DateTime), 2, 11)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (33, CAST(N'2024-10-25T22:15:00.000' AS DateTime), 2, 11, 27)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (34, CAST(N'2024-10-26T19:00:00.000' AS DateTime), 2, 12)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (34, CAST(N'2024-10-26T19:00:00.000' AS DateTime), 2, 12, 28)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (35, CAST(N'2024-10-26T20:30:00.000' AS DateTime), 2, 12)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (35, CAST(N'2024-10-26T20:30:00.000' AS DateTime), 2, 12, 29)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (36, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 2, 12)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (36, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 2, 12, 28)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (37, CAST(N'2024-10-22T19:00:00.000' AS DateTime), 2, 13)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (37, CAST(N'2024-10-22T19:00:00.000' AS DateTime), 2, 13, 27)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (38, CAST(N'2024-10-22T20:30:00.000' AS DateTime), 2, 13)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (38, CAST(N'2024-10-22T20:30:00.000' AS DateTime), 2, 13, 26)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (39, CAST(N'2024-10-22T22:00:00.000' AS DateTime), 2, 13)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (39, CAST(N'2024-10-22T22:00:00.000' AS DateTime), 2, 13, 25)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (40, CAST(N'2024-10-23T19:00:00.000' AS DateTime), 2, 14)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (40, CAST(N'2024-10-23T19:00:00.000' AS DateTime), 2, 14, 24)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (41, CAST(N'2024-10-23T20:30:00.000' AS DateTime), 2, 14)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (41, CAST(N'2024-10-23T20:30:00.000' AS DateTime), 2, 14, 23)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (42, CAST(N'2024-10-23T22:00:00.000' AS DateTime), 2, 14)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (42, CAST(N'2024-10-23T22:00:00.000' AS DateTime), 2, 14, 22)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (43, CAST(N'2024-10-23T19:45:00.000' AS DateTime), 2, 15)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (43, CAST(N'2024-10-23T19:45:00.000' AS DateTime), 2, 15, 21)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (44, CAST(N'2024-10-23T20:50:00.000' AS DateTime), 2, 15)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (44, CAST(N'2024-10-23T20:50:00.000' AS DateTime), 2, 15, 20)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (45, CAST(N'2024-10-23T22:00:00.000' AS DateTime), 2, 15)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (45, CAST(N'2024-10-23T22:00:00.000' AS DateTime), 2, 15, 19)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (46, CAST(N'2024-10-24T19:30:00.000' AS DateTime), 3, 16)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (46, CAST(N'2024-10-24T19:30:00.000' AS DateTime), 3, 16, 18)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (47, CAST(N'2024-10-24T20:30:00.000' AS DateTime), 3, 16)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (47, CAST(N'2024-10-24T20:30:00.000' AS DateTime), 3, 16, 17)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (48, CAST(N'2024-10-24T22:00:00.000' AS DateTime), 3, 16)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (48, CAST(N'2024-10-24T22:00:00.000' AS DateTime), 3, 16, 16)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (49, CAST(N'2024-10-26T19:30:00.000' AS DateTime), 3, 17)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (49, CAST(N'2024-10-26T19:30:00.000' AS DateTime), 3, 17, 15)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (50, CAST(N'2024-10-26T20:30:00.000' AS DateTime), 3, 17)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (50, CAST(N'2024-10-26T20:30:00.000' AS DateTime), 3, 17, 14)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (51, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 3, 17)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (51, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 3, 17, 13)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (52, CAST(N'2024-10-27T19:00:00.000' AS DateTime), 3, 18)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (52, CAST(N'2024-10-27T19:00:00.000' AS DateTime), 3, 18, 12)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (53, CAST(N'2024-10-27T20:30:00.000' AS DateTime), 3, 18)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (53, CAST(N'2024-10-27T20:30:00.000' AS DateTime), 3, 18, 11)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (54, CAST(N'2024-10-27T22:00:00.000' AS DateTime), 3, 18)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (54, CAST(N'2024-10-27T22:00:00.000' AS DateTime), 3, 18, 10)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (55, CAST(N'2024-10-28T19:00:00.000' AS DateTime), 3, 19)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (55, CAST(N'2024-10-28T19:00:00.000' AS DateTime), 3, 19, 9)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (56, CAST(N'2024-10-29T20:30:00.000' AS DateTime), 3, 19)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (56, CAST(N'2024-10-29T20:30:00.000' AS DateTime), 3, 19, 8)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (57, CAST(N'2024-10-29T22:00:00.000' AS DateTime), 3, 19)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (57, CAST(N'2024-10-29T22:00:00.000' AS DateTime), 3, 19, 7)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (58, CAST(N'2024-10-28T19:00:00.000' AS DateTime), 3, 20)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (58, CAST(N'2024-10-28T19:00:00.000' AS DateTime), 3, 20, 6)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (59, CAST(N'2024-10-28T20:30:00.000' AS DateTime), 3, 20)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (59, CAST(N'2024-10-28T20:30:00.000' AS DateTime), 3, 20, 5)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (60, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 3, 20)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (60, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 3, 20, 4)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (61, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 21)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (61, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 21, 3)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (62, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 21)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (62, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 21, 2)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (63, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 21)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (63, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 21, 1)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (64, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 22)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (64, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 22, 1)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (65, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 22)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (65, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 22, 2)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (66, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 22)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (66, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 22, 3)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (67, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 23)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (67, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 23, 4)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (68, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 23)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (68, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 23, 5)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (69, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 23)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (69, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 23, 6)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (70, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 24)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (70, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 24, 7)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (71, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 24)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (71, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 24, 8)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (72, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 24)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (72, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 24, 9)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (73, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 25)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (73, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 25, 10)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (74, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 25)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (74, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 25, 11)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (75, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 25)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (75, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 25, 12)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (76, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 26)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (76, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 26, 13)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (77, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 26)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (77, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 26, 14)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (78, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 26)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (78, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 26, 15)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (79, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 27)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (79, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 27, 16)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (80, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 27)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (80, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 27, 17)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (81, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 27)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (81, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 27, 18)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (82, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 28)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (82, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 28, 19)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (83, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 28)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (83, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 28, 20)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (84, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 28)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (84, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 28, 21)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (85, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 29)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (85, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 29, 22)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (86, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 29)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (86, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 29, 23)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (87, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 29)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (87, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 29, 24)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (88, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 30)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (88, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 30, 25)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (89, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 30)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (89, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 30, 26)
 GO
-INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (90, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 30)
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (90, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 30, 27)
 GO
 INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (1, N'Inception', 148, N'Christopher Nolan', 13, N'Mỹ', N'Phim khoa học viễn tưởng với các cảnh hành động đỉnh cao.', 1)
 GO
@@ -1078,6 +1079,11 @@ GO
 ALTER TABLE [dbo].[LichChieu]  WITH CHECK ADD FOREIGN KEY([MaQL])
 REFERENCES [dbo].[QuanLy] ([MaQL])
 GO
+ALTER TABLE [dbo].[LichChieu]  WITH CHECK ADD  CONSTRAINT [FK_LichChieu_Phim] FOREIGN KEY([MaPhim])
+REFERENCES [dbo].[Phim] ([MaPhim])
+GO
+ALTER TABLE [dbo].[LichChieu] CHECK CONSTRAINT [FK_LichChieu_Phim]
+GO
 ALTER TABLE [dbo].[Phim]  WITH CHECK ADD FOREIGN KEY([MaTL])
 REFERENCES [dbo].[TheLoai] ([MaTL])
 GO
@@ -1098,9 +1104,6 @@ REFERENCES [dbo].[HoaDon] ([MaHD])
 GO
 ALTER TABLE [dbo].[VeXemPhim]  WITH CHECK ADD FOREIGN KEY([MaLC])
 REFERENCES [dbo].[LichChieu] ([MaLC])
-GO
-ALTER TABLE [dbo].[VeXemPhim]  WITH CHECK ADD FOREIGN KEY([MaPhim])
-REFERENCES [dbo].[Phim] ([MaPhim])
 GO
 ALTER TABLE [dbo].[VeXemPhim]  WITH CHECK ADD  CONSTRAINT [FK_VeXemPhim_GheXemPhim] FOREIGN KEY([MaGXP])
 REFERENCES [dbo].[GheXemPhim] ([MaGXP])

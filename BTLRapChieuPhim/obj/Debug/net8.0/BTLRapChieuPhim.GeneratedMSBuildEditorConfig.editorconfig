@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BTLRapChieuPhim
 build_property.RootNamespace = BTLRapChieuPhim
@@ -17,6 +25,30 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = D:\ProjectLop\LTWeb\BTLRapChieuPhim\BTLRapChieuPhim
 build_property._RazorSourceGeneratorDebug = 
+
+[D:/ProjectLop/LTWeb/BTLRapChieuPhim/BTLRapChieuPhim/Areas/Admin/Views/BaoCao/BaoCao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmFvQ2FvXEJhb0Nhby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectLop/LTWeb/BTLRapChieuPhim/BTLRapChieuPhim/Areas/Admin/Views/HomeAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectLop/LTWeb/BTLRapChieuPhim/BTLRapChieuPhim/Areas/Admin/Views/LichChieu/LichChieuAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGljaENoaWV1XExpY2hDaGlldUFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectLop/LTWeb/BTLRapChieuPhim/BTLRapChieuPhim/Areas/Admin/Views/LichChieu/LichChieuPhim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGljaENoaWV1XExpY2hDaGlldVBoaW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectLop/LTWeb/BTLRapChieuPhim/BTLRapChieuPhim/Areas/Admin/Views/LichChieu/LichChieuUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGljaENoaWV1XExpY2hDaGlldVVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectLop/LTWeb/BTLRapChieuPhim/BTLRapChieuPhim/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRUZW1wbGF0ZUFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ProjectLop/LTWeb/BTLRapChieuPhim/BTLRapChieuPhim/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=

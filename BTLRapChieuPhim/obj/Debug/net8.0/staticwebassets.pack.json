@@ -5,6 +5,158 @@
       "PackagePath": "staticwebassets\\BTLRapChieuPhim.bundle.scp.css"
     },
     {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\css\\admin.css",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\css\\admin.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\css\\slimselect.css",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\css\\slimselect.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\icon\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\icon\\favicon-32x32.png"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\img\\angle-down.svg",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\img\\angle-down.svg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\img\\logo.svg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\img\\section\\section.jpg",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\img\\section\\section.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\img\\user.svg",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\img\\user.svg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\jquery\\jquery.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\jquery\\jquery.min.map",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\jquery\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\jquery\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\jquery\\jquery.slim.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\jquery\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\jquery\\jquery.slim.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\jquery\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\jquery\\jquery.slim.min.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\admin.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\admin.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\chart.js\\Chart.bundle.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\chart.js\\Chart.bundle.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\chart.js\\Chart.bundle.min.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\chart.js\\Chart.bundle.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\chart.js\\Chart.css",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\chart.js\\Chart.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\chart.js\\Chart.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\chart.js\\Chart.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\chart.js\\Chart.min.css",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\chart.js\\Chart.min.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\chart.js\\Chart.min.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\chart.js\\Chart.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\slimselect.min.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\slimselect.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\smooth-scrollbar.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\smooth-scrollbar.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\webfont\\fonts\\tabler-icons539a.eot",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\webfont\\fonts\\tabler-icons539a.eot"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\webfont\\fonts\\tabler-icons539a.ttf",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\webfont\\fonts\\tabler-icons539a.ttf"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\webfont\\fonts\\tabler-icons539a.woff2",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\webfont\\fonts\\tabler-icons539a.woff2"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\webfont\\fonts\\tabler-iconsd41d.eot",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\webfont\\fonts\\tabler-iconsd41d.eot"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\webfont\\fonts\\tabler-iconsd41d.woff",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\webfont\\fonts\\tabler-iconsd41d.woff"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\webfont\\tabler-icons.min.css",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\webfont\\tabler-icons.min.css"
+    },
+    {
       "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\animate.css",
       "PackagePath": "staticwebassets\\Template\\css\\animate.css"
     },

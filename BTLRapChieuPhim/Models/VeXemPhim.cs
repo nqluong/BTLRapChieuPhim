@@ -20,6 +20,4 @@ public partial class VeXemPhim
     public virtual GheXemPhim? MaGxpNavigation { get; set; }
 
     public virtual LichChieu? MaLcNavigation { get; set; }
-
-    public virtual Phim? MaPhimNavigation { get; set; }
 }

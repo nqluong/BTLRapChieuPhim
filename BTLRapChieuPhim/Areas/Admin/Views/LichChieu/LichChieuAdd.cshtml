@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewData["Title"] = "LichChieuAdd";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
+}
+
+@model BTLRapChieuPhim.Models.LichChieu
+
+
+<h2>Thêm Lịch Chiếu</h2>
+
+<form id="formThemLichChieu">
+    <div>
+        <label for="thoiGianChieu">Thời Gian Chiếu:</label>
+        <input type="datetime-local" id="thoiGianChieu" name="thoiGianChieu" required />
+    </div>
+    <div>
+        <label for="maQl">Quản Lý:</label>
+        <input type="text" id="maQl" name="maQl" required />
+    </div>
+    <div>
+        <label for="maPc">Phòng Chiếu:</label>
+        <select id="maPc" name="maPc" required>
+            <option value="">Chọn Phòng Chiếu</option>
+            @foreach (var pc in ViewBag.phongChieuList)
+            {
+                <option value="@pc.Id">@pc.TenPc</option>
+            }
+        </select>
+    </div>
+    <div>
+        <label for="maPhim">Phim:</label>
+        <select id="maPhim" name="maPhim" required>
+            <option value="">Chọn phim</option>
+            @foreach (var phim in ViewBag.phimlist)
+            {
+                <option value="@phim.Id">@phim.TenPhim</option>
+            }
+        </select>
+    </div>
+    <button type="submit">Thêm Mới</button>
+</form>
+
+<div id="message" style="margin-top: 20px;"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#formThemLichChieu').submit(function(event) {
+            event.preventDefault(); // Ngăn chặn reload trang
+
+            const lichChieu = {
+                ThoiGianChieu: $('#thoiGianChieu').val(),
+                MaQl: $('#maQl').val(),
+                MaPc: $('#maPc').val(),
+                MaPhim: $('#maPhim').val()
+            };
+            console.log(JSON.stringify(lichChieu)); 
+            $.ajax({
+                type: 'POST',
+                url: '/api/LichChieu', // Đường dẫn đến API
+                data: JSON.stringify(lichChieu),
+                contentType: 'application/json',
+                success: function(response) {
+                    $('#message').text(response.message).css('color', 'green');
+                    window.location.href = '/admin/LichChieuPhim'
+                },
+                error: function(xhr) {
+                    $('#message').text(xhr.responseJSON.message).css('color', 'red');
+                }
+            });
+        });
+    });
+</script>
+

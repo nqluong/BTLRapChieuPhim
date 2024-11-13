@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Lịch Chiếu Update";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
+}
+<form id="editLichChieuForm">
+    <input type="hidden" id="maLc" name="maLc" value="" />
+
+    <label>Thời Gian Chiếu:</label>
+    <input type="datetime-local" id="thoiGianChieu" name="thoiGianChieu" required />
+
+    <label>Quản Lý:</label>
+    <input type="text" id="maQl" name="maQl" required />
+
+    <label>Phòng Chiếu:</label>
+    <input type="text" id="maPc" name="maPc" required />
+
+    <button type="button" onclick="updateLichChieu()">Cập nhật</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // Lấy mã lịch chiếu từ URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const maLc = urlParams.get('maLc');
+
+        // Đặt giá trị mã lịch chiếu vào input ẩn
+        $('#maLc').val(maLc);
+
+        // Tải thông tin lịch chiếu bằng mã maLc
+        $.ajax({
+            url: '/api/LichChieu/' + maLc, // API chi tiết của LichChieu
+            method: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                // Đặt các giá trị vào form
+                $('#thoiGianChieu').val(new Date(data.thoiGianChieu).toISOString().slice(0, 16));
+                $('#maQl').val(data.maQl);
+                $('#maPc').val(data.maPc);
+            },
+            error: function (error) {
+                alert('Lỗi khi tải thông tin lịch chiếu: ' + error.responseText);
+            }
+        });
+    });
+
+    function updateLichChieu() {
+        var maLc = $('#maLc').val();
+        var thoiGianChieu = $('#thoiGianChieu').val();
+        var maQl = $('#maQl').val();
+        var maPc = $('#maPc').val();
+
+        $.ajax({
+            url: '/api/LichChieu/' + maLc,
+            method: 'PUT',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                maLc: maLc,
+                thoiGianChieu: thoiGianChieu,
+                maQl: maQl,
+                maPc: maPc
+            }),
+            success: function () {
+                alert('Cập nhật thành công!');
+                window.location.href = '/admin/LichChieuPhim'; // Quay lại trang danh sách sau khi cập nhật thành công
+            },
+            error: function (error) {
+                alert('Lỗi khi cập nhật: ' + error.responseText);
+            }
+        });
+    }
+</script>

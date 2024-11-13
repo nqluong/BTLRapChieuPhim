@@ -1,1 +1,117 @@
-[]
+[
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.BaoCaoController",
+    "Method": "GetDoanhThuTheoNgay",
+    "RelativePath": "api/BaoCao/ngay",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fromDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "toDate",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.BaoCaoController",
+    "Method": "GetDoanhThuTheoPhim",
+    "RelativePath": "api/BaoCao/theo-phim",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.BaoCaoController",
+    "Method": "GetDoanhThuTheoPhongChieu",
+    "RelativePath": "api/BaoCao/theo-phong-chieu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.LichChieuController",
+    "Method": "GetLichChieu",
+    "RelativePath": "api/LichChieu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.LichChieuController",
+    "Method": "ThemLichChieu",
+    "RelativePath": "api/LichChieu",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lichChieu",
+        "Type": "BTLRapChieuPhim.Models.LichChieu",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.LichChieuController",
+    "Method": "UpdateLichChieu",
+    "RelativePath": "api/LichChieu/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "lichChieuUpdated",
+        "Type": "BTLRapChieuPhim.Areas.Admin.Models.LichChieuModels.LichChieuApi",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.LichChieuController",
+    "Method": "DeleteLichChieu",
+    "RelativePath": "api/LichChieu/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

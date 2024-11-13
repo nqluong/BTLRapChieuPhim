@@ -1,0 +1,187 @@
+﻿@{
+    ViewData["Title"] = "ThongKe";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
+}
+
+<div class="row mb-3">
+    <div class="col-md-4">
+        <label for="filterType">Chọn báo cáo:</label>
+        <select id="filterType" class="form-control">
+            <option value="ngay">Doanh Thu Theo Ngày</option>
+            <option value="phim">Doanh Thu Theo Phim</option>
+            <option value="phongChieu">Doanh Thu Theo Phòng Chiếu</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label for="fromDate">Từ ngày:</label>
+        <input type="date" id="fromDate" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label for="toDate">Đến ngày:</label>
+        <input type="date" id="toDate" class="form-control" />
+    </div>
+</div>
+<div class="col-md-2 align-self-end">
+    <button id="filterButton" class="btn btn-primary">Lọc</button>
+</div>
+
+<!-- BAR CHART -->
+<div class="card card-success">
+    <div class="card-header">
+        <h3 class="card-title">Bar Chart</h3>
+
+        <div class="card-tools">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                <i class="fas fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-tool" data-card-widget="remove">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="chart">
+            <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+        </div>
+    </div>
+    <!-- /.card-body -->
+</div>
+<!-- /.card -->
+
+@section scripts{
+    <script src="/TemplateAdmin/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/TemplateAdmin/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/TemplateAdmin/js/chart.js/Chart.min.js"></script>
+    <script>
+
+        function drawChart(response){
+            var labels = [];
+            var doanhThuVe = [];
+            var doanhThuDoAn = [];
+            var doanhThuTong = [];
+
+            response.forEach(function (item) {
+                if (item.ngayChieu) {
+                    labels.push(item.ngayChieu); 
+                } else if (item.tenPhim) {
+                    labels.push(item.tenPhim); 
+                } else if (item.tenPhongChieu) {
+                    labels.push(item.tenPhongChieu); 
+                }
+                doanhThuVe.push(item.tienVe);
+                doanhThuDoAn.push(item.tienDoAn);
+                doanhThuTong.push(item.doanhThu);
+            });
+
+            var areaChartData = {
+                labels: labels,
+                datasets: [
+                    {
+                        label: 'Doanh Thu Vé Bán',
+                        backgroundColor: 'rgba(60,141,188,0.9)',
+                        borderColor: 'rgba(60,141,188,0.8)',
+                        data: doanhThuVe
+                    },
+                    {
+                        label: 'Doanh Thu Đồ Ăn',
+                        backgroundColor: 'rgba(210, 214, 222, 1)',
+                        borderColor: 'rgba(210, 214, 222, 1)',
+                        data: doanhThuDoAn
+                    },
+                    {
+                        label: 'Tổng Doanh Thu',
+                        backgroundColor: 'rgba(0, 255, 0, 0.9)',
+                        borderColor: 'rgba(0, 255, 0, 0.8)',
+                        data: doanhThuTong
+                    }
+                ]
+            };
+
+            var barChartCanvas = $('#barChart').get(0).getContext('2d');
+            // var barChartOptions = {
+            //     responsive: true,
+            //     maintainAspectRatio: false,
+            //     datasetFill: false
+            // };
+
+            // new Chart(barChartCanvas, {
+            //     type: 'bar',
+            //     data: areaChartData,
+            //     options: barChartOptions
+            // });
+            if (window.barChartInstance) {
+                window.barChartInstance.destroy();  // Hủy biểu đồ cũ
+            }
+
+            // Vẽ lại biểu đồ mới
+            window.barChartInstance = new Chart(barChartCanvas, {
+                type: 'bar',
+                data: areaChartData,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    datasetFill: false
+                }
+            });
+        }
+
+        $(function () {
+            $('#filterType').on('change', function () {
+                var filterType = $(this).val();
+
+                if (filterType === 'ngay') {
+                    $('#fromDate').show();
+                    $('#toDate').show();
+                } else {
+                    $('#fromDate').hide();
+                    $('#toDate').hide();
+                }
+            });
+            $('#filterButton').on('click', function () {
+                var filterType = $('#filterType').val();
+                var url = '';
+                var data = {};
+
+                if (filterType === 'ngay') {
+                    var fromDate = $('#fromDate').val();
+                    var toDate = $('#toDate').val();
+
+                    if (!fromDate || !toDate) {
+                        alert('Vui lòng chọn cả Từ ngày và Đến ngày!');
+                        return;
+                    }
+
+                    url = '/api/baocao/ngay';
+                    data = { fromDate: fromDate, toDate: toDate };
+                }
+                else if (filterType === 'phim') {
+                    url = '/api/baocao/theo-phim';
+                    data = {};
+                }
+                else if (filterType === 'phongChieu') {
+                    url = '/api/baocao/theo-phong-chieu';
+                    data = {};
+                }
+
+                $.ajax({
+                    url: url,
+                    type: 'GET',
+                    data: data,
+                    success: function (response) {
+                        if (response && Array.isArray(response) && response.length > 0) {
+                            drawChart(response);
+                        } else {
+                            console.log('Không có dữ liệu báo cáo!');
+                        }
+
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Có lỗi xảy ra: ', error);
+                    }
+                });
+            });
+        });
+
+    </script>
+}
