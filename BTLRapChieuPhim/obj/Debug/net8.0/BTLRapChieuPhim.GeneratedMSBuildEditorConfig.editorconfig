@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BTLRapChieuPhim
 build_property.RootNamespace = BTLRapChieuPhim
@@ -18,8 +26,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Ki 5\Web\BTLRapChieuPhim
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Ki 5/Web/BTLRapChieuPhim/Views/Home/ChonGhe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaG9uR2hlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Ki 5/Web/BTLRapChieuPhim/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Ki 5/Web/BTLRapChieuPhim/Views/Home/LichChieu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaWNoQ2hpZXUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Ki 5/Web/BTLRapChieuPhim/Views/Home/Privacy.cshtml]
@@ -28,6 +44,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Ki 5/Web/BTLRapChieuPhim/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Ki 5/Web/BTLRapChieuPhim/Views/Shared/_LayoutLichChieu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMaWNoQ2hpZXUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Ki 5/Web/BTLRapChieuPhim/Views/Shared/_LayoutPhongChieu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRQaG9uZ0NoaWV1LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Ki 5/Web/BTLRapChieuPhim/Views/Shared/_LayoutTemplate.cshtml]

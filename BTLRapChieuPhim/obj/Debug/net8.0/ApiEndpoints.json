@@ -1,1 +1,151 @@
-[]
+[
+  {
+    "ContainingType": "BTLRapChieuPhim.Controllers.LichChieuAPIController",
+    "Method": "GetAllLichChieu",
+    "RelativePath": "api/LichChieuAPI",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BTLRapChieuPhim.Models.LichChieuModels.LichChieuAPI, BTLRapChieuPhim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Controllers.LichChieuAPIController",
+    "Method": "GetLichChieuByMaPhim",
+    "RelativePath": "api/LichChieuAPI/byPhim/{MaPhim}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maphim",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BTLRapChieuPhim.Models.LichChieuModels.LichChieuAPI, BTLRapChieuPhim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Controllers.LichChieuAPIController",
+    "Method": "GetLichChieuByPhimAndNgay",
+    "RelativePath": "api/LichChieuAPI/byPhimNgay/{maPhim}/{ngay}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPhim",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ngay",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BTLRapChieuPhim.Models.LichChieuModels.LichChieuAPI, BTLRapChieuPhim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Controllers.LichChieuAPIController",
+    "Method": "GetAllTTPhim",
+    "RelativePath": "api/LichChieuAPI/ttphim",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BTLRapChieuPhim.Models.LichChieuModels.TTPhimAPI, BTLRapChieuPhim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Controllers.LichChieuAPIController",
+    "Method": "GetAllTTPhimbyMaphim",
+    "RelativePath": "api/LichChieuAPI/ttphim/{maPhim}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maphim",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BTLRapChieuPhim.Models.LichChieuModels.TTPhimAPI, BTLRapChieuPhim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Controllers.PhongChieuAPIController",
+    "Method": "GetAllGheXP",
+    "RelativePath": "api/PhongChieuAPI/byLC/{Malc}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "malc",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BTLRapChieuPhim.Models.LichChieuModels.GheXPAPI, BTLRapChieuPhim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

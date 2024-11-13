@@ -1,9 +1,10 @@
+using Azure;
 using BTLRapChieuPhim.Models;
-using BTLRapChieuPhim.Models.LichChieu;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
-
+using X.PagedList;
 namespace BTLRapChieuPhim.Controllers
 {
     public class HomeController : Controller
@@ -17,22 +18,21 @@ namespace BTLRapChieuPhim.Controllers
         }
 
         public IActionResult Index()
-        {
+		{
             return View();
         }
-        public IActionResult LichChieu(int maphim)
+       public IActionResult Lichchieu()
         {
-			var lichChieuList = db.LichChieus.Where(lc => lc.VeXemPhims.Any(v => v.MaPhim == maphim)).ToList();
-			var model = lichChieuList.Select(lc => new Models.LichChieu.LichChieuViewModel
-			{
-				DayOfWeek = lc.ThoiGianChieu.DayOfWeek.ToString(),
-				Day = lc.ThoiGianChieu.Day,
-				ThoiGianChieu = lc.ThoiGianChieu
-			}).ToList();
-			return View(model);
-		}
-
-        public IActionResult Privacy()
+            ViewBag.MaPhim = 1;
+			return View();
+        }
+        public IActionResult ChonGhe(int malc,int maphim) 
+        {
+            ViewBag.MaLC = malc;
+            ViewBag.MaPhim = maphim;
+			return View();
+        }
+		public IActionResult Privacy()
         {
             return View();
         }

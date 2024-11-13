@@ -15,8 +15,6 @@ public partial class DoAn
 
     public string? TrangThai { get; set; }
 
-    public int? MaHd { get; set; }
-
     public int? MaQl { get; set; }
 
     public virtual ICollection<HoaDon> HoaDons { get; set; } = new List<HoaDon>();
