@@ -1,4 +1,4 @@
-(function (window, document, undefined) {
+﻿(function (window, document, undefined) {
 	'use strict';
 
 	/*==============================
@@ -101,7 +101,7 @@
 		new SlimSelect({
 			select: '#sign__genre',
 			settings: {
-				placeholderText: 'Choose genre',
+				placeholderText: 'Chọn thể loại phim',
 			}
 		});
 	}
@@ -110,7 +110,7 @@
 		new SlimSelect({
 			select: '#sign__country',
 			settings: {
-				placeholderText: 'Choose country',
+				placeholderText: 'Chọn phim',
 			}
 		});
 	}
@@ -128,7 +128,7 @@
 		new SlimSelect({
 			select: '#sign__actors',
 			settings: {
-				placeholderText: 'Choose actors',
+				placeholderText: 'Chọn phòng chiếu',
 			}
 		});
 	}
