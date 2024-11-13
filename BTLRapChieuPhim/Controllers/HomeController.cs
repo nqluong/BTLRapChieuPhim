@@ -27,6 +27,13 @@ namespace BTLRapChieuPhim.Controllers
             ViewBag.anhphim=anhphim;
             return View(phim);
         }
+        public IActionResult Contact()
+        {
+            var rap = ql.RapPhims.SingleOrDefault(x=>x.MaRp==1);
+            var quanly = ql.TaiKhoans.Where(x=>x.MaTk==1).ToList();
+            ViewBag.quanly = quanly;
+            return View(rap);
+        }
         public IActionResult Privacy()
         {
             return View();
