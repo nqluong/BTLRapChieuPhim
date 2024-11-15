@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BTLRapChieuPhim")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b8787d986fc1cacc57efd86b05dda034009efb0")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87feb6b51cb4ef0ef337183d5ee0ba6ba63e50d2")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("BTLRapChieuPhim")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BTLRapChieuPhim")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

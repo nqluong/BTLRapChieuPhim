@@ -1,3 +1,4 @@
+CREATE DATABASE QuanLyRapPhim
 USE [QuanLyRapPhim]
 GO
 /****** Object:  Table [dbo].[DanhGia]    Script Date: 10/22/2024 12:07:49 AM ******/

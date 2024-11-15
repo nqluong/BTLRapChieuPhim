@@ -1,4 +1,5 @@
 using BTLRapChieuPhim.Models;
+using BTLRapChieuPhim.Models.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -12,6 +13,7 @@ namespace BTLRapChieuPhim.Controllers
         {
             _logger = logger;
         }
+        [Authentication]
 
         public IActionResult Index()
         {

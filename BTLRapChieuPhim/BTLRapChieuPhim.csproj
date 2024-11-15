@@ -8,9 +8,25 @@
 
   <ItemGroup>
     <Compile Remove="NewFolder\**" />
+    <Compile Remove="Views\NewFolder1\**" />
+    <Compile Remove="Views\NewFolder2\**" />
+    <Compile Remove="Views\NewFolder3\**" />
+    <Compile Remove="Views\NewFolder4\**" />
     <Content Remove="NewFolder\**" />
+    <Content Remove="Views\NewFolder1\**" />
+    <Content Remove="Views\NewFolder2\**" />
+    <Content Remove="Views\NewFolder3\**" />
+    <Content Remove="Views\NewFolder4\**" />
     <EmbeddedResource Remove="NewFolder\**" />
+    <EmbeddedResource Remove="Views\NewFolder1\**" />
+    <EmbeddedResource Remove="Views\NewFolder2\**" />
+    <EmbeddedResource Remove="Views\NewFolder3\**" />
+    <EmbeddedResource Remove="Views\NewFolder4\**" />
     <None Remove="NewFolder\**" />
+    <None Remove="Views\NewFolder1\**" />
+    <None Remove="Views\NewFolder2\**" />
+    <None Remove="Views\NewFolder3\**" />
+    <None Remove="Views\NewFolder4\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,15 +35,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10">
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.6" />
-    <PackageReference Include="X.PagedList" Version="10.2.1" />
-    <PackageReference Include="X.PagedList.Mvc.Core" Version="10.2.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration" Version="9.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+    <PackageReference Include="X.PagedList" Version="10.5.7" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="10.5.7" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +55,7 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Views\Account\" />
   </ItemGroup>
 
 </Project>

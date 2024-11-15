@@ -1,7 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using BTLRapChieuPhim.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+var connectionString = builder.Configuration.GetConnectionString("QuanLyRapPhimContext");
+builder.Services.AddDbContext<QuanLyRapPhimContext>(x => x.UseSqlServer(connectionString));
+
+builder.Services.AddSession();
 
 var app = builder.Build();
 
@@ -19,6 +27,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",
