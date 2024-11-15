@@ -26,8 +26,40 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\HocTap\Web\BaiTapLon\BTLRapChieuPhim\BTLRapChieuPhim
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/HocTap/Web/BaiTapLon/BTLRapChieuPhim/BTLRapChieuPhim/Areas/Admin/Views/HomeAdmin/DanhSachPhim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXERhbmhTYWNoUGhpbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HocTap/Web/BaiTapLon/BTLRapChieuPhim/BTLRapChieuPhim/Areas/Admin/Views/HomeAdmin/DanhSachPhongChieu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXERhbmhTYWNoUGhvbmdDaGlldS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/HocTap/Web/BaiTapLon/BTLRapChieuPhim/BTLRapChieuPhim/Areas/Admin/Views/HomeAdmin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HocTap/Web/BaiTapLon/BTLRapChieuPhim/BTLRapChieuPhim/Areas/Admin/Views/HomeAdmin/PhimAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFBoaW1BZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HocTap/Web/BaiTapLon/BTLRapChieuPhim/BTLRapChieuPhim/Areas/Admin/Views/HomeAdmin/PhimUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFBoaW1VcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HocTap/Web/BaiTapLon/BTLRapChieuPhim/BTLRapChieuPhim/Areas/Admin/Views/HomeAdmin/PhongChieuAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFBob25nQ2hpZXVBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HocTap/Web/BaiTapLon/BTLRapChieuPhim/BTLRapChieuPhim/Areas/Admin/Views/HomeAdmin/PhongChieuUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFBob25nQ2hpZXVVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HocTap/Web/BaiTapLon/BTLRapChieuPhim/BTLRapChieuPhim/Areas/Admin/Views/Shared/Components/TenMenu/Phim/Phim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGVuTWVudVxQaGltXFBoaW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HocTap/Web/BaiTapLon/BTLRapChieuPhim/BTLRapChieuPhim/Areas/Admin/Views/Shared/Components/TenMenu/PhongChieu/PhongChieu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGVuTWVudVxQaG9uZ0NoaWV1XFBob25nQ2hpZXUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/HocTap/Web/BaiTapLon/BTLRapChieuPhim/BTLRapChieuPhim/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml]

@@ -1,0 +1,107 @@
+﻿<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+        // Hàm để gọi API và hiển thị danh sách phim
+        function showMovies() {
+            var contentHtml = '';
+            $.ajax({
+                url: '/api/phimapi', // Đảm bảo rằng đường dẫn đến API là đúng
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    console.log(data); // Kiểm tra dữ liệu trả về từ API
+                    contentHtml += `
+                            <div class="col-12">
+                                <div class="main__title">
+                                    <h2>Danh Sách Phim</h2>
+                                    <div class="main__title-wrap">
+                                            <a class="main__title-link main__title-link--wrap" onclick="showHideDiveInsertData('addPhimContainer'); return false;">Add item</a>
+                                        <form action="#" class="main__title-form">
+                                            <input type="text" placeholder="Find movie / tv series..">
+                                            <button type="button">
+                                                <i class="ti ti-search"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog catalog--1" data-scrollbar="true" tabindex="-1" style="overflow: hidden; outline: none;">
+                                <div class="scroll-content">
+                                    <table class="catalog__table">
+                                        <thead>
+                                            <tr>
+                                                <th>MÃ PHIM</th>
+                                                <th>TÊN PHIM</th>
+                                                <th>THỜI LƯỢNG</th>
+                                                <th>ĐẠO DIỄN</th>
+                                                <th>ĐỘ TUỔI</th>
+                                                <th>QUỐC GIA</th>
+                                                <th>THỂ LOẠI</th>
+                                                <th>HÀNH ĐỘNG</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="phimBody">`;
+
+                    // Lặp qua từng bản ghi phim và thêm vào bảng
+                    data.forEach(function (phim) {
+                        contentHtml += `
+                            <tr>
+                                <td><div class="catalog__text">${phim.maPhim}</div></td>
+                                <td><div class="catalog__text"><a href="#">${phim.tenPhim}</a></div></td>
+                                <td><div class="catalog__text">${phim.thoiLuong} phút</div></td>
+                                <td><div class="catalog__text">${phim.daoDien}</div></td>
+                                <td><div class="catalog__text">${phim.doTuoi}+</div></td>
+                                <td><div class="catalog__text">${phim.nuocSx}</div></td>
+                                <td><div class="catalog__text">${phim.tenTheLoai}</div></td>
+                                <td>
+                                    <div class="catalog__btns">
+                                        <button type="button" class="catalog__btn catalog__btn--edit" onclick="editMovie('${phim.maPhim}')">
+                                            <i class="ti ti-edit"></i>
+                                        </button>
+                                        <button type="button" class="catalog__btn catalog__btn--delete" onclick="deleteMovie('${phim.maPhim}')">
+                                            <i class="ti ti-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>`;
+                    });
+
+                    // Đóng các thẻ HTML
+                    contentHtml += `
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>`;
+
+                    // Thêm nội dung vào phần tử hiển thị
+                    $('#renderBodyContent').html(contentHtml);
+                },
+                error: function (xhr) {
+                    alert("Lỗi khi tải danh sách phim: " + xhr.responseText);
+                }
+            });
+        }
+
+
+    // Hàm để xử lý việc sửa phim
+    function editMovie(maPhim) {
+        window.location.href = `/admin/PhimUpdate?maPhim=${maPhim}`;
+    }
+
+    // Hàm để xử lý việc xóa phim
+    function deleteMovie(maPhim) {
+        if (confirm("Bạn có chắc chắn muốn xóa phim này?")) {
+            $.ajax({
+                url: `/api/phimapi/${maPhim}`,
+                method: 'DELETE',
+                success: function (response) {
+                    alert(response.message);
+                    showMovies(); // Làm mới danh sách sau khi xóa
+                },
+                error: function (error) {
+                    alert("Xóa phim thất bại!");
+                }
+            });
+        }
+    }
+</script>

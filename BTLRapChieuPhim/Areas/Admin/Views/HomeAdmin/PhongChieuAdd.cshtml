@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "PhongChieuAdd";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
+}
+
+@model BTLRapChieuPhim.Models.PhongChieu
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h2>Thêm Phòng Chiếu</h2>
+
+<form id="formThemPhongChieu">
+    <div>
+        <label for="maPc">Mã Phòng Chiếu:</label>
+        <input type="number" id="maPc" name="maPc" required />
+    </div>
+    <div>
+        <label for="tenPc">Tên Phòng Chiếu:</label>
+        <input type="text" id="tenPc" name="tenPc" required />
+    </div>
+    <div>
+        <label for="sucChua">Sức Chứa:</label>
+        <input type="number" id="sucChua" name="sucChua" required />
+    </div>
+    <div>
+        <label for="maRp">Tên Rạp:</label>
+        <select id="maRp" name="maRp" required>
+            <option value="">Chọn rạp</option>
+            @foreach (var rap in ViewBag.lstRapPhim)
+            {
+                <option value="@rap.marp">@rap.tenrp</option>
+            }
+        </select>
+    </div>
+    <div>
+        <label for="maQl">Quản Lý:</label>
+        <select id="maQl" name="maQl" required>
+            <option value="">Chọn quản lý</option>
+            @foreach (var ql in ViewBag.lstQuanLi)
+            {
+                <option value="@ql.maql">@ql.tenql</option>
+            }
+        </select>
+    </div>
+    <button type="submit">Thêm Mới</button>
+</form>
+
+<div id="message" style="margin-top: 20px;"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#formThemPhongChieu').submit(function(event) {
+            event.preventDefault();
+
+            const phongChieu = {
+                MaPc: $('#maPc').val(),
+                TenPc: $('#tenPc').val(),
+                SucChua: $('#sucChua').val(),
+                MaRp: $('#maRp').val(),
+                MaQl: $('#maQl').val()
+            };
+            console.log(JSON.stringify(phongChieu));
+            $.ajax({
+                type: 'POST',
+                url: '/api/phongchieuapi', // Đường dẫn đến API thêm Phòng Chiếu
+                data: JSON.stringify(phongChieu),
+                contentType: 'application/json',
+                success: function(response) {
+                    $('#message').text("Thêm phòng chiếu thành công!").css('color', 'green');
+                    window.location.href = '/admin/danhsachphongchieu'; // Điều hướng đến trang danh sách phòng chiếu
+                },
+                error: function(xhr) {
+                    $('#message').text("Lỗi: " + xhr.responseJSON.message).css('color', 'red');
+                }
+            });
+        });
+    });
+</script>
+

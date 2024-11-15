@@ -1,0 +1,94 @@
+﻿
+<div id="addPhimContainer">
+    <h2>Thêm Phim</h2>
+    <form id="formThemPhim" method="post">
+        <div>
+            <label for="maPhim">Mã Phim:</label>
+            <input type="number" id="maPhim" name="maPhim" required />
+        </div>
+        <div>
+            <label for="tenPhim">Tên Phim:</label>
+            <input type="text" id="tenPhim" name="tenPhim" required />
+        </div>
+        <div>
+            <label for="thoiLuong">Thời Lượng:</label>
+            <input type="number" id="thoiLuong" name="thoiLuong" required />
+        </div>
+        <div>
+            <label for="daoDien">Đạo Diễn:</label>
+            <input type="text" id="daoDien" name="daoDien" required />
+        </div>
+        <div>
+            <label for="doTuoi">Độ Tuổi:</label>
+            <input type="number" id="doTuoi" name="doTuoi" required />
+        </div>
+        <div>
+            <label for="nuocSx">Nước Sản Xuất:</label>
+            <input type="text" id="nuocSx" name="nuocSx" required />
+        </div>
+        <div>
+            <label for="moTa">Mô Tả:</label>
+            <textarea id="moTa" name="moTa"></textarea>
+        </div>
+        <div>
+            <label for="maTl">Tên Thể Loại:</label>
+            <select id="maTl" name="maTl" required>
+                <option value="">Chọn thể loại</option>
+                @foreach (var tl in ViewBag.lstTheLoai)
+                {
+                    <option value="@tl.matl">@tl.tentl</option>
+                }
+            </select>
+        </div>
+        <button type="submit">Thêm Mới</button>
+    </form>
+</div>
+
+<div id="message" style="margin-top: 20px;"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Sự kiện submit form với AJAX
+        $('#formThemPhim').submit(function (event) {
+            event.preventDefault(); // Ngăn không cho form gửi lại trang
+
+            const phim = {
+                MaPhim: $('#maPhim').val(),
+                TenPhim: $('#tenPhim').val(),
+                ThoiLuong: $('#thoiLuong').val(),
+                DaoDien: $('#daoDien').val(),
+                DoTuoi: $('#doTuoi').val(),
+                NuocSx: $('#nuocSx').val(),
+                MoTa: $('#moTa').val(),
+                MaTl: $('#maTl').val()
+            };
+
+            $.ajax({
+                type: 'POST',
+                url: '/api/phimapi', // Đường dẫn đến API thêm phim
+                data: JSON.stringify(phim),
+                contentType: 'application/json',
+                success: function (response) {
+                    alert("Thêm phim thành công!");
+                    // Cập nhật danh sách phim mà không tải lại trang
+                    showMovies();
+                    $('#addPhimContainer').hide(); // Ẩn form thêm phim
+                },
+                error: function (xhr) {
+                    alert("Lỗi: " + xhr.responseJSON.message);
+                }
+            });
+        });
+
+        
+    });
+    // Hàm ẩn/hiện form thêm phim khi nhấn "Add item"
+    function showHideDiveInsertData(activeDiv) {
+        if ($(document.getElementById(activeDiv)).is(":visible")) {
+            $(document.getElementById(activeDiv)).hide('slow');
+        }
+        else {
+            $(document.getElementById(activeDiv)).show('slow');
+        }
+    }
+</script>

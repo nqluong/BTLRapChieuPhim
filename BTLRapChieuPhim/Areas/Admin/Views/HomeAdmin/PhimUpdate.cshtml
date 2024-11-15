@@ -1,0 +1,114 @@
+﻿@{
+    ViewData["Title"] = "Cập Nhật Phim";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
+}
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h2>Cập Nhật Phim</h2>
+
+<form id="editPhimForm">
+    <input type="hidden" id="maPhim" name="maPhim" />
+
+    <label for="tenPhim">Tên Phim:</label>
+    <input type="text" id="tenPhim" name="tenPhim" required />
+
+    <label for="thoiLuong">Thời Lượng (phút):</label>
+    <input type="number" id="thoiLuong" name="thoiLuong" required />
+
+    <label for="daoDien">Đạo Diễn:</label>
+    <input type="text" id="daoDien" name="daoDien" required />
+
+    <label for="doTuoi">Độ Tuổi:</label>
+    <input type="number" id="doTuoi" name="doTuoi" required />
+
+    <label for="nuocSx">Nước Sản Xuất:</label>
+    <input type="text" id="nuocSx" name="nuocSx" required />
+
+    <label for="moTa">Mô Tả:</label>
+    <textarea id="moTa" name="moTa" required></textarea>
+
+    <label for="maTl">Mã Thể Loại:</label>
+    <input type="number" id="maTl" name="maTl" required />
+
+    <label for="tenTheLoai">Tên Thể Loại:</label>
+    <input type="text" id="tenTheLoai" name="tenTheLoai" required />
+
+    <button type="submit">Cập Nhật</button>
+</form>
+
+<div id="message" style="margin-top: 20px; color: green;"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // Lấy mã phim từ URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const maPhim = urlParams.get('maPhim');
+
+        if (maPhim) {
+            $('#maPhim').val(maPhim);
+
+            // Gọi API để lấy thông tin chi tiết phim
+            $.ajax({
+                url: '/api/phimapi/' + maPhim,
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    if (Array.isArray(data) && data.length > 0) {
+                        const phim = data[0]; // Lấy đối tượng đầu tiên
+                        $('#tenPhim').val(phim.tenPhim);
+                        $('#thoiLuong').val(phim.thoiLuong);
+                        $('#daoDien').val(phim.daoDien);
+                        $('#doTuoi').val(phim.doTuoi);
+                        $('#nuocSx').val(phim.nuocSx);
+                        $('#moTa').val(phim.moTa);
+                        $('#maTl').val(phim.maTl);
+                        $('#tenTheLoai').val(phim.tenTheLoai);
+                    } else {
+                        $('#message').text('Không có dữ liệu cho mã phòng chiếu này.').css('color', 'red');
+                    }
+                },
+                error: function (error) {
+                    $('#message').text('Lỗi khi tải thông tin phim: ' + error.responseText).css('color', 'red');
+                }
+            });
+        } else {
+            $('#message').text('Không tìm thấy mã phim trong URL.').css('color', 'red');
+        }
+
+        $('#editPhimForm').submit(function (event) {
+            event.preventDefault(); // Ngăn chặn hành động mặc định của form
+            updatePhim();
+        });
+    });
+
+    function updatePhim() {
+        const maPhim = $('#maPhim').val();
+        const phimData = {
+            MaPhim: maPhim,
+            TenPhim: $('#tenPhim').val(),
+            ThoiLuong: $('#thoiLuong').val(),
+            DaoDien: $('#daoDien').val(),
+            DoTuoi: $('#doTuoi').val(),
+            NuocSx: $('#nuocSx').val(),
+            MoTa: $('#moTa').val(),
+            MaTl: $('#maTl').val(),
+            TenTheLoai: $('#tenTheLoai').val()
+        };
+
+        $.ajax({
+            url: '/api/phimapi/' + maPhim,
+            method: 'PUT',
+            contentType: 'application/json',
+            data: JSON.stringify(phimData),
+            success: function () {
+                $('#message').text('Cập nhật thành công!').css('color', 'green');
+                window.location.href = '/admin/danhsachphim';
+            },
+            error: function (error) {
+                $('#message').text('Lỗi khi cập nhật: ' + error.responseText).css('color', 'red');
+            }
+        });
+    }
+</script>

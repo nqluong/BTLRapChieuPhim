@@ -1,0 +1,96 @@
+﻿@{
+    ViewData["Title"] = "Cập Nhật Phòng Chiếu";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
+}
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h2>Cập Nhật Phòng Chiếu</h2>
+
+<form id="editPhongChieuForm">
+    <input type="hidden" id="maPc1" name="maPc" />
+
+    <label>Tên Phòng Chiếu:</label>
+    <input type="text" id="tenPc1" name="tenPc" required />
+
+    <label>Sức Chứa:</label>
+    <input type="number" id="sucChua1" name="sucChua" required />
+
+    <label>Quản Lý:</label>
+    <input type="number" id="maQl1" name="maQl" required />
+
+    <label>Rạp Phim:</label>
+    <input type="number" id="maRp1" name="maRp" required />
+
+    <button type="submit">Cập Nhật</button>
+</form>
+
+<div id="message" style="margin-top: 20px; color: green;"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // Lấy mã phòng chiếu từ URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const maPc = urlParams.get('maPc');
+
+    if (maPc) {
+            $('#maPc1').val(maPc);
+
+        // Gọi API để lấy thông tin chi tiết phòng chiếu
+        $.ajax({
+        url: '/api/phongchieuapi/' + maPc,
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    console.log(data);
+                    // Kiểm tra dữ liệu có phải là mảng và không rỗng
+                    if (Array.isArray(data) && data.length > 0) {
+                        const phongChieu = data[0]; // Lấy đối tượng đầu tiên
+                        $('#tenPc1').val(phongChieu.tenPc);
+                        $('#sucChua1').val(phongChieu.sucChua);
+                        $('#maQl1').val(phongChieu.maQl);
+                        $('#maRp1').val(phongChieu.maRp);
+                    } else {
+                        $('#message').text('Không có dữ liệu cho mã phòng chiếu này.').css('color', 'red');
+                    }
+                },
+                error: function (error) {
+                    $('#message').text('Lỗi khi tải thông tin phòng chiếu: ' + error.responseText).css('color', 'red');
+                }
+            });
+        } else {
+            $('#message').text('Không tìm thấy mã phòng chiếu trong URL.').css('color', 'red');
+        }
+
+        $('#editPhongChieuForm').submit(function (event) {
+            event.preventDefault(); // Ngăn chặn hành động mặc định của form
+            updatePhongChieu();
+        });
+    });
+
+    function updatePhongChieu() {
+    const maPc = $('#maPc1').val();
+    const phongChieuData = {
+        MaPc: maPc,
+        TenPc: $('#tenPc1').val(),
+        SucChua: $('#sucChua1').val(),
+        MaQl: $('#maQl1').val(),
+        MaRp: $('#maRp1').val()
+        };
+
+        $.ajax({
+        url: '/api/phongchieuapi/' + maPc,
+        method: 'PUT',
+        contentType: 'application/json',
+        data: JSON.stringify(phongChieuData),
+        success: function () {
+            $('#message').text('Cập nhật thành công!').css('color', 'green');
+            window.location.href = '/admin/danhsachphongchieu';
+            },
+        error: function (error) {
+            $('#message').text('Lỗi khi cập nhật: ' + error.responseText).css('color', 'red');
+            }
+        });
+    }
+</script>
