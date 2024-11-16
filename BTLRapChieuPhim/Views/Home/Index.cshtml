@@ -1,9 +1,10 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
-    Layout = "_LayoutTemplate";
+	ViewData["Title"] = "Home Page";
+	Layout = "_LayoutTemplate";
 }
 @model IQueryable<HinhAnhTrailer>
-<!-- prs upcomung Slider Start -->
+
+<!-- PRS Upcoming Slider Start -->
 <div class="prs_upcom_slider_main_wrapper">
 	<div class="container">
 		<div class="row">
@@ -19,10 +20,10 @@
 							<a href="#best" aria-controls="best" role="tab" data-toggle="tab">Upcoming Movies</a>
 						</li>
 						<li role="presentation">
-							<a href="#hot" aria-controls="hot" role="tab" data-toggle="tab">Relesed Movies</a>
+							<a href="#hot" aria-controls="hot" role="tab" data-toggle="tab">Released Movies</a>
 						</li>
 						<li role="presentation">
-							<a href="#trand" aria-controls="trand" role="tab" data-toggle="tab">Best of library</a>
+							<a href="#trand" aria-controls="trand" role="tab" data-toggle="tab">Best of Library</a>
 						</li>
 					</ul>
 				</div>
@@ -35,11 +36,11 @@
 							<div class="item prs_feature_slider_item_wrapper">
 								<div class="prs_feature_img_box_wrapper">
 									<div class="prs_feature_img">
-										<img src="@Url.Content("../Template/AnhPhim/"+item.DuongDanAnh)" alt="feature_img">
+										<img src="@Url.Content("~/Template/AnhPhim/" + item.DuongDanAnh)" alt="feature_img">
 									</div>
 									<div class="prs_feature_img_cont">
 										<div class="prs_ft_small_cont_left">
-											<p>@item.Loai</p>
+											<p></p>
 										</div>
 										<div class="prs_ft_small_cont_right">
 											<i class="fa fa-star"></i>
@@ -53,7 +54,8 @@
 												<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@item.MaPhim">View Detail</a>
 											</li>
 											<li>
-												<a href="@Url.Content(item.DuongDanTrailer)" target="_blank">View Trailer</a>
+												<!-- Liên kết xem trailer -->
+												<a onclick="showTrailer('/Template/Video/@item.DuongDanTrailer')">View Trailer</a>
 											</li>
 										</ul>
 									</div>
@@ -66,6 +68,27 @@
 		</div>
 	</div>
 </div>
+<!-- Modal để phát video -->
+<div id="videoModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 1000; display: none; justify-content: center; align-items: center;">
+	<div style="position: relative; width: 80%; max-width: 800px; background-color: white; padding: 10px; border-radius: 8px;">
+		<video id="trailerVideo" controls style="width: 100%;"></video>
+		<button onclick="closeModal()" style="position: absolute; top: 10px; right: 10px; background-color: red; color: white; border: none; padding: 5px 10px; cursor: pointer;">Close</button>
+	</div>
+</div>
+<script>
+	function showTrailer(videoUrl) {
+		const modal = document.getElementById('videoModal');
+		const video = document.getElementById('trailerVideo');
+		video.src = videoUrl;
+		modal.style.display = 'flex';
+	}
+	function closeModal() {
+		const modal = document.getElementById('videoModal');
+		const video = document.getElementById('trailerVideo');
+		video.pause();
+		modal.style.display = 'none';
+	}
+</script>
 <!-- prs upcomung Slider End -->
 <!-- prs video section Start -->
 <div class="prs_video_section_main_wrapper">
@@ -150,7 +173,8 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(0).DuongDanTrailer)" target="_blank">View Trailer</a>
+													
+															<a  onclick="showTrailer('/Template/Video/Trailer 1.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(0).MaPhim">View Detail</a>
@@ -185,7 +209,7 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(1).DuongDanTrailer)" target="_blank">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 2.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(1).MaPhim">View Detail</a>
@@ -224,7 +248,7 @@
 														<div class="prs_upcom_movie_img_btn_wrapper">
 															<ul>
 																<li>
-																	<a href="@Url.Content(mdl.DuongDanTrailer)" target="_blank">View Trailer</a>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
 																</li>
 																<li>
 																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
@@ -294,7 +318,7 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(6).DuongDanTrailer)" target="_blank">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 7.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(6).MaPhim">View Detail</a>
@@ -329,7 +353,7 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(7).DuongDanTrailer)" target="_blank">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 8.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(7).MaPhim">View Detail</a>
@@ -368,7 +392,7 @@
 														<div class="prs_upcom_movie_img_btn_wrapper">
 															<ul>
 																<li>
-																	<a href="@Url.Content(mdl.DuongDanTrailer)" target="_blank">View Trailer</a>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
 																</li>
 																<li>
 																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
@@ -438,7 +462,7 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(12).DuongDanTrailer)" target="_blank">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 13.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(12).MaPhim">View Detail</a>
@@ -473,7 +497,7 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(13).DuongDanTrailer)" target="_blank">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 14.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(13).MaPhim">View Detail</a>
@@ -512,7 +536,7 @@
 														<div class="prs_upcom_movie_img_btn_wrapper">
 															<ul>
 																<li>
-																	<a href="@Url.Content(mdl.DuongDanTrailer)" target="_blank">View Trailer</a>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
 																</li>
 																<li>
 																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
@@ -599,7 +623,7 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(18).DuongDanTrailer)" target="_blank">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 19.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(18).MaPhim">View Detail</a>
@@ -634,7 +658,7 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(19).DuongDanTrailer)" target="_blank">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 20.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(19).MaPhim">View Detail</a>
@@ -673,7 +697,7 @@
 														<div class="prs_upcom_movie_img_btn_wrapper">
 															<ul>
 																<li>
-																	<a href="@Url.Content(mdl.DuongDanTrailer)" target="_blank">View Trailer</a>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
 																</li>
 																<li>
 																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
@@ -743,7 +767,7 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(24).DuongDanTrailer)" target="_blank">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 25.mp4)">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(24).MaPhim">View Detail</a>
@@ -778,7 +802,7 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(25).DuongDanTrailer)" target="_blank">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 26.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(25).MaPhim">View Detail</a>
@@ -817,7 +841,7 @@
 														<div class="prs_upcom_movie_img_btn_wrapper">
 															<ul>
 																<li>
-																	<a href="@Url.Content(mdl.DuongDanTrailer)" target="_blank">View Trailer</a>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
 																</li>
 																<li>
 																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
@@ -904,7 +928,8 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(0).DuongDanTrailer)" target="_blank">View Trailer</a>
+
+															<a onclick="showTrailer('/Template/Video/Trailer 1.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(0).MaPhim">View Detail</a>
@@ -939,7 +964,7 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(1).DuongDanTrailer)" target="_blank">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 2.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(1).MaPhim">View Detail</a>
@@ -978,7 +1003,7 @@
 														<div class="prs_upcom_movie_img_btn_wrapper">
 															<ul>
 																<li>
-																	<a href="@Url.Content(mdl.DuongDanTrailer)" target="_blank">View Trailer</a>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
 																</li>
 																<li>
 																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
@@ -1048,7 +1073,7 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(6).DuongDanTrailer)" target="_blank">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 7.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(6).MaPhim">View Detail</a>
@@ -1083,7 +1108,7 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(7).DuongDanTrailer)" target="_blank">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 8.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(7).MaPhim">View Detail</a>
@@ -1122,7 +1147,7 @@
 														<div class="prs_upcom_movie_img_btn_wrapper">
 															<ul>
 																<li>
-																	<a href="@Url.Content(mdl.DuongDanTrailer)" target="_blank">View Trailer</a>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
 																</li>
 																<li>
 																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
@@ -1192,7 +1217,7 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(12).DuongDanTrailer)" target="_blank">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 13.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(12).MaPhim">View Detail</a>
@@ -1227,7 +1252,7 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(13).DuongDanTrailer)" target="_blank">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 14.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(13).MaPhim">View Detail</a>
@@ -1266,7 +1291,7 @@
 														<div class="prs_upcom_movie_img_btn_wrapper">
 															<ul>
 																<li>
-																	<a href="@Url.Content(mdl.DuongDanTrailer)" target="_blank">View Trailer</a>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
 																</li>
 																<li>
 																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
@@ -1336,7 +1361,7 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(18).DuongDanTrailer)" target="_blank">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 19.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(18).MaPhim">View Detail</a>
@@ -1371,7 +1396,7 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(19).DuongDanTrailer)" target="_blank">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 20.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(19).MaPhim">View Detail</a>
@@ -1410,7 +1435,7 @@
 														<div class="prs_upcom_movie_img_btn_wrapper">
 															<ul>
 																<li>
-																	<a href="@Url.Content(mdl.DuongDanTrailer)" target="_blank">View Trailer</a>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
 																</li>
 																<li>
 																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
@@ -1480,7 +1505,7 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(24).DuongDanTrailer)" target="_blank">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 25.mp4)">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(24).MaPhim">View Detail</a>
@@ -1515,7 +1540,7 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a href="@Url.Content(Model.ElementAt(25).DuongDanTrailer)" target="_blank">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 26.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(25).MaPhim">View Detail</a>
@@ -1554,7 +1579,7 @@
 														<div class="prs_upcom_movie_img_btn_wrapper">
 															<ul>
 																<li>
-																	<a href="@Url.Content(mdl.DuongDanTrailer)" target="_blank">View Trailer</a>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
 																</li>
 																<li>
 																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
