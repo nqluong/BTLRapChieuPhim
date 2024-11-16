@@ -1,22 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< Updated upstream
-    "D:\\HocTap\\Web\\BaiTapLon\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj": {}
-  },
-  "projects": {
-    "D:\\HocTap\\Web\\BaiTapLon\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\HocTap\\Web\\BaiTapLon\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj",
-        "projectName": "BTLRapChieuPhim",
-        "projectPath": "D:\\HocTap\\Web\\BaiTapLon\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj",
-        "packagesPath": "C:\\Users\\chung\\.nuget\\packages\\",
-        "outputPath": "D:\\HocTap\\Web\\BaiTapLon\\BTLRapChieuPhim\\BTLRapChieuPhim\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\chung\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
     "C:\\Users\\AdMax\\Documents\\GitHub\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj": {}
   },
   "projects": {
@@ -31,7 +15,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AdMax\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Stashed changes
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -113,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
