@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using BTLRapChieuPhim.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-namespace BTLRapChieuPhim.Areas.Admin.Controllers
+namespace BTLRapChieuPhim.Areas.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -28,12 +28,12 @@ namespace BTLRapChieuPhim.Areas.Admin.Controllers
             var culture = System.Globalization.CultureInfo.InvariantCulture;
             if (!string.IsNullOrEmpty(fromDate) && DateTime.TryParseExact(fromDate, "yyyy/MM/dd", culture, System.Globalization.DateTimeStyles.None, out DateTime startDate))
             {
-                query = query.Where(x=> x.NgayChieu.HasValue && x.NgayChieu >= startDate);
+                query = query.Where(x => x.NgayChieu.HasValue && x.NgayChieu >= startDate);
             }
             if (!string.IsNullOrEmpty(toDate) && DateTime.TryParseExact(toDate, "yyyy/MM/dd", culture, System.Globalization.DateTimeStyles.None, out DateTime endDate))
             {
-                
-                query = query.Where(x =>x.NgayChieu.HasValue && x.NgayChieu < endDate);
+
+                query = query.Where(x => x.NgayChieu.HasValue && x.NgayChieu < endDate);
             }
             var groupedResult = query
                     .GroupBy(x => x.NgayChieu.HasValue ? x.NgayChieu.Value.Date : (DateTime?)null)
@@ -67,7 +67,7 @@ namespace BTLRapChieuPhim.Areas.Admin.Controllers
                         join phim in _context.Phims on lc.MaPhim equals phim.MaPhim
                         select new
                         {
-                            TenPhim = phim.TenPhim,
+                            phim.TenPhim,
                             TienVe = hd.TongTienVe,
                             TienDoAn = hd.TongTienDa,
                             TongHd = hd.TongTienVe + hd.TongTienDa

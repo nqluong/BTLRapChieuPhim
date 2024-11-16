@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.BaoCaoController",
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.BaoCaoController",
     "Method": "GetDoanhThuTheoNgay",
     "RelativePath": "api/BaoCao/ngay",
     "HttpMethod": "GET",
@@ -21,7 +21,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.BaoCaoController",
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.BaoCaoController",
     "Method": "GetDoanhThuTheoPhim",
     "RelativePath": "api/BaoCao/theo-phim",
     "HttpMethod": "GET",
@@ -31,7 +31,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.BaoCaoController",
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.BaoCaoController",
     "Method": "GetDoanhThuTheoPhongChieu",
     "RelativePath": "api/BaoCao/theo-phong-chieu",
     "HttpMethod": "GET",
@@ -41,7 +41,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.LichChieuController",
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.LichChieuController",
     "Method": "GetLichChieu",
     "RelativePath": "api/LichChieu",
     "HttpMethod": "GET",
@@ -62,7 +62,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.LichChieuController",
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.LichChieuController",
     "Method": "ThemLichChieu",
     "RelativePath": "api/LichChieu",
     "HttpMethod": "POST",
@@ -78,7 +78,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.LichChieuController",
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.LichChieuController",
     "Method": "UpdateLichChieu",
     "RelativePath": "api/LichChieu/{id}",
     "HttpMethod": "PUT",
@@ -99,7 +99,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.LichChieuController",
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.LichChieuController",
     "Method": "DeleteLichChieu",
     "RelativePath": "api/LichChieu/{id}",
     "HttpMethod": "DELETE",
@@ -115,7 +115,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.LichChieuController",
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.LichChieuController",
     "Method": "GetLichChieuByMa",
     "RelativePath": "api/LichChieu/{maLc}",
     "HttpMethod": "GET",
@@ -131,9 +131,108 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.PhimController",
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.PhimAPIController",
+    "Method": "GetAllPhim",
+    "RelativePath": "api/PhimAPI",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BTLRapChieuPhim.Areas.Admin.Models.PhimModels.PhimAPI, BTLRapChieuPhim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.PhimAPIController",
+    "Method": "ThemPhim",
+    "RelativePath": "api/PhimAPI",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phimadd",
+        "Type": "BTLRapChieuPhim.Areas.Admin.Models.PhimModels.PhimAPI",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.PhimAPIController",
     "Method": "GetPhim",
-    "RelativePath": "api/Phim",
+    "RelativePath": "api/PhimAPI/{maPhim}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPhim",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BTLRapChieuPhim.Areas.Admin.Models.PhimModels.PhimAPI, BTLRapChieuPhim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.PhimAPIController",
+    "Method": "UpdatePhim",
+    "RelativePath": "api/PhimAPI/{maPhim}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPhim",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "phimUpdated",
+        "Type": "BTLRapChieuPhim.Areas.Admin.Models.PhimModels.PhimAPI",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.PhimAPIController",
+    "Method": "DeletePhim",
+    "RelativePath": "api/PhimAPI/{maPhim}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPhim",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.PhimAPIController",
+    "Method": "GetPhim",
+    "RelativePath": "api/PhimAPI/phim",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -141,9 +240,108 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.PhongChieuController",
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.PhongChieuAPIController",
+    "Method": "GetAllPhongChieu",
+    "RelativePath": "api/PhongChieuAPI",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BTLRapChieuPhim.Areas.Admin.Models.PhongChieuModels.PhongChieuAPI, BTLRapChieuPhim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.PhongChieuAPIController",
+    "Method": "ThemPhongChieu",
+    "RelativePath": "api/PhongChieuAPI",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phongChieu",
+        "Type": "BTLRapChieuPhim.Models.PhongChieu",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.PhongChieuAPIController",
     "Method": "GetPhongChieu",
-    "RelativePath": "api/PhongChieu",
+    "RelativePath": "api/PhongChieuAPI/{maPc}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPc",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BTLRapChieuPhim.Areas.Admin.Models.PhongChieuModels.PhongChieuAPI, BTLRapChieuPhim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.PhongChieuAPIController",
+    "Method": "UpdatePhongChieu",
+    "RelativePath": "api/PhongChieuAPI/{maPc}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPc",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "phongChieuUpdated",
+        "Type": "BTLRapChieuPhim.Areas.Admin.Models.PhongChieuModels.PhongChieuAPI",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.PhongChieuAPIController",
+    "Method": "DeletePhongChieu",
+    "RelativePath": "api/PhongChieuAPI/{maPc}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPc",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.PhongChieuAPIController",
+    "Method": "GetPhongChieu",
+    "RelativePath": "api/PhongChieuAPI/phongchieu",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -151,7 +349,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.TheLoaiController",
+    "ContainingType": "BTLRapChieuPhim.Areas.API.Controllers.TheLoaiController",
     "Method": "GetTheLoai",
     "RelativePath": "api/TheLoai",
     "HttpMethod": "GET",

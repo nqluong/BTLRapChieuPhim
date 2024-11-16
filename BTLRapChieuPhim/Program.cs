@@ -1,5 +1,6 @@
-var builder = WebApplication.CreateBuilder(args);
+﻿var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddControllers();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -19,6 +20,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.MapControllers(); // Đây là bước quan trọng để routing cho API hoạt động
 
 app.MapControllerRoute(
     name: "default",
