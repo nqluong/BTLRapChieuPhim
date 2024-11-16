@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Các thư mục build
+=======
+﻿# Các thư mục build
+>>>>>>> origin/Toan
 bin/
 obj/
 
@@ -10,6 +14,10 @@ appsettings.*.json
 
 # Thư mục của Visual Studio
 .vs/
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/Toan
 
 # File môi trường và cấu hình nhạy cảm
 .env
@@ -24,4 +32,14 @@ artifacts/
 
 # Các file tạm thời khác
 *.tmp
+<<<<<<< HEAD
 *.bak
+=======
+*.bak
+=======
+obj/
+bin/
+appsettings.*.json
+.env
+>>>>>>> 3c1aa023bf27c696db788a2463d21820cf7e1c4c
+>>>>>>> origin/Toan

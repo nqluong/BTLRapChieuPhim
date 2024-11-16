@@ -1,0 +1,1629 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BTLRapChieuPhim.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BTLRapChieuPhim.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\css\\admin.css",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\css\\admin.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\css\\slimselect.css",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\css\\slimselect.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\icon\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\icon\\favicon-32x32.png"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\img\\angle-down.svg",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\img\\angle-down.svg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\img\\logo.svg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\img\\section\\section.jpg",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\img\\section\\section.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\img\\user.svg",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\img\\user.svg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\jquery\\jquery.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\jquery\\jquery.min.map",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\jquery\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\jquery\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\jquery\\jquery.slim.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\jquery\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\jquery\\jquery.slim.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\jquery\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\jquery\\jquery.slim.min.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\admin.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\admin.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\chart.js\\Chart.bundle.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\chart.js\\Chart.bundle.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\chart.js\\Chart.bundle.min.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\chart.js\\Chart.bundle.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\chart.js\\Chart.css",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\chart.js\\Chart.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\chart.js\\Chart.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\chart.js\\Chart.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\chart.js\\Chart.min.css",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\chart.js\\Chart.min.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\chart.js\\Chart.min.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\chart.js\\Chart.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\slimselect.min.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\slimselect.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\js\\smooth-scrollbar.js",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\js\\smooth-scrollbar.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\webfont\\fonts\\tabler-icons539a.eot",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\webfont\\fonts\\tabler-icons539a.eot"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\webfont\\fonts\\tabler-icons539a.ttf",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\webfont\\fonts\\tabler-icons539a.ttf"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\webfont\\fonts\\tabler-icons539a.woff2",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\webfont\\fonts\\tabler-icons539a.woff2"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\webfont\\fonts\\tabler-iconsd41d.eot",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\webfont\\fonts\\tabler-iconsd41d.eot"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\webfont\\fonts\\tabler-iconsd41d.woff",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\webfont\\fonts\\tabler-iconsd41d.woff"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\TemplateAdmin\\webfont\\tabler-icons.min.css",
+      "PackagePath": "staticwebassets\\TemplateAdmin\\webfont\\tabler-icons.min.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP1.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP10.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP10.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP11.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP11.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP12.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP12.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP13.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP13.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP14.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP14.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP15.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP15.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP16.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP16.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP17.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP17.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP18.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP18.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP19.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP19.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP2.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP20.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP20.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP3.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP4.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP5.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP6.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP7.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP7.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP8.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP8.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhimLayout\\AP9.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhimLayout\\AP9.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP1.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP10.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP10.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP11.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP11.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP12.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP12.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP13.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP13.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP14.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP14.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP15.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP15.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP16.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP16.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP17.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP17.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP18.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP18.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP19.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP19.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP2.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP20.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP20.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP3.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP4.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP5.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP6.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP7.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP7.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP8.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP8.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\AnhPhim\\AP9.jpg",
+      "PackagePath": "staticwebassets\\Template\\AnhPhim\\AP9.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 1.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 1.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 10.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 10.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 11.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 11.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 12.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 12.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 13.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 13.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 14.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 14.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 15.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 15.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 16.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 16.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 17.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 17.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 18.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 18.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 19.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 19.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 2.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 2.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 20.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 20.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 3.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 3.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 4.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 4.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 5.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 5.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 6.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 6.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 7.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 7.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 8.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 8.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\Video\\Trailer 9.mp4",
+      "PackagePath": "staticwebassets\\Template\\Video\\Trailer 9.mp4"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\animate.css",
+      "PackagePath": "staticwebassets\\Template\\css\\animate.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\Template\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\dl-menu.css",
+      "PackagePath": "staticwebassets\\Template\\css\\dl-menu.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\Template\\css\\flaticon.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\Template\\css\\font-awesome.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\fonts.css",
+      "PackagePath": "staticwebassets\\Template\\css\\fonts.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\Template\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\Template\\css\\nice-select.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\Template\\css\\owl.carousel.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\Template\\css\\owl.theme.default.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\Template\\css\\responsive.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\responsive2.css",
+      "PackagePath": "staticwebassets\\Template\\css\\responsive2.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\responsive3.css",
+      "PackagePath": "staticwebassets\\Template\\css\\responsive3.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\responsive4.css",
+      "PackagePath": "staticwebassets\\Template\\css\\responsive4.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\seat.css",
+      "PackagePath": "staticwebassets\\Template\\css\\seat.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\slick-theme.css",
+      "PackagePath": "staticwebassets\\Template\\css\\slick-theme.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\slick.css",
+      "PackagePath": "staticwebassets\\Template\\css\\slick.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\style.css",
+      "PackagePath": "staticwebassets\\Template\\css\\style.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\style2.css",
+      "PackagePath": "staticwebassets\\Template\\css\\style2.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\style3.css",
+      "PackagePath": "staticwebassets\\Template\\css\\style3.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\style4.css",
+      "PackagePath": "staticwebassets\\Template\\css\\style4.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\css\\venobox.css",
+      "PackagePath": "staticwebassets\\Template\\css\\venobox.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\fonts\\.vs\\VSWorkspaceState.json",
+      "PackagePath": "staticwebassets\\Template\\fonts\\.vs\\VSWorkspaceState.json"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\fonts\\.vs\\fonts\\v17\\DocumentLayout.json",
+      "PackagePath": "staticwebassets\\Template\\fonts\\.vs\\fonts\\v17\\DocumentLayout.json"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\fonts\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\Template\\fonts\\Flaticon.eot"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\fonts\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\Template\\fonts\\Flaticon.ttf"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\Template\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\fonts\\Flaticond41d.eot",
+      "PackagePath": "staticwebassets\\Template\\fonts\\Flaticond41d.eot"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\fonts\\fontawesome-webfont3e6e.eot",
+      "PackagePath": "staticwebassets\\Template\\fonts\\fontawesome-webfont3e6e.eot"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\fonts\\fontawesome-webfont3e6e.svg",
+      "PackagePath": "staticwebassets\\Template\\fonts\\fontawesome-webfont3e6e.svg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\fonts\\fontawesome-webfont3e6e.ttf",
+      "PackagePath": "staticwebassets\\Template\\fonts\\fontawesome-webfont3e6e.ttf"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\fonts\\fontawesome-webfont3e6e.woff",
+      "PackagePath": "staticwebassets\\Template\\fonts\\fontawesome-webfont3e6e.woff"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\fonts\\fontawesome-webfont3e6e.woff2",
+      "PackagePath": "staticwebassets\\Template\\fonts\\fontawesome-webfont3e6e.woff2"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\fonts\\fontawesome-webfontd41d.eot",
+      "PackagePath": "staticwebassets\\Template\\fonts\\fontawesome-webfontd41d.eot"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\Template\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\Template\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\Template\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\Template\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\fonts\\glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets\\Template\\fonts\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\fonts\\glyphicons-halflings-regulard41d.eot",
+      "PackagePath": "staticwebassets\\Template\\fonts\\glyphicons-halflings-regulard41d.eot"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\about\\ap1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\about\\ap1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\about\\ap2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\about\\ap2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\about\\banner.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\about\\banner.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\about\\counter_bg.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\about\\counter_bg.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\about\\tm1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\about\\tm1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\about\\tm2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\about\\tm2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\about\\tm3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\about\\tm3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\about\\tm4.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\about\\tm4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\about\\tm5.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\about\\tm5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\about\\tm6.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\about\\tm6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\about\\tm7.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\about\\tm7.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\bill.png",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\bill.png"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\blog_category\\b1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\blog_category\\b1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\blog_category\\b2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\blog_category\\b2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\blog_category\\b3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\blog_category\\b3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\blog_category\\bs1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\blog_category\\bs1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\blog_category\\bs2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\blog_category\\bs2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\blog_category\\bs3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\blog_category\\bs3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\blog_category\\bs4.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\blog_category\\bs4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\blog_category\\bs5.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\blog_category\\bs5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\blog_category\\comm_img1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\blog_category\\comm_img1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\blog_category\\comm_img2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\blog_category\\comm_img2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\blog_category\\comm_img3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\blog_category\\comm_img3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\blog_category\\n1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\blog_category\\n1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\blog_category\\n2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\blog_category\\n2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\blog_category\\n3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\blog_category\\n3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\blog_category\\side_img1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\blog_category\\side_img1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\c1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\c1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\c2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\c2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\c3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\c3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\c4.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\c4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\c5.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\c5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\c6.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\c6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\c7.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\c7.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\c8.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\c8.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\cc1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\cc1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\event\\e1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\event\\e1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\event\\e2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\event\\e2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\event\\e3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\event\\e3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\event\\e4.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\event\\e4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\event\\es1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\event\\es1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\event\\event_bg.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\event\\event_bg.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\event\\map_img.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\event\\map_img.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\event\\slider_img.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\event\\slider_img.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\f1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\f1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\f2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\f2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\fast-food.png",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\fast-food.png"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\ft1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\ft1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\ft2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\ft2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\ft3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\ft3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\gallery\\g1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\gallery\\g1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\gallery\\g2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\gallery\\g2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\gallery\\g3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\gallery\\g3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\gallery\\g4.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\gallery\\g4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\gallery\\g5.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\gallery\\g5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\gallery\\g6.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\gallery\\g6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\gallery\\g7.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\gallery\\g7.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\gallery\\g8.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\gallery\\g8.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\gallery\\g9.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\gallery\\g9.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\md1.png",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\md1.png"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\md2.png",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\md2.png"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\md3.png",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\md3.png"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_category\\event_img.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_category\\event_img.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_category\\slider_img1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_category\\slider_img1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_category\\slider_img2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_category\\slider_img2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_category\\slider_img3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_category\\slider_img3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_category\\up1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_category\\up1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_category\\up2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_category\\up2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_category\\up3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_category\\up3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_category\\up4.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_category\\up4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_category\\up5.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_category\\up5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_category\\up6.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_category\\up6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_category\\up7.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_category\\up7.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_category\\up8.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_category\\up8.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_single\\c1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_single\\c1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_single\\c2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_single\\c2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_single\\c3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_single\\c3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_single\\c4.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_single\\c4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_single\\c5.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_single\\c5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_single\\c6.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_single\\c6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_single\\movie_title.png",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_single\\movie_title.png"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_single\\sc1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_single\\sc1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_single\\sc2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_single\\sc2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_single\\sc3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_single\\sc3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_single\\sc4.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_single\\sc4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_single\\sc5.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_single\\sc5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_single\\sc6.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_single\\sc6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_single\\v1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_single\\v1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_single\\vid_bg.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_single\\vid_bg.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\movie_single\\vid_slider_img.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\movie_single\\vid_slider_img.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\nl1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\nl1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\nl2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\nl2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\nl3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\nl3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\p1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\p1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\p2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\p2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\p3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\p3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\p4.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\p4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\p5.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\p5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\p6.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\p6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\pur2.png",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\pur2.png"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\qr.png",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\qr.png"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\screen.png",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\screen.png"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\tcc1.png",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\tcc1.png"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\theater_bg.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\theater_bg.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\ticket.png",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\ticket.png"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\up1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\up1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\up2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\up2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\up3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\up3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\up4.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\up4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\up5.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\up5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\up6.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\up6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\up7.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\up7.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\up8.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\up8.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\video_bg.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\video_bg.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\vp1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\vp1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\vp2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\vp2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\vp3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\vp3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\vp4.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\vp4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\vp5.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\vp5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\vp6.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\vp6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\vp7.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\vp7.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\vp8.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\vp8.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\ws1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\ws1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\ws2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\ws2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\ws3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\ws3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\ws4.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\ws4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\ws5.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\ws5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\ws6.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\ws6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\content\\ws7.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\content\\ws7.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\header\\01.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\header\\01.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\header\\02.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\header\\02.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\header\\03.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\header\\03.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\header\\bars.png",
+      "PackagePath": "staticwebassets\\Template\\images\\header\\bars.png"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\header\\favicon.ico",
+      "PackagePath": "staticwebassets\\Template\\images\\header\\favicon.ico"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\header\\horoscope.gif",
+      "PackagePath": "staticwebassets\\Template\\images\\header\\horoscope.gif"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\header\\logo.png",
+      "PackagePath": "staticwebassets\\Template\\images\\header\\logo.png"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\header\\main_slider_bg_img.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\header\\main_slider_bg_img.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\header\\toggle-nav-bg-2.png",
+      "PackagePath": "staticwebassets\\Template\\images\\header\\toggle-nav-bg-2.png"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_III\\01.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_III\\01.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_III\\02.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_III\\02.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_III\\03.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_III\\03.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_III\\add.png",
+      "PackagePath": "staticwebassets\\Template\\images\\index_III\\add.png"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_III\\icon.png",
+      "PackagePath": "staticwebassets\\Template\\images\\index_III\\icon.png"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_III\\main_slider_bg_img.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_III\\main_slider_bg_img.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_II\\bot-1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_II\\bot-1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_II\\bot-2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_II\\bot-2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_II\\bot-3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_II\\bot-3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_II\\bot-4.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_II\\bot-4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_II\\bot-5.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_II\\bot-5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_II\\bot-6.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_II\\bot-6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_II\\top-1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_II\\top-1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_II\\top-2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_II\\top-2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_II\\top-3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_II\\top-3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_II\\top-4.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_II\\top-4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_II\\top-5.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_II\\top-5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_II\\top-6.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_II\\top-6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_II\\upcoming_heading.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_II\\upcoming_heading.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_II\\vp7.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_II\\vp7.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_iv\\s1.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_iv\\s1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_iv\\s2.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_iv\\s2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\images\\index_iv\\s3.jpg",
+      "PackagePath": "staticwebassets\\Template\\images\\index_iv\\s3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\Template\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\contact_form.js",
+      "PackagePath": "staticwebassets\\Template\\js\\contact_form.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\custom.js",
+      "PackagePath": "staticwebassets\\Template\\js\\custom.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\custom2.js",
+      "PackagePath": "staticwebassets\\Template\\js\\custom2.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\custom3.js",
+      "PackagePath": "staticwebassets\\Template\\js\\custom3.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\custom4.js",
+      "PackagePath": "staticwebassets\\Template\\js\\custom4.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\jquery.bxslider.min.js",
+      "PackagePath": "staticwebassets\\Template\\js\\jquery.bxslider.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\jquery.countTo.js",
+      "PackagePath": "staticwebassets\\Template\\js\\jquery.countTo.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\jquery.dlmenu.js",
+      "PackagePath": "staticwebassets\\Template\\js\\jquery.dlmenu.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\jquery.inview.min.js",
+      "PackagePath": "staticwebassets\\Template\\js\\jquery.inview.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\jquery.magnific-popup.js",
+      "PackagePath": "staticwebassets\\Template\\js\\jquery.magnific-popup.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\Template\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\jquery.shuffle.min.js",
+      "PackagePath": "staticwebassets\\Template\\js\\jquery.shuffle.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\jquery.sticky.js",
+      "PackagePath": "staticwebassets\\Template\\js\\jquery.sticky.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\jquery_min.js",
+      "PackagePath": "staticwebassets\\Template\\js\\jquery_min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\modernizr.js",
+      "PackagePath": "staticwebassets\\Template\\js\\modernizr.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\Template\\js\\owl.carousel.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\fonts\\revicons\\revicons90c6.eot",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\fonts\\revicons\\revicons90c6.eot"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\fonts\\revicons\\revicons90c6.svg",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\fonts\\revicons\\revicons90c6.svg"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\fonts\\revicons\\revicons90c6.ttf",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\fonts\\revicons\\revicons90c6.ttf"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\fonts\\revicons\\revicons90c6.woff",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\fonts\\revicons\\revicons90c6.woff"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\rs_slider\\closedhand.cur",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\rs_slider\\closedhand.cur"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\rs_slider\\jquery.themepunch.revolution.min.js",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\rs_slider\\jquery.themepunch.revolution.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\rs_slider\\jquery.themepunch.tools.min.js",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\rs_slider\\jquery.themepunch.tools.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\rs_slider\\layers.css",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\rs_slider\\layers.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\rs_slider\\navigation.css",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\rs_slider\\navigation.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\rs_slider\\openhand.cur",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\rs_slider\\openhand.cur"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\rs_slider\\revolution.addon.snow.min.js",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\rs_slider\\revolution.addon.snow.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\rs_slider\\revolution.extension.actions.min.js",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\rs_slider\\revolution.extension.actions.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\rs_slider\\revolution.extension.carousel.min.js",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\rs_slider\\revolution.extension.carousel.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\rs_slider\\revolution.extension.kenburn.min.js",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\rs_slider\\revolution.extension.kenburn.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\rs_slider\\revolution.extension.layeranimation.min.js",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\rs_slider\\revolution.extension.layeranimation.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\rs_slider\\revolution.extension.migration.min.js",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\rs_slider\\revolution.extension.migration.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\rs_slider\\revolution.extension.navigation.min.js",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\rs_slider\\revolution.extension.navigation.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\rs_slider\\revolution.extension.parallax.min.js",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\rs_slider\\revolution.extension.parallax.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\rs_slider\\revolution.extension.slideanims.min.js",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\rs_slider\\revolution.extension.slideanims.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\rs_slider\\revolution.extension.video.min.js",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\rs_slider\\revolution.extension.video.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\plugin\\rs_slider\\settings.css",
+      "PackagePath": "staticwebassets\\Template\\js\\plugin\\rs_slider\\settings.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\slick.js",
+      "PackagePath": "staticwebassets\\Template\\js\\slick.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\smothscroll_part1.js",
+      "PackagePath": "staticwebassets\\Template\\js\\smothscroll_part1.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\smothscroll_part2.js",
+      "PackagePath": "staticwebassets\\Template\\js\\smothscroll_part2.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\Template\\js\\venobox.min.js",
+      "PackagePath": "staticwebassets\\Template\\js\\venobox.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\ProjectLop\\LTWeb\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BTLRapChieuPhim.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BTLRapChieuPhim.props",
+      "PackagePath": "build\\BTLRapChieuPhim.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BTLRapChieuPhim.props",
+      "PackagePath": "buildMultiTargeting\\BTLRapChieuPhim.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BTLRapChieuPhim.props",
+      "PackagePath": "buildTransitive\\BTLRapChieuPhim.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
