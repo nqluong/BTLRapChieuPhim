@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 USE [QuanLyRapPhim]
 GO
 /****** Object:  Table [dbo].[DanhGia]    Script Date: 10/24/2024 6:18:25 PM ******/
@@ -8,6 +9,11 @@ USE [QuanLyRapPhim]
 GO
 /****** Object:  Table [dbo].[DanhGia]    Script Date: 10/22/2024 12:07:49 AM ******/
 >>>>>>> origin/Toan
+=======
+USE [QuanLyRapPhim]
+GO
+/****** Object:  Table [dbo].[DanhGia]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chinh
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -26,10 +32,14 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[DoAn]    Script Date: 10/24/2024 6:18:25 PM ******/
 =======
 /****** Object:  Table [dbo].[DoAn]    Script Date: 10/22/2024 12:07:49 AM ******/
 >>>>>>> origin/Toan
+=======
+/****** Object:  Table [dbo].[DoAn]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chinh
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -48,10 +58,14 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[GheXemPhim]    Script Date: 10/24/2024 6:18:25 PM ******/
 =======
 /****** Object:  Table [dbo].[GheXemPhim]    Script Date: 10/22/2024 12:07:49 AM ******/
 >>>>>>> origin/Toan
+=======
+/****** Object:  Table [dbo].[GheXemPhim]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chinh
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -67,10 +81,14 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[HinhAnhTrailer]    Script Date: 10/24/2024 6:18:25 PM ******/
 =======
 /****** Object:  Table [dbo].[HinhAnhTrailer]    Script Date: 10/22/2024 12:07:49 AM ******/
 >>>>>>> origin/Toan
+=======
+/****** Object:  Table [dbo].[HinhAnhTrailer]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chinh
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -80,10 +98,15 @@ CREATE TABLE [dbo].[HinhAnhTrailer](
 	[DuongDanAnh] [nvarchar](255) NULL,
 	[DuongDanTrailer] [nvarchar](255) NULL,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	[Loai] [nvarchar](50) NULL,
 	[MoTa] [nvarchar](255) NULL,
 =======
 >>>>>>> origin/Toan
+=======
+	[Loai] [nvarchar](50) NULL,
+	[MoTa] [nvarchar](255) NULL,
+>>>>>>> origin/chinh
 	[MaPhim] [int] NULL,
 PRIMARY KEY CLUSTERED 
 (
@@ -92,10 +115,14 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[HoaDon]    Script Date: 10/24/2024 6:18:25 PM ******/
 =======
 /****** Object:  Table [dbo].[HoaDon]    Script Date: 10/22/2024 12:07:49 AM ******/
 >>>>>>> origin/Toan
+=======
+/****** Object:  Table [dbo].[HoaDon]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chinh
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -116,10 +143,14 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[KhachHang]    Script Date: 10/24/2024 6:18:25 PM ******/
 =======
 /****** Object:  Table [dbo].[KhachHang]    Script Date: 10/22/2024 12:07:49 AM ******/
 >>>>>>> origin/Toan
+=======
+/****** Object:  Table [dbo].[KhachHang]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chinh
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -139,10 +170,14 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[KhuyenMai]    Script Date: 10/24/2024 6:18:25 PM ******/
 =======
 /****** Object:  Table [dbo].[KhuyenMai]    Script Date: 10/22/2024 12:07:49 AM ******/
 >>>>>>> origin/Toan
+=======
+/****** Object:  Table [dbo].[KhuyenMai]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chinh
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -162,10 +197,14 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[LichChieu]    Script Date: 10/24/2024 6:18:25 PM ******/
 =======
 /****** Object:  Table [dbo].[LichChieu]    Script Date: 10/22/2024 12:07:49 AM ******/
 >>>>>>> origin/Toan
+=======
+/****** Object:  Table [dbo].[LichChieu]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chinh
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -176,9 +215,12 @@ CREATE TABLE [dbo].[LichChieu](
 	[MaQL] [int] NULL,
 	[MaPC] [int] NULL,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	[MaPhim] [int] NULL,
 =======
 >>>>>>> origin/Toan
+=======
+>>>>>>> origin/chinh
 PRIMARY KEY CLUSTERED 
 (
 	[MaLC] ASC
@@ -186,10 +228,14 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[Phim]    Script Date: 10/24/2024 6:18:25 PM ******/
 =======
 /****** Object:  Table [dbo].[Phim]    Script Date: 10/22/2024 12:07:49 AM ******/
 >>>>>>> origin/Toan
+=======
+/****** Object:  Table [dbo].[Phim]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chinh
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -210,10 +256,14 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[PhongChieu]    Script Date: 10/24/2024 6:18:25 PM ******/
 =======
 /****** Object:  Table [dbo].[PhongChieu]    Script Date: 10/22/2024 12:07:49 AM ******/
 >>>>>>> origin/Toan
+=======
+/****** Object:  Table [dbo].[PhongChieu]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chinh
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -231,10 +281,14 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[QuanLy]    Script Date: 10/24/2024 6:18:25 PM ******/
 =======
 /****** Object:  Table [dbo].[QuanLy]    Script Date: 10/22/2024 12:07:49 AM ******/
 >>>>>>> origin/Toan
+=======
+/****** Object:  Table [dbo].[QuanLy]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chinh
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -253,10 +307,14 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[RapPhim]    Script Date: 10/24/2024 6:18:25 PM ******/
 =======
 /****** Object:  Table [dbo].[RapPhim]    Script Date: 10/22/2024 12:07:49 AM ******/
 >>>>>>> origin/Toan
+=======
+/****** Object:  Table [dbo].[RapPhim]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chinh
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -274,10 +332,14 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[TaiKhoan]    Script Date: 10/24/2024 6:18:25 PM ******/
 =======
 /****** Object:  Table [dbo].[TaiKhoan]    Script Date: 10/22/2024 12:07:49 AM ******/
 >>>>>>> origin/Toan
+=======
+/****** Object:  Table [dbo].[TaiKhoan]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chinh
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -295,10 +357,14 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[ThanhToan]    Script Date: 10/24/2024 6:18:25 PM ******/
 =======
 /****** Object:  Table [dbo].[ThanhToan]    Script Date: 10/22/2024 12:07:49 AM ******/
 >>>>>>> origin/Toan
+=======
+/****** Object:  Table [dbo].[ThanhToan]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chinh
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -316,10 +382,14 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[TheLoai]    Script Date: 10/24/2024 6:18:25 PM ******/
 =======
 /****** Object:  Table [dbo].[TheLoai]    Script Date: 10/22/2024 12:07:49 AM ******/
 >>>>>>> origin/Toan
+=======
+/****** Object:  Table [dbo].[TheLoai]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chinh
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -335,10 +405,14 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[VeXemPhim]    Script Date: 10/24/2024 6:18:25 PM ******/
 =======
 /****** Object:  Table [dbo].[VeXemPhim]    Script Date: 10/22/2024 12:07:49 AM ******/
 >>>>>>> origin/Toan
+=======
+/****** Object:  Table [dbo].[VeXemPhim]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chinh
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -561,6 +635,9 @@ GO
 INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [TrangThai]) VALUES (50, N'Thường', N'Còn trống')
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/chinh
 INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (1, N'https://upload.wikimedia.org/wikipedia/vi/thumb/1/11/Inception_poster_1.jpg/220px-Inception_poster_1.jpg', N'https://www.youtube.com/watch?v=YoHD9XEInc0', N'Khoa học viễn tưởng', N'Phim khoa học viễn tưởng với các cảnh hành động đỉnh cao.', 1)
 GO
 INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (2, N'https://upload.wikimedia.org/wikipedia/vi/thumb/c/cc/Poster_phim_Parasite_2019.jpg/220px-Poster_phim_Parasite_2019.jpg', N'https://www.youtube.com/watch?v=5xH0HfJHsaY', N'Tâm lý', N'Phim tâm lý xã hội về chênh lệch giàu nghèo.', 2)
@@ -604,6 +681,7 @@ GO
 INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (21, N'https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Vengeance_%282022_film%29.jpg/220px-Vengeance_%282022_film%29.jpg', N'https://www.youtube.com/watch?v=1GT1jFsNnPw', N'Hành động', N'Phim hành động về cuộc trả thù của một người cha.', 21)
 GO
 INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (22, N'https://image.sggp.org.vn/w1000/Uploaded/2024/chuabhu/2023_11_30/ngay-xua-co-1-chuyen-tinh-1-1-6.jpg', N'https://www.youtube.com/watch?v=dQw4w9WgXcQ', N'Tình cảm', N'Câu chuyện tình yêu cảm động giữa hai người trẻ.', 22)
+<<<<<<< HEAD
 =======
 INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (1, N'AP1.jpg', N'Trailer 1.mp4', 1)
 GO
@@ -645,6 +723,8 @@ INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhi
 GO
 INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (20, N'AP20.jpg', N'Trailer 20.mp4', 20)
 >>>>>>> origin/Toan
+=======
+>>>>>>> origin/chinh
 GO
 INSERT [dbo].[HoaDon] ([MaHD], [SoLuongVe], [SoLuongDA], [TongTienVe], [TongTienDA], [TongTienHD], [MaDA], [MaKH]) VALUES (1, 2, 1, CAST(200000.00 AS Decimal(18, 2)), CAST(50000.00 AS Decimal(18, 2)), CAST(250000.00 AS Decimal(18, 2)), 1, 5)
 GO
@@ -708,6 +788,7 @@ INSERT [dbo].[KhuyenMai] ([MaKM], [TenKM], [DieuKienKM], [HanKM], [MaPhim], [MaQ
 GO
 INSERT [dbo].[KhuyenMai] ([MaKM], [TenKM], [DieuKienKM], [HanKM], [MaPhim], [MaQL], [PhanTramKM]) VALUES (6, N'Khuyến mãi sinh nhật', N'Giảm giá 50% cho người có sinh nhật trong tháng', CAST(N'2024-12-31' AS Date), 9, 5, CAST(50.00 AS Decimal(5, 2)))
 GO
+<<<<<<< HEAD
 <<<<<<< HEAD
 INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (1, CAST(N'2024-10-31T19:00:00.000' AS DateTime), 1, 1, 1)
 GO
@@ -889,6 +970,8 @@ INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VAL
 GO
 INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC], [MaPhim]) VALUES (90, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 30, 27)
 =======
+=======
+>>>>>>> origin/chinh
 INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (1, CAST(N'2024-10-31T19:00:00.000' AS DateTime), 1, 1)
 GO
 INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (2, CAST(N'2024-10-31T20:30:00.000' AS DateTime), 1, 1)
@@ -1068,7 +1151,10 @@ GO
 INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (89, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 30)
 GO
 INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (90, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 30)
+<<<<<<< HEAD
 >>>>>>> origin/Toan
+=======
+>>>>>>> origin/chinh
 GO
 INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (1, N'Inception', 148, N'Christopher Nolan', 13, N'Mỹ', N'Phim khoa học viễn tưởng với các cảnh hành động đỉnh cao.', 1)
 GO
@@ -1097,6 +1183,9 @@ GO
 INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (13, N'Tôi Thấy Hoa Vàng Trên Cỏ Xanh', 102, N'Victor Vũ', 13, N'Việt Nam', N'Phim tâm lý tình cảm về tuổi thơ và sự trưởng thành.', 3)
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/chinh
 INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (14, N'My Neighbor Totoro', 86, N'Hayao Miyazaki', 12, N'Nhật Bản', N'Phim hoạt hình với câu chuyện cảm động về tình bạn và gia đình.', 5)
 GO
 INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (15, N'Slumdog Millionaire', 120, N'Danny Boyle', 13, N'Anh', N'Phim về hành trình vượt khó và tham gia gameshow của một cậu bé Ấn Độ.', 13)
@@ -1130,6 +1219,7 @@ GO
 INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (29, N'The Battle of Algiers', 121, N'Gillo Pontecorvo', 16, N'Ý', N'Tái hiện cuộc chiến giành độc lập của Algeria khỏi thực dân Pháp.', 10)
 GO
 INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (30, N'Sandy Lives', 95, N'Phan Đăng Di', 16, N'Việt Nam', N'Phim nghệ thuật về cuộc sống và những biến cố của một gia đình trong chiến tranh.', 3)
+<<<<<<< HEAD
 =======
 INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (14, N'Ròm', 79, N'Tran Thanh Huy', 16, N'Việt Nam', N'Câu chuyện về một cậu bé bán vé số và cuộc sống nghèo khó nơi đô thị.', 3);
 GO
@@ -1145,6 +1235,8 @@ INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [Nuo
 GO
 INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (20, N'Em và Trịnh', 136, N'Phan Gia Nhật Linh', 13, N'Việt Nam', N'Tái hiện cuộc đời và tình yêu của cố nhạc sĩ Trịnh Công Sơn.', 13);
 >>>>>>> origin/Toan
+=======
+>>>>>>> origin/chinh
 GO
 INSERT [dbo].[PhongChieu] ([MaPC], [TenPC], [SucChua], [MaQL], [MaRP]) VALUES (1, N'Phòng 1', 100, 1, 1)
 GO
@@ -1393,6 +1485,7 @@ ALTER TABLE [dbo].[LichChieu]  WITH CHECK ADD FOREIGN KEY([MaQL])
 REFERENCES [dbo].[QuanLy] ([MaQL])
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
 ALTER TABLE [dbo].[LichChieu]  WITH CHECK ADD  CONSTRAINT [FK_LichChieu_Phim] FOREIGN KEY([MaPhim])
 REFERENCES [dbo].[Phim] ([MaPhim])
 GO
@@ -1400,6 +1493,8 @@ ALTER TABLE [dbo].[LichChieu] CHECK CONSTRAINT [FK_LichChieu_Phim]
 GO
 =======
 >>>>>>> origin/Toan
+=======
+>>>>>>> origin/chinh
 ALTER TABLE [dbo].[Phim]  WITH CHECK ADD FOREIGN KEY([MaTL])
 REFERENCES [dbo].[TheLoai] ([MaTL])
 GO
@@ -1422,11 +1517,17 @@ ALTER TABLE [dbo].[VeXemPhim]  WITH CHECK ADD FOREIGN KEY([MaLC])
 REFERENCES [dbo].[LichChieu] ([MaLC])
 GO
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ALTER TABLE [dbo].[VeXemPhim]  WITH CHECK ADD FOREIGN KEY([MaPhim])
 REFERENCES [dbo].[Phim] ([MaPhim])
 GO
 >>>>>>> origin/Toan
+=======
+ALTER TABLE [dbo].[VeXemPhim]  WITH CHECK ADD FOREIGN KEY([MaPhim])
+REFERENCES [dbo].[Phim] ([MaPhim])
+GO
+>>>>>>> origin/chinh
 ALTER TABLE [dbo].[VeXemPhim]  WITH CHECK ADD  CONSTRAINT [FK_VeXemPhim_GheXemPhim] FOREIGN KEY([MaGXP])
 REFERENCES [dbo].[GheXemPhim] ([MaGXP])
 GO
