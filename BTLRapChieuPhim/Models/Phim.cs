@@ -27,8 +27,6 @@ public partial class Phim
 
     public virtual ICollection<KhuyenMai> KhuyenMais { get; set; } = new List<KhuyenMai>();
 
-    public virtual ICollection<LichChieu> LichChieus { get; set; } = new List<LichChieu>();
-
     public virtual TheLoai MaTlNavigation { get; set; } = null!;
 
     public virtual ICollection<VeXemPhim> VeXemPhims { get; set; } = new List<VeXemPhim>();

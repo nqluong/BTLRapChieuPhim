@@ -1289,6 +1289,14 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\HocTap\\Web\\BaiTapLon\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\uploads\\466003525_27550745314571773_5893714876715767871_n.mp4",
+      "PackagePath": "staticwebassets\\uploads\\466003525_27550745314571773_5893714876715767871_n.mp4"
+    },
+    {
+      "Id": "D:\\HocTap\\Web\\BaiTapLon\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\uploads\\images-removebg-preview.png",
+      "PackagePath": "staticwebassets\\uploads\\images-removebg-preview.png"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BTLRapChieuPhim.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

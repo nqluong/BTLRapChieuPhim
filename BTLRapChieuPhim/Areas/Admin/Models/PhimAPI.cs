@@ -2,6 +2,7 @@
 {
     public class PhimAPI
     {
+
         public int MaPhim { get; set; }
 
         public string? TenPhim { get; set; }
@@ -19,5 +20,11 @@
         public int MaTl { get; set; }
 
         public string? TenTheLoai { get; set; }
+
+		public string? DuongDanAnh { get; set; }
+
+		public string? DuongDanTrailer { get; set; }
+
+		public int MaHat { get; set; }
     }
 }

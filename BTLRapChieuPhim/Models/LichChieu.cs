@@ -13,11 +13,7 @@ public partial class LichChieu
 
     public int? MaPc { get; set; }
 
-    public int? MaPhim { get; set; }
-
     public virtual PhongChieu? MaPcNavigation { get; set; }
-
-    public virtual Phim? MaPhimNavigation { get; set; }
 
     public virtual QuanLy? MaQlNavigation { get; set; }
 

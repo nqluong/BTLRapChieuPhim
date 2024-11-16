@@ -5,39 +5,145 @@
 
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
-<h2>Cập Nhật Phim</h2>
+<!-- Modal -->
+<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="messageModalLabel">Thông Báo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="messageContent">
+                <!-- Nội dung thông báo sẽ hiển thị ở đây -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-<form id="editPhimForm">
-    <input type="hidden" id="maPhim" name="maPhim" />
 
-    <label for="tenPhim">Tên Phim:</label>
-    <input type="text" id="tenPhim" name="tenPhim" required />
 
-    <label for="thoiLuong">Thời Lượng (phút):</label>
-    <input type="number" id="thoiLuong" name="thoiLuong" required />
+<div id="editPhimForm" class="container-fluid">
+    <div class="row">
+        <!-- main title -->
+        <div class="col-12">
+            <div class="main__title">
+                <h2>Cập nhật phim</h2>
+            </div>
+        </div>
+        <!-- end main title -->
+        <!-- form -->
+        <div class="col-12">
+            <form action="#" class="sign__form sign__form--add">
+                <div class="row">
+                    <div class="col-12 col-xl-7">
+                        <div class="row">
 
-    <label for="daoDien">Đạo Diễn:</label>
-    <input type="text" id="daoDien" name="daoDien" required />
+                            <div class="col-12">
+                                <div class="sign__group">
+                                    <label class="sign__label" for="sitetitle">Tên phim</label>
+                                    <input id="tenPhim" type="text" class="sign__input" placeholder="Tên phim">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="sign__group">
+                                    <input id="maPhim" type="hidden" class="sign__input" placeholder="Mã phim">
+                                </div>
+                            </div>
 
-    <label for="doTuoi">Độ Tuổi:</label>
-    <input type="number" id="doTuoi" name="doTuoi" required />
+                            <div class="col-12">
+                                <div class="sign__group">
+                                    <label class="sign__label" for="sitetitle">Mô tả</label>
+                                    <textarea id="moTa" name="moTa" class="sign__textarea" placeholder="Mô tả"></textarea>
+                                </div>
+                            </div>
 
-    <label for="nuocSx">Nước Sản Xuất:</label>
-    <input type="text" id="nuocSx" name="nuocSx" required />
+                            <div class="col-12">
+                                <div class="sign__group">
+                                    <input id="mahat" type="hidden" class="sign__input" placeholder="Mã hình ảnh trailer">
+                                </div>
+                            </div>
 
-    <label for="moTa">Mô Tả:</label>
-    <textarea id="moTa" name="moTa" required></textarea>
+                            <div class="col-12 col-md-6">
+                                <div class="sign__group">
+                                    <label class="sign__label" for="sitetitle">Đường dẫn ảnh</label>
+                                    <div class="sign__gallery">
+                                        <label id="gallery1" for="sign__gallery-upload">Đường dẫn ảnh</label>
+                                        <input data-name="#gallery1" id="sign__gallery-upload" name="gallery" class="sign__gallery-upload" type="file" accept=".png, .jpg, .jpeg" multiple="">
+                                    </div>
+                                </div>
+                            </div>
 
-    <label for="maTl">Mã Thể Loại:</label>
-    <input type="number" id="maTl" name="maTl" required />
+                        </div>
+                    </div>
 
-    <label for="tenTheLoai">Tên Thể Loại:</label>
-    <input type="text" id="tenTheLoai" name="tenTheLoai" required />
+                    <div class="col-12 col-xl-5">
+                        <div class="row">
 
-    <button type="submit">Cập Nhật</button>
-</form>
+                            <div class="col-12 col-md-6">
+                                <div class="sign__group">
+                                    <label class="sign__label" for="sitetitle">Thời lượng</label>
+                                    <input id="thoiLuong" type="text" class="sign__input" placeholder="Thời lượng">
+                                </div>
+                            </div>
 
-<div id="message" style="margin-top: 20px; color: green;"></div>
+                            <div class="col-12 col-md-6">
+                                <div class="sign__group">
+                                    <label class="sign__label" for="sitetitle">Đạo diễn</label>
+                                    <input id="daoDien" type="text" class="sign__input" placeholder="Đạo diễn">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="sign__group">
+                                    <label class="sign__label" for="sitetitle">Độ tuổi</label>
+                                    <input id="doTuoi" type="text" class="sign__input" placeholder="Độ tuổi">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="sign__group">
+                                    <label class="sign__label" for="sitetitle">Tên thể loại</label>
+                                    <select class="sign__input sign__selectjs" id="maTl" name="maTl" required>
+                                        <option value="" selected>Chọn thể loại</option>
+                                        @foreach (var tl in ViewBag.lstTheLoai)
+                                        {
+                                            <option value="@tl.matl">@tl.tentl</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="sign__group">
+                                    <label class="sign__label" for="sitetitle">Nước sản xuất</label>
+                                    <input id="nuocSx" type="text" class="sign__input" placeholder="Nước sản xuất">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="collapse show multi-collapse">
+                            <label class="sign__label" for="sitetitle">Trailer</label>
+                            <div class="sign__video">
+                                <label id="movie1" for="sign__video-upload">Trailer</label>
+                                <input data-name="#movie1" id="sign__video-upload" name="movie" class="sign__video-upload" type="file" accept="video/mp4,video/x-m4v,video/*">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="sign__btn sign__btn--small"><span>Cập nhật</span></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- end form -->
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
@@ -64,17 +170,24 @@
                         $('#nuocSx').val(phim.nuocSx);
                         $('#moTa').val(phim.moTa);
                         $('#maTl').val(phim.maTl);
-                        $('#tenTheLoai').val(phim.tenTheLoai);
+                        $('#mahat').val(phim.maHat);
+                        if (phim.duongDanAnh) {
+                            $('#gallery1').text(phim.duongDanAnh); // Cập nhật nội dung label với đường dẫn ảnh
+                        }
+                        // Cập nhật đường dẫn trailer vào label
+                        if (phim.duongDanTrailer) {
+                            $('#movie1').text(phim.duongDanTrailer); // Cập nhật nội dung label với đường dẫn trailer
+                        }
                     } else {
-                        $('#message').text('Không có dữ liệu cho mã phòng chiếu này.').css('color', 'red');
+                        showAlert('Không có dữ liệu cho mã phim này.', 'danger');
                     }
                 },
                 error: function (error) {
-                    $('#message').text('Lỗi khi tải thông tin phim: ' + error.responseText).css('color', 'red');
+                    showAlert('Lỗi khi tải thông tin phim: ' + error.responseText, 'danger');
                 }
             });
         } else {
-            $('#message').text('Không tìm thấy mã phim trong URL.').css('color', 'red');
+            showAlert('Không tìm thấy mã phim trong URL.', 'danger');
         }
 
         $('#editPhimForm').submit(function (event) {
@@ -85,6 +198,22 @@
 
     function updatePhim() {
         const maPhim = $('#maPhim').val();
+        let dda = null;  // Khởi tạo biến dda
+        let ddt = null;  // Khởi tạo biến ddt
+
+        // Kiểm tra xem có file được chọn không và gán giá trị vào dda
+        if ($('#sign__gallery-upload')[0].files[0]) {
+            dda = $('#sign__gallery-upload')[0].files[0].name;
+        } else {
+            dda = $('#gallery1').text();  // Gán giá trị từ text của label nếu không có file
+        }
+
+        // Kiểm tra xem có file được chọn không và gán giá trị vào ddt
+        if ($('#sign__video-upload')[0].files[0]) {
+            ddt = $('#sign__video-upload')[0].files[0].name;
+        } else {
+            ddt = $('#movie1').text();  // Gán giá trị từ text của label nếu không có file
+        }
         const phimData = {
             MaPhim: maPhim,
             TenPhim: $('#tenPhim').val(),
@@ -94,7 +223,10 @@
             NuocSx: $('#nuocSx').val(),
             MoTa: $('#moTa').val(),
             MaTl: $('#maTl').val(),
-            TenTheLoai: $('#tenTheLoai').val()
+            MaHat: $('#mahat').val(),
+
+            DuongDanAnh: dda,
+            DuongDanTrailer: ddt
         };
 
         $.ajax({
@@ -103,12 +235,45 @@
             contentType: 'application/json',
             data: JSON.stringify(phimData),
             success: function () {
-                $('#message').text('Cập nhật thành công!').css('color', 'green');
-                window.location.href = '/admin/danhsachphim';
+                showAlert('Cập nhật thành công!', 'success');
+                showMovies();
             },
             error: function (error) {
-                $('#message').text('Lỗi khi cập nhật: ' + error.responseText).css('color', 'red');
+                const errorMessage = error.responseJSON?.message;
+                showAlert(errorMessage, 'danger'); // Thông báo lỗi
             }
         });
+    }
+
+    function showAlert(message, type) {
+        // Đặt nội dung thông báo vào Modal
+        $('#messageContent').text(message);
+
+        // Đặt màu cho tiêu đề và nền của modal
+        $('#messageModal .modal-content').css({
+            'background-color': '#ffffff', // Nền trắng cho modal
+            'border': '2px solid #000000'  // Viền màu đen cho modal
+        });
+
+        // Đặt màu cho modal header
+        $('#messageModal .modal-header').css({
+            'background-color': '#ffffff', // Nền trắng cho header
+            'color': '#000000'             // Màu chữ đen cho tiêu đề
+        });
+
+        // Đặt màu cho nội dung của modal
+        $('#messageModal .modal-body').css({
+            'color': '#000000'             // Màu chữ đen cho nội dung
+        });
+
+        // Đặt màu cho nút OK (nếu cần)
+        $('#messageModal .modal-footer .btn').css({
+            'background-color': '#007bff',  // Màu nền xanh cho nút OK
+            'border-color': '#007bff',      // Màu viền nút OK
+            'color': '#ffffff'              // Chữ trắng cho nút OK
+        });
+
+        // Hiển thị Modal
+        $('#messageModal').modal('show');
     }
 </script>

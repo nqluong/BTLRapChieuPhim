@@ -7,45 +7,69 @@
 
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
-<h2>Thêm Phòng Chiếu</h2>
+<!-- Modal -->
+<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="messageModalLabel">Thông Báo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="messageContent">
+                <!-- Nội dung thông báo sẽ hiển thị ở đây -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-<form id="formThemPhongChieu">
-    <div>
-        <label for="maPc">Mã Phòng Chiếu:</label>
-        <input type="number" id="maPc" name="maPc" required />
-    </div>
-    <div>
-        <label for="tenPc">Tên Phòng Chiếu:</label>
-        <input type="text" id="tenPc" name="tenPc" required />
-    </div>
-    <div>
-        <label for="sucChua">Sức Chứa:</label>
-        <input type="number" id="sucChua" name="sucChua" required />
-    </div>
-    <div>
-        <label for="maRp">Tên Rạp:</label>
-        <select id="maRp" name="maRp" required>
-            <option value="">Chọn rạp</option>
-            @foreach (var rap in ViewBag.lstRapPhim)
-            {
-                <option value="@rap.marp">@rap.tenrp</option>
-            }
-        </select>
-    </div>
-    <div>
-        <label for="maQl">Quản Lý:</label>
-        <select id="maQl" name="maQl" required>
-            <option value="">Chọn quản lý</option>
-            @foreach (var ql in ViewBag.lstQuanLi)
-            {
-                <option value="@ql.maql">@ql.tenql</option>
-            }
-        </select>
-    </div>
-    <button type="submit">Thêm Mới</button>
-</form>
+<div id="formThemPhongChieu" class="container-fluid">
+	<div class="row">
+		<!-- main title -->
+		<div class="col-12">
+			<div class="main__title">
+				<h2>Thêm phòng chiếu mới</h2>
+			</div>
+		</div>
+		<!-- end main title -->
+		<!-- form -->
+		<div class="col-12">
+			<form action="#" class="sign__form sign__form--add">
+				<div class="row">
+					<div class="col-12 col-xl-7">
+						<div class="row">
+							<div class="col-12">
+								<div class="sign__group">
+                                    <input id="maPc" type="text" class="sign__input" placeholder="Mã phòng chiếu">
+								</div>
+							</div>
 
-<div id="message" style="margin-top: 20px;"></div>
+							<div class="col-12">
+								<div class="sign__group">
+                                    <input id ="tenPc" type="text" class="sign__input" placeholder="Tên phòng chiếu">
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div class="sign__group">
+                                    <input id="sucChua" type="text" class="sign__input" placeholder="Sức chứa">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12">
+                        <button type="submit" class="sign__btn sign__btn--small"><span>Thêm</span></button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- end form -->
+	</div>
+</div>
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
@@ -57,8 +81,8 @@
                 MaPc: $('#maPc').val(),
                 TenPc: $('#tenPc').val(),
                 SucChua: $('#sucChua').val(),
-                MaRp: $('#maRp').val(),
-                MaQl: $('#maQl').val()
+                MaRp: 1,
+                MaQl: 1
             };
             console.log(JSON.stringify(phongChieu));
             $.ajax({
@@ -67,14 +91,48 @@
                 data: JSON.stringify(phongChieu),
                 contentType: 'application/json',
                 success: function(response) {
-                    $('#message').text("Thêm phòng chiếu thành công!").css('color', 'green');
-                    window.location.href = '/admin/danhsachphongchieu'; // Điều hướng đến trang danh sách phòng chiếu
+                    showAlert(response.message, 'success');
+                    showProductByCategory()
                 },
                 error: function(xhr) {
-                    $('#message').text("Lỗi: " + xhr.responseJSON.message).css('color', 'red');
+                    const errorMessage = xhr.responseJSON?.message || 'Vui lòng nhập dữ liệu phòng chiếu!';
+                    showAlert(errorMessage, 'danger'); // Thông báo lỗi
                 }
             });
         });
     });
-</script>
 
+    function showAlert(message, type) {
+        // Đặt nội dung thông báo vào Modal
+        $('#messageContent').text(message);
+
+        // Đặt màu cho tiêu đề và nền của modal
+        $('#messageModal .modal-content').css({
+            'background-color': '#ffffff', // Nền trắng cho modal
+            'border': '2px solid #000000'  // Viền màu đen cho modal
+        });
+
+        // Đặt màu cho modal header
+        $('#messageModal .modal-header').css({
+            'background-color': '#ffffff', // Nền trắng cho header
+            'color': '#000000'             // Màu chữ đen cho tiêu đề
+        });
+
+        // Đặt màu cho nội dung của modal
+        $('#messageModal .modal-body').css({
+            'color': '#000000'             // Màu chữ đen cho nội dung
+        });
+
+        // Đặt màu cho nút OK (nếu cần)
+        $('#messageModal .modal-footer .btn').css({
+            'background-color': '#007bff',  // Màu nền xanh cho nút OK
+            'border-color': '#007bff',      // Màu viền nút OK
+            'color': '#ffffff'              // Chữ trắng cho nút OK
+        });
+
+        // Hiển thị Modal
+        $('#messageModal').modal('show');
+    }
+
+
+</script>

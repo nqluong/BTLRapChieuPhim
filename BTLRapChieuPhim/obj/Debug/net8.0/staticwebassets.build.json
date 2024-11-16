@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CfpP9ugOPXYkjHzOe+LZOv6Eb2W7hEAKgyz2uB7AQ9o=",
+  "Hash": "j+R3a6EXceJPTkDTgJEgLiJsC69/gn9B3/WTDJfCCGU=",
   "Source": "BTLRapChieuPhim",
   "BasePath": "_content/BTLRapChieuPhim",
   "Mode": "Default",
@@ -6152,6 +6152,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\TemplateAdmin\\webfont\\tabler-icons.min.css"
+    },
+    {
+      "Identity": "D:\\HocTap\\Web\\BaiTapLon\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\uploads\\466003525_27550745314571773_5893714876715767871_n.mp4",
+      "SourceId": "BTLRapChieuPhim",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HocTap\\Web\\BaiTapLon\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\",
+      "BasePath": "_content/BTLRapChieuPhim",
+      "RelativePath": "uploads/466003525_27550745314571773_5893714876715767871_n.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\466003525_27550745314571773_5893714876715767871_n.mp4"
+    },
+    {
+      "Identity": "D:\\HocTap\\Web\\BaiTapLon\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\uploads\\images-removebg-preview.png",
+      "SourceId": "BTLRapChieuPhim",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HocTap\\Web\\BaiTapLon\\BTLRapChieuPhim\\BTLRapChieuPhim\\wwwroot\\",
+      "BasePath": "_content/BTLRapChieuPhim",
+      "RelativePath": "uploads/images-removebg-preview.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images-removebg-preview.png"
     }
   ]
 }

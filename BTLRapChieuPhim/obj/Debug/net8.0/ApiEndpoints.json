@@ -28,8 +28,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "phim",
-        "Type": "BTLRapChieuPhim.Models.Phim",
+        "Name": "phimadd",
+        "Type": "BTLRapChieuPhim.Areas.Admin.Models.PhimAPI",
         "IsRequired": true
       }
     ],

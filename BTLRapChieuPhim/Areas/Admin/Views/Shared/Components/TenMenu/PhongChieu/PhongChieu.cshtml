@@ -14,13 +14,7 @@
                             <div class="main__title">
                                 <h2>Danh Sách Phòng Chiếu</h2>
                                 <div class="main__title-wrap">
-                                        <a class="main__title-link main__title-link--wrap">Add item</a>
-                                    <form action="#" class="main__title-form">
-                                        <input type="text" placeholder="Find movie / tv series..">
-                                        <button type="button">
-                                            <i class="ti ti-search"></i>
-                                        </button>
-                                    </form>
+                                        <a href = "/admin/PhongChieuAdd" class="main__title-link main__title-link--wrap">Thêm phòng chiếu</a>
                                 </div>
                             </div>
                         </div>
@@ -33,8 +27,7 @@
                                             <th>TÊN PHÒNG CHIẾU</th>
                                             <th>SỨC CHỨA</th>
                                             <th>TÊN RẠP PHIM</th>
-                                            <th>TÊN QUẢN LÍ</th>
-                                            <th>Actions</th>
+                                            <th>HÀNH ĐỘNG</th>
                                         </tr>
                                     </thead>
                                     <tbody id="phongChieuBody">`;
@@ -47,7 +40,6 @@
                                 <td><div class="catalog__text"><a href="#">${phongchieu.tenPc}</a></div></td>
                                 <td><div class="catalog__text">${phongchieu.sucChua}</div></td>
                                 <td><div class="catalog__text">${phongchieu.tenRp}</div></td>
-                                <td><div class="catalog__text">${phongchieu.hoTen}</div></td>
                                 <td>
                                     <div class="catalog__btns">
                                         <button type="button" class="catalog__btn catalog__btn--edit" onclick="editPhongChieu('${phongchieu.maPc}')">
@@ -88,7 +80,7 @@
                 method: 'DELETE',
                 success: function (response) {
                     alert(response.message);
-                    showProductByCategory('/api/phongchieuapi'); // Làm mới danh sách
+                    showProductByCategory(); // Làm mới danh sách
                 },
                 error: function (error) {
                     alert("Xóa phòng chiếu thất bại!");

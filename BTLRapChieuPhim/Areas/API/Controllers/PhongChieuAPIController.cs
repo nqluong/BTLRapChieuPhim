@@ -19,6 +19,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
 			var phongchieu = (from pc in _context.PhongChieus
 						   join rp in _context.RapPhims on pc.MaRp equals rp.MaRp
 						   join ql in _context.QuanLies on pc.MaQl equals ql.MaQl
+                           where pc.MaRp == 1
 						   select new PhongChieuAPI
 						   {
 							   MaQl = ql.MaQl,
@@ -59,6 +60,17 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Kiểm tra trùng lặp mã phòng chiếu hoặc tên phòng chiếu
+                var isDuplicate = _context.PhongChieus.Any(pc =>
+                    pc.MaPc == phongChieu.MaPc || pc.TenPc == phongChieu.TenPc);
+
+                if (isDuplicate)
+                {
+                    return BadRequest(new { message = "Mã phòng chiếu hoặc tên phòng chiếu đã tồn tại!" });
+                }
+
+
+                // Nếu không trùng, thêm mới
                 _context.PhongChieus.Add(phongChieu);
                 _context.SaveChanges();
                 return Ok(new { message = "Thêm phòng chiếu thành công!" });
@@ -72,6 +84,21 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             if (phongChieuUpdated == null || maPc != phongChieuUpdated.MaPc)
             {
                 return BadRequest();
+            }
+
+            // Kiểm tra nếu tên phòng chiếu đã tồn tại trong cơ sở dữ liệu (ngoại trừ phòng chiếu hiện tại)
+            var existingPhongChieu = _context.PhongChieus
+                .FirstOrDefault(pc => pc.TenPc == phongChieuUpdated.TenPc && pc.MaPc != maPc && pc.MaRp==phongChieuUpdated.MaRp);
+
+            if (existingPhongChieu != null)
+            {
+                return Conflict("Tên phòng chiếu đã tồn tại."); // Trả về mã lỗi 409 nếu tên phòng chiếu bị trùng
+            }
+
+            if (string.IsNullOrWhiteSpace(phongChieuUpdated.TenPc) ||
+                phongChieuUpdated.SucChua == null)
+            {
+                return BadRequest(new { message = "Một hoặc nhiều dữ liệu phòng chiếu quan trọng bị để trống!" });
             }
 
             var phongChieu = _context.PhongChieus.Find(maPc);
@@ -88,21 +115,40 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
 
             _context.SaveChanges();
 
-            return NoContent(); // trả về mã 204 nếu thành công
+            return NoContent();
         }
 
         [HttpDelete("{maPc}")]
         public IActionResult DeletePhongChieu(int maPc)
         {
-            var phongChieu = _context.PhongChieus.Find(maPc);
-            if (phongChieu == null)
+            var maLCs = _context.LichChieus
+                .Where(lc => lc.MaPc == maPc)
+                .Select(lc => lc.MaLc)
+                .ToList();
+
+            if (maLCs.Any())
             {
-                return NotFound();
+                // Lấy danh sách vé xem phim dựa trên danh sách maLC
+                var vexemphims = _context.VeXemPhims
+                    .Where(vx => maLCs.Contains((int)vx.MaLc))
+                    .ToList();
+
+                // Xóa danh sách vé xem phim
+                _context.VeXemPhims.RemoveRange(vexemphims);
+
+                // Xóa danh sách lịch chiếu
+                var lichchieus = _context.LichChieus.Where(lc => maLCs.Contains(lc.MaLc)).ToList();
+                _context.LichChieus.RemoveRange(lichchieus);
             }
 
-            _context.PhongChieus.Remove(phongChieu);
-            _context.SaveChanges();
+            // Xóa phòng chiếu
+            var phongChieu = _context.PhongChieus.Find(maPc);
+            if (phongChieu != null)
+            {
+                _context.PhongChieus.Remove(phongChieu);
+            }
 
+            _context.SaveChanges();
             return Ok(new { message = "Xóa phòng chiếu thành công!" });
         }
 
