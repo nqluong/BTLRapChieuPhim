@@ -120,8 +120,6 @@ public partial class QuanLyRapPhimContext : DbContext
                 .HasColumnName("MaHAT");
             entity.Property(e => e.DuongDanAnh).HasMaxLength(255);
             entity.Property(e => e.DuongDanTrailer).HasMaxLength(255);
-            entity.Property(e => e.Loai).HasMaxLength(50);
-            entity.Property(e => e.MoTa).HasMaxLength(255);
 
             entity.HasOne(d => d.MaPhimNavigation).WithMany(p => p.HinhAnhTrailers)
                 .HasForeignKey(d => d.MaPhim)

@@ -19,8 +19,9 @@
 							<div class="prs_ms_trailer_vid_wrapper" bis_skin_checked="1">
 							<div class="prs_ms_trailer_vid_icon_wrapper" bis_skin_checked="1">
 								<ul>
-									<li><a href="@Url.Content(image.DuongDanTrailer)" target="_blank">View Trailer</a>
-									</li>
+								<li>
+									<a onclick="showTrailer('/Template/Video/@image.DuongDanTrailer')">View Trailer</a>
+								</li>
 								</ul>
 								<h2>View Trailer</h2>
 							</div>
@@ -30,33 +31,49 @@
 			</div>
 		</div>
 	</div>
+	<div id="videoModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 1000; display: none; justify-content: center; align-items: center;">
+	<div style="position: relative; width: 80%; max-width: 800px; background-color: white; padding: 10px; border-radius: 8px;">
+		<video id="trailerVideo" controls style="width: 100%;"></video>
+		<button onclick="closeModal()" style="position: absolute; top: 10px; right: 10px; background-color: red; color: white; border: none; padding: 5px 10px; cursor: pointer;">Close</button>
+	</div>
+</div>
+<script>
+	function showTrailer(videoUrl) {
+		const modal = document.getElementById('videoModal');
+		const video = document.getElementById('trailerVideo');
+		video.src = videoUrl;
+		modal.style.display = 'flex';
+	}
+	function closeModal() {
+		const modal = document.getElementById('videoModal');
+		const video = document.getElementById('trailerVideo');
+		video.pause();
+		modal.style.display = 'none';
+	}
+</script>
 	<!-- prs ms trailer wrapper End -->
 	<!-- prs syn Slider Start -->
-	<div class="prs_syn_main_section_wrapper">
-		<div class="container">
-			<div class="row">
-			@foreach(var image in ViewBag.anhphim)
-				{
-					
-				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-				<div class="prs_syn_cont_wrapper">
-						<h3>Synopsis</h3>
-						<h4>Genre- @image.Loai </h4>
-						<h4>Tên phim: @Model.TenPhim</h4>
-						<p>Đạo diễn: @Model.DaoDien</p>
-						<p>Mô tả: @Model.MoTa</p>
-						<p>Bộ phim dành cho lứa tuổi: @Model.DoTuoi</p>
-						<p>Quốc gia: @Model.NuocSx</p>
-						<p>Thời lượng: @Model.ThoiLuong phút</p>
-					</div>
+<div class="prs_syn_main_section_wrapper" style="padding: 50px 0;">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="prs_syn_cont_wrapper" style="background-color: #ffffff; padding: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+					<h3 style="font-weight: bold; color: #333;">Synopsis</h3>
+					<h4 style="color: #d9534f;">Genre: @ViewBag.theloai.TenTheLoai</h4>
+					<h4>Title: @Model.TenPhim</h4>
+					<p>Director: @Model.DaoDien</p>
+					<p>Description: @Model.MoTa</p>
+					<p>Audience Rating: @Model.DoTuoi</p>
+					<p>Country: @Model.NuocSx</p>
+					<p>Duration: @Model.ThoiLuong minutes</p>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-					<div class="prs_syn_img_wrapper">
-						<img src="@Url.Content("../Template/AnhPhim/"+image.DuongDanAnh)" alt="syn_img">
-					</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="prs_syn_img_wrapper" style="text-align: center;">
+					<img src="@Url.Content("../Template/AnhPhimLayout/"+ViewBag.anhphim[0].DuongDanAnh)" alt="syn_img" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
 				</div>
-				}
 			</div>
 		</div>
 	</div>
+</div>
 	<!-- prs syn Slider End -->

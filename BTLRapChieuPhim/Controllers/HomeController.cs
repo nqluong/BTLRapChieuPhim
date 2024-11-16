@@ -24,8 +24,17 @@ namespace BTLRapChieuPhim.Controllers
         {
             var phim = ql.Phims.SingleOrDefault(x => x.MaPhim == maphim);
             var anhphim = ql.HinhAnhTrailers.Where(x=>x.MaPhim==maphim).ToList();
-            ViewBag.anhphim=anhphim;
+			var theloai = ql.TheLoais.SingleOrDefault(x => x.MaTl == phim.MaTl);
+			ViewBag.anhphim=anhphim;
+            ViewBag.theloai=theloai;   
             return View(phim);
+        }
+        public IActionResult Contact()
+        {
+            var rap = ql.RapPhims.SingleOrDefault(x=>x.MaRp==1);
+            var quanly = ql.TaiKhoans.Where(x=>x.MaTk==1).ToList();
+            ViewBag.quanly = quanly;
+            return View(rap);
         }
         public IActionResult Privacy()
         {
