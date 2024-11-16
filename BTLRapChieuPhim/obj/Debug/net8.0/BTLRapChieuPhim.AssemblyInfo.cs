@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BTLRapChieuPhim")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+640e458408ec822d604ce63a453667ede11c80f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f513c00ae7856aa87052f844ed1f1c098f97bffb")]
 [assembly: System.Reflection.AssemblyProductAttribute("BTLRapChieuPhim")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BTLRapChieuPhim")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
