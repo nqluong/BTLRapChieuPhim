@@ -414,3 +414,4 @@ D:\Ki 5\Web\BTLRapChieuPhim\obj\Debug\net8.0\refint\BTLRapChieuPhim.dll
 D:\Ki 5\Web\BTLRapChieuPhim\obj\Debug\net8.0\BTLRapChieuPhim.pdb
 D:\Ki 5\Web\BTLRapChieuPhim\obj\Debug\net8.0\BTLRapChieuPhim.genruntimeconfig.cache
 D:\Ki 5\Web\BTLRapChieuPhim\obj\Debug\net8.0\ref\BTLRapChieuPhim.dll
+D:\Ki 5\Web\BTLRapChieuPhim\bin\Debug\net8.0\RestSharp.dll

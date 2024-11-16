@@ -1,10 +1,13 @@
-var builder = WebApplication.CreateBuilder(args);
+using BTLRapChieuPhim.Models.MoMo;
+using BTLRapChieuPhim.Services.Momo;
 
+var builder = WebApplication.CreateBuilder(args);
+//connect MoMoAPI
+builder.Services.Configure<MomoOptionModel>(builder.Configuration.GetSection("MomoAPI"));
+builder.Services.AddScoped<IMomoService, MomoService>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

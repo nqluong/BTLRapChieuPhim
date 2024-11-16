@@ -33,7 +33,7 @@
 					<a href="#"><i class="fa fa-times"></i></a>
 				</div>
 				<div class="st_seatlay_btn float_left">
-					<a href="booking_type.html">Proceed to Pay</a>
+					<a onclick="saveSelectedSeats()">Proceed to Pay</a>
 				</div>
 			</div>
 		</div>
@@ -197,10 +197,10 @@
                 rows.forEach(row => {
                     for (let i = 1; i <= 23; i++) {
                         allSeats.push({
-                            MaGxp: `${seatId}`,  // Mã ghế là chuỗi
+                            MaGxp: `${seatId}`,  
                             Row: row,
                             LoaiGhe: 'Standard',
-                            TrangThai: 'Available'  // Mặc định là Available
+                            TrangThai: 'Available'  
                         });
                         seatId++;
                     }
@@ -249,7 +249,7 @@
                 console.log(`Seat: ${seat.MaGxp}, Status: ${seat.TrangThai}, Disabled: ${isDisabled}`);
                 const seatItem = $(`
                     <li class="${isDisabled ? 'seat_disable' : ''}">
-                        <input type="checkbox" id="c${seat.MaGxp}" name="cb" ${isDisabled ? 'disabled' : ''}>
+							<input type="checkbox" id="c${seat.MaGxp}"  class ="${row}" name="cb" ${isDisabled ? 'disabled' : ''}>
                         <label for="c${seat.MaGxp}"></label>
                     </li>
                 `);
@@ -357,7 +357,77 @@
 			alert("Không thể tải thông tin phim. Vui lòng thử lại sau.");
 		});
 	}
+	function saveSelectedSeats() {
+		let selectedSeats = [];
 
+		// Lấy giá trị từ ViewBag và chuyển thành chuỗi JavaScript
+		const maLc = "@ViewBag.MaLC";  // Đảm bảo rằng maLc không phải null
+		const maPhim = "@ViewBag.MaPhim";  // Đảm bảo rằng maPhim không phải null
+		const gio = '@ViewBag.Gio';
+		const tgc = '@ViewBag.Tgc';
+		if (!maLc || !maPhim) {
+			alert("Thông tin không hợp lệ.");
+			return;
+		}
 
+		$.get(`/api/lichchieuapi/ttphim/${maPhim}`, function (ttphim) {
+    // Kiểm tra nếu API trả về một mảng và phần tử đầu tiên chứa thông tin phim
+    if (Array.isArray(ttphim) && ttphim.length > 0 && ttphim[0].tenPhim) {
+        const phim = ttphim[0]; // Lấy đối tượng phim đầu tiên trong mảng
+
+        // Lấy danh sách ghế đã chọn
+        $('input[name="cb"]:checked').each(function () {
+            let seat = parseInt($(this).attr('id').replace('c', ''), 10); // Lấy ID ghế và chuyển thành số nguyên
+            const seatId = $(this).attr('id').replace('c', '');
+            const row = $(this).attr('class');
+			
+            // Điều chỉnh vị trí ghế cho các hàng khác nhau
+            if (row === 'A') seat -= 23;
+            else if (row === 'B') seat -= 46;
+            else seat -= 69;
+
+            selectedSeats.push({
+                MaLc: maLc,
+                MaPhim: maPhim,
+                TenPhim: phim.tenPhim,  
+                MaGxp: seatId,
+                Ghe: row + seat,
+                GiaVe: 100000,
+				Gio: gio,
+				Tgc: tgc
+            });
+        });
+
+        console.log("Dữ liệu ghế đã chọn:", JSON.stringify(selectedSeats));
+        if (selectedSeats.length === 0) {
+            alert("Vui lòng chọn ít nhất một ghế!");
+            return;
+        }
+
+        // Gửi dữ liệu ghế đã chọn đến API
+        $.ajax({
+            url: `https://localhost:7199/api/veapi/TTve/${maLc}`,
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(selectedSeats),
+            success: function (response) {
+						window.location.href = `/Home/Checkout?maLC=${maLc}&maPhim=${maPhim}&tgc=${tgc}&gio=${gio}`;
+            },
+            error: function (xhr, status, error) {
+                console.error("Lỗi khi lưu ghế đã chọn:", error);
+                console.log("Chi tiết lỗi:", xhr.responseText);
+                alert("Có lỗi xảy ra khi lưu ghế đã chọn. Vui lòng thử lại.");
+            }
+        });
+    } else {
+        alert("Không tìm thấy thông tin phim.");
+        console.log("API không trả về dữ liệu hoặc thiếu thuộc tính TenPhim:", ttphim);
+    }
+}).fail(function(xhr, status, error) {
+    console.error("Lỗi khi gọi API:", error);
+    console.log("Chi tiết lỗi:", xhr.responseText);
+    alert("Lỗi khi lấy thông tin phim từ API. Vui lòng kiểm tra.");
+});}
+	
 
 </script>

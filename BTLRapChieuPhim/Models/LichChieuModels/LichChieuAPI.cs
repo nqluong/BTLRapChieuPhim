@@ -4,7 +4,7 @@
     {
         public int MaLc { get; set; }
 
-        public DateTime? ThoiGianChieu { get; set; }
+        public string? ThoiGianChieu { get; set; }
         public int? MaQl { get; set; }
         public int? MaPc { get; set; }
 		public int Ngay { get; set; }   

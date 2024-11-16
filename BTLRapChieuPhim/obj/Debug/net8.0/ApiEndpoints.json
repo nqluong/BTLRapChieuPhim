@@ -147,5 +147,46 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Controllers.VeAPI",
+    "Method": "ResetStoredSeats",
+    "RelativePath": "api/VeAPI/resetStoredSeats",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Controllers.VeAPI",
+    "Method": "GetStoredSeats",
+    "RelativePath": "api/VeAPI/TTve",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Controllers.VeAPI",
+    "Method": "PostTTVe",
+    "RelativePath": "api/VeAPI/TTve/{Malc}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "malc",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "selectedSeats",
+        "Type": "System.Collections.Generic.List\u00601[[BTLRapChieuPhim.Models.LichChieuModels.TTVe, BTLRapChieuPhim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

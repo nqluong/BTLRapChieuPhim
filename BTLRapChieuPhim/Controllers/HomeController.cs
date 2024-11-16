@@ -26,12 +26,23 @@ namespace BTLRapChieuPhim.Controllers
             ViewBag.MaPhim = 1;
 			return View();
         }
-        public IActionResult ChonGhe(int malc,int maphim) 
+        public IActionResult ChonGhe(int malc,int maphim,string gio, string tgc) 
         {
-            ViewBag.MaLC = malc;
+			
+			ViewBag.MaLC = malc;
             ViewBag.MaPhim = maphim;
+			ViewBag.Gio =gio;
+            ViewBag.Tgc = tgc;
 			return View();
         }
+        public IActionResult Checkout(int malc, int maphim,string gio, string tgc) 
+        {
+			ViewBag.MaLC = malc;
+			ViewBag.MaPhim = maphim;
+			ViewBag.Gio = gio;
+			ViewBag.Tgc = tgc;
+			return View();
+		}
 		public IActionResult Privacy()
         {
             return View();

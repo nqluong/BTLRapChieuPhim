@@ -23,7 +23,7 @@ namespace BTLRapChieuPhim.Controllers
                              select new LichChieuAPI
                              {
                                  MaLc = lc.MaLc,
-                                 ThoiGianChieu = lc.ThoiGianChieu,
+                                 ThoiGianChieu = lc.ThoiGianChieu.Value.ToString("yyyy-MM-dd"),
                                  MaQl = lc.MaQl,
                                  MaPc = lc.MaPc,
                                  Ngay = lc.ThoiGianChieu.Value.Day,
@@ -45,7 +45,7 @@ namespace BTLRapChieuPhim.Controllers
                              select new LichChieuAPI
                              {
                                  MaLc = lc.MaLc,
-                                 ThoiGianChieu = lc.ThoiGianChieu,
+                                 ThoiGianChieu = lc.ThoiGianChieu.Value.ToString("yyyy-MM-dd"),
                                  MaQl = lc.MaQl,
                                  MaPc = lc.MaPc,
                                  Ngay = lc.ThoiGianChieu.Value.Day,
@@ -66,7 +66,7 @@ namespace BTLRapChieuPhim.Controllers
                              select new LichChieuAPI
                              {
                                  MaLc = lc.MaLc,
-                                 ThoiGianChieu = lc.ThoiGianChieu,
+                                 ThoiGianChieu = lc.ThoiGianChieu.Value.ToString("yyyy-MM-dd"),
                                  MaQl = lc.MaQl,
                                  MaPc = lc.MaPc,
                                  Ngay = lc.ThoiGianChieu.Value.Day,
@@ -100,7 +100,7 @@ namespace BTLRapChieuPhim.Controllers
         public IEnumerable<TTPhimAPI> GetAllTTPhimbyMaphim(int maphim)
         {
             var ttphim = (from tl in db.Phims
-                          join ha in db.HinhAnhTrailers on tl.MaPhim equals ha.MaPhim
+						  join ha in db.HinhAnhTrailers on tl.MaPhim equals ha.MaPhim
                           join tt in db.TheLoais on tl.MaTl equals tt.MaTl
                           where tl.MaPhim == maphim
                           select new TTPhimAPI
@@ -108,7 +108,7 @@ namespace BTLRapChieuPhim.Controllers
                               MaPhim = tl.MaPhim,
                               TenPhim = tl.TenPhim,
                               ThoiLuong = tl.ThoiLuong,
-                              DuongDanTrailer = ha.DuongDanTrailer,
+							  DuongDanTrailer = ha.DuongDanTrailer,
                               DuongDanAnh = ha.DuongDanAnh,
                               TenTheLoai = tt.TenTheLoai,
                               NuocSx = tl.NuocSx

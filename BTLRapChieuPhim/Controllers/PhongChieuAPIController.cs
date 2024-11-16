@@ -9,7 +9,12 @@ namespace BTLRapChieuPhim.Controllers
     [ApiController]
     public class PhongChieuAPIController : ControllerBase
     {
-        QuanLyRapPhimContext db = new QuanLyRapPhimContext();
+		public static class SeatStorage
+		{
+			
+			public static List<TTVe> StoredSeats = new List<TTVe>();
+		}
+		QuanLyRapPhimContext db = new QuanLyRapPhimContext();
         [HttpGet("byLC/{Malc}")]
         public IEnumerable<GheXPAPI> GetAllGheXP(int malc)
         {
@@ -30,5 +35,7 @@ namespace BTLRapChieuPhim.Controllers
                          }).ToList();
             return ghexp;
         }
-    }
+        
+
+	}
 }
