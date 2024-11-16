@@ -8,14 +8,11 @@
 
 <div class="container-fluid">
 	<div class="row">
-		<!-- main title -->
 		<div class="col-12">
 			<div class="main__title">
 				<h2>Thêm Mới Lịch Chiếu</h2>
 			</div>
 		</div>
-		<!-- end main title -->
-		<!-- form -->
 		<div class="col-12">
 			<form action="#" class="sign__form sign__form--add">
 				<div class="row">
@@ -34,19 +31,20 @@
 							<div class="col-12">
 								<div class="sign__group">
 
-									<select class="sign__selectjs" id="sign__genre" multiple>
+									<select class="sign__selectjs theLoai" id="sign__genre" multiple>
 									</select>
 								</div>
 							</div>
 							<div class="col-12">
 								<div class="sign__group">
-									<select class="sign__selectjs" id="sign__country" multiple>
+									<select class="sign__selectjs phim" id="sign__movies" multiple>
 									</select>
 								</div>
 							</div>
 							<div class="col-12 ">
 								<div class="sign__group">
-									<input type="text" class="sign__input" placeholder="Thời gian bắt đầu">
+									
+									<input type="datetime-local" class="sign__input" id="thoiGianChieu" placeholder="Thời gian bắt đầu">
 								</div>
 							</div>
 						</div>
@@ -54,7 +52,7 @@
 
 					<div class="col-12 ">
 						<div class="sign__group">
-							<select class="sign__selectjs" id="sign__actors" multiple>
+							<select class="sign__selectjs phongChieu" id="sign__rooms" multiple>
 							</select>
 						</div>
 					</div>
@@ -65,7 +63,7 @@
 				</div>
 			</form>
 		</div>
-		<!-- end form -->
+
 	</div>
 </div>
 
@@ -75,35 +73,122 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function () {
-			$('#formThemLichChieu').submit(function (event) {
-				event.preventDefault(); // Ngăn chặn reload trang
+
+			function loadTheLoai() {
+				$.ajax({
+					url: '/api/TheLoai',
+					method: 'GET',
+					dataType: 'json',
+					success: function (data) {
+						const selectElement = document.querySelector('#sign__genre');
+						$(selectElement).empty();
+
+						
+						data.forEach(item => {
+							$(selectElement).append(`<option value="${item.maTL}">${item.tenTL}</option>`);
+						});
+
+						
+						if (selectElement.slim) {
+							selectElement.slim.setData(
+								data.map(item => ({ value: item.maTL, text: item.tenTL }))
+							);
+						}
+
+					},
+					error: function () {
+						console.error('Lỗi khi tải thể loại phim.');
+					}
+				});
+			};
+
+			function loadPhongChieu() {
+				$.ajax({
+					url: '/api/PhongChieu',
+					method: 'GET',
+					dataType: 'json',
+					success: function (data) {
+					const selectElement = document.querySelector('#sign__rooms');
+						$(selectElement).empty();
+
+
+						data.forEach(item => {
+							$(selectElement).append(`<option value="${item.maPhong}">${item.tenPhong}</option>`);
+						});
+
+
+						if (selectElement.slim) {
+							selectElement.slim.setData(
+								data.map(item => ({ value: item.maPhong, text: item.tenPhong }))
+							);
+						}
+					},
+					error: function () {
+						console.error('Lỗi khi tải thể loại phim.');
+					}
+				});
+			};
+
+			function loadPhim() {
+				$.ajax({
+					url: '/api/Phim',
+					method: 'GET',
+					dataType: 'json',
+					success: function (data) {
+						const selectElement = document.querySelector('#sign__movies');
+						$(selectElement).empty();
+
+
+						data.forEach(item => {
+							$(selectElement).append(`<option value="${item.maPhim}">${item.tenPhim}</option>`);
+						});
+
+
+						if (selectElement.slim) {
+							selectElement.slim.setData(
+								data.map(item => ({ value: item.maPhim, text: item.tenPhim }))
+							);
+						}
+					},
+					error: function () {
+						console.error('Lỗi khi tải thể loại phim.');
+					}
+				});
+			};
+
+			loadTheLoai();
+			loadPhongChieu();
+			loadPhim();
+			$('.sign__btn--small').on('click', function () {
 
 				const lichChieu = {
+
 					ThoiGianChieu: $('#thoiGianChieu').val(),
-					MaQl: $('#maQl').val(),
-					MaPc: $('#maPc').val(),
-					MaPhim: $('#maPhim').val()
+					MaPc: parseInt($('#sign__rooms').val(), 10),
+					MaPhim: parseInt($('#sign__movies').val(), 10)
 				};
-				console.log(JSON.stringify(lichChieu));
+				console.log('Dữ liệu gửi đi:', lichChieu);
+				if (!lichChieu.ThoiGianChieu) {
+					$('#message').html('<span style="color: red;">Vui lòng nhập thời gian chiếu!</span>');
+					return;
+				}
+
 				$.ajax({
 					type: 'POST',
-					url: '/api/LichChieu', // Đường dẫn đến API
+					url: '/api/LichChieu', 
 					data: JSON.stringify(lichChieu),
 					contentType: 'application/json',
 					success: function (response) {
-						$('#message').text(response.message).css('color', 'green');
-						window.location.href = '/admin/LichChieuPhim'
+						$('#message').html('<span style="color: green;">Thêm lịch chiếu thành công!</span>');
 					},
 					error: function (xhr) {
-						$('#message').text(xhr.responseJSON.message).css('color', 'red');
+						$('#message').html(`<span style="color: red;">Lỗi: ${xhr.responseText || 'Không thể thêm lịch chiếu.'}</span>`);
 					}
 				});
 			});
 		});
 	</script>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/slimselect.min.js"></script>
-	<script src="js/smooth-scrollbar.js"></script>
-	<script src="js/admin.js"></script>
+
+
 }
 

@@ -113,5 +113,51 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.LichChieuController",
+    "Method": "GetLichChieuByMa",
+    "RelativePath": "api/LichChieu/{maLc}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maLc",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.PhimController",
+    "Method": "GetPhim",
+    "RelativePath": "api/Phim",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.PhongChieuController",
+    "Method": "GetPhongChieu",
+    "RelativePath": "api/PhongChieu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BTLRapChieuPhim.Areas.Admin.Controllers.TheLoaiController",
+    "Method": "GetTheLoai",
+    "RelativePath": "api/TheLoai",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

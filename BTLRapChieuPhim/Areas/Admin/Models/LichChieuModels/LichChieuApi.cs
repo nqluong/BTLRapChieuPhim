@@ -6,8 +6,6 @@
 
 		public DateTime? ThoiGianChieu { get; set; }
 
-		public int? MaQl { get; set; }
-
 		public int? MaPc { get; set; }
 		public int ? ThoiLuong {  get; set; }
 		public string ? TenPhongChieu { get; set; }

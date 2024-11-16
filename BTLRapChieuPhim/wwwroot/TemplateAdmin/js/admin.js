@@ -98,7 +98,7 @@
 	}
 
 	if (document.querySelector('#sign__genre')) {
-		new SlimSelect({
+		var genreSelect = new SlimSelect({
 			select: '#sign__genre',
 			settings: {
 				placeholderText: 'Chọn thể loại phim',
@@ -106,9 +106,9 @@
 		});
 	}
 
-	if (document.querySelector('#sign__country')) {
-		new SlimSelect({
-			select: '#sign__country',
+	if (document.querySelector('#sign__movies')) {
+		var moviesSelect = new SlimSelect({
+			select: '#sign__movies',
 			settings: {
 				placeholderText: 'Chọn phim',
 			}
@@ -124,9 +124,9 @@
 		});
 	}
 
-	if (document.querySelector('#sign__actors')) {
-		new SlimSelect({
-			select: '#sign__actors',
+	if (document.querySelector('#sign__rooms')) {
+		var roomSelect = new SlimSelect({
+			select: '#sign__rooms',
 			settings: {
 				placeholderText: 'Chọn phòng chiếu',
 			}
@@ -139,7 +139,7 @@
 	if (document.getElementById('sign__gallery-upload')) {
 		var galleryUpload = document.getElementById('sign__gallery-upload');
 
-		galleryUpload.addEventListener('change', function(event) {
+		galleryUpload.addEventListener('change', function (event) {
 			var length = event.target.files.length;
 			var galleryLabel = galleryUpload.getAttribute('data-name');
 			var label = document.querySelector(galleryLabel);
@@ -153,8 +153,8 @@
 	}
 
 	if (document.querySelector('.sign__video-upload')) {
-		document.querySelectorAll('.sign__video-upload').forEach(function(element) {
-			element.addEventListener('change', function() {
+		document.querySelectorAll('.sign__video-upload').forEach(function (element) {
+			element.addEventListener('change', function () {
 				var videoLabel = element.getAttribute('data-name');
 				var vlabel = document.querySelector(videoLabel);
 

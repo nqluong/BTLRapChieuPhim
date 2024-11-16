@@ -217,7 +217,7 @@ public partial class QuanLyRapPhimContext : DbContext
                 .ValueGeneratedNever()
                 .HasColumnName("MaLC");
             entity.Property(e => e.MaPc).HasColumnName("MaPC");
-            entity.Property(e => e.MaQl).HasColumnName("MaQL");
+            
             entity.Property(e => e.ThoiGianChieu).HasColumnType("datetime");
 
             entity.HasOne(d => d.MaPcNavigation).WithMany(p => p.LichChieus)
@@ -228,9 +228,6 @@ public partial class QuanLyRapPhimContext : DbContext
                 .HasForeignKey(d => d.MaPhim)
                 .HasConstraintName("FK_LichChieu_Phim");
 
-            entity.HasOne(d => d.MaQlNavigation).WithMany(p => p.LichChieus)
-                .HasForeignKey(d => d.MaQl)
-                .HasConstraintName("FK__LichChieu__MaQL__6EF57B66");
         });
 
         modelBuilder.Entity<Phim>(entity =>
@@ -263,15 +260,12 @@ public partial class QuanLyRapPhimContext : DbContext
             entity.Property(e => e.MaPc)
                 .ValueGeneratedNever()
                 .HasColumnName("MaPC");
-            entity.Property(e => e.MaQl).HasColumnName("MaQL");
             entity.Property(e => e.MaRp).HasColumnName("MaRP");
             entity.Property(e => e.TenPc)
                 .HasMaxLength(100)
                 .HasColumnName("TenPC");
 
-            entity.HasOne(d => d.MaQlNavigation).WithMany(p => p.PhongChieus)
-                .HasForeignKey(d => d.MaQl)
-                .HasConstraintName("FK__PhongChieu__MaQL__70DDC3D8");
+
 
             entity.HasOne(d => d.MaRpNavigation).WithMany(p => p.PhongChieus)
                 .HasForeignKey(d => d.MaRp)

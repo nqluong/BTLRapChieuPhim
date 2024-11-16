@@ -3,32 +3,32 @@
     Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
 }
 
-<div class="row mb-3">
-    <div class="col-md-4">
-        <label for="filterType">Chọn báo cáo:</label>
-        <select id="filterType" class="form-control">
-            <option value="ngay">Doanh Thu Theo Ngày</option>
+<div class="row mb-3 col-12">
+    <div class="col-md-4 sign__group">
+        <label for="filterType" class="sign__label">Chọn báo cáo:</label>
+        <select id="filterType" class="form-control sign__input">
+            <option value="ngay" class="filter__select ss-main sign__selectjs">Doanh Thu Theo Ngày</option>
             <option value="phim">Doanh Thu Theo Phim</option>
             <option value="phongChieu">Doanh Thu Theo Phòng Chiếu</option>
         </select>
     </div>
     <div class="col-md-4">
-        <label for="fromDate">Từ ngày:</label>
-        <input type="date" id="fromDate" class="form-control" />
+        <label for="fromDate" class="sign__label">Từ ngày:</label>
+        <input type="date" id="fromDate" class="form-control sign__input" />
     </div>
     <div class="col-md-4">
-        <label for="toDate">Đến ngày:</label>
-        <input type="date" id="toDate" class="form-control" />
+        <label for="toDate" class="sign__label">Đến ngày:</label>
+        <input type="date" id="toDate" class="form-control sign__input" />
     </div>
 </div>
 <div class="col-md-2 align-self-end">
-    <button id="filterButton" class="btn btn-primary">Lọc</button>
+    <button id="filterButton" class="sign__btn btn-primary">Lọc</button>
 </div>
 
 <!-- BAR CHART -->
-<div class="card card-success">
+<div class="card card-success dashbox">
     <div class="card-header">
-        <h3 class="card-title">Thống Kê Doanh Thu</h3>
+        <h3 class="card-title dashbox__title">Thống Kê Doanh Thu</h3>
 
         <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse">

@@ -9,7 +9,6 @@ public partial class LichChieu
 
     public DateTime? ThoiGianChieu { get; set; }
 
-    public int? MaQl { get; set; }
 
     public int? MaPc { get; set; }
 
@@ -18,8 +17,5 @@ public partial class LichChieu
     public virtual PhongChieu? MaPcNavigation { get; set; }
 
     public virtual Phim? MaPhimNavigation { get; set; }
-
-    public virtual QuanLy? MaQlNavigation { get; set; }
-
     public virtual ICollection<VeXemPhim> VeXemPhims { get; set; } = new List<VeXemPhim>();
 }

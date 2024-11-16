@@ -23,7 +23,6 @@ namespace BTLRapChieuPhim.Areas.Admin.Controllers
                                  {
                                      MaLc = lc.MaLc,
                                      ThoiGianChieu = lc.ThoiGianChieu,
-                                     MaQl = lc.MaQl,
                                      MaPc = lc.MaPc,
                                      TenPhim = p.TenPhim,
                                      ThoiLuong = p.ThoiLuong,
@@ -47,8 +46,7 @@ namespace BTLRapChieuPhim.Areas.Admin.Controllers
             return Ok(result);
         }
 
-        [HttpPost]
-        
+        [HttpPost]     
         public IActionResult ThemLichChieu([FromBody] LichChieu lichChieu)
         {
 
@@ -81,7 +79,7 @@ namespace BTLRapChieuPhim.Areas.Admin.Controllers
                     (newShowTimeEnd > existingShowTime.ThoiGianChieu && newShowTimeEnd <= existingShowTimeEnd) ||  
                     (lichChieu.ThoiGianChieu <= existingShowTime.ThoiGianChieu && newShowTimeEnd >= existingShowTimeEnd))  
                 {
-                    return BadRequest(new { message = "Đã có lịch chiếu phim tại phòng này trong thời gian này!" });
+                    return BadRequest("Đã có lịch chiếu phim tại phòng này trong thời gian này!" );
                 }
             }
 
@@ -96,35 +94,90 @@ namespace BTLRapChieuPhim.Areas.Admin.Controllers
         }
         private int GenerateMaLc()
         {
-            // Lấy mã lịch chiếu cao nhất hiện có trong cơ sở dữ liệu
+        
             var maxMaLc = _context.LichChieus.Max(lc => lc.MaLc);
 
-            // Tạo mã lịch chiếu mới = mã cao nhất + 1
             return maxMaLc + 1;
         }
+
+        [HttpGet("{maLc}")]
+        public IActionResult GetLichChieuByMa(int maLc)
+        {
+            var lichChieuQuery = (from lc in _context.LichChieus
+                                  join p in _context.Phims on lc.MaPhim equals p.MaPhim
+                                  join tl in _context.TheLoais on p.MaTl equals tl.MaTl
+                                  join pc in _context.PhongChieus on lc.MaPc equals pc.MaPc
+                                  where lc.MaLc == maLc
+                                  select new
+                                  {
+                                      MaLc = lc.MaLc,
+                                      ThoiGianChieu = lc.ThoiGianChieu,
+                                      MaPc = lc.MaPc,
+                                      TenPhim = p.TenPhim,
+                                      ThoiLuong = p.ThoiLuong,
+                                      TenPhongChieu = pc.TenPc,
+                                      SucChua = pc.SucChua,
+                                      TheLoai = tl.TenTheLoai
+                                      
+
+                                  }).FirstOrDefault();
+
+			return Ok(lichChieuQuery);
+		}
         [HttpPut("{id}")]
         public IActionResult UpdateLichChieu(int id, [FromBody] LichChieuApi lichChieuUpdated)
         {
-            if (lichChieuUpdated == null || id != lichChieuUpdated.MaLc)
-            {
-                return BadRequest();
-            }
+		
+			var lichChieu = _context.LichChieus.Find(id);
+			if (lichChieu == null)
+			{
+				return NotFound("Không tìm thấy lịch chiếu.");
+			}
 
-            var lichChieu = _context.LichChieus.Find(id);
-            if (lichChieu == null)
-            {
-                return NotFound();
-            }
+		
+			if (lichChieuUpdated.ThoiGianChieu == null || lichChieuUpdated.MaPc == null)
+			{
+				return BadRequest("Thông tin lịch chiếu không đầy đủ.");
+			}
+			var phim = _context.Phims.FirstOrDefault(p => p.MaPhim == lichChieu.MaPhim);
+			if (phim == null)
+			{
+				return NotFound("Không tìm thấy phim.");
+			}
 
-            // Cập nhật các trường cần thiết
-            lichChieu.ThoiGianChieu = lichChieuUpdated.ThoiGianChieu;
-            lichChieu.MaQl = lichChieuUpdated.MaQl;
-            lichChieu.MaPc = lichChieuUpdated.MaPc;
+			int thoiGian = phim.ThoiLuong ?? 0;
+			var existingShowTimes = _context.LichChieus.Where(lc => lc.MaPc == lichChieuUpdated.MaPc && lc.MaLc != lichChieuUpdated.MaLc).ToList();
 
-            _context.SaveChanges();
+			DateTime newShowTimeEnd = lichChieuUpdated.ThoiGianChieu.Value.AddMinutes(thoiGian);
+			foreach (var existingShowTime in existingShowTimes)
+			{
+				int existingMovie = existingShowTime.MaPhimNavigation?.ThoiLuong ?? 0;
+				DateTime existingShowTimeEnd = existingShowTime.ThoiGianChieu.Value.AddMinutes(existingMovie);
 
-            return NoContent(); // trả về mã 204 nếu thành công
-        }
+
+				if ((lichChieuUpdated.ThoiGianChieu >= existingShowTime.ThoiGianChieu && lichChieuUpdated.ThoiGianChieu < existingShowTimeEnd) ||
+					(newShowTimeEnd > existingShowTime.ThoiGianChieu && newShowTimeEnd <= existingShowTimeEnd) ||
+					(lichChieuUpdated.ThoiGianChieu <= existingShowTime.ThoiGianChieu && newShowTimeEnd >= existingShowTimeEnd))
+				{
+					return BadRequest("Đã có lịch chiếu phim tại phòng này trong thời gian này!" );
+				}
+			}
+
+			lichChieu.ThoiGianChieu = lichChieuUpdated.ThoiGianChieu;
+			lichChieu.MaPc = lichChieuUpdated.MaPc;
+
+		
+			try
+			{
+				_context.SaveChanges();
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, "Lỗi khi lưu dữ liệu: " + ex.Message);
+			}
+
+			return NoContent();  
+		}
 
         [HttpDelete("{id}")]
         public IActionResult DeleteLichChieu(int id)
@@ -140,5 +193,7 @@ namespace BTLRapChieuPhim.Areas.Admin.Controllers
 
             return Ok(new { message = "Xóa lịch chiếu thành công!" });
         }
+
+       
     }
 }

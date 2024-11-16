@@ -2,71 +2,156 @@
     ViewData["Title"] = "Lịch Chiếu Update";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
 }
-<form id="editLichChieuForm">
-    <input type="hidden" id="maLc" name="maLc" value="" />
+<div class="container-fluid">
+	<div class="row">
+		<!-- main title -->
+		<div class="col-12">
+			<div class="main__title">
+				<h2>Thêm Mới Lịch Chiếu</h2>
+			</div>
+		</div>
+		<!-- end main title -->
+		<!-- form -->
+		<div class="col-12">
+			<form action="#" class="sign__form sign__form--add">
+				<div class="row">
+					<div class="col-12 ">
+						<div class="row">
 
-    <label>Thời Gian Chiếu:</label>
-    <input type="datetime-local" id="thoiGianChieu" name="thoiGianChieu" required />
+							<div class="col-12">
+								<div class="sign__group">
+									<label class="sign__label" for="genre">Thể Loại</label>
+									<input id="genre" type="text" name="genre" class="sign__input" placeholder="">
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="sign__group">
+									<label class="sign__label" for="movie">Tên phim</label>
+									<input id="movie" type="text" name="movie" class="sign__input" placeholder="">
+								</div>
+							</div>
+							<div class="col-12 ">
+								<div class="sign__group">
+									<label class="sign__label" for="genre">Thay đổi thời gian chiếu:</label>
+									<input type="datetime-local" class="sign__input" id="thoiGianChieu" placeholder="Thời gian bắt đầu">
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="sign__group">
+									<label class="sign__label" for="room">Phòng chiếu</label>
+									<input id="room" type="text" name="room" class="sign__input" placeholder="">
+								</div>
+							</div>
+						</div>
+					</div>
 
-    <label>Quản Lý:</label>
-    <input type="text" id="maQl" name="maQl" required />
+					<div class="col-12 ">
+						<div class="sign__group">
+							<label class="sign__label" for="rooms">Thay đổi phòng chiếu (có thể bỏ qua):</label>
+							<select class="sign__selectjs" id="sign__rooms" multiple>
+							</select>
+						</div>
+					</div>
 
-    <label>Phòng Chiếu:</label>
-    <input type="text" id="maPc" name="maPc" required />
+					<div class="col-12">
+						<button type="button" class="sign__btn sign__btn--small"><span>Xác Nhận</span></button>
+					</div>
+					<div id="message" style="margin-top: 20px;"></div>
+				</div>
+			</form>
+		</div>
 
-    <button type="button" onclick="updateLichChieu()">Cập nhật</button>
-</form>
+	</div>
+</div>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        // Lấy mã lịch chiếu từ URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const maLc = urlParams.get('maLc');
 
-        // Đặt giá trị mã lịch chiếu vào input ẩn
-        $('#maLc').val(maLc);
+@section scripts{
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
 
-        // Tải thông tin lịch chiếu bằng mã maLc
-        $.ajax({
-            url: '/api/LichChieu/' + maLc, // API chi tiết của LichChieu
-            method: 'GET',
-            dataType: 'json',
-            success: function (data) {
-                // Đặt các giá trị vào form
-                $('#thoiGianChieu').val(new Date(data.thoiGianChieu).toISOString().slice(0, 16));
-                $('#maQl').val(data.maQl);
-                $('#maPc').val(data.maPc);
-            },
-            error: function (error) {
-                alert('Lỗi khi tải thông tin lịch chiếu: ' + error.responseText);
-            }
-        });
-    });
+			const urlParams = new URLSearchParams(window.location.search);
+			const maLc = urlParams.get('maLc');
+			let maPhongBanDau = null;
 
-    function updateLichChieu() {
-        var maLc = $('#maLc').val();
-        var thoiGianChieu = $('#thoiGianChieu').val();
-        var maQl = $('#maQl').val();
-        var maPc = $('#maPc').val();
 
-        $.ajax({
-            url: '/api/LichChieu/' + maLc,
-            method: 'PUT',
-            contentType: 'application/json',
-            data: JSON.stringify({
-                maLc: maLc,
-                thoiGianChieu: thoiGianChieu,
-                maQl: maQl,
-                maPc: maPc
-            }),
-            success: function () {
-                alert('Cập nhật thành công!');
-                window.location.href = '/admin/LichChieuPhim'; // Quay lại trang danh sách sau khi cập nhật thành công
-            },
-            error: function (error) {
-                alert('Lỗi khi cập nhật: ' + error.responseText);
-            }
-        });
-    }
-</script>
+			$.ajax({
+				url: '/api/LichChieu/' + maLc,
+				method: 'GET',
+				dataType: 'json',
+				success: function (data) {
+					const thoiGianChieu = data.thoiGianChieu;
+
+					// Chuyển đổi về định dạng không có múi giờ, sử dụng .toISOString() để giữ định dạng chuẩn
+					const formattedDate = thoiGianChieu.slice(0, 16);  // Cắt phần múi giờ đi (YYYY-MM-DDTHH:mm)
+
+					// Hiển thị đúng thời gian trong input
+					$('#thoiGianChieu').val(formattedDate);
+					$('#genre').val(data.theLoai);
+					$('#movie').val(data.tenPhim);
+					$('#room').val(data.tenPhongChieu);
+					maPhongBanDau = data.maPc;
+				},
+				error: function (error) {
+					alert('Lỗi khi tải thông tin lịch chiếu: ' + error.responseText);
+				}
+
+			});
+
+			$.ajax({
+				url: '/api/PhongChieu',
+				method: 'GET',
+				dataType: 'json',
+				success: function (data) {
+					const selectElement = document.querySelector('#sign__rooms');
+					$(selectElement).empty();
+
+
+					data.forEach(item => {
+						$(selectElement).append(`<option value="${item.maPhong}">${item.tenPhong}</option>`);
+					});
+
+
+					if (selectElement.slim) {
+						selectElement.slim.setData(
+							data.map(item => ({ value: item.maPhong, text: item.tenPhong }))
+						);
+					}
+				},
+				error: function () {
+					console.error('Lỗi khi tải thể loại phim.');
+				}
+			});
+
+			$('.sign__btn--small').click(function () {
+				updateLichChieu(maLc, maPhongBanDau);
+			});
+
+		});
+
+		function updateLichChieu(maLc, maPhongBanDau) {
+
+			var thoiGianChieu = $('#thoiGianChieu').val();
+			var selectedRooms = $('#sign__rooms').val();
+
+			var maPc = selectedRooms && selectedRooms.length > 0 ? parseInt(selectedRooms[0], 10) : maPhongBanDau;
+			$.ajax({
+				url: '/api/LichChieu/' + maLc,
+				method: 'PUT',
+				contentType: 'application/json',
+				data: JSON.stringify({
+					thoiGianChieu: thoiGianChieu,
+					maPc: maPc
+				}),
+				success: function () {
+					alert('Cập nhật thành công!');
+					window.location.href = '/admin/LichChieuPhim';
+				},
+				error: function (xhr) {
+					$('#message').html(`<span style="color: red;">Lỗi: ${xhr.responseText || 'Không thể cập nhật lịch chiếu.'}</span>`);
+				}
+			});
+		}
+
+	</script>
+}

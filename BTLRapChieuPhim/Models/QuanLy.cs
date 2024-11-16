@@ -19,11 +19,7 @@ public partial class QuanLy
 
     public virtual ICollection<KhuyenMai> KhuyenMais { get; set; } = new List<KhuyenMai>();
 
-    public virtual ICollection<LichChieu> LichChieus { get; set; } = new List<LichChieu>();
-
     public virtual TaiKhoan? MaTkNavigation { get; set; }
-
-    public virtual ICollection<PhongChieu> PhongChieus { get; set; } = new List<PhongChieu>();
 
     public virtual ICollection<RapPhim> RapPhims { get; set; } = new List<RapPhim>();
 }
