@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< Updated upstream
     "D:\\HocTap\\Web\\BaiTapLon\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj": {}
   },
   "projects": {
@@ -16,22 +15,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chung\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-    "C:\\Users\\AdMax\\Documents\\GitHub\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\AdMax\\Documents\\GitHub\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\AdMax\\Documents\\GitHub\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj",
-        "projectName": "BTLRapChieuPhim",
-        "projectPath": "C:\\Users\\AdMax\\Documents\\GitHub\\BTLRapChieuPhim\\BTLRapChieuPhim\\BTLRapChieuPhim.csproj",
-        "packagesPath": "C:\\Users\\AdMax\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AdMax\\Documents\\GitHub\\BTLRapChieuPhim\\BTLRapChieuPhim\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\AdMax\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Stashed changes
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,7 +66,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[8.0.7, )"
+              "version": "[9.0.0, )"
             },
             "X.PagedList": {
               "target": "Package",

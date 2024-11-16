@@ -49,21 +49,19 @@ public partial class QuanLyRapPhimContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-<<<<<<< Updated upstream
+
         => optionsBuilder.UseSqlServer("Data Source=CHUNGLE;Initial Catalog=QuanLyRapPhim;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
-=======
-        => optionsBuilder.UseSqlServer("Data Source=DESKTOP-J84RFLT\\SQLEXPRESS;Initial Catalog=QuanLyRapPhim;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
->>>>>>> Stashed changes
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<DanhGium>(entity =>
         {
-<<<<<<< Updated upstream
+
             entity.HasKey(e => e.MaDg).HasName("PK__DanhGia__27258660F2D7E1B3");
-=======
+
             entity.HasKey(e => e.MaDg).HasName("PK__DanhGia__2725866009612EAE");
->>>>>>> Stashed changes
+
 
             entity.Property(e => e.MaDg)
                 .ValueGeneratedNever()
@@ -88,11 +86,11 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<DoAn>(entity =>
         {
-<<<<<<< Updated upstream
+
             entity.HasKey(e => e.MaDa).HasName("PK__DoAn__2725867A23913642");
-=======
+
             entity.HasKey(e => e.MaDa).HasName("PK__DoAn__2725867A177282C9");
->>>>>>> Stashed changes
+
 
             entity.ToTable("DoAn");
 
@@ -110,11 +108,11 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<GheXemPhim>(entity =>
         {
-<<<<<<< Updated upstream
+
             entity.HasKey(e => e.MaGxp).HasName("PK__GheXemPh__3CD34478FCC1FE83");
-=======
+
             entity.HasKey(e => e.MaGxp).HasName("PK__GheXemPh__3CD34478244C23FF");
->>>>>>> Stashed changes
+
 
             entity.ToTable("GheXemPhim");
 
@@ -127,11 +125,11 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<HinhAnhTrailer>(entity =>
         {
-<<<<<<< Updated upstream
+
             entity.HasKey(e => e.MaHat).HasName("PK__HinhAnhT__3C938F6ED0459C20");
-=======
+
             entity.HasKey(e => e.MaHat).HasName("PK__HinhAnhT__3C938F6EADFE4F88");
->>>>>>> Stashed changes
+
 
             entity.ToTable("HinhAnhTrailer");
 
@@ -150,11 +148,11 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<HoaDon>(entity =>
         {
-<<<<<<< Updated upstream
+
             entity.HasKey(e => e.MaHd).HasName("PK__HoaDon__2725A6E0F89CDDB5");
-=======
+
             entity.HasKey(e => e.MaHd).HasName("PK__HoaDon__2725A6E04D1F4BC1");
->>>>>>> Stashed changes
+
 
             entity.ToTable("HoaDon");
 
@@ -183,11 +181,9 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<KhachHang>(entity =>
         {
-<<<<<<< Updated upstream
             entity.HasKey(e => e.MaKh).HasName("PK__KhachHan__2725CF1EB909A501");
-=======
             entity.HasKey(e => e.MaKh).HasName("PK__KhachHan__2725CF1ED8844AC7");
->>>>>>> Stashed changes
+
 
             entity.ToTable("KhachHang");
 
@@ -207,12 +203,8 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<KhuyenMai>(entity =>
         {
-<<<<<<< Updated upstream
             entity.HasKey(e => e.MaKm).HasName("PK__KhuyenMa__2725CF1569856AAA");
-=======
             entity.HasKey(e => e.MaKm).HasName("PK__KhuyenMa__2725CF1568587D0D");
->>>>>>> Stashed changes
-
             entity.ToTable("KhuyenMai");
 
             entity.Property(e => e.MaKm)
@@ -241,11 +233,8 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<LichChieu>(entity =>
         {
-<<<<<<< Updated upstream
             entity.HasKey(e => e.MaLc).HasName("PK__LichChie__2725C762C938A79D");
-=======
             entity.HasKey(e => e.MaLc).HasName("PK__LichChie__2725C762FBFFC3D8");
->>>>>>> Stashed changes
 
             entity.ToTable("LichChieu");
 
@@ -267,11 +256,8 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<Phim>(entity =>
         {
-<<<<<<< Updated upstream
             entity.HasKey(e => e.MaPhim).HasName("PK__Phim__4AC03DE3009AFF12");
-=======
             entity.HasKey(e => e.MaPhim).HasName("PK__Phim__4AC03DE3F8FB1092");
->>>>>>> Stashed changes
 
             entity.ToTable("Phim");
 
@@ -292,11 +278,9 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<PhongChieu>(entity =>
         {
-<<<<<<< Updated upstream
             entity.HasKey(e => e.MaPc).HasName("PK__PhongChi__2725E7E55774A354");
-=======
             entity.HasKey(e => e.MaPc).HasName("PK__PhongChi__2725E7E51D958DD6");
->>>>>>> Stashed changes
+
 
             entity.ToTable("PhongChieu");
 
@@ -320,11 +304,11 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<QuanLy>(entity =>
         {
-<<<<<<< Updated upstream
+
             entity.HasKey(e => e.MaQl).HasName("PK__QuanLy__2725F8524CABE37D");
-=======
+
             entity.HasKey(e => e.MaQl).HasName("PK__QuanLy__2725F852C93BDE31");
->>>>>>> Stashed changes
+
 
             entity.ToTable("QuanLy");
 
@@ -343,11 +327,11 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<RapPhim>(entity =>
         {
-<<<<<<< Updated upstream
+
             entity.HasKey(e => e.MaRp).HasName("PK__RapPhim__2725F7BF29F02814");
-=======
+
             entity.HasKey(e => e.MaRp).HasName("PK__RapPhim__2725F7BFED3993C5");
->>>>>>> Stashed changes
+
 
             entity.ToTable("RapPhim");
 
@@ -368,11 +352,11 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<TaiKhoan>(entity =>
         {
-<<<<<<< Updated upstream
+
             entity.HasKey(e => e.MaTk).HasName("PK__TaiKhoan__27250070662857FB");
-=======
+
             entity.HasKey(e => e.MaTk).HasName("PK__TaiKhoan__27250070D19DD6B2");
->>>>>>> Stashed changes
+
 
             entity.ToTable("TaiKhoan");
 
@@ -387,11 +371,8 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<ThanhToan>(entity =>
         {
-<<<<<<< Updated upstream
             entity.HasKey(e => e.MaTt).HasName("PK__ThanhToa__27250079A1F511F6");
-=======
             entity.HasKey(e => e.MaTt).HasName("PK__ThanhToa__2725007919A64F37");
->>>>>>> Stashed changes
 
             entity.ToTable("ThanhToan");
 
@@ -412,11 +393,8 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<TheLoai>(entity =>
         {
-<<<<<<< Updated upstream
             entity.HasKey(e => e.MaTl).HasName("PK__TheLoai__272500710555D810");
-=======
             entity.HasKey(e => e.MaTl).HasName("PK__TheLoai__27250071F76D5A05");
->>>>>>> Stashed changes
 
             entity.ToTable("TheLoai");
 
@@ -429,12 +407,9 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<VeXemPhim>(entity =>
         {
-<<<<<<< Updated upstream
             entity.HasKey(e => e.MaVxp).HasName("PK__VeXemPhi__31CE4CB21E4BBBB3");
-=======
-            entity.HasKey(e => e.MaVxp).HasName("PK__VeXemPhi__31CE4CB2C7B7E712");
->>>>>>> Stashed changes
 
+            entity.HasKey(e => e.MaVxp).HasName("PK__VeXemPhi__31CE4CB2C7B7E712");
             entity.ToTable("VeXemPhim");
 
             entity.Property(e => e.MaVxp)
