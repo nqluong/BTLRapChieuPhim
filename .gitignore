@@ -1,5 +1,27 @@
-.vs/
-obj/
+﻿# Các thư mục build
 bin/
+obj/
+
+# Các file cấu hình
 appsettings.*.json
+*.user
+*.userosscache
+*.suo
+
+# Thư mục của Visual Studio
+.vs/
+
+# File môi trường và cấu hình nhạy cảm
 .env
+
+# Các file log
+*.log
+
+# Các file và thư mục của .NET Core và ASP.NET
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Các file tạm thời khác
+*.tmp
+*.bak
