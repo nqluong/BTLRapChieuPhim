@@ -686,7 +686,7 @@
 										</div>
 									</div>
 									<div class="cc_featured_second_section">
-										@for (int i = 20; i < Math.Min(24, Model.Count()); i++)
+										@for (int i = 0; i < Math.Min(4, Model.Count()); i++)
 										{
 											var mdl = Model.ElementAt(i);
 											<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 hidden-sm hidden-xs">
@@ -762,15 +762,15 @@
 									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 prs_upcom_slide_first">
 										<div class="prs_upcom_movie_box_wrapper">
 											<div class="prs_upcom_movie_img_box">
-												<img src="../Template/AnhPhimLayout/AP25.jpg" alt="movie_img" />
+												<img src="../Template/AnhPhimLayout/AP5.jpg" alt="movie_img" />
 												<div class="prs_upcom_movie_img_overlay"></div>
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a onclick="showTrailer('/Template/Video/Trailer 25.mp4)">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 5.mp4)">View Trailer</a>
 														</li>
 														<li>
-															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(24).MaPhim">View Detail</a>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(4).MaPhim">View Detail</a>
 														</li>
 													</ul>
 												</div>
@@ -797,15 +797,15 @@
 									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 hidden-sm prs_upcom_slide_second">
 										<div class="prs_upcom_movie_box_wrapper">
 											<div class="prs_upcom_movie_img_box">
-												<img src="../Template/AnhPhimLayout/AP26.jpg" alt="movie_img" />
+												<img src="../Template/AnhPhimLayout/AP6.jpg" alt="movie_img" />
 												<div class="prs_upcom_movie_img_overlay"></div>
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a onclick="showTrailer('/Template/Video/Trailer 26.mp4')">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 6.mp4')">View Trailer</a>
 														</li>
 														<li>
-															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(25).MaPhim">View Detail</a>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(5).MaPhim">View Detail</a>
 														</li>
 													</ul>
 												</div>
@@ -830,7 +830,7 @@
 										</div>
 									</div>
 									<div class="cc_featured_second_section">
-										@for (int i = 26; i < Math.Min(30, Model.Count()); i++)
+										@for (int i = 7; i < Math.Min(11, Model.Count()); i++)
 										{
 											var mdl = Model.ElementAt(i);
 											<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 hidden-sm hidden-xs">
@@ -890,151 +890,6 @@
 				<div role="tabpanel" class="tab-pane fade" id="trand1">
 					<div class="prs_upcom_slider_slides_wrapper">
 						<div class="owl-carousel owl-theme">
-							<div class="item">
-								<div class="row">
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hidden-xs">
-										<div class="prs_upcom_movie_box_wrapper prs_upcom_movie_video_box_wrapper">
-											<div class="prs_upcom_movie_video_overlay"></div>
-											<div class="prs_upcom_movie_img_box prs_webseri_movie_img_box">
-												<div class="prs_webseri_video_img_sec_icon_wrapper">
-													<ul>
-														<li>
-															<a class="test-popup-link button" rel='external' href='https://www.youtube.com/embed/ryzOXAO0Ss0' title='title'><i class="flaticon-play-button"></i></a>
-														</li>
-													</ul>
-												</div>
-												<div class="prs_upcom_video_img_cont_over">
-													<ul>
-														<li>Drama,Action</li>
-														<li>
-															Rating :&nbsp;&nbsp;<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
-														</li>
-													</ul>
-													<h2>terrorise of the year</h2>
-													<p>Release on cinema : 27 june 2022</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 prs_upcom_slide_first">
-										<div class="prs_upcom_movie_box_wrapper">
-											<div class="prs_upcom_movie_img_box">
-												<img src="../Template/AnhPhimLayout/AP1.jpg" alt="movie_img" />
-												<div class="prs_upcom_movie_img_overlay"></div>
-												<div class="prs_upcom_movie_img_btn_wrapper">
-													<ul>
-														<li>
-
-															<a onclick="showTrailer('/Template/Video/Trailer 1.mp4')">View Trailer</a>
-														</li>
-														<li>
-															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(0).MaPhim">View Detail</a>
-														</li>
-													</ul>
-												</div>
-											</div>
-											<div class="prs_upcom_movie_content_box">
-												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
-												</div>
-												<div class="prs_upcom_movie_content_box_inner_icon">
-													<ul>
-														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 hidden-sm prs_upcom_slide_second">
-										<div class="prs_upcom_movie_box_wrapper">
-											<div class="prs_upcom_movie_img_box">
-												<img src="../Template/AnhPhimLayout/AP2.jpg" alt="movie_img" />
-												<div class="prs_upcom_movie_img_overlay"></div>
-												<div class="prs_upcom_movie_img_btn_wrapper">
-													<ul>
-														<li>
-															<a onclick="showTrailer('/Template/Video/Trailer 2.mp4')">View Trailer</a>
-														</li>
-														<li>
-															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(1).MaPhim">View Detail</a>
-														</li>
-													</ul>
-												</div>
-											</div>
-											<div class="prs_upcom_movie_content_box">
-												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
-												</div>
-												<div class="prs_upcom_movie_content_box_inner_icon">
-													<ul>
-														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="cc_featured_second_section">
-										@for (int i = 2; i < Math.Min(6, Model.Count()); i++)
-										{
-											var mdl = Model.ElementAt(i);
-											<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 hidden-sm hidden-xs">
-												<div class="prs_upcom_movie_box_wrapper">
-													<div class="prs_upcom_movie_img_box">
-														<img src="@Url.Content("../Template/AnhPhimLayout/"+mdl.DuongDanAnh)" alt="movie_img" />
-														<div class="prs_upcom_movie_img_overlay"></div>
-														<div class="prs_upcom_movie_img_btn_wrapper">
-															<ul>
-																<li>
-																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
-																</li>
-																<li>
-																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
-																</li>
-															</ul>
-														</div>
-													</div>
-													<div class="prs_upcom_movie_content_box">
-														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
-														</div>
-														<div class="prs_upcom_movie_content_box_inner_icon">
-															<ul>
-																<li>
-																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
-																</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-										}
-
-									</div>
-								</div>
-							</div>
 							<div class="item">
 								<div class="row">
 									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hidden-xs">
@@ -1424,7 +1279,7 @@
 										</div>
 									</div>
 									<div class="cc_featured_second_section">
-										@for (int i = 20; i < Math.Min(24, Model.Count()); i++)
+										@for (int i = 0; i < Math.Min(4, Model.Count()); i++)
 										{
 											var mdl = Model.ElementAt(i);
 											<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 hidden-sm hidden-xs">
@@ -1500,15 +1355,15 @@
 									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 prs_upcom_slide_first">
 										<div class="prs_upcom_movie_box_wrapper">
 											<div class="prs_upcom_movie_img_box">
-												<img src="../Template/AnhPhimLayout/AP25.jpg" alt="movie_img" />
+												<img src="../Template/AnhPhimLayout/AP5.jpg" alt="movie_img" />
 												<div class="prs_upcom_movie_img_overlay"></div>
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a onclick="showTrailer('/Template/Video/Trailer 25.mp4)">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 5.mp4)">View Trailer</a>
 														</li>
 														<li>
-															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(24).MaPhim">View Detail</a>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(4).MaPhim">View Detail</a>
 														</li>
 													</ul>
 												</div>
@@ -1535,15 +1390,15 @@
 									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 hidden-sm prs_upcom_slide_second">
 										<div class="prs_upcom_movie_box_wrapper">
 											<div class="prs_upcom_movie_img_box">
-												<img src="../Template/AnhPhimLayout/AP26.jpg" alt="movie_img" />
+												<img src="../Template/AnhPhimLayout/AP6.jpg" alt="movie_img" />
 												<div class="prs_upcom_movie_img_overlay"></div>
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-															<a onclick="showTrailer('/Template/Video/Trailer 26.mp4')">View Trailer</a>
+															<a onclick="showTrailer('/Template/Video/Trailer 6.mp4')">View Trailer</a>
 														</li>
 														<li>
-															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(25).MaPhim">View Detail</a>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(5).MaPhim">View Detail</a>
 														</li>
 													</ul>
 												</div>
@@ -1568,7 +1423,7 @@
 										</div>
 									</div>
 									<div class="cc_featured_second_section">
-										@for (int i = 26; i < Math.Min(30, Model.Count()); i++)
+										@for (int i = 7; i < Math.Min(11, Model.Count()); i++)
 										{
 											var mdl = Model.ElementAt(i);
 											<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 hidden-sm hidden-xs">

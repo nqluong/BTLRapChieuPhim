@@ -524,26 +524,6 @@ INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhi
 GO
 INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (20, N'AP20.jpg', N'Trailer 20.mp4', 20)
 GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (21, N'AP21.jpg', N'Trailer 21.mp4', 21)
-GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (22, N'AP22.jpg', N'Trailer 22.mp4', 22)
-GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (23, N'AP23.jpg', N'Trailer 23.mp4', 23)
-GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (24, N'AP24.jpg', N'Trailer 24.mp4', 24)
-GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (25, N'AP25.jpg', N'Trailer 25.mp4', 25)
-GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (26, N'AP26.jpg', N'Trailer 26.mp4', 26)
-GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (27, N'AP27.jpg', N'Trailer 27.mp4', 27)
-GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (28, N'AP28.jpg', N'Trailer 28.mp4', 28)
-GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (29, N'AP29.jpg', N'Trailer 29.mp4', 29)
-GO
-INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (30, N'AP30.jpg', N'Trailer 30.mp4', 30)
-GO
 INSERT [dbo].[HoaDon] ([MaHD], [SoLuongVe], [SoLuongDA], [TongTienVe], [TongTienDA], [TongTienHD], [MaDA], [MaKH]) VALUES (1, 2, 1, CAST(200000.00 AS Decimal(18, 2)), CAST(50000.00 AS Decimal(18, 2)), CAST(250000.00 AS Decimal(18, 2)), 1, 5)
 GO
 INSERT [dbo].[HoaDon] ([MaHD], [SoLuongVe], [SoLuongDA], [TongTienVe], [TongTienDA], [TongTienHD], [MaDA], [MaKH]) VALUES (2, 4, 2, CAST(800000.00 AS Decimal(18, 2)), CAST(300000.00 AS Decimal(18, 2)), CAST(1100000.00 AS Decimal(18, 2)), 2, 12)
@@ -812,39 +792,19 @@ INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [Nuo
 GO
 INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (13, N'Tôi Thấy Hoa Vàng Trên Cỏ Xanh', 102, N'Victor Vũ', 13, N'Việt Nam', N'Phim tâm lý tình cảm về tuổi thơ và sự trưởng thành.', 3)
 GO
-INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (14, N'My Neighbor Totoro', 86, N'Hayao Miyazaki', 12, N'Nhật Bản', N'Phim hoạt hình với câu chuyện cảm động về tình bạn và gia đình.', 5)
+INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (14, N'Ròm', 79, N'Tran Thanh Huy', 16, N'Việt Nam', N'Câu chuyện về một cậu bé bán vé số và cuộc sống nghèo khó nơi đô thị.', 3);
 GO
-INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (15, N'Slumdog Millionaire', 120, N'Danny Boyle', 13, N'Anh', N'Phim về hành trình vượt khó và tham gia gameshow của một cậu bé Ấn Độ.', 13)
+INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (15, N'Lật Mặt 6: Tấm Vé Định Mệnh', 112, N'Lý Hải', 16, N'Việt Nam', N'Câu chuyện kịch tính về tình bạn và lòng tham khi trúng vé số.', 3);
 GO
-INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (16, N'Intouchables', 112, N'Olivier Nakache', 13, N'Pháp', N'Câu chuyện hài hước và cảm động về tình bạn giữa một quý ông và người chăm sóc.', 8)
+INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (16, N'Cô Gái Đến Từ Hôm Qua', 120, N'Phan Gia Nhật Linh', 13, N'Việt Nam', N'Một chuyện tình học trò nhẹ nhàng và hoài niệm từ tác phẩm của Nguyễn Nhật Ánh.', 7);
 GO
-INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (17, N'Kong: Skull Island', 118, N'Jordan Vogt-Roberts', 13, N'Mỹ', N'Phim phiêu lưu hành động về cuộc chiến của King Kong trên đảo đầu lâu.', 12)
+INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (17, N'Bố Già', 128, N'Trấn Thành', 13, N'Việt Nam', N'Câu chuyện về tình cảm gia đình và những giá trị cuộc sống.', 8);
 GO
-INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (18, N'The Host', 120, N'Bong Joon Ho', 16, N'Hàn Quốc', N'Phim quái vật với thông điệp về môi trường.', 4)
+INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (18, N'Mắt Biếc', 124, N'Victor Vũ', 13, N'Việt Nam', N'Một câu chuyện tình yêu đầy hoài niệm dựa trên tiểu thuyết Nguyễn Nhật Ánh.', 7);
 GO
-INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (19, N'Lật Mặt 4: Nhà Có Khách', 90, N'Lý Hải', 13, N'Việt Nam', N'Phim kinh dị hài về một gia đình và câu chuyện ma quái.', 4)
+INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (19, N'Tiệc Trăng Máu', 120, N'Nguyễn Quang Dũng', 16, N'Việt Nam', N'Tình bạn bị thử thách khi những bí mật được tiết lộ trong bữa tiệc.', 8);
 GO
-INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (20, N'Lion', 118, N'Garth Davis', 13, N'Úc', N'Phim tiểu sử về hành trình tìm kiếm gia đình của một cậu bé Ấn Độ.', 13)
-GO
-INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (21, N'Vengeance', 108, N'Johnnie To', 16, N'Hồng Kông', N'Phim hành động về cuộc trả thù của một người cha.', 2)
-GO
-INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (22, N'Thị xã trong tầm tay', 90, N'Đặng Nhật Minh', 13, N'Việt Nam', N'Phim tâm lý tình cảm của 2 bạn trẻ trong thời chiến.', 3)
-GO
-INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (23, N'No Country for Old Men', 122, N'Coen Brothers', 16, N'Mỹ', N'Trò chơi sinh tử giữa kẻ giết người hàng loạt và một người đàn ông.', 11)
-GO
-INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (24, N'Dragon Inn', 111, N'King Hu', 13, N'Trung Quốc', N'Phim võ thuật cổ trang về cuộc chiến giành lại công lý.', 9)
-GO
-INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (25, N'The Intouchables', 112, N'Olivier Nakache', 13, N'Pháp', N'Câu chuyện về tình bạn cảm động giữa một quý tộc giàu có và người chăm sóc của ông.', 8)
-GO
-INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (26, N'Gone Girl', 149, N'David Fincher', 18, N'Mỹ', N'Phim kinh dị tâm lý xoay quanh sự mất tích bí ẩn của một phụ nữ.', 3)
-GO
-INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (27, N'Three Idiots', 170, N'Rajkumar Hirani', 13, N'Ấn Độ', N'Phim hài về ba người bạn và câu chuyện về hệ thống giáo dục.', 8)
-GO
-INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (28, N'Roma', 135, N'Alfonso Cuarón', 16, N'Mexico', N'Phim trắng đen miêu tả cuộc sống của một gia đình trung lưu tại Mexico.', 3)
-GO
-INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (29, N'The Battle of Algiers', 121, N'Gillo Pontecorvo', 16, N'Ý', N'Tái hiện cuộc chiến giành độc lập của Algeria khỏi thực dân Pháp.', 10)
-GO
-INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (30, N'Sandy Lives', 95, N'Phan Đăng Di', 16, N'Việt Nam', N'Phim nghệ thuật về cuộc sống và những biến cố của một gia đình trong chiến tranh.', 3)
+INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (20, N'Em và Trịnh', 136, N'Phan Gia Nhật Linh', 13, N'Việt Nam', N'Tái hiện cuộc đời và tình yêu của cố nhạc sĩ Trịnh Công Sơn.', 13);
 GO
 INSERT [dbo].[PhongChieu] ([MaPC], [TenPC], [SucChua], [MaQL], [MaRP]) VALUES (1, N'Phòng 1', 100, 1, 1)
 GO
