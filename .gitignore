@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 
-=======
-﻿
->>>>>>> origin/chung
 # Các thư mục build
 bin/
 obj/
@@ -30,8 +26,5 @@ artifacts/
 
 # Các file tạm thời khác
 *.tmp
-<<<<<<< HEAD
 *.bak
-=======
-*.bak
->>>>>>> origin/chung
+
