@@ -1,10 +1,12 @@
 using BTLRapChieuPhim.Models;
+using BTLRapChieuPhim.Models.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace BTLRapChieuPhim.Controllers
 {
-    public class HomeController : Controller
+	//[Authentication(2)]
+	public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
 
@@ -12,8 +14,7 @@ namespace BTLRapChieuPhim.Controllers
         {
             _logger = logger;
         }
-
-        public IActionResult Index()
+		public IActionResult Index()
         {
             return View();
         }

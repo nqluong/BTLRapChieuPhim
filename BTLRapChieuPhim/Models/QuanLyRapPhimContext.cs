@@ -324,6 +324,7 @@ public partial class QuanLyRapPhimContext : DbContext
                 .ValueGeneratedNever()
                 .HasColumnName("MaTK");
             entity.Property(e => e.Email).HasMaxLength(50);
+            entity.Property(e => e.LoaiTk).HasColumnName("LoaiTK");
             entity.Property(e => e.Password).HasMaxLength(50);
             entity.Property(e => e.Sdt).HasMaxLength(15);
             entity.Property(e => e.Username).HasMaxLength(50);

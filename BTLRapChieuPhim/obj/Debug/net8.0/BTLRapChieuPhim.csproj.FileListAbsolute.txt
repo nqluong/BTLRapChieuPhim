@@ -552,3 +552,4 @@ D:\HocTap\Web\BaiTapLon\BTLRapChieuPhim\BTLRapChieuPhim\bin\Debug\net8.0\runtime
 D:\HocTap\Web\BaiTapLon\BTLRapChieuPhim\BTLRapChieuPhim\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\HocTap\Web\BaiTapLon\BTLRapChieuPhim\BTLRapChieuPhim\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\HocTap\Web\BaiTapLon\BTLRapChieuPhim\BTLRapChieuPhim\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\HocTap\Web\BaiTapLon\BTLRapChieuPhim\BTLRapChieuPhim\bin\Debug\net8.0\BouncyCastle.Crypto.dll

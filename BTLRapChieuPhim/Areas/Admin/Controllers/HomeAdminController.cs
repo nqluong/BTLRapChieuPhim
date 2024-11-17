@@ -1,16 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using BTLRapChieuPhim.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using BTLRapChieuPhim.Models.Authentication;
 
 namespace BTLRapChieuPhim.Areas.Admin.Controllers
 {
     [Area("admin")]
     [Route("admin")]
-    public class HomeAdminController : Controller
+	[Authentication(1)]
+	public class HomeAdminController : Controller
 	{
 		QuanLyRapPhimContext db = new QuanLyRapPhimContext();
 
+		
 		[Route("")]
+
 		public IActionResult Index()
 		{
 			return View();
