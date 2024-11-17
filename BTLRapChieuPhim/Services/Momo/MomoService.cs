@@ -52,24 +52,8 @@ namespace BTLRapChieuPhim.Services.Momo
 			};
 
 			request.AddParameter("application/json", JsonConvert.SerializeObject(requestData), ParameterType.RequestBody);
-
-			// Thực thi yêu cầu và kiểm tra lỗi
 			var response = await client.ExecuteAsync(request);
-
-			if (response.StatusCode != System.Net.HttpStatusCode.OK || string.IsNullOrEmpty(response.Content))
-			{
-				throw new Exception($"Lỗi khi gọi API MoMo: {response.ErrorMessage ?? "Không có phản hồi"}");
-			}
-
-			// Deserialize phản hồi và kiểm tra lỗi
-			var momoResponse = JsonConvert.DeserializeObject<MomoCreatePaymentResponseModel>(response.Content);
-
-			if (momoResponse == null || momoResponse.ErrorCode != 0)
-			{
-				throw new Exception($"MoMo API trả về lỗi: {momoResponse?.LocalMessage ?? "Không rõ nguyên nhân"}");
-			}
-
-			return momoResponse;
+			return JsonConvert.DeserializeObject<MomoCreatePaymentResponseModel>(response.Content);
 		}
 
 		public MomoExecuteResponseModel PaymentExecuteAsync(IQueryCollection collection)

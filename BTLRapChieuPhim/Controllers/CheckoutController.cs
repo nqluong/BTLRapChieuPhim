@@ -14,12 +14,30 @@ namespace BTLRapChieuPhim.Controllers
 		public CheckoutController(IMomoService momoService, QuanLyRapPhimContext context)
 		{
 			_momoService = momoService;
-			db = context; // Khởi tạo đúng db context
+			db = context; 
 		}
 
-		
+		public async Task<IActionResult> PaymentCallBack(ThanhToan model)
+		{
+			// Lấy phản hồi thanh toán từ Momo
+			var response =  _momoService.PaymentExecuteAsync(HttpContext.Request.Query);
+			var requestquery = HttpContext.Request.Query;
+			// Kiểm tra kết quả giao dịch từ Momo
+			if (requestquery["ResultCode"] != "0")
+			{
+				var thanhToan = new ThanhToan
+				{
+					MaGd = requestquery["OrderId"],
+					NoiDung = requestquery["OrderInfomation"],
+					Hoten = requestquery["FullName"],
+					ThanhTien = decimal.Parse(requestquery["Amount"]),
+					NgayTt = DateTime.Now
+				};
+				db.ThanhToans.Add(thanhToan);
+				await db.SaveChangesAsync();
+			}
 
-		
-		
+			return View(response); 
+		}
 	}
 }
