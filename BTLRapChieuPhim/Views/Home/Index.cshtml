@@ -2,8 +2,7 @@
 	ViewData["Title"] = "Home Page";
 	Layout = "_LayoutTemplate";
 }
-<<<<<<< HEAD
-@model IQueryable<HinhAnhTrailer>
+@model IEnumerable<HinhAnhPhimViewModel>
 
 <!-- PRS Upcoming Slider Start -->
 <div class="prs_upcom_slider_main_wrapper">
@@ -25,15 +24,8 @@
 										<img src="@Url.Content("~/Template/AnhPhim/" + item.DuongDanAnh)" alt="feature_img">
 									</div>
 									<div class="prs_feature_img_cont">
-										<div class="prs_ft_small_cont_left">
-											<p></p>
-										</div>
-										<div class="prs_ft_small_cont_right">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star-o"></i>
-											<i class="fa fa-star-o"></i>
+										<div >
+											<p>@item.TenPhim</p>
 										</div>
 										<ul>
 											<li>
@@ -170,12 +162,8 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<h2><a>@Model.ElementAt(0).TenPhim</a></h2>
+													<p>@Model.ElementAt(0).NuocSX</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
@@ -205,12 +193,8 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<h2><a>@Model.ElementAt(1).TenPhim</a></h2>
+													<p>@Model.ElementAt(1).NuocSX</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
@@ -244,12 +228,8 @@
 													</div>
 													<div class="prs_upcom_movie_content_box">
 														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
+															<h2><a>@mdl.TenPhim</a></h2>
+															<p>@mdl.NuocSX</p>
 														</div>
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
@@ -314,12 +294,8 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<h2><a>@Model.ElementAt(6).TenPhim</a></h2>
+													<p>@Model.ElementAt(6).NuocSX</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
@@ -349,12 +325,8 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<h2><a>@Model.ElementAt(7).TenPhim</a></h2>
+													<p>@Model.ElementAt(7).NuocSX</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
@@ -388,12 +360,8 @@
 													</div>
 													<div class="prs_upcom_movie_content_box">
 														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
+															<h2><a>@mdl.TenPhim</a></h2>
+															<p>@mdl.NuocSX</p>
 														</div>
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
@@ -458,12 +426,8 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<h2><a>@Model.ElementAt(12).TenPhim</a></h2>
+													<p>@Model.ElementAt(12).NuocSX</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
@@ -493,12 +457,8 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<h2><a>@Model.ElementAt(13).TenPhim</a></h2>
+													<p>@Model.ElementAt(13).NuocSX</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
@@ -532,12 +492,8 @@
 													</div>
 													<div class="prs_upcom_movie_content_box">
 														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
+															<h2><a>@mdl.TenPhim</a></h2>
+															<p>@mdl.NuocSX</p>
 														</div>
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
@@ -619,12 +575,8 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<h2><a>@Model.ElementAt(18).TenPhim</a></h2>
+													<p>@Model.ElementAt(18).NuocSX</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
@@ -654,12 +606,8 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<h2><a>@Model.ElementAt(19).TenPhim</a></h2>
+													<p>@Model.ElementAt(19).NuocSX</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
@@ -693,12 +641,8 @@
 													</div>
 													<div class="prs_upcom_movie_content_box">
 														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
+															<h2><a>@mdl.TenPhim</a></h2>
+															<p>@mdl.NuocSX</p>
 														</div>
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
@@ -763,12 +707,8 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<h2><a>@Model.ElementAt(4).TenPhim</a></h2>
+													<p>@Model.ElementAt(4).NuocSX</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
@@ -798,12 +738,8 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<h2><a>@Model.ElementAt(5).TenPhim</a></h2>
+													<p>@Model.ElementAt(5).NuocSX</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
@@ -837,12 +773,8 @@
 													</div>
 													<div class="prs_upcom_movie_content_box">
 														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
+															<h2><a>@mdl.TenPhim</a></h2>
+															<p>@mdl.NuocSX</p>
 														</div>
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
@@ -924,12 +856,8 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<h2><a>@Model.ElementAt(6).TenPhim</a></h2>
+													<p>@Model.ElementAt(6).NuocSX</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
@@ -959,12 +887,8 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<h2><a>@Model.ElementAt(7).TenPhim</a></h2>
+													<p>@Model.ElementAt(7).NuocSX</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
@@ -998,12 +922,8 @@
 													</div>
 													<div class="prs_upcom_movie_content_box">
 														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
+															<h2><a>@mdl.TenPhim</a></h2>
+															<p>@mdl.NuocSX</p>
 														</div>
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
@@ -1068,12 +988,8 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<h2><a>@Model.ElementAt(12).TenPhim</a></h2>
+													<p>@Model.ElementAt(12).NuocSX</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
@@ -1103,12 +1019,8 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<h2><a>@Model.ElementAt(13).TenPhim</a></h2>
+													<p>@Model.ElementAt(13).NuocSX</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
@@ -1142,12 +1054,8 @@
 													</div>
 													<div class="prs_upcom_movie_content_box">
 														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
+															<h2><a>@mdl.TenPhim</a></h2>
+															<p>@mdl.NuocSX</p>
 														</div>
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
@@ -1212,12 +1120,8 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<h2><a>@Model.ElementAt(18).TenPhim</a></h2>
+													<p>@Model.ElementAt(18).NuocSX</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
@@ -1247,12 +1151,8 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<h2><a>@Model.ElementAt(19).TenPhim</a></h2>
+													<p>@Model.ElementAt(19).NuocSX</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
@@ -1286,12 +1186,8 @@
 													</div>
 													<div class="prs_upcom_movie_content_box">
 														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
+															<h2><a>@mdl.TenPhim</a></h2>
+															<p>@mdl.NuocSX</p>
 														</div>
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
@@ -1356,12 +1252,8 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<h2><a>@Model.ElementAt(4).TenPhim</a></h2>
+													<p>@Model.ElementAt(4).NuocSX</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
@@ -1391,12 +1283,8 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<h2><a>@Model.ElementAt(5).TenPhim</a></h2>
+													<p>@Model.ElementAt(5).NuocSX</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
@@ -1430,12 +1318,8 @@
 													</div>
 													<div class="prs_upcom_movie_content_box">
 														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
+															<h2><a>@mdl.TenPhim</a></h2>
+															<p>@mdl.NuocSX</p>
 														</div>
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
