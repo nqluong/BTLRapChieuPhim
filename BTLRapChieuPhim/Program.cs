@@ -1,5 +1,10 @@
+
 using BTLRapChieuPhim.Models.MoMo;
 using BTLRapChieuPhim.Services.Momo;
+
+﻿using BTLRapChieuPhim.Models;
+using Microsoft.EntityFrameworkCore;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +16,12 @@ builder.Services.Configure<MomoOptionModel>(builder.Configuration.GetSection("Mo
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+var connectionString = builder.Configuration.GetConnectionString("QuanLyRapPhimContext");
+builder.Services.AddDbContext<QuanLyRapPhimContext>(x => x.UseSqlServer(connectionString));
+
+builder.Services.AddSession();
+
 var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -26,6 +37,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseSession();
 
 app.MapControllers(); // Đây là bước quan trọng để routing cho API hoạt động
 

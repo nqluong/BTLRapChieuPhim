@@ -1,6 +1,10 @@
 USE [QuanLyRapPhim]
 GO
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[DanhGia]    Script Date: 11/17/2024 9:59:02 PM ******/
+=======
+/****** Object:  Table [dbo].[DanhGia]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chung
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -18,7 +22,11 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[DoAn]    Script Date: 11/17/2024 9:59:02 PM ******/
+=======
+/****** Object:  Table [dbo].[DoAn]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chung
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -36,7 +44,11 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[GheXemPhim]    Script Date: 11/17/2024 9:59:02 PM ******/
+=======
+/****** Object:  Table [dbo].[GheXemPhim]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chung
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -51,7 +63,11 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[HinhAnhTrailer]    Script Date: 11/17/2024 9:59:02 PM ******/
+=======
+/****** Object:  Table [dbo].[HinhAnhTrailer]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chung
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -60,6 +76,11 @@ CREATE TABLE [dbo].[HinhAnhTrailer](
 	[MaHAT] [int] NOT NULL,
 	[DuongDanAnh] [nvarchar](255) NULL,
 	[DuongDanTrailer] [nvarchar](255) NULL,
+<<<<<<< HEAD
+=======
+	[Loai] [nvarchar](50) NULL,
+	[MoTa] [nvarchar](255) NULL,
+>>>>>>> origin/chung
 	[MaPhim] [int] NULL,
 PRIMARY KEY CLUSTERED 
 (
@@ -67,7 +88,11 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[HoaDon]    Script Date: 11/17/2024 9:59:02 PM ******/
+=======
+/****** Object:  Table [dbo].[HoaDon]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chung
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -87,7 +112,11 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[KhachHang]    Script Date: 11/17/2024 9:59:02 PM ******/
+=======
+/****** Object:  Table [dbo].[KhachHang]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chung
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -106,7 +135,11 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[KhuyenMai]    Script Date: 11/17/2024 9:59:02 PM ******/
+=======
+/****** Object:  Table [dbo].[KhuyenMai]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chung
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -125,7 +158,11 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[LichChieu]    Script Date: 11/17/2024 9:59:02 PM ******/
+=======
+/****** Object:  Table [dbo].[LichChieu]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chung
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -133,15 +170,24 @@ GO
 CREATE TABLE [dbo].[LichChieu](
 	[MaLC] [int] NOT NULL,
 	[ThoiGianChieu] [datetime] NULL,
+<<<<<<< HEAD
 	[MaPC] [int] NULL,
 	[MaPhim] [int] NULL,
+=======
+	[MaQL] [int] NULL,
+	[MaPC] [int] NULL,
+>>>>>>> origin/chung
 PRIMARY KEY CLUSTERED 
 (
 	[MaLC] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[Phim]    Script Date: 11/17/2024 9:59:02 PM ******/
+=======
+/****** Object:  Table [dbo].[Phim]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chung
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -161,7 +207,11 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[PhongChieu]    Script Date: 11/17/2024 9:59:02 PM ******/
+=======
+/****** Object:  Table [dbo].[PhongChieu]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chung
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -178,7 +228,11 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[QuanLy]    Script Date: 11/17/2024 9:59:02 PM ******/
+=======
+/****** Object:  Table [dbo].[QuanLy]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chung
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -196,7 +250,11 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[RapPhim]    Script Date: 11/17/2024 9:59:02 PM ******/
+=======
+/****** Object:  Table [dbo].[RapPhim]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chung
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -213,7 +271,11 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[TaiKhoan]    Script Date: 11/17/2024 9:59:02 PM ******/
+=======
+/****** Object:  Table [dbo].[TaiKhoan]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chung
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -230,7 +292,11 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[ThanhToan]    Script Date: 11/17/2024 9:59:02 PM ******/
+=======
+/****** Object:  Table [dbo].[ThanhToan]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chung
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -247,7 +313,11 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[TheLoai]    Script Date: 11/17/2024 9:59:02 PM ******/
+=======
+/****** Object:  Table [dbo].[TheLoai]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chung
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -262,7 +332,11 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+<<<<<<< HEAD
 /****** Object:  Table [dbo].[VeXemPhim]    Script Date: 11/17/2024 9:59:02 PM ******/
+=======
+/****** Object:  Table [dbo].[VeXemPhim]    Script Date: 10/22/2024 12:07:49 AM ******/
+>>>>>>> origin/chung
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -484,6 +558,7 @@ INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [TrangThai]) VALUES (49, N'Thư�
 GO
 INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [TrangThai]) VALUES (50, N'Thường', N'Còn trống')
 GO
+<<<<<<< HEAD
 INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (1, N'AP1.jpg', N'Trailer 1.mp4', 1)
 GO
 INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (2, N'AP2.jpg', N'Trailer 2.mp4', 2)
@@ -523,6 +598,51 @@ GO
 INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (19, N'AP19.jpg', N'Trailer 19.mp4', 19)
 GO
 INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (20, N'AP20.jpg', N'Trailer 10.mp4', 20)
+=======
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (1, N'https://upload.wikimedia.org/wikipedia/vi/thumb/1/11/Inception_poster_1.jpg/220px-Inception_poster_1.jpg', N'https://www.youtube.com/watch?v=YoHD9XEInc0', N'Khoa học viễn tưởng', N'Phim khoa học viễn tưởng với các cảnh hành động đỉnh cao.', 1)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (2, N'https://upload.wikimedia.org/wikipedia/vi/thumb/c/cc/Poster_phim_Parasite_2019.jpg/220px-Poster_phim_Parasite_2019.jpg', N'https://www.youtube.com/watch?v=5xH0HfJHsaY', N'Tâm lý', N'Phim tâm lý xã hội về chênh lệch giàu nghèo.', 2)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (3, N'https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Spirited_Away_Japanese_poster.png/220px-Spirited_Away_Japanese_poster.png', N'https://www.youtube.com/watch?v=ByXuk9QqQkk', N'Hoạt hình', N'Tác phẩm hoạt hình nổi tiếng về cuộc hành trình kỳ diệu.', 3)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (4, N'https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Amelie_poster.jpg/220px-Amelie_poster.jpg', N'https://www.youtube.com/watch?v=Py7cDXQae2U', N'Hài', N'Phim hài lãng mạn về cuộc sống của cô gái Amélie.', 4)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (5, N'https://upload.wikimedia.org/wikipedia/vi/thumb/a/a2/The_Handmaiden_film.png/220px-The_Handmaiden_film.png', N'https://www.youtube.com/watch?v=whldChqCsYk', N'Tâm lý', N'Phim tâm lý hồi hợp với nhiều tình tiết bất ngờ.', 5)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (6, N'https://upload.wikimedia.org/wikipedia/vi/thumb/a/ab/Titanic_3D_poster_Vietnam.jpg/220px-Titanic_3D_poster_Vietnam.jpg', N'https://www.youtube.com/watch?v=gs5GwXOgumc', N'Tình cảm', N'Chuyện tình lãng mạn giữa Jack và Rose trên con tàu Titanic.', 6)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (7, N'https://upload.wikimedia.org/wikipedia/en/thumb/2/27/Crouching_Tiger%2C_Hidden_Dragon_%28Chinese_poster%29.png/220px-Crouching_Tiger%2C_Hidden_Dragon_%28Chinese_poster%29.png', N'https://www.youtube.com/watch?v=-jTdOdcMKoY', N'Võ thuật', N'Phim võ thuật với các cảnh quay tuyệt đẹp.', 7)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (8, N'https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Pan%27s_Labyrinth.jpg/220px-Pan%27s_Labyrinth.jpg', N'https://www.youtube.com/watch?v=jVZRnnVSQ8k', N'Giả tưởng', N'Phim giả tưởng với yếu tố phép thuật trong bối cảnh chiến tranh.', 8)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (9, N'https://upload.wikimedia.org/wikipedia/vi/thumb/2/2d/Poster_phim_K%E1%BB%B9_s%C4%A9_b%C3%B3ng_%C4%91%C3%AAm_2008.jpg/220px-Poster_phim_K%E1%BB%B9_s%C4%A9_b%C3%B3ng_%C4%91%C3%AAm_2008.jpg', N'https://www.youtube.com/watch?v=EXeTwQWrcwY', N'Siêu anh hùng', N'Phim siêu anh hùng với diễn xuất tuyệt vời của Heath Ledger.', 9)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (10, N'https://upload.wikimedia.org/wikipedia/en/6/6e/Mad_Max_Fury_Road.jpg', N'https://www.youtube.com/watch?v=hEJnMQG9ev8', N'Hành động', N'Phim hành động hậu tận thế với các pha rượt đuổi kịch tính.', 10)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (11, N'https://upload.wikimedia.org/wikipedia/vi/thumb/4/4a/Bo_gia_poster.jpg/220px-Bo_gia_poster.jpg', N'https://www.youtube.com/watch?v=UaVTIH8mujA', N'Tội phạm', N'Phim kinh điển về thế giới mafia của M.', 11)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (12, N'https://upload.wikimedia.org/wikipedia/vi/c/c1/The_Matrix_Poster.jpg', N'https://www.youtube.com/watch?v=vKQi3bBA1y8', N'Khoa học viễn tưởng', N'Phim hành động khoa học viễn tưởng về thế giới ảo.', 12)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (13, N'https://upload.wikimedia.org/wikipedia/vi/thumb/f/f8/Toithayhoavangtrencoxanh.jpg/280px-Toithayhoavangtrencoxanh.jpg', N'https://www.youtube.com/watch?v=wmjiCP6R-7I', N'Tâm lý', N'Phim tâm lý tình cảm về tuổi trẻ và sự trưởng thành.', 13)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (14, N'https://upload.wikimedia.org/wikipedia/en/thumb/0/02/My_Neighbor_Totoro_-_Tonari_no_Totoro_%28Movie_Poster%29.jpg/220px-My_Neighbor_Totoro_-_Tonari_no_Totoro_%28Movie_Poster%29.jpg', N'https://www.youtube.com/watch?v=92a7Hj0ijLs', N'Hoạt hình', N'Phim hoạt hình với câu chuyện cảm động về tình bạn và gia đình.', 14)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (15, N'https://upload.wikimedia.org/wikipedia/en/thumb/9/92/Slumdog_Millionaire_poster.png/220px-Slumdog_Millionaire_poster.png', N'https://www.youtube.com/watch?v=AIzbwV7on6Q', N'Tâm lý', N'Phim về hành trình vượt khó và tham gia gameshow của một cậu bé ăn xin.', 15)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (16, N'https://upload.wikimedia.org/wikipedia/en/9/93/The_Intouchables.jpg', N'https://www.youtube.com/watch?v=34WIbmXkewU', N'Hài', N'Câu chuyện hài hước và cảm động về tình bạn giữa một quý ông và người chăm sóc.', 16)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (17, N'https://upload.wikimedia.org/wikipedia/en/3/34/Kong_Skull_Island_poster.jpg', N'https://www.youtube.com/watch?v=44LdLqgOpjo', N'Hành động', N'Phim phiêu lưu hành động về cuộc chiến của King Kong trên đảo đầu lâu.', 17)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (18, N'https://upload.wikimedia.org/wikipedia/en/thumb/5/55/The_Host_film_poster.jpg/220px-The_Host_film_poster.jpg', N'https://www.youtube.com/watch?v=xrLY0wO06l4', N'Quái vật', N'Phim quái vật với thông điệp về môi trường.', 18)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (19, N'https://upload.wikimedia.org/wikipedia/vi/thumb/6/62/L%E1%BA%ADt_m%E1%BA%B7t_48h_poster.jpg/220px-L%E1%BA%ADt_m%E1%BA%B7t_48h_poster.jpg', N'https://www.youtube.com/watch?v=Fw3NAveg578', N'Kinh dị hài', N'Phim kinh dị hài về một gia đình và câu chuyện ma quái.', 19)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (20, N'https://upload.wikimedia.org/wikipedia/en/f/f0/Lion_%282016_film%29.png', N'https://www.youtube.com/watch?v=-RNI9o06vqo', N'Tiểu sử', N'Phim tiểu sử về hành trình tìm kiếm gia đình của một cậu bé ăn xin.', 20)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (21, N'https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Vengeance_%282022_film%29.jpg/220px-Vengeance_%282022_film%29.jpg', N'https://www.youtube.com/watch?v=1GT1jFsNnPw', N'Hành động', N'Phim hành động về cuộc trả thù của một người cha.', 21)
+GO
+INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [Loai], [MoTa], [MaPhim]) VALUES (22, N'https://image.sggp.org.vn/w1000/Uploaded/2024/chuabhu/2023_11_30/ngay-xua-co-1-chuyen-tinh-1-1-6.jpg', N'https://www.youtube.com/watch?v=dQw4w9WgXcQ', N'Tình cảm', N'Câu chuyện tình yêu cảm động giữa hai người trẻ.', 22)
+>>>>>>> origin/chung
 GO
 INSERT [dbo].[HoaDon] ([MaHD], [SoLuongVe], [SoLuongDA], [TongTienVe], [TongTienDA], [TongTienHD], [MaDA], [MaKH]) VALUES (1, 2, 1, CAST(200000.00 AS Decimal(18, 2)), CAST(50000.00 AS Decimal(18, 2)), CAST(250000.00 AS Decimal(18, 2)), 1, 5)
 GO
@@ -586,6 +706,7 @@ INSERT [dbo].[KhuyenMai] ([MaKM], [TenKM], [DieuKienKM], [HanKM], [MaPhim], [MaQ
 GO
 INSERT [dbo].[KhuyenMai] ([MaKM], [TenKM], [DieuKienKM], [HanKM], [MaPhim], [MaQL], [PhanTramKM]) VALUES (6, N'Khuyến mãi sinh nhật', N'Giảm giá 50% cho người có sinh nhật trong tháng', CAST(N'2024-12-31' AS Date), 9, 5, CAST(50.00 AS Decimal(5, 2)))
 GO
+<<<<<<< HEAD
 INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaPC], [MaPhim]) VALUES (1, CAST(N'2024-11-17T03:34:00.000' AS DateTime), 2, 1)
 GO
 INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaPC], [MaPhim]) VALUES (2, CAST(N'2024-11-17T00:19:00.000' AS DateTime), 2, 2)
@@ -771,6 +892,187 @@ GO
 INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaPC], [MaPhim]) VALUES (92, CAST(N'2024-11-15T20:01:00.000' AS DateTime), 2, 19)
 GO
 INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaPC], [MaPhim]) VALUES (94, CAST(N'2024-11-16T21:42:00.000' AS DateTime), 1, 3)
+=======
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (1, CAST(N'2024-10-31T19:00:00.000' AS DateTime), 1, 1)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (2, CAST(N'2024-10-31T20:30:00.000' AS DateTime), 1, 1)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (3, CAST(N'2024-10-31T22:00:00.000' AS DateTime), 1, 1)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (4, CAST(N'2024-10-30T19:15:00.000' AS DateTime), 1, 2)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (5, CAST(N'2024-10-30T20:00:00.000' AS DateTime), 1, 2)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (6, CAST(N'2024-10-30T21:10:00.000' AS DateTime), 1, 2)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (7, CAST(N'2024-10-20T19:30:00.000' AS DateTime), 1, 3)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (8, CAST(N'2024-10-20T20:45:00.000' AS DateTime), 1, 3)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (9, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 1, 3)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (10, CAST(N'2024-10-21T19:00:00.000' AS DateTime), 1, 4)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (11, CAST(N'2024-10-21T20:15:00.000' AS DateTime), 1, 4)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (12, CAST(N'2024-10-21T22:00:00.000' AS DateTime), 1, 4)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (13, CAST(N'2024-10-31T19:00:00.000' AS DateTime), 1, 5)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (14, CAST(N'2024-10-31T20:30:00.000' AS DateTime), 1, 5)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (15, CAST(N'2024-10-31T22:00:00.000' AS DateTime), 1, 5)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (16, CAST(N'2024-10-30T19:00:00.000' AS DateTime), 1, 6)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (17, CAST(N'2024-10-30T20:30:00.000' AS DateTime), 1, 6)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (18, CAST(N'2024-10-30T22:00:00.000' AS DateTime), 1, 6)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (19, CAST(N'2024-10-21T19:00:00.000' AS DateTime), 1, 7)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (20, CAST(N'2024-10-21T20:30:00.000' AS DateTime), 1, 7)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (21, CAST(N'2024-10-21T22:00:00.000' AS DateTime), 1, 7)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (22, CAST(N'2024-10-20T19:00:00.000' AS DateTime), 1, 8)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (23, CAST(N'2024-10-20T20:30:00.000' AS DateTime), 1, 8)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (24, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 1, 8)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (25, CAST(N'2024-10-25T19:00:00.000' AS DateTime), 1, 9)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (26, CAST(N'2024-10-25T20:30:00.000' AS DateTime), 1, 9)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (27, CAST(N'2024-10-25T22:00:00.000' AS DateTime), 1, 9)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (28, CAST(N'2024-10-26T19:00:00.000' AS DateTime), 1, 10)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (29, CAST(N'2024-10-26T20:30:00.000' AS DateTime), 1, 10)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (30, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 1, 10)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (31, CAST(N'2024-10-25T19:00:00.000' AS DateTime), 2, 11)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (32, CAST(N'2024-10-25T20:30:00.000' AS DateTime), 2, 11)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (33, CAST(N'2024-10-25T22:15:00.000' AS DateTime), 2, 11)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (34, CAST(N'2024-10-26T19:00:00.000' AS DateTime), 2, 12)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (35, CAST(N'2024-10-26T20:30:00.000' AS DateTime), 2, 12)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (36, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 2, 12)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (37, CAST(N'2024-10-22T19:00:00.000' AS DateTime), 2, 13)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (38, CAST(N'2024-10-22T20:30:00.000' AS DateTime), 2, 13)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (39, CAST(N'2024-10-22T22:00:00.000' AS DateTime), 2, 13)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (40, CAST(N'2024-10-23T19:00:00.000' AS DateTime), 2, 14)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (41, CAST(N'2024-10-23T20:30:00.000' AS DateTime), 2, 14)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (42, CAST(N'2024-10-23T22:00:00.000' AS DateTime), 2, 14)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (43, CAST(N'2024-10-23T19:45:00.000' AS DateTime), 2, 15)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (44, CAST(N'2024-10-23T20:50:00.000' AS DateTime), 2, 15)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (45, CAST(N'2024-10-23T22:00:00.000' AS DateTime), 2, 15)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (46, CAST(N'2024-10-24T19:30:00.000' AS DateTime), 3, 16)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (47, CAST(N'2024-10-24T20:30:00.000' AS DateTime), 3, 16)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (48, CAST(N'2024-10-24T22:00:00.000' AS DateTime), 3, 16)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (49, CAST(N'2024-10-26T19:30:00.000' AS DateTime), 3, 17)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (50, CAST(N'2024-10-26T20:30:00.000' AS DateTime), 3, 17)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (51, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 3, 17)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (52, CAST(N'2024-10-27T19:00:00.000' AS DateTime), 3, 18)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (53, CAST(N'2024-10-27T20:30:00.000' AS DateTime), 3, 18)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (54, CAST(N'2024-10-27T22:00:00.000' AS DateTime), 3, 18)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (55, CAST(N'2024-10-28T19:00:00.000' AS DateTime), 3, 19)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (56, CAST(N'2024-10-29T20:30:00.000' AS DateTime), 3, 19)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (57, CAST(N'2024-10-29T22:00:00.000' AS DateTime), 3, 19)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (58, CAST(N'2024-10-28T19:00:00.000' AS DateTime), 3, 20)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (59, CAST(N'2024-10-28T20:30:00.000' AS DateTime), 3, 20)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (60, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 3, 20)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (61, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 21)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (62, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 21)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (63, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 21)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (64, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 22)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (65, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 22)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (66, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 22)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (67, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 23)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (68, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 23)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (69, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 23)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (70, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 24)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (71, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 24)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (72, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 24)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (73, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 25)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (74, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 25)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (75, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 25)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (76, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 26)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (77, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 26)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (78, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 26)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (79, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 27)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (80, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 27)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (81, CAST(N'2024-10-20T22:00:00.000' AS DateTime), 4, 27)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (82, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 28)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (83, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 28)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (84, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 28)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (85, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 29)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (86, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 29)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (87, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 29)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (88, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 30)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (89, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 30)
+GO
+INSERT [dbo].[LichChieu] ([MaLC], [ThoiGianChieu], [MaQL], [MaPC]) VALUES (90, CAST(N'2024-10-26T22:00:00.000' AS DateTime), 4, 30)
+>>>>>>> origin/chung
 GO
 INSERT [dbo].[Phim] ([MaPhim], [TenPhim], [ThoiLuong], [DaoDien], [DoTuoi], [NuocSX], [MoTa], [MaTL]) VALUES (1, N'Inception', 148, N'Christopher Nolan', 13, N'Mỹ', N'Phim khoa học viễn tưởng với các cảnh hành động đỉnh cao.', 1)
 GO
@@ -1075,14 +1377,25 @@ GO
 ALTER TABLE [dbo].[LichChieu]  WITH CHECK ADD FOREIGN KEY([MaPC])
 REFERENCES [dbo].[PhongChieu] ([MaPC])
 GO
+<<<<<<< HEAD
 ALTER TABLE [dbo].[LichChieu]  WITH CHECK ADD  CONSTRAINT [FK_LichChieu_Phim] FOREIGN KEY([MaPhim])
 REFERENCES [dbo].[Phim] ([MaPhim])
 GO
 ALTER TABLE [dbo].[LichChieu] CHECK CONSTRAINT [FK_LichChieu_Phim]
+=======
+ALTER TABLE [dbo].[LichChieu]  WITH CHECK ADD FOREIGN KEY([MaQL])
+REFERENCES [dbo].[QuanLy] ([MaQL])
+>>>>>>> origin/chung
 GO
 ALTER TABLE [dbo].[Phim]  WITH CHECK ADD FOREIGN KEY([MaTL])
 REFERENCES [dbo].[TheLoai] ([MaTL])
 GO
+<<<<<<< HEAD
+=======
+ALTER TABLE [dbo].[PhongChieu]  WITH CHECK ADD FOREIGN KEY([MaQL])
+REFERENCES [dbo].[QuanLy] ([MaQL])
+GO
+>>>>>>> origin/chung
 ALTER TABLE [dbo].[PhongChieu]  WITH CHECK ADD FOREIGN KEY([MaRP])
 REFERENCES [dbo].[RapPhim] ([MaRP])
 GO
@@ -1098,13 +1411,22 @@ GO
 ALTER TABLE [dbo].[VeXemPhim]  WITH CHECK ADD FOREIGN KEY([MaLC])
 REFERENCES [dbo].[LichChieu] ([MaLC])
 GO
+<<<<<<< HEAD
+=======
+ALTER TABLE [dbo].[VeXemPhim]  WITH CHECK ADD FOREIGN KEY([MaPhim])
+REFERENCES [dbo].[Phim] ([MaPhim])
+GO
+>>>>>>> origin/chung
 ALTER TABLE [dbo].[VeXemPhim]  WITH CHECK ADD  CONSTRAINT [FK_VeXemPhim_GheXemPhim] FOREIGN KEY([MaGXP])
 REFERENCES [dbo].[GheXemPhim] ([MaGXP])
 GO
 ALTER TABLE [dbo].[VeXemPhim] CHECK CONSTRAINT [FK_VeXemPhim_GheXemPhim]
 GO
+<<<<<<< HEAD
 ALTER TABLE [dbo].[VeXemPhim]  WITH CHECK ADD  CONSTRAINT [FK_VeXemPhim_HoaDon] FOREIGN KEY([MaHD])
 REFERENCES [dbo].[HoaDon] ([MaHD])
 GO
 ALTER TABLE [dbo].[VeXemPhim] CHECK CONSTRAINT [FK_VeXemPhim_HoaDon]
 GO
+=======
+>>>>>>> origin/chung

@@ -15,6 +15,8 @@ public partial class TaiKhoan
 
     public string? Sdt { get; set; }
 
+    public int? LoaiTk { get; set; }
+
     public virtual ICollection<DanhGium> DanhGia { get; set; } = new List<DanhGium>();
 
     public virtual ICollection<KhachHang> KhachHangs { get; set; } = new List<KhachHang>();

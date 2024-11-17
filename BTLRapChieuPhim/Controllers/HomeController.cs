@@ -1,15 +1,18 @@
 using Azure;
 using BTLRapChieuPhim.Models;
+using BTLRapChieuPhim.Models.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using X.PagedList;
 namespace BTLRapChieuPhim.Controllers
 {
-    
+
     [Route("Home")]
     [Route("")]
-    public class HomeController : Controller
+
+	public class HomeController : Controller
+
     {
         QuanLyRapPhimContext ql=new QuanLyRapPhimContext();
         private readonly ILogger<HomeController> _logger;

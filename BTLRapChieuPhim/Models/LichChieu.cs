@@ -9,7 +9,6 @@ public partial class LichChieu
 
     public DateTime? ThoiGianChieu { get; set; }
 
-
     public int? MaPc { get; set; }
 
     public int? MaPhim { get; set; }
