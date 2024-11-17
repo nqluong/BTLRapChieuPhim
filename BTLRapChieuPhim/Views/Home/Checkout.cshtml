@@ -1,0 +1,219 @@
+﻿
+@{
+    ViewData["Title"] = "Checkout";
+    Layout = "~/Views/Shared/_LayoutCheckout.cshtml";
+}
+
+<div class="st_bt_top_header_wrapper float_left">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+				<div class="st_bt_top_back_btn float_left">
+					<a id="backButton"><i class="fas fa-long-arrow-alt-left"></i> &nbsp;Back</a>
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+				<div class="st_bt_top_center_heading float_left" id="movie-info">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- st top header Start -->
+<!-- st dtts section Start -->
+<div class="st_dtts_wrapper float_left">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+				<div class="st_dtts_left_main_wrapper float_left">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="st_dtts_ineer_box float_left">
+								<ul id="showttve">
+									
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="st_cherity_section float_left">
+								<div class="st_cherity_img float_left">
+									<img src="../Template/images/content/cc1.jpg" alt="img">
+								</div>
+								<div class="st_cherity_img_cont float_left">
+									<div class="box">
+										<p class="cc_pc_color1">
+											<input type="checkbox" id="c201" name="cb">
+											<label for="c201"><span>ADD Rs. 2</span> to your transaction as a donation. (Uncheck if you do not wish to donate)</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="st_cherity_btn float_left">
+								<h3></h3>
+								<ul>
+									<li>
+										<form method="POST" asp-action="CreatePaymentMomo" asp-controller="Payment">
+											<input type="hidden" name="Amount" value="100000" />
+											<input type="hidden" name="OrderId" value="2024-11-16T19:36:00"/>
+											<input type="hidden" name="OrderInfo" value="Thanh toán Momo cho đơn hàng "/>
+											<input type="hidden" name="FullName" value="Nguyen Duy Chinh" />
+											<button class="btn btn-danger" name="PayUrl" type="submit">PROCEED TO PAY </button>
+										</form>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="st_dtts_bs_wrapper float_left" id="TTve">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function () {
+		const maLc = @ViewBag.MaLC
+		const maPhim = @ViewBag.MaPhim
+			loadTTve();
+		loadShowTTByMovieId(maPhim);
+	});
+	function loadShowTTByMovieId(maPhim) {
+		$.get(`/api/lichchieuapi/ttphim/${maPhim}`, function (data) {
+			const movieInfoContainer = document.getElementById('movie-info');
+			movieInfoContainer.innerHTML = ''; // Xóa nội dung cũ
+
+			// Kiểm tra nếu có dữ liệu phim, thêm thông tin phim vào container
+			if (data && data.length > 0) {
+				const movie = data[0]; // Lấy phần tử đầu tiên trong mảng
+				movieInfoContainer.innerHTML = `
+						<h3>${movie.tenPhim} - ${movie.nuocSx} - ${movie.thoiLuong} mins</h3>
+
+					`;
+			} else {
+				movieInfoContainer.innerHTML = `<h3>Không có thông tin cho phim này.</h3>`;
+			}
+		}).fail(function () {
+			alert("Không thể tải thông tin phim. Vui lòng thử lại sau.");
+		});
+	}
+	function loadTTve() {
+		var str = ''; // Biến chứa thông tin chi tiết (ngày, giờ, rạp, ghế)
+		var tt = ''; // Biến chứa thông tin ghế và tổng giá
+		$.ajax({
+			url: 'https://localhost:7199/api/veapi/TTve',  // Đảm bảo URL API là chính xác
+			type: 'GET',
+			success: function (data) {
+				// Kiểm tra nếu có dữ liệu ghế đã lưu
+				if (data && data.storedSeats && data.storedSeats.length > 0) {
+					// Lấy thông tin chung (ngày, giờ, rạp)
+					var tgc = data.storedSeats[0].tgc;
+					var gio = data.storedSeats[0].gio;
+					var tenPhim = data.storedSeats[0].tenPhim;
+					str += `
+						<li>
+							<span class="dtts1">Date</span> <span class="dtts2">${tgc}</span>
+						</li>
+						<li>
+							<span class="dtts1">Time</span> <span class="dtts2">${gio}</span>
+						</li>
+						<li>
+							<span class="dtts1">Theater</span> <span class="dtts2">Ariesplex SL Cinemas</span>
+						</li>`;
+
+					// Lấy danh sách ghế
+					var seatList = data.storedSeats.map(function (seat) {
+						return seat.ghe; // Trả về tên ghế
+					}).join(', '); // Nối tất cả tên ghế lại bằng dấu phẩy
+
+					// Tính tổng giá và số lượng vé
+					var totalPrice = data.storedSeats.reduce(function (sum, seat) {
+						return sum + seat.giaVe;
+					}, 0);
+					var ticketCount = data.storedSeats.length;
+
+					// Thêm thông tin ghế vào `str`
+					str += `
+						<li>
+							<span class="dtts1">Seat</span> <span class="dtts2">${seatList}</span>
+						</li>`;
+
+					// Thêm thông tin tổng giá và vé vào `tt`
+					tt += `<div class="st_dtts_bs_heading float_left">
+									<p>Booking summary</p>
+								</div>
+								<div class="st_dtts_sb_ul float_left">
+									<ul >
+										<li>
+											Normal - ${seatList}
+											<br>( ${ticketCount} Tickets )  <span>${totalPrice.toFixed(2)} Đ</span>
+										</li>
+
+									</ul>
+									<form id="userDetailsForm">
+										<div class="form-group">
+											<label for="name">Name:</label>
+											<input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+										</div>
+
+										<div class="form-group">
+											<label for="email">Email:</label>
+											<input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+										</div>
+									</form>
+								</div>
+								<div class="st_dtts_sb_h2 float_left">
+										<h5>Tổng Tiền <span>${totalPrice.toFixed(2)} Đ</span></h5>
+								</div>`;
+				} else {
+					str = '<li>No seat information available.</li>';
+					tt = '<li>No tickets available.</li>';
+				}
+
+				// Đưa nội dung vào phần tử HTML
+				$('#TTve').html(tt); // Hiển thị thông tin ghế và tổng giá
+				$('#showttve').html(str); // Hiển thị thông tin chi tiết (ngày, giờ, rạp, ghế)
+			},
+			error: function (xhr, status, error) {
+				console.error("Lỗi khi lấy thông tin ghế lưu tạm:", error);
+			}
+		});
+	}
+
+	document.getElementById('backButton').addEventListener('click', function (event) {
+		event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ a (chuyển trang ngay)
+
+		// Gửi yêu cầu xóa dữ liệu StoredSeats
+		$.ajax({
+			url: 'https://localhost:7199/api/veapi/resetStoredSeats', // API để reset dữ liệu StoredSeats
+			type: 'POST',
+			contentType: 'application/json',
+			success: function () {
+				console.log("StoredSeats đã được reset thành công.");
+
+				// Lấy dữ liệu từ ViewBag (được render thành giá trị trong HTML)
+				const maLc = '@ViewBag.MaLC';
+				const maPhim = '@ViewBag.MaPhim';
+				const gio = encodeURIComponent('@ViewBag.Gio');
+				const tgc = encodeURIComponent('@ViewBag.Tgc');
+				// Chuyển hướng đến trang chọn ghế
+				window.location.href = `/Home/ChonGhe?maLC=${maLc}&maPhim=${maPhim}&tgc=${tgc}&gio=${gio}`;
+			},
+			error: function (xhr, status, error) {
+				console.error("Lỗi khi reset StoredSeats:", error);
+				alert("Không thể reset ghế. Vui lòng thử lại.");
+			}
+		});
+	});
+
+</script>

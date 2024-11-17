@@ -1,0 +1,138 @@
+﻿@{
+    ViewData["Title"] = "PhongChieuAdd";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
+}
+
+@model BTLRapChieuPhim.Models.PhongChieu
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!-- Modal -->
+<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="messageModalLabel">Thông Báo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="messageContent">
+                <!-- Nội dung thông báo sẽ hiển thị ở đây -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="formThemPhongChieu" class="container-fluid">
+	<div class="row">
+		<!-- main title -->
+		<div class="col-12">
+			<div class="main__title">
+				<h2>Thêm phòng chiếu mới</h2>
+			</div>
+		</div>
+		<!-- end main title -->
+		<!-- form -->
+		<div class="col-12">
+			<form action="#" class="sign__form sign__form--add">
+				<div class="row">
+					<div class="col-12 col-xl-7">
+						<div class="row">
+							<div class="col-12">
+								<div class="sign__group">
+                                    <input id="maPc" type="text" class="sign__input" placeholder="Mã phòng chiếu">
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div class="sign__group">
+                                    <input id ="tenPc" type="text" class="sign__input" placeholder="Tên phòng chiếu">
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div class="sign__group">
+                                    <input id="sucChua" type="text" class="sign__input" placeholder="Sức chứa">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12">
+                        <button type="submit" class="sign__btn sign__btn--small"><span>Thêm</span></button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- end form -->
+	</div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#formThemPhongChieu').submit(function(event) {
+            event.preventDefault();
+
+            const phongChieu = {
+                MaPc: $('#maPc').val(),
+                TenPc: $('#tenPc').val(),
+                SucChua: $('#sucChua').val(),
+                MaRp: 1,
+                MaQl: 1
+            };
+            console.log(JSON.stringify(phongChieu));
+            $.ajax({
+                type: 'POST',
+                url: '/api/phongchieuapi', // Đường dẫn đến API thêm Phòng Chiếu
+                data: JSON.stringify(phongChieu),
+                contentType: 'application/json',
+                success: function(response) {
+                    showAlert(response.message, 'success');
+                    showProductByCategory()
+                },
+                error: function(xhr) {
+                    const errorMessage = xhr.responseJSON?.message || 'Vui lòng nhập dữ liệu phòng chiếu!';
+                    showAlert(errorMessage, 'danger'); // Thông báo lỗi
+                }
+            });
+        });
+    });
+
+    function showAlert(message, type) {
+        // Đặt nội dung thông báo vào Modal
+        $('#messageContent').text(message);
+
+        // Đặt màu cho tiêu đề và nền của modal
+        $('#messageModal .modal-content').css({
+            'background-color': '#ffffff', // Nền trắng cho modal
+            'border': '2px solid #000000'  // Viền màu đen cho modal
+        });
+
+        // Đặt màu cho modal header
+        $('#messageModal .modal-header').css({
+            'background-color': '#ffffff', // Nền trắng cho header
+            'color': '#000000'             // Màu chữ đen cho tiêu đề
+        });
+
+        // Đặt màu cho nội dung của modal
+        $('#messageModal .modal-body').css({
+            'color': '#000000'             // Màu chữ đen cho nội dung
+        });
+
+        // Đặt màu cho nút OK (nếu cần)
+        $('#messageModal .modal-footer .btn').css({
+            'background-color': '#007bff',  // Màu nền xanh cho nút OK
+            'border-color': '#007bff',      // Màu viền nút OK
+            'color': '#ffffff'              // Chữ trắng cho nút OK
+        });
+
+        // Hiển thị Modal
+        $('#messageModal').modal('show');
+    }
+
+
+</script>

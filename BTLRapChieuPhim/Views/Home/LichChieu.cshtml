@@ -1,0 +1,174 @@
+﻿
+@{
+    ViewData["Title"] = "Lichchieu";
+    Layout = "_LayoutLichChieu";
+}
+<div class="prs_top_video_section_wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="tt">  
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="st_slider_rating_main_wrapper float_left">
+    <div class="container">
+        <div class="st_calender_tabs">
+            <ul class="nav nav-tabs" id="dayTabs">
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="st_slider_index_sidebar_main_wrapper st_slider_index_sidebar_main_wrapper_booking float_left">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <div class="st_indx_slider_main_container float_left">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="tab-content">
+                                <div  class="tab-pane active">
+                                    <div class="st_calender_row_cont float_left">
+                                        <div class="st_calender_asc">
+                                            <div class="st_calen_asc_heart">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="st_calen_asc_heart_cont">
+                                                <h3> @ViewBag.Maphim - Ariesplex SL Cinemas</h3>
+                                            </div>
+                                        </div>
+                                        <div class="st_calen_asc_tecket_time_select">
+                                            <ul id="showoday">
+                                               
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        loadShowTTByMovieId(3)
+        loadShowtimesByMovieId(3); 
+
+    });
+
+    function loadShowtimesByMovieId(maPhim) {
+        $.get(`https://localhost:7199/api/lichchieuapi/byPhim/${maPhim}`, function (data) {
+            const dayTabs = $('#dayTabs');
+            dayTabs.empty(); // Xóa nội dung hiện tại
+            data.forEach(function (showtime) {
+                const dayItem = `
+                        <li>
+                                        <a data-toggle="tab" style="cursor:pointer" onclick="showLichchieu('https://localhost:7199/api/lichchieuapi/byPhimNgay/${maPhim}/${showtime.ngay}')" href="#menu${showtime.ngay}">
+                                <span>${showtime.thu}</span><br>${showtime.ngay}
+                            </a>
+                        </li>
+                    `;
+                dayTabs.append(dayItem);
+            });
+            // Gọi hàm showLichchieu để hiển thị lịch chiếu đầu tiên (nếu có)
+            if (data.length > 0) {
+                showLichchieu(`https://localhost:7199/api/lichchieuapi/byphim/${maPhim}`);
+            }
+        }).fail(function () {
+            alert("Không thể tải lịch chiếu. Vui lòng thử lại sau.");
+        });
+    }
+    function loadShowTTByMovieId(maPhim) {
+        $.get(`https://localhost:7199/api/lichchieuapi/ttphim/${maPhim}`, function (data) {
+            const dayTabs = $('#tt');
+            dayTabs.empty(); 
+            data.forEach(function (showtime) {
+                const dayItem = `
+                                <div class="st_video_slider_inner_wrapper float_left" style="background:url('${showtime.duongDanAnh}')  repeat-y 50% 0;" >
+                                <div class="st_video_slider_overlay"></div>
+    <div class="st_video_slide_sec float_left">
+                    <a rel='external' href='${showtime.duongDanTrailer} title='title' class="test-popup-link">
+                 <img src="../Template/images/index_III/icon.png" alt="img">
+        </a>
+            <h3>${showtime.tenPhim}</h3>
+            <p>${showtime.nuocSx}</p>
+            <h4>${showtime.tenTheLoai}</h4>
+        <h5><span>2d</span> <span>3d</span> <span>D 4DX</span> <span>Imax 3D</span></h5>
+    </div>
+    <div class="st_video_slide_social float_left">
+        <div class="st_slider_rating_btn_heart st_slider_rating_btn_heart_5th">
+            <h5><i class="fa fa-heart"></i> 85%</h5>
+            <h4>52,291 votes</h4>
+        </div>
+        <div class="st_video_slide_social_left float_left">
+            <ul>
+                <li>
+                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="st_video_slide_social_right float_left">
+            <ul>
+                <li data-animation="animated fadeInUp" class=""><i class="far fa-clock"></i> ${showtime.thoiLuong} mins</li>
+            </ul>
+        </div>
+    </div>
+              </div>              `;
+                dayTabs.append(dayItem);
+            });
+            // Gọi hàm showLichchieu để hiển thị lịch chiếu đầu tiên (nếu có)
+            if (data.length > 0) {
+                showLichchieu(`https://localhost:7199/api/lichchieuapi/ttphim/${maPhim}`);
+            }
+        }).fail(function () {
+            alert("Không thể tải lịch chiếu. Vui lòng thử lại sau.");
+        });
+    }
+    function showLichchieu(getUrl) {
+        var str = '';
+        $.ajax({
+            type: 'GET',
+            url: getUrl,
+            dataType: 'json',
+            success: function (data) {
+                $.each(data, function (key, val) {
+                    str += `
+                        <li>
+                            <span>
+                                <h4>Rs.160.00</h4>
+                                <p class="asc_pera1">Executive</p>
+                                <p class="asc_pera2">Filling Fast</p>
+                            </span>
+                                                <a href="/Home/ChonGhe?maLC=${val.maLc}&maPhim=${val.maPhim}&tgc=${encodeURIComponent(val.thoiGianChieu)}&gio=${encodeURIComponent(val.gio)}">${val.gio}</a>
+                        </li>
+                    `;
+                });
+                $('#showoday').html(str);
+            },
+            error: function (xhr) {
+                alert(xhr.responseText);
+            }
+        });
+    }
+
+
+</script>
+
+
+

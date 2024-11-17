@@ -1,9 +1,1476 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
-    Layout = "_LayoutTemplate";
+	ViewData["Title"] = "Home Page";
+	Layout = "_LayoutTemplate";
 }
+<<<<<<< HEAD
+@model IQueryable<HinhAnhTrailer>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome.....</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- PRS Upcoming Slider Start -->
+<div class="prs_upcom_slider_main_wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="prs_heading_section_wrapper">
+					<h2>Tất cả phim</h2>
+				</div>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="prs_feature_slider_wrapper">
+					<div class="owl-carousel owl-theme">
+						@foreach (var item in Model)
+						{
+							<div class="item prs_feature_slider_item_wrapper">
+								<div class="prs_feature_img_box_wrapper">
+									<div class="prs_feature_img">
+										<img src="@Url.Content("~/Template/AnhPhim/" + item.DuongDanAnh)" alt="feature_img">
+									</div>
+									<div class="prs_feature_img_cont">
+										<div class="prs_ft_small_cont_left">
+											<p></p>
+										</div>
+										<div class="prs_ft_small_cont_right">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<ul>
+											<li>
+												<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@item.MaPhim">View Detail</a>
+											</li>
+											<li>
+												<!-- Liên kết xem trailer -->
+												<a onclick="showTrailer('/Template/Video/@item.DuongDanTrailer')">View Trailer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
+<!-- Modal để phát video -->
+<div id="videoModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 1000; display: none; justify-content: center; align-items: center;">
+	<div style="position: relative; width: 80%; max-width: 800px; background-color: white; padding: 10px; border-radius: 8px;">
+		<video id="trailerVideo" controls style="width: 100%;"></video>
+		<button onclick="closeModal()" style="position: absolute; top: 10px; right: 10px; background-color: red; color: white; border: none; padding: 5px 10px; cursor: pointer;">Close</button>
+	</div>
+</div>
+<script>
+	function showTrailer(videoUrl) {
+		const modal = document.getElementById('videoModal');
+		const video = document.getElementById('trailerVideo');
+		video.src = videoUrl;
+		modal.style.display = 'flex';
+	}
+	function closeModal() {
+		const modal = document.getElementById('videoModal');
+		const video = document.getElementById('trailerVideo');
+		video.pause();
+		modal.style.display = 'none';
+	}
+</script>
+<!-- prs upcomung Slider End -->
+<!-- prs video section Start -->
+<div class="prs_video_section_main_wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="prs_video_sec_icon_wrapper">
+					<ul>
+						<li>
+							<a class="test-popup-link button" rel='external' href='https://www.youtube.com/embed/ryzOXAO0Ss0' title='title'><i class="flaticon-play-button"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- prs video section End -->
+<!-- prs web series Slider Start -->
+<div class="prs_upcom_slider_main_wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="prs_heading_section_wrapper">
+					<h2>Phim trên web</h2>
+				</div>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="prs_upcome_tabs_wrapper">
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active">
+							<a href="#best1" aria-controls="best" role="tab" data-toggle="tab">Phim gần đây</a>
+						</li>
+						<li role="presentation">
+							<a href="#hot1" aria-controls="hot" role="tab" data-toggle="tab">Phim đã phát</a>
+						</li>
+						<li role="presentation">
+							<a href="#trand1" aria-controls="trand" role="tab" data-toggle="tab">Phim xem nhiều</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane fade in active" id="best1">
+					<div class="prs_upcom_slider_slides_wrapper">
+						<div class="owl-carousel owl-theme">
+							<div class="item">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hidden-xs">
+										<div class="prs_upcom_movie_box_wrapper prs_upcom_movie_video_box_wrapper">
+											<div class="prs_upcom_movie_video_overlay"></div>
+											<div class="prs_upcom_movie_img_box prs_webseri_movie_img_box">
+												<div class="prs_webseri_video_img_sec_icon_wrapper">
+													<ul>
+														<li>
+															<a class="test-popup-link button" rel='external' href='https://www.youtube.com/embed/ryzOXAO0Ss0' title='title'><i class="flaticon-play-button"></i></a>
+														</li>
+													</ul>
+												</div>
+												<div class="prs_upcom_video_img_cont_over">
+													<ul>
+														<li>Drama,Action</li>
+														<li>
+															Rating :&nbsp;&nbsp;<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</li>
+													</ul>
+													<h2>terrorise of the year</h2>
+													<p>Release on cinema : 27 june 2022</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 prs_upcom_slide_first">
+										<div class="prs_upcom_movie_box_wrapper">
+											<div class="prs_upcom_movie_img_box">
+												<img src="../Template/AnhPhimLayout/AP1.jpg" alt="movie_img" />
+												<div class="prs_upcom_movie_img_overlay"></div>
+												<div class="prs_upcom_movie_img_btn_wrapper">
+													<ul>
+														<li>
+													
+															<a  onclick="showTrailer('/Template/Video/Trailer 1.mp4')">View Trailer</a>
+														</li>
+														<li>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(0).MaPhim">View Detail</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="prs_upcom_movie_content_box">
+												<div class="prs_upcom_movie_content_box_inner">
+													<h2><a href="#">Busting Car</a></h2>
+													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="prs_upcom_movie_content_box_inner_icon">
+													<ul>
+														<li>
+															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 hidden-sm prs_upcom_slide_second">
+										<div class="prs_upcom_movie_box_wrapper">
+											<div class="prs_upcom_movie_img_box">
+												<img src="../Template/AnhPhimLayout/AP2.jpg" alt="movie_img" />
+												<div class="prs_upcom_movie_img_overlay"></div>
+												<div class="prs_upcom_movie_img_btn_wrapper">
+													<ul>
+														<li>
+															<a onclick="showTrailer('/Template/Video/Trailer 2.mp4')">View Trailer</a>
+														</li>
+														<li>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(1).MaPhim">View Detail</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="prs_upcom_movie_content_box">
+												<div class="prs_upcom_movie_content_box_inner">
+													<h2><a href="#">Busting Car</a></h2>
+													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="prs_upcom_movie_content_box_inner_icon">
+													<ul>
+														<li>
+															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cc_featured_second_section">
+										@for (int i = 2; i < Math.Min(6, Model.Count()); i++)
+										{
+											var mdl = Model.ElementAt(i);
+											<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 hidden-sm hidden-xs">
+												<div class="prs_upcom_movie_box_wrapper">
+													<div class="prs_upcom_movie_img_box">
+														<img src="@Url.Content("../Template/AnhPhimLayout/"+mdl.DuongDanAnh)" alt="movie_img" />
+														<div class="prs_upcom_movie_img_overlay"></div>
+														<div class="prs_upcom_movie_img_btn_wrapper">
+															<ul>
+																<li>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
+																</li>
+																<li>
+																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="prs_upcom_movie_content_box">
+														<div class="prs_upcom_movie_content_box_inner">
+															<h2><a href="#">Busting Car</a></h2>
+															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</div>
+														<div class="prs_upcom_movie_content_box_inner_icon">
+															<ul>
+																<li>
+																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										}
+										
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hidden-xs">
+										<div class="prs_upcom_movie_box_wrapper prs_upcom_movie_video_box_wrapper">
+											<div class="prs_upcom_movie_video_overlay"></div>
+											<div class="prs_upcom_movie_img_box prs_webseri_movie_img_box">
+												<div class="prs_webseri_video_img_sec_icon_wrapper">
+													<ul>
+														<li>
+															<a class="test-popup-link button" rel='external' href='https://www.youtube.com/embed/ryzOXAO0Ss0' title='title'><i class="flaticon-play-button"></i></a>
+														</li>
+													</ul>
+												</div>
+												<div class="prs_upcom_video_img_cont_over">
+													<ul>
+														<li>Drama,Action</li>
+														<li>
+															Rating :&nbsp;&nbsp;<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</li>
+													</ul>
+													<h2>terrorise of the year</h2>
+													<p>Release on cinema : 27 june 2022</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 prs_upcom_slide_first">
+										<div class="prs_upcom_movie_box_wrapper">
+											<div class="prs_upcom_movie_img_box">
+												<img src="../Template/AnhPhimLayout/AP7.jpg" alt="movie_img" />
+												<div class="prs_upcom_movie_img_overlay"></div>
+												<div class="prs_upcom_movie_img_btn_wrapper">
+													<ul>
+														<li>
+															<a onclick="showTrailer('/Template/Video/Trailer 7.mp4')">View Trailer</a>
+														</li>
+														<li>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(6).MaPhim">View Detail</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="prs_upcom_movie_content_box">
+												<div class="prs_upcom_movie_content_box_inner">
+													<h2><a href="#">Busting Car</a></h2>
+													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="prs_upcom_movie_content_box_inner_icon">
+													<ul>
+														<li>
+															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 hidden-sm prs_upcom_slide_second">
+										<div class="prs_upcom_movie_box_wrapper">
+											<div class="prs_upcom_movie_img_box">
+												<img src="../Template/AnhPhimLayout/AP8.jpg" alt="movie_img" />
+												<div class="prs_upcom_movie_img_overlay"></div>
+												<div class="prs_upcom_movie_img_btn_wrapper">
+													<ul>
+														<li>
+															<a onclick="showTrailer('/Template/Video/Trailer 8.mp4')">View Trailer</a>
+														</li>
+														<li>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(7).MaPhim">View Detail</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="prs_upcom_movie_content_box">
+												<div class="prs_upcom_movie_content_box_inner">
+													<h2><a href="#">Busting Car</a></h2>
+													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="prs_upcom_movie_content_box_inner_icon">
+													<ul>
+														<li>
+															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cc_featured_second_section">
+										@for (int i = 8; i < Math.Min(12, Model.Count()); i++)
+										{
+											var mdl = Model.ElementAt(i);
+											<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 hidden-sm hidden-xs">
+												<div class="prs_upcom_movie_box_wrapper">
+													<div class="prs_upcom_movie_img_box">
+														<img src="@Url.Content("../Template/AnhPhimLayout/"+mdl.DuongDanAnh)" alt="movie_img" />
+														<div class="prs_upcom_movie_img_overlay"></div>
+														<div class="prs_upcom_movie_img_btn_wrapper">
+															<ul>
+																<li>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
+																</li>
+																<li>
+																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="prs_upcom_movie_content_box">
+														<div class="prs_upcom_movie_content_box_inner">
+															<h2><a href="#">Busting Car</a></h2>
+															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</div>
+														<div class="prs_upcom_movie_content_box_inner_icon">
+															<ul>
+																<li>
+																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										}
+
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hidden-xs">
+										<div class="prs_upcom_movie_box_wrapper prs_upcom_movie_video_box_wrapper">
+											<div class="prs_upcom_movie_video_overlay"></div>
+											<div class="prs_upcom_movie_img_box prs_webseri_movie_img_box">
+												<div class="prs_webseri_video_img_sec_icon_wrapper">
+													<ul>
+														<li>
+															<a class="test-popup-link button" rel='external' href='https://www.youtube.com/embed/ryzOXAO0Ss0' title='title'><i class="flaticon-play-button"></i></a>
+														</li>
+													</ul>
+												</div>
+												<div class="prs_upcom_video_img_cont_over">
+													<ul>
+														<li>Drama,Action</li>
+														<li>
+															Rating :&nbsp;&nbsp;<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</li>
+													</ul>
+													<h2>terrorise of the year</h2>
+													<p>Release on cinema : 27 june 2022</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 prs_upcom_slide_first">
+										<div class="prs_upcom_movie_box_wrapper">
+											<div class="prs_upcom_movie_img_box">
+												<img src="../Template/AnhPhimLayout/AP13.jpg" alt="movie_img" />
+												<div class="prs_upcom_movie_img_overlay"></div>
+												<div class="prs_upcom_movie_img_btn_wrapper">
+													<ul>
+														<li>
+															<a onclick="showTrailer('/Template/Video/Trailer 13.mp4')">View Trailer</a>
+														</li>
+														<li>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(12).MaPhim">View Detail</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="prs_upcom_movie_content_box">
+												<div class="prs_upcom_movie_content_box_inner">
+													<h2><a href="#">Busting Car</a></h2>
+													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="prs_upcom_movie_content_box_inner_icon">
+													<ul>
+														<li>
+															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 hidden-sm prs_upcom_slide_second">
+										<div class="prs_upcom_movie_box_wrapper">
+											<div class="prs_upcom_movie_img_box">
+												<img src="../Template/AnhPhimLayout/AP14.jpg" alt="movie_img" />
+												<div class="prs_upcom_movie_img_overlay"></div>
+												<div class="prs_upcom_movie_img_btn_wrapper">
+													<ul>
+														<li>
+															<a onclick="showTrailer('/Template/Video/Trailer 14.mp4')">View Trailer</a>
+														</li>
+														<li>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(13).MaPhim">View Detail</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="prs_upcom_movie_content_box">
+												<div class="prs_upcom_movie_content_box_inner">
+													<h2><a href="#">Busting Car</a></h2>
+													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="prs_upcom_movie_content_box_inner_icon">
+													<ul>
+														<li>
+															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cc_featured_second_section">
+										@for (int i = 14; i < Math.Min(18, Model.Count()); i++)
+										{
+											var mdl = Model.ElementAt(i);
+											<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 hidden-sm hidden-xs">
+												<div class="prs_upcom_movie_box_wrapper">
+													<div class="prs_upcom_movie_img_box">
+														<img src="@Url.Content("../Template/AnhPhimLayout/"+mdl.DuongDanAnh)" alt="movie_img" />
+														<div class="prs_upcom_movie_img_overlay"></div>
+														<div class="prs_upcom_movie_img_btn_wrapper">
+															<ul>
+																<li>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
+																</li>
+																<li>
+																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="prs_upcom_movie_content_box">
+														<div class="prs_upcom_movie_content_box_inner">
+															<h2><a href="#">Busting Car</a></h2>
+															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</div>
+														<div class="prs_upcom_movie_content_box_inner_icon">
+															<ul>
+																<li>
+																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										}
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="prs_animate_btn1 prs_upcom_main_wrapper">
+								<ul>
+									<li>
+										<a href="#" class="button button--tamaya prs_upcom_main_btn" data-text="view all"><span>View All</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="hot1">
+					<div class="prs_upcom_slider_slides_wrapper">
+						<div class="owl-carousel owl-theme">
+							<div class="item">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hidden-xs">
+										<div class="prs_upcom_movie_box_wrapper prs_upcom_movie_video_box_wrapper">
+											<div class="prs_upcom_movie_video_overlay"></div>
+											<div class="prs_upcom_movie_img_box prs_webseri_movie_img_box">
+												<div class="prs_webseri_video_img_sec_icon_wrapper">
+													<ul>
+														<li>
+															<a class="test-popup-link button" rel='external' href='https://www.youtube.com/embed/ryzOXAO0Ss0' title='title'><i class="flaticon-play-button"></i></a>
+														</li>
+													</ul>
+												</div>
+												<div class="prs_upcom_video_img_cont_over">
+													<ul>
+														<li>Drama,Action</li>
+														<li>
+															Rating :&nbsp;&nbsp;<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</li>
+													</ul>
+													<h2>terrorise of the year</h2>
+													<p>Release on cinema : 27 june 2022</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 prs_upcom_slide_first">
+										<div class="prs_upcom_movie_box_wrapper">
+											<div class="prs_upcom_movie_img_box">
+												<img src="../Template/AnhPhimLayout/AP19.jpg" alt="movie_img" />
+												<div class="prs_upcom_movie_img_overlay"></div>
+												<div class="prs_upcom_movie_img_btn_wrapper">
+													<ul>
+														<li>
+															<a onclick="showTrailer('/Template/Video/Trailer 19.mp4')">View Trailer</a>
+														</li>
+														<li>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(18).MaPhim">View Detail</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="prs_upcom_movie_content_box">
+												<div class="prs_upcom_movie_content_box_inner">
+													<h2><a href="#">Busting Car</a></h2>
+													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="prs_upcom_movie_content_box_inner_icon">
+													<ul>
+														<li>
+															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 hidden-sm prs_upcom_slide_second">
+										<div class="prs_upcom_movie_box_wrapper">
+											<div class="prs_upcom_movie_img_box">
+												<img src="../Template/AnhPhimLayout/AP20.jpg" alt="movie_img" />
+												<div class="prs_upcom_movie_img_overlay"></div>
+												<div class="prs_upcom_movie_img_btn_wrapper">
+													<ul>
+														<li>
+															<a onclick="showTrailer('/Template/Video/Trailer 20.mp4')">View Trailer</a>
+														</li>
+														<li>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(19).MaPhim">View Detail</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="prs_upcom_movie_content_box">
+												<div class="prs_upcom_movie_content_box_inner">
+													<h2><a href="#">Busting Car</a></h2>
+													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="prs_upcom_movie_content_box_inner_icon">
+													<ul>
+														<li>
+															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cc_featured_second_section">
+										@for (int i = 0; i < Math.Min(4, Model.Count()); i++)
+										{
+											var mdl = Model.ElementAt(i);
+											<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 hidden-sm hidden-xs">
+												<div class="prs_upcom_movie_box_wrapper">
+													<div class="prs_upcom_movie_img_box">
+														<img src="@Url.Content("../Template/AnhPhimLayout/"+mdl.DuongDanAnh)" alt="movie_img" />
+														<div class="prs_upcom_movie_img_overlay"></div>
+														<div class="prs_upcom_movie_img_btn_wrapper">
+															<ul>
+																<li>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
+																</li>
+																<li>
+																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="prs_upcom_movie_content_box">
+														<div class="prs_upcom_movie_content_box_inner">
+															<h2><a href="#">Busting Car</a></h2>
+															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</div>
+														<div class="prs_upcom_movie_content_box_inner_icon">
+															<ul>
+																<li>
+																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										}
+
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hidden-xs">
+										<div class="prs_upcom_movie_box_wrapper prs_upcom_movie_video_box_wrapper">
+											<div class="prs_upcom_movie_video_overlay"></div>
+											<div class="prs_upcom_movie_img_box prs_webseri_movie_img_box">
+												<div class="prs_webseri_video_img_sec_icon_wrapper">
+													<ul>
+														<li>
+															<a class="test-popup-link button" rel='external' href='https://www.youtube.com/embed/ryzOXAO0Ss0' title='title'><i class="flaticon-play-button"></i></a>
+														</li>
+													</ul>
+												</div>
+												<div class="prs_upcom_video_img_cont_over">
+													<ul>
+														<li>Drama,Action</li>
+														<li>
+															Rating :&nbsp;&nbsp;<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</li>
+													</ul>
+													<h2>terrorise of the year</h2>
+													<p>Release on cinema : 27 june 2022</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 prs_upcom_slide_first">
+										<div class="prs_upcom_movie_box_wrapper">
+											<div class="prs_upcom_movie_img_box">
+												<img src="../Template/AnhPhimLayout/AP5.jpg" alt="movie_img" />
+												<div class="prs_upcom_movie_img_overlay"></div>
+												<div class="prs_upcom_movie_img_btn_wrapper">
+													<ul>
+														<li>
+															<a onclick="showTrailer('/Template/Video/Trailer 5.mp4)">View Trailer</a>
+														</li>
+														<li>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(4).MaPhim">View Detail</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="prs_upcom_movie_content_box">
+												<div class="prs_upcom_movie_content_box_inner">
+													<h2><a href="#">Busting Car</a></h2>
+													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="prs_upcom_movie_content_box_inner_icon">
+													<ul>
+														<li>
+															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 hidden-sm prs_upcom_slide_second">
+										<div class="prs_upcom_movie_box_wrapper">
+											<div class="prs_upcom_movie_img_box">
+												<img src="../Template/AnhPhimLayout/AP6.jpg" alt="movie_img" />
+												<div class="prs_upcom_movie_img_overlay"></div>
+												<div class="prs_upcom_movie_img_btn_wrapper">
+													<ul>
+														<li>
+															<a onclick="showTrailer('/Template/Video/Trailer 6.mp4')">View Trailer</a>
+														</li>
+														<li>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(5).MaPhim">View Detail</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="prs_upcom_movie_content_box">
+												<div class="prs_upcom_movie_content_box_inner">
+													<h2><a href="#">Busting Car</a></h2>
+													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="prs_upcom_movie_content_box_inner_icon">
+													<ul>
+														<li>
+															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cc_featured_second_section">
+										@for (int i = 7; i < Math.Min(11, Model.Count()); i++)
+										{
+											var mdl = Model.ElementAt(i);
+											<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 hidden-sm hidden-xs">
+												<div class="prs_upcom_movie_box_wrapper">
+													<div class="prs_upcom_movie_img_box">
+														<img src="@Url.Content("../Template/AnhPhimLayout/"+mdl.DuongDanAnh)" alt="movie_img" />
+														<div class="prs_upcom_movie_img_overlay"></div>
+														<div class="prs_upcom_movie_img_btn_wrapper">
+															<ul>
+																<li>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
+																</li>
+																<li>
+																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="prs_upcom_movie_content_box">
+														<div class="prs_upcom_movie_content_box_inner">
+															<h2><a href="#">Busting Car</a></h2>
+															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</div>
+														<div class="prs_upcom_movie_content_box_inner_icon">
+															<ul>
+																<li>
+																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										}
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="prs_animate_btn1 prs_upcom_main_wrapper">
+								<ul>
+									<li>
+										<a href="#" class="button button--tamaya prs_upcom_main_btn" data-text="view all"><span>View All</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="trand1">
+					<div class="prs_upcom_slider_slides_wrapper">
+						<div class="owl-carousel owl-theme">
+							<div class="item">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hidden-xs">
+										<div class="prs_upcom_movie_box_wrapper prs_upcom_movie_video_box_wrapper">
+											<div class="prs_upcom_movie_video_overlay"></div>
+											<div class="prs_upcom_movie_img_box prs_webseri_movie_img_box">
+												<div class="prs_webseri_video_img_sec_icon_wrapper">
+													<ul>
+														<li>
+															<a class="test-popup-link button" rel='external' href='https://www.youtube.com/embed/ryzOXAO0Ss0' title='title'><i class="flaticon-play-button"></i></a>
+														</li>
+													</ul>
+												</div>
+												<div class="prs_upcom_video_img_cont_over">
+													<ul>
+														<li>Drama,Action</li>
+														<li>
+															Rating :&nbsp;&nbsp;<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</li>
+													</ul>
+													<h2>terrorise of the year</h2>
+													<p>Release on cinema : 27 june 2022</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 prs_upcom_slide_first">
+										<div class="prs_upcom_movie_box_wrapper">
+											<div class="prs_upcom_movie_img_box">
+												<img src="../Template/AnhPhimLayout/AP7.jpg" alt="movie_img" />
+												<div class="prs_upcom_movie_img_overlay"></div>
+												<div class="prs_upcom_movie_img_btn_wrapper">
+													<ul>
+														<li>
+															<a onclick="showTrailer('/Template/Video/Trailer 7.mp4')">View Trailer</a>
+														</li>
+														<li>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(6).MaPhim">View Detail</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="prs_upcom_movie_content_box">
+												<div class="prs_upcom_movie_content_box_inner">
+													<h2><a href="#">Busting Car</a></h2>
+													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="prs_upcom_movie_content_box_inner_icon">
+													<ul>
+														<li>
+															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 hidden-sm prs_upcom_slide_second">
+										<div class="prs_upcom_movie_box_wrapper">
+											<div class="prs_upcom_movie_img_box">
+												<img src="../Template/AnhPhimLayout/AP8.jpg" alt="movie_img" />
+												<div class="prs_upcom_movie_img_overlay"></div>
+												<div class="prs_upcom_movie_img_btn_wrapper">
+													<ul>
+														<li>
+															<a onclick="showTrailer('/Template/Video/Trailer 8.mp4')">View Trailer</a>
+														</li>
+														<li>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(7).MaPhim">View Detail</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="prs_upcom_movie_content_box">
+												<div class="prs_upcom_movie_content_box_inner">
+													<h2><a href="#">Busting Car</a></h2>
+													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="prs_upcom_movie_content_box_inner_icon">
+													<ul>
+														<li>
+															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cc_featured_second_section">
+										@for (int i = 8; i < Math.Min(12, Model.Count()); i++)
+										{
+											var mdl = Model.ElementAt(i);
+											<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 hidden-sm hidden-xs">
+												<div class="prs_upcom_movie_box_wrapper">
+													<div class="prs_upcom_movie_img_box">
+														<img src="@Url.Content("../Template/AnhPhimLayout/"+mdl.DuongDanAnh)" alt="movie_img" />
+														<div class="prs_upcom_movie_img_overlay"></div>
+														<div class="prs_upcom_movie_img_btn_wrapper">
+															<ul>
+																<li>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
+																</li>
+																<li>
+																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="prs_upcom_movie_content_box">
+														<div class="prs_upcom_movie_content_box_inner">
+															<h2><a href="#">Busting Car</a></h2>
+															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</div>
+														<div class="prs_upcom_movie_content_box_inner_icon">
+															<ul>
+																<li>
+																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										}
+
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hidden-xs">
+										<div class="prs_upcom_movie_box_wrapper prs_upcom_movie_video_box_wrapper">
+											<div class="prs_upcom_movie_video_overlay"></div>
+											<div class="prs_upcom_movie_img_box prs_webseri_movie_img_box">
+												<div class="prs_webseri_video_img_sec_icon_wrapper">
+													<ul>
+														<li>
+															<a class="test-popup-link button" rel='external' href='https://www.youtube.com/embed/ryzOXAO0Ss0' title='title'><i class="flaticon-play-button"></i></a>
+														</li>
+													</ul>
+												</div>
+												<div class="prs_upcom_video_img_cont_over">
+													<ul>
+														<li>Drama,Action</li>
+														<li>
+															Rating :&nbsp;&nbsp;<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</li>
+													</ul>
+													<h2>terrorise of the year</h2>
+													<p>Release on cinema : 27 june 2022</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 prs_upcom_slide_first">
+										<div class="prs_upcom_movie_box_wrapper">
+											<div class="prs_upcom_movie_img_box">
+												<img src="../Template/AnhPhimLayout/AP13.jpg" alt="movie_img" />
+												<div class="prs_upcom_movie_img_overlay"></div>
+												<div class="prs_upcom_movie_img_btn_wrapper">
+													<ul>
+														<li>
+															<a onclick="showTrailer('/Template/Video/Trailer 13.mp4')">View Trailer</a>
+														</li>
+														<li>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(12).MaPhim">View Detail</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="prs_upcom_movie_content_box">
+												<div class="prs_upcom_movie_content_box_inner">
+													<h2><a href="#">Busting Car</a></h2>
+													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="prs_upcom_movie_content_box_inner_icon">
+													<ul>
+														<li>
+															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 hidden-sm prs_upcom_slide_second">
+										<div class="prs_upcom_movie_box_wrapper">
+											<div class="prs_upcom_movie_img_box">
+												<img src="../Template/AnhPhimLayout/AP14.jpg" alt="movie_img" />
+												<div class="prs_upcom_movie_img_overlay"></div>
+												<div class="prs_upcom_movie_img_btn_wrapper">
+													<ul>
+														<li>
+															<a onclick="showTrailer('/Template/Video/Trailer 14.mp4')">View Trailer</a>
+														</li>
+														<li>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(13).MaPhim">View Detail</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="prs_upcom_movie_content_box">
+												<div class="prs_upcom_movie_content_box_inner">
+													<h2><a href="#">Busting Car</a></h2>
+													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="prs_upcom_movie_content_box_inner_icon">
+													<ul>
+														<li>
+															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cc_featured_second_section">
+										@for (int i = 14; i < Math.Min(18, Model.Count()); i++)
+										{
+											var mdl = Model.ElementAt(i);
+											<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 hidden-sm hidden-xs">
+												<div class="prs_upcom_movie_box_wrapper">
+													<div class="prs_upcom_movie_img_box">
+														<img src="@Url.Content("../Template/AnhPhimLayout/"+mdl.DuongDanAnh)" alt="movie_img" />
+														<div class="prs_upcom_movie_img_overlay"></div>
+														<div class="prs_upcom_movie_img_btn_wrapper">
+															<ul>
+																<li>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
+																</li>
+																<li>
+																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="prs_upcom_movie_content_box">
+														<div class="prs_upcom_movie_content_box_inner">
+															<h2><a href="#">Busting Car</a></h2>
+															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</div>
+														<div class="prs_upcom_movie_content_box_inner_icon">
+															<ul>
+																<li>
+																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										}
+
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hidden-xs">
+										<div class="prs_upcom_movie_box_wrapper prs_upcom_movie_video_box_wrapper">
+											<div class="prs_upcom_movie_video_overlay"></div>
+											<div class="prs_upcom_movie_img_box prs_webseri_movie_img_box">
+												<div class="prs_webseri_video_img_sec_icon_wrapper">
+													<ul>
+														<li>
+															<a class="test-popup-link button" rel='external' href='https://www.youtube.com/embed/ryzOXAO0Ss0' title='title'><i class="flaticon-play-button"></i></a>
+														</li>
+													</ul>
+												</div>
+												<div class="prs_upcom_video_img_cont_over">
+													<ul>
+														<li>Drama,Action</li>
+														<li>
+															Rating :&nbsp;&nbsp;<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</li>
+													</ul>
+													<h2>terrorise of the year</h2>
+													<p>Release on cinema : 27 june 2022</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 prs_upcom_slide_first">
+										<div class="prs_upcom_movie_box_wrapper">
+											<div class="prs_upcom_movie_img_box">
+												<img src="../Template/AnhPhimLayout/AP19.jpg" alt="movie_img" />
+												<div class="prs_upcom_movie_img_overlay"></div>
+												<div class="prs_upcom_movie_img_btn_wrapper">
+													<ul>
+														<li>
+															<a onclick="showTrailer('/Template/Video/Trailer 19.mp4')">View Trailer</a>
+														</li>
+														<li>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(18).MaPhim">View Detail</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="prs_upcom_movie_content_box">
+												<div class="prs_upcom_movie_content_box_inner">
+													<h2><a href="#">Busting Car</a></h2>
+													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="prs_upcom_movie_content_box_inner_icon">
+													<ul>
+														<li>
+															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 hidden-sm prs_upcom_slide_second">
+										<div class="prs_upcom_movie_box_wrapper">
+											<div class="prs_upcom_movie_img_box">
+												<img src="../Template/AnhPhimLayout/AP20.jpg" alt="movie_img" />
+												<div class="prs_upcom_movie_img_overlay"></div>
+												<div class="prs_upcom_movie_img_btn_wrapper">
+													<ul>
+														<li>
+															<a onclick="showTrailer('/Template/Video/Trailer 20.mp4')">View Trailer</a>
+														</li>
+														<li>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(19).MaPhim">View Detail</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="prs_upcom_movie_content_box">
+												<div class="prs_upcom_movie_content_box_inner">
+													<h2><a href="#">Busting Car</a></h2>
+													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="prs_upcom_movie_content_box_inner_icon">
+													<ul>
+														<li>
+															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cc_featured_second_section">
+										@for (int i = 0; i < Math.Min(4, Model.Count()); i++)
+										{
+											var mdl = Model.ElementAt(i);
+											<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 hidden-sm hidden-xs">
+												<div class="prs_upcom_movie_box_wrapper">
+													<div class="prs_upcom_movie_img_box">
+														<img src="@Url.Content("../Template/AnhPhimLayout/"+mdl.DuongDanAnh)" alt="movie_img" />
+														<div class="prs_upcom_movie_img_overlay"></div>
+														<div class="prs_upcom_movie_img_btn_wrapper">
+															<ul>
+																<li>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
+																</li>
+																<li>
+																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="prs_upcom_movie_content_box">
+														<div class="prs_upcom_movie_content_box_inner">
+															<h2><a href="#">Busting Car</a></h2>
+															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</div>
+														<div class="prs_upcom_movie_content_box_inner_icon">
+															<ul>
+																<li>
+																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										}
+
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hidden-xs">
+										<div class="prs_upcom_movie_box_wrapper prs_upcom_movie_video_box_wrapper">
+											<div class="prs_upcom_movie_video_overlay"></div>
+											<div class="prs_upcom_movie_img_box prs_webseri_movie_img_box">
+												<div class="prs_webseri_video_img_sec_icon_wrapper">
+													<ul>
+														<li>
+															<a class="test-popup-link button" rel='external' href='https://www.youtube.com/embed/ryzOXAO0Ss0' title='title'><i class="flaticon-play-button"></i></a>
+														</li>
+													</ul>
+												</div>
+												<div class="prs_upcom_video_img_cont_over">
+													<ul>
+														<li>Drama,Action</li>
+														<li>
+															Rating :&nbsp;&nbsp;<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</li>
+													</ul>
+													<h2>terrorise of the year</h2>
+													<p>Release on cinema : 27 june 2022</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 prs_upcom_slide_first">
+										<div class="prs_upcom_movie_box_wrapper">
+											<div class="prs_upcom_movie_img_box">
+												<img src="../Template/AnhPhimLayout/AP5.jpg" alt="movie_img" />
+												<div class="prs_upcom_movie_img_overlay"></div>
+												<div class="prs_upcom_movie_img_btn_wrapper">
+													<ul>
+														<li>
+															<a onclick="showTrailer('/Template/Video/Trailer 5.mp4)">View Trailer</a>
+														</li>
+														<li>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(4).MaPhim">View Detail</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="prs_upcom_movie_content_box">
+												<div class="prs_upcom_movie_content_box_inner">
+													<h2><a href="#">Busting Car</a></h2>
+													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="prs_upcom_movie_content_box_inner_icon">
+													<ul>
+														<li>
+															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 hidden-sm prs_upcom_slide_second">
+										<div class="prs_upcom_movie_box_wrapper">
+											<div class="prs_upcom_movie_img_box">
+												<img src="../Template/AnhPhimLayout/AP6.jpg" alt="movie_img" />
+												<div class="prs_upcom_movie_img_overlay"></div>
+												<div class="prs_upcom_movie_img_btn_wrapper">
+													<ul>
+														<li>
+															<a onclick="showTrailer('/Template/Video/Trailer 6.mp4')">View Trailer</a>
+														</li>
+														<li>
+															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(5).MaPhim">View Detail</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="prs_upcom_movie_content_box">
+												<div class="prs_upcom_movie_content_box_inner">
+													<h2><a href="#">Busting Car</a></h2>
+													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="prs_upcom_movie_content_box_inner_icon">
+													<ul>
+														<li>
+															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cc_featured_second_section">
+										@for (int i = 7; i < Math.Min(11, Model.Count()); i++)
+										{
+											var mdl = Model.ElementAt(i);
+											<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 hidden-sm hidden-xs">
+												<div class="prs_upcom_movie_box_wrapper">
+													<div class="prs_upcom_movie_img_box">
+														<img src="@Url.Content("../Template/AnhPhimLayout/"+mdl.DuongDanAnh)" alt="movie_img" />
+														<div class="prs_upcom_movie_img_overlay"></div>
+														<div class="prs_upcom_movie_img_btn_wrapper">
+															<ul>
+																<li>
+																	<a onclick="showTrailer('/Template/Video/@mdl.DuongDanTrailer')">View Trailer</a>
+																</li>
+																<li>
+																	<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@mdl.MaPhim">View Detail</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="prs_upcom_movie_content_box">
+														<div class="prs_upcom_movie_content_box_inner">
+															<h2><a href="#">Busting Car</a></h2>
+															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															<i class="fa fa-star-o"></i>
+														</div>
+														<div class="prs_upcom_movie_content_box_inner_icon">
+															<ul>
+																<li>
+																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										}
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="prs_animate_btn1 prs_upcom_main_wrapper">
+								<ul>
+									<li>
+										<a href="#" class="button button--tamaya prs_upcom_main_btn" data-text="view all"><span>View All</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- prs web series Slider End -->
+=======
+<h1><a asp-action="LichChieu">Welcome</a></h1>
+>>>>>>> origin/chinh

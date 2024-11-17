@@ -49,13 +49,13 @@ public partial class QuanLyRapPhimContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=LAPTOP-LUONG\\SQLEXPRESS;Initial Catalog=QuanLyRapPhim;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
+        => optionsBuilder.UseSqlServer("Data Source=TOAN\\TOANPC;Initial Catalog=QuanLyRapPhim;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<DanhGium>(entity =>
         {
-            entity.HasKey(e => e.MaDg).HasName("PK__DanhGia__27258660F2D7E1B3");
+            entity.HasKey(e => e.MaDg).HasName("PK__DanhGia__27258660EC538EB1");
 
             entity.Property(e => e.MaDg)
                 .ValueGeneratedNever()
@@ -80,7 +80,7 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<DoAn>(entity =>
         {
-            entity.HasKey(e => e.MaDa).HasName("PK__DoAn__2725867A23913642");
+            entity.HasKey(e => e.MaDa).HasName("PK__DoAn__2725867A83D30418");
 
             entity.ToTable("DoAn");
 
@@ -98,7 +98,7 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<GheXemPhim>(entity =>
         {
-            entity.HasKey(e => e.MaGxp).HasName("PK__GheXemPh__3CD34478FCC1FE83");
+            entity.HasKey(e => e.MaGxp).HasName("PK__GheXemPh__3CD3447854858605");
 
             entity.ToTable("GheXemPhim");
 
@@ -111,7 +111,7 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<HinhAnhTrailer>(entity =>
         {
-            entity.HasKey(e => e.MaHat).HasName("PK__HinhAnhT__3C938F6ED0459C20");
+            entity.HasKey(e => e.MaHat).HasName("PK__HinhAnhT__3C938F6E103417FB");
 
             entity.ToTable("HinhAnhTrailer");
 
@@ -120,8 +120,6 @@ public partial class QuanLyRapPhimContext : DbContext
                 .HasColumnName("MaHAT");
             entity.Property(e => e.DuongDanAnh).HasMaxLength(255);
             entity.Property(e => e.DuongDanTrailer).HasMaxLength(255);
-            entity.Property(e => e.Loai).HasMaxLength(50);
-            entity.Property(e => e.MoTa).HasMaxLength(255);
 
             entity.HasOne(d => d.MaPhimNavigation).WithMany(p => p.HinhAnhTrailers)
                 .HasForeignKey(d => d.MaPhim)
@@ -130,7 +128,7 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<HoaDon>(entity =>
         {
-            entity.HasKey(e => e.MaHd).HasName("PK__HoaDon__2725A6E0F89CDDB5");
+            entity.HasKey(e => e.MaHd).HasName("PK__HoaDon__2725A6E074F51BE7");
 
             entity.ToTable("HoaDon");
 
@@ -159,7 +157,7 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<KhachHang>(entity =>
         {
-            entity.HasKey(e => e.MaKh).HasName("PK__KhachHan__2725CF1EB909A501");
+            entity.HasKey(e => e.MaKh).HasName("PK__KhachHan__2725CF1E0B641095");
 
             entity.ToTable("KhachHang");
 
@@ -179,7 +177,7 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<KhuyenMai>(entity =>
         {
-            entity.HasKey(e => e.MaKm).HasName("PK__KhuyenMa__2725CF1569856AAA");
+            entity.HasKey(e => e.MaKm).HasName("PK__KhuyenMa__2725CF1544C44F67");
 
             entity.ToTable("KhuyenMai");
 
@@ -209,7 +207,7 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<LichChieu>(entity =>
         {
-            entity.HasKey(e => e.MaLc).HasName("PK__LichChie__2725C762C938A79D");
+            entity.HasKey(e => e.MaLc).HasName("PK__LichChie__2725C7627AE5839E");
 
             entity.ToTable("LichChieu");
 
@@ -232,7 +230,7 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<Phim>(entity =>
         {
-            entity.HasKey(e => e.MaPhim).HasName("PK__Phim__4AC03DE3009AFF12");
+            entity.HasKey(e => e.MaPhim).HasName("PK__Phim__4AC03DE32C41C8B3");
 
             entity.ToTable("Phim");
 
@@ -253,7 +251,7 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<PhongChieu>(entity =>
         {
-            entity.HasKey(e => e.MaPc).HasName("PK__PhongChi__2725E7E55774A354");
+            entity.HasKey(e => e.MaPc).HasName("PK__PhongChi__2725E7E5856FD224");
 
             entity.ToTable("PhongChieu");
 
@@ -274,7 +272,7 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<QuanLy>(entity =>
         {
-            entity.HasKey(e => e.MaQl).HasName("PK__QuanLy__2725F8524CABE37D");
+            entity.HasKey(e => e.MaQl).HasName("PK__QuanLy__2725F852FEB80249");
 
             entity.ToTable("QuanLy");
 
@@ -293,7 +291,7 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<RapPhim>(entity =>
         {
-            entity.HasKey(e => e.MaRp).HasName("PK__RapPhim__2725F7BF29F02814");
+            entity.HasKey(e => e.MaRp).HasName("PK__RapPhim__2725F7BF966A2CEE");
 
             entity.ToTable("RapPhim");
 
@@ -314,7 +312,7 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<TaiKhoan>(entity =>
         {
-            entity.HasKey(e => e.MaTk).HasName("PK__TaiKhoan__27250070662857FB");
+            entity.HasKey(e => e.MaTk).HasName("PK__TaiKhoan__272500709C31F88F");
 
             entity.ToTable("TaiKhoan");
 
@@ -329,7 +327,7 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<ThanhToan>(entity =>
         {
-            entity.HasKey(e => e.MaTt).HasName("PK__ThanhToa__27250079A1F511F6");
+            entity.HasKey(e => e.MaTt).HasName("PK__ThanhToa__2725007903B1506B");
 
             entity.ToTable("ThanhToan");
 
@@ -350,7 +348,7 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<TheLoai>(entity =>
         {
-            entity.HasKey(e => e.MaTl).HasName("PK__TheLoai__272500710555D810");
+            entity.HasKey(e => e.MaTl).HasName("PK__TheLoai__272500717C65AD4C");
 
             entity.ToTable("TheLoai");
 
@@ -363,7 +361,7 @@ public partial class QuanLyRapPhimContext : DbContext
 
         modelBuilder.Entity<VeXemPhim>(entity =>
         {
-            entity.HasKey(e => e.MaVxp).HasName("PK__VeXemPhi__31CE4CB21E4BBBB3");
+            entity.HasKey(e => e.MaVxp).HasName("PK__VeXemPhi__31CE4CB295039A63");
 
             entity.ToTable("VeXemPhim");
 
