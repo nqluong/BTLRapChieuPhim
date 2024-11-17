@@ -199,8 +199,8 @@
                         allSeats.push({
                             MaGxp: `${seatId}`,  
                             Row: row,
-                            LoaiGhe: 'Standard',
-                            TrangThai: 'Available'  
+                            LoaiGhe: 'Thường',
+                            TrangThai: 'Còn Trống'  
                         });
                         seatId++;
                     }
@@ -245,7 +245,7 @@
             rowList.append(rowHeader);
 
             groupedSeats[row].forEach(seat => {
-                const isDisabled = seat.TrangThai === 'Dã đặt';
+                const isDisabled = seat.TrangThai === 'Đã Đặt';
                 console.log(`Seat: ${seat.MaGxp}, Status: ${seat.TrangThai}, Disabled: ${isDisabled}`);
                 const seatItem = $(`
                     <li class="${isDisabled ? 'seat_disable' : ''}">

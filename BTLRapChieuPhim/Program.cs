@@ -7,7 +7,7 @@ builder.Services.AddControllers();
 
 //connect MoMoAPI
 builder.Services.Configure<MomoOptionModel>(builder.Configuration.GetSection("MomoAPI"));
-//builder.Services.AddScoped<IMomoService, MomoService>();
+builder.Services.AddScoped<IMomoService, MomoService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

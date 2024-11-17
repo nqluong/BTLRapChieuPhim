@@ -54,9 +54,9 @@ namespace BTLRapChieuPhim.Controllers
             return View();
         }
         [Route("lichchieu")]
-        public IActionResult Lichchieu()
+        public IActionResult Lichchieu(int maphim)
         {
-            ViewBag.MaPhim = 1;
+            ViewBag.MaPhim = maphim;
 			return View();
         }
         [Route("chonghe")]

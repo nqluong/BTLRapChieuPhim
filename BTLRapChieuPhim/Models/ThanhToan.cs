@@ -7,13 +7,13 @@ public partial class ThanhToan
 {
     public int MaTt { get; set; }
 
-    public string? HinhThucTt { get; set; }
+    public string? MaGd { get; set; }
+
+    public string? NoiDung { get; set; }
+
+    public string? Hoten { get; set; }
 
     public decimal? ThanhTien { get; set; }
 
-    public DateOnly? NgayTt { get; set; }
-
-    public int? MaHd { get; set; }
-
-    public virtual HoaDon? MaHdNavigation { get; set; }
+    public DateTime? NgayTt { get; set; }
 }

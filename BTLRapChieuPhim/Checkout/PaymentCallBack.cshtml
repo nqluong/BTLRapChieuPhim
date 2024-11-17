@@ -1,0 +1,9 @@
+﻿@using BTLRapChieuPhim.Models.MoMo
+@model MomoExecuteResponseModel
+@{
+    ViewData["title"] = "Kết quả thanh toán thành công";
+}
+<h5>Thanh toán MOMO thành công với:</h5>
+<h6>OrderId : @Model.OrderId</h6>
+<h6>OrderInfo: @Model. OrderInfo</h6>
+<h6>Tổng tiến: @Model.Amount</h6>

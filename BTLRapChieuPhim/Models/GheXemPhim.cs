@@ -9,7 +9,5 @@ public partial class GheXemPhim
 
     public string? LoaiGhe { get; set; }
 
-    public string? TrangThai { get; set; }
-
-    public virtual ICollection<VeXemPhim> VeXemPhims { get; set; } = new List<VeXemPhim>();
+    public virtual ICollection<GheVe> GheVes { get; set; } = new List<GheVe>();
 }

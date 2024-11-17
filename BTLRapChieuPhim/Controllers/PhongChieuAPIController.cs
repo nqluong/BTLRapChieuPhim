@@ -21,17 +21,17 @@ namespace BTLRapChieuPhim.Controllers
             var ghexp = (from lc in db.LichChieus
                          join pc in db.PhongChieus on lc.MaPc equals pc.MaPc
                          join vxp in db.VeXemPhims on lc.MaLc equals vxp.MaLc
-                         join gxp in db.GheXemPhims on vxp.MaGxp equals gxp.MaGxp
+                         join gv in db.GheVes on vxp.MaLc equals gv.MaLc
+                         join g in db.GheXemPhims on gv.MaGxp equals g.MaGxp
                          where lc.MaLc==malc
                          select new GheXPAPI
                              {
                                  MaLc = lc.MaLc,
                                  MaPc = lc.MaPc,
                                 TenPc=pc.TenPc,
-                                LoaiGhe=gxp.LoaiGhe,
-                                MaGxp=gxp.MaGxp,
-                             TrangThai=gxp.TrangThai,
-                             SucChua=pc.SucChua,
+                                LoaiGhe=g.LoaiGhe,
+                                MaGxp=g.MaGxp,
+                             TrangThai=gv.TrangThai,            
                          }).ToList();
             return ghexp;
         }

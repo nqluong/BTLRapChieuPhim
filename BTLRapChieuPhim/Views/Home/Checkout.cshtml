@@ -54,11 +54,11 @@
 								<h3></h3>
 								<ul>
 									<li>
-										<form method="POST" asp-action="CreatePaymentMomo" asp-controller="Payment">
-											<input type="hidden" name="Amount" value="100000" />
-											<input type="hidden" name="OrderId" value="2024-11-16T19:36:00"/>
-											<input type="hidden" name="OrderInfo" value="Thanh toán Momo cho đơn hàng "/>
-											<input type="hidden" name="FullName" value="Nguyen Duy Chinh" />
+										<form method="POST" asp-action="CreatePaymentMomo" asp-controller="Payment" id="paymentForm">
+											<input type="hidden" name="Amount" id="inputAmount" />
+											<input type="hidden" name="OrderId" id="inputOrderId" />
+											<input type="hidden" name="OrderInfo" value="Thanh toán Momo cho đơn hàng"/>
+											<input type="hidden" name="FullName" id="inputFullName" />
 											<button class="btn btn-danger" name="PayUrl" type="submit">PROCEED TO PAY </button>
 										</form>
 									</li>
@@ -87,6 +87,15 @@
 		const maPhim = @ViewBag.MaPhim
 			loadTTve();
 		loadShowTTByMovieId(maPhim);
+		$('#paymentForm').on('submit', function (e) {
+			const userName = $('#name').val(); // Lấy tên từ input Name trong form userDetailsForm
+			if (!userName) {
+				alert("Vui lòng nhập tên trước khi tiếp tục.");
+				e.preventDefault(); 
+				return;
+			}
+			$('#inputFullName').val(userName);
+		});
 	});
 	function loadShowTTByMovieId(maPhim) {
 		$.get(`/api/lichchieuapi/ttphim/${maPhim}`, function (data) {
@@ -141,7 +150,8 @@
 						return sum + seat.giaVe;
 					}, 0);
 					var ticketCount = data.storedSeats.length;
-
+						$('#inputOrderId').val(gio); // OrderId = giờ chiếu
+						$('#inputAmount').val(totalPrice);
 					// Thêm thông tin ghế vào `str`
 					str += `
 						<li>

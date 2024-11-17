@@ -2,7 +2,6 @@
 	ViewData["Title"] = "Home Page";
 	Layout = "_LayoutTemplate";
 }
-<<<<<<< HEAD
 @model IQueryable<HinhAnhTrailer>
 
 <!-- PRS Upcoming Slider Start -->
@@ -41,7 +40,7 @@
 											</li>
 											<li>
 												<!-- Liên kết xem trailer -->
-												<a onclick="showTrailer('/Template/Video/@item.DuongDanTrailer')">View Trailer</a>
+												<a onclick="showTrailer('/Template/Video/' + '@item.DuongDanTrailer')">View Trailer</a>
 											</li>
 										</ul>
 									</div>
@@ -180,7 +179,7 @@
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a href="/Home/LichChieu?maPhim=@Model.ElementAt(0).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -215,7 +214,7 @@
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a href="/Home/LichChieu?maPhim=@Model.ElementAt(1).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -254,7 +253,7 @@
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
 																<li>
-																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+																	<a href="/Home/LichChieu?maPhim=@mdl.MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 																</li>
 															</ul>
 														</div>
@@ -324,7 +323,7 @@
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a href="/Home/LichChieu?maPhim=@Model.ElementAt(6).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -1470,7 +1469,4 @@
 		</div>
 	</div>
 </div>
-<!-- prs web series Slider End -->
-=======
-<h1><a asp-action="LichChieu">Welcome</a></h1>
->>>>>>> origin/chinh
+

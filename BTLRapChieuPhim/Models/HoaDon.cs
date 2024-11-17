@@ -24,6 +24,4 @@ public partial class HoaDon
     public virtual DoAn? MaDaNavigation { get; set; }
 
     public virtual KhachHang? MaKhNavigation { get; set; }
-
-    public virtual ICollection<ThanhToan> ThanhToans { get; set; } = new List<ThanhToan>();
 }

@@ -15,9 +15,7 @@ public partial class VeXemPhim
 
     public int? MaLc { get; set; }
 
-    public int? MaGxp { get; set; }
-
-    public virtual GheXemPhim? MaGxpNavigation { get; set; }
+    public virtual ICollection<GheVe> GheVes { get; set; } = new List<GheVe>();
 
     public virtual LichChieu? MaLcNavigation { get; set; }
 }

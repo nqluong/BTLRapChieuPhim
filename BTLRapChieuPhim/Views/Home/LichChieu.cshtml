@@ -58,8 +58,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
-        loadShowTTByMovieId(3)
-        loadShowtimesByMovieId(3); 
+        const maPhim=@ViewBag.MaPhim;
+        loadShowTTByMovieId(maPhim)
+        loadShowtimesByMovieId(maPhim); 
 
     });
 
@@ -90,8 +91,9 @@
             const dayTabs = $('#tt');
             dayTabs.empty(); 
             data.forEach(function (showtime) {
+                const anh = `/Template/AnhPhimLayout/${showtime.duongDanAnh}`;
                 const dayItem = `
-                                <div class="st_video_slider_inner_wrapper float_left" style="background:url('${showtime.duongDanAnh}')  repeat-y 50% 0;" >
+                                <div class="st_video_slider_inner_wrapper float_left" style="background:url(${anh})  repeat-y 50% 0;" >
                                 <div class="st_video_slider_overlay"></div>
     <div class="st_video_slide_sec float_left">
                     <a rel='external' href='${showtime.duongDanTrailer} title='title' class="test-popup-link">
