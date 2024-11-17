@@ -7,5 +7,6 @@
 		public string? DuongDanAnh { get; set; }
 		public string? DuongDanTrailer { get; set; }
 		public string? NuocSX { get; set; }
+		public string? TenTL {  get; set; }
 	}
 }

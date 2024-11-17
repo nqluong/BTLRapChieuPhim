@@ -25,20 +25,25 @@ namespace BTLRapChieuPhim.Controllers
 		public IActionResult Index()
 		{
 			var hinhanh = ql.HinhAnhTrailers
-					.AsNoTracking()
-					.Join(ql.Phims, // Join v?i b?ng Phim
-						ha => ha.MaPhim,  // C?t MaPhim trong b?ng HinhAnhTrailer
-						p => p.MaPhim,    // C?t MaPhim trong b?ng Phim
-						(ha, p) => new HinhAnhPhimViewModel
-						{   // Ánh x? d? li?u vào ViewModel
-							MaPhim = ha.MaPhim ?? 0,
-							TenPhim = p.TenPhim,
-							DuongDanAnh = ha.DuongDanAnh,
-							DuongDanTrailer = ha.DuongDanTrailer,
-                            NuocSX = p.NuocSx
-						})
-					.OrderBy(x => x.MaPhim)
-					.ToList();  // Chuy?n sang List ?? d? dàng s? d?ng trong View
+				   .AsNoTracking()
+				   .Join(ql.Phims, 
+					   ha => ha.MaPhim,
+					   p => p.MaPhim,
+					   (ha, p) => new { HinhAnh = ha, Phim = p }) 
+				   .Join(ql.TheLoais, 
+					   hp => hp.Phim.MaTl, 
+					   tl => tl.MaTl,
+					   (hp, tl) => new HinhAnhPhimViewModel 
+					   {
+						   MaPhim = hp.Phim.MaPhim,
+						   TenPhim = hp.Phim.TenPhim,
+						   DuongDanAnh = hp.HinhAnh.DuongDanAnh,
+						   DuongDanTrailer = hp.HinhAnh.DuongDanTrailer,
+						   TenTL = tl.TenTheLoai, 
+                           NuocSX = hp.Phim.NuocSx
+					   })
+				   .OrderBy(x => x.MaPhim)
+				   .ToList(); 
 
 			return View(hinhanh);
 		}
