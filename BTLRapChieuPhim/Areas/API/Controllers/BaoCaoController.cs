@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using BTLRapChieuPhim.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.Globalization;
 
 namespace BTLRapChieuPhim.Areas.API.Controllers
 {
@@ -18,39 +19,50 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             var query = from lc in _context.LichChieus
                         join vxp in _context.VeXemPhims on lc.MaLc equals vxp.MaLc
                         join hd in _context.HoaDons on vxp.MaHd equals hd.MaHd
+                        join tt in _context.ThanhToans on hd.MaHd equals tt.MaHd
+                        where tt.NgayTt.HasValue
                         select new
                         {
-                            NgayChieu = lc.ThoiGianChieu,
+                            Ngay = tt.NgayTt,
                             TienVe = hd.TongTienVe,
                             TienDoAn = hd.TongTienDa,
                             TongHd = hd.TongTienVe + hd.TongTienDa
                         };
             var culture = System.Globalization.CultureInfo.InvariantCulture;
-            if (!string.IsNullOrEmpty(fromDate) && DateTime.TryParseExact(fromDate, "yyyy/MM/dd", culture, System.Globalization.DateTimeStyles.None, out DateTime startDate))
+            if (!string.IsNullOrEmpty(fromDate) && DateOnly.TryParseExact(fromDate, "dd/MM/yyyy", culture, System.Globalization.DateTimeStyles.None, out DateOnly startDate))
             {
-                query = query.Where(x => x.NgayChieu.HasValue && x.NgayChieu >= startDate);
+                
+                query = query.Where(x => x.Ngay.HasValue && x.Ngay >= startDate);
             }
-            if (!string.IsNullOrEmpty(toDate) && DateTime.TryParseExact(toDate, "yyyy/MM/dd", culture, System.Globalization.DateTimeStyles.None, out DateTime endDate))
+            if (!string.IsNullOrEmpty(toDate) && DateOnly.TryParseExact(toDate, "dd/MM/yyyy", culture, System.Globalization.DateTimeStyles.None, out DateOnly endDate))
             {
-
-                query = query.Where(x => x.NgayChieu.HasValue && x.NgayChieu < endDate);
+                
+                query = query.Where(x => x.Ngay.HasValue && x.Ngay <= endDate);
             }
             var groupedResult = query
-                    .GroupBy(x => x.NgayChieu.HasValue ? x.NgayChieu.Value.Date : (DateTime?)null)
+                    .GroupBy(x  => x.Ngay)
                     .Select(g => new
                     {
-                        NgayChieu = g.Key,
+                        NgayTt = g.Key,
                         TienVe = g.Sum(y => y.TienVe),
                         TienDoAn = g.Sum(y => y.TienDoAn),
                         DoanhThu = g.Sum(y => y.TongHd)
                     })
-                    .OrderBy(x => x.NgayChieu)
+                    .OrderBy(x => x.NgayTt)
                     .ToList();
-
+            if (!groupedResult.Any())
+            {
+                return NotFound(new
+                {
+                    Message = "Không có dữ liệu doanh thu phù hợp với ngày được truyền vào.",
+                    FromDate = fromDate,
+                    ToDate = toDate
+                });
+            }
             // Format ngày sau khi lấy dữ liệu từ DB
             var result = groupedResult.Select(x => new
             {
-                NgayChieu = x.NgayChieu.HasValue ? x.NgayChieu.Value.ToString("dd/MM/yyyy") : "Không xác định",
+                Ngay = x.NgayTt,
                 x.TienVe,
                 x.TienDoAn,
                 x.DoanhThu
@@ -59,6 +71,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         }
 
         [HttpGet("theo-phim")]
+        [HttpGet]
         public IActionResult GetDoanhThuTheoPhim()
         {
             var query = from lc in _context.LichChieus

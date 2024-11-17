@@ -27,7 +27,8 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                                       TenPhim = p.TenPhim,
                                       ThoiLuong = p.ThoiLuong,
                                       TenPhongChieu = pc.TenPc,
-                                      SucChua = pc.SucChua
+                                      SucChua = pc.SucChua,
+                                      
                                   }).ToList();
 
             var totalRecords = lichChieuQuery.Count();

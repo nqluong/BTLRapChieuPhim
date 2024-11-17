@@ -14,8 +14,9 @@ namespace BTLRapChieuPhim.Areas.Admin.Controllers
 		[Route("")]
 		public IActionResult Index()
 		{
-			return View();
-		}
+			return View("~/Areas/Admin/Views/BaoCao/BaoCao.cshtml");
+
+        }
 
 		[Route("lichchieuphim")]
 		public IActionResult LichChieuPhim()

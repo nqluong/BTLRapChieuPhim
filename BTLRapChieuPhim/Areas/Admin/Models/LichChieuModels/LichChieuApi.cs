@@ -11,5 +11,6 @@
 		public string ? TenPhongChieu { get; set; }
 		public int ? SucChua {  get; set; }
 		public string ? TenPhim {  get; set; }
+		
 	}
 }

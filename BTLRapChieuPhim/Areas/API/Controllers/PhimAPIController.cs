@@ -2,6 +2,7 @@
 using BTLRapChieuPhim.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Drawing.Printing;
 
 namespace BTLRapChieuPhim.Areas.API.Controllers
 {
@@ -11,28 +12,65 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
     {
         QuanLyRapPhimContext _context = new QuanLyRapPhimContext();
 
+        //[HttpGet]
+        //public IActionResult GetAllPhim(int page = 1, int pageSize = 15)
+        //{
+        //    var phimQuery = (from p in _context.Phims
+        //                      join tl in _context.TheLoais on p.MaTl equals tl.MaTl
+        //                      join hat in _context.HinhAnhTrailers on p.MaPhim equals hat.MaPhim
+        //                      select new PhimAPI
+        //                      {
+        //                          MaPhim = p.MaPhim,
+        //                          TenPhim = p.TenPhim,
+        //                          ThoiLuong = p.ThoiLuong,
+        //                          DaoDien = p.DaoDien,
+        //                          DoTuoi = p.DoTuoi,
+        //                          NuocSx = p.NuocSx,
+        //                          MoTa = p.MoTa,
+        //                          MaTl = p.MaTl,
+        //                          TenTheLoai = tl.TenTheLoai,
+        //                          DuongDanAnh = hat.DuongDanAnh,
+        //                          DuongDanTrailer = hat.DuongDanTrailer,
+        //                          MaHat = hat.MaHat,
+        //                      }).ToList();
+        //    var totalRecords = phimQuery.Count();
+        //    var phim = phimQuery
+        //    .Skip((page - 1) * pageSize)
+        //        .Take(pageSize)
+        //        .ToList();
+        //    var result = new
+        //    {
+        //        TotalRecords = totalRecords,
+        //        Page = page,
+        //        PageSize = pageSize,
+        //        TotalPages = (int)Math.Ceiling((double)totalRecords / pageSize),
+        //        Data = phim
+        //    };
+        //    return Ok(result);
+        //}
+
         [HttpGet]
         public IEnumerable<PhimAPI> GetAllPhim()
         {
-            var phim = (from p in _context.Phims
-                              join tl in _context.TheLoais on p.MaTl equals tl.MaTl
-                              join hat in _context.HinhAnhTrailers on p.MaPhim equals hat.MaPhim
-                              select new PhimAPI
-                              {
-                                  MaPhim = p.MaPhim,
-                                  TenPhim = p.TenPhim,
-                                  ThoiLuong = p.ThoiLuong,
-                                  DaoDien = p.DaoDien,
-                                  DoTuoi = p.DoTuoi,
-                                  NuocSx = p.NuocSx,
-                                  MoTa = p.MoTa,
-                                  MaTl = p.MaTl,
-                                  TenTheLoai = tl.TenTheLoai,
-                                  DuongDanAnh = hat.DuongDanAnh,
-                                  DuongDanTrailer = hat.DuongDanTrailer,
-                                  MaHat = hat.MaHat,
-                              }).ToList();
-            return phim;
+            var phimQuery = (from p in _context.Phims
+                             join tl in _context.TheLoais on p.MaTl equals tl.MaTl
+                             join hat in _context.HinhAnhTrailers on p.MaPhim equals hat.MaPhim
+                             select new PhimAPI
+                             {
+                                 MaPhim = p.MaPhim,
+                                 TenPhim = p.TenPhim,
+                                 ThoiLuong = p.ThoiLuong,
+                                 DaoDien = p.DaoDien,
+                                 DoTuoi = p.DoTuoi,
+                                 NuocSx = p.NuocSx,
+                                 MoTa = p.MoTa,
+                                 MaTl = p.MaTl,
+                                 TenTheLoai = tl.TenTheLoai,
+                                 DuongDanAnh = hat.DuongDanAnh,
+                                 DuongDanTrailer = hat.DuongDanTrailer,
+                                 MaHat = hat.MaHat,
+                             }).ToList();
+            return phimQuery;
         }
 
         [HttpGet("{maPhim}")]

@@ -31,7 +31,8 @@
                     <th>ID</th>
                     <th>TÊN PHIM</th>
                     <th>TÊN PHÒNG CHIẾU</th>
-                    <th>THỜI GIAN CHIẾU</th>
+                    <th>THỜI GIAN BẮT ĐẦU</th>
+                    <th>THỜI GIAN KẾT THÚC</th>
                     <th>SỨC CHỨA</th>
                     <th>NGÀY CHIẾU</th>
 
@@ -163,14 +164,19 @@
                 }
 
                 lichChieuArr.forEach(function (lichChieu) {
-                    var time = new Date(lichChieu.thoiGianChieu).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                    var time = new Date(lichChieu.thoiGianChieu);
+                    var timeEnd = new Date(time);
+                    timeEnd.setMinutes(time.getMinutes() + lichChieu.thoiLuong);
+                    var formattedTime = time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                    var formattedTimeEnd = timeEnd.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
                     var row = `<tr>
                                     <td><div class="catalog__text">${lichChieu.maLc}</div></td>
                                     <td><div class="catalog__text"><a href="#">${lichChieu.tenPhim}</a></div></td>
                                     <td><div class="catalog__text">${lichChieu.tenPhongChieu}</div></td>
-                                    <td><div class="catalog__text">${time}</div></td>
+                                    <td><div class="catalog__text">${formattedTime}</div></td>
+                                            <td><div class="catalog__text">${formattedTimeEnd}</div></td>
                                     <td><div class="catalog__text ">${lichChieu.sucChua}</div></td>
-                                    <td><div class="catalog__text">${new Date(lichChieu.thoiGianChieu).toLocaleDateString()}</div></td>
+                                    <td><div class="catalog__text">${new Date(lichChieu.thoiGianChieu).toLocaleDateString()}</div></td>        
                                     <td>
                                     <div class="catalog__btns">
                                          <button type="button" class="catalog__btn catalog__btn--edit" onclick="editLichChieu('${lichChieu.maLc}')">
