@@ -1,8 +1,8 @@
-﻿@{
+﻿﻿@{
 	ViewData["Title"] = "Home Page";
 	Layout = "_LayoutTemplate";
 }
-@model IQueryable<HinhAnhTrailer>
+@model IEnumerable<HinhAnhPhimViewModel>
 
 <!-- PRS Upcoming Slider Start -->
 <div class="prs_upcom_slider_main_wrapper">
@@ -21,18 +21,11 @@
 							<div class="item prs_feature_slider_item_wrapper">
 								<div class="prs_feature_img_box_wrapper">
 									<div class="prs_feature_img">
-										<img src="@Url.Content("~/Template/AnhPhim/" + item.DuongDanAnh)" alt="feature_img">
+										<img src="@Url.Content("~/Template/AnhPhim/" + item.DuongDanAnh)" alt="feature_img" onclick="location.href='@Url.Action("ChiTietPhim", "Home", new { maphim = item.MaPhim })'" />
 									</div>
 									<div class="prs_feature_img_cont">
-										<div class="prs_ft_small_cont_left">
-											<p></p>
-										</div>
-										<div class="prs_ft_small_cont_right">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star-o"></i>
-											<i class="fa fa-star-o"></i>
+										<div>
+											<p>@item.TenPhim</p>
 										</div>
 										<ul>
 											<li>
@@ -40,7 +33,7 @@
 											</li>
 											<li>
 												<!-- Liên kết xem trailer -->
-												<a onclick="showTrailer('/Template/Video/' + '@item.DuongDanTrailer')">View Trailer</a>
+												<a onclick="showTrailer('/Template/Video/@item.DuongDanTrailer')">View Trailer</a>
 											</li>
 										</ul>
 									</div>
@@ -158,8 +151,8 @@
 												<div class="prs_upcom_movie_img_btn_wrapper">
 													<ul>
 														<li>
-													
-															<a  onclick="showTrailer('/Template/Video/Trailer 1.mp4')">View Trailer</a>
+
+															<a onclick="showTrailer('/Template/Video/Trailer 1.mp4')">View Trailer</a>
 														</li>
 														<li>
 															<a asp-controller="Home" asp-action="ChiTietPhim" asp-route-maphim="@Model.ElementAt(0).MaPhim">View Detail</a>
@@ -169,17 +162,14 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<p><a>@Model.ElementAt(0).TenPhim</a></p>
+													<p>@Model.ElementAt(0).NuocSX</p>
+													<p>@Model.ElementAt(0).TenTL</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="/Home/LichChieu?maPhim=@Model.ElementAt(0).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@Model.ElementAt(0).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -204,17 +194,14 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<p><a>@Model.ElementAt(1).TenPhim</a></p>
+													<p>@Model.ElementAt(1).NuocSX</p>
+													<p>@Model.ElementAt(1).TenTL</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="/Home/LichChieu?maPhim=@Model.ElementAt(1).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@Model.ElementAt(1).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -243,17 +230,16 @@
 													</div>
 													<div class="prs_upcom_movie_content_box">
 														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
+															<p><a>@mdl.TenPhim</a></p>
+															<p>@mdl.NuocSX</p>
+															<p>@mdl.TenTL</p>
 														</div>
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
 																<li>
-																	<a href="/Home/LichChieu?maPhim=@mdl.MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
+																	<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@mdl.MaPhim"><i class="flaticon-cart-of-ecommerce"></i>
+
+											</a>
 																</li>
 															</ul>
 														</div>
@@ -261,7 +247,7 @@
 												</div>
 											</div>
 										}
-										
+
 									</div>
 								</div>
 							</div>
@@ -313,17 +299,14 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<p><a>@Model.ElementAt(6).TenPhim</a></p>
+													<p>@Model.ElementAt(6).NuocSX</p>
+													<p>@Model.ElementAt(6).TenTL</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="/Home/LichChieu?maPhim=@Model.ElementAt(6).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@Model.ElementAt(6).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -348,17 +331,14 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<p><a>@Model.ElementAt(7).TenPhim</a></p>
+													<p>@Model.ElementAt(7).NuocSX</p>
+													<p>@Model.ElementAt(7).TenTL</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@Model.ElementAt(7).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -387,17 +367,14 @@
 													</div>
 													<div class="prs_upcom_movie_content_box">
 														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
+															<p><a>@mdl.TenPhim</a></p>
+															<p>@mdl.NuocSX</p>
+															<p>@mdl.TenTL</p>
 														</div>
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
 																<li>
-																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+																	<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@mdl.MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 																</li>
 															</ul>
 														</div>
@@ -457,17 +434,14 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<p><a>@Model.ElementAt(12).TenPhim</a></p>
+													<p>@Model.ElementAt(12).NuocSX</p>
+													<p>@Model.ElementAt(12).TenTL</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<aasp-controller ="Home" asp-action="LichChieu" asp-route-maphim="@Model.ElementAt(12).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -492,17 +466,14 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<p><a>@Model.ElementAt(13).TenPhim</a></p>
+													<p>@Model.ElementAt(13).NuocSX</p>
+													<p>@Model.ElementAt(13).TenTL</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@Model.ElementAt(13).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -531,17 +502,14 @@
 													</div>
 													<div class="prs_upcom_movie_content_box">
 														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
+															<p><a>@mdl.TenPhim</a></p>
+															<p>@mdl.NuocSX</p>
+															<p>@mdl.TenTL</p>
 														</div>
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
 																<li>
-																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+																	<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@mdl.MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 																</li>
 															</ul>
 														</div>
@@ -618,17 +586,14 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<p><a>@Model.ElementAt(18).TenPhim</a></p>
+													<p>@Model.ElementAt(18).NuocSX</p>
+													<p>@Model.ElementAt(18).TenTL</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@Model.ElementAt(18).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -653,17 +618,14 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<p><a>@Model.ElementAt(19).TenPhim</a></p>
+													<p>@Model.ElementAt(19).NuocSX</p>
+													<p>@Model.ElementAt(19).TenTL</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@Model.ElementAt(19).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -692,17 +654,14 @@
 													</div>
 													<div class="prs_upcom_movie_content_box">
 														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
+															<p><a>@mdl.TenPhim</a></p>
+															<p>@mdl.NuocSX</p>
+															<p>@mdl.TenTL</p>
 														</div>
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
 																<li>
-																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+																	<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@mdl.MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 																</li>
 															</ul>
 														</div>
@@ -762,17 +721,14 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<p><a>@Model.ElementAt(4).TenPhim</a></p>
+													<p>@Model.ElementAt(4).NuocSX</p>
+													<p>@Model.ElementAt(4).TenTL</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@Model.ElementAt(4).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -797,17 +753,14 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<p><a>@Model.ElementAt(5).TenPhim</a></p>
+													<p>@Model.ElementAt(5).NuocSX</p>
+													<p>@Model.ElementAt(5).TenTL</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@Model.ElementAt(5).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -836,17 +789,14 @@
 													</div>
 													<div class="prs_upcom_movie_content_box">
 														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
+															<p><a>@mdl.TenPhim</a></p>
+															<p>@mdl.NuocSX</p>
+															<p>@mdl.TenTL</p>
 														</div>
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
 																<li>
-																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+																	<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@mdl.MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 																</li>
 															</ul>
 														</div>
@@ -923,17 +873,14 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<p><a>@Model.ElementAt(6).TenPhim</a></p>
+													<p>@Model.ElementAt(6).NuocSX</p>
+													<p>@Model.ElementAt(6).TenTL</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@Model.ElementAt(6).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -958,17 +905,14 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<p><a>@Model.ElementAt(7).TenPhim</a></p>
+													<p>@Model.ElementAt(7).NuocSX</p>
+													<p>@Model.ElementAt(7).TenTL</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@Model.ElementAt(7).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -997,17 +941,14 @@
 													</div>
 													<div class="prs_upcom_movie_content_box">
 														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
+															<p><a>@mdl.TenPhim</a></p>
+															<p>@mdl.NuocSX</p>
+															<p>@mdl.TenTL</p>
 														</div>
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
 																<li>
-																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+																	<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@mdl.MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 																</li>
 															</ul>
 														</div>
@@ -1067,17 +1008,14 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<p><a>@Model.ElementAt(12).TenPhim</a></p>
+													<p>@Model.ElementAt(12).NuocSX</p>
+													<p>@Model.ElementAt(12).TenTL</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<aasp-controller ="Home" asp-action="LichChieu" asp-route-maphim="@Model.ElementAt(12).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -1102,17 +1040,14 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<p><a>@Model.ElementAt(13).TenPhim</a></p>
+													<p>@Model.ElementAt(13).NuocSX</p>
+													<p>@Model.ElementAt(13).TenTL</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@Model.ElementAt(13).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -1141,17 +1076,14 @@
 													</div>
 													<div class="prs_upcom_movie_content_box">
 														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
+															<p><a>@mdl.TenPhim</a></p>
+															<p>@mdl.NuocSX</p>
+															<p>@mdl.TenTL</p>
 														</div>
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
 																<li>
-																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+																	<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@mdl.MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 																</li>
 															</ul>
 														</div>
@@ -1211,17 +1143,14 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<p><a>@Model.ElementAt(18).TenPhim</a></p>
+													<p>@Model.ElementAt(18).NuocSX</p>
+													<p>@Model.ElementAt(18).TenTL</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@Model.ElementAt(18).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -1246,17 +1175,14 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<p><a>@Model.ElementAt(19).TenPhim</a></p>
+													<p>@Model.ElementAt(19).NuocSX</p>
+													<p>@Model.ElementAt(19).TenTL</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@Model.ElementAt(19).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -1285,17 +1211,14 @@
 													</div>
 													<div class="prs_upcom_movie_content_box">
 														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
+															<p><a>@mdl.TenPhim</a></p>
+															<p>@mdl.NuocSX</p>
+															<p>@mdl.TenTL</p>
 														</div>
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
 																<li>
-																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+																	<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@mdl.MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 																</li>
 															</ul>
 														</div>
@@ -1355,17 +1278,14 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<p><a>@Model.ElementAt(4).TenPhim</a></p>
+													<p>@Model.ElementAt(4).NuocSX</p>
+													<p>@Model.ElementAt(4).TenTL</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@Model.ElementAt(4).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -1390,17 +1310,14 @@
 											</div>
 											<div class="prs_upcom_movie_content_box">
 												<div class="prs_upcom_movie_content_box_inner">
-													<h2><a href="#">Busting Car</a></h2>
-													<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-													<i class="fa fa-star-o"></i>
+													<p><a>@Model.ElementAt(5).TenPhim</a></p>
+													<p>@Model.ElementAt(5).NuocSX</p>
+													<p>@Model.ElementAt(5).TenTL</p>
 												</div>
 												<div class="prs_upcom_movie_content_box_inner_icon">
 													<ul>
 														<li>
-															<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+															<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@Model.ElementAt(5).MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 														</li>
 													</ul>
 												</div>
@@ -1429,17 +1346,14 @@
 													</div>
 													<div class="prs_upcom_movie_content_box">
 														<div class="prs_upcom_movie_content_box_inner">
-															<h2><a href="#">Busting Car</a></h2>
-															<p>Drama , Acation</p>	<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-															<i class="fa fa-star-o"></i>
+															<p><a>@mdl.TenPhim</a></p>
+															<p>@mdl.NuocSX</p>
+															<p>@mdl.TenTL</p>
 														</div>
 														<div class="prs_upcom_movie_content_box_inner_icon">
 															<ul>
 																<li>
-																	<a href="movie_booking.html"><i class="flaticon-cart-of-ecommerce"></i></a>
+																	<a asp-controller="Home" asp-action="LichChieu" asp-route-maphim="@mdl.MaPhim"><i class="flaticon-cart-of-ecommerce"></i></a>
 																</li>
 															</ul>
 														</div>
@@ -1469,9 +1383,4 @@
 		</div>
 	</div>
 </div>
-<<<<<<< HEAD
 <!-- prs web series Slider End -->
-<h1><a asp-action="LichChieu">Welcome</a></h1>
-=======
->>>>>>> origin/chinh
-
