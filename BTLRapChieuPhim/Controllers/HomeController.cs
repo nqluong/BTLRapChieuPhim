@@ -43,8 +43,10 @@ namespace BTLRapChieuPhim.Controllers
         [Route("thongtinrap")]
         public IActionResult Contact()
         {
-            var rap = ql.RapPhims.SingleOrDefault(x => x.MaRp == 1);
-            var quanly = ql.TaiKhoans.Where(x => x.MaTk == 1).ToList();
+
+            var rap = ql.RapPhims.SingleOrDefault(x=>x.MaRp=="RP1");
+            var quanly = ql.TaiKhoans.Where(x=>x.MaTk=="TK1").ToList();
+
             ViewBag.quanly = quanly;
             return View(rap);
         }
