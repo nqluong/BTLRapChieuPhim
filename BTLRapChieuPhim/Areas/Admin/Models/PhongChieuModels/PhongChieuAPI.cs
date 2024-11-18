@@ -3,9 +3,10 @@
     public class PhongChieuAPI
     {
 
- 
 
-        public string MaPc { get; set; }
+        public string? MaQl { get; set; }
+
+        public string? MaPc { get; set; }
 
         public string? TenPc { get; set; }
 

@@ -30,7 +30,8 @@ namespace BTLRapChieuPhim.Controllers
 						Tgc=seat.Tgc,
 						TenPhim=seat.TenPhim,
 						MaPhim = seat.MaPhim,
-						MaGxp = seat.MaGxp
+						MaGxp = seat.MaGxp,
+						GheIndex=seat.GheIndex
 					});
 				}
 

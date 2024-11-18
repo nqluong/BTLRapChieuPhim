@@ -26,5 +26,9 @@ artifacts/
 
 # Các file tạm thời khác
 *.tmp
+<<<<<<< HEAD
 *.bak
 
+=======
+*.bak
+>>>>>>> origin/chinh

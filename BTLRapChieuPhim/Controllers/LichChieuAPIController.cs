@@ -19,12 +19,10 @@ namespace BTLRapChieuPhim.Controllers
             var lichchieu = (from lc in db.LichChieus
                              join p in db.Phims on lc.MaPhim equals p.MaPhim
                              join pc in db.PhongChieus on lc.MaPc equals pc.MaPc
-                             
                              select new LichChieuAPI
                              {
                                  MaLc = lc.MaLc,
                                  ThoiGianChieu = lc.ThoiGianChieu.Value.ToString("yyyy-MM-dd"),
-                                
                                  MaPc = lc.MaPc,
                                  Ngay = lc.ThoiGianChieu.Value.Day,
                                  Thu = (lc.ThoiGianChieu.Value.DayOfWeek.ToString().Substring(0, 3).ToUpper()),
@@ -34,7 +32,7 @@ namespace BTLRapChieuPhim.Controllers
             return lichchieu;
         }
         [HttpGet("byPhim/{MaPhim}")]
-        public IEnumerable<LichChieuAPI> GetLichChieuByMaPhim(int maphim)
+        public IEnumerable<LichChieuAPI> GetLichChieuByMaPhim(string maphim)
         {
             var lichchieu = (from lc in db.LichChieus
                              join p in db.Phims on lc.MaPhim equals p.MaPhim
@@ -56,18 +54,16 @@ namespace BTLRapChieuPhim.Controllers
             return lichchieu;
         }
         [HttpGet("byPhimNgay/{maPhim}/{ngay}")]
-        public IEnumerable<LichChieuAPI> GetLichChieuByPhimAndNgay(int maPhim, int ngay)
+        public IEnumerable<LichChieuAPI> GetLichChieuByPhimAndNgay(string maPhim, int ngay)
         {
             var lichchieu = (from lc in db.LichChieus
                              join p in db.Phims on lc.MaPhim equals p.MaPhim
-                             join pc in db.PhongChieus on lc.MaPc equals pc.MaPc
-                             
+                             join pc in db.PhongChieus on lc.MaPc equals pc.MaPc                         
                              where lc.MaPhim == maPhim && lc.ThoiGianChieu.Value.Day == ngay
                              select new LichChieuAPI
                              {
                                  MaLc = lc.MaLc,
                                  ThoiGianChieu = lc.ThoiGianChieu.Value.ToString("yyyy-MM-dd"),
-                                 
                                  MaPc = lc.MaPc,
                                  Ngay = lc.ThoiGianChieu.Value.Day,
                                  Thu = lc.ThoiGianChieu.Value.DayOfWeek.ToString().Substring(0, 3).ToUpper(),
@@ -97,7 +93,7 @@ namespace BTLRapChieuPhim.Controllers
             return ttphim.ToList();
         }
         [HttpGet("ttphim/{maPhim}")]
-        public IEnumerable<TTPhimAPI> GetAllTTPhimbyMaphim(int maphim)
+        public IEnumerable<TTPhimAPI> GetAllTTPhimbyMaphim(string maphim)
         {
             var ttphim = (from tl in db.Phims
 						  join ha in db.HinhAnhTrailers on tl.MaPhim equals ha.MaPhim

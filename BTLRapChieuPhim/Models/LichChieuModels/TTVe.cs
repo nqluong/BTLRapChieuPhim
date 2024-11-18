@@ -14,5 +14,6 @@ namespace BTLRapChieuPhim.Models.LichChieuModels
 		public decimal? GiaVe { get; set; }
 		public string? Ghe { get; set; } 
 		public string? MaGxp { get; set; }
+		public int GheIndex { get; set; }
 	}
 }

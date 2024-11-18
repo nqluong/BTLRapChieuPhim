@@ -117,15 +117,15 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                     return BadRequest(new { message = "Mã hình ảnh Trailer đã tồn tại!" });
                 }
 
-				if (phimadd.DoTuoi < 0)
-				{
-					return BadRequest(new { message = "Độ tuổi không hợp lệ!" });
-				}
+                if (phimadd.DoTuoi < 0)
+                {
+                    return BadRequest(new { message = "Độ tuổi không hợp lệ!" });
+                }
 
-				if (phimadd.ThoiLuong <= 0)
-				{
-					return BadRequest(new { message = "Thời lượng phải lớn hơn 0!" });
-				}
+                if (phimadd.ThoiLuong <= 0)
+                {
+                    return BadRequest(new { message = "Thời lượng phải lớn hơn 0!" });
+                }
 
 				//if (phimadd.MaPhim <= 0)
 				//{
@@ -142,21 +142,21 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
 				//	return BadRequest(new { message = "Mã hình ảnh Trailer không được để trống hoặc nhỏ hơn 1!" });
 				//}
 
-				if (string.IsNullOrWhiteSpace(phimadd.DuongDanAnh))
-				{
-					return BadRequest(new { message = "Đường dẫn ảnh không được để trống!" });
-				}
+                if (string.IsNullOrWhiteSpace(phimadd.DuongDanAnh))
+                {
+                    return BadRequest(new { message = "Đường dẫn ảnh không được để trống!" });
+                }
 
-				if (string.IsNullOrWhiteSpace(phimadd.DuongDanTrailer))
-				{
-					return BadRequest(new { message = "Đường dẫn Trailer không được để trống!" });
-				}
+                if (string.IsNullOrWhiteSpace(phimadd.DuongDanTrailer))
+                {
+                    return BadRequest(new { message = "Đường dẫn Trailer không được để trống!" });
+                }
 
-				var phim = new Phim
+                var phim = new Phim
                 {
                     MaPhim = phimadd.MaPhim,
                     TenPhim = phimadd.TenPhim,
-                    MaTl = phimadd.MaTl, 
+                    MaTl = phimadd.MaTl,
                     ThoiLuong = phimadd.ThoiLuong,
                     DaoDien = phimadd.DaoDien,
                     DoTuoi = phimadd.DoTuoi,
@@ -179,7 +179,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         }
 
         [HttpPut("{maPhim}")]
-        public IActionResult UpdatePhim(int maPhim, [FromBody] PhimAPI phimUpdated)
+        public IActionResult UpdatePhim(string maPhim, [FromBody] PhimAPI phimUpdated)
         {
             //if (phimUpdated == null || maPhim != phimUpdated.MaPhim)
             //{
@@ -227,7 +227,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
 
             _context.SaveChanges();
 
-            return NoContent(); 
+            return NoContent();
         }
 
         [HttpDelete("{maPhim}")]

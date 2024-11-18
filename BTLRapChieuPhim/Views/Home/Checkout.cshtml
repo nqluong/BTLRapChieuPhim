@@ -54,12 +54,12 @@
 								<h3></h3>
 								<ul>
 									<li>
-										<form method="POST" asp-action="CreatePaymentMomo" asp-controller="Payment">
-											<input type="hidden" name="Amount" value="100000" />
-											<input type="hidden" name="OrderId" value="2024-11-16T19:36:00"/>
-											<input type="hidden" name="OrderInfo" value="Thanh toán Momo cho đơn hàng "/>
-											<input type="hidden" name="FullName" value="Nguyen Duy Chinh" />
-											<button class="btn btn-danger" name="PayUrl" type="submit">PROCEED TO PAY </button>
+										<form method="POST" asp-action="CreatePaymentMomo" asp-controller="Payment" id="paymentForm">
+											<input type="hidden" name="Amount" id="inputAmount" />
+											<input type="hidden" name="OrderId" id="inputOrderId" />
+											<input type="hidden" name="OrderInfomation" value="Thanh toán Momo cho đơn hàng"/>
+											<input type="hidden" name="FullName" id="inputFullName" />
+											<button  class="btn btn-danger" name="PayUrl" type="submit">PROCEED TO PAY </button>
 										</form>
 									</li>
 								</ul>
@@ -85,8 +85,9 @@
 	$(document).ready(function () {
 		const maLc = @ViewBag.MaLC
 		const maPhim = @ViewBag.MaPhim
-			loadTTve();
-		loadShowTTByMovieId(maPhim);
+		loadTTve();
+		const tgc = '@ViewBag.Tgc';
+		console.log(tgc)
 	});
 	function loadShowTTByMovieId(maPhim) {
 		$.get(`/api/lichchieuapi/ttphim/${maPhim}`, function (data) {
@@ -120,6 +121,7 @@
 					var tgc = data.storedSeats[0].tgc;
 					var gio = data.storedSeats[0].gio;
 					var tenPhim = data.storedSeats[0].tenPhim;
+					const Hoten = '@ViewBag.Hoten'
 					str += `
 						<li>
 							<span class="dtts1">Date</span> <span class="dtts2">${tgc}</span>
@@ -135,13 +137,16 @@
 					var seatList = data.storedSeats.map(function (seat) {
 						return seat.ghe; // Trả về tên ghế
 					}).join(', '); // Nối tất cả tên ghế lại bằng dấu phẩy
-
+					var seatIdList = data.storedSeats.map(function (seat) {
+						return seat.maGxp;
+					})
 					// Tính tổng giá và số lượng vé
 					var totalPrice = data.storedSeats.reduce(function (sum, seat) {
 						return sum + seat.giaVe;
 					}, 0);
 					var ticketCount = data.storedSeats.length;
-
+						$('#inputOrderId').val(gio); // OrderId = giờ chiếu
+						$('#inputAmount').val(totalPrice);
 					// Thêm thông tin ghế vào `str`
 					str += `
 						<li>
@@ -158,24 +163,17 @@
 											Normal - ${seatList}
 											<br>( ${ticketCount} Tickets )  <span>${totalPrice.toFixed(2)} Đ</span>
 										</li>
-
-									</ul>
-									<form id="userDetailsForm">
-										<div class="form-group">
-											<label for="name">Name:</label>
-											<input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
-										</div>
-
-										<div class="form-group">
-											<label for="email">Email:</label>
-											<input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
-										</div>
-									</form>
+										<li>
+												${Hoten}
+										</li>
+									</ul>	
 								</div>
 								<div class="st_dtts_sb_h2 float_left">
 										<h5>Tổng Tiền <span>${totalPrice.toFixed(2)} Đ</span></h5>
 								</div>`;
-				} else {
+				}
+				
+				else {
 					str = '<li>No seat information available.</li>';
 					tt = '<li>No tickets available.</li>';
 				}
@@ -183,6 +181,18 @@
 				// Đưa nội dung vào phần tử HTML
 				$('#TTve').html(tt); // Hiển thị thông tin ghế và tổng giá
 				$('#showttve').html(str); // Hiển thị thông tin chi tiết (ngày, giờ, rạp, ghế)
+				$.ajax({
+					url: '@Url.Action("Action", "Checkout")',
+					type: 'POST',
+					data: { selectedSeats: seatIdList,sove: ticketCount, tenghe:seatList},
+					traditional: true,
+					success: function (response) {
+						console.log('Seats data sent to controller successfully!');
+					},
+					error: function (xhr, status, error) {
+						console.error("Error sending seats data to controller:", error);
+					}
+				});
 			},
 			error: function (xhr, status, error) {
 				console.error("Lỗi khi lấy thông tin ghế lưu tạm:", error);
@@ -213,6 +223,29 @@
 				console.error("Lỗi khi reset StoredSeats:", error);
 				alert("Không thể reset ghế. Vui lòng thử lại.");
 			}
+		});
+
+	});
+	$(document).ready(function () {
+		$('form#paymentForm').submit(function (event) {
+			event.preventDefault(); // Ngừng gửi form mặc định
+
+			// Gọi API để reset ghế đã chọn
+			$.ajax({
+				url: 'https://localhost:7199/api/veapi/resetStoredSeats',
+				type: 'POST',
+				contentType: 'application/json',
+				success: function () {
+					console.log("Reset ghế thành công.");
+
+					// Sau khi reset thành công, tiếp tục gửi form
+					$('form#paymentForm').off('submit').submit(); // Gửi form thanh toán
+				},
+				error: function (xhr, status, error) {
+					console.error("Lỗi khi reset ghế:", error);
+					alert("Không thể reset ghế. Vui lòng thử lại.");
+				}
+			});
 		});
 	});
 
