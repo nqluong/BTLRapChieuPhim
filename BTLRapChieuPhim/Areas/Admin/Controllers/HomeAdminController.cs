@@ -59,8 +59,13 @@ namespace BTLRapChieuPhim.Areas.Admin.Controllers
 		{
 			return View("~/Areas/Admin/Views/BaoCao/BaoCao.cshtml");
 		}
-	
-		
+
+        [Route("phongchieu")]
+        public IActionResult PhongChieu()
+        {
+            return View("~/Areas/Admin/Views/PhongChieu/PhongChieu.cshtml");
+        }
+
         [Route("phongchieuupdate")]
         public IActionResult PhongChieuUpdate(int maPc)
         {
@@ -74,7 +79,7 @@ namespace BTLRapChieuPhim.Areas.Admin.Controllers
         }
 
 		[Route("phim")]
-		public IActionResult GetPhim()
+		public IActionResult Phim()
 		{
 			return View("~/Areas/Admin/Views/Phim/Phim.cshtml");
 		}

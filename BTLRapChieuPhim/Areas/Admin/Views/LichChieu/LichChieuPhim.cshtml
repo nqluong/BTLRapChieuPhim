@@ -2,6 +2,7 @@
     ViewData["Title"] = "LichChieu";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
 }
+<main class="main">
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
@@ -41,7 +42,6 @@
                         </tr>
                     </thead>
                     <tbody id="lichChieuBody">
-                
                     </tbody>
                 </table>
             </div>
@@ -73,6 +73,7 @@
         </div>
     </div>
 </div>
+</main>
 @section scripts {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
@@ -91,7 +92,7 @@
                     },
                     success: function (data) {
 
-                        $('#lichChieuBody').empty();     
+                        $('#lichChieuBody').empty();
                         renderLichChieu(data);
                         updatePagination(data);
                     },
@@ -108,10 +109,10 @@
                 pageSize = data.pageSize;
                 totalRecords = data.totalRecords;
 
-               
+
                 $('#paginationInfo').text(`${currentPage} of ${totalPages}`);
 
-                
+
                 $('#paginationList').empty();
 
                 $('#paginationList').empty();
@@ -179,7 +180,7 @@
                                     <td><div class="catalog__text">${formattedTime}</div></td>
                                             <td><div class="catalog__text">${formattedTimeEnd}</div></td>
                                     <td><div class="catalog__text ">${lichChieu.sucChua}</div></td>
-                                    <td><div class="catalog__text">${new Date(lichChieu.thoiGianChieu).toLocaleDateString()}</div></td>        
+                                    <td><div class="catalog__text">${new Date(lichChieu.thoiGianChieu).toLocaleDateString()}</div></td>
                                     <td>
                                     <div class="catalog__btns">
                                          <button type="button" class="catalog__btn catalog__btn--edit" onclick="editLichChieu('${lichChieu.maLc}')">
@@ -191,7 +192,7 @@
                                      </div>
                                     </td>
                                 </tr>`;
-                                                                                    
+
                     $('#lichChieuBody').append(row);
                 });
             }
@@ -200,7 +201,7 @@
         });
 
         function editLichChieu(maLc) {
-            
+
             window.location.href = `/admin/LichChieuUpdate?maLc=${maLc}`;
         }
         function deleteLichChieu(maLc) {

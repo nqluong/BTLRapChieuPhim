@@ -5,6 +5,7 @@
 
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 <!-- Modal -->
+<main class="main">
 <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -132,6 +133,7 @@
 		<!-- end form -->
 	</div>
 </div>
+</main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
@@ -161,7 +163,7 @@
                 success: function (response) {
 					showAlert(response.message, 'success');
                     // Cập nhật danh sách phim mà không tải lại trang
-                    showMovies();
+					loadPage('/admin/phim');
                 },
                 error: function (xhr) {
 					const errorMessage = xhr.responseJSON?.message || 'Vui lòng nhập dữ liệu phim!';
