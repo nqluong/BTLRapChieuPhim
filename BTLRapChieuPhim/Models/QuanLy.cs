@@ -5,7 +5,7 @@ namespace BTLRapChieuPhim.Models;
 
 public partial class QuanLy
 {
-    public int MaQl { get; set; }
+    public string MaQl { get; set; } = null!;
 
     public string? HoTen { get; set; }
 
@@ -15,7 +15,7 @@ public partial class QuanLy
 
     public string? Sdt { get; set; }
 
-    public int? MaTk { get; set; }
+    public string? MaTk { get; set; }
 
     public virtual ICollection<KhuyenMai> KhuyenMais { get; set; } = new List<KhuyenMai>();
 

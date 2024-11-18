@@ -5,7 +5,7 @@ namespace BTLRapChieuPhim.Models;
 
 public partial class RapPhim
 {
-    public int MaRp { get; set; }
+    public string MaRp { get; set; } = null!;
 
     public string? TenRp { get; set; }
 
@@ -13,7 +13,7 @@ public partial class RapPhim
 
     public string? MoTa { get; set; }
 
-    public int? MaQl { get; set; }
+    public string? MaQl { get; set; }
 
     public virtual QuanLy? MaQlNavigation { get; set; }
 
