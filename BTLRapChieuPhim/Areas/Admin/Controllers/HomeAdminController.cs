@@ -73,6 +73,12 @@ namespace BTLRapChieuPhim.Areas.Admin.Controllers
             return View("~/Areas/Admin/Views/PhongChieu/PhongChieuAdd.cshtml");
         }
 
+		[Route("phim")]
+		public IActionResult GetPhim()
+		{
+			return View("~/Areas/Admin/Views/Phim/Phim.cshtml");
+		}
+
         [Route("phimupdate")]
         public IActionResult PhimUpdate(int maPhim)
         {

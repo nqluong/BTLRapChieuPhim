@@ -79,33 +79,19 @@
 				</li>
 				<li class="sidebar__nav-item">
 					@{
-						<a style="cursor:pointer" onclick="showProductByCategory()" class="sidebar__nav-link"><i class="ti ti-movie"></i> <span>Phòng chiếu</span></a>
+						<a style="cursor:pointer"  class="sidebar__nav-link"><i class="ti ti-movie"></i> <span>Phòng chiếu</span></a>
 					}
 				</li>
 
 				<li class="sidebar__nav-item">
-					<a style="cursor:pointer" onclick="showMovies()" class="sidebar__nav-link"><i class="ti ti-users"></i> <span>Phim</span></a>
+					<a href="/admin/phim" class="sidebar__nav-link"><i class="ti ti-users"></i> <span>Phim</span></a>
 				</li>
 
-				@await Component.InvokeAsync("TenMenu", new { menuType = "PhongChieu" })
-				@await Component.InvokeAsync("TenMenu", new { menuType = "Phim" })
 
 				<li class="sidebar__nav-item">
-					<a href="/admin/LichChieuPhim" class="sidebar__nav-link "><i class="ti ti-star-half-filled"></i> <span>Lịch Chiếu Phim</span></a>
+					<a style="cursor:pointer" onclick="loadPage('/admin/LichChieuPhim')" class="sidebar__nav-link "><i class="ti ti-star-half-filled"></i> <span>Lịch Chiếu Phim</span></a>
 				</li>
 
-				<!-- dropdown -->
-				<li class="sidebar__nav-item">
-					<a class="sidebar__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="ti ti-files"></i> <span>Pages</span> <i class="ti ti-chevron-down"></i></a>
-
-					<ul class="dropdown-menu sidebar__dropdown-menu">
-						<li><a href="edit-user.html">Edit user</a></li>
-						<li><a href="signin.html">Sign In</a></li>
-						<li><a href="signup.html">Sign Up</a></li>
-						<li><a href="forgot.html">Forgot password</a></li>
-					</ul>
-				</li>
-				<!-- end dropdown -->
 
 				<li class="sidebar__nav-item">
 					<a href="/index" class="sidebar__nav-link"><i class="ti ti-arrow-left"></i> <span>Quay lại trang phim</span></a>
@@ -119,14 +105,9 @@
 	</div>
 	<!-- end sidebar -->
 	<!-- main content -->
-	<main class="main">
-		<div class="container-fluid">
-			<div id = "renderBodyContent">
-				@RenderBody()
-
-			</div>
-
-		</div>
+	<main class="main" id="renderBodyContent">
+		
+		@RenderBody()
 	</main>
 	<!-- end main content -->
 	<!-- JS -->
@@ -135,6 +116,28 @@
 	<script src="/TemplateAdmin/js/smooth-scrollbar.js"></script>
 	<script src="/TemplateAdmin/js/admin.js"></script>
 	@RenderSection("scripts", required: false)
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		function loadPage(url) {
+			// Hiển thị loading nếu cần
+			document.getElementById('renderBodyContent').innerHTML = '<p>Loading...</p>';
+
+			// Gửi yêu cầu AJAX
+			$.ajax({
+				url: url,
+				type: 'GET',
+				success: function (response) {
+					// Chèn nội dung mới vào vùng renderBodyContent
+					$('#renderBodyContent').html(response);
+				},
+				error: function (xhr, status, error) {
+					// Xử lý lỗi
+					console.error('Error:', status, error);
+					$('#renderBodyContent').html('<p>Không thể tải nội dung. Vui lòng thử lại sau.</p>');
+				}
+			});
+		}
+	</script>
 </body>
 
 <!-- Mirrored from hotflix.volkovdesign.com/admin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 Sep 2024 17:40:09 GMT -->

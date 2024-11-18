@@ -16,5 +16,6 @@ public partial class LichChieu
     public virtual PhongChieu? MaPcNavigation { get; set; }
 
     public virtual Phim? MaPhimNavigation { get; set; }
+
     public virtual ICollection<VeXemPhim> VeXemPhims { get; set; } = new List<VeXemPhim>();
 }

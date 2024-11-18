@@ -1,0 +1,223 @@
+﻿@{
+    ViewData["Title"] = "Phim";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
+}
+<div class="col-12">
+    <div class="main__title">
+        <h2>Danh Sách Phim</h2>
+        <div class="main__title-wrap">
+            <a href="/admin/PhimAdd" class="main__title-link main__title-link--wrap">Thêm phim</a>
+            <form action="#" class="main__title-form">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm ..." autocomplete="off" oninput="searchMovies()">
+                <button type="button" onclick="searchMovies()">
+                    <i class="ti ti-search"></i>
+                </button>
+                <ul id="suggestions" style="display: none; list-style-type: none; padding-left: 0; margin-top: 5px;"></ul>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="catalog catalog--1" data-scrollbar="true" tabindex="-1" style="overflow: hidden; outline: none;">
+    <div class="scroll-content">
+        <table class="catalog__table">
+            <thead>
+                <tr>
+                    <th>MÃ PHIM</th>
+                    <th>TÊN PHIM</th>
+                    <th>THỜI LƯỢNG</th>
+                    <th>ĐẠO DIỄN</th>
+                    <th>ĐỘ TUỔI</th>
+                    <th>QUỐC GIA</th>
+                    <th>THỂ LOẠI</th>
+                    <th>HÀNH ĐỘNG</th>
+                </tr>
+            </thead>
+            <tbody id="phimBody">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    #suggestions {
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        border: 1px solid #ccc;
+        max-height: 150px;
+        overflow-y: auto;
+        z-index: 1000;
+    }
+
+        #suggestions li {
+            padding: 8px;
+            cursor: pointer;
+        }
+
+            #suggestions li:hover {
+                background-color: #f0f0f0;
+            }
+</style>
+@section scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        function showMovies() {
+            var contentHtml = '';
+            $.ajax({
+                url: '/api/phimapi', // Đảm bảo đường dẫn API chính xác
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    data.forEach(function (phim) {
+                        contentHtml += `
+                                <tr>
+                                    <td><div class="catalog__text">${phim.maPhim}</div></td>
+                                    <td><div class="catalog__text"><a href="#">${phim.tenPhim}</a></div></td>
+                                    <td><div class="catalog__text">${phim.thoiLuong} phút</div></td>
+                                    <td><div class="catalog__text">${phim.daoDien}</div></td>
+                                    <td><div class="catalog__text">${phim.doTuoi}+</div></td>
+                                    <td><div class="catalog__text">${phim.nuocSx}</div></td>
+                                    <td><div class="catalog__text">${phim.tenTheLoai}</div></td>
+                                    <td>
+                                        <div class="catalog__btns">
+                                            <button type="button" class="catalog__btn catalog__btn--edit" onclick="editMovie('${phim.maPhim}')">
+                                                <i class="ti ti-edit"></i>
+                                            </button>
+                                            <button type="button" class="catalog__btn catalog__btn--delete" onclick="deleteMovie('${phim.maPhim}')">
+                                                <i class="ti ti-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>`;
+                    });
+
+                   
+                    $('#phimBody').html(contentHtml);
+                },
+                error: function (xhr) {
+                    alert("Lỗi khi tải danh sách phim: " + xhr.responseText);
+                }
+            });
+        }
+
+        function showsearchMovies(maPhim) {
+            var contentHtml = '';
+            $.ajax({
+                url: '/api/phimapi/' + maPhim, // Đảm bảo đường dẫn API chính xác
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+
+                    data.forEach(function (phim) {
+                        contentHtml += `
+                                    <tr>
+                                        <td><div class="catalog__text">${phim.maPhim}</div></td>
+                                        <td><div class="catalog__text"><a href="#">${phim.tenPhim}</a></div></td>
+                                        <td><div class="catalog__text">${phim.thoiLuong} phút</div></td>
+                                        <td><div class="catalog__text">${phim.daoDien}</div></td>
+                                        <td><div class="catalog__text">${phim.doTuoi}+</div></td>
+                                        <td><div class="catalog__text">${phim.nuocSx}</div></td>
+                                        <td><div class="catalog__text">${phim.tenTheLoai}</div></td>
+                                        <td>
+                                            <div class="catalog__btns">
+                                                <button type="button" class="catalog__btn catalog__btn--edit" onclick="editMovie('${phim.maPhim}')">
+                                                    <i class="ti ti-edit"></i>
+                                                </button>
+                                                <button type="button" class="catalog__btn catalog__btn--delete" onclick="deleteMovie('${phim.maPhim}')">
+                                                    <i class="ti ti-trash"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>`;
+                    });
+
+            
+
+                    // Hiển thị danh sách phim
+                    $('#phimBody').html(contentHtml);
+                },
+                error: function (xhr) {
+                    alert("Lỗi khi tải danh sách phim: " + xhr.responseText);
+                }
+            });
+        }
+        // Hàm để xử lý việc sửa phim
+        function editMovie(maPhim) {
+            window.location.href = `/admin/PhimUpdate?maPhim=${maPhim}`;
+        }
+
+        // Hàm để xử lý việc xóa phim
+        function deleteMovie(maPhim) {
+            if (confirm("Bạn có chắc chắn muốn xóa phim này?")) {
+                $.ajax({
+                    url: `/api/phimapi/${maPhim}`,
+                    method: 'DELETE',
+                    success: function (response) {
+                        alert(response.message);
+                        showMovies(); // Làm mới danh sách sau khi xóa
+                    },
+                    error: function (error) {
+                        alert("Xóa phim thất bại!");
+                    }
+                });
+            }
+        }
+
+        function searchMovies() {
+            let valueSearchInput = document.getElementById("searchInput").value.trim(); // Lấy giá trị từ ô tìm kiếm
+
+            // Nếu không có gì để tìm kiếm, ẩn gợi ý
+            if (valueSearchInput === "") {
+                document.getElementById("suggestions").style.display = 'none';
+                return;
+            }
+
+            $.ajax({
+                url: '/api/phimapi', // Đảm bảo đường dẫn API chính xác
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    if (data && data.length > 0) {
+                        let suggestionsList = document.getElementById("suggestions");
+                        suggestionsList.innerHTML = ''; // Xóa các gợi ý cũ
+
+                        // Lọc phim theo từ khóa
+                        let filteredMovies = data.filter(function (movie) {
+                            return movie.tenPhim.toLowerCase().includes(valueSearchInput.toLowerCase());
+                        });
+
+                        // Nếu có kết quả tìm kiếm, hiển thị gợi ý
+                        if (filteredMovies.length > 0) {
+                            filteredMovies.forEach(function (movie) {
+                                let li = document.createElement('li');
+                                li.textContent = movie.tenPhim;
+                                li.onclick = function () {
+                                    document.getElementById("searchInput").value = movie.tenPhim;
+                                    let maPhim = movie.maPhim;  // Lấy maPhim từ đối tượng movie
+
+                                    // Gọi hàm showMovies với maPhim
+                                    showsearchMovies(maPhim);
+                                    suggestionsList.innerHTML = ''; // Ẩn gợi ý sau khi chọn
+                                    suggestionsList.style.display = 'none'; // Ẩn danh sách gợi ý
+                                };
+                                suggestionsList.appendChild(li);
+                            });
+                            suggestionsList.style.display = 'block'; // Hiển thị gợi ý
+                        } else {
+                            suggestionsList.style.display = 'none'; // Nếu không có kết quả, ẩn gợi ý
+                        }
+                    } else {
+                        document.getElementById("suggestions").style.display = 'none'; // Không có dữ liệu
+                    }
+                },
+                error: function () {
+                    console.error("Đã có lỗi xảy ra khi tìm kiếm.");
+                }
+            });
+        }
+
+    </script>
+
+    
+}

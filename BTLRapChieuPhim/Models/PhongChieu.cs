@@ -11,12 +11,11 @@ public partial class PhongChieu
 
     public int? SucChua { get; set; }
 
-
+    public int? MaQl { get; set; }
 
     public int? MaRp { get; set; }
 
     public virtual ICollection<LichChieu> LichChieus { get; set; } = new List<LichChieu>();
-
 
     public virtual RapPhim? MaRpNavigation { get; set; }
 }

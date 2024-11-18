@@ -11,7 +11,6 @@ public partial class HinhAnhTrailer
 
     public string? DuongDanTrailer { get; set; }
 
-
     public int? MaPhim { get; set; }
 
     public virtual Phim? MaPhimNavigation { get; set; }

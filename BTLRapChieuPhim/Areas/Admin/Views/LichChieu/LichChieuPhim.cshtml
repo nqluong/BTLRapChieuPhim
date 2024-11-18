@@ -2,74 +2,77 @@
     ViewData["Title"] = "LichChieu";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
 }
-<div class="col-12">
-    <div class="main__title">
-        <h2>LỊCH CHIẾU PHIM</h2>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="main__title">
+                <h2>LỊCH CHIẾU PHIM</h2>
 
-        <span class="main__title-stat">14,452 Total</span>
+                <span class="main__title-stat">14,452 Total</span>
 
-        <div class="main__title-wrap">
-            <a href="/admin/LichChieuAdd" class="main__title-link main__title-link--wrap">Add item</a>
-            </select><div data-id="ss-hqtkj42g" id="ss-hqtkj42g" tabindex="0" class="ss-main filter__select" role="combobox" aria-haspopup="listbox" aria-controls="ss-hqtkj42g" aria-expanded="false" aria-activedescendant="s2ra7w7d"><div class="ss-values"><div class="ss-single">Date created</div></div><div class="ss-deselect ss-hide"><svg viewBox="0 0 100 100"><path d="M10,10 L90,90 M10,90 L90,10"></path></svg></div><svg class="ss-arrow" viewBox="0 0 100 100"><path d="M10,30 L50,70 L90,30"></path></svg></div>
+                <div class="main__title-wrap">
+                    <a href="/admin/LichChieuAdd" class="main__title-link main__title-link--wrap">Add item</a>
+                    </select><div data-id="ss-hqtkj42g" id="ss-hqtkj42g" tabindex="0" class="ss-main filter__select" role="combobox" aria-haspopup="listbox" aria-controls="ss-hqtkj42g" aria-expanded="false" aria-activedescendant="s2ra7w7d"><div class="ss-values"><div class="ss-single">Date created</div></div><div class="ss-deselect ss-hide"><svg viewBox="0 0 100 100"><path d="M10,10 L90,90 M10,90 L90,10"></path></svg></div><svg class="ss-arrow" viewBox="0 0 100 100"><path d="M10,30 L50,70 L90,30"></path></svg></div>
 
-            <!-- search -->
-            <form action="#" class="main__title-form">
-                <input type="text" placeholder="Find movie / tv series..">
-                <button type="button">
-                    <i class="ti ti-search"></i>
-                </button>
-            </form>
-            <!-- end search -->
+                    <!-- search -->
+                    <form action="#" class="main__title-form">
+                        <input type="text" placeholder="Find movie / tv series..">
+                        <button type="button">
+                            <i class="ti ti-search"></i>
+                        </button>
+                    </form>
+                    <!-- end search -->
+                </div>
+            </div>
+        </div>
+        <div class="catalog catalog--1" data-scrollbar="true" tabindex="-1" style="overflow: hidden; outline: none;">
+            <div class="scroll-content">
+                <table class="catalog__table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>TÊN PHIM</th>
+                            <th>TÊN PHÒNG CHIẾU</th>
+                            <th>THỜI GIAN BẮT ĐẦU</th>
+                            <th>THỜI GIAN KẾT THÚC</th>
+                            <th>SỨC CHỨA</th>
+                            <th>NGÀY CHIẾU</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="lichChieuBody">
+                
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="main__paginator">
+                <!-- amount -->
+                <span id="paginationInfo" class="main__paginator-pages">10 of 169</span>
+                <!-- end amount -->
+
+                <ul class="main__paginator-list">
+                    <li id="prevPage">
+                        <a href="javascript:void(0)" onclick="changePage(currentPage - 1)">
+                            <i class="ti ti-chevron-left"></i>
+                            <span>Prev</span>
+                        </a>
+                    </li>
+                    <li id="nextPage">
+                        <a href="javascript:void(0)" onclick="changePage(currentPage + 1)">
+                            <span>Next</span>
+                            <i class="ti ti-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="paginator" id="paginationList"></ul>
+            </div>
         </div>
     </div>
 </div>
-<div class="catalog catalog--1" data-scrollbar="true" tabindex="-1" style="overflow: hidden; outline: none;">
-    <div class="scroll-content">
-        <table class="catalog__table">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>TÊN PHIM</th>
-                    <th>TÊN PHÒNG CHIẾU</th>
-                    <th>THỜI GIAN BẮT ĐẦU</th>
-                    <th>THỜI GIAN KẾT THÚC</th>
-                    <th>SỨC CHỨA</th>
-                    <th>NGÀY CHIẾU</th>
-
-                </tr>
-            </thead>
-            <tbody id="lichChieuBody">
-                <!-- Dữ liệu từ AJAX sẽ được thêm vào đây -->
-            </tbody>
-        </table>
-    </div>
-</div>
-
-<div class="col-12">
-    <div class="main__paginator">
-        <!-- amount -->
-        <span id="paginationInfo" class="main__paginator-pages">10 of 169</span>
-        <!-- end amount -->
-
-        <ul class="main__paginator-list">
-            <li id="prevPage">
-                <a href="javascript:void(0)" onclick="changePage(currentPage - 1)">
-                    <i class="ti ti-chevron-left"></i>
-                    <span>Prev</span>
-                </a>
-            </li>
-            <li id="nextPage">
-                <a href="javascript:void(0)" onclick="changePage(currentPage + 1)">
-                    <span>Next</span>
-                    <i class="ti ti-chevron-right"></i>
-                </a>
-            </li>
-        </ul>
-
-        <ul class="paginator" id="paginationList"></ul>
-    </div>
-</div>
-
 @section scripts {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
