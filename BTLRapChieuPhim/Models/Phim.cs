@@ -5,11 +5,8 @@ namespace BTLRapChieuPhim.Models;
 
 public partial class Phim
 {
-<<<<<<< HEAD
-    public string MaPhim { get; set; } = null!;
-=======
     public string? MaPhim { get; set; }
->>>>>>> origin/chinh
+
 
     public string? TenPhim { get; set; }
 

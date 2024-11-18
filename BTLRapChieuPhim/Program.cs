@@ -1,12 +1,5 @@
 
-<<<<<<< HEAD
-using BTLRapChieuPhim.Models.MoMo;
-using BTLRapChieuPhim.Services.Momo;
 
-﻿using BTLRapChieuPhim.Models;
-using Microsoft.EntityFrameworkCore;
-
-=======
 using BTLRapChieuPhim.Models;
 using BTLRapChieuPhim.Models.MoMo;
 using BTLRapChieuPhim.Services.Momo;
@@ -14,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 ﻿using BTLRapChieuPhim.Models;
 using Microsoft.EntityFrameworkCore;
->>>>>>> origin/chinh
+
 
 var builder = WebApplication.CreateBuilder(args);
 
