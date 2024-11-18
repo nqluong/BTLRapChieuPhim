@@ -11,6 +11,8 @@ public partial class GheXemPhim
 
     public string? MaPc { get; set; }
 
+    public int? Ghe { get; set; }
+
     public virtual PhongChieu? MaPcNavigation { get; set; }
 
     public virtual ICollection<VeXemPhim> VeXemPhims { get; set; } = new List<VeXemPhim>();

@@ -10,7 +10,7 @@ namespace BTLRapChieuPhim.Controllers
     public class VeAPI : ControllerBase
     {
 		[HttpPost("TTve/{Malc}")]
-		public IActionResult PostTTVe(int malc, [FromBody] List<TTVe> selectedSeats)
+		public IActionResult PostTTVe(string malc, [FromBody] List<TTVe> selectedSeats)
 		{
 			try
 			{
@@ -23,15 +23,15 @@ namespace BTLRapChieuPhim.Controllers
 				{
 					SeatStorage.StoredSeats.Add(new TTVe
 					{
-						MaLc = seat.MaLc,				
+						MaLc = seat.MaLc,
 						GiaVe = seat.GiaVe,
 						Ghe = seat.Ghe,
-						Gio=seat.Gio,
-						Tgc=seat.Tgc,
-						TenPhim=seat.TenPhim,
+						Gio = seat.Gio,
+						Tgc = seat.Tgc,
+						TenPhim = seat.TenPhim,
 						MaPhim = seat.MaPhim,
 						MaGxp = seat.MaGxp,
-						GheIndex=seat.GheIndex
+						GheIndex = seat.GheIndex
 					});
 				}
 
@@ -39,9 +39,11 @@ namespace BTLRapChieuPhim.Controllers
 			}
 			catch (Exception ex)
 			{
+				// Log exception (optional)
 				return StatusCode(500, $"Internal server error: {ex.Message}");
 			}
 		}
+
 		[HttpGet("TTve")]
 		public IActionResult GetStoredSeats()
 		{

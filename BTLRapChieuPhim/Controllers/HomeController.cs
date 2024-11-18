@@ -3,6 +3,7 @@ using BTLRapChieuPhim.Models;
 using BTLRapChieuPhim.Models.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using System.Diagnostics;
 using X.PagedList;
 namespace BTLRapChieuPhim.Controllers
@@ -80,14 +81,19 @@ namespace BTLRapChieuPhim.Controllers
             }
             [Route("lichchieu")] 
             public IActionResult Lichchieu(string maphim)
-            {	
-			    ViewBag.MaPhim = maphim;
-                return View();
-            }
-            [Route("chonghe")]
-            public IActionResult ChonGhe(string malc, string maphim, string gio, string tgc)
             {
+            if (string.IsNullOrEmpty(maphim))
+            {
+                return BadRequest("Mã phim không h?p l?.");
+            }
 
+            ViewBag.MaPhim = maphim;
+            return View();
+        }
+            [Route("chonghe")]
+            public IActionResult ChonGhe(string malc, string maphim, string gio, string tgc,string mapc)
+            {
+			    ViewBag.MaPC = mapc;
                 ViewBag.MaLC = malc;
                 ViewBag.MaPhim = maphim;
                 ViewBag.Gio = gio;
@@ -95,19 +101,21 @@ namespace BTLRapChieuPhim.Controllers
 			return View();
             }
             [Route("checkout")]
-            public IActionResult Checkout(string malc, string maphim, string gio, string tgc)
+            public IActionResult Checkout(string malc, string maphim, string gio, string tgc,string mapc)
             {
-            var matk = HttpContext.Session.GetInt32("MaTK");
-            var Ht = db.KhachHangs.Where(x => x.MaTk == matk.ToString()).Select(x => x.HoTen).FirstOrDefault();
-            ViewBag.MaLC = malc;
-                ViewBag.MaPhim = maphim;
+            var matk = HttpContext.Session.GetString("MaTK");
+            var Ht = db.KhachHangs.Where(x => x.MaTk == matk).Select(x => x.HoTen).FirstOrDefault();
+                ViewBag.MaLC = malc;
+			    ViewBag.MaPC = mapc;
+			    ViewBag.MaPhim = maphim;
                 ViewBag.Gio = gio;
-                ViewBag.Tgc = tgc;
-                //ViewBag.Hoten = Ht;
+                ViewBag.Tgc = tgc;       
                 TempData["Maphim"] = maphim;
                 TempData["Tgc"] = tgc;
                 TempData["Gio"] = gio;
-				TempData["MaLc"] = malc; 
+				TempData["MaLc"] = malc;
+			    var hotenJson = JsonConvert.SerializeObject(Ht);
+			ViewBag.HotenJson = hotenJson;
 			return View();
             }
 

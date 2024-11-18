@@ -5,9 +5,9 @@ namespace BTLRapChieuPhim.Models.LichChieuModels
 {
 	public class TTVe
 	{
-		public string MaLc { get; set; }
-		public string MaPc { get; set; }
-		public string MaPhim { get; set; }
+		public string? MaLc { get; set; }
+		public string? MaPc { get; set; }
+		public string? MaPhim { get; set; }
 		public string? Gio { get; set; }
         public string? Tgc { get; set; }
         public string? TenPhim { get; set; }

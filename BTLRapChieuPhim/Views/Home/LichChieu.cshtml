@@ -58,32 +58,51 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
-        const maPhim=@ViewBag.MaPhim;
+        const maPhim='@ViewBag.MaPhim';
         loadShowTTByMovieId(maPhim)
         loadShowtimesByMovieId(maPhim); 
 
     });
 
     function loadShowtimesByMovieId(maPhim) {
+        if (!maPhim) {
+            alert("Mã phim không hợp lệ.");
+            return;
+        }
+
         $.get(`https://localhost:7199/api/lichchieuapi/byPhim/${maPhim}`, function (data) {
             const dayTabs = $('#dayTabs');
-            dayTabs.empty(); // Xóa nội dung hiện tại
+            dayTabs.empty();
+            if (data.length === 0) {
+                dayTabs.append('<li>Không có lịch chiếu.</li>');
+                return;
+            }
+
             data.forEach(function (showtime) {
                 const dayItem = `
-                        <li>
-                                        <a data-toggle="tab" style="cursor:pointer" onclick="showLichchieu('https://localhost:7199/api/lichchieuapi/byPhimNgay/${maPhim}/${showtime.ngay}')" href="#menu${showtime.ngay}">
-                                <span>${showtime.thu}</span><br>${showtime.ngay}
-                            </a>
-                        </li>
-                    `;
+                    <li>
+                        <a data-toggle="tab" style="cursor:pointer"
+                           onclick="showLichchieu('https://localhost:7199/api/lichchieuapi/byPhimNgay/${maPhim}/${showtime.ngay}')"
+                           href="#menu${showtime.ngay}">
+                            <span>${showtime.thu}</span><br>${showtime.ngay}
+                        </a>
+                    </li>`;
                 dayTabs.append(dayItem);
             });
-            // Gọi hàm showLichchieu để hiển thị lịch chiếu đầu tiên (nếu có)
-            if (data.length > 0) {
-                showLichchieu(`https://localhost:7199/api/lichchieuapi/byphim/${maPhim}`);
-            }
+
+            // Hiển thị lịch chiếu đầu tiên
+            showLichchieu(`https://localhost:7199/api/lichchieuapi/byPhimNgay/${maPhim}/${data[0].ngay}`);
         }).fail(function () {
             alert("Không thể tải lịch chiếu. Vui lòng thử lại sau.");
+        });
+    }
+
+    function showLichchieu(url) {
+        $.get(url, function (data) {
+            // Xử lý hiển thị dữ liệu lịch chiếu
+            console.log(data);
+        }).fail(function () {
+            alert("Không thể tải lịch chiếu chi tiết.");
         });
     }
     function loadShowTTByMovieId(maPhim) {
@@ -157,7 +176,7 @@
                                 <p class="asc_pera1">Executive</p>
                                 <p class="asc_pera2">Filling Fast</p>
                             </span>
-                                                        <a href="/Home/ChonGhe?maLC=${encodeURIComponent(val.maLc)}&maPhim=${encodeURIComponent(val.maPhim)}&tgc=${encodeURIComponent(val.thoiGianChieu)}&gio=${encodeURIComponent(val.gio)}">${val.gio}</a>
+                                                        <a href="/Home/ChonGhe?maLC=${encodeURIComponent(val.maLc)}&maPhim=${encodeURIComponent(val.maPhim)}&tgc=${encodeURIComponent(val.thoiGianChieu)}&gio=${encodeURIComponent(val.gio)}&maPC=${encodeURIComponent(val.maPc)}">${val.gio}</a>
                         </li>
                     `;
                 });

@@ -1,35 +1,27 @@
-
-
 using BTLRapChieuPhim.Models;
 using BTLRapChieuPhim.Models.MoMo;
 using BTLRapChieuPhim.Services.Momo;
 using Microsoft.EntityFrameworkCore;
 
-﻿using BTLRapChieuPhim.Models;
-using Microsoft.EntityFrameworkCore;
-
-
 var builder = WebApplication.CreateBuilder(args);
 
+// Thêm DbContext cho SQL Server
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<QuanLyRapPhimContext>(x => x.UseSqlServer(connectionString));
 
-
-
-builder.Services.AddDbContext<QuanLyRapPhimContext>(options =>
-	options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+// Cấu hình Momo API
 builder.Services.Configure<MomoOptionModel>(builder.Configuration.GetSection("MomoAPI"));
 builder.Services.AddScoped<IMomoService, MomoService>();
 
-builder.Services.AddControllersWithViews();
-
-var connectionString = builder.Configuration.GetConnectionString("QuanLyRapPhimContext");
-builder.Services.AddDbContext<QuanLyRapPhimContext>(x => x.UseSqlServer(connectionString));
-
+// Thêm session
 builder.Services.AddSession();
+
+// Thêm MVC Controllers và Views
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline
+// Cấu hình request pipeline
 if (!app.Environment.IsDevelopment())
 {
 	app.UseExceptionHandler("/Home/Error");
