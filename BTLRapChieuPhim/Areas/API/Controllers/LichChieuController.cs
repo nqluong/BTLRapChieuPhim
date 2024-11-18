@@ -62,9 +62,9 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             {
                 return BadRequest(new { message = "Phim khong ton tai !" });
             }
-           // int maLc = GenerateMaLc();
+            string maLc = GenerateMaLc();
 
-            //lichChieu.MaLc = maLc;
+            lichChieu.MaLc = maLc;
 
             int thoiGian = phim.ThoiLuong ?? 0;
             var existingShowTimes = _context.LichChieus.Where(lc => lc.MaPc == lichChieu.MaPc && lc.MaLc != lichChieu.MaLc).ToList();
@@ -93,15 +93,40 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             return BadRequest(new { message = "Thêm lịch chiếu thất bại!" });
 
         }
-        //private int GenerateMaLc()
-        //{
+        private string GenerateMaLc()
+        {
 
-        //    var maxMaLc = _context.LichChieus.Max(lc => lc.MaLc);
+			var existingIds = _context.LichChieus
+				.Select(lc => lc.MaLc)
+				.Where(id => id.StartsWith("LC"))
+				.ToList();
 
-        //    return maxMaLc + 1;
-        //}
+			var numbers = existingIds
+				.Select(id => int.TryParse(id.Substring(2), out int num) ? num : 0)
+				.ToList();
+			int maxNumber = numbers.Any() ? numbers.Max() : 0;
+			int newNumber = maxNumber + 1;
 
-        [HttpGet("{maLc}")]
+			return "LC" + newNumber;
+		}
+
+		private string GenerateVeXemPhimId()
+		{
+			var existingIds = _context.VeXemPhims
+				.Select(v => v.MaVxp)
+				.Where(id => id.StartsWith("VXP")) 
+				.ToList();
+
+			var numbers = existingIds
+				.Select(id => int.TryParse(id.Substring(3), out int num) ? num : 0)
+				.ToList();
+			int maxNumber = numbers.Any() ? numbers.Max() : 0;
+			int newNumber = maxNumber + 1;
+
+			return "VXP" + newNumber;
+		}
+
+		[HttpGet("{maLc}")]
         public IActionResult GetLichChieuByMa(string maLc)
         {
             var lichChieuQuery = (from lc in _context.LichChieus
