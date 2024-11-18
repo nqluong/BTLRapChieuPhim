@@ -186,25 +186,26 @@
 <div class="st_seat_lay_row float_left" id="seatContainer"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    function loadSeats(malc) {
-        $.ajax({
-            url: `/api/PhongChieuAPI/byLC/${malc}`,
-            type: 'GET',
-            success: function (bookedSeats) {
+	function loadSeats(malc) {
+		$.ajax({
+			url: `/api/PhongChieuAPI/byLC/${malc}`,
+			type: 'GET',
+			success: function (bookedSeats) {
 				const allSeats = [];
 				const rows = ['A', 'B']; // Hai hàng ghế
 				const totalSeatsPerRow = 23; // Số ghế mỗi hàng
-				const totalSeats = 69; // Tổng số ghế trong một phòng chiếu
-				let pc = parseInt(bookedSeats.MaPC.replace('PC', ''),10); // Số phòng chiếu (PC1, PC2, ...)
-				let startGxpId = (pc - 1) * totalSeats + 24; // Mã GXP bắt đầu cho phòng chiếu này
+				const totalSeats = 46; // Tổng số ghế trong một phòng chiếu
+				let pc = parseInt(bookedSeats[0].maPc.replace('PC', ''), 10); // Lấy số phòng chiếu từ API
+				let startGxpId = (pc - 1) * totalSeats + 1; // Mã GXP bắt đầu cho phòng chiếu này
 				let seatIndex = startGxpId; // Khởi tạo mã GXP
-				let z = 24;
+				let z = 24; // Khởi tạo số ghế từ 1 cho mỗi hàng
+
 				// Tạo danh sách ghế
 				rows.forEach(row => {
-					for (let i = 1; i <=totalSeatsPerRow; i++) { // Lặp từ 1 đến 23 cho mỗi hàng
+					for (let i = 1; i <= totalSeatsPerRow; i++) { // Lặp từ 1 đến 23 cho mỗi hàng
 						allSeats.push({
 							MaGxp: `GXP${seatIndex}`,
-							Ghe: z, // Ghế luôn từ 1 đến 23 (theo hàng)
+							Ghe: z,
 							Row: row,
 							LoaiGhe: 'Thường',
 							TrangThai: 0
@@ -214,65 +215,68 @@
 					}
 				});
 
-                if (bookedSeats && bookedSeats.length > 0) {
-                    bookedSeats.forEach(bookedSeat => {
-                        // Tìm ghế trong danh sách allSeats với MaGxp dưới dạng chuỗi
-                        const seat = allSeats.find(seat => seat.MaGxp === bookedSeat.maGxp);
-                        if (seat) {
-                            console.log(`Updating seat ${seat.MaGxp} from ${seat.TrangThai} to ${bookedSeat.trangThai}`);
-                            seat.TrangThai = bookedSeat.trangThai; 
-                        } else {
-                            console.log(`Seat with MaGxp ${bookedSeat.maGxp} not found in allSeats.`);
-                        }
-                    });
-                }
+				// Cập nhật trạng thái ghế từ API
+				if (bookedSeats && bookedSeats.length > 0) {
+					bookedSeats.forEach(bookedSeat => {
+						// Tìm ghế trong danh sách allSeats với MaGxp dưới dạng chuỗi
+						const seat = allSeats.find(seat => seat.MaGxp === bookedSeat.maGxp);
+						if (seat) {
+							console.log(`Updating seat ${seat.MaGxp} from ${seat.TrangThai} to ${bookedSeat.trangThai}`);
+							seat.TrangThai = bookedSeat.trangThai; // Cập nhật trạng thái ghế
+						} else {
+							console.log(`Seat with MaGxp ${bookedSeat.maGxp} not found in allSeats.`);
+						}
+					});
+				}
 
-                renderSeats(allSeats);
-            },
-            error: function (xhr, status, error) {
-                console.error("Error fetching seats:", error);
-                $('#seatContainer').html('<p>Không tìm thấy ghế cho lịch chiếu này.</p>');
-            }
-        });
-    }
+				// Render lại danh sách ghế
+				renderSeats(allSeats);
+			},
+			error: function (xhr, status, error) {
+				console.error("Error fetching seats:", error);
+				$('#seatContainer').html('<p>Không tìm thấy ghế cho lịch chiếu này.</p>');
+			}
+		});
+	}
 
-    function renderSeats(seats) {
-        const seatContainer = $('#seatContainer');
-        seatContainer.empty();
 
-        const groupedSeats = seats.reduce((acc, seat) => {
-            if (!acc[seat.Row]) acc[seat.Row] = [];
-            acc[seat.Row].push(seat);
-            return acc;
-        }, {});
+	function renderSeats(seats) {
+		console.log('Rendering Seats:', seats);  // Kiểm tra dữ liệu ghế
+		const seatContainer = $('#seatContainer');
+		seatContainer.empty();
 
-        Object.keys(groupedSeats).forEach(row => {
-            const rowList = $('<ul class="st_eco_second_row"></ul>');
-            const rowHeader = $(`<li class="st_seat_heading_row">${row}</li>`);
-            rowList.append(rowHeader);
+		const groupedSeats = seats.reduce((acc, seat) => {
+			if (!acc[seat.Row]) acc[seat.Row] = [];
+			acc[seat.Row].push(seat);
+			return acc;
+		}, {});
 
-            groupedSeats[row].forEach(seat => {
-                const isDisabled = seat.TrangThai === 1;
-                console.log(`Seat: ${seat.Ghe}, Status: ${seat.TrangThai}, Disabled: ${isDisabled}`);
-                const seatItem = $(`
-                    <li class="${isDisabled ? 'seat_disable' : ''}">
-							<input type="checkbox" id="c${seat.Ghe}"  class ="${row}" name="cb" ${isDisabled ? 'disabled' : ''}>
-                        <label for="c${seat.Ghe}"></label>
-                    </li>
-                `);
-                rowList.append(seatItem);
-            });
+		Object.keys(groupedSeats).forEach(row => {
+			const rowList = $('<ul class="st_eco_second_row"></ul>');
+			const rowHeader = $(`<li class="st_seat_heading_row">${row}</li>`);
+			rowList.append(rowHeader);
 
-            seatContainer.append(rowList);
-        });
-    }
+			groupedSeats[row].forEach(seat => {
+				const isDisabled = seat.TrangThai === 1;
+				console.log(`Seat: ${seat.Ghe}, Status: ${seat.TrangThai}, Disabled: ${isDisabled}`);
+				const seatItem = $(`
+					<li class="${isDisabled ? 'seat_disable' : ''}">
+						<input type="checkbox" id="c${seat.Ghe}" class="${row}" name="cb" ${isDisabled ? 'disabled' : ''}>
+						<label for="c${seat.Ghe}"></label>
+					</li>
+				`);
+				rowList.append(seatItem);
+			});
+
+			seatContainer.append(rowList);
+		});
+	}
 
 
     $(document).ready(function () {
-		const maLc = @ViewBag.MaLC
-		const maPhim = @ViewBag.MaPhim
+		const maLc = '@ViewBag.MaLC';
+		const maPhim = '@ViewBag.MaPhim';
 		const tgc = '@ViewBag.Tgc';
-		console.log(tgc)
 		loadShowTTByMovieId(maPhim);
         loadSeats(maLc);
     });
@@ -367,77 +371,75 @@
 		});
 	}
 	function saveSelectedSeats() {
-		let selectedSeats = [];
+    let selectedSeats = [];
 
-		// Lấy giá trị từ ViewBag
-		const maLc = "@ViewBag.MaLC";  // Mã lịch chiếu
-		const maPhim = "@ViewBag.MaPhim";  // Mã phim
-		const gio = '@ViewBag.Gio';  // Giờ chiếu
-		const tgc = '@ViewBag.Tgc';  // Thời gian chiếu
-		if (!maLc || !maPhim) {
-			alert("Thông tin không hợp lệ.");
-			return;
-		}
-
-		// Gọi API để lấy thông tin phim
-		$.get(`/api/lichchieuapi/ttphim/${maPhim}`, function (ttphim) {
-			if (Array.isArray(ttphim) && ttphim.length > 0 && ttphim[0].tenPhim) {
-				const phim = ttphim[0]; // Lấy thông tin phim đầu tiên
-
-				// Duyệt qua danh sách ghế đã chọn
-				$('input[name="cb"]:checked').each(function () {
-					const seat = parseInt($(this).attr('id').replace('c', ''), 10); // Lấy ID ghế
-					const row = $(this).attr('class'); // Hàng ghế ('A' hoặc 'B')
-					const seatindex = parseInt($(this).attr('id').replace('c', ''), 10);
-					// Tính toán MaGxp
-					if (row == 'A') seat -= 23;
-					else seat -= 46;
-					const gxpIndex = (parseInt(maPc.replace('PC', '')) - 1) * 69 + seatindex;
-					const maGxp = `GXP${gxpIndex}`;
-
-					// Thêm ghế vào danh sách ghế đã chọn
-					selectedSeats.push({
-						MaLc: maLc,
-						MaPhim: maPhim,
-						TenPhim: phim.tenPhim,
-						MaGxp: maGxp,
-						Ghe: row + seat,
-						GiaVe: 100000,
-						Gio: gio,
-						Tgc: tgc
-					});
-				});
-
-        console.log("Dữ liệu ghế đã chọn:", JSON.stringify(selectedSeats));
-        if (selectedSeats.length === 0) {
-            alert("Vui lòng chọn ít nhất một ghế!");
-            return;
-        }
-
-        // Gửi dữ liệu ghế đã chọn đến API
-        $.ajax({
-            url: `https://localhost:7199/api/veapi/TTve/${maLc}`,
-            type: 'POST',
-            contentType: 'application/json',
-            data: JSON.stringify(selectedSeats),
-            success: function (response) {
-						window.location.href = `/Home/Checkout?maLC=${maLc}&maPhim=${maPhim}&tgc=${tgc}&gio=${gio}`;
-            },
-            error: function (xhr, status, error) {
-                console.error("Lỗi khi lưu ghế đã chọn:", error);
-                console.log("Chi tiết lỗi:", xhr.responseText);
-                alert("Có lỗi xảy ra khi lưu ghế đã chọn. Vui lòng thử lại.");
-            }
-        });
-    } else {
-        alert("Không tìm thấy thông tin phim.");
-        console.log("API không trả về dữ liệu hoặc thiếu thuộc tính TenPhim:", ttphim);
+    // Lấy giá trị từ ViewBag
+    const maLc = '@(ViewBag.MaLC)';
+    const maPhim = '@(ViewBag.MaPhim)';
+    const gio = '@(ViewBag.Gio)';
+    const tgc = '@(ViewBag.Tgc)';
+    const maPc = '@(ViewBag.MaPC)';
+		console.log(maPc);
+    if (!maLc || !maPhim || !maPc) {
+        alert("Thông tin không hợp lệ. Vui lòng kiểm tra lại.");
+        console.error("Thông tin thiếu:", { maLc, maPhim, maPc });
+        return;
     }
-}).fail(function(xhr, status, error) {
-    console.error("Lỗi khi gọi API:", error);
-    console.log("Chi tiết lỗi:", xhr.responseText);
-    alert("Lỗi khi lấy thông tin phim từ API. Vui lòng kiểm tra.");
-});}
+
+    // Gọi API để lấy thông tin phim
+    $.get(`/api/lichchieuapi/ttphim/${maPhim}`, function (ttphim) {
+        if (Array.isArray(ttphim) && ttphim.length > 0 && ttphim[0].tenPhim) {
+            const phim = ttphim[0]; // Lấy thông tin phim đầu tiên
+            // Duyệt qua danh sách ghế đã chọn
+            $('input[name="cb"]:checked').each(function () {
+    let seat = parseInt($(this).attr('id').replace('c', ''), 10); // Chỉnh sửa lại từ const thành let
+    const row = $(this).attr('class'); // Hàng ghế ('A' hoặc 'B')
+    let seatIndex = parseInt($(this).attr('id').replace('c', ''), 10); // Chỉnh sửa lại từ const thành let
+
+    if (row === 'A') seat -= 23;
+    else seat -= 46;
+
+     gxpIndex = (parseInt(maPc.replace('PC', ''), 10) - 1) * 69 + seatIndex;
+    const maGxp = `GXP${gxpIndex}`;
+
+    // Thêm ghế vào danh sách ghế đã chọn
+    selectedSeats.push({
+        MaLc: maLc,
+        MaPhim: maPhim,
+        TenPhim: phim.tenPhim,
+        MaGxp: maGxp,
+        Ghe: row + seat,
+        GiaVe: 100000,
+        Gio: gio,
+        Tgc: tgc,
+    });
+});
+
+            if (selectedSeats.length === 0) {
+                alert("Vui lòng chọn ít nhất một ghế!");
+                return;
+            }
+
+            // Gửi dữ liệu ghế đã chọn đến API
+            $.ajax({
+                url: `https://localhost:7199/api/veapi/TTve/${maLc}`,
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(selectedSeats),
+                success: function () {
+                    window.location.href = `/Home/Checkout?maLC=${maLc}&maPhim=${maPhim}&tgc=${tgc}&gio=${gio}&maPC=${maPc}`;
+                },
+                error: function (xhr, status, error) {
+                    console.error("Lỗi khi lưu ghế đã chọn:", error);
+                    console.error("Chi tiết lỗi:", xhr.responseText || xhr.responseJSON || "Không có chi tiết.");
+                    alert("Có lỗi xảy ra khi lưu ghế đã chọn. Vui lòng thử lại.");
+                },
+            });
+        } 
+    })
+}
+
+
 	document.getElementById('backButton').addEventListener('click', function (event) {
 		const maPhim = '@ViewBag.MaPhim';
 		window.location.href = `/Home/LichChieu?maPhim=${maPhim}`;

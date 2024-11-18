@@ -5,7 +5,7 @@ namespace BTLRapChieuPhim.Models;
 
 public partial class VeXemPhim
 {
-    public string? MaVxp { get; set; }
+    public string MaVxp { get; set; } = null!;
 
     public decimal? GiaVe { get; set; }
 

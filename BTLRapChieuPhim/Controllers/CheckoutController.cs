@@ -34,14 +34,37 @@ namespace BTLRapChieuPhim.Controllers
 				return Json(new { success = false, message = "No seats selected!" });
 			}
 		}
+		private string GenerateMaHD()
+		{
+			// Lấy mã hóa đơn lớn nhất hiện tại, bỏ phần tiền tố "HD"
+			var maxId = db.HoaDons
+						  .Where(h => h.MaHd.StartsWith("HD"))
+						  .Select(h => h.MaHd.Substring(2)) // Lấy phần sau tiền tố "HD"
+						  .OrderByDescending(id => id) // Sắp xếp giảm dần
+						  .FirstOrDefault();
+
+			// Nếu không có mã hóa đơn nào (có thể là lần đầu thêm), bắt đầu từ 1
+			int newNumber = (maxId != null && int.TryParse(maxId, out var num)) ? num + 1 : 1;
+
+			string newMaHD = "HD" + newNumber.ToString("D2"); // Ví dụ: HD01, HD02, ...
+
+			// Kiểm tra nếu mã hóa đơn đã tồn tại
+			while (db.HoaDons.Any(h => h.MaHd == newMaHD))
+			{
+				newNumber++;  // Tăng số và tạo lại mã hóa đơn
+				newMaHD = "HD" + newNumber.ToString("D2"); // Ví dụ: HD01, HD02, ...
+			}
+
+			return newMaHD; // Trả về mã hóa đơn mới
+		}
 		public async Task<IActionResult> PaymentCallBack(HoaDon model)
 		{
 			// Lấy phản hồi thanh toán từ Momo
 			var response =  _momoService.PaymentExecuteAsync(HttpContext.Request.Query);
 			var requestquery = HttpContext.Request.Query;
 			// Kiểm tra kết quả giao dịch từ Momo
-			var matk = HttpContext.Session.GetInt32("MaTK");
-			var Ht = db.KhachHangs.Where(x => x.MaTk == matk.ToString()).Select(x => x.HoTen).FirstOrDefault();
+			var matk = HttpContext.Session.GetString("MaTK");
+			var Ht = db.KhachHangs.Where(x => x.MaTk == matk).Select(x => x.HoTen).FirstOrDefault();
 			var maphim = TempData["Maphim"] as string;
 			var anh = db.HinhAnhTrailers.Where(x => x.MaPhim == maphim).Select(x => x.DuongDanAnh).FirstOrDefault();
 			TempData["Anh"] = anh;
@@ -58,7 +81,8 @@ namespace BTLRapChieuPhim.Controllers
 			}
 			var thanhToan = new HoaDon
 			{
-				MaGd = requestquery["OrderId"],
+				MaHd= GenerateMaHD(),
+                MaGd = requestquery["OrderId"],
 				HoTen = Ht,
 				TienTt = decimal.Parse(requestquery["Amount"]),
 				NgayTt = DateTime.Now

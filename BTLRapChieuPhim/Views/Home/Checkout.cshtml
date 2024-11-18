@@ -83,8 +83,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 	$(document).ready(function () {
-		const maLc = @ViewBag.MaLC
-		const maPhim = @ViewBag.MaPhim
+		const maLc = '@ViewBag.MaLC'
+		const maPhim = '@ViewBag.MaPhim'
 		loadTTve();
 		const tgc = '@ViewBag.Tgc';
 		console.log(tgc)
@@ -121,7 +121,8 @@
 					var tgc = data.storedSeats[0].tgc;
 					var gio = data.storedSeats[0].gio;
 					var tenPhim = data.storedSeats[0].tenPhim;
-					const Hoten = '@ViewBag.Hoten'
+					const Hoten = @Html.Raw(ViewBag.HotenJson);
+					console.log(Hoten);
 					str += `
 						<li>
 							<span class="dtts1">Date</span> <span class="dtts2">${tgc}</span>
@@ -216,8 +217,9 @@
 				const maPhim = '@ViewBag.MaPhim';
 				const gio = encodeURIComponent('@ViewBag.Gio');
 				const tgc = encodeURIComponent('@ViewBag.Tgc');
+				const mapc='@ViewBag.MaPC'
 				// Chuyển hướng đến trang chọn ghế
-				window.location.href = `/Home/ChonGhe?maLC=${maLc}&maPhim=${maPhim}&tgc=${tgc}&gio=${gio}`;
+				window.location.href = `/Home/ChonGhe?maLC=${maLc}&maPhim=${maPhim}&tgc=${tgc}&gio=${gio}&maPC=${mapc}`;
 			},
 			error: function (xhr, status, error) {
 				console.error("Lỗi khi reset StoredSeats:", error);
