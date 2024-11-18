@@ -73,38 +73,49 @@ namespace BTLRapChieuPhim.Controllers
 				return View("Signup");
 			}
 
-			//string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
-			int maxMaTK = db.TaiKhoans.Any()
+			string maxMaTK = db.TaiKhoans.Any()
 			? db.TaiKhoans.Max(t => t.MaTk)
-			: 0; // Nếu chưa có tài khoản, bắt đầu từ 0
-			int roleId = email.EndsWith("@admin.rapphim") ? 1 : 2;
+			: "TK1";
+
+            int maxNumberTK = int.Parse(maxMaTK.Substring(2));
+
+            string newMaTK = "TK" + (maxNumberTK + 1).ToString("D3");
+            int roleId = email.EndsWith("@admin.rapphim") ? 1 : 2;
 			// Tạo tài khoản mới
 			TaiKhoan newAccount = new TaiKhoan
 			{
-				MaTk = maxMaTK + 1, // Tăng mã tài khoản
+				MaTk = newMaTK, // Tăng mã tài khoản
 				Username = username,
 				Email = email,
 				Password = password,
 				LoaiTk = roleId
 			};
-			int maxMaKH = db.KhachHangs.Any()
-			? db.KhachHangs.Max(t => t.MaKh)
-			: 0;
-			KhachHang newAccout1 = new KhachHang
+            string maxMaKH = db.KhachHangs.Any()
+            ? db.KhachHangs.Max(t => t.MaKh)
+            : "KH1";
+
+            int maxNumberKH = int.Parse(maxMaKH.Substring(2));
+
+            string newMaKH = "TK" + (maxNumberKH + 1).ToString("D3");
+            KhachHang newAccout1 = new KhachHang
 			{
-				MaTk = maxMaTK + 1,
+				MaTk = newMaTK,
 				HoTen = name,
-				MaKh = maxMaKH + 1,
+				MaKh = newMaKH,
 			};
 
-			int maxMaQL = db.QuanLies.Any()
-			? db.QuanLies.Max(t => t.MaQl)
-			: 0;
-			QuanLy newAccout2 = new QuanLy
+            string maQL = db.QuanLies.Any()
+            ? db.QuanLies.Max(t => t.MaQl)
+            : "QL1";
+
+            int maxNumberQL = int.Parse(maQL.Substring(2));
+
+            string newMaQL = "TK" + (maxNumberQL + 1).ToString("D3");
+            QuanLy newAccout2 = new QuanLy
 			{
-				MaTk = maxMaTK + 1,
+				MaTk =newMaTK,
 				HoTen = name,
-				MaQl = maxMaQL + 1,
+				MaQl = newMaQL,
 			};
 
 			// Lưu vào cơ sở dữ liệu

@@ -127,22 +127,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
 					return BadRequest(new { message = "Thời lượng phải lớn hơn 0!" });
 				}
 
-				//if (phimadd.MaPhim <= 0)
-				//{
-				//	return BadRequest(new { message = "Mã phim không được để trống hoặc nhỏ hơn 1!" });
-				//}
-
-				//if (phimadd.MaTl <= 0)
-				//{
-				//	return BadRequest(new { message = "Mã thể loại không được để trống hoặc nhỏ hơn 1!" });
-				//}
-
-				//if (phimadd.MaHat <= 0)
-				//{
-				//	return BadRequest(new { message = "Mã hình ảnh Trailer không được để trống hoặc nhỏ hơn 1!" });
-				//}
-
-				if (string.IsNullOrWhiteSpace(phimadd.DuongDanAnh))
+                if (string.IsNullOrWhiteSpace(phimadd.DuongDanAnh))
 				{
 					return BadRequest(new { message = "Đường dẫn ảnh không được để trống!" });
 				}
@@ -152,7 +137,9 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
 					return BadRequest(new { message = "Đường dẫn Trailer không được để trống!" });
 				}
 
-				var phim = new Phim
+               
+
+                var phim = new Phim
                 {
                     MaPhim = phimadd.MaPhim,
                     TenPhim = phimadd.TenPhim,
@@ -177,6 +164,32 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             }
             return BadRequest(new { message = "Thêm phim thất bại!" });
         }
+
+        [HttpGet("GetMa")]
+        public IActionResult GetMa()
+        {
+            string maxMaPhim = _context.Phims
+               .OrderByDescending(p => p.MaPhim)
+               .Select(p => p.MaPhim)
+               .FirstOrDefault() ?? "MP1"; // Nếu chưa có phim, bắt đầu từ MP000
+
+            int maxNumberMP = int.Parse(maxMaPhim.Substring(2)); // Bỏ "MP" và lấy phần số
+
+            string maxMaHat = _context.HinhAnhTrailers
+               .OrderByDescending(p => p.MaHat)
+               .Select(p => p.MaHat)
+               .FirstOrDefault() ?? "MaHAT1"; // Nếu chưa có phim, bắt đầu từ MP000
+
+            int maxNumberMaHAT = int.Parse(maxMaPhim.Substring(2)); // Bỏ "MP" và lấy phần số
+
+            var ma = new
+            {
+                NextMaPhim = maxMaPhim,
+                NextMaHat = maxMaHat
+            };
+            return Ok(ma);
+        }
+
 
         [HttpPut("{maPhim}")]
         public IActionResult UpdatePhim(int maPhim, [FromBody] PhimAPI phimUpdated)
