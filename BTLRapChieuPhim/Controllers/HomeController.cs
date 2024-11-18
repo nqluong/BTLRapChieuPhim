@@ -25,12 +25,32 @@ namespace BTLRapChieuPhim.Controllers
 
         [Route("")]
         [Route("index")]
-        public IActionResult Index()
-        {
-            var hinhAnh = ql.HinhAnhTrailers.AsNoTracking().OrderBy(x => x.MaPhim);
-			return View(hinhAnh);
+		public IActionResult Index()
+		{
+			var hinhanh = ql.HinhAnhTrailers
+				   .AsNoTracking()
+				   .Join(ql.Phims,
+					   ha => ha.MaPhim,
+					   p => p.MaPhim,
+					   (ha, p) => new { HinhAnh = ha, Phim = p })
+				   .Join(ql.TheLoais,
+					   hp => hp.Phim.MaTl,
+					   tl => tl.MaTl,
+					   (hp, tl) => new HinhAnhPhimViewModel
+					   {
+						   MaPhim = hp.Phim.MaPhim,
+						   TenPhim = hp.Phim.TenPhim,
+						   DuongDanAnh = hp.HinhAnh.DuongDanAnh,
+						   DuongDanTrailer = hp.HinhAnh.DuongDanTrailer,
+						   TenTL = tl.TenTheLoai,
+						   NuocSX = hp.Phim.NuocSx
+					   })
+				   .OrderBy(x => x.MaPhim)
+				   .ToList();
+
+			return View(hinhanh);
 		}
-        [Route("chitietphim")]
+		[Route("chitietphim")]
         public IActionResult ChiTietPhim(string maphim)
         {
             var phim = ql.Phims.SingleOrDefault(x => x.MaPhim == maphim);
