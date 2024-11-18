@@ -2,11 +2,11 @@
 {
 	public class LichChieuApi
 	{
-		public int MaLc { get; set; }
+		public string MaLc { get; set; }
 
 		public DateTime? ThoiGianChieu { get; set; }
 
-		public int? MaPc { get; set; }
+		public string? MaPc { get; set; }
 		public int ? ThoiLuong {  get; set; }
 		public string ? TenPhongChieu { get; set; }
 		public int ? SucChua {  get; set; }

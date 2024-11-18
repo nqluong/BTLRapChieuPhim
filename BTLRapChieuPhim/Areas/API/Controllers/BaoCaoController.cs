@@ -19,22 +19,22 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             var query = from lc in _context.LichChieus
                         join vxp in _context.VeXemPhims on lc.MaLc equals vxp.MaLc
                         join hd in _context.HoaDons on vxp.MaHd equals hd.MaHd
-                        join tt in _context.ThanhToans on hd.MaHd equals tt.MaHd
-                        where tt.NgayTt.HasValue
+                        
+                        where hd.NgayTt.HasValue
                         select new
                         {
-                            Ngay = tt.NgayTt,
-                            TienVe = hd.TongTienVe,
-                            TienDoAn = hd.TongTienDa,
-                            TongHd = hd.TongTienVe + hd.TongTienDa
+                            Ngay =hd.NgayTt,
+                            //TienVe = hd.TongTienVe,
+                            //TienDoAn = hd.TongTienDa,
+                            //TongHd = hd.TongTienVe + hd.TongTienDa
                         };
             var culture = System.Globalization.CultureInfo.InvariantCulture;
-            if (!string.IsNullOrEmpty(fromDate) && DateOnly.TryParseExact(fromDate, "dd/MM/yyyy", culture, System.Globalization.DateTimeStyles.None, out DateOnly startDate))
+            if (!string.IsNullOrEmpty(fromDate) && DateTime.TryParseExact(fromDate, "dd/MM/yyyy", culture, System.Globalization.DateTimeStyles.None, out DateTime startDate))
             {
                 
                 query = query.Where(x => x.Ngay.HasValue && x.Ngay >= startDate);
             }
-            if (!string.IsNullOrEmpty(toDate) && DateOnly.TryParseExact(toDate, "dd/MM/yyyy", culture, System.Globalization.DateTimeStyles.None, out DateOnly endDate))
+            if (!string.IsNullOrEmpty(toDate) && DateTime.TryParseExact(toDate, "dd/MM/yyyy", culture, System.Globalization.DateTimeStyles.None, out DateTime endDate))
             {
                 
                 query = query.Where(x => x.Ngay.HasValue && x.Ngay <= endDate);
@@ -44,9 +44,9 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                     .Select(g => new
                     {
                         NgayTt = g.Key,
-                        TienVe = g.Sum(y => y.TienVe),
-                        TienDoAn = g.Sum(y => y.TienDoAn),
-                        DoanhThu = g.Sum(y => y.TongHd)
+                        //TienVe = g.Sum(y => y.TienVe),
+                        //TienDoAn = g.Sum(y => y.TienDoAn),
+                        //DoanhThu = g.Sum(y => y.TongHd)
                     })
                     .OrderBy(x => x.NgayTt)
                     .ToList();
@@ -63,9 +63,9 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             var result = groupedResult.Select(x => new
             {
                 Ngay = x.NgayTt,
-                x.TienVe,
-                x.TienDoAn,
-                x.DoanhThu
+                //x.TienVe,
+                //x.TienDoAn,
+                //x.DoanhThu
             });
             return Ok(result);
         }
@@ -81,9 +81,9 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                         select new
                         {
                             phim.TenPhim,
-                            TienVe = hd.TongTienVe,
-                            TienDoAn = hd.TongTienDa,
-                            TongHd = hd.TongTienVe + hd.TongTienDa
+                            //TienVe = hd.TongTienVe,
+                            //TienDoAn = hd.TongTienDa,
+                            //TongHd = hd.TongTienVe + hd.TongTienDa
                         };
 
             var culture = System.Globalization.CultureInfo.InvariantCulture;
@@ -94,9 +94,9 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                     .Select(g => new
                     {
                         TenPhim = g.Key,
-                        TienVe = g.Sum(y => y.TienVe),
-                        TienDoAn = g.Sum(y => y.TienDoAn),
-                        DoanhThu = g.Sum(y => y.TongHd)
+                        //TienVe = g.Sum(y => y.TienVe),
+                        //TienDoAn = g.Sum(y => y.TienDoAn),
+                        //DoanhThu = g.Sum(y => y.TongHd)
                     })
                     .OrderBy(x => x.TenPhim)
                     .ToList();
@@ -104,9 +104,9 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             var result = groupedResult.Select(x => new
             {
                 x.TenPhim,
-                x.TienVe,
-                x.TienDoAn,
-                x.DoanhThu
+                //x.TienVe,
+                //x.TienDoAn,
+                //x.DoanhThu
             });
 
             return Ok(result);
@@ -122,9 +122,9 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                         select new
                         {
                             TenPhongChieu = phong.TenPc,
-                            TienVe = hd.TongTienVe,
-                            TienDoAn = hd.TongTienDa,
-                            TongHd = hd.TongTienVe + hd.TongTienDa
+                            //TienVe = hd.TongTienVe,
+                            //TienDoAn = hd.TongTienDa,
+                            //TongHd = hd.TongTienVe + hd.TongTienDa
                         };
 
             var groupedResult = query
@@ -132,9 +132,9 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                     .Select(g => new
                     {
                         TenPhongChieu = g.Key,
-                        TienVe = g.Sum(y => y.TienVe),
-                        TienDoAn = g.Sum(y => y.TienDoAn),
-                        DoanhThu = g.Sum(y => y.TongHd)
+                        //TienVe = g.Sum(y => y.TienVe),
+                        //TienDoAn = g.Sum(y => y.TienDoAn),
+                        //DoanhThu = g.Sum(y => y.TongHd)
                     })
                     .OrderBy(x => x.TenPhongChieu)
                     .ToList();
@@ -142,9 +142,9 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             var result = groupedResult.Select(x => new
             {
                 x.TenPhongChieu,
-                x.TienVe,
-                x.TienDoAn,
-                x.DoanhThu
+                //x.TienVe,
+                //x.TienDoAn,
+                //x.DoanhThu
             });
 
             return Ok(result);

@@ -74,7 +74,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         }
 
         [HttpGet("{maPhim}")]
-        public IEnumerable<PhimAPI> GetPhim(int maPhim)
+        public IEnumerable<PhimAPI> GetPhim(string maPhim)
         {
             var phim = (from p in _context.Phims
                         join tl in _context.TheLoais on p.MaTl equals tl.MaTl
@@ -127,20 +127,20 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
 					return BadRequest(new { message = "Thời lượng phải lớn hơn 0!" });
 				}
 
-				if (phimadd.MaPhim <= 0)
-				{
-					return BadRequest(new { message = "Mã phim không được để trống hoặc nhỏ hơn 1!" });
-				}
+				//if (phimadd.MaPhim <= 0)
+				//{
+				//	return BadRequest(new { message = "Mã phim không được để trống hoặc nhỏ hơn 1!" });
+				//}
 
-				if (phimadd.MaTl <= 0)
-				{
-					return BadRequest(new { message = "Mã thể loại không được để trống hoặc nhỏ hơn 1!" });
-				}
+				//if (phimadd.MaTl <= 0)
+				//{
+				//	return BadRequest(new { message = "Mã thể loại không được để trống hoặc nhỏ hơn 1!" });
+				//}
 
-				if (phimadd.MaHat <= 0)
-				{
-					return BadRequest(new { message = "Mã hình ảnh Trailer không được để trống hoặc nhỏ hơn 1!" });
-				}
+				//if (phimadd.MaHat <= 0)
+				//{
+				//	return BadRequest(new { message = "Mã hình ảnh Trailer không được để trống hoặc nhỏ hơn 1!" });
+				//}
 
 				if (string.IsNullOrWhiteSpace(phimadd.DuongDanAnh))
 				{
@@ -181,10 +181,10 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         [HttpPut("{maPhim}")]
         public IActionResult UpdatePhim(int maPhim, [FromBody] PhimAPI phimUpdated)
         {
-            if (phimUpdated == null || maPhim != phimUpdated.MaPhim)
-            {
-                return BadRequest(new { message = "Không tìm thấy phim với mã này!" });
-            }
+            //if (phimUpdated == null || maPhim != phimUpdated.MaPhim)
+            //{
+            //    return BadRequest(new { message = "Không tìm thấy phim với mã này!" });
+            //}
 
             var phim = _context.Phims.Find(maPhim);
             var hinhanhTrailer = _context.HinhAnhTrailers.Find(maPhim);
@@ -231,7 +231,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         }
 
         [HttpDelete("{maPhim}")]
-        public IActionResult DeletePhim(int maPhim)
+        public IActionResult DeletePhim(string maPhim)
         {
             var phim = _context.Phims.Find(maPhim);
             if (phim == null)
@@ -240,16 +240,16 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             }
 
             // Lấy tất cả các bản ghi liên quan đến maPhim
-            var vexemphims = _context.VeXemPhims.Where(vx => vx.MaPhim == maPhim).ToList();
+            //var vexemphims = _context.VeXemPhims.Where(vx => vx.MaPhim == maPhim).ToList();
             var khuyenmais = _context.KhuyenMais.Where(km => km.MaPhim == maPhim).ToList();
             var danhgias = _context.DanhGia.Where(dg => dg.MaPhim == maPhim).ToList();
             var hinhanhtrailers = _context.HinhAnhTrailers.Where(hat => hat.MaPhim == maPhim).ToList();
 
             // Xóa các bản ghi phụ thuộc
-            if (vexemphims.Any())
-            {
-                _context.VeXemPhims.RemoveRange(vexemphims);
-            }
+            //if (vexemphims.Any())
+            //{
+            //    _context.VeXemPhims.RemoveRange(vexemphims);
+            //}
             if (khuyenmais.Any())
             {
                 _context.KhuyenMais.RemoveRange(khuyenmais);

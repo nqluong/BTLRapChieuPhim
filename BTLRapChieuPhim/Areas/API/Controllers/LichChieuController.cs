@@ -62,9 +62,9 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             {
                 return BadRequest(new { message = "Phim khong ton tai !" });
             }
-            int maLc = GenerateMaLc();
+           // int maLc = GenerateMaLc();
 
-            lichChieu.MaLc = maLc;
+            //lichChieu.MaLc = maLc;
 
             int thoiGian = phim.ThoiLuong ?? 0;
             var existingShowTimes = _context.LichChieus.Where(lc => lc.MaPc == lichChieu.MaPc && lc.MaLc != lichChieu.MaLc).ToList();
@@ -93,16 +93,16 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             return BadRequest(new { message = "Thêm lịch chiếu thất bại!" });
 
         }
-        private int GenerateMaLc()
-        {
+        //private int GenerateMaLc()
+        //{
 
-            var maxMaLc = _context.LichChieus.Max(lc => lc.MaLc);
+        //    var maxMaLc = _context.LichChieus.Max(lc => lc.MaLc);
 
-            return maxMaLc + 1;
-        }
+        //    return maxMaLc + 1;
+        //}
 
         [HttpGet("{maLc}")]
-        public IActionResult GetLichChieuByMa(int maLc)
+        public IActionResult GetLichChieuByMa(string maLc)
         {
             var lichChieuQuery = (from lc in _context.LichChieus
                                   join p in _context.Phims on lc.MaPhim equals p.MaPhim
