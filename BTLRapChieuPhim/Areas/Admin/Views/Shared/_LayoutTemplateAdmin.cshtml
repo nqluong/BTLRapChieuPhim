@@ -26,89 +26,86 @@
 </head>
 
 <body>
-	<!-- header -->
-	<header class="header">
-		<div class="header__content">
-			<!-- header logo -->
-			<a href="index.html" class="header__logo">
-				<img src="/TemplateAdmin/img/logo.svg" alt="">
-			</a>
-			<!-- end header logo -->
-			<!-- header menu btn -->
-			<button class="header__btn" type="button">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
-			<!-- end header menu btn -->
-		</div>
-	</header>
-	<!-- end header -->
-	<!-- sidebar -->
-	<div class="sidebar">
-		<!-- sidebar logo -->
-		<a href="index.html" class="sidebar__logo">
-			<img src="/TemplateAdmin/img/logo.svg" alt="">
-		</a>
-		<!-- end sidebar logo -->
-		<!-- sidebar user -->
-		<div class="sidebar__user">
-			<div class="sidebar__user-img">
-				<img src="/TemplateAdmin/img/user.svg" alt="">
-			</div>
 
-			<div class="sidebar__user-title">
-				<span>Admin</span>
-				<p>John Doe</p>
-			</div>
+    <div id = "menu">
+    <header class="header">
+        <div class="header__content">
+            <!-- header logo -->
+            <a href="index.html" class="header__logo">
+                <img src="/TemplateAdmin/img/logo.svg" alt="">
+            </a>
+            <!-- end header logo -->
+            <!-- header menu btn -->
+            <button class="header__btn" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- end header menu btn -->
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- sidebar -->
+    <div class="sidebar">
+        <!-- sidebar logo -->
+        <a href="index.html" class="sidebar__logo">
+            <img src="/TemplateAdmin/img/logo.svg" alt="">
+        </a>
+        <!-- end sidebar logo -->
+        <!-- sidebar user -->
+        <div class="sidebar__user">
+            <div class="sidebar__user-img">
+                <img src="/TemplateAdmin/img/user.svg" alt="">
+            </div>
 
-			<a href ="/Access/Logout" class="sidebar__user-btn">
-				<i class="ti ti-logout"></i>
-			</a>
+            <div class="sidebar__user-title">
+                <span>Admin</span>
+                <p>John Doe</p>
+            </div>
 
-		</div>
-		<!-- end sidebar user -->
-		<!-- sidebar nav -->
-		<div class="sidebar__nav-wrap">
-			<ul class="sidebar__nav">
-				<li class="sidebar__nav-item">
+            <a href="/Access/Logout" class="sidebar__user-btn">
+                <i class="ti ti-logout"></i>
+            </a>
 
-					<a href="/admin/BaoCao" class="sidebar__nav-link sidebar__nav-link--active"><i class="ti ti-layout-grid"></i> <span>Thống kê doanh thu</span></a>
+        </div>
+        <!-- end sidebar user -->
+        <!-- sidebar nav -->
+        <div class="sidebar__nav-wrap">
+            <ul class="sidebar__nav">
+                <li class="sidebar__nav-item">
+                    <a style="cursor:pointer" onclick="loadPage('/admin/BaoCao')" class="sidebar__nav-link sidebar__nav-link--active"><i class="ti ti-layout-grid"></i> <span>Thống kê doanh thu</span></a>
+                </li>
+                <li class="sidebar__nav-item">
+                        <a style="cursor:pointer" onclick="loadPage('/admin/phongchieu')" class="sidebar__nav-link"><i class="ti ti-movie"></i> <span>Phòng chiếu</span></a>
+                </li>
 
-					
-				</li>
-				<li class="sidebar__nav-item">
-					@{
-						<a style="cursor:pointer"  class="sidebar__nav-link"><i class="ti ti-movie"></i> <span>Phòng chiếu</span></a>
-					}
-				</li>
+                <li class="sidebar__nav-item">
+                    <a style="cursor:pointer" onclick="loadPage('/admin/phim')" class="sidebar__nav-link"><i class="ti ti-users"></i> <span>Phim</span></a>
+                </li>
 
-				<li class="sidebar__nav-item">
-					<a href="/admin/phim" class="sidebar__nav-link"><i class="ti ti-users"></i> <span>Phim</span></a>
-				</li>
+                <li class="sidebar__nav-item">
+                    <a style="cursor:pointer" onclick="loadPage('/admin/LichChieuPhim')" class="sidebar__nav-link "><i class="ti ti-star-half-filled"></i> <span>Lịch Chiếu Phim</span></a>
+                </li>
 
+                <li class="sidebar__nav-item">
+                    <a href="/Access/Logout" class="sidebar__nav-link"><i class="ti ti-arrow-left"></i> <span>Quay lại trang phim</span></a>
+                </li>
+            </ul>
+        </div>
+        <!-- end sidebar nav -->
+        <!-- sidebar copyright -->
+        <div class="sidebar__copyright">© HOTFLIX, 2019—2024. <br>Create by <a href="https://themeforest.net/user/dmitryvolkov/portfolio" target="_blank">Dmitry Volkov</a></div>
+        <!-- end sidebar copyright -->
+    </div>
+    </div>
 
-				<li class="sidebar__nav-item">
-					<a style="cursor:pointer" onclick="loadPage('/admin/LichChieuPhim')" class="sidebar__nav-link "><i class="ti ti-star-half-filled"></i> <span>Lịch Chiếu Phim</span></a>
-				</li>
-
-
-				<li class="sidebar__nav-item">
-					<a href="/index" class="sidebar__nav-link"><i class="ti ti-arrow-left"></i> <span>Quay lại trang phim</span></a>
-				</li>
-			</ul>
-		</div>
-		<!-- end sidebar nav -->
-		<!-- sidebar copyright -->
-		<div class="sidebar__copyright">© HOTFLIX, 2019—2024. <br>Create by <a href="https://themeforest.net/user/dmitryvolkov/portfolio" target="_blank">Dmitry Volkov</a></div>
-		<!-- end sidebar copyright -->
+	<div id="renderBodyContent">
+		@RenderBody()
 	</div>
+	<!-- header -->
+	
 	<!-- end sidebar -->
 	<!-- main content -->
-	<main class="main" id="renderBodyContent">
-		
-		@RenderBody()
-	</main>
 	<!-- end main content -->
 	<!-- JS -->
 	<script src="/TemplateAdmin/js/bootstrap.bundle.min.js"></script>
@@ -121,7 +118,7 @@
 		function loadPage(url) {
 			// Hiển thị loading nếu cần
 			document.getElementById('renderBodyContent').innerHTML = '<p>Loading...</p>';
-
+            $('#menu').empty();
 			// Gửi yêu cầu AJAX
 			$.ajax({
 				url: url,

@@ -11,46 +11,8 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
     public class PhimAPIController : ControllerBase
     {
         QuanLyRapPhimContext _context = new QuanLyRapPhimContext();
-
-        //[HttpGet]
-        //public IActionResult GetAllPhim(int page = 1, int pageSize = 15)
-        //{
-        //    var phimQuery = (from p in _context.Phims
-        //                      join tl in _context.TheLoais on p.MaTl equals tl.MaTl
-        //                      join hat in _context.HinhAnhTrailers on p.MaPhim equals hat.MaPhim
-        //                      select new PhimAPI
-        //                      {
-        //                          MaPhim = p.MaPhim,
-        //                          TenPhim = p.TenPhim,
-        //                          ThoiLuong = p.ThoiLuong,
-        //                          DaoDien = p.DaoDien,
-        //                          DoTuoi = p.DoTuoi,
-        //                          NuocSx = p.NuocSx,
-        //                          MoTa = p.MoTa,
-        //                          MaTl = p.MaTl,
-        //                          TenTheLoai = tl.TenTheLoai,
-        //                          DuongDanAnh = hat.DuongDanAnh,
-        //                          DuongDanTrailer = hat.DuongDanTrailer,
-        //                          MaHat = hat.MaHat,
-        //                      }).ToList();
-        //    var totalRecords = phimQuery.Count();
-        //    var phim = phimQuery
-        //    .Skip((page - 1) * pageSize)
-        //        .Take(pageSize)
-        //        .ToList();
-        //    var result = new
-        //    {
-        //        TotalRecords = totalRecords,
-        //        Page = page,
-        //        PageSize = pageSize,
-        //        TotalPages = (int)Math.Ceiling((double)totalRecords / pageSize),
-        //        Data = phim
-        //    };
-        //    return Ok(result);
-        //}
-
         [HttpGet]
-        public IEnumerable<PhimAPI> GetAllPhim()
+        public IActionResult GetAllPhim(string searchTerm = "", int page = 1, int pageSize = 10)
         {
             var phimQuery = (from p in _context.Phims
                              join tl in _context.TheLoais on p.MaTl equals tl.MaTl
@@ -70,7 +32,25 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                                  DuongDanTrailer = hat.DuongDanTrailer,
                                  MaHat = hat.MaHat,
                              }).ToList();
-            return phimQuery;
+            // Áp dụng bộ lọc tìm kiếm nếu có
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                phimQuery = phimQuery.Where(p => p.TenPhim.Contains(searchTerm)).ToList();
+            }
+            var totalRecords = phimQuery.Count();
+            var phim = phimQuery
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+            var result = new
+            {
+                TotalRecords = totalRecords,
+                Page = page,
+                PageSize = pageSize,
+                TotalPages = (int)Math.Ceiling((double)totalRecords / pageSize),
+                Data = phim
+            };
+            return Ok(result);
         }
 
         [HttpGet("{maPhim}")]

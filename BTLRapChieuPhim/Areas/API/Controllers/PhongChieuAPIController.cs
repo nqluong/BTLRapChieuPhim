@@ -14,23 +14,56 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         QuanLyRapPhimContext _context = new QuanLyRapPhimContext();
 
         [HttpGet]
-		public IEnumerable<PhongChieuAPI> GetAllPhongChieu()
-		{
-			var phongchieu = (from pc in _context.PhongChieus
-						   join rp in _context.RapPhims on pc.MaRp equals rp.MaRp
-						   
-                           where pc.MaRp == 1
-						   select new PhongChieuAPI
-						   {
+        public IActionResult GetAllPhongChieu(int page = 1, int pageSize = 20)
+        {
+            var phongchieu = (from pc in _context.PhongChieus
+                              join rp in _context.RapPhims on pc.MaRp equals rp.MaRp
 
-							   MaRp = rp.MaRp,
-							   MaPc = pc.MaPc,
-							   TenPc = pc.TenPc,
-							   SucChua = pc.SucChua,
-							   TenRp = rp.TenRp,
-						   }).ToList();
-			return phongchieu;
-		}
+                              where pc.MaRp == 1
+                              select new PhongChieuAPI
+                              {
+
+                                  MaRp = rp.MaRp,
+                                  MaPc = pc.MaPc,
+                                  TenPc = pc.TenPc,
+                                  SucChua = pc.SucChua,
+                                  TenRp = rp.TenRp,
+                              }).ToList();
+
+            var totalRecords = phongchieu.Count();
+            var phong = phongchieu
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+            var result = new
+            {
+                TotalRecords = totalRecords,
+                Page = page,
+                PageSize = pageSize,
+                TotalPages = (int)Math.Ceiling((double)totalRecords / pageSize),
+                Data = phong
+            };
+            return Ok(result);
+        }
+
+  //      [HttpGet]
+		//public IEnumerable<PhongChieuAPI> GetAllPhongChieu()
+		//{
+		//	var phongchieu = (from pc in _context.PhongChieus
+		//				   join rp in _context.RapPhims on pc.MaRp equals rp.MaRp
+						   
+  //                         where pc.MaRp == 1
+		//				   select new PhongChieuAPI
+		//				   {
+
+		//					   MaRp = rp.MaRp,
+		//					   MaPc = pc.MaPc,
+		//					   TenPc = pc.TenPc,
+		//					   SucChua = pc.SucChua,
+		//					   TenRp = rp.TenRp,
+		//				   }).ToList();
+		//	return phongchieu;
+		//}
 
         [HttpGet("{maPc}")]
         public IEnumerable<PhongChieuAPI> GetPhongChieu(int maPc)
