@@ -1,20 +1,29 @@
+
 using BTLRapChieuPhim.Models;
 using BTLRapChieuPhim.Models.MoMo;
 using BTLRapChieuPhim.Services.Momo;
 using Microsoft.EntityFrameworkCore;
 
+﻿using BTLRapChieuPhim.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Đăng ký DbContext
+
+
+
 builder.Services.AddDbContext<QuanLyRapPhimContext>(options =>
 	options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Đăng ký MoMo API
 builder.Services.Configure<MomoOptionModel>(builder.Configuration.GetSection("MomoAPI"));
 builder.Services.AddScoped<IMomoService, MomoService>();
 
-// Đăng ký các dịch vụ khác
 builder.Services.AddControllersWithViews();
+
+var connectionString = builder.Configuration.GetConnectionString("QuanLyRapPhimContext");
+builder.Services.AddDbContext<QuanLyRapPhimContext>(x => x.UseSqlServer(connectionString));
+
+builder.Services.AddSession();
 
 var app = builder.Build();
 
@@ -30,6 +39,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 app.UseAuthorization();
+app.UseSession();
 
 app.MapControllers();
 

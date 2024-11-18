@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <!--
 Template Name: Movie Pro
 Version: 1.0.0
@@ -10,7 +11,7 @@ Author: Webstrot
 <!--[if !IE]><!-->
 <html lang="zxx">
 <!--[endif]-->
-<!-- Mirrored from www.webstrot.com/html/moviepro/html/movie_booking.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Sep 2024 15:01:37 GMT -->
+<!-- Mirrored from www.webstrot.com/html/moviepro/html/confirmation_screen.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Sep 2024 15:01:33 GMT -->
 <head>
 	<meta charset="utf-8" />
 	<title>Movie Pro Responsive HTML Template</title>
@@ -41,7 +42,7 @@ Author: Webstrot
 	<link rel="shortcut icon" type="image/png" href="../Template/images/header/favicon.ico" />
 </head>
 
-<body>
+<body class="booking_type_back">
 	<!-- preloader Start -->
 	<div id="preloader">
 		<div id="status">
@@ -512,12 +513,12 @@ Author: Webstrot
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="prs_title_heading_wrapper">
-						<h2>Movie Booking</h2>
+						<h2>Confirmation Screen</h2>
 						<ul>
 							<li>
-								<a asp-action="Index">Home</a>
+								<a href="#">Home</a>
 							</li>
-							<li>&nbsp;&nbsp; >&nbsp;&nbsp; Movie Booking</li>
+							<li>&nbsp;&nbsp; >&nbsp;&nbsp; Confirmation Screen</li>
 						</ul>
 					</div>
 				</div>
@@ -525,14 +526,15 @@ Author: Webstrot
 		</div>
 	</div>
 	<!-- prs title wrapper End -->
-	<!-- prs video top Start -->
-	<div class="prs_booking_main_div_section_wrapper">
-		
-		<!-- prs video top End -->
-		<!-- st slider rating wrapper Start -->
-		<div id="displayLichs">@RenderBody()</div>
-		
-	<!-- st slider sidebar wrapper End -->
+	<!-- st bc Start -->
+	<div class="st_bcc_main_main_wrapper float_left">
+		<div class="st_bcc_main_wrapper">
+			<div class="container">
+				@RenderBody();
+			</div>
+		</div>
+	</div>
+	<!-- st bc End -->
 	<!-- prs patner slider Start -->
 	<div class="prs_patner_main_section_wrapper">
 		<div class="container">
@@ -865,5 +867,5 @@ Author: Webstrot
 </body>
 
 
-<!-- Mirrored from www.webstrot.com/html/moviepro/html/movie_booking.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Sep 2024 15:01:40 GMT -->
+<!-- Mirrored from www.webstrot.com/html/moviepro/html/confirmation_screen.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Sep 2024 15:01:37 GMT -->
 </html>

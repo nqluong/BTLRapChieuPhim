@@ -60,14 +60,12 @@ namespace BTLRapChieuPhim.Controllers
         {
             var lichchieu = (from lc in db.LichChieus
                              join p in db.Phims on lc.MaPhim equals p.MaPhim
-                             join pc in db.PhongChieus on lc.MaPc equals pc.MaPc
-                             
+                             join pc in db.PhongChieus on lc.MaPc equals pc.MaPc                         
                              where lc.MaPhim == maPhim && lc.ThoiGianChieu.Value.Day == ngay
                              select new LichChieuAPI
                              {
                                  MaLc = lc.MaLc,
                                  ThoiGianChieu = lc.ThoiGianChieu.Value.ToString("yyyy-MM-dd"),
-                                 
                                  MaPc = lc.MaPc,
                                  Ngay = lc.ThoiGianChieu.Value.Day,
                                  Thu = lc.ThoiGianChieu.Value.DayOfWeek.ToString().Substring(0, 3).ToUpper(),

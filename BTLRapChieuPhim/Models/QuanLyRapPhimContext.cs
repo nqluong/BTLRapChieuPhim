@@ -19,8 +19,6 @@ public partial class QuanLyRapPhimContext : DbContext
 
     public virtual DbSet<DoAn> DoAns { get; set; }
 
-    public virtual DbSet<GheVe> GheVes { get; set; }
-
     public virtual DbSet<GheXemPhim> GheXemPhims { get; set; }
 
     public virtual DbSet<HinhAnhTrailer> HinhAnhTrailers { get; set; }
@@ -96,28 +94,6 @@ public partial class QuanLyRapPhimContext : DbContext
                 .HasMaxLength(100)
                 .HasColumnName("TenDA");
             entity.Property(e => e.TrangThai).HasMaxLength(50);
-        });
-
-        modelBuilder.Entity<GheVe>(entity =>
-        {
-            entity.HasKey(e => e.Ma).HasName("PK_Ghe_Ve_1");
-
-            entity.ToTable("Ghe_Ve");
-
-            entity.Property(e => e.Ma).ValueGeneratedNever();
-            entity.Property(e => e.MaGxp).HasColumnName("MaGXP");
-            entity.Property(e => e.MaLc).HasColumnName("MaLC");
-            entity.Property(e => e.TrangThai).HasMaxLength(20);
-
-            entity.HasOne(d => d.MaGxpNavigation).WithMany(p => p.GheVes)
-                .HasForeignKey(d => d.MaGxp)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Ghe_Ve_GheXemPhim1");
-
-            entity.HasOne(d => d.MaLcNavigation).WithMany(p => p.GheVes)
-                .HasForeignKey(d => d.MaLc)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Ghe_Ve_VeXemPhim");
         });
 
         modelBuilder.Entity<GheXemPhim>(entity =>
@@ -351,6 +327,7 @@ public partial class QuanLyRapPhimContext : DbContext
                 .ValueGeneratedNever()
                 .HasColumnName("MaTK");
             entity.Property(e => e.Email).HasMaxLength(50);
+            entity.Property(e => e.LoaiTk).HasColumnName("LoaiTK");
             entity.Property(e => e.Password).HasMaxLength(50);
             entity.Property(e => e.Sdt).HasMaxLength(15);
             entity.Property(e => e.Username).HasMaxLength(50);
@@ -362,9 +339,7 @@ public partial class QuanLyRapPhimContext : DbContext
 
             entity.ToTable("ThanhToan");
 
-            entity.Property(e => e.MaTt)
-                .ValueGeneratedNever()
-                .HasColumnName("MaTT");
+            entity.Property(e => e.MaTt).HasColumnName("MaTT");
             entity.Property(e => e.Hoten).HasMaxLength(100);
             entity.Property(e => e.MaGd).HasColumnName("MaGD");
             entity.Property(e => e.NgayTt).HasColumnName("NgayTT");
@@ -394,8 +369,14 @@ public partial class QuanLyRapPhimContext : DbContext
                 .ValueGeneratedNever()
                 .HasColumnName("MaVXP");
             entity.Property(e => e.GiaVe).HasColumnType("decimal(18, 2)");
+            entity.Property(e => e.MaGxp).HasColumnName("MaGXP");
             entity.Property(e => e.MaHd).HasColumnName("MaHD");
             entity.Property(e => e.MaLc).HasColumnName("MaLC");
+            entity.Property(e => e.TrangThai).HasMaxLength(20);
+
+            entity.HasOne(d => d.MaGxpNavigation).WithMany(p => p.VeXemPhims)
+                .HasForeignKey(d => d.MaGxp)
+                .HasConstraintName("FK_VeXemPhim_GheXemPhim");
 
             entity.HasOne(d => d.MaLcNavigation).WithMany(p => p.VeXemPhims)
                 .HasForeignKey(d => d.MaLc)

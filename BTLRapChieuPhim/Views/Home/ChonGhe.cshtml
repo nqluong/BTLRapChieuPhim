@@ -8,7 +8,7 @@
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<div class="st_bt_top_back_btn st_bt_top_back_btn_seatl float_left">
-					<a href="movie_booking.html"><i class="fas fa-long-arrow-alt-left"></i> &nbsp;Back</a>
+					<a id="backButton"><i class="fas fa-long-arrow-alt-left"></i> &nbsp;Back</a>
 				</div>
 				<div class="cc_ps_quantily_info cc_ps_quantily_info_tecket">
 					<p>Select Ticket</p>
@@ -264,6 +264,8 @@
     $(document).ready(function () {
 		const maLc = @ViewBag.MaLC
 		const maPhim = @ViewBag.MaPhim
+		const tgc = '@ViewBag.Tgc';
+		console.log(tgc)
 		loadShowTTByMovieId(maPhim);
         loadSeats(maLc);
     });
@@ -428,6 +430,10 @@
     console.log("Chi tiết lỗi:", xhr.responseText);
     alert("Lỗi khi lấy thông tin phim từ API. Vui lòng kiểm tra.");
 });}
-	
+	document.getElementById('backButton').addEventListener('click', function (event) {
+		const maPhim = '@ViewBag.MaPhim';
+		window.location.href = `/Home/LichChieu?maPhim=${maPhim}`;
+		
+	});
 
 </script>

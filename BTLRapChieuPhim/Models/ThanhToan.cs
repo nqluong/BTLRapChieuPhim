@@ -9,8 +9,6 @@ public partial class ThanhToan
 
     public string? MaGd { get; set; }
 
-    public string? NoiDung { get; set; }
-
     public string? Hoten { get; set; }
 
     public decimal? ThanhTien { get; set; }
