@@ -7,43 +7,23 @@ using BTLRapChieuPhim.Areas.Admin.Models.PhongChieuModels;
 namespace BTLRapChieuPhim.Areas.API.Controllers
 {
     [Route("api/[controller]")]
-	[ApiController]
-	public class PhongChieuAPIController : ControllerBase
-	{
+    [ApiController]
+    public class PhongChieuAPIController : ControllerBase
+    {
 
         QuanLyRapPhimContext _context = new QuanLyRapPhimContext();
 
         [HttpGet]
-		public IEnumerable<PhongChieuAPI> GetAllPhongChieu()
-		{
-			var phongchieu = (from pc in _context.PhongChieus
-						   join rp in _context.RapPhims on pc.MaRp equals rp.MaRp
-						   
-                           where pc.MaRp == 1
-						   select new PhongChieuAPI
-						   {
-
-							   MaRp = rp.MaRp,
-							   MaPc = pc.MaPc,
-							   TenPc = pc.TenPc,
-							   SucChua = pc.SucChua,
-							   TenRp = rp.TenRp,
-						   }).ToList();
-			return phongchieu;
-		}
-
-        [HttpGet("{maPc}")]
-        public IEnumerable<PhongChieuAPI> GetPhongChieu(int maPc)
+        public IEnumerable<PhongChieuAPI> GetAllPhongChieu()
         {
             var phongchieu = (from pc in _context.PhongChieus
                               join rp in _context.RapPhims on pc.MaRp equals rp.MaRp
-                           
-                              where maPc == pc.MaPc
+
+                              where pc.MaRp == "1"
                               select new PhongChieuAPI
                               {
-                                  
+
                                   MaRp = rp.MaRp,
-                                  
                                   MaPc = pc.MaPc,
                                   TenPc = pc.TenPc,
                                   SucChua = pc.SucChua,
@@ -51,7 +31,27 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                               }).ToList();
             return phongchieu;
         }
-        
+
+        [HttpGet("{maPc}")]
+        public IEnumerable<PhongChieuAPI> GetPhongChieu(string maPc)
+        {
+            var phongchieu = (from pc in _context.PhongChieus
+                              join rp in _context.RapPhims on pc.MaRp equals rp.MaRp
+
+                              where maPc == pc.MaPc
+                              select new PhongChieuAPI
+                              {
+
+                                  MaRp = rp.MaRp,
+
+                                  MaPc = pc.MaPc,
+                                  TenPc = pc.TenPc,
+                                  SucChua = pc.SucChua,
+                                  TenRp = rp.TenRp,
+                              }).ToList();
+            return phongchieu;
+        }
+
 
         [HttpPost]
 
@@ -78,7 +78,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         }
 
         [HttpPut("{maPc}")]
-        public IActionResult UpdatePhongChieu(int maPc, [FromBody] PhongChieuAPI phongChieuUpdated)
+        public IActionResult UpdatePhongChieu(string maPc, [FromBody] PhongChieuAPI phongChieuUpdated)
         {
             if (phongChieuUpdated == null || maPc != phongChieuUpdated.MaPc)
             {
@@ -87,7 +87,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
 
             // Kiểm tra nếu tên phòng chiếu đã tồn tại trong cơ sở dữ liệu (ngoại trừ phòng chiếu hiện tại)
             var existingPhongChieu = _context.PhongChieus
-                .FirstOrDefault(pc => pc.TenPc == phongChieuUpdated.TenPc && pc.MaPc != maPc && pc.MaRp==phongChieuUpdated.MaRp);
+                .FirstOrDefault(pc => pc.TenPc == phongChieuUpdated.TenPc && pc.MaPc != maPc && pc.MaRp == phongChieuUpdated.MaRp);
 
             if (existingPhongChieu != null)
             {
@@ -117,7 +117,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         }
 
         [HttpDelete("{maPc}")]
-        public IActionResult DeletePhongChieu(int maPc)
+        public IActionResult DeletePhongChieu(string maPc)
         {
             var maLCs = _context.LichChieus
                 .Where(lc => lc.MaPc == maPc)
@@ -128,7 +128,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             {
                 // Lấy danh sách vé xem phim dựa trên danh sách maLC
                 var vexemphims = _context.VeXemPhims
-                    .Where(vx => maLCs.Contains((int)vx.MaLc))
+                    .Where(vx => maLCs.Contains(vx.MaLc))
                     .ToList();
 
                 // Xóa danh sách vé xem phim

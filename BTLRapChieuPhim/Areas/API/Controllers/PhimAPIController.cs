@@ -15,28 +15,28 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         public IEnumerable<PhimAPI> GetAllPhim()
         {
             var phim = (from p in _context.Phims
-                              join tl in _context.TheLoais on p.MaTl equals tl.MaTl
-                              join hat in _context.HinhAnhTrailers on p.MaPhim equals hat.MaPhim
-                              select new PhimAPI
-                              {
-                                  MaPhim = p.MaPhim,
-                                  TenPhim = p.TenPhim,
-                                  ThoiLuong = p.ThoiLuong,
-                                  DaoDien = p.DaoDien,
-                                  DoTuoi = p.DoTuoi,
-                                  NuocSx = p.NuocSx,
-                                  MoTa = p.MoTa,
-                                  MaTl = p.MaTl,
-                                  TenTheLoai = tl.TenTheLoai,
-                                  DuongDanAnh = hat.DuongDanAnh,
-                                  DuongDanTrailer = hat.DuongDanTrailer,
-                                  MaHat = hat.MaHat,
-                              }).ToList();
+                        join tl in _context.TheLoais on p.MaTl equals tl.MaTl
+                        join hat in _context.HinhAnhTrailers on p.MaPhim equals hat.MaPhim
+                        select new PhimAPI
+                        {
+                            MaPhim = p.MaPhim,
+                            TenPhim = p.TenPhim,
+                            ThoiLuong = p.ThoiLuong,
+                            DaoDien = p.DaoDien,
+                            DoTuoi = p.DoTuoi,
+                            NuocSx = p.NuocSx,
+                            MoTa = p.MoTa,
+                            MaTl = p.MaTl,
+                            TenTheLoai = tl.TenTheLoai,
+                            DuongDanAnh = hat.DuongDanAnh,
+                            DuongDanTrailer = hat.DuongDanTrailer,
+                            MaHat = hat.MaHat,
+                        }).ToList();
             return phim;
         }
 
         [HttpGet("{maPhim}")]
-        public IEnumerable<PhimAPI> GetPhim(int maPhim)
+        public IEnumerable<PhimAPI> GetPhim(string maPhim)
         {
             var phim = (from p in _context.Phims
                         join tl in _context.TheLoais on p.MaTl equals tl.MaTl
@@ -79,46 +79,46 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                     return BadRequest(new { message = "Mã hình ảnh Trailer đã tồn tại!" });
                 }
 
-				if (phimadd.DoTuoi < 0)
-				{
-					return BadRequest(new { message = "Độ tuổi không hợp lệ!" });
-				}
+                if (phimadd.DoTuoi < 0)
+                {
+                    return BadRequest(new { message = "Độ tuổi không hợp lệ!" });
+                }
 
-				if (phimadd.ThoiLuong <= 0)
-				{
-					return BadRequest(new { message = "Thời lượng phải lớn hơn 0!" });
-				}
+                if (phimadd.ThoiLuong <= 0)
+                {
+                    return BadRequest(new { message = "Thời lượng phải lớn hơn 0!" });
+                }
 
-				if (phimadd.MaPhim <= 0)
-				{
-					return BadRequest(new { message = "Mã phim không được để trống hoặc nhỏ hơn 1!" });
-				}
+                if (phimadd.MaPhim <= 0)
+                {
+                    return BadRequest(new { message = "Mã phim không được để trống hoặc nhỏ hơn 1!" });
+                }
 
-				if (phimadd.MaTl <= 0)
-				{
-					return BadRequest(new { message = "Mã thể loại không được để trống hoặc nhỏ hơn 1!" });
-				}
+                if (phimadd.MaTl <= 0)
+                {
+                    return BadRequest(new { message = "Mã thể loại không được để trống hoặc nhỏ hơn 1!" });
+                }
 
-				if (phimadd.MaHat <= 0)
-				{
-					return BadRequest(new { message = "Mã hình ảnh Trailer không được để trống hoặc nhỏ hơn 1!" });
-				}
+                if (phimadd.MaHat <= 0)
+                {
+                    return BadRequest(new { message = "Mã hình ảnh Trailer không được để trống hoặc nhỏ hơn 1!" });
+                }
 
-				if (string.IsNullOrWhiteSpace(phimadd.DuongDanAnh))
-				{
-					return BadRequest(new { message = "Đường dẫn ảnh không được để trống!" });
-				}
+                if (string.IsNullOrWhiteSpace(phimadd.DuongDanAnh))
+                {
+                    return BadRequest(new { message = "Đường dẫn ảnh không được để trống!" });
+                }
 
-				if (string.IsNullOrWhiteSpace(phimadd.DuongDanTrailer))
-				{
-					return BadRequest(new { message = "Đường dẫn Trailer không được để trống!" });
-				}
+                if (string.IsNullOrWhiteSpace(phimadd.DuongDanTrailer))
+                {
+                    return BadRequest(new { message = "Đường dẫn Trailer không được để trống!" });
+                }
 
-				var phim = new Phim
+                var phim = new Phim
                 {
                     MaPhim = phimadd.MaPhim,
                     TenPhim = phimadd.TenPhim,
-                    MaTl = phimadd.MaTl, 
+                    MaTl = phimadd.MaTl,
                     ThoiLuong = phimadd.ThoiLuong,
                     DaoDien = phimadd.DaoDien,
                     DoTuoi = phimadd.DoTuoi,
@@ -141,7 +141,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         }
 
         [HttpPut("{maPhim}")]
-        public IActionResult UpdatePhim(int maPhim, [FromBody] PhimAPI phimUpdated)
+        public IActionResult UpdatePhim(string maPhim, [FromBody] PhimAPI phimUpdated)
         {
             if (phimUpdated == null || maPhim != phimUpdated.MaPhim)
             {
@@ -189,11 +189,11 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
 
             _context.SaveChanges();
 
-            return NoContent(); 
+            return NoContent();
         }
 
         [HttpDelete("{maPhim}")]
-        public IActionResult DeletePhim(int maPhim)
+        public IActionResult DeletePhim(string maPhim)
         {
             var phim = _context.Phims.Find(maPhim);
             if (phim == null)

@@ -3,7 +3,7 @@
     public class PhimAPI
     {
 
-        public int MaPhim { get; set; }
+        public string? MaPhim { get; set; }
 
         public string? TenPhim { get; set; }
 

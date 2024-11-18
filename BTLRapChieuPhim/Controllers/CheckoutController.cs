@@ -18,7 +18,7 @@ namespace BTLRapChieuPhim.Controllers
 			db = context; 
 		}
 		[HttpPost]
-		public IActionResult Action(int[] selectedSeats,int sove, string tenghe)
+		public IActionResult Action(string[] selectedSeats,int sove, string tenghe)
 		{
 			if (selectedSeats != null && selectedSeats.Length > 0)
 			{
@@ -34,15 +34,15 @@ namespace BTLRapChieuPhim.Controllers
 				return Json(new { success = false, message = "No seats selected!" });
 			}
 		}
-		public async Task<IActionResult> PaymentCallBack(ThanhToan model)
+		public async Task<IActionResult> PaymentCallBack(HoaDon model)
 		{
 			// Lấy phản hồi thanh toán từ Momo
 			var response =  _momoService.PaymentExecuteAsync(HttpContext.Request.Query);
 			var requestquery = HttpContext.Request.Query;
 			// Kiểm tra kết quả giao dịch từ Momo
 			var matk = HttpContext.Session.GetInt32("MaTK");
-			var Ht = db.KhachHangs.Where(x => x.MaTk == matk).Select(x => x.HoTen).FirstOrDefault();
-			var maphim = TempData["Maphim"] as int?;
+			var Ht = db.KhachHangs.Where(x => x.MaTk == matk.ToString()).Select(x => x.HoTen).FirstOrDefault();
+			var maphim = TempData["Maphim"] as string;
 			var anh = db.HinhAnhTrailers.Where(x => x.MaPhim == maphim).Select(x => x.DuongDanAnh).FirstOrDefault();
 			TempData["Anh"] = anh;
 			var ten = db.Phims.Where(x => x.MaPhim == maphim).Select(x => x.TenPhim).FirstOrDefault();
@@ -56,27 +56,27 @@ namespace BTLRapChieuPhim.Controllers
 			{
 				ViewBag.NgayChieu = "Ngày chiếu không có dữ liệu";
 			}
-			var thanhToan = new ThanhToan
+			var thanhToan = new HoaDon
 			{
 				MaGd = requestquery["OrderId"],
-				Hoten = Ht,
-				ThanhTien = decimal.Parse(requestquery["Amount"]),
+				HoTen = Ht,
+				TienTt = decimal.Parse(requestquery["Amount"]),
 				NgayTt = DateTime.Now
 			};
 			if (requestquery["ResultCode"] != "0")
 			{
-				db.ThanhToans.Add(thanhToan);
+				db.HoaDons.Add(thanhToan);
 				await db.SaveChangesAsync();
-				int maTTMoi = thanhToan.MaTt;
+				string maTTMoi = thanhToan.MaHd;
 				
-				if (TempData["MaLc"] is int malc && TempData["maghe"] is int[] selectedSeats)
+				if (TempData["MaLc"] is string malc && TempData["maghe"] is string[] selectedSeats)
 				{
 					foreach (var maghe in selectedSeats)
 					{
 						var ve = db.VeXemPhims.FirstOrDefault(g => g.MaGxp == maghe && g.MaLc==malc);
 						if (ve != null)
 						{
-							ve.TrangThai = "Đã Đặt"; 
+							ve.TrangThai = 1; 
 							ve.MaHd = maTTMoi; 
 						}
 					}

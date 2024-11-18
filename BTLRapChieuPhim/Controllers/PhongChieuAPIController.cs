@@ -16,7 +16,7 @@ namespace BTLRapChieuPhim.Controllers
 		}
 		QuanLyRapPhimContext db = new QuanLyRapPhimContext();
         [HttpGet("byLC/{Malc}")]
-        public IEnumerable<GheXPAPI> GetAllGheXP(int malc)
+        public IEnumerable<GheXPAPI> GetAllGheXP(string malc)
         {
             var ghexp = (from lc in db.LichChieus
                          join pc in db.PhongChieus on lc.MaPc equals pc.MaPc

@@ -61,7 +61,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             {
                 return BadRequest(new { message = "Phim khong ton tai !" });
             }
-            int maLc = GenerateMaLc();
+            string maLc = GenerateMaLc();
 
             lichChieu.MaLc = maLc;
 
@@ -101,7 +101,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         }
 
         [HttpGet("{maLc}")]
-        public IActionResult GetLichChieuByMa(int maLc)
+        public IActionResult GetLichChieuByMa(string maLc)
         {
             var lichChieuQuery = (from lc in _context.LichChieus
                                   join p in _context.Phims on lc.MaPhim equals p.MaPhim

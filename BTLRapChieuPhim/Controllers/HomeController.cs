@@ -28,40 +28,40 @@ namespace BTLRapChieuPhim.Controllers
 			var hinhAnh = ql.HinhAnhTrailers.AsNoTracking().OrderBy(x => x.MaPhim);
                 return View(hinhAnh);
             }
-            [Route("chitietphim")]
-            public IActionResult ChiTietPhim(int maphim)
-            {
-                var phim = ql.Phims.SingleOrDefault(x => x.MaPhim == maphim);
-                var anhphim = ql.HinhAnhTrailers.Where(x => x.MaPhim == maphim).ToList();
-                var theloai = ql.TheLoais.SingleOrDefault(x => x.MaTl == phim.MaTl);
-                ViewBag.anhphim = anhphim;
-                ViewBag.theloai = theloai;
-                return View(phim);
-            }
-            [Route("thongtinrap")]
-            public IActionResult Contact()
-            {
-                var rap = ql.RapPhims.SingleOrDefault(x => x.MaRp == 1);
-                var quanly = ql.TaiKhoans.Where(x => x.MaTk == 1).ToList();
-                ViewBag.quanly = quanly;
-                return View(rap);
-            }
+        [Route("chitietphim")]
+        public IActionResult ChiTietPhim(int maphim)
+        {
+            var phim = ql.Phims.SingleOrDefault(x => x.MaPhim == maphim);
+            var anhphim = ql.HinhAnhTrailers.Where(x => x.MaPhim == maphim).ToList();
+            var theloai = ql.TheLoais.SingleOrDefault(x => x.MaTl == phim.MaTl);
+            ViewBag.anhphim = anhphim;
+            ViewBag.theloai = theloai;
+            return View(phim);
+        }
+        [Route("thongtinrap")]
+        public IActionResult Contact()
+        {
+            var rap = ql.RapPhims.SingleOrDefault(x => x.MaRp == 1);
+            var quanly = ql.TaiKhoans.Where(x => x.MaTk == 1).ToList();
+            ViewBag.quanly = quanly;
+            return View(rap);
+        }
 
 
-            [Route("Privacy")]
+        [Route("Privacy")]
 
             public IActionResult Privacy()
             {
                 return View();
             }
             [Route("lichchieu")] 
-            public IActionResult Lichchieu(int maphim)
+            public IActionResult Lichchieu(string maphim)
             {	
-			ViewBag.MaPhim = maphim;
+			    ViewBag.MaPhim = maphim;
                 return View();
             }
             [Route("chonghe")]
-            public IActionResult ChonGhe(int malc, int maphim, string gio, string tgc)
+            public IActionResult ChonGhe(string malc, string maphim, string gio, string tgc)
             {
 
                 ViewBag.MaLC = malc;
@@ -71,15 +71,15 @@ namespace BTLRapChieuPhim.Controllers
 			return View();
             }
             [Route("checkout")]
-            public IActionResult Checkout(int malc, int maphim, string gio, string tgc)
+            public IActionResult Checkout(string malc, string maphim, string gio, string tgc)
             {
             var matk = HttpContext.Session.GetInt32("MaTK");
-            var Ht = db.KhachHangs.Where(x => x.MaTk == matk).Select(x => x.HoTen).FirstOrDefault();
-                ViewBag.MaLC = malc;
+            var Ht = db.KhachHangs.Where(x => x.MaTk == matk.ToString()).Select(x => x.HoTen).FirstOrDefault();
+            ViewBag.MaLC = malc;
                 ViewBag.MaPhim = maphim;
                 ViewBag.Gio = gio;
                 ViewBag.Tgc = tgc;
-                ViewBag.Hoten = Ht;
+                //ViewBag.Hoten = Ht;
                 TempData["Maphim"] = maphim;
                 TempData["Tgc"] = tgc;
                 TempData["Gio"] = gio;

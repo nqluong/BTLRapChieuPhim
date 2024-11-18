@@ -5,7 +5,7 @@ namespace BTLRapChieuPhim.Models;
 
 public partial class KhachHang
 {
-    public int MaKh { get; set; }
+    public string? MaKh { get; set; }
 
     public string? HoTen { get; set; }
 
@@ -15,11 +15,9 @@ public partial class KhachHang
 
     public string? GioiTinh { get; set; }
 
-    public int? MaTk { get; set; }
+    public string? MaTk { get; set; }
 
     public DateOnly? NgaySinh { get; set; }
-
-    public virtual ICollection<HoaDon> HoaDons { get; set; } = new List<HoaDon>();
 
     public virtual TaiKhoan? MaTkNavigation { get; set; }
 }
