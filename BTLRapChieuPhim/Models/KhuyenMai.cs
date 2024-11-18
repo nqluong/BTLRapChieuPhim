@@ -5,7 +5,7 @@ namespace BTLRapChieuPhim.Models;
 
 public partial class KhuyenMai
 {
-    public int MaKm { get; set; }
+    public string MaKm { get; set; } = null!;
 
     public string? TenKm { get; set; }
 
@@ -13,11 +13,11 @@ public partial class KhuyenMai
 
     public DateOnly? HanKm { get; set; }
 
-    public int? MaPhim { get; set; }
+    public string? MaPhim { get; set; }
 
-    public int? MaQl { get; set; }
+    public string? MaQl { get; set; }
 
-    public decimal? PhanTramKm { get; set; }
+    public int? PhanTramKm { get; set; }
 
     public virtual Phim? MaPhimNavigation { get; set; }
 

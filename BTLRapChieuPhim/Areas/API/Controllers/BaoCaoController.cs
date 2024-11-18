@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace BTLRapChieuPhim.Areas.API.Controllers
 {
-    [Route("api/[controller]")]
+    /*[Route("api/[controller]")]
     [ApiController]
     public class BaoCaoController : ControllerBase
     {
@@ -21,9 +21,6 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                         select new
                         {
                             NgayChieu = lc.ThoiGianChieu,
-                            TienVe = hd.TongTienVe,
-                            TienDoAn = hd.TongTienDa,
-                            TongHd = hd.TongTienVe + hd.TongTienDa
                         };
             var culture = System.Globalization.CultureInfo.InvariantCulture;
             if (!string.IsNullOrEmpty(fromDate) && DateTime.TryParseExact(fromDate, "yyyy/MM/dd", culture, System.Globalization.DateTimeStyles.None, out DateTime startDate))
@@ -138,5 +135,6 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         }
 
 
-    }
+    }*/
 }
+    

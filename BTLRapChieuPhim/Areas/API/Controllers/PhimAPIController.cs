@@ -1,4 +1,4 @@
-﻿using BTLRapChieuPhim.Areas.Admin.Models.PhimModels;
+﻿/*using BTLRapChieuPhim.Areas.Admin.Models.PhimModels;
 using BTLRapChieuPhim.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,7 +11,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
     {
         QuanLyRapPhimContext _context = new QuanLyRapPhimContext();
 
-        [HttpGet]
+        /*[HttpGet]
         public IEnumerable<PhimAPI> GetAllPhim()
         {
             var phim = (from p in _context.Phims
@@ -247,3 +247,4 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         }
     }
 }
+       */

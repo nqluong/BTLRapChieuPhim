@@ -5,7 +5,7 @@ namespace BTLRapChieuPhim.Models;
 
 public partial class DanhGium
 {
-    public int MaDg { get; set; }
+    public string MaDg { get; set; } = null!;
 
     public string? TenDg { get; set; }
 
@@ -13,9 +13,9 @@ public partial class DanhGium
 
     public DateTime? ThoiGianDg { get; set; }
 
-    public int? MaTk { get; set; }
+    public string? MaPhim { get; set; }
 
-    public int? MaPhim { get; set; }
+    public string? MaTk { get; set; }
 
     public virtual Phim? MaPhimNavigation { get; set; }
 

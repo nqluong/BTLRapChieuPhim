@@ -1,4 +1,4 @@
-﻿using BTLRapChieuPhim.Models;
+﻿/*using BTLRapChieuPhim.Models;
 using BTLRapChieuPhim.Models.LichChieuModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -14,7 +14,7 @@ namespace BTLRapChieuPhim.Controllers
 			
 			public static List<TTVe> StoredSeats = new List<TTVe>();
 		}
-		QuanLyRapPhimContext db = new QuanLyRapPhimContext();
+		/*QuanLyRapPhimContext db = new QuanLyRapPhimContext();
         [HttpGet("byLC/{Malc}")]
         public IEnumerable<GheXPAPI> GetAllGheXP(int malc)
         {
@@ -38,4 +38,4 @@ namespace BTLRapChieuPhim.Controllers
         
 
 	}
-}
+}*/

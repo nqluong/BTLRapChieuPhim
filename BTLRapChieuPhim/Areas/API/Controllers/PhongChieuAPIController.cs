@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿/*using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using BTLRapChieuPhim.Models;
 using Microsoft.EntityFrameworkCore;
@@ -163,3 +163,4 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         }
     }
 }
+    */

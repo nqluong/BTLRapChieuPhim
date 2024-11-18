@@ -1,4 +1,4 @@
-﻿using BTLRapChieuPhim.Models;
+﻿/*using BTLRapChieuPhim.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using BTLRapChieuPhim.Areas.Admin.Models;
@@ -13,7 +13,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
     {
         QuanLyRapPhimContext _context = new QuanLyRapPhimContext();
 
-        [HttpGet]
+       /* [HttpGet]
         public IActionResult GetLichChieu(int page = 1, int pageSize = 20)
         {
             var lichChieuQuery = (from lc in _context.LichChieus
@@ -196,4 +196,4 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
 
 
     }
-}
+}*/

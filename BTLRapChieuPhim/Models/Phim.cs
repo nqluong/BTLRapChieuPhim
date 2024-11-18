@@ -5,7 +5,7 @@ namespace BTLRapChieuPhim.Models;
 
 public partial class Phim
 {
-    public int MaPhim { get; set; }
+    public string MaPhim { get; set; } = null!;
 
     public string? TenPhim { get; set; }
 
@@ -19,7 +19,7 @@ public partial class Phim
 
     public string? MoTa { get; set; }
 
-    public int MaTl { get; set; }
+    public string? MaTl { get; set; }
 
     public virtual ICollection<DanhGium> DanhGia { get; set; } = new List<DanhGium>();
 
@@ -29,5 +29,5 @@ public partial class Phim
 
     public virtual ICollection<LichChieu> LichChieus { get; set; } = new List<LichChieu>();
 
-    public virtual TheLoai MaTlNavigation { get; set; } = null!;
+    public virtual TheLoai? MaTlNavigation { get; set; }
 }

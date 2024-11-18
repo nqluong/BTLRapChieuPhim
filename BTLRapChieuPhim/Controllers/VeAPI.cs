@@ -1,4 +1,4 @@
-﻿using BTLRapChieuPhim.Models.LichChieuModels;
+﻿/*using BTLRapChieuPhim.Models.LichChieuModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using static BTLRapChieuPhim.Controllers.PhongChieuAPIController;
@@ -71,3 +71,4 @@ namespace BTLRapChieuPhim.Controllers
 
 	}
 }
+*/

@@ -1,4 +1,4 @@
-﻿using BTLRapChieuPhim.Models;
+﻿/*using BTLRapChieuPhim.Models;
 using BTLRapChieuPhim.Models.LichChieuModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,7 +13,7 @@ namespace BTLRapChieuPhim.Controllers
     public class LichChieuAPIController : ControllerBase
     {
         QuanLyRapPhimContext db = new QuanLyRapPhimContext();
-        [HttpGet]
+        /*[HttpGet]
         public IEnumerable<LichChieuAPI> GetAllLichChieu()
         {
             var lichchieu = (from lc in db.LichChieus
@@ -121,3 +121,4 @@ namespace BTLRapChieuPhim.Controllers
 
 }
 
+*/
