@@ -1,6 +1,6 @@
 USE [QuanLyRapPhim]
 GO
-/****** Object:  Table [dbo].[DanhGia]    Script Date: 11/18/2024 10:22:00 PM ******/
+/****** Object:  Table [dbo].[DanhGia]    Script Date: 11/18/2024 11:39:03 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -18,7 +18,7 @@ CREATE TABLE [dbo].[DanhGia](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[GheXemPhim]    Script Date: 11/18/2024 10:22:00 PM ******/
+/****** Object:  Table [dbo].[GheXemPhim]    Script Date: 11/18/2024 11:39:03 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -34,7 +34,7 @@ CREATE TABLE [dbo].[GheXemPhim](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[HinhAnhTrailer]    Script Date: 11/18/2024 10:22:00 PM ******/
+/****** Object:  Table [dbo].[HinhAnhTrailer]    Script Date: 11/18/2024 11:39:03 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -50,7 +50,7 @@ CREATE TABLE [dbo].[HinhAnhTrailer](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[HoaDon]    Script Date: 11/18/2024 10:22:00 PM ******/
+/****** Object:  Table [dbo].[HoaDon]    Script Date: 11/18/2024 11:39:03 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -68,7 +68,7 @@ CREATE TABLE [dbo].[HoaDon](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[KhachHang]    Script Date: 11/18/2024 10:22:00 PM ******/
+/****** Object:  Table [dbo].[KhachHang]    Script Date: 11/18/2024 11:39:03 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -87,7 +87,7 @@ CREATE TABLE [dbo].[KhachHang](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[KhuyenMai]    Script Date: 11/18/2024 10:22:00 PM ******/
+/****** Object:  Table [dbo].[KhuyenMai]    Script Date: 11/18/2024 11:39:03 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -106,7 +106,7 @@ CREATE TABLE [dbo].[KhuyenMai](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[LichChieu]    Script Date: 11/18/2024 10:22:00 PM ******/
+/****** Object:  Table [dbo].[LichChieu]    Script Date: 11/18/2024 11:39:03 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -122,7 +122,7 @@ CREATE TABLE [dbo].[LichChieu](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Phim]    Script Date: 11/18/2024 10:22:00 PM ******/
+/****** Object:  Table [dbo].[Phim]    Script Date: 11/18/2024 11:39:03 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -142,7 +142,7 @@ CREATE TABLE [dbo].[Phim](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[PhongChieu]    Script Date: 11/18/2024 10:22:00 PM ******/
+/****** Object:  Table [dbo].[PhongChieu]    Script Date: 11/18/2024 11:39:03 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -158,7 +158,7 @@ CREATE TABLE [dbo].[PhongChieu](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[QuanLy]    Script Date: 11/18/2024 10:22:00 PM ******/
+/****** Object:  Table [dbo].[QuanLy]    Script Date: 11/18/2024 11:39:03 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -176,7 +176,7 @@ CREATE TABLE [dbo].[QuanLy](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[RapPhim]    Script Date: 11/18/2024 10:22:00 PM ******/
+/****** Object:  Table [dbo].[RapPhim]    Script Date: 11/18/2024 11:39:03 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -193,7 +193,7 @@ CREATE TABLE [dbo].[RapPhim](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TaiKhoan]    Script Date: 11/18/2024 10:22:00 PM ******/
+/****** Object:  Table [dbo].[TaiKhoan]    Script Date: 11/18/2024 11:39:03 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -211,7 +211,7 @@ CREATE TABLE [dbo].[TaiKhoan](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TheLoai]    Script Date: 11/18/2024 10:22:00 PM ******/
+/****** Object:  Table [dbo].[TheLoai]    Script Date: 11/18/2024 11:39:03 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -226,7 +226,7 @@ CREATE TABLE [dbo].[TheLoai](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[VeXemPhim]    Script Date: 11/18/2024 10:22:00 PM ******/
+/****** Object:  Table [dbo].[VeXemPhim]    Script Date: 11/18/2024 11:39:03 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -324,6 +324,696 @@ INSERT [dbo].[DanhGia] ([MaDG], [TenDG], [NoiDung], [ThoiGianDG], [MaPhim], [MaT
 GO
 INSERT [dbo].[DanhGia] ([MaDG], [TenDG], [NoiDung], [ThoiGianDG], [MaPhim], [MaTK]) VALUES (N'DG9', N'Bộ phim kỳ ảo', N'Khám phá những thế giới huyền bí.', CAST(N'2023-10-05T12:00:00.000' AS DateTime), N'MP13', N'TK13')
 GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP1', N'VIP', N'PC1', 1)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP10', N'VIP', N'PC1', 10)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP100', N'Thường', N'PC2', 31)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP101', N'Thường', N'PC2', 32)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP102', N'Thường', N'PC2', 33)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP103', N'Thường', N'PC2', 34)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP104', N'Thường', N'PC2', 35)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP105', N'Thường', N'PC2', 36)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP106', N'Thường', N'PC2', 37)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP107', N'Thường', N'PC2', 38)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP108', N'Thường', N'PC2', 39)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP109', N'Thường', N'PC2', 40)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP11', N'VIP', N'PC1', 11)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP110', N'Thường', N'PC2', 41)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP111', N'Thường', N'PC2', 42)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP112', N'Thường', N'PC2', 43)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP113', N'Thường', N'PC2', 44)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP114', N'Thường', N'PC2', 45)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP115', N'Thường', N'PC2', 46)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP116', N'Thường', N'PC2', 47)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP117', N'Thường', N'PC2', 48)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP118', N'Thường', N'PC2', 49)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP119', N'Thường', N'PC2', 50)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP12', N'VIP', N'PC1', 12)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP120', N'Thường', N'PC2', 51)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP121', N'Thường', N'PC2', 52)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP122', N'Thường', N'PC2', 53)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP123', N'Thường', N'PC2', 54)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP124', N'Thường', N'PC2', 55)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP125', N'Thường', N'PC2', 56)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP126', N'Thường', N'PC2', 57)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP127', N'Thường', N'PC2', 58)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP128', N'Thường', N'PC2', 59)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP129', N'Thường', N'PC2', 60)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP13', N'VIP', N'PC1', 13)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP130', N'Thường', N'PC2', 61)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP131', N'Thường', N'PC2', 62)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP132', N'Thường', N'PC2', 63)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP133', N'Thường', N'PC2', 64)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP134', N'Thường', N'PC2', 65)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP135', N'Thường', N'PC2', 66)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP136', N'Thường', N'PC2', 67)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP137', N'Thường', N'PC2', 68)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP138', N'Thường', N'PC2', 69)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP139', N'VIP', N'PC3', 1)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP14', N'VIP', N'PC1', 14)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP140', N'VIP', N'PC3', 2)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP141', N'VIP', N'PC3', 3)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP142', N'VIP', N'PC3', 4)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP143', N'VIP', N'PC3', 5)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP144', N'VIP', N'PC3', 6)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP145', N'VIP', N'PC3', 7)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP146', N'VIP', N'PC3', 8)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP147', N'VIP', N'PC3', 9)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP148', N'VIP', N'PC3', 10)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP149', N'VIP', N'PC3', 11)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP15', N'VIP', N'PC1', 15)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP150', N'VIP', N'PC3', 12)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP151', N'VIP', N'PC3', 13)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP152', N'VIP', N'PC3', 14)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP153', N'VIP', N'PC3', 15)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP154', N'VIP', N'PC3', 16)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP155', N'VIP', N'PC3', 17)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP156', N'VIP', N'PC3', 18)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP157', N'VIP', N'PC3', 19)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP158', N'VIP', N'PC3', 20)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP159', N'VIP', N'PC3', 21)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP16', N'VIP', N'PC1', 16)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP160', N'VIP', N'PC3', 22)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP161', N'VIP', N'PC3', 23)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP162', N'Thường', N'PC3', 24)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP163', N'Thường', N'PC3', 25)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP164', N'Thường', N'PC3', 26)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP165', N'Thường', N'PC3', 27)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP166', N'Thường', N'PC3', 28)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP167', N'Thường', N'PC3', 29)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP168', N'Thường', N'PC3', 30)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP169', N'Thường', N'PC3', 31)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP17', N'VIP', N'PC1', 17)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP170', N'Thường', N'PC3', 32)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP171', N'Thường', N'PC3', 33)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP172', N'Thường', N'PC3', 34)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP173', N'Thường', N'PC3', 35)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP174', N'Thường', N'PC3', 36)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP175', N'Thường', N'PC3', 37)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP176', N'Thường', N'PC3', 38)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP177', N'Thường', N'PC3', 39)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP178', N'Thường', N'PC3', 40)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP179', N'Thường', N'PC3', 41)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP18', N'VIP', N'PC1', 18)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP180', N'Thường', N'PC3', 42)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP181', N'Thường', N'PC3', 43)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP182', N'Thường', N'PC3', 44)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP183', N'Thường', N'PC3', 45)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP184', N'Thường', N'PC3', 46)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP185', N'Thường', N'PC3', 47)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP186', N'Thường', N'PC3', 48)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP187', N'Thường', N'PC3', 49)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP188', N'Thường', N'PC3', 50)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP189', N'Thường', N'PC3', 51)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP19', N'VIP', N'PC1', 19)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP190', N'Thường', N'PC3', 52)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP191', N'Thường', N'PC3', 53)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP192', N'Thường', N'PC3', 54)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP193', N'Thường', N'PC3', 55)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP194', N'Thường', N'PC3', 56)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP195', N'Thường', N'PC3', 57)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP196', N'Thường', N'PC3', 58)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP197', N'Thường', N'PC3', 59)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP198', N'Thường', N'PC3', 60)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP199', N'Thường', N'PC3', 61)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP2', N'VIP', N'PC1', 2)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP20', N'VIP', N'PC1', 20)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP200', N'Thường', N'PC3', 62)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP201', N'Thường', N'PC3', 63)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP202', N'Thường', N'PC3', 64)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP203', N'Thường', N'PC3', 65)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP204', N'Thường', N'PC3', 66)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP205', N'Thường', N'PC3', 67)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP206', N'Thường', N'PC3', 68)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP207', N'Thường', N'PC3', 69)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP208', N'VIP', N'PC4', 1)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP209', N'VIP', N'PC4', 2)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP21', N'VIP', N'PC1', 21)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP210', N'VIP', N'PC4', 3)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP211', N'VIP', N'PC4', 4)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP212', N'VIP', N'PC4', 5)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP213', N'VIP', N'PC4', 6)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP214', N'VIP', N'PC4', 7)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP215', N'VIP', N'PC4', 8)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP216', N'VIP', N'PC4', 9)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP217', N'VIP', N'PC4', 10)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP218', N'VIP', N'PC4', 11)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP219', N'VIP', N'PC4', 12)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP22', N'VIP', N'PC1', 22)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP220', N'VIP', N'PC4', 13)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP221', N'VIP', N'PC4', 14)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP222', N'VIP', N'PC4', 15)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP223', N'VIP', N'PC4', 16)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP224', N'VIP', N'PC4', 17)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP225', N'VIP', N'PC4', 18)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP226', N'VIP', N'PC4', 19)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP227', N'VIP', N'PC4', 20)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP228', N'VIP', N'PC4', 21)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP229', N'VIP', N'PC4', 22)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP23', N'VIP', N'PC1', 23)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP230', N'VIP', N'PC4', 23)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP231', N'Thường', N'PC4', 24)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP232', N'Thường', N'PC4', 25)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP233', N'Thường', N'PC4', 26)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP234', N'Thường', N'PC4', 27)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP235', N'Thường', N'PC4', 28)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP236', N'Thường', N'PC4', 29)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP237', N'Thường', N'PC4', 30)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP238', N'Thường', N'PC4', 31)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP239', N'Thường', N'PC4', 32)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP24', N'Thường', N'PC1', 24)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP240', N'Thường', N'PC4', 33)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP241', N'Thường', N'PC4', 34)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP242', N'Thường', N'PC4', 35)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP243', N'Thường', N'PC4', 36)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP244', N'Thường', N'PC4', 37)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP245', N'Thường', N'PC4', 38)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP246', N'Thường', N'PC4', 39)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP247', N'Thường', N'PC4', 40)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP248', N'Thường', N'PC4', 41)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP249', N'Thường', N'PC4', 42)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP25', N'Thường', N'PC1', 25)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP250', N'Thường', N'PC4', 43)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP251', N'Thường', N'PC4', 44)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP252', N'Thường', N'PC4', 45)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP253', N'Thường', N'PC4', 46)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP254', N'Thường', N'PC4', 47)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP255', N'Thường', N'PC4', 48)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP256', N'Thường', N'PC4', 49)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP257', N'Thường', N'PC4', 50)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP258', N'Thường', N'PC4', 51)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP259', N'Thường', N'PC4', 52)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP26', N'Thường', N'PC1', 26)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP260', N'Thường', N'PC4', 53)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP261', N'Thường', N'PC4', 54)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP262', N'Thường', N'PC4', 55)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP263', N'Thường', N'PC4', 56)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP264', N'Thường', N'PC4', 57)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP265', N'Thường', N'PC4', 58)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP266', N'Thường', N'PC4', 59)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP267', N'Thường', N'PC4', 60)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP268', N'Thường', N'PC4', 61)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP269', N'Thường', N'PC4', 62)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP27', N'Thường', N'PC1', 27)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP270', N'Thường', N'PC4', 63)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP271', N'Thường', N'PC4', 64)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP272', N'Thường', N'PC4', 65)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP273', N'Thường', N'PC4', 66)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP274', N'Thường', N'PC4', 67)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP275', N'Thường', N'PC4', 68)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP276', N'Thường', N'PC4', 69)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP277', N'VIP', N'PC5', 1)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP278', N'VIP', N'PC5', 2)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP279', N'VIP', N'PC5', 3)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP28', N'Thường', N'PC1', 28)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP280', N'VIP', N'PC5', 4)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP281', N'VIP', N'PC5', 5)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP282', N'VIP', N'PC5', 6)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP283', N'VIP', N'PC5', 7)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP284', N'VIP', N'PC5', 8)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP285', N'VIP', N'PC5', 9)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP286', N'VIP', N'PC5', 10)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP287', N'VIP', N'PC5', 11)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP288', N'VIP', N'PC5', 12)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP289', N'VIP', N'PC5', 13)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP29', N'Thường', N'PC1', 29)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP290', N'VIP', N'PC5', 14)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP291', N'VIP', N'PC5', 15)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP292', N'VIP', N'PC5', 16)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP293', N'VIP', N'PC5', 17)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP294', N'VIP', N'PC5', 18)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP295', N'VIP', N'PC5', 19)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP296', N'VIP', N'PC5', 20)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP297', N'VIP', N'PC5', 21)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP298', N'VIP', N'PC5', 22)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP299', N'VIP', N'PC5', 23)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP3', N'VIP', N'PC1', 3)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP30', N'Thường', N'PC1', 30)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP300', N'Thường', N'PC5', 24)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP301', N'Thường', N'PC5', 25)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP302', N'Thường', N'PC5', 26)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP303', N'Thường', N'PC5', 27)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP304', N'Thường', N'PC5', 28)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP305', N'Thường', N'PC5', 29)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP306', N'Thường', N'PC5', 30)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP307', N'Thường', N'PC5', 31)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP308', N'Thường', N'PC5', 32)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP309', N'Thường', N'PC5', 33)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP31', N'Thường', N'PC1', 31)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP310', N'Thường', N'PC5', 34)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP311', N'Thường', N'PC5', 35)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP312', N'Thường', N'PC5', 36)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP313', N'Thường', N'PC5', 37)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP314', N'Thường', N'PC5', 38)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP315', N'Thường', N'PC5', 39)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP316', N'Thường', N'PC5', 40)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP317', N'Thường', N'PC5', 41)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP318', N'Thường', N'PC5', 42)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP319', N'Thường', N'PC5', 43)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP32', N'Thường', N'PC1', 32)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP320', N'Thường', N'PC5', 44)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP321', N'Thường', N'PC5', 45)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP322', N'Thường', N'PC5', 46)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP323', N'Thường', N'PC5', 47)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP324', N'Thường', N'PC5', 48)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP325', N'Thường', N'PC5', 49)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP326', N'Thường', N'PC5', 50)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP327', N'Thường', N'PC5', 51)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP328', N'Thường', N'PC5', 52)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP329', N'Thường', N'PC5', 53)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP33', N'Thường', N'PC1', 33)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP330', N'Thường', N'PC5', 54)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP331', N'Thường', N'PC5', 55)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP332', N'Thường', N'PC5', 56)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP333', N'Thường', N'PC5', 57)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP334', N'Thường', N'PC5', 58)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP335', N'Thường', N'PC5', 59)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP336', N'Thường', N'PC5', 60)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP337', N'Thường', N'PC5', 61)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP338', N'Thường', N'PC5', 62)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP339', N'Thường', N'PC5', 63)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP34', N'Thường', N'PC1', 34)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP340', N'Thường', N'PC5', 64)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP341', N'Thường', N'PC5', 65)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP342', N'Thường', N'PC5', 66)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP343', N'Thường', N'PC5', 67)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP344', N'Thường', N'PC5', 68)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP345', N'Thường', N'PC5', 69)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP35', N'Thường', N'PC1', 35)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP36', N'Thường', N'PC1', 36)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP37', N'Thường', N'PC1', 37)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP38', N'Thường', N'PC1', 38)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP39', N'Thường', N'PC1', 39)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP4', N'VIP', N'PC1', 4)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP40', N'Thường', N'PC1', 40)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP41', N'Thường', N'PC1', 41)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP42', N'Thường', N'PC1', 42)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP43', N'Thường', N'PC1', 43)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP44', N'Thường', N'PC1', 44)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP45', N'Thường', N'PC1', 45)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP46', N'Thường', N'PC1', 46)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP47', N'Thường', N'PC1', 47)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP48', N'Thường', N'PC1', 48)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP49', N'Thường', N'PC1', 49)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP5', N'VIP', N'PC1', 5)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP50', N'Thường', N'PC1', 50)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP51', N'Thường', N'PC1', 51)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP52', N'Thường', N'PC1', 52)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP53', N'Thường', N'PC1', 53)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP54', N'Thường', N'PC1', 54)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP55', N'Thường', N'PC1', 55)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP56', N'Thường', N'PC1', 56)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP57', N'Thường', N'PC1', 57)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP58', N'Thường', N'PC1', 58)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP59', N'Thường', N'PC1', 59)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP6', N'VIP', N'PC1', 6)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP60', N'Thường', N'PC1', 60)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP61', N'Thường', N'PC1', 61)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP62', N'Thường', N'PC1', 62)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP63', N'Thường', N'PC1', 63)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP64', N'Thường', N'PC1', 64)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP65', N'Thường', N'PC1', 65)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP66', N'Thường', N'PC1', 66)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP67', N'Thường', N'PC1', 67)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP68', N'Thường', N'PC1', 68)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP69', N'Thường', N'PC1', 69)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP7', N'VIP', N'PC1', 7)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP70', N'VIP', N'PC2', 1)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP71', N'VIP', N'PC2', 2)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP72', N'VIP', N'PC2', 3)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP73', N'VIP', N'PC2', 4)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP74', N'VIP', N'PC2', 5)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP75', N'VIP', N'PC2', 6)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP76', N'VIP', N'PC2', 7)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP77', N'VIP', N'PC2', 8)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP78', N'VIP', N'PC2', 9)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP79', N'VIP', N'PC2', 10)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP8', N'VIP', N'PC1', 8)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP80', N'VIP', N'PC2', 11)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP81', N'VIP', N'PC2', 12)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP82', N'VIP', N'PC2', 13)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP83', N'VIP', N'PC2', 14)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP84', N'VIP', N'PC2', 15)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP85', N'VIP', N'PC2', 16)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP86', N'VIP', N'PC2', 17)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP87', N'VIP', N'PC2', 18)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP88', N'VIP', N'PC2', 19)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP89', N'VIP', N'PC2', 20)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP9', N'VIP', N'PC1', 9)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP90', N'VIP', N'PC2', 21)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP91', N'VIP', N'PC2', 22)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP92', N'VIP', N'PC2', 23)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP93', N'Thường', N'PC2', 24)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP94', N'Thường', N'PC2', 25)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP95', N'Thường', N'PC2', 26)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP96', N'Thường', N'PC2', 27)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP97', N'Thường', N'PC2', 28)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP98', N'Thường', N'PC2', 29)
+GO
+INSERT [dbo].[GheXemPhim] ([MaGXP], [LoaiGhe], [MaPC], [Ghe]) VALUES (N'GXP99', N'Thường', N'PC2', 30)
+GO
 INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (N'HAT1', N'AP1.jpg', N'Trailer 1.mp4', N'MP1')
 GO
 INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (N'HAT10', N'AP10.jpg', N'Trailer 10.mp4', N'MP10')
@@ -364,41 +1054,41 @@ INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhi
 GO
 INSERT [dbo].[HinhAnhTrailer] ([MaHAT], [DuongDanAnh], [DuongDanTrailer], [MaPhim]) VALUES (N'HAT9', N'AP9.jpg', N'Trailer 9.mp4', N'MP9')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD1       ', CAST(400000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD1       ', N'KH1       ', N'Nguyễn G  ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD1       ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD1       ', N'KH1       ', N'Nguyễn G  ')
 GO
 INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD10      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD10      ', N'KH10      ', N'Hoàng P   ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD11      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD11      ', N'KH11      ', N'Nguyễn Q  ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD11      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD11      ', N'KH11      ', N'Nguyễn Q  ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD12      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD12      ', N'KH12      ', N'Trần R    ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD12      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD12      ', N'KH12      ', N'Trần R    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD13      ', CAST(1000000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD13      ', N'KH13      ', N'Lê S      ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD13      ', CAST(2000000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD13      ', N'KH13      ', N'Lê S      ')
 GO
 INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD14      ', CAST(400000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD14      ', N'KH14      ', N'Phạm T    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD15      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD15      ', N'KH15      ', N'Hoàng U   ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD15      ', CAST(400000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD15      ', N'KH15      ', N'Hoàng U   ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD16      ', CAST(1000000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD16      ', N'KH1       ', N'Nguyễn G  ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD16      ', CAST(1500000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD16      ', N'KH1       ', N'Nguyễn G  ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD17      ', CAST(300000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD17      ', N'KH2       ', N'Trần H    ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD17      ', CAST(600000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD17      ', N'KH2       ', N'Trần H    ')
 GO
 INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD18      ', CAST(800000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD18      ', N'KH3       ', N'Lê I      ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD19      ', CAST(600000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD19      ', N'KH4       ', N'Phạm J    ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD19      ', CAST(1200000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD19      ', N'KH4       ', N'Phạm J    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD2       ', CAST(600000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD2       ', N'KH2       ', N'Trần H    ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD2       ', CAST(300000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD2       ', N'KH2       ', N'Trần H    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD20      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD20      ', N'KH5       ', N'Hoàng K   ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD20      ', CAST(400000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD20      ', N'KH5       ', N'Hoàng K   ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD21      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD21      ', N'KH6       ', N'Nguyễn L  ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD21      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD21      ', N'KH6       ', N'Nguyễn L  ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD22      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD22      ', N'KH7       ', N'Trần M    ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD22      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD22      ', N'KH7       ', N'Trần M    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD23      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD23      ', N'KH8       ', N'Lê N      ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD23      ', CAST(300000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD23      ', N'KH8       ', N'Lê N      ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD24      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD24      ', N'KH9       ', N'Phạm O    ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD24      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD24      ', N'KH9       ', N'Phạm O    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD25      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD25      ', N'KH10      ', N'Hoàng P   ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD25      ', CAST(300000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD25      ', N'KH10      ', N'Hoàng P   ')
 GO
 INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD26      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD26      ', N'KH11      ', N'Nguyễn Q  ')
 GO
@@ -408,77 +1098,77 @@ INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALU
 GO
 INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD29      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD29      ', N'KH14      ', N'Phạm T    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD3       ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD3       ', N'KH3       ', N'Lê I      ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD3       ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD3       ', N'KH3       ', N'Lê I      ')
 GO
 INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD30      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'GD30      ', N'KH15      ', N'Hoàng U   ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD31      ', CAST(2000000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD31      ', N'KH1       ', N'Nguyễn G  ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD31      ', CAST(3000000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD31      ', N'KH1       ', N'Nguyễn G  ')
 GO
 INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD32      ', CAST(2000000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD32      ', N'KH2       ', N'Trần H    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD33      ', CAST(2300000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD33      ', N'KH3       ', N'Lê I      ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD33      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD33      ', N'KH3       ', N'Lê I      ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD34      ', CAST(500000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD34      ', N'KH4       ', N'Phạm J    ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD34      ', CAST(1000000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD34      ', N'KH4       ', N'Phạm J    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD35      ', CAST(1000000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD35      ', N'KH5       ', N'Hoàng K   ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD35      ', CAST(500000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD35      ', N'KH5       ', N'Hoàng K   ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD36      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD36      ', N'KH6       ', N'Nguyễn L  ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD36      ', CAST(400000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD36      ', N'KH6       ', N'Nguyễn L  ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD37      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD37      ', N'KH7       ', N'Trần M    ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD37      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD37      ', N'KH7       ', N'Trần M    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD38      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD38      ', N'KH8       ', N'Lê N      ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD38      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD38      ', N'KH8       ', N'Lê N      ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD39      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD39      ', N'KH9       ', N'Phạm O    ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD39      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD39      ', N'KH9       ', N'Phạm O    ')
 GO
 INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD4       ', CAST(500000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD4       ', N'KH4       ', N'Phạm J    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD40      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD40      ', N'KH10      ', N'Hoàng P   ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD40      ', CAST(300000 AS Decimal(18, 0)), CAST(N'2024-11-13T00:00:00.000' AS DateTime), N'GD40      ', N'KH10      ', N'Hoàng P   ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD41      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-14T00:00:00.000' AS DateTime), N'GD41      ', N'KH11      ', N'Nguyễn Q  ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD41      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-14T00:00:00.000' AS DateTime), N'GD41      ', N'KH11      ', N'Nguyễn Q  ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD42      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-14T00:00:00.000' AS DateTime), N'GD42      ', N'KH12      ', N'Trần R    ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD42      ', CAST(300000 AS Decimal(18, 0)), CAST(N'2024-11-14T00:00:00.000' AS DateTime), N'GD42      ', N'KH12      ', N'Trần R    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD43      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-14T00:00:00.000' AS DateTime), N'GD43      ', N'KH13      ', N'Lê S      ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD43      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-14T00:00:00.000' AS DateTime), N'GD43      ', N'KH13      ', N'Lê S      ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD44      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-14T00:00:00.000' AS DateTime), N'GD44      ', N'KH14      ', N'Phạm T    ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD44      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-14T00:00:00.000' AS DateTime), N'GD44      ', N'KH14      ', N'Phạm T    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD45      ', CAST(600000 AS Decimal(18, 0)), CAST(N'2024-11-14T00:00:00.000' AS DateTime), N'GD45      ', N'KH15      ', N'Hoàng U   ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD45      ', CAST(900000 AS Decimal(18, 0)), CAST(N'2024-11-14T00:00:00.000' AS DateTime), N'GD45      ', N'KH15      ', N'Hoàng U   ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD46      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD46      ', N'KH1       ', N'Nguyễn G  ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD46      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD46      ', N'KH1       ', N'Nguyễn G  ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD47      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD47      ', N'KH2       ', N'Trần H    ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD47      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD47      ', N'KH2       ', N'Trần H    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD48      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD48      ', N'KH3       ', N'Lê I      ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD48      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD48      ', N'KH3       ', N'Lê I      ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD49      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD49      ', N'KH4       ', N'Phạm J    ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD49      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD49      ', N'KH4       ', N'Phạm J    ')
 GO
 INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD5       ', CAST(400000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD5       ', N'KH5       ', N'Hoàng K   ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD50      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD50      ', N'KH5       ', N'Hoàng K   ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD50      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD50      ', N'KH5       ', N'Hoàng K   ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD51      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD51      ', N'KH6       ', N'Nguyễn L  ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD51      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD51      ', N'KH6       ', N'Nguyễn L  ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD52      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD52      ', N'KH7       ', N'Trần M    ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD52      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD52      ', N'KH7       ', N'Trần M    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD53      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD53      ', N'KH8       ', N'Lê N      ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD53      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD53      ', N'KH8       ', N'Lê N      ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD54      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD54      ', N'KH9       ', N'Phạm O    ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD54      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD54      ', N'KH9       ', N'Phạm O    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD55      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD55      ', N'KH10      ', N'Hoàng P   ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD55      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD55      ', N'KH10      ', N'Hoàng P   ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD56      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD56      ', N'KH11      ', N'Nguyễn Q  ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD56      ', CAST(300000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD56      ', N'KH11      ', N'Nguyễn Q  ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD57      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD57      ', N'KH12      ', N'Trần R    ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD57      ', CAST(300000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD57      ', N'KH12      ', N'Trần R    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD58      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD58      ', N'KH13      ', N'Lê S      ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD58      ', CAST(300000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD58      ', N'KH13      ', N'Lê S      ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD59      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD59      ', N'KH14      ', N'Phạm T    ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD59      ', CAST(400000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD59      ', N'KH14      ', N'Phạm T    ')
 GO
 INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD6       ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD6       ', N'KH6       ', N'Nguyễn L  ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD60      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD60      ', N'KH15      ', N'Hoàng U   ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD60      ', CAST(500000 AS Decimal(18, 0)), CAST(N'2024-11-15T00:00:00.000' AS DateTime), N'GD60      ', N'KH15      ', N'Hoàng U   ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD61      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-19T00:00:00.000' AS DateTime), N'GD61      ', N'KH1       ', N'Nguyễn G  ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD61      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-19T00:00:00.000' AS DateTime), N'GD61      ', N'KH1       ', N'Nguyễn G  ')
 GO
 INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD62      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-19T00:00:00.000' AS DateTime), N'GD62      ', N'KH2       ', N'Trần H    ')
 GO
@@ -486,11 +1176,11 @@ INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALU
 GO
 INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD64      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-19T00:00:00.000' AS DateTime), N'GD64      ', N'KH4       ', N'Phạm J    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD65      ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-19T00:00:00.000' AS DateTime), N'GD65      ', N'KH5       ', N'Hoàng K   ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD65      ', CAST(200000 AS Decimal(18, 0)), CAST(N'2024-11-19T00:00:00.000' AS DateTime), N'GD65      ', N'KH5       ', N'Hoàng K   ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD7       ', CAST(400000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD7       ', N'KH7       ', N'Trần M    ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD7       ', CAST(900000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD7       ', N'KH7       ', N'Trần M    ')
 GO
-INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD8       ', CAST(300000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD8       ', N'KH8       ', N'Lê N      ')
+INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD8       ', CAST(600000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD8       ', N'KH8       ', N'Lê N      ')
 GO
 INSERT [dbo].[HoaDon] ([MaHD], [TienTT], [NgayTT], [MaGD], [MaKH], [HoTen]) VALUES (N'HD9       ', CAST(100000 AS Decimal(18, 0)), CAST(N'2024-11-11T00:00:00.000' AS DateTime), N'GD9       ', N'KH9       ', N'Phạm O    ')
 GO
@@ -808,6 +1498,11046 @@ INSERT [dbo].[TheLoai] ([MaTL], [TenTheLoai], [MoTa]) VALUES (N'TL8', N'Hài hư
 GO
 INSERT [dbo].[TheLoai] ([MaTL], [TenTheLoai], [MoTa]) VALUES (N'TL9', N'Võ thuật', N'Phim võ thuật với các cảnh chiến đấu đẹp mắt.')
 GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1', CAST(100000 AS Decimal(18, 0)), N'HD1', N'LC1', N'GXP1', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP10', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP10', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP100', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC2', N'GXP100', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1000', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP310', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1001', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP311', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1002', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP312', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1003', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP313', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1004', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP314', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1005', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP315', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1006', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP316', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1007', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP317', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1008', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP318', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1009', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP319', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP101', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP101', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1010', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP320', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1011', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP321', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1012', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP322', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1013', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP323', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1014', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP324', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1015', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP325', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1016', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP326', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1017', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP327', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1018', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP328', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1019', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP329', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP102', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP102', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1020', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP330', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1021', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP331', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1022', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP332', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1023', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP333', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1024', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP334', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1025', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP335', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1026', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP336', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1027', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP337', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1028', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP338', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1029', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP339', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP103', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP103', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1030', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP340', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1031', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP341', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1032', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP342', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1033', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP343', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1034', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP344', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1035', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP345', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1036', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP1', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1037', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP2', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1038', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP3', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1039', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP4', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP104', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP104', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1040', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP5', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1041', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP6', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1042', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP7', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1043', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP8', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1044', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP9', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1045', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP10', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1046', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP11', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1047', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP12', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1048', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP13', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1049', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP14', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP105', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP105', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1050', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP15', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1051', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP16', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1052', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP17', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1053', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP18', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1054', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP19', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1055', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP20', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1056', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP21', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1057', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP22', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1058', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP23', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1059', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP24', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP106', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP106', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1060', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP25', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1061', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP26', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1062', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP27', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1063', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP28', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1064', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP29', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1065', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP30', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1066', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP31', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1067', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP32', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1068', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP33', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1069', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP34', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP107', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP107', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1070', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP35', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1071', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP36', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1072', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP37', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1073', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP38', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1074', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP39', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1075', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP40', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1076', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP41', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1077', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP42', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1078', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP43', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1079', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP44', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP108', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP108', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1080', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP45', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1081', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP46', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1082', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP47', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1083', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP48', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1084', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP49', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1085', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP50', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1086', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP51', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1087', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP52', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1088', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP53', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1089', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP54', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP109', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP109', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1090', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP55', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1091', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP56', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1092', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP57', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1093', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP58', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1094', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP59', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1095', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP60', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1096', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP61', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1097', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP62', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1098', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP63', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1099', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP64', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP11', CAST(100000 AS Decimal(18, 0)), N'HD4', N'LC1', N'GXP11', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP110', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP110', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1100', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP65', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1101', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP66', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1102', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP67', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1103', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP68', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1104', CAST(100000 AS Decimal(18, 0)), NULL, N'LC16', N'GXP69', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1105', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP70', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1106', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP71', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1107', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP72', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1108', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP73', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1109', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP74', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP111', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP111', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1110', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP75', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1111', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP76', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1112', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP77', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1113', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP78', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1114', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP79', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1115', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP80', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1116', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP81', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1117', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP82', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1118', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP83', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1119', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP84', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP112', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP112', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1120', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP85', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1121', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP86', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1122', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP87', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1123', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP88', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1124', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP89', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1125', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP90', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1126', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP91', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1127', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP92', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1128', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP93', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1129', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP94', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP113', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP113', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1130', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP95', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1131', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP96', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1132', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP97', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1133', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP98', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1134', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP99', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1135', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP100', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1136', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP101', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1137', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP102', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1138', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP103', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1139', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP104', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP114', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP114', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1140', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP105', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1141', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP106', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1142', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP107', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1143', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP108', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1144', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP109', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1145', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP110', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1146', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP111', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1147', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP112', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1148', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP113', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1149', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP114', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP115', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP115', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1150', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP115', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1151', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP116', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1152', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP117', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1153', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP118', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1154', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP119', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1155', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP120', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1156', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP121', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1157', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP122', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1158', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP123', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1159', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP124', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP116', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP116', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1160', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP125', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1161', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP126', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1162', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP127', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1163', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP128', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1164', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP129', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1165', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP130', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1166', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP131', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1167', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP132', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1168', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP133', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1169', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP134', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP117', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP117', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1170', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP135', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1171', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP136', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1172', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP137', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1173', CAST(100000 AS Decimal(18, 0)), NULL, N'LC17', N'GXP138', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1174', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP139', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1175', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP140', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1176', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP141', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1177', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP142', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1178', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP143', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1179', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP144', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP118', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP118', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1180', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP145', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1181', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP146', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1182', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP147', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1183', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP148', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1184', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP149', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1185', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP150', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1186', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP151', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1187', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP152', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1188', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP153', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1189', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP154', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP119', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP119', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1190', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP155', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1191', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP156', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1192', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP157', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1193', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP158', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1194', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP159', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1195', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP160', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1196', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP161', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1197', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP162', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1198', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP163', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1199', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP164', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP12', CAST(100000 AS Decimal(18, 0)), N'HD4', N'LC1', N'GXP12', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP120', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP120', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1200', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP165', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1201', CAST(100000 AS Decimal(18, 0)), N'HD46', N'LC18', N'GXP166', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1202', CAST(100000 AS Decimal(18, 0)), N'HD47', N'LC18', N'GXP167', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1203', CAST(100000 AS Decimal(18, 0)), N'HD48', N'LC18', N'GXP168', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1204', CAST(100000 AS Decimal(18, 0)), N'HD49', N'LC18', N'GXP169', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1205', CAST(100000 AS Decimal(18, 0)), N'HD50', N'LC18', N'GXP170', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1206', CAST(100000 AS Decimal(18, 0)), N'HD51', N'LC18', N'GXP171', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1207', CAST(100000 AS Decimal(18, 0)), N'HD52', N'LC18', N'GXP172', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1208', CAST(100000 AS Decimal(18, 0)), N'HD53', N'LC18', N'GXP173', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1209', CAST(100000 AS Decimal(18, 0)), N'HD54', N'LC18', N'GXP174', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP121', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP121', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1210', CAST(100000 AS Decimal(18, 0)), N'HD55', N'LC18', N'GXP175', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1211', CAST(100000 AS Decimal(18, 0)), N'HD56', N'LC18', N'GXP176', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1212', CAST(100000 AS Decimal(18, 0)), N'HD57', N'LC18', N'GXP177', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1213', CAST(100000 AS Decimal(18, 0)), N'HD58', N'LC18', N'GXP178', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1214', CAST(100000 AS Decimal(18, 0)), N'HD59', N'LC18', N'GXP179', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1215', CAST(100000 AS Decimal(18, 0)), N'HD60', N'LC18', N'GXP180', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1216', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP181', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1217', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP182', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1218', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP183', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1219', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP184', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP122', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP122', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1220', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP185', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1221', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP186', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1222', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP187', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1223', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP188', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1224', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP189', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1225', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP190', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1226', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP191', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1227', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP192', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1228', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP193', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1229', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP194', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP123', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP123', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1230', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP195', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1231', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP196', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1232', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP197', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1233', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP198', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1234', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP199', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1235', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP200', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1236', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP201', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1237', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP202', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1238', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP203', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1239', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP204', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP124', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP124', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1240', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP205', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1241', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP206', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1242', CAST(100000 AS Decimal(18, 0)), NULL, N'LC18', N'GXP207', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1243', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP208', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1244', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP209', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1245', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP210', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1246', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP211', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1247', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP212', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1248', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP213', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1249', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP214', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP125', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP125', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1250', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP215', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1251', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP216', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1252', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP217', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1253', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP218', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1254', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP219', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1255', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP220', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1256', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP221', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1257', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP222', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1258', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP223', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1259', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP224', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP126', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP126', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1260', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP225', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1261', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP226', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1262', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP227', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1263', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP228', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1264', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP229', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1265', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP230', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1266', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP231', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1267', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP232', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1268', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP233', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1269', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP234', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP127', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP127', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1270', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP235', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1271', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP236', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1272', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP237', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1273', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP238', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1274', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP239', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1275', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP240', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1276', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP241', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1277', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP242', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1278', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP243', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1279', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP244', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP128', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP128', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1280', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP245', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1281', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP246', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1282', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP247', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1283', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP248', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1284', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP249', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1285', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP250', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1286', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP251', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1287', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP252', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1288', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP253', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1289', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP254', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP129', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP129', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1290', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP255', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1291', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP256', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1292', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP257', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1293', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP258', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1294', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP259', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1295', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP260', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1296', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP261', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1297', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP262', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1298', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP263', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1299', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP264', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP13', CAST(100000 AS Decimal(18, 0)), N'HD4', N'LC1', N'GXP13', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP130', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP130', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1300', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP265', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1301', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP266', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1302', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP267', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1303', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP268', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1304', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP269', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1305', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP270', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1306', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP271', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1307', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP272', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1308', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP273', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1309', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP274', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP131', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP131', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1310', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP275', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1311', CAST(100000 AS Decimal(18, 0)), NULL, N'LC19', N'GXP276', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1312', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP277', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1313', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP278', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1314', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP279', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1315', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP280', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1316', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP281', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1317', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP282', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1318', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP283', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1319', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP284', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP132', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP132', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1320', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP285', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1321', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP286', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1322', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP287', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1323', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP288', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1324', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP289', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1325', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP290', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1326', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP291', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1327', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP292', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1328', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP293', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1329', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP294', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP133', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP133', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1330', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP295', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1331', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP296', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1332', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP297', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1333', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP298', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1334', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP299', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1335', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP300', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1336', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP301', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1337', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP302', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1338', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP303', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1339', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP304', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP134', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP134', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1340', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP305', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1341', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP306', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1342', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP307', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1343', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP308', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1344', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP309', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1345', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP310', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1346', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP311', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1347', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP312', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1348', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP313', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1349', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP314', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP135', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP135', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1350', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP315', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1351', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP316', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1352', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP317', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1353', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP318', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1354', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP319', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1355', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP320', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1356', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP321', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1357', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP322', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1358', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP323', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1359', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP324', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP136', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP136', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1360', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP325', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1361', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP326', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1362', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP327', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1363', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP328', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1364', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP329', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1365', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP330', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1366', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP331', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1367', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP332', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1368', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP333', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1369', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP334', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP137', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP137', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1370', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP335', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1371', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP336', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1372', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP337', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1373', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP338', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1374', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP339', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1375', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP340', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1376', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP341', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1377', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP342', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1378', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP343', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1379', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP344', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP138', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP138', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1380', CAST(100000 AS Decimal(18, 0)), NULL, N'LC20', N'GXP345', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1381', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP1', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1382', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP2', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1383', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP3', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1384', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP4', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1385', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP5', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1386', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP6', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1387', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP7', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1388', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP8', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1389', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP9', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP139', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP139', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1390', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP10', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1391', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP11', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1392', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP12', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1393', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP13', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1394', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP14', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1395', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP15', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1396', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP16', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1397', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP17', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1398', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP18', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1399', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP19', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP14', CAST(100000 AS Decimal(18, 0)), N'HD4', N'LC1', N'GXP14', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP140', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP140', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1400', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP20', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1401', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP21', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1402', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP22', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1403', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP23', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1404', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP24', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1405', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP25', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1406', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP26', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1407', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP27', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1408', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP28', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1409', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP29', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP141', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP141', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1410', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP30', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1411', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP31', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1412', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP32', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1413', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP33', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1414', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP34', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1415', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP35', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1416', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP36', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1417', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP37', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1418', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP38', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1419', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP39', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP142', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP142', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1420', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP40', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1421', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP41', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1422', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP42', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1423', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP43', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1424', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP44', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1425', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP45', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1426', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP46', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1427', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP47', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1428', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP48', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1429', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP49', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP143', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP143', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1430', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP50', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1431', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP51', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1432', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP52', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1433', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP53', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1434', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP54', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1435', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP55', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1436', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP56', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1437', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP57', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1438', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP58', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1439', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP59', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP144', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP144', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1440', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP60', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1441', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP61', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1442', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP62', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1443', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP63', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1444', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP64', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1445', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP65', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1446', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP66', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1447', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP67', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1448', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP68', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1449', CAST(100000 AS Decimal(18, 0)), NULL, N'LC21', N'GXP69', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP145', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP145', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1450', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP70', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1451', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP71', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1452', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP72', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1453', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP73', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1454', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP74', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1455', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP75', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1456', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP76', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1457', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP77', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1458', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP78', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1459', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP79', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP146', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP146', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1460', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP80', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1461', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP81', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1462', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP82', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1463', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP83', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1464', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP84', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1465', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP85', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1466', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP86', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1467', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP87', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1468', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP88', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1469', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP89', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP147', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP147', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1470', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP90', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1471', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP91', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1472', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP92', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1473', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP93', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1474', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP94', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1475', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP95', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1476', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP96', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1477', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP97', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1478', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP98', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1479', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP99', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP148', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP148', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1480', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP100', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1481', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP101', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1482', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP102', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1483', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP103', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1484', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP104', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1485', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP105', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1486', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP106', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1487', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP107', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1488', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP108', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1489', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP109', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP149', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP149', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1490', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP110', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1491', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP111', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1492', CAST(100000 AS Decimal(18, 0)), N'HD56', N'LC22', N'GXP112', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1493', CAST(100000 AS Decimal(18, 0)), N'HD56', N'LC22', N'GXP113', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1494', CAST(100000 AS Decimal(18, 0)), N'HD57', N'LC22', N'GXP114', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1495', CAST(100000 AS Decimal(18, 0)), N'HD58', N'LC22', N'GXP115', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1496', CAST(100000 AS Decimal(18, 0)), N'HD58', N'LC22', N'GXP116', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1497', CAST(100000 AS Decimal(18, 0)), N'HD59', N'LC22', N'GXP117', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1498', CAST(100000 AS Decimal(18, 0)), N'HD59', N'LC22', N'GXP118', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1499', CAST(100000 AS Decimal(18, 0)), N'HD60', N'LC22', N'GXP119', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP15', CAST(100000 AS Decimal(18, 0)), N'HD4', N'LC1', N'GXP15', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP150', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP150', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1500', CAST(100000 AS Decimal(18, 0)), N'HD60', N'LC22', N'GXP120', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1501', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP121', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1502', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP122', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1503', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP123', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1504', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP124', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1505', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP125', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1506', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP126', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1507', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP127', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1508', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP128', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1509', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP129', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP151', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP151', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1510', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP130', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1511', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP131', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1512', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP132', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1513', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP133', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1514', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP134', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1515', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP135', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1516', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP136', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1517', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP137', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1518', CAST(100000 AS Decimal(18, 0)), NULL, N'LC22', N'GXP138', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1519', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP139', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP152', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP152', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1520', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP140', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1521', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP141', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1522', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP142', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1523', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP143', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1524', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP144', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1525', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP145', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1526', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP146', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1527', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP147', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1528', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP148', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1529', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP149', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP153', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP153', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1530', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP150', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1531', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP151', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1532', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP152', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1533', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP153', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1534', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP154', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1535', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP155', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1536', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP156', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1537', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP157', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1538', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP158', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1539', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP159', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP154', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP154', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1540', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP160', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1541', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP161', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1542', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP162', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1543', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP163', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1544', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP164', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1545', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP165', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1546', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP166', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1547', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP167', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1548', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP168', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1549', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP169', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP155', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP155', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1550', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP170', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1551', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP171', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1552', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP172', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1553', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP173', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1554', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP174', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1555', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP175', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1556', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP176', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1557', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP177', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1558', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP178', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1559', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP179', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP156', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP156', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1560', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP180', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1561', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP181', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1562', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP182', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1563', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP183', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1564', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP184', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1565', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP185', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1566', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP186', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1567', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP187', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1568', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP188', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1569', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP189', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP157', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP157', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1570', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP190', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1571', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP191', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1572', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP192', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1573', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP193', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1574', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP194', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1575', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP195', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1576', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP196', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1577', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP197', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1578', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP198', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1579', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP199', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP158', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP158', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1580', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP200', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1581', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP201', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1582', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP202', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1583', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP203', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1584', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP204', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1585', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP205', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1586', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP206', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1587', CAST(100000 AS Decimal(18, 0)), NULL, N'LC23', N'GXP207', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1588', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP208', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1589', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP209', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP159', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP159', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1590', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP210', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1591', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP211', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1592', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP212', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1593', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP213', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1594', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP214', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1595', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP215', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1596', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP216', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1597', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP217', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1598', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP218', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1599', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP219', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP16', CAST(100000 AS Decimal(18, 0)), N'HD5', N'LC1', N'GXP16', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP160', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP160', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1600', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP220', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1601', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP221', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1602', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP222', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1603', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP223', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1604', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP224', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1605', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP225', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1606', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP226', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1607', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP227', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1608', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP228', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1609', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP229', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP161', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP161', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1610', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP230', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1611', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP231', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1612', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP232', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1613', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP233', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1614', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP234', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1615', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP235', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1616', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP236', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1617', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP237', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1618', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP238', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1619', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP239', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP162', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP162', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1620', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP240', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1621', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP241', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1622', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP242', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1623', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP243', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1624', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP244', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1625', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP245', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1626', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP246', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1627', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP247', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1628', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP248', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1629', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP249', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP163', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP163', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1630', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP250', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1631', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP251', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1632', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP252', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1633', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP253', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1634', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP254', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1635', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP255', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1636', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP256', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1637', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP257', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1638', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP258', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1639', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP259', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP164', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP164', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1640', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP260', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1641', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP261', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1642', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP262', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1643', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP263', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1644', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP264', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1645', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP265', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1646', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP266', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1647', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP267', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1648', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP268', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1649', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP269', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP165', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP165', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1650', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP270', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1651', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP271', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1652', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP272', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1653', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP273', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1654', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP274', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1655', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP275', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1656', CAST(100000 AS Decimal(18, 0)), NULL, N'LC24', N'GXP276', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1657', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP277', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1658', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP278', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1659', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP279', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP166', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP166', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1660', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP280', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1661', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP281', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1662', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP282', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1663', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP283', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1664', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP284', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1665', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP285', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1666', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP286', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1667', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP287', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1668', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP288', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1669', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP289', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP167', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP167', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1670', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP290', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1671', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP291', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1672', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP292', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1673', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP293', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1674', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP294', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1675', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP295', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1676', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP296', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1677', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP297', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1678', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP298', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1679', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP299', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP168', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP168', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1680', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP300', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1681', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP301', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1682', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP302', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1683', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP303', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1684', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP304', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1685', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP305', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1686', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP306', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1687', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP307', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1688', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP308', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1689', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP309', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP169', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP169', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1690', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP310', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1691', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP311', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1692', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP312', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1693', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP313', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1694', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP314', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1695', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP315', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1696', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP316', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1697', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP317', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1698', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP318', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1699', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP319', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP17', CAST(100000 AS Decimal(18, 0)), N'HD5', N'LC1', N'GXP17', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP170', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP170', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1700', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP320', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1701', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP321', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1702', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP322', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1703', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP323', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1704', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP324', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1705', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP325', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1706', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP326', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1707', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP327', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1708', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP328', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1709', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP329', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP171', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP171', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1710', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP330', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1711', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP331', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1712', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP332', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1713', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP333', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1714', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP334', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1715', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP335', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1716', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP336', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1717', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP337', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1718', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP338', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1719', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP339', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP172', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP172', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1720', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP340', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1721', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP341', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1722', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP342', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1723', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP343', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1724', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP344', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1725', CAST(100000 AS Decimal(18, 0)), NULL, N'LC25', N'GXP345', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1726', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP1', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1727', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP2', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1728', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP3', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1729', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP4', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP173', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP173', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1730', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP5', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1731', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP6', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1732', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP7', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1733', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP8', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1734', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP9', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1735', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP10', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1736', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP11', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1737', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP12', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1738', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP13', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1739', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP14', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP174', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP174', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1740', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP15', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1741', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP16', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1742', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP17', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1743', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP18', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1744', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP19', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1745', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP20', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1746', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP21', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1747', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP22', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1748', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP23', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1749', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP24', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP175', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP175', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1750', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP25', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1751', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP26', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1752', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP27', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1753', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP28', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1754', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP29', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1755', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP30', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1756', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP31', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1757', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP32', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1758', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP33', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1759', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP34', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP176', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP176', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1760', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP35', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1761', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP36', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1762', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP37', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1763', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP38', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1764', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP39', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1765', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP40', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1766', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP41', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1767', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP42', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1768', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP43', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1769', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP44', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP177', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP177', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1770', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP45', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1771', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP46', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1772', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP47', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1773', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP48', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1774', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP49', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1775', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP50', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1776', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP51', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1777', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP52', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1778', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP53', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1779', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP54', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP178', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP178', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1780', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP55', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1781', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP56', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1782', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP57', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1783', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP58', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1784', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP59', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1785', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP60', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1786', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP61', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1787', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP62', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1788', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP63', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1789', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP64', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP179', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP179', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1790', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP65', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1791', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP66', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1792', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP67', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1793', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP68', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1794', CAST(100000 AS Decimal(18, 0)), NULL, N'LC26', N'GXP69', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1795', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP70', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1796', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP71', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1797', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP72', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1798', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP73', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1799', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP74', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP18', CAST(100000 AS Decimal(18, 0)), N'HD5', N'LC1', N'GXP18', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP180', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP180', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1800', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP75', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1801', CAST(100000 AS Decimal(18, 0)), N'HD61', N'LC27', N'GXP76', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1802', CAST(100000 AS Decimal(18, 0)), N'HD62', N'LC27', N'GXP77', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1803', CAST(100000 AS Decimal(18, 0)), N'HD63', N'LC27', N'GXP78', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1804', CAST(100000 AS Decimal(18, 0)), N'HD64', N'LC27', N'GXP79', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1805', CAST(100000 AS Decimal(18, 0)), N'HD65', N'LC27', N'GXP80', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1806', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP81', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1807', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP82', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1808', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP83', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1809', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP84', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP181', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP181', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1810', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP85', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1811', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP86', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1812', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP87', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1813', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP88', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1814', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP89', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1815', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP90', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1816', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP91', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1817', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP92', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1818', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP93', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1819', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP94', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP182', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP182', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1820', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP95', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1821', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP96', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1822', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP97', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1823', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP98', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1824', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP99', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1825', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP100', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1826', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP101', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1827', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP102', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1828', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP103', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1829', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP104', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP183', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP183', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1830', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP105', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1831', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP106', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1832', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP107', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1833', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP108', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1834', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP109', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1835', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP110', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1836', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP111', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1837', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP112', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1838', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP113', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1839', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP114', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP184', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP184', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1840', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP115', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1841', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP116', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1842', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP117', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1843', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP118', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1844', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP119', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1845', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP120', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1846', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP121', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1847', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP122', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1848', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP123', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1849', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP124', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP185', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP185', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1850', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP125', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1851', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP126', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1852', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP127', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1853', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP128', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1854', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP129', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1855', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP130', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1856', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP131', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1857', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP132', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1858', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP133', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1859', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP134', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP186', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP186', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1860', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP135', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1861', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP136', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1862', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP137', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1863', CAST(100000 AS Decimal(18, 0)), NULL, N'LC27', N'GXP138', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1864', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP139', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1865', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP140', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1866', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP141', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1867', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP142', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1868', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP143', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1869', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP144', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP187', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP187', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1870', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP145', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1871', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP146', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1872', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP147', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1873', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP148', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1874', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP149', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1875', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP150', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1876', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP151', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1877', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP152', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1878', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP153', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1879', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP154', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP188', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP188', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1880', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP155', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1881', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP156', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1882', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP157', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1883', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP158', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1884', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP159', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1885', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP160', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1886', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP161', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1887', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP162', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1888', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP163', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1889', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP164', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP189', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP189', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1890', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP165', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1891', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP166', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1892', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP167', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1893', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP168', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1894', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP169', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1895', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP170', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1896', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP171', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1897', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP172', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1898', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP173', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1899', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP174', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP19', CAST(100000 AS Decimal(18, 0)), N'HD5', N'LC1', N'GXP19', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP190', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP190', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1900', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP175', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1901', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP176', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1902', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP177', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1903', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP178', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1904', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP179', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1905', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP180', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1906', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP181', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1907', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP182', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1908', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP183', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1909', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP184', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP191', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP191', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1910', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP185', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1911', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP186', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1912', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP187', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1913', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP188', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1914', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP189', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1915', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP190', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1916', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP191', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1917', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP192', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1918', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP193', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1919', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP194', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP192', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP192', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1920', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP195', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1921', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP196', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1922', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP197', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1923', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP198', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1924', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP199', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1925', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP200', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1926', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP201', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1927', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP202', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1928', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP203', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1929', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP204', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP193', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP193', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1930', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP205', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1931', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP206', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1932', CAST(100000 AS Decimal(18, 0)), NULL, N'LC28', N'GXP207', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1933', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP208', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1934', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP209', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1935', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP210', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1936', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP211', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1937', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP212', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1938', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP213', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1939', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP214', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP194', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP194', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1940', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP215', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1941', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP216', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1942', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP217', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1943', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP218', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1944', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP219', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1945', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP220', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1946', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP221', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1947', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP222', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1948', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP223', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1949', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP224', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP195', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP195', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1950', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP225', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1951', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP226', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1952', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP227', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1953', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP228', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1954', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP229', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1955', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP230', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1956', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP231', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1957', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP232', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1958', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP233', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1959', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP234', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP196', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP196', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1960', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP235', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1961', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP236', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1962', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP237', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1963', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP238', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1964', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP239', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1965', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP240', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1966', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP241', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1967', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP242', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1968', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP243', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1969', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP244', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP197', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP197', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1970', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP245', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1971', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP246', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1972', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP247', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1973', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP248', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1974', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP249', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1975', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP250', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1976', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP251', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1977', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP252', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1978', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP253', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1979', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP254', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP198', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP198', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1980', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP255', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1981', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP256', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1982', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP257', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1983', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP258', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1984', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP259', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1985', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP260', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1986', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP261', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1987', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP262', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1988', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP263', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1989', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP264', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP199', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP199', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1990', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP265', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1991', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP266', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1992', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP267', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1993', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP268', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1994', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP269', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1995', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP270', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1996', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP271', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1997', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP272', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1998', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP273', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP1999', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP274', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2', CAST(100000 AS Decimal(18, 0)), N'HD1', N'LC1', N'GXP2', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP20', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP20', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP200', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP200', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2000', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP275', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2001', CAST(100000 AS Decimal(18, 0)), NULL, N'LC29', N'GXP276', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2002', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP277', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2003', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP278', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2004', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP279', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2005', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP280', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2006', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP281', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2007', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP282', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2008', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP283', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2009', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP284', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP201', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP201', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2010', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP285', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2011', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP286', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2012', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP287', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2013', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP288', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2014', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP289', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2015', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP290', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2016', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP291', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2017', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP292', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2018', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP293', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2019', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP294', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP202', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP202', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2020', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP295', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2021', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP296', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2022', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP297', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2023', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP298', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2024', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP299', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2025', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP300', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2026', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP301', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2027', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP302', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2028', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP303', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2029', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP304', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP203', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP203', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2030', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP305', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2031', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP306', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2032', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP307', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2033', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP308', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2034', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP309', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2035', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP310', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2036', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP311', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2037', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP312', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2038', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP313', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2039', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP314', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP204', CAST(100000 AS Decimal(18, 0)), NULL, N'LC3', N'GXP204', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2040', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP315', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2041', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP316', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2042', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP317', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2043', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP318', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2044', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP319', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2045', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP320', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2046', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP321', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2047', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP322', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2048', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP323', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2049', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP324', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP205', CAST(100000 AS Decimal(18, 0)), N'HD14', N'LC3', N'GXP205', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2050', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP325', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2051', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP326', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2052', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP327', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2053', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP328', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2054', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP329', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2055', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP330', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2056', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP331', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2057', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP332', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2058', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP333', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2059', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP334', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP206', CAST(100000 AS Decimal(18, 0)), N'HD14', N'LC3', N'GXP206', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2060', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP335', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2061', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP336', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2062', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP337', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2063', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP338', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2064', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP339', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2065', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP340', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2066', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP341', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2067', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP342', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2068', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP343', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2069', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP344', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP207', CAST(100000 AS Decimal(18, 0)), N'HD14', N'LC3', N'GXP207', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2070', CAST(100000 AS Decimal(18, 0)), NULL, N'LC30', N'GXP345', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2071', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP1', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2072', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP2', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2073', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP3', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2074', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP4', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2075', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP5', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2076', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP6', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2077', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP7', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2078', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP8', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2079', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP9', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP208', CAST(100000 AS Decimal(18, 0)), N'HD14', N'LC4', N'GXP208', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2080', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP10', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2081', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP11', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2082', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP12', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2083', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP13', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2084', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP14', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2085', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP15', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2086', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP16', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2087', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP17', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2088', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP18', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2089', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP19', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP209', CAST(100000 AS Decimal(18, 0)), N'HD15', N'LC4', N'GXP209', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2090', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP20', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2091', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP21', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2092', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP22', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2093', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP23', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2094', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP24', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2095', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP25', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2096', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP26', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2097', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP27', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2098', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP28', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2099', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP29', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP21', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP21', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP210', CAST(100000 AS Decimal(18, 0)), N'HD15', N'LC4', N'GXP210', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2100', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP30', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2101', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP31', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2102', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP32', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2103', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP33', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2104', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP34', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2105', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP35', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2106', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP36', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2107', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP37', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2108', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP38', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2109', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP39', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP211', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP211', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2110', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP40', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2111', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP41', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2112', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP42', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2113', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP43', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2114', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP44', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2115', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP45', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2116', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP46', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2117', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP47', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2118', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP48', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2119', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP49', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP212', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP212', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2120', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP50', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2121', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP51', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2122', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP52', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2123', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP53', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2124', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP54', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2125', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP55', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2126', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP56', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2127', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP57', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2128', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP58', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2129', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP59', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP213', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP213', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2130', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP60', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2131', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP61', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2132', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP62', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2133', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP63', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2134', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP64', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2135', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP65', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2136', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP66', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2137', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP67', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2138', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP68', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2139', CAST(100000 AS Decimal(18, 0)), NULL, N'LC31', N'GXP69', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP214', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP214', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2140', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP70', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2141', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP71', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2142', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP72', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2143', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP73', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2144', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP74', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2145', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP75', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2146', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP76', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2147', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP77', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2148', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP78', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2149', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP79', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP215', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP215', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2150', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP80', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2151', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP81', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2152', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP82', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2153', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP83', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2154', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP84', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2155', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP85', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2156', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP86', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2157', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP87', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2158', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP88', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2159', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP89', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP216', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP216', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2160', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP90', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2161', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP91', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2162', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP92', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2163', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP93', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2164', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP94', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2165', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP95', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2166', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP96', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2167', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP97', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2168', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP98', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2169', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP99', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP217', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP217', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2170', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP100', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2171', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP101', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2172', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP102', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2173', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP103', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2174', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP104', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2175', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP105', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2176', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP106', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2177', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP107', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2178', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP108', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2179', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP109', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP218', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP218', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2180', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP110', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2181', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP111', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2182', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP112', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2183', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP113', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2184', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP114', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2185', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP115', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2186', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP116', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2187', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP117', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2188', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP118', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2189', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP119', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP219', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP219', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2190', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP120', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2191', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP121', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2192', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP122', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2193', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP123', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2194', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP124', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2195', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP125', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2196', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP126', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2197', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP127', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2198', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP128', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2199', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP129', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP22', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP22', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP220', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP220', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2200', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP130', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2201', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP131', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2202', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP132', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2203', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP133', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2204', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP134', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2205', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP135', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2206', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP136', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2207', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP137', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2208', CAST(100000 AS Decimal(18, 0)), NULL, N'LC32', N'GXP138', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2209', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP139', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP221', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP221', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2210', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP140', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2211', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP141', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2212', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP142', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2213', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP143', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2214', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP144', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2215', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP145', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2216', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP146', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2217', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP147', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2218', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP148', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2219', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP149', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP222', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP222', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2220', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP150', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2221', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP151', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2222', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP152', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2223', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP153', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2224', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP154', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2225', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP155', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2226', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP156', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2227', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP157', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2228', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP158', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2229', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP159', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP223', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP223', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2230', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP160', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2231', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP161', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2232', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP162', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2233', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP163', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2234', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP164', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2235', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP165', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2236', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP166', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2237', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP167', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2238', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP168', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2239', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP169', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP224', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP224', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2240', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP170', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2241', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP171', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2242', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP172', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2243', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP173', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2244', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP174', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2245', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP175', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2246', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP176', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2247', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP177', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2248', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP178', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2249', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP179', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP225', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP225', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2250', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP180', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2251', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP181', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2252', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP182', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2253', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP183', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2254', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP184', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2255', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP185', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2256', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP186', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2257', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP187', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2258', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP188', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2259', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP189', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP226', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP226', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2260', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP190', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2261', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP191', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2262', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP192', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2263', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP193', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2264', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP194', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2265', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP195', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2266', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP196', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2267', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP197', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2268', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP198', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2269', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP199', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP227', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP227', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2270', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP200', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2271', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP201', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2272', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP202', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2273', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP203', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2274', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP204', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2275', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP205', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2276', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP206', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2277', CAST(100000 AS Decimal(18, 0)), NULL, N'LC33', N'GXP207', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2278', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP208', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2279', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP209', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP228', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP228', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2280', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP210', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2281', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP211', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2282', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP212', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2283', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP213', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2284', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP214', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2285', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP215', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2286', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP216', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2287', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP217', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2288', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP218', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2289', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP219', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP229', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP229', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2290', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP220', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2291', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP221', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2292', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP222', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2293', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP223', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2294', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP224', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2295', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP225', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2296', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP226', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2297', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP227', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2298', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP228', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2299', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP229', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP23', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP23', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP230', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP230', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2300', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP230', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2301', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP231', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2302', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP232', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2303', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP233', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2304', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP234', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2305', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP235', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2306', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP236', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2307', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP237', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2308', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP238', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2309', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP239', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP231', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP231', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2310', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP240', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2311', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP241', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2312', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP242', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2313', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP243', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2314', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP244', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2315', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP245', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2316', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP246', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2317', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP247', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2318', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP248', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2319', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP249', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP232', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP232', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2320', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP250', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2321', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP251', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2322', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP252', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2323', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP253', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2324', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP254', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2325', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP255', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2326', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP256', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2327', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP257', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2328', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP258', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2329', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP259', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP233', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP233', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2330', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP260', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2331', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP261', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2332', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP262', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2333', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP263', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2334', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP264', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2335', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP265', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2336', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP266', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2337', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP267', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2338', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP268', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2339', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP269', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP234', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP234', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2340', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP270', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2341', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP271', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2342', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP272', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2343', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP273', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2344', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP274', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2345', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP275', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2346', CAST(100000 AS Decimal(18, 0)), NULL, N'LC34', N'GXP276', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2347', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP277', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2348', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP278', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2349', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP279', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP235', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP235', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2350', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP280', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2351', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP281', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2352', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP282', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2353', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP283', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2354', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP284', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2355', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP285', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2356', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP286', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2357', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP287', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2358', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP288', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2359', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP289', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP236', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP236', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2360', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP290', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2361', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP291', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2362', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP292', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2363', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP293', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2364', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP294', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2365', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP295', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2366', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP296', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2367', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP297', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2368', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP298', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2369', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP299', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP237', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP237', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2370', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP300', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2371', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP301', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2372', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP302', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2373', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP303', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2374', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP304', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2375', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP305', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2376', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP306', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2377', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP307', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2378', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP308', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2379', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP309', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP238', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP238', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2380', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP310', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2381', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP311', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2382', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP312', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2383', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP313', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2384', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP314', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2385', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP315', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2386', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP316', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2387', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP317', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2388', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP318', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2389', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP319', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP239', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP239', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2390', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP320', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2391', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP321', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2392', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP322', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2393', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP323', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2394', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP324', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2395', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP325', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2396', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP326', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2397', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP327', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2398', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP328', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2399', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP329', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP24', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP24', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP240', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP240', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2400', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP330', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2401', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP331', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2402', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP332', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2403', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP333', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2404', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP334', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2405', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP335', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2406', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP336', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2407', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP337', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2408', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP338', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2409', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP339', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP241', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP241', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2410', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP340', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2411', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP341', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2412', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP342', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2413', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP343', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2414', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP344', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2415', CAST(100000 AS Decimal(18, 0)), NULL, N'LC35', N'GXP345', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2416', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP1', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2417', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP2', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2418', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP3', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2419', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP4', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP242', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP242', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2420', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP5', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2421', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP6', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2422', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP7', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2423', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP8', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2424', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP9', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2425', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP10', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2426', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP11', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2427', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP12', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2428', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP13', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2429', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP14', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP243', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP243', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2430', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP15', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2431', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP16', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2432', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP17', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2433', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP18', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2434', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP19', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2435', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP20', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2436', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP21', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2437', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP22', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2438', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP23', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2439', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP24', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP244', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP244', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2440', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP25', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2441', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP26', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2442', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP27', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2443', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP28', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2444', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP29', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2445', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP30', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2446', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP31', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2447', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP32', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2448', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP33', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2449', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP34', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP245', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP245', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2450', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP35', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2451', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP36', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2452', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP37', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2453', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP38', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2454', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP39', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2455', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP40', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2456', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP41', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2457', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP42', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2458', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP43', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2459', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP44', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP246', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP246', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2460', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP45', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2461', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP46', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2462', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP47', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2463', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP48', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2464', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP49', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2465', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP50', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2466', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP51', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2467', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP52', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2468', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP53', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2469', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP54', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP247', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP247', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2470', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP55', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2471', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP56', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2472', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP57', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2473', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP58', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2474', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP59', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2475', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP60', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2476', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP61', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2477', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP62', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2478', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP63', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2479', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP64', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP248', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP248', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2480', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP65', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2481', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP66', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2482', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP67', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2483', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP68', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2484', CAST(100000 AS Decimal(18, 0)), NULL, N'LC36', N'GXP69', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2485', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP70', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2486', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP71', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2487', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP72', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2488', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP73', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2489', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP74', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP249', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP249', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2490', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP75', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2491', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP76', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2492', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP77', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2493', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP78', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2494', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP79', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2495', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP80', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2496', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP81', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2497', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP82', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2498', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP83', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2499', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP84', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP25', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP25', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP250', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP250', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2500', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP85', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2501', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP86', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2502', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP87', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2503', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP88', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2504', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP89', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2505', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP90', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2506', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP91', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2507', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP92', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2508', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP93', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2509', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP94', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP251', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP251', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2510', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP95', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2511', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP96', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2512', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP97', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2513', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP98', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2514', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP99', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2515', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP100', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2516', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP101', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2517', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP102', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2518', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP103', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2519', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP104', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP252', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP252', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2520', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP105', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2521', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP106', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2522', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP107', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2523', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP108', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2524', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP109', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2525', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP110', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2526', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP111', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2527', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP112', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2528', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP113', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2529', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP114', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP253', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP253', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2530', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP115', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2531', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP116', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2532', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP117', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2533', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP118', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2534', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP119', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2535', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP120', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2536', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP121', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2537', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP122', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2538', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP123', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2539', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP124', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP254', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP254', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2540', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP125', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2541', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP126', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2542', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP127', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2543', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP128', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2544', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP129', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2545', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP130', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2546', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP131', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2547', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP132', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2548', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP133', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2549', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP134', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP255', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP255', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2550', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP135', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2551', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP136', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2552', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP137', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2553', CAST(100000 AS Decimal(18, 0)), NULL, N'LC37', N'GXP138', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2554', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP139', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2555', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP140', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2556', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP141', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2557', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP142', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2558', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP143', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2559', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP144', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP256', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP256', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2560', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP145', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2561', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP146', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2562', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP147', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2563', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP148', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2564', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP149', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2565', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP150', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2566', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP151', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2567', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP152', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2568', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP153', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2569', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP154', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP257', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP257', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2570', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP155', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2571', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP156', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2572', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP157', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2573', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP158', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2574', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP159', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2575', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP160', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2576', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP161', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2577', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP162', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2578', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP163', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2579', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP164', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP258', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP258', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2580', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP165', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2581', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP166', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2582', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP167', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2583', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP168', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2584', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP169', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2585', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP170', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2586', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP171', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2587', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP172', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2588', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP173', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2589', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP174', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP259', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP259', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2590', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP175', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2591', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP176', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2592', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP177', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2593', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP178', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2594', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP179', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2595', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP180', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2596', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP181', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2597', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP182', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2598', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP183', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2599', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP184', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP26', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP26', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP260', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP260', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2600', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP185', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2601', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP186', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2602', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP187', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2603', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP188', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2604', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP189', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2605', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP190', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2606', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP191', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2607', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP192', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2608', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP193', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2609', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP194', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP261', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP261', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2610', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP195', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2611', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP196', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2612', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP197', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2613', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP198', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2614', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP199', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2615', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP200', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2616', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP201', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2617', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP202', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2618', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP203', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2619', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP204', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP262', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP262', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2620', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP205', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2621', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP206', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2622', CAST(100000 AS Decimal(18, 0)), NULL, N'LC38', N'GXP207', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2623', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP208', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2624', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP209', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2625', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP210', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2626', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP211', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2627', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP212', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2628', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP213', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2629', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP214', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP263', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP263', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2630', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP215', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2631', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP216', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2632', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP217', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2633', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP218', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2634', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP219', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2635', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP220', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2636', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP221', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2637', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP222', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2638', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP223', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2639', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP224', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP264', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP264', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2640', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP225', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2641', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP226', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2642', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP227', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2643', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP228', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2644', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP229', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2645', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP230', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2646', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP231', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2647', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP232', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2648', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP233', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2649', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP234', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP265', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP265', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2650', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP235', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2651', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP236', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2652', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP237', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2653', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP238', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2654', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP239', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2655', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP240', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2656', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP241', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2657', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP242', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2658', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP243', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2659', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP244', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP266', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP266', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2660', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP245', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2661', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP246', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2662', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP247', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2663', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP248', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2664', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP249', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2665', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP250', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2666', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP251', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2667', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP252', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2668', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP253', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2669', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP254', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP267', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP267', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2670', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP255', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2671', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP256', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2672', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP257', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2673', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP258', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2674', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP259', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2675', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP260', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2676', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP261', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2677', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP262', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2678', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP263', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2679', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP264', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP268', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP268', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2680', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP265', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2681', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP266', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2682', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP267', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2683', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP268', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2684', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP269', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2685', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP270', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2686', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP271', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2687', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP272', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2688', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP273', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2689', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP274', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP269', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP269', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2690', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP275', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2691', CAST(100000 AS Decimal(18, 0)), NULL, N'LC39', N'GXP276', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2692', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP277', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2693', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP278', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2694', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP279', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2695', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP280', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2696', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP281', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2697', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP282', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2698', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP283', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2699', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP284', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP27', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP27', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP270', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP270', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2700', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP285', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2701', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP286', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2702', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP287', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2703', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP288', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2704', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP289', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2705', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP290', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2706', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP291', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2707', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP292', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2708', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP293', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2709', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP294', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP271', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP271', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2710', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP295', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2711', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP296', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2712', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP297', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2713', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP298', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2714', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP299', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2715', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP300', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2716', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP301', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2717', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP302', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2718', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP303', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2719', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP304', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP272', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP272', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2720', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP305', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2721', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP306', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2722', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP307', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2723', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP308', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2724', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP309', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2725', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP310', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2726', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP311', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2727', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP312', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2728', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP313', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2729', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP314', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP273', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP273', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2730', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP315', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2731', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP316', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2732', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP317', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2733', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP318', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2734', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP319', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2735', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP320', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2736', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP321', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2737', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP322', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2738', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP323', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2739', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP324', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP274', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP274', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2740', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP325', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2741', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP326', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2742', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP327', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2743', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP328', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2744', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP329', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2745', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP330', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2746', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP331', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2747', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP332', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2748', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP333', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2749', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP334', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP275', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP275', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2750', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP335', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2751', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP336', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2752', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP337', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2753', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP338', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2754', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP339', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2755', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP340', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2756', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP341', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2757', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP342', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2758', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP343', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2759', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP344', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP276', CAST(100000 AS Decimal(18, 0)), NULL, N'LC4', N'GXP276', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2760', CAST(100000 AS Decimal(18, 0)), NULL, N'LC40', N'GXP345', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2761', CAST(100000 AS Decimal(18, 0)), N'HD19', N'LC41', N'GXP1', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2762', CAST(100000 AS Decimal(18, 0)), N'HD19', N'LC41', N'GXP2', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2763', CAST(100000 AS Decimal(18, 0)), N'HD19', N'LC41', N'GXP3', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2764', CAST(100000 AS Decimal(18, 0)), N'HD19', N'LC41', N'GXP4', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2765', CAST(100000 AS Decimal(18, 0)), N'HD19', N'LC41', N'GXP5', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2766', CAST(100000 AS Decimal(18, 0)), N'HD19', N'LC41', N'GXP6', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2767', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP7', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2768', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP8', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2769', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP9', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP277', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP277', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2770', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP10', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2771', CAST(100000 AS Decimal(18, 0)), N'HD28', N'LC41', N'GXP11', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2772', CAST(100000 AS Decimal(18, 0)), N'HD28', N'LC41', N'GXP12', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2773', CAST(100000 AS Decimal(18, 0)), N'HD29', N'LC41', N'GXP13', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2774', CAST(100000 AS Decimal(18, 0)), N'HD29', N'LC41', N'GXP14', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2775', CAST(100000 AS Decimal(18, 0)), N'HD36', N'LC41', N'GXP15', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2776', CAST(100000 AS Decimal(18, 0)), N'HD36', N'LC41', N'GXP16', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2777', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP17', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2778', CAST(100000 AS Decimal(18, 0)), N'HD59', N'LC41', N'GXP18', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2779', CAST(100000 AS Decimal(18, 0)), N'HD61', N'LC41', N'GXP19', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP278', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP278', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2780', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP20', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2781', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP21', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2782', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP22', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2783', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP23', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2784', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP24', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2785', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP25', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2786', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP26', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2787', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP27', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2788', CAST(100000 AS Decimal(18, 0)), N'HD60', N'LC41', N'GXP28', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2789', CAST(100000 AS Decimal(18, 0)), N'HD60', N'LC41', N'GXP29', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP279', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP279', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2790', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP30', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2791', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP31', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2792', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP32', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2793', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP33', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2794', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP34', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2795', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP35', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2796', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP36', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2797', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP37', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2798', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP38', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2799', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP39', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP28', CAST(100000 AS Decimal(18, 0)), N'HD6', N'LC1', N'GXP28', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP280', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP280', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2800', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP40', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2801', CAST(100000 AS Decimal(18, 0)), N'HD40', N'LC41', N'GXP41', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2802', CAST(100000 AS Decimal(18, 0)), N'HD40', N'LC41', N'GXP42', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2803', CAST(100000 AS Decimal(18, 0)), N'HD42', N'LC41', N'GXP43', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2804', CAST(100000 AS Decimal(18, 0)), N'HD42', N'LC41', N'GXP44', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2805', CAST(100000 AS Decimal(18, 0)), N'HD45', N'LC41', N'GXP45', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2806', CAST(100000 AS Decimal(18, 0)), N'HD45', N'LC41', N'GXP46', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2807', CAST(100000 AS Decimal(18, 0)), N'HD45', N'LC41', N'GXP47', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2808', CAST(100000 AS Decimal(18, 0)), N'HD45', N'LC41', N'GXP48', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2809', CAST(100000 AS Decimal(18, 0)), N'HD45', N'LC41', N'GXP49', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP281', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP281', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2810', CAST(100000 AS Decimal(18, 0)), N'HD45', N'LC41', N'GXP50', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2811', CAST(100000 AS Decimal(18, 0)), N'HD33', N'LC41', N'GXP51', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2812', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP52', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2813', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP53', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2814', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP54', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2815', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP55', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2816', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP56', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2817', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP57', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2818', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP58', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2819', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP59', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP282', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP282', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2820', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP60', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2821', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP61', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2822', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP62', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2823', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP63', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2824', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP64', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2825', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP65', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2826', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP66', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2827', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP67', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2828', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP68', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2829', CAST(100000 AS Decimal(18, 0)), NULL, N'LC41', N'GXP69', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP283', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP283', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2830', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP70', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2831', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP71', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2832', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP72', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2833', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP73', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2834', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP74', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2835', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP75', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2836', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP76', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2837', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP77', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2838', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP78', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2839', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP79', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP284', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP284', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2840', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP80', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2841', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP81', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2842', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP82', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2843', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP83', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2844', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP84', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2845', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP85', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2846', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP86', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2847', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP87', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2848', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP88', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2849', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP89', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP285', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP285', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2850', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP90', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2851', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP91', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2852', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP92', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2853', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP93', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2854', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP94', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2855', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP95', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2856', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP96', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2857', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP97', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2858', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP98', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2859', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP99', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP286', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP286', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2860', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP100', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2861', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP101', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2862', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP102', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2863', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP103', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2864', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP104', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2865', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP105', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2866', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP106', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2867', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP107', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2868', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP108', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2869', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP109', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP287', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP287', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2870', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP110', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2871', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP111', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2872', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP112', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2873', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP113', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2874', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP114', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2875', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP115', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2876', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP116', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2877', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP117', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2878', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP118', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2879', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP119', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP288', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP288', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2880', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP120', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2881', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP121', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2882', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP122', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2883', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP123', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2884', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP124', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2885', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP125', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2886', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP126', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2887', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP127', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2888', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP128', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2889', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP129', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP289', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP289', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2890', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP130', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2891', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP131', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2892', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP132', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2893', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP133', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2894', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP134', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2895', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP135', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2896', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP136', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2897', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP137', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2898', CAST(100000 AS Decimal(18, 0)), NULL, N'LC42', N'GXP138', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2899', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP139', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP29', CAST(100000 AS Decimal(18, 0)), N'HD6', N'LC1', N'GXP29', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP290', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP290', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2900', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP140', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2901', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP141', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2902', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP142', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2903', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP143', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2904', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP144', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2905', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP145', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2906', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP146', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2907', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP147', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2908', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP148', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2909', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP149', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP291', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP291', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2910', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP150', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2911', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP151', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2912', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP152', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2913', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP153', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2914', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP154', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2915', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP155', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2916', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP156', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2917', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP157', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2918', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP158', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2919', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP159', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP292', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP292', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2920', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP160', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2921', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP161', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2922', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP162', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2923', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP163', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2924', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP164', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2925', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP165', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2926', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP166', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2927', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP167', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2928', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP168', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2929', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP169', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP293', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP293', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2930', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP170', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2931', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP171', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2932', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP172', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2933', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP173', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2934', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP174', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2935', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP175', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2936', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP176', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2937', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP177', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2938', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP178', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2939', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP179', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP294', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP294', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2940', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP180', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2941', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP181', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2942', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP182', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2943', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP183', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2944', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP184', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2945', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP185', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2946', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP186', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2947', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP187', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2948', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP188', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2949', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP189', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP295', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP295', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2950', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP190', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2951', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP191', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2952', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP192', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2953', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP193', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2954', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP194', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2955', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP195', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2956', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP196', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2957', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP197', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2958', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP198', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2959', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP199', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP296', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP296', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2960', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP200', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2961', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP201', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2962', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP202', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2963', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP203', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2964', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP204', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2965', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP205', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2966', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP206', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2967', CAST(100000 AS Decimal(18, 0)), NULL, N'LC43', N'GXP207', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2968', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP208', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2969', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP209', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP297', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP297', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2970', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP210', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2971', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP211', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2972', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP212', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2973', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP213', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2974', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP214', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2975', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP215', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2976', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP216', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2977', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP217', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2978', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP218', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2979', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP219', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP298', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP298', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2980', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP220', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2981', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP221', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2982', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP222', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2983', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP223', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2984', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP224', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2985', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP225', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2986', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP226', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2987', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP227', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2988', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP228', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2989', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP229', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP299', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP299', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2990', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP230', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2991', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP231', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2992', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP232', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2993', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP233', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2994', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP234', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2995', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP235', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2996', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP236', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2997', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP237', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2998', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP238', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP2999', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP239', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3', CAST(100000 AS Decimal(18, 0)), N'HD2', N'LC1', N'GXP3', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP30', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP30', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP300', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP300', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3000', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP240', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3001', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP241', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3002', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP242', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3003', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP243', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3004', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP244', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3005', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP245', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3006', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP246', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3007', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP247', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3008', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP248', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3009', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP249', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP301', CAST(100000 AS Decimal(18, 0)), N'HD16', N'LC5', N'GXP301', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3010', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP250', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3011', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP251', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3012', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP252', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3013', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP253', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3014', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP254', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3015', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP255', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3016', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP256', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3017', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP257', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3018', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP258', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3019', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP259', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP302', CAST(100000 AS Decimal(18, 0)), N'HD16', N'LC5', N'GXP302', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3020', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP260', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3021', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP261', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3022', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP262', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3023', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP263', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3024', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP264', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3025', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP265', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3026', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP266', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3027', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP267', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3028', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP268', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3029', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP269', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP303', CAST(100000 AS Decimal(18, 0)), N'HD16', N'LC5', N'GXP303', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3030', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP270', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3031', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP271', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3032', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP272', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3033', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP273', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3034', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP274', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3035', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP275', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3036', CAST(100000 AS Decimal(18, 0)), NULL, N'LC44', N'GXP276', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3037', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP277', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3038', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP278', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3039', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP279', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP304', CAST(100000 AS Decimal(18, 0)), N'HD16', N'LC5', N'GXP304', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3040', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP280', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3041', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP281', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3042', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP282', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3043', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP283', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3044', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP284', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3045', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP285', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3046', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP286', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3047', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP287', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3048', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP288', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3049', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP289', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP305', CAST(100000 AS Decimal(18, 0)), N'HD16', N'LC5', N'GXP305', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3050', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP290', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3051', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP291', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3052', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP292', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3053', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP293', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3054', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP294', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3055', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP295', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3056', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP296', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3057', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP297', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3058', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP298', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3059', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP299', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP306', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP306', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3060', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP300', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3061', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP301', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3062', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP302', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3063', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP303', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3064', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP304', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3065', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP305', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3066', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP306', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3067', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP307', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3068', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP308', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3069', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP309', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP307', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP307', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3070', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP310', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3071', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP311', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3072', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP312', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3073', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP313', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3074', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP314', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3075', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP315', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3076', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP316', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3077', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP317', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3078', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP318', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3079', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP319', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP308', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP308', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3080', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP320', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3081', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP321', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3082', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP322', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3083', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP323', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3084', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP324', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3085', CAST(100000 AS Decimal(18, 0)), N'HD17', N'LC45', N'GXP325', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3086', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP326', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3087', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP327', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3088', CAST(100000 AS Decimal(18, 0)), N'HD17', N'LC45', N'GXP328', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3089', CAST(100000 AS Decimal(18, 0)), N'HD17', N'LC45', N'GXP329', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP309', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP309', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3090', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP330', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3091', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP331', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3092', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP332', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3093', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP333', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3094', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP334', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3095', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP335', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3096', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP336', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3097', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP337', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3098', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP338', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3099', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP339', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP31', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP31', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP310', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP310', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3100', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP340', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3101', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP341', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3102', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP342', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3103', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP343', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3104', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP344', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3105', CAST(100000 AS Decimal(18, 0)), NULL, N'LC45', N'GXP345', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3106', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP1', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3107', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP2', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3108', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP3', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3109', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP4', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP311', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP311', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3110', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP5', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3111', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP6', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3112', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP7', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3113', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP8', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3114', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP9', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3115', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP10', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3116', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP11', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3117', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP12', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3118', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP13', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3119', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP14', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP312', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP312', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3120', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP15', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3121', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP16', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3122', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP17', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3123', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP18', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3124', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP19', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3125', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP20', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3126', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP21', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3127', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP22', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3128', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP23', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3129', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP24', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP313', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP313', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3130', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP25', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3131', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP26', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3132', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP27', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3133', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP28', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3134', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP29', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3135', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP30', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3136', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP31', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3137', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP32', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3138', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP33', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3139', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP34', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP314', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP314', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3140', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP35', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3141', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP36', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3142', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP37', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3143', CAST(100000 AS Decimal(18, 0)), N'HD7', N'LC46', N'GXP38', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3144', CAST(100000 AS Decimal(18, 0)), N'HD7', N'LC46', N'GXP39', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3145', CAST(100000 AS Decimal(18, 0)), N'HD7', N'LC46', N'GXP40', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3146', CAST(100000 AS Decimal(18, 0)), N'HD7', N'LC46', N'GXP41', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3147', CAST(100000 AS Decimal(18, 0)), N'HD7', N'LC46', N'GXP42', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3148', CAST(100000 AS Decimal(18, 0)), N'HD8', N'LC46', N'GXP43', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3149', CAST(100000 AS Decimal(18, 0)), N'HD8', N'LC46', N'GXP44', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP315', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP315', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3150', CAST(100000 AS Decimal(18, 0)), N'HD8', N'LC46', N'GXP45', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3151', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP46', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3152', CAST(100000 AS Decimal(18, 0)), N'HD11', N'LC46', N'GXP47', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3153', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP48', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3154', CAST(100000 AS Decimal(18, 0)), N'HD12', N'LC46', N'GXP49', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3155', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP50', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3156', CAST(100000 AS Decimal(18, 0)), N'HD37', N'LC46', N'GXP51', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3157', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP52', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3158', CAST(100000 AS Decimal(18, 0)), N'HD38', N'LC46', N'GXP53', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3159', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP54', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP316', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP316', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3160', CAST(100000 AS Decimal(18, 0)), N'HD39', N'LC46', N'GXP55', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3161', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP56', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3162', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP57', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3163', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP58', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3164', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP59', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3165', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP60', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3166', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP61', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3167', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP62', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3168', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP63', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3169', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP64', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP317', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP317', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3170', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP65', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3171', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP66', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3172', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP67', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3173', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP68', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3174', CAST(100000 AS Decimal(18, 0)), NULL, N'LC46', N'GXP69', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3175', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP70', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3176', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP71', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3177', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP72', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3178', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP73', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3179', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP74', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP318', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP318', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3180', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP75', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3181', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP76', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3182', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP77', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3183', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP78', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3184', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP79', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3185', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP80', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3186', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP81', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3187', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP82', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3188', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP83', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3189', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP84', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP319', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP319', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3190', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP85', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3191', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP86', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3192', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP87', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3193', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP88', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3194', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP89', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3195', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP90', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3196', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP91', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3197', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP92', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3198', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP93', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3199', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP94', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP32', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP32', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP320', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP320', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3200', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP95', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3201', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP96', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3202', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP97', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3203', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP98', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3204', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP99', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3205', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP100', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3206', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP101', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3207', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP102', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3208', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP103', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3209', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP104', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP321', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP321', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3210', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP105', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3211', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP106', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3212', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP107', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3213', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP108', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3214', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP109', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3215', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP110', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3216', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP111', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3217', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP112', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3218', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP113', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3219', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP114', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP322', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP322', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3220', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP115', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3221', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP116', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3222', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP117', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3223', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP118', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3224', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP119', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3225', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP120', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3226', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP121', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3227', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP122', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3228', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP123', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3229', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP124', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP323', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP323', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3230', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP125', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3231', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP126', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3232', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP127', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3233', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP128', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3234', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP129', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3235', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP130', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3236', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP131', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3237', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP132', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3238', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP133', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3239', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP134', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP324', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP324', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3240', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP135', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3241', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP136', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3242', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP137', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3243', CAST(100000 AS Decimal(18, 0)), NULL, N'LC47', N'GXP138', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3244', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP139', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3245', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP140', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3246', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP141', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3247', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP142', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3248', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP143', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3249', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP144', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP325', CAST(100000 AS Decimal(18, 0)), N'HD17', N'LC5', N'GXP325', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3250', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP145', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3251', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP146', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3252', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP147', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3253', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP148', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3254', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP149', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3255', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP150', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3256', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP151', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3257', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP152', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3258', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP153', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3259', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP154', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP326', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP326', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3260', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP155', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3261', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP156', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3262', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP157', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3263', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP158', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3264', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP159', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3265', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP160', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3266', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP161', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3267', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP162', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3268', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP163', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3269', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP164', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP327', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP327', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3270', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP165', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3271', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP166', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3272', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP167', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3273', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP168', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3274', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP169', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3275', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP170', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3276', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP171', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3277', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP172', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3278', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP173', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3279', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP174', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP328', CAST(100000 AS Decimal(18, 0)), N'HD17', N'LC5', N'GXP328', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3280', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP175', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3281', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP176', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3282', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP177', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3283', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP178', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3284', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP179', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3285', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP180', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3286', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP181', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3287', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP182', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3288', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP183', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3289', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP184', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP329', CAST(100000 AS Decimal(18, 0)), N'HD17', N'LC5', N'GXP329', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3290', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP185', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3291', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP186', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3292', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP187', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3293', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP188', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3294', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP189', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3295', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP190', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3296', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP191', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3297', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP192', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3298', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP193', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3299', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP194', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP33', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP33', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP330', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP330', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3300', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP195', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3301', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP196', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3302', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP197', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3303', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP198', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3304', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP199', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3305', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP200', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3306', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP201', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3307', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP202', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3308', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP203', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3309', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP204', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP331', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP331', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3310', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP205', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3311', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP206', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3312', CAST(100000 AS Decimal(18, 0)), NULL, N'LC48', N'GXP207', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3313', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP208', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3314', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP209', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3315', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP210', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3316', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP211', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3317', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP212', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3318', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP213', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3319', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP214', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP332', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP332', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3320', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP215', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3321', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP216', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3322', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP217', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3323', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP218', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3324', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP219', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3325', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP220', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3326', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP221', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3327', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP222', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3328', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP223', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3329', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP224', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP333', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP333', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3330', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP225', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3331', CAST(100000 AS Decimal(18, 0)), N'HD34', N'LC49', N'GXP226', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3332', CAST(100000 AS Decimal(18, 0)), N'HD34', N'LC49', N'GXP227', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3333', CAST(100000 AS Decimal(18, 0)), N'HD34', N'LC49', N'GXP228', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3334', CAST(100000 AS Decimal(18, 0)), N'HD34', N'LC49', N'GXP229', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3335', CAST(100000 AS Decimal(18, 0)), N'HD34', N'LC49', N'GXP230', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3336', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP231', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3337', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP232', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3338', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP233', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3339', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP234', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP334', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP334', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3340', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP235', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3341', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP236', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3342', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP237', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3343', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP238', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3344', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP239', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3345', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP240', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3346', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP241', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3347', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP242', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3348', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP243', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3349', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP244', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP335', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP335', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3350', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP245', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3351', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP246', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3352', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP247', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3353', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP248', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3354', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP249', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3355', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP250', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3356', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP251', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3357', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP252', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3358', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP253', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3359', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP254', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP336', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP336', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3360', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP255', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3361', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP256', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3362', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP257', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3363', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP258', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3364', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP259', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3365', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP260', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3366', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP261', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3367', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP262', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3368', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP263', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3369', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP264', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP337', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP337', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3370', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP265', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3371', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP266', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3372', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP267', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3373', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP268', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3374', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP269', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3375', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP270', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3376', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP271', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3377', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP272', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3378', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP273', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3379', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP274', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP338', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP338', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3380', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC49', N'GXP275', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3381', CAST(100000 AS Decimal(18, 0)), NULL, N'LC49', N'GXP276', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3382', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP277', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3383', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP278', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3384', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP279', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3385', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP280', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3386', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC50', N'GXP281', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3387', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC50', N'GXP282', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3388', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC50', N'GXP283', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3389', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC50', N'GXP284', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP339', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP339', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3390', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC50', N'GXP285', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3391', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC50', N'GXP286', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3392', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC50', N'GXP287', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3393', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC50', N'GXP288', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3394', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC50', N'GXP289', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3395', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC50', N'GXP290', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3396', CAST(100000 AS Decimal(18, 0)), N'HD57', N'LC50', N'GXP291', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3397', CAST(100000 AS Decimal(18, 0)), N'HD15', N'LC50', N'GXP292', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3398', CAST(100000 AS Decimal(18, 0)), N'HD15', N'LC50', N'GXP293', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3399', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP294', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP34', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP34', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP340', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP340', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3400', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP295', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3401', CAST(100000 AS Decimal(18, 0)), N'HD23', N'LC50', N'GXP296', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3402', CAST(100000 AS Decimal(18, 0)), N'HD23', N'LC50', N'GXP297', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3403', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP298', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3404', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP299', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3405', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP300', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3406', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP301', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3407', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP302', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3408', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP303', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3409', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP304', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP341', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP341', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3410', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP305', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3411', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP306', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3412', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP307', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3413', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP308', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3414', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP309', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3415', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP310', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3416', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP311', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3417', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP312', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3418', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP313', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3419', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP314', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP342', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP342', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3420', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP315', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3421', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP316', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3422', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP317', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3423', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP318', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3424', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP319', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3425', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP320', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3426', CAST(100000 AS Decimal(18, 0)), N'HD18', N'LC50', N'GXP321', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3427', CAST(100000 AS Decimal(18, 0)), N'HD18', N'LC50', N'GXP322', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3428', CAST(100000 AS Decimal(18, 0)), N'HD18', N'LC50', N'GXP323', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3429', CAST(100000 AS Decimal(18, 0)), N'HD18', N'LC50', N'GXP324', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP343', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP343', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3430', CAST(100000 AS Decimal(18, 0)), N'HD18', N'LC50', N'GXP325', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3431', CAST(100000 AS Decimal(18, 0)), N'HD18', N'LC50', N'GXP326', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3432', CAST(100000 AS Decimal(18, 0)), N'HD18', N'LC50', N'GXP327', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3433', CAST(100000 AS Decimal(18, 0)), N'HD18', N'LC50', N'GXP328', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3434', CAST(100000 AS Decimal(18, 0)), N'HD20', N'LC50', N'GXP329', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3435', CAST(100000 AS Decimal(18, 0)), N'HD20', N'LC50', N'GXP330', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3436', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP331', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3437', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP332', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3438', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP333', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3439', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP334', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP344', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP344', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3440', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP335', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3441', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP336', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3442', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP337', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3443', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP338', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3444', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP339', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3445', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP340', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3446', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP341', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3447', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP342', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3448', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP343', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3449', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP344', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP345', CAST(100000 AS Decimal(18, 0)), NULL, N'LC5', N'GXP345', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3450', CAST(100000 AS Decimal(18, 0)), NULL, N'LC50', N'GXP345', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3451', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP1', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3452', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP2', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3453', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP3', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3454', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP4', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3455', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP5', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3456', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP6', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3457', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP7', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3458', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP8', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3459', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP9', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP346', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP1', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3460', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP10', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3461', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP11', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3462', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP12', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3463', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP13', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3464', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP14', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3465', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP15', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3466', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP16', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3467', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP17', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3468', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP18', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3469', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP19', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP347', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP2', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3470', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP20', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3471', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP21', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3472', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP22', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3473', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP23', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3474', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP24', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3475', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP25', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3476', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP26', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3477', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP27', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3478', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP28', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3479', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP29', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP348', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP3', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3480', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP30', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3481', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP31', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3482', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP32', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3483', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP33', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3484', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP34', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3485', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP35', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3486', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP36', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3487', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP37', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3488', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP38', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3489', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP39', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP349', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP4', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3490', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP40', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3491', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP41', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3492', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP42', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3493', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP43', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3494', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP44', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3495', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP45', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3496', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP46', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3497', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP47', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3498', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP48', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3499', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP49', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP35', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP35', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP350', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP5', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3500', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP50', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3501', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP51', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3502', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP52', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3503', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP53', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3504', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP54', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3505', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP55', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3506', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP56', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3507', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP57', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3508', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP58', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3509', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP59', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP351', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP6', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3510', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP60', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3511', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP61', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3512', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP62', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3513', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP63', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3514', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP64', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3515', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP65', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3516', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP66', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3517', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP67', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3518', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP68', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3519', CAST(100000 AS Decimal(18, 0)), NULL, N'LC51', N'GXP69', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP352', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP7', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3520', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP70', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3521', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP71', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3522', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP72', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3523', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP73', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3524', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP74', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3525', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP75', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3526', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP76', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3527', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP77', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3528', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP78', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3529', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP79', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP353', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP8', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3530', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP80', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3531', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP81', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3532', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP82', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3533', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP83', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3534', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP84', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3535', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP85', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3536', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP86', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3537', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP87', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3538', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP88', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3539', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP89', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP354', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP9', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3540', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP90', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3541', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP91', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3542', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP92', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3543', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP93', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3544', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP94', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3545', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP95', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3546', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP96', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3547', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP97', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3548', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP98', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3549', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP99', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP355', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP10', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3550', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP100', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3551', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP101', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3552', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP102', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3553', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP103', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3554', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP104', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3555', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP105', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3556', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP106', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3557', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP107', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3558', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP108', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3559', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP109', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP356', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP11', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3560', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP110', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3561', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP111', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3562', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP112', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3563', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP113', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3564', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP114', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3565', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP115', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3566', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP116', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3567', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP117', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3568', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP118', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3569', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP119', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP357', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP12', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3570', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP120', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3571', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP121', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3572', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP122', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3573', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP123', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3574', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP124', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3575', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP125', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3576', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP126', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3577', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP127', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3578', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP128', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3579', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP129', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP358', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP13', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3580', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP130', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3581', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP131', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3582', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP132', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3583', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP133', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3584', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP134', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3585', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP135', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3586', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP136', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3587', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP137', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3588', CAST(100000 AS Decimal(18, 0)), NULL, N'LC52', N'GXP138', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3589', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP139', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP359', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP14', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3590', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP140', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3591', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP141', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3592', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP142', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3593', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP143', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3594', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP144', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3595', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP145', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3596', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP146', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3597', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP147', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3598', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP148', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3599', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP149', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP36', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP36', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP360', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP15', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3600', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP150', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3601', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP151', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3602', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP152', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3603', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP153', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3604', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP154', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3605', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP155', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3606', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP156', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3607', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP157', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3608', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP158', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3609', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP159', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP361', CAST(100000 AS Decimal(18, 0)), N'HD26', N'LC6', N'GXP16', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3610', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP160', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3611', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP161', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3612', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP162', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3613', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP163', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3614', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP164', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3615', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP165', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3616', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP166', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3617', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP167', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3618', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP168', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3619', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP169', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP362', CAST(100000 AS Decimal(18, 0)), N'HD26', N'LC6', N'GXP17', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3620', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP170', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3621', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP171', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3622', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP172', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3623', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP173', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3624', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP174', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3625', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP175', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3626', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP176', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3627', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP177', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3628', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP178', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3629', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP179', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP363', CAST(100000 AS Decimal(18, 0)), N'HD25', N'LC6', N'GXP18', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3630', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP180', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3631', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP181', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3632', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP182', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3633', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP183', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3634', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP184', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3635', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP185', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3636', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP186', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3637', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP187', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3638', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP188', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3639', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP189', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP364', CAST(100000 AS Decimal(18, 0)), N'HD25', N'LC6', N'GXP19', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3640', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP190', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3641', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP191', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3642', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP192', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3643', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP193', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3644', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP194', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3645', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP195', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3646', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP196', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3647', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP197', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3648', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP198', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3649', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP199', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP365', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP20', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3650', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP200', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3651', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP201', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3652', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP202', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3653', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP203', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3654', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP204', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3655', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP205', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3656', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP206', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3657', CAST(100000 AS Decimal(18, 0)), NULL, N'LC53', N'GXP207', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3658', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP208', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3659', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP209', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP366', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP21', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3660', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP210', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3661', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP211', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3662', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP212', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3663', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP213', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3664', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP214', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3665', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP215', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3666', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP216', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3667', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP217', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3668', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP218', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3669', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP219', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP367', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP22', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3670', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP220', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3671', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP221', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3672', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP222', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3673', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP223', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3674', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP224', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3675', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP225', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3676', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP226', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3677', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP227', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3678', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP228', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3679', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP229', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP368', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP23', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3680', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP230', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3681', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP231', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3682', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP232', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3683', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP233', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3684', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP234', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3685', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP235', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3686', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP236', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3687', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP237', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3688', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP238', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3689', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP239', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP369', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP24', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3690', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP240', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3691', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP241', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3692', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP242', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3693', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP243', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3694', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP244', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3695', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP245', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3696', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP246', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3697', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP247', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3698', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP248', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3699', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP249', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP37', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP37', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP370', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP25', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3700', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP250', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3701', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP251', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3702', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP252', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3703', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP253', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3704', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP254', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3705', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP255', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3706', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP256', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3707', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP257', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3708', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP258', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3709', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP259', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP371', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP26', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3710', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP260', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3711', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP261', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3712', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP262', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3713', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP263', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3714', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP264', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3715', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP265', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3716', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP266', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3717', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP267', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3718', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP268', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3719', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP269', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP372', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP27', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3720', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP270', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3721', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP271', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3722', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP272', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3723', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP273', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3724', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP274', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3725', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP275', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3726', CAST(100000 AS Decimal(18, 0)), NULL, N'LC54', N'GXP276', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3727', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP277', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3728', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP278', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3729', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP279', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP373', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP28', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3730', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP280', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3731', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP281', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3732', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP282', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3733', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP283', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3734', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP284', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3735', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP285', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3736', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP286', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3737', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP287', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3738', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP288', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3739', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP289', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP374', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP29', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3740', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP290', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3741', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP291', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3742', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP292', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3743', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP293', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3744', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP294', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3745', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP295', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3746', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP296', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3747', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP297', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3748', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP298', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3749', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP299', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP375', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP30', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3750', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP300', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3751', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP301', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3752', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP302', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3753', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP303', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3754', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP304', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3755', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP305', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3756', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP306', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3757', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP307', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3758', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP308', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3759', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP309', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP376', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP31', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3760', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP310', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3761', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP311', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3762', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP312', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3763', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP313', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3764', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP314', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3765', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP315', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3766', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP316', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3767', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP317', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3768', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP318', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3769', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP319', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP377', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP32', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3770', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP320', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3771', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP321', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3772', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP322', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3773', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP323', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3774', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP324', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3775', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP325', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3776', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP326', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3777', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP327', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3778', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP328', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3779', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP329', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP378', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP33', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3780', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP330', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3781', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP331', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3782', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP332', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3783', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP333', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3784', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP334', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3785', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP335', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3786', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP336', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3787', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP337', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3788', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP338', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3789', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP339', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP379', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP34', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3790', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP340', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3791', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP341', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3792', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP342', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3793', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP343', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3794', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP344', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3795', CAST(100000 AS Decimal(18, 0)), NULL, N'LC55', N'GXP345', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3796', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP1', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3797', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP2', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3798', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP3', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3799', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP4', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP38', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP38', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP380', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP35', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3800', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP5', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3801', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP6', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3802', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP7', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3803', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP8', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3804', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP9', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3805', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP10', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3806', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP11', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3807', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP12', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3808', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP13', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3809', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP14', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP381', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP36', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3810', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP15', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3811', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP16', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3812', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP17', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3813', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP18', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3814', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP19', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3815', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP20', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3816', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP21', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3817', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP22', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3818', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP23', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3819', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP24', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP382', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP37', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3820', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP25', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3821', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP26', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3822', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP27', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3823', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP28', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3824', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP29', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3825', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP30', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3826', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP31', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3827', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP32', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3828', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP33', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3829', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP34', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP383', CAST(100000 AS Decimal(18, 0)), N'HD19', N'LC6', N'GXP38', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3830', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP35', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3831', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP36', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3832', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP37', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3833', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP38', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3834', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP39', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3835', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP40', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3836', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP41', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3837', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP42', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3838', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP43', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3839', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP44', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP384', CAST(100000 AS Decimal(18, 0)), N'HD19', N'LC6', N'GXP39', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3840', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP45', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3841', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP46', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3842', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP47', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3843', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP48', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3844', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP49', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3845', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP50', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3846', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP51', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3847', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP52', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3848', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP53', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3849', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP54', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP385', CAST(100000 AS Decimal(18, 0)), N'HD19', N'LC6', N'GXP40', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3850', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP55', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3851', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP56', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3852', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP57', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3853', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP58', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3854', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP59', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3855', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP60', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3856', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP61', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3857', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP62', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3858', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP63', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3859', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP64', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP386', CAST(100000 AS Decimal(18, 0)), N'HD19', N'LC6', N'GXP41', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3860', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP65', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3861', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP66', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3862', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP67', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3863', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP68', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3864', CAST(100000 AS Decimal(18, 0)), NULL, N'LC56', N'GXP69', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3865', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP70', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3866', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP71', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3867', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP72', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3868', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP73', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3869', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP74', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP387', CAST(100000 AS Decimal(18, 0)), N'HD19', N'LC6', N'GXP42', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3870', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP75', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3871', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP76', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3872', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP77', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3873', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP78', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3874', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP79', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3875', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP80', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3876', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP81', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3877', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP82', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3878', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP83', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3879', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP84', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP388', CAST(100000 AS Decimal(18, 0)), N'HD19', N'LC6', N'GXP43', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3880', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP85', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3881', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP86', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3882', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP87', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3883', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP88', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3884', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP89', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3885', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP90', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3886', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP91', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3887', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP92', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3888', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP93', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3889', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP94', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP389', CAST(100000 AS Decimal(18, 0)), N'HD20', N'LC6', N'GXP44', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3890', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP95', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3891', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP96', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3892', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP97', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3893', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP98', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3894', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP99', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3895', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP100', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3896', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP101', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3897', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP102', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3898', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP103', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3899', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP104', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP39', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP39', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP390', CAST(100000 AS Decimal(18, 0)), N'HD20', N'LC6', N'GXP45', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3900', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP105', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3901', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP106', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3902', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP107', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3903', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP108', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3904', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP109', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3905', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP110', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3906', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP111', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3907', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP112', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3908', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP113', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3909', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP114', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP391', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP46', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3910', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP115', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3911', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP116', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3912', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP117', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3913', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP118', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3914', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP119', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3915', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP120', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3916', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP121', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3917', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP122', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3918', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP123', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3919', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP124', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP392', CAST(100000 AS Decimal(18, 0)), N'HD21', N'LC6', N'GXP47', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3920', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP125', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3921', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP126', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3922', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP127', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3923', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP128', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3924', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP129', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3925', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP130', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3926', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP131', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3927', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP132', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3928', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP133', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3929', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP134', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP393', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP48', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3930', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP135', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3931', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP136', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3932', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP137', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3933', CAST(100000 AS Decimal(18, 0)), NULL, N'LC57', N'GXP138', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3934', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP139', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3935', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP140', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3936', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP141', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3937', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP142', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3938', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP143', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3939', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP144', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP394', CAST(100000 AS Decimal(18, 0)), N'HD22', N'LC6', N'GXP49', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3940', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP145', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3941', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP146', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3942', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP147', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3943', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP148', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3944', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP149', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3945', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP150', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3946', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP151', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3947', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP152', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3948', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP153', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3949', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP154', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP395', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP50', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3950', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP155', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3951', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP156', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3952', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP157', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3953', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP158', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3954', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP159', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3955', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP160', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3956', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP161', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3957', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP162', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3958', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP163', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3959', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP164', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP396', CAST(100000 AS Decimal(18, 0)), N'HD23', N'LC6', N'GXP51', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3960', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP165', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3961', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP166', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3962', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP167', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3963', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP168', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3964', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP169', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3965', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP170', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3966', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP171', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3967', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP172', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3968', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP173', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3969', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP174', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP397', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP52', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3970', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP175', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3971', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP176', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3972', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP177', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3973', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP178', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3974', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP179', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3975', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP180', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3976', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP181', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3977', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP182', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3978', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP183', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3979', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP184', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP398', CAST(100000 AS Decimal(18, 0)), N'HD24', N'LC6', N'GXP53', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3980', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP185', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3981', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP186', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3982', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP187', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3983', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP188', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3984', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP189', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3985', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP190', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3986', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP191', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3987', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP192', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3988', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP193', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3989', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP194', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP399', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP54', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3990', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP195', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3991', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP196', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3992', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP197', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3993', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP198', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3994', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP199', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3995', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP200', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3996', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP201', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3997', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP202', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3998', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP203', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP3999', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP204', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4', CAST(100000 AS Decimal(18, 0)), N'HD2', N'LC1', N'GXP4', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP40', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP40', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP400', CAST(100000 AS Decimal(18, 0)), N'HD25', N'LC6', N'GXP55', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4000', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP205', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4001', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP206', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4002', CAST(100000 AS Decimal(18, 0)), NULL, N'LC58', N'GXP207', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4003', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP208', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4004', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP209', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4005', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP210', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4006', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP211', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4007', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP212', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4008', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP213', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4009', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP214', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP401', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP56', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4010', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP215', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4011', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP216', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4012', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP217', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4013', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP218', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4014', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP219', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4015', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP220', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4016', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP221', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4017', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP222', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4018', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP223', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4019', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP224', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP402', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP57', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4020', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP225', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4021', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP226', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4022', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP227', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4023', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP228', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4024', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP229', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4025', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP230', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4026', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP231', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4027', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP232', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4028', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP233', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4029', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP234', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP403', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP58', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4030', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP235', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4031', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP236', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4032', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP237', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4033', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP238', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4034', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP239', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4035', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP240', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4036', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP241', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4037', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP242', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4038', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP243', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4039', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP244', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP404', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP59', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4040', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP245', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4041', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP246', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4042', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP247', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4043', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP248', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4044', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP249', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4045', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP250', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4046', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP251', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4047', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP252', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4048', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP253', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4049', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP254', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP405', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP60', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4050', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP255', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4051', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP256', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4052', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP257', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4053', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP258', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4054', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP259', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4055', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP260', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4056', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP261', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4057', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP262', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4058', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP263', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4059', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP264', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP406', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP61', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4060', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP265', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4061', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP266', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4062', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP267', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4063', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP268', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4064', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP269', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4065', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP270', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4066', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP271', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4067', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP272', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4068', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP273', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4069', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP274', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP407', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP62', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4070', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP275', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4071', CAST(100000 AS Decimal(18, 0)), NULL, N'LC59', N'GXP276', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4072', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP277', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4073', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP278', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4074', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP279', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4075', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP280', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4076', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP281', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4077', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP282', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4078', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP283', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4079', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP284', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP408', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP63', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4080', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP285', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4081', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP286', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4082', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP287', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4083', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP288', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4084', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP289', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4085', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP290', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4086', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP291', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4087', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP292', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4088', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP293', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4089', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP294', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP409', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP64', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4090', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP295', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4091', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP296', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4092', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP297', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4093', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP298', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4094', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP299', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4095', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP300', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4096', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP301', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4097', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP302', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4098', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP303', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4099', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP304', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP41', CAST(100000 AS Decimal(18, 0)), N'HD7', N'LC1', N'GXP41', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP410', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP65', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4100', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP305', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4101', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP306', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4102', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP307', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4103', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP308', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4104', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP309', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4105', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP310', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4106', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP311', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4107', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP312', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4108', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP313', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4109', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP314', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP411', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP66', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4110', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP315', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4111', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP316', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4112', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP317', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4113', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP318', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4114', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP319', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4115', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP320', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4116', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP321', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4117', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP322', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4118', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP323', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4119', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP324', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP412', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP67', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4120', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP325', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4121', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP326', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4122', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP327', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4123', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP328', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4124', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP329', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4125', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP330', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4126', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP331', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4127', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP332', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4128', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP333', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4129', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP334', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP413', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP68', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4130', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP335', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4131', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP336', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4132', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP337', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4133', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP338', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4134', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP339', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4135', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP340', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4136', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP341', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4137', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP342', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4138', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP343', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4139', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP344', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP414', CAST(100000 AS Decimal(18, 0)), NULL, N'LC6', N'GXP69', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4140', CAST(100000 AS Decimal(18, 0)), NULL, N'LC60', N'GXP345', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4141', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP1', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4142', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP2', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4143', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP3', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4144', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP4', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4145', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP5', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4146', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP6', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4147', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP7', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4148', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP8', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4149', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP9', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP415', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP70', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4150', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP10', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4151', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP11', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4152', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP12', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4153', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP13', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4154', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP14', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4155', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP15', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4156', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP16', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4157', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP17', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4158', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP18', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4159', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP19', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP416', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP71', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4160', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP20', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4161', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP21', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4162', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP22', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4163', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP23', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4164', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP24', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4165', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP25', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4166', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP26', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4167', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP27', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4168', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP28', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4169', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP29', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP417', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP72', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4170', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP30', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4171', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP31', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4172', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP32', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4173', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP33', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4174', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP34', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4175', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP35', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4176', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP36', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4177', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP37', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4178', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP38', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4179', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP39', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP418', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP73', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4180', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP40', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4181', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP41', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4182', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP42', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4183', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP43', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4184', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP44', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4185', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP45', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4186', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP46', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4187', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP47', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4188', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP48', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4189', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP49', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP419', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP74', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4190', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP50', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4191', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP51', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4192', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP52', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4193', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP53', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4194', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP54', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4195', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP55', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4196', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP56', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4197', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP57', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4198', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP58', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4199', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP59', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP42', CAST(100000 AS Decimal(18, 0)), N'HD7', N'LC1', N'GXP42', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP420', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP75', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4200', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP60', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4201', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP61', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4202', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP62', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4203', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP63', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4204', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP64', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4205', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP65', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4206', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP66', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4207', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP67', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4208', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP68', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4209', CAST(100000 AS Decimal(18, 0)), NULL, N'LC61', N'GXP69', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP421', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP76', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4210', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP70', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4211', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP71', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4212', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP72', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4213', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP73', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4214', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP74', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4215', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP75', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4216', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP76', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4217', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP77', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4218', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP78', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4219', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP79', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP422', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP77', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4220', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP80', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4221', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP81', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4222', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP82', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4223', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP83', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4224', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP84', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4225', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP85', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4226', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP86', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4227', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP87', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4228', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP88', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4229', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP89', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP423', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP78', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4230', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP90', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4231', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP91', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4232', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP92', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4233', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP93', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4234', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP94', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4235', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP95', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4236', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP96', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4237', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP97', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4238', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP98', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4239', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP99', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP424', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP79', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4240', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP100', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4241', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP101', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4242', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP102', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4243', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP103', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4244', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP104', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4245', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP105', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4246', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP106', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4247', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP107', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4248', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP108', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4249', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP109', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP425', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP80', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4250', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP110', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4251', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP111', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4252', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP112', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4253', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP113', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4254', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP114', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4255', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP115', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4256', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP116', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4257', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP117', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4258', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP118', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4259', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP119', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP426', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP81', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4260', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP120', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4261', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP121', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4262', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP122', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4263', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP123', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4264', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP124', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4265', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP125', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4266', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP126', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4267', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP127', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4268', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP128', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4269', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP129', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP427', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP82', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4270', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP130', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4271', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP131', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4272', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP132', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4273', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP133', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4274', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP134', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4275', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP135', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4276', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP136', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4277', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP137', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4278', CAST(100000 AS Decimal(18, 0)), NULL, N'LC62', N'GXP138', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4279', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP139', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP428', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP83', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4280', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP140', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4281', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP141', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4282', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP142', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4283', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP143', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4284', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP144', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4285', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP145', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4286', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP146', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4287', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP147', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4288', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP148', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4289', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP149', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP429', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP84', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4290', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP150', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4291', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP151', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4292', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP152', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4293', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP153', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4294', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP154', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4295', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP155', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4296', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP156', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4297', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP157', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4298', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP158', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4299', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP159', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP43', CAST(100000 AS Decimal(18, 0)), N'HD7', N'LC1', N'GXP43', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP430', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP85', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4300', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP160', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4301', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP161', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4302', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP162', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4303', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP163', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4304', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP164', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4305', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP165', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4306', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP166', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4307', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP167', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4308', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP168', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4309', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP169', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP431', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP86', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4310', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP170', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4311', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP171', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4312', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP172', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4313', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP173', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4314', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP174', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4315', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP175', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4316', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP176', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4317', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP177', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4318', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP178', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4319', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP179', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP432', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP87', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4320', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP180', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4321', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP181', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4322', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP182', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4323', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP183', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4324', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP184', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4325', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP185', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4326', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP186', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4327', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP187', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4328', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP188', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4329', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP189', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP433', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP88', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4330', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP190', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4331', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP191', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4332', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP192', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4333', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP193', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4334', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP194', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4335', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP195', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4336', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP196', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4337', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP197', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4338', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP198', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4339', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP199', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP434', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP89', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4340', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP200', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4341', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP201', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4342', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP202', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4343', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP203', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4344', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP204', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4345', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP205', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4346', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP206', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4347', CAST(100000 AS Decimal(18, 0)), NULL, N'LC63', N'GXP207', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4348', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP208', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4349', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP209', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP435', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP90', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4350', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP210', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4351', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP211', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4352', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP212', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4353', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP213', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4354', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP214', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4355', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP215', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4356', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP216', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4357', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP217', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4358', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP218', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4359', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP219', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP436', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP91', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4360', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP220', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4361', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP221', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4362', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP222', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4363', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP223', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4364', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP224', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4365', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP225', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4366', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP226', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4367', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP227', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4368', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP228', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4369', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP229', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP437', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP92', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4370', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP230', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4371', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP231', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4372', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP232', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4373', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP233', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4374', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP234', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4375', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP235', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4376', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP236', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4377', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP237', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4378', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP238', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4379', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP239', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP438', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP93', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4380', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP240', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4381', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP241', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4382', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP242', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4383', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP243', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4384', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP244', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4385', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP245', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4386', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP246', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4387', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP247', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4388', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP248', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4389', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP249', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP439', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP94', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4390', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP250', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4391', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP251', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4392', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP252', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4393', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP253', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4394', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP254', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4395', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP255', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4396', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP256', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4397', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP257', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4398', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP258', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4399', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP259', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP44', CAST(100000 AS Decimal(18, 0)), N'HD7', N'LC1', N'GXP44', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP440', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP95', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4400', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP260', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4401', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP261', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4402', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP262', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4403', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP263', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4404', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP264', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4405', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP265', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4406', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP266', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4407', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP267', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4408', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP268', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4409', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP269', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP441', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP96', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4410', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP270', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4411', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP271', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4412', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP272', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4413', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP273', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4414', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP274', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4415', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP275', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4416', CAST(100000 AS Decimal(18, 0)), NULL, N'LC64', N'GXP276', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4417', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP277', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4418', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP278', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4419', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP279', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP442', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP97', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4420', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP280', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4421', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP281', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4422', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP282', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4423', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP283', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4424', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP284', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4425', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP285', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4426', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP286', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4427', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP287', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4428', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP288', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4429', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP289', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP443', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP98', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4430', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP290', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4431', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP291', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4432', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP292', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4433', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP293', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4434', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP294', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4435', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP295', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4436', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP296', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4437', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP297', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4438', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP298', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4439', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP299', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP444', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP99', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4440', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP300', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4441', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP301', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4442', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP302', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4443', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP303', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4444', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP304', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4445', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP305', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4446', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP306', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4447', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP307', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4448', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP308', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4449', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP309', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP445', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP100', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4450', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP310', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4451', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP311', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4452', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP312', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4453', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP313', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4454', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP314', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4455', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP315', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4456', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP316', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4457', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP317', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4458', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP318', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4459', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP319', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP446', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP101', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4460', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP320', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4461', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP321', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4462', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP322', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4463', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP323', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4464', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP324', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4465', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP325', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4466', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP326', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4467', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP327', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4468', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP328', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4469', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP329', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP447', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP102', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4470', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP330', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4471', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP331', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4472', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP332', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4473', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP333', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4474', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP334', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4475', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP335', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4476', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP336', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4477', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP337', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4478', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP338', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4479', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP339', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP448', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP103', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4480', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP340', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4481', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP341', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4482', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP342', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4483', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP343', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4484', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP344', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4485', CAST(100000 AS Decimal(18, 0)), NULL, N'LC65', N'GXP345', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4486', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP1', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4487', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP2', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4488', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP3', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4489', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP4', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP449', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP104', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4490', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP5', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4491', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP6', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4492', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP7', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4493', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP8', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4494', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP9', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4495', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP10', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4496', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP11', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4497', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP12', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4498', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP13', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4499', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP14', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP45', CAST(100000 AS Decimal(18, 0)), N'HD8', N'LC1', N'GXP45', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP450', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP105', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4500', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP15', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4501', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP16', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4502', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP17', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4503', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP18', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4504', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP19', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4505', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP20', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4506', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP21', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4507', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP22', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4508', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP23', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4509', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP24', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP451', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP106', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4510', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP25', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4511', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP26', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4512', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP27', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4513', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP28', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4514', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP29', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4515', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP30', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4516', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP31', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4517', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP32', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4518', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP33', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4519', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP34', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP452', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP107', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4520', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP35', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4521', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP36', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4522', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP37', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4523', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP38', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4524', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP39', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4525', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP40', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4526', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP41', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4527', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP42', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4528', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP43', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4529', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP44', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP453', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP108', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4530', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP45', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4531', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP46', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4532', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP47', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4533', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP48', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4534', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP49', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4535', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP50', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4536', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP51', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4537', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP52', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4538', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP53', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4539', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP54', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP454', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP109', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4540', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP55', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4541', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP56', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4542', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP57', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4543', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP58', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4544', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP59', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4545', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP60', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4546', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP61', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4547', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP62', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4548', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP63', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4549', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP64', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP455', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP110', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4550', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP65', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4551', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP66', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4552', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP67', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4553', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP68', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4554', CAST(100000 AS Decimal(18, 0)), NULL, N'LC66', N'GXP69', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4555', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP70', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4556', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP71', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4557', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP72', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4558', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP73', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4559', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP74', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP456', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP111', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4560', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP75', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4561', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP76', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4562', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP77', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4563', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP78', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4564', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP79', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4565', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP80', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4566', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP81', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4567', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP82', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4568', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP83', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4569', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP84', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP457', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP112', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4570', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP85', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4571', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP86', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4572', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP87', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4573', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP88', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4574', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP89', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4575', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP90', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4576', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP91', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4577', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP92', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4578', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP93', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4579', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP94', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP458', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP113', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4580', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP95', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4581', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP96', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4582', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP97', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4583', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP98', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4584', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP99', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4585', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP100', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4586', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP101', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4587', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP102', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4588', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP103', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4589', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP104', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP459', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP114', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4590', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP105', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4591', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP106', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4592', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP107', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4593', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP108', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4594', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP109', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4595', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP110', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4596', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP111', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4597', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP112', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4598', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP113', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4599', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP114', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP46', CAST(100000 AS Decimal(18, 0)), N'HD8', N'LC1', N'GXP46', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP460', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP115', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4600', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP115', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4601', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP116', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4602', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP117', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4603', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP118', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4604', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP119', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4605', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP120', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4606', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP121', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4607', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP122', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4608', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP123', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4609', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP124', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP461', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP116', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4610', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP125', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4611', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP126', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4612', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP127', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4613', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP128', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4614', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP129', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4615', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP130', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4616', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP131', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4617', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP132', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4618', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP133', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4619', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP134', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP462', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP117', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4620', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP135', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4621', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP136', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4622', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP137', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4623', CAST(100000 AS Decimal(18, 0)), NULL, N'LC67', N'GXP138', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4624', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP139', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4625', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP140', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4626', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP141', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4627', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP142', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4628', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP143', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4629', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP144', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP463', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP118', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4630', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP145', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4631', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP146', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4632', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP147', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4633', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP148', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4634', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP149', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4635', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP150', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4636', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP151', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4637', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP152', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4638', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP153', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4639', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP154', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP464', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP119', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4640', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP155', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4641', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP156', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4642', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP157', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4643', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP158', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4644', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP159', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4645', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP160', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4646', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP161', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4647', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP162', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4648', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP163', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4649', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP164', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP465', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP120', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4650', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP165', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4651', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP166', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4652', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP167', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4653', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP168', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4654', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP169', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4655', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP170', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4656', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP171', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4657', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP172', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4658', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP173', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4659', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP174', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP466', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP121', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4660', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP175', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4661', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP176', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4662', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP177', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4663', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP178', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4664', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP179', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4665', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP180', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4666', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP181', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4667', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP182', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4668', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP183', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4669', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP184', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP467', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP122', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4670', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP185', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4671', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP186', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4672', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP187', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4673', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP188', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4674', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP189', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4675', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP190', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4676', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP191', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4677', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP192', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4678', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP193', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4679', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP194', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP468', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP123', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4680', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP195', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4681', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP196', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4682', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP197', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4683', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP198', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4684', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP199', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4685', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP200', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4686', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP201', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4687', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP202', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4688', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP203', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4689', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP204', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP469', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP124', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4690', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP205', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4691', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP206', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4692', CAST(100000 AS Decimal(18, 0)), NULL, N'LC68', N'GXP207', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4693', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP208', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4694', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP209', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4695', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP210', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4696', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP211', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4697', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP212', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4698', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP213', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4699', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP214', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP47', CAST(100000 AS Decimal(18, 0)), N'HD8', N'LC1', N'GXP47', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP470', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP125', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4700', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP215', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4701', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP216', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4702', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP217', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4703', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP218', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4704', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP219', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4705', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP220', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4706', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP221', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4707', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP222', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4708', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP223', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4709', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP224', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP471', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP126', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4710', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP225', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4711', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP226', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4712', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP227', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4713', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP228', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4714', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP229', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4715', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP230', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4716', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP231', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4717', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP232', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4718', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP233', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4719', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP234', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP472', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP127', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4720', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP235', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4721', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP236', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4722', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP237', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4723', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP238', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4724', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP239', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4725', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP240', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4726', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP241', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4727', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP242', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4728', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP243', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4729', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP244', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP473', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP128', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4730', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP245', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4731', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP246', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4732', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP247', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4733', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP248', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4734', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP249', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4735', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP250', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4736', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP251', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4737', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP252', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4738', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP253', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4739', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP254', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP474', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP129', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4740', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP255', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4741', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP256', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4742', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP257', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4743', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP258', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4744', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP259', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4745', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP260', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4746', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP261', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4747', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP262', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4748', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP263', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4749', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP264', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP475', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP130', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4750', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP265', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4751', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP266', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4752', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP267', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4753', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP268', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4754', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP269', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4755', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP270', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4756', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP271', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4757', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP272', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4758', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP273', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4759', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP274', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP476', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP131', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4760', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP275', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4761', CAST(100000 AS Decimal(18, 0)), NULL, N'LC69', N'GXP276', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4762', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP277', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4763', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP278', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4764', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP279', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4765', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP280', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4766', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP281', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4767', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP282', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4768', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP283', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4769', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP284', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP477', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP132', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4770', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP285', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4771', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP286', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4772', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP287', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4773', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP288', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4774', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP289', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4775', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP290', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4776', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP291', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4777', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP292', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4778', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP293', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4779', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP294', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP478', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP133', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4780', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP295', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4781', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP296', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4782', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP297', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4783', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP298', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4784', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP299', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4785', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP300', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4786', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP301', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4787', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP302', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4788', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP303', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4789', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP304', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP479', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP134', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4790', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP305', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4791', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP306', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4792', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP307', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4793', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP308', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4794', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP309', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4795', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP310', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4796', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP311', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4797', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP312', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4798', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP313', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4799', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP314', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP48', CAST(100000 AS Decimal(18, 0)), N'HD9', N'LC1', N'GXP48', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP480', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP135', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4800', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP315', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4801', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP316', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4802', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP317', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4803', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP318', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4804', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP319', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4805', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP320', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4806', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP321', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4807', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP322', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4808', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP323', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4809', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP324', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP481', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP136', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4810', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP325', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4811', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP326', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4812', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP327', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4813', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP328', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4814', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP329', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4815', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP330', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4816', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP331', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4817', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP332', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4818', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP333', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4819', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP334', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP482', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP137', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4820', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP335', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4821', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP336', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4822', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP337', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4823', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP338', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4824', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP339', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4825', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP340', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4826', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP341', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4827', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP342', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4828', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP343', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4829', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP344', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP483', CAST(100000 AS Decimal(18, 0)), NULL, N'LC7', N'GXP138', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4830', CAST(100000 AS Decimal(18, 0)), NULL, N'LC70', N'GXP345', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4831', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP1', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4832', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP2', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4833', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP3', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4834', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP4', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4835', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP5', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4836', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP6', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4837', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP7', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4838', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP8', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4839', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP9', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP484', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP139', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4840', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP10', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4841', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP11', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4842', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP12', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4843', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP13', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4844', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP14', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4845', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP15', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4846', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP16', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4847', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP17', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4848', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP18', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4849', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP19', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP485', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP140', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4850', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP20', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4851', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP21', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4852', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP22', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4853', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP23', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4854', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP24', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4855', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP25', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4856', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP26', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4857', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP27', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4858', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP28', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4859', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP29', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP486', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP141', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4860', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP30', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4861', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP31', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4862', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP32', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4863', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP33', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4864', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP34', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4865', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP35', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4866', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP36', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4867', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP37', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4868', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP38', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4869', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP39', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP487', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP142', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4870', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP40', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4871', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP41', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4872', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP42', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4873', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP43', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4874', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP44', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4875', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP45', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4876', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP46', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4877', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP47', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4878', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP48', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4879', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP49', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP488', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP143', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4880', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP50', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4881', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP51', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4882', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP52', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4883', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP53', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4884', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP54', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4885', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP55', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4886', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP56', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4887', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP57', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4888', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP58', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4889', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP59', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP489', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP144', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4890', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP60', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4891', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP61', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4892', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP62', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4893', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP63', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4894', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP64', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4895', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP65', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4896', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP66', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4897', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP67', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4898', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP68', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4899', CAST(100000 AS Decimal(18, 0)), NULL, N'LC71', N'GXP69', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP49', CAST(100000 AS Decimal(18, 0)), N'HD10', N'LC1', N'GXP49', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP490', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP145', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4900', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP70', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4901', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP71', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4902', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP72', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4903', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP73', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4904', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP74', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4905', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP75', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4906', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP76', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4907', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP77', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4908', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP78', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4909', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP79', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP491', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP146', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4910', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP80', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4911', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP81', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4912', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP82', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4913', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP83', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4914', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP84', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4915', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP85', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4916', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP86', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4917', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP87', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4918', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP88', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4919', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP89', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP492', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP147', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4920', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP90', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4921', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP91', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4922', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP92', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4923', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP93', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4924', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP94', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4925', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP95', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4926', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP96', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4927', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP97', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4928', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP98', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4929', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP99', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP493', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP148', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4930', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP100', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4931', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP101', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4932', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP102', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4933', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP103', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4934', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP104', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4935', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP105', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4936', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP106', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4937', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP107', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4938', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP108', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4939', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP109', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP494', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP149', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4940', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP110', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4941', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP111', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4942', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP112', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4943', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP113', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4944', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP114', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4945', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP115', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4946', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP116', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4947', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP117', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4948', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP118', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4949', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP119', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP495', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP150', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4950', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP120', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4951', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP121', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4952', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP122', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4953', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP123', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4954', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP124', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4955', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP125', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4956', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP126', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4957', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP127', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4958', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP128', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4959', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP129', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP496', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP151', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4960', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP130', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4961', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP131', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4962', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP132', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4963', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP133', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4964', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP134', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4965', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP135', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4966', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP136', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4967', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP137', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4968', CAST(100000 AS Decimal(18, 0)), NULL, N'LC72', N'GXP138', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4969', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP139', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP497', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP152', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4970', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP140', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4971', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP141', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4972', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP142', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4973', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP143', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4974', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP144', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4975', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP145', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4976', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP146', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4977', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP147', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4978', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP148', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4979', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP149', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP498', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP153', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4980', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP150', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4981', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP151', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4982', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP152', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4983', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP153', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4984', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP154', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4985', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP155', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4986', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP156', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4987', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP157', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4988', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP158', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4989', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP159', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP499', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP154', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4990', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP160', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4991', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP161', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4992', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP162', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4993', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP163', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4994', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP164', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4995', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP165', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4996', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP166', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4997', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP167', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4998', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP168', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP4999', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP169', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5', CAST(100000 AS Decimal(18, 0)), N'HD2', N'LC1', N'GXP5', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP50', CAST(100000 AS Decimal(18, 0)), N'HD11', N'LC1', N'GXP50', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP500', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP155', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5000', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP170', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5001', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP171', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5002', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP172', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5003', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP173', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5004', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP174', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5005', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP175', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5006', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP176', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5007', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP177', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5008', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP178', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5009', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP179', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP501', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP156', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5010', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP180', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5011', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP181', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5012', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP182', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5013', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP183', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5014', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP184', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5015', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP185', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5016', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP186', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5017', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP187', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5018', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP188', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5019', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP189', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP502', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP157', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5020', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP190', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5021', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP191', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5022', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP192', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5023', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP193', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5024', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP194', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5025', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP195', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5026', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP196', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5027', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP197', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5028', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP198', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5029', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP199', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP503', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP158', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5030', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP200', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5031', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP201', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5032', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP202', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5033', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP203', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5034', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP204', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5035', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP205', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5036', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP206', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5037', CAST(100000 AS Decimal(18, 0)), NULL, N'LC73', N'GXP207', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5038', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP208', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5039', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP209', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP504', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP159', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5040', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP210', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5041', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP211', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5042', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP212', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5043', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP213', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5044', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP214', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5045', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP215', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5046', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP216', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5047', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP217', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5048', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP218', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5049', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP219', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP505', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP160', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5050', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP220', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5051', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP221', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5052', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP222', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5053', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP223', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5054', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP224', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5055', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP225', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5056', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP226', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5057', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP227', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5058', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP228', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5059', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP229', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP506', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP161', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5060', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP230', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5061', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP231', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5062', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP232', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5063', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP233', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5064', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP234', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5065', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP235', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5066', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP236', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5067', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP237', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5068', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP238', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5069', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP239', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP507', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP162', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5070', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP240', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5071', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP241', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5072', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP242', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5073', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP243', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5074', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP244', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5075', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP245', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5076', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP246', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5077', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP247', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5078', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP248', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5079', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP249', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP508', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP163', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5080', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP250', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5081', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP251', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5082', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP252', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5083', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP253', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5084', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP254', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5085', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP255', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5086', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP256', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5087', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP257', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5088', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP258', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5089', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP259', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP509', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP164', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5090', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP260', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5091', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP261', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5092', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP262', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5093', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP263', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5094', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP264', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5095', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP265', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5096', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP266', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5097', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP267', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5098', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP268', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5099', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP269', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP51', CAST(100000 AS Decimal(18, 0)), N'HD12', N'LC1', N'GXP51', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP510', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP165', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5100', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP270', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5101', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP271', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5102', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP272', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5103', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP273', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5104', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP274', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5105', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP275', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5106', CAST(100000 AS Decimal(18, 0)), NULL, N'LC74', N'GXP276', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5107', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP277', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5108', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP278', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5109', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP279', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP511', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP166', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5110', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP280', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5111', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP281', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5112', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP282', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5113', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP283', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5114', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP284', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5115', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP285', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5116', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP286', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5117', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP287', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5118', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP288', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5119', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP289', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP512', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP167', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5120', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP290', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5121', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP291', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5122', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP292', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5123', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP293', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5124', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP294', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5125', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP295', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5126', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP296', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5127', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP297', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5128', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP298', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5129', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP299', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP513', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP168', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5130', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP300', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5131', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP301', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5132', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP302', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5133', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP303', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5134', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP304', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5135', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP305', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5136', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP306', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5137', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP307', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5138', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP308', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5139', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP309', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP514', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP169', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5140', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP310', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5141', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP311', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5142', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP312', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5143', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP313', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5144', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP314', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5145', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP315', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5146', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP316', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5147', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP317', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5148', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP318', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5149', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP319', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP515', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP170', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5150', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP320', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5151', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP321', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5152', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP322', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5153', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP323', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5154', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP324', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5155', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP325', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5156', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP326', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5157', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP327', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5158', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP328', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5159', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP329', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP516', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP171', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5160', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP330', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5161', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP331', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5162', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP332', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5163', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP333', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5164', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP334', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5165', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP335', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5166', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP336', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5167', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP337', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5168', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP338', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5169', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP339', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP517', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP172', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5170', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP340', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5171', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP341', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5172', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP342', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5173', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP343', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5174', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP344', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5175', CAST(100000 AS Decimal(18, 0)), NULL, N'LC75', N'GXP345', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5176', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP1', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5177', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP2', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5178', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP3', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5179', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP4', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP518', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP173', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5180', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP5', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5181', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP6', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5182', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP7', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5183', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP8', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5184', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP9', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5185', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP10', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5186', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP11', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5187', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP12', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5188', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP13', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5189', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP14', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP519', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP174', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5190', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP15', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5191', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP16', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5192', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP17', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5193', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP18', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5194', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP19', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5195', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP20', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5196', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP21', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5197', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP22', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5198', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP23', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5199', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP24', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP52', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP52', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP520', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP175', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5200', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP25', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5201', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP26', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5202', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP27', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5203', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP28', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5204', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP29', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5205', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP30', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5206', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP31', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5207', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP32', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5208', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP33', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5209', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP34', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP521', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP176', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5210', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP35', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5211', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP36', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5212', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP37', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5213', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP38', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5214', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP39', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5215', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP40', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5216', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP41', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5217', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP42', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5218', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP43', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5219', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP44', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP522', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP177', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5220', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP45', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5221', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP46', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5222', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP47', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5223', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP48', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5224', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP49', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5225', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP50', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5226', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP51', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5227', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP52', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5228', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP53', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5229', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP54', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP523', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP178', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5230', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP55', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5231', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP56', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5232', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP57', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5233', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP58', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5234', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP59', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5235', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP60', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5236', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP61', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5237', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP62', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5238', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP63', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5239', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP64', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP524', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP179', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5240', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP65', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5241', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP66', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5242', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP67', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5243', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP68', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5244', CAST(100000 AS Decimal(18, 0)), NULL, N'LC76', N'GXP69', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5245', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP70', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5246', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP71', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5247', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP72', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5248', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP73', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5249', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP74', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP525', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP180', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5250', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP75', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5251', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP76', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5252', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP77', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5253', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP78', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5254', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP79', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5255', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP80', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5256', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP81', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5257', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP82', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5258', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP83', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5259', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP84', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP526', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP181', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5260', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP85', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5261', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP86', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5262', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP87', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5263', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP88', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5264', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP89', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5265', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP90', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5266', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP91', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5267', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP92', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5268', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP93', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5269', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP94', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP527', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP182', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5270', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP95', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5271', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP96', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5272', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP97', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5273', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP98', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5274', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP99', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5275', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP100', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5276', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP101', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5277', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP102', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5278', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP103', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5279', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP104', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP528', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP183', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5280', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP105', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5281', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP106', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5282', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP107', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5283', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP108', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5284', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP109', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5285', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP110', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5286', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP111', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5287', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP112', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5288', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP113', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5289', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP114', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP529', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP184', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5290', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP115', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5291', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP116', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5292', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP117', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5293', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP118', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5294', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP119', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5295', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP120', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5296', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP121', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5297', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP122', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5298', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP123', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5299', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP124', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP53', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP53', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP530', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP185', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5300', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP125', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5301', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP126', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5302', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP127', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5303', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP128', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5304', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP129', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5305', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP130', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5306', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP131', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5307', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP132', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5308', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP133', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5309', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP134', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP531', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP186', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5310', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP135', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5311', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP136', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5312', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP137', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5313', CAST(100000 AS Decimal(18, 0)), NULL, N'LC77', N'GXP138', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5314', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP139', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5315', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP140', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5316', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP141', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5317', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP142', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5318', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP143', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5319', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP144', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP532', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP187', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5320', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP145', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5321', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP146', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5322', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP147', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5323', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP148', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5324', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP149', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5325', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP150', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5326', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP151', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5327', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP152', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5328', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP153', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5329', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP154', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP533', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP188', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5330', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP155', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5331', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP156', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5332', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP157', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5333', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP158', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5334', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP159', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5335', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP160', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5336', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP161', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5337', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP162', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5338', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP163', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5339', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP164', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP534', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP189', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5340', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP165', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5341', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP166', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5342', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP167', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5343', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP168', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5344', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP169', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5345', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP170', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5346', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP171', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5347', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP172', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5348', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP173', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5349', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP174', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP535', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP190', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5350', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP175', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5351', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP176', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5352', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP177', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5353', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP178', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5354', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP179', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5355', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP180', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5356', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP181', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5357', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP182', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5358', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP183', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5359', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP184', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP536', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP191', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5360', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP185', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5361', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP186', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5362', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP187', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5363', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP188', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5364', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP189', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5365', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP190', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5366', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP191', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5367', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP192', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5368', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP193', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5369', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP194', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP537', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP192', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5370', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP195', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5371', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP196', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5372', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP197', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5373', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP198', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5374', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP199', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5375', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP200', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5376', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP201', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5377', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP202', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5378', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP203', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5379', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP204', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP538', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP193', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5380', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP205', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5381', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP206', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5382', CAST(100000 AS Decimal(18, 0)), NULL, N'LC78', N'GXP207', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5383', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP208', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5384', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP209', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5385', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP210', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5386', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP211', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5387', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP212', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5388', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP213', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5389', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP214', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP539', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP194', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5390', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP215', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5391', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP216', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5392', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP217', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5393', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP218', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5394', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP219', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5395', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP220', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5396', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP221', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5397', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP222', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5398', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP223', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5399', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP224', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP54', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP54', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP540', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP195', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5400', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP225', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5401', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP226', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5402', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP227', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5403', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP228', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5404', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP229', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5405', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP230', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5406', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP231', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5407', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP232', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5408', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP233', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5409', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP234', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP541', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP196', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5410', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP235', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5411', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP236', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5412', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP237', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5413', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP238', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5414', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP239', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5415', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP240', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5416', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP241', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5417', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP242', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5418', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP243', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5419', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP244', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP542', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP197', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5420', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP245', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5421', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP246', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5422', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP247', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5423', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP248', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5424', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP249', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5425', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP250', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5426', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP251', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5427', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP252', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5428', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP253', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5429', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP254', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP543', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP198', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5430', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP255', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5431', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP256', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5432', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP257', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5433', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP258', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5434', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP259', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5435', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP260', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5436', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP261', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5437', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP262', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5438', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP263', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5439', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP264', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP544', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP199', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5440', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP265', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5441', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP266', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5442', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP267', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5443', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP268', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5444', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP269', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5445', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP270', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5446', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP271', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5447', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP272', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5448', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP273', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5449', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP274', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP545', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP200', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5450', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP275', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5451', CAST(100000 AS Decimal(18, 0)), NULL, N'LC79', N'GXP276', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5452', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP277', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5453', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP278', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5454', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP279', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5455', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP280', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5456', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP281', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5457', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP282', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5458', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP283', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5459', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP284', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP546', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP201', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5460', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP285', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5461', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP286', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5462', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP287', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5463', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP288', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5464', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP289', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5465', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP290', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5466', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP291', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5467', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP292', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5468', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP293', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5469', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP294', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP547', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP202', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5470', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP295', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5471', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP296', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5472', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP297', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5473', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP298', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5474', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP299', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5475', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP300', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5476', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP301', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5477', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP302', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5478', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP303', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5479', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP304', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP548', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP203', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5480', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP305', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5481', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP306', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5482', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP307', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5483', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP308', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5484', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP309', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5485', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP310', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5486', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP311', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5487', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP312', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5488', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP313', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5489', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP314', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP549', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP204', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5490', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP315', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5491', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP316', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5492', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP317', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5493', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP318', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5494', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP319', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5495', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP320', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5496', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP321', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5497', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP322', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5498', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP323', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5499', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP324', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP55', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP55', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP550', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP205', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5500', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP325', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5501', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP326', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5502', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP327', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5503', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP328', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5504', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP329', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5505', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP330', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5506', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP331', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5507', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP332', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5508', CAST(100000 AS Decimal(18, 0)), N'HD65', N'LC80', N'GXP333', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5509', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP334', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP551', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP206', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5510', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP335', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5511', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP336', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5512', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP337', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5513', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP338', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5514', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP339', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5515', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP340', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5516', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP341', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5517', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP342', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5518', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP343', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5519', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP344', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP552', CAST(100000 AS Decimal(18, 0)), NULL, N'LC8', N'GXP207', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP5520', CAST(100000 AS Decimal(18, 0)), NULL, N'LC80', N'GXP345', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP553', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP208', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP554', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP209', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP555', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP210', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP556', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP211', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP557', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP212', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP558', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP213', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP559', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP214', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP56', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP56', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP560', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP215', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP561', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP216', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP562', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP217', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP563', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP218', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP564', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP219', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP565', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP220', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP566', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP221', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP567', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP222', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP568', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP223', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP569', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP224', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP57', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP57', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP570', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP225', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP571', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP226', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP572', CAST(100000 AS Decimal(18, 0)), N'HD27', N'LC9', N'GXP227', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP573', CAST(100000 AS Decimal(18, 0)), N'HD27', N'LC9', N'GXP228', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP574', CAST(100000 AS Decimal(18, 0)), N'HD30', N'LC9', N'GXP229', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP575', CAST(100000 AS Decimal(18, 0)), N'HD30', N'LC9', N'GXP230', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP576', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP231', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP577', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP232', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP578', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP233', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP579', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP234', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP58', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP58', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP580', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP235', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP581', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP236', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP582', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP237', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP583', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP238', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP584', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP239', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP585', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP240', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP586', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP241', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP587', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP242', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP588', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP243', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP589', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP244', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP59', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP59', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP590', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP245', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP591', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP246', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP592', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP247', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP593', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP248', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP594', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP249', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP595', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP250', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP596', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP251', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP597', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP252', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP598', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP253', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP599', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP254', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP6', CAST(100000 AS Decimal(18, 0)), N'HD3', N'LC1', N'GXP6', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP60', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP60', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP600', CAST(100000 AS Decimal(18, 0)), NULL, N'LC9', N'GXP255', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP601', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC9', N'GXP256', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP602', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC9', N'GXP257', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP603', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC9', N'GXP258', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP604', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC9', N'GXP259', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP605', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC9', N'GXP260', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP606', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC9', N'GXP261', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP607', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC9', N'GXP262', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP608', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC9', N'GXP263', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP609', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC9', N'GXP264', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP61', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP61', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP610', CAST(100000 AS Decimal(18, 0)), N'HD31', N'LC9', N'GXP265', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP611', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC9', N'GXP266', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP612', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC9', N'GXP267', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP613', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC9', N'GXP268', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP614', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC9', N'GXP269', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP615', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC9', N'GXP270', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP616', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC9', N'GXP271', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP617', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC9', N'GXP272', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP618', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC9', N'GXP273', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP619', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC9', N'GXP274', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP62', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP62', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP620', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC9', N'GXP275', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP621', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC9', N'GXP276', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP622', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC10', N'GXP277', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP623', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC10', N'GXP278', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP624', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC10', N'GXP279', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP625', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC10', N'GXP280', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP626', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC10', N'GXP281', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP627', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC10', N'GXP282', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP628', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC10', N'GXP283', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP629', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC10', N'GXP284', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP63', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP63', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP630', CAST(100000 AS Decimal(18, 0)), N'HD32', N'LC10', N'GXP285', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP631', CAST(100000 AS Decimal(18, 0)), N'HD16', N'LC10', N'GXP286', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP632', CAST(100000 AS Decimal(18, 0)), N'HD16', N'LC10', N'GXP287', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP633', CAST(100000 AS Decimal(18, 0)), N'HD16', N'LC10', N'GXP288', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP634', CAST(100000 AS Decimal(18, 0)), N'HD16', N'LC10', N'GXP289', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP635', CAST(100000 AS Decimal(18, 0)), N'HD16', N'LC10', N'GXP290', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP636', CAST(100000 AS Decimal(18, 0)), N'HD16', N'LC10', N'GXP291', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP637', CAST(100000 AS Decimal(18, 0)), N'HD16', N'LC10', N'GXP292', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP638', CAST(100000 AS Decimal(18, 0)), N'HD16', N'LC10', N'GXP293', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP639', CAST(100000 AS Decimal(18, 0)), N'HD16', N'LC10', N'GXP294', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP64', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP64', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP640', CAST(100000 AS Decimal(18, 0)), N'HD16', N'LC10', N'GXP295', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP641', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP296', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP642', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP297', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP643', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP298', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP644', CAST(100000 AS Decimal(18, 0)), N'HD34', N'LC10', N'GXP299', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP645', CAST(100000 AS Decimal(18, 0)), N'HD34', N'LC10', N'GXP300', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP646', CAST(100000 AS Decimal(18, 0)), N'HD34', N'LC10', N'GXP301', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP647', CAST(100000 AS Decimal(18, 0)), N'HD34', N'LC10', N'GXP302', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP648', CAST(100000 AS Decimal(18, 0)), N'HD34', N'LC10', N'GXP303', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP649', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP304', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP65', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP65', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP650', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP305', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP651', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP306', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP652', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP307', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP653', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP308', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP654', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP309', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP655', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP310', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP656', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP311', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP657', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP312', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP658', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP313', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP659', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP314', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP66', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP66', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP660', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP315', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP661', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP316', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP662', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP317', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP663', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP318', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP664', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP319', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP665', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP320', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP666', CAST(100000 AS Decimal(18, 0)), N'HD35', N'LC10', N'GXP321', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP667', CAST(100000 AS Decimal(18, 0)), N'HD35', N'LC10', N'GXP322', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP668', CAST(100000 AS Decimal(18, 0)), N'HD35', N'LC10', N'GXP323', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP669', CAST(100000 AS Decimal(18, 0)), N'HD35', N'LC10', N'GXP324', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP67', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP67', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP670', CAST(100000 AS Decimal(18, 0)), N'HD35', N'LC10', N'GXP325', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP671', CAST(100000 AS Decimal(18, 0)), N'HD36', N'LC10', N'GXP326', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP672', CAST(100000 AS Decimal(18, 0)), N'HD36', N'LC10', N'GXP327', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP673', CAST(100000 AS Decimal(18, 0)), N'HD37', N'LC10', N'GXP328', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP674', CAST(100000 AS Decimal(18, 0)), N'HD38', N'LC10', N'GXP329', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP675', CAST(100000 AS Decimal(18, 0)), N'HD39', N'LC10', N'GXP330', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP676', CAST(100000 AS Decimal(18, 0)), N'HD40', N'LC10', N'GXP331', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP677', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP332', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP678', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP333', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP679', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP334', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP68', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP68', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP680', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP335', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP681', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP336', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP682', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP337', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP683', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP338', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP684', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP339', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP685', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP340', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP686', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP341', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP687', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP342', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP688', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP343', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP689', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP344', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP69', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP69', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP690', CAST(100000 AS Decimal(18, 0)), NULL, N'LC10', N'GXP345', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP691', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP1', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP692', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP2', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP693', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP3', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP694', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP4', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP695', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP5', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP696', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP6', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP697', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP7', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP698', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP8', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP699', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP9', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP7', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP7', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP70', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP70', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP700', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP10', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP701', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP11', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP702', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP12', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP703', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP13', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP704', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP14', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP705', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP15', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP706', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP16', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP707', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP17', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP708', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP18', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP709', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP19', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP71', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP71', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP710', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP20', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP711', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP21', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP712', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP22', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP713', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP23', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP714', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP24', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP715', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP25', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP716', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP26', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP717', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP27', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP718', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP28', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP719', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP29', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP72', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP72', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP720', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP30', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP721', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP31', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP722', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP32', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP723', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP33', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP724', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP34', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP725', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP35', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP726', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP36', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP727', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP37', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP728', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP38', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP729', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP39', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP73', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP73', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP730', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP40', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP731', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP41', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP732', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP42', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP733', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP43', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP734', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP44', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP735', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP45', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP736', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP46', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP737', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP47', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP738', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP48', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP739', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP49', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP74', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP74', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP740', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP50', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP741', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP51', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP742', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP52', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP743', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP53', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP744', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP54', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP745', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP55', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP746', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP56', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP747', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP57', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP748', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP58', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP749', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP59', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP75', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP75', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP750', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP60', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP751', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP61', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP752', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP62', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP753', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP63', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP754', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP64', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP755', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP65', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP756', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP66', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP757', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP67', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP758', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP68', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP759', CAST(100000 AS Decimal(18, 0)), NULL, N'LC11', N'GXP69', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP76', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP76', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP760', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP70', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP761', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP71', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP762', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP72', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP763', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP73', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP764', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP74', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP765', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP75', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP766', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP76', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP767', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP77', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP768', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP78', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP769', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP79', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP77', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP77', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP770', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP80', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP771', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP81', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP772', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP82', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP773', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP83', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP774', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP84', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP775', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP85', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP776', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP86', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP777', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP87', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP778', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP88', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP779', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP89', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP78', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP78', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP780', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP90', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP781', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP91', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP782', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP92', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP783', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP93', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP784', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP94', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP785', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP95', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP786', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP96', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP787', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP97', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP788', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP98', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP789', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP99', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP79', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP79', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP790', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP100', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP791', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP101', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP792', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP102', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP793', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP103', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP794', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP104', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP795', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP105', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP796', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP106', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP797', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP107', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP798', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP108', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP799', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP109', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP8', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP8', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP80', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP80', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP800', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP110', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP801', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP111', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP802', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP112', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP803', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP113', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP804', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP114', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP805', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP115', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP806', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP116', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP807', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP117', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP808', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP118', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP809', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP119', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP81', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP81', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP810', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP120', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP811', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP121', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP812', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP122', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP813', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP123', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP814', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP124', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP815', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP125', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP816', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP126', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP817', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP127', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP818', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP128', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP819', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP129', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP82', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP82', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP820', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP130', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP821', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP131', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP822', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP132', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP823', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP133', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP824', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP134', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP825', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP135', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP826', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP136', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP827', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP137', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP828', CAST(100000 AS Decimal(18, 0)), NULL, N'LC12', N'GXP138', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP829', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP139', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP83', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP83', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP830', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP140', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP831', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP141', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP832', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP142', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP833', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP143', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP834', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP144', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP835', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP145', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP836', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP146', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP837', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP147', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP838', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP148', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP839', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP149', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP84', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP84', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP840', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP150', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP841', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP151', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP842', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP152', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP843', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP153', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP844', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP154', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP845', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP155', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP846', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP156', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP847', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP157', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP848', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP158', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP849', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP159', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP85', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP85', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP850', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP160', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP851', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP161', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP852', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP162', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP853', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP163', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP854', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP164', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP855', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP165', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP856', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP166', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP857', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP167', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP858', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP168', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP859', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP169', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP86', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP86', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP860', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP170', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP861', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP171', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP862', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP172', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP863', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP173', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP864', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP174', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP865', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP175', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP866', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP176', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP867', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP177', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP868', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP178', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP869', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP179', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP87', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP87', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP870', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP180', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP871', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP181', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP872', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP182', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP873', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP183', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP874', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP184', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP875', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP185', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP876', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP186', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP877', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP187', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP878', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP188', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP879', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP189', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP88', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP88', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP880', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP190', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP881', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP191', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP882', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP192', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP883', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP193', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP884', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP194', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP885', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP195', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP886', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP196', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP887', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP197', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP888', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP198', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP889', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP199', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP89', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP89', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP890', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP200', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP891', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP201', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP892', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP202', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP893', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP203', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP894', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP204', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP895', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP205', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP896', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP206', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP897', CAST(100000 AS Decimal(18, 0)), NULL, N'LC13', N'GXP207', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP898', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP208', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP899', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP209', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP9', CAST(100000 AS Decimal(18, 0)), NULL, N'LC1', N'GXP9', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP90', CAST(100000 AS Decimal(18, 0)), NULL, N'LC2', N'GXP90', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP900', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP210', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP901', CAST(100000 AS Decimal(18, 0)), N'HD41', N'LC14', N'GXP211', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP902', CAST(100000 AS Decimal(18, 0)), N'HD42', N'LC14', N'GXP212', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP903', CAST(100000 AS Decimal(18, 0)), N'HD43', N'LC14', N'GXP213', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP904', CAST(100000 AS Decimal(18, 0)), N'HD44', N'LC14', N'GXP214', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP905', CAST(100000 AS Decimal(18, 0)), N'HD45', N'LC14', N'GXP215', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP906', CAST(100000 AS Decimal(18, 0)), N'HD45', N'LC14', N'GXP216', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP907', CAST(100000 AS Decimal(18, 0)), N'HD45', N'LC14', N'GXP217', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP908', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP218', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP909', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP219', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP91', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC2', N'GXP91', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP910', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP220', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP911', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP221', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP912', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP222', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP913', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP223', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP914', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP224', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP915', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP225', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP916', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP226', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP917', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP227', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP918', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP228', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP919', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP229', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP92', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC2', N'GXP92', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP920', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP230', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP921', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP231', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP922', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP232', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP923', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP233', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP924', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP234', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP925', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP235', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP926', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP236', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP927', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP237', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP928', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP238', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP929', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP239', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP93', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC2', N'GXP93', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP930', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP240', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP931', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP241', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP932', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP242', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP933', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP243', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP934', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP244', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP935', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP245', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP936', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP246', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP937', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP247', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP938', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP248', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP939', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP249', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP94', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC2', N'GXP94', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP940', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP250', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP941', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP251', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP942', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP252', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP943', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP253', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP944', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP254', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP945', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP255', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP946', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP256', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP947', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP257', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP948', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP258', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP949', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP259', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP95', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC2', N'GXP95', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP950', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP260', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP951', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP261', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP952', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP262', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP953', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP263', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP954', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP264', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP955', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP265', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP956', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP266', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP957', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP267', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP958', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP268', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP959', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP269', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP96', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC2', N'GXP96', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP960', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP270', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP961', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP271', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP962', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP272', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP963', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP273', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP964', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP274', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP965', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP275', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP966', CAST(100000 AS Decimal(18, 0)), NULL, N'LC14', N'GXP276', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP967', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP277', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP968', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP278', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP969', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP279', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP97', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC2', N'GXP97', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP970', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP280', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP971', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP281', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP972', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP282', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP973', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP283', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP974', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP284', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP975', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP285', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP976', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP286', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP977', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP287', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP978', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP288', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP979', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP289', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP98', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC2', N'GXP98', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP980', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP290', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP981', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP291', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP982', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP292', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP983', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP293', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP984', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP294', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP985', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP295', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP986', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP296', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP987', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP297', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP988', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP298', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP989', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP299', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP99', CAST(100000 AS Decimal(18, 0)), N'HD13', N'LC2', N'GXP99', 1)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP990', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP300', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP991', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP301', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP992', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP302', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP993', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP303', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP994', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP304', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP995', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP305', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP996', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP306', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP997', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP307', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP998', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP308', 0)
+GO
+INSERT [dbo].[VeXemPhim] ([MaVXP], [GiaVe], [MaHD], [MaLC], [MaGXP], [TrangThai]) VALUES (N'VXP999', CAST(100000 AS Decimal(18, 0)), NULL, N'LC15', N'GXP309', 0)
+GO
 ALTER TABLE [dbo].[DanhGia]  WITH CHECK ADD  CONSTRAINT [FK_DanhGia_Phim] FOREIGN KEY([MaPhim])
 REFERENCES [dbo].[Phim] ([MaPhim])
 GO
@@ -882,4 +12612,9 @@ ALTER TABLE [dbo].[VeXemPhim]  WITH CHECK ADD  CONSTRAINT [FK_VeXemPhim_HoaDon] 
 REFERENCES [dbo].[HoaDon] ([MaHD])
 GO
 ALTER TABLE [dbo].[VeXemPhim] CHECK CONSTRAINT [FK_VeXemPhim_HoaDon]
+GO
+ALTER TABLE [dbo].[VeXemPhim]  WITH CHECK ADD  CONSTRAINT [FK_VeXemPhim_LichChieu] FOREIGN KEY([MaLC])
+REFERENCES [dbo].[LichChieu] ([MaLC])
+GO
+ALTER TABLE [dbo].[VeXemPhim] CHECK CONSTRAINT [FK_VeXemPhim_LichChieu]
 GO

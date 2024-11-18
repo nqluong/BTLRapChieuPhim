@@ -31,8 +31,10 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                                  DuongDanAnh = hat.DuongDanAnh,
                                  DuongDanTrailer = hat.DuongDanTrailer,
                                  MaHat = hat.MaHat,
-                             }).ToList();
-            // Áp dụng bộ lọc tìm kiếm nếu có
+                             }).ToList()
+							 .OrderBy(p => int.Parse(new string(p.MaPhim.Where(char.IsDigit).ToArray())))
+							 .ToList();
+            
             if (!string.IsNullOrEmpty(searchTerm))
             {
                 phimQuery = phimQuery.Where(p => p.TenPhim.Contains(searchTerm)).ToList();
@@ -82,6 +84,10 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
 
         public IActionResult ThemPhim([FromBody] PhimAPI phimadd)
         {
+            string maPhim = GenerateMaPhim();
+            phimadd.MaPhim = maPhim;
+            string hat = GenerateMaHAT();
+            phimadd.MaHat = hat;
             if (ModelState.IsValid)
             {
                 var isDuplicate1 = _context.Phims.Any(p =>
@@ -97,46 +103,33 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                     return BadRequest(new { message = "Mã hình ảnh Trailer đã tồn tại!" });
                 }
 
-				if (phimadd.DoTuoi < 0)
-				{
-					return BadRequest(new { message = "Độ tuổi không hợp lệ!" });
-				}
+                if (phimadd.DoTuoi < 0)
+                {
+                    return BadRequest(new { message = "Độ tuổi không hợp lệ!" });
+                }
 
-				if (phimadd.ThoiLuong <= 0)
-				{
-					return BadRequest(new { message = "Thời lượng phải lớn hơn 0!" });
-				}
+                if (phimadd.ThoiLuong <= 0)
+                {
+                    return BadRequest(new { message = "Thời lượng phải lớn hơn 0!" });
+                }
 
-				//if (phimadd.MaPhim <= 0)
-				//{
-				//	return BadRequest(new { message = "Mã phim không được để trống hoặc nhỏ hơn 1!" });
-				//}
-
-				//if (phimadd.MaTl <= 0)
-				//{
-				//	return BadRequest(new { message = "Mã thể loại không được để trống hoặc nhỏ hơn 1!" });
-				//}
-
-				//if (phimadd.MaHat <= 0)
-				//{
-				//	return BadRequest(new { message = "Mã hình ảnh Trailer không được để trống hoặc nhỏ hơn 1!" });
-				//}
-
-				if (string.IsNullOrWhiteSpace(phimadd.DuongDanAnh))
+                if (string.IsNullOrWhiteSpace(phimadd.DuongDanAnh))
 				{
 					return BadRequest(new { message = "Đường dẫn ảnh không được để trống!" });
 				}
 
-				if (string.IsNullOrWhiteSpace(phimadd.DuongDanTrailer))
-				{
-					return BadRequest(new { message = "Đường dẫn Trailer không được để trống!" });
-				}
+                if (string.IsNullOrWhiteSpace(phimadd.DuongDanTrailer))
+                {
+                    return BadRequest(new { message = "Đường dẫn Trailer không được để trống!" });
+                }
 
-				var phim = new Phim
+               
+
+                var phim = new Phim
                 {
                     MaPhim = phimadd.MaPhim,
                     TenPhim = phimadd.TenPhim,
-                    MaTl = phimadd.MaTl, 
+                    MaTl = phimadd.MaTl,
                     ThoiLuong = phimadd.ThoiLuong,
                     DaoDien = phimadd.DaoDien,
                     DoTuoi = phimadd.DoTuoi,
@@ -158,8 +151,68 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             return BadRequest(new { message = "Thêm phim thất bại!" });
         }
 
+        private string GenerateMaPhim()
+        {
+
+			var existingIds = _context.Phims
+				.Select(p => p.MaPhim)
+				.Where(id => id.StartsWith("MP"))
+				.ToList();
+
+			var numbers = existingIds
+				.Select(id => int.TryParse(id.Substring(2), out int num) ? num : 0)
+				.ToList();
+			int maxNumber = numbers.Any() ? numbers.Max() : 0;
+			int newNumber = maxNumber + 1;
+
+			return "MP" + newNumber;
+		}
+
+		private string GenerateMaHAT()
+		{
+
+			var existingIds = _context.HinhAnhTrailers
+				.Select(p => p.MaHat)
+				.Where(id => id.StartsWith("HAT"))
+				.ToList();
+
+			var numbers = existingIds
+				.Select(id => int.TryParse(id.Substring(3), out int num) ? num : 0)
+				.ToList();
+			int maxNumber = numbers.Any() ? numbers.Max() : 0;
+			int newNumber = maxNumber + 1;
+
+			return "HAT" + newNumber;
+		}
+
+		[HttpGet("GetMa")]
+        public IActionResult GetMa()
+        {
+            string maxMaPhim = _context.Phims
+               .OrderByDescending(p => p.MaPhim)
+               .Select(p => p.MaPhim)
+               .FirstOrDefault() ?? "MP1"; // Nếu chưa có phim, bắt đầu từ MP000
+
+            int maxNumberMP = int.Parse(maxMaPhim.Substring(2)); // Bỏ "MP" và lấy phần số
+
+            string maxMaHat = _context.HinhAnhTrailers
+               .OrderByDescending(p => p.MaHat)
+               .Select(p => p.MaHat)
+               .FirstOrDefault() ?? "MaHAT1"; // Nếu chưa có phim, bắt đầu từ MP000
+
+            int maxNumberMaHAT = int.Parse(maxMaPhim.Substring(2)); // Bỏ "MP" và lấy phần số
+
+            var ma = new
+            {
+                NextMaPhim = maxMaPhim,
+                NextMaHat = maxMaHat
+            };
+            return Ok(ma);
+        }
+
+
         [HttpPut("{maPhim}")]
-        public IActionResult UpdatePhim(int maPhim, [FromBody] PhimAPI phimUpdated)
+        public IActionResult UpdatePhim(string maPhim, [FromBody] PhimAPI phimUpdated)
         {
             //if (phimUpdated == null || maPhim != phimUpdated.MaPhim)
             //{
@@ -201,13 +254,13 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             phim.MaTl = phimUpdated.MaTl;
             phim.NuocSx = phimUpdated.NuocSx;
             phim.MoTa = phimUpdated.MoTa;
-            hinhanhTrailer.MaHat = phimUpdated.MaHat;
+            //hinhanhTrailer.MaHat = phimUpdated.MaHat;
             hinhanhTrailer.DuongDanAnh = phimUpdated.DuongDanAnh;
             hinhanhTrailer.DuongDanTrailer = phimUpdated.DuongDanTrailer;
 
             _context.SaveChanges();
 
-            return NoContent(); 
+            return NoContent();
         }
 
         [HttpDelete("{maPhim}")]
@@ -220,16 +273,10 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             }
 
             // Lấy tất cả các bản ghi liên quan đến maPhim
-            //var vexemphims = _context.VeXemPhims.Where(vx => vx.MaPhim == maPhim).ToList();
             var khuyenmais = _context.KhuyenMais.Where(km => km.MaPhim == maPhim).ToList();
             var danhgias = _context.DanhGia.Where(dg => dg.MaPhim == maPhim).ToList();
             var hinhanhtrailers = _context.HinhAnhTrailers.Where(hat => hat.MaPhim == maPhim).ToList();
 
-            // Xóa các bản ghi phụ thuộc
-            //if (vexemphims.Any())
-            //{
-            //    _context.VeXemPhims.RemoveRange(vexemphims);
-            //}
             if (khuyenmais.Any())
             {
                 _context.KhuyenMais.RemoveRange(khuyenmais);

@@ -2,8 +2,7 @@
 {
     public class PhimAPI
     {
-
-        public string MaPhim { get; set; }
+        public string? MaPhim { get; set; }
 
         public string? TenPhim { get; set; }
 

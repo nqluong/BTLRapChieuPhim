@@ -5,7 +5,7 @@ namespace BTLRapChieuPhim.Models;
 
 public partial class KhachHang
 {
-    public string MaKh { get; set; } = null!;
+    public string? MaKh { get; set; }
 
     public string? HoTen { get; set; }
 

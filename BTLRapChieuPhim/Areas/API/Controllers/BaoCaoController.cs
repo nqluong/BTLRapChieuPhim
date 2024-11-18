@@ -18,36 +18,31 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
 
             var query = from lc in _context.LichChieus
                         join vxp in _context.VeXemPhims on lc.MaLc equals vxp.MaLc
-                        join hd in _context.HoaDons on vxp.MaHd equals hd.MaHd
-                        
+                        join hd in _context.HoaDons on vxp.MaHd equals hd.MaHd                       
                         where hd.NgayTt.HasValue
                         select new
                         {
-                            Ngay =hd.NgayTt,
-                            //TienVe = hd.TongTienVe,
-                            //TienDoAn = hd.TongTienDa,
-                            //TongHd = hd.TongTienVe + hd.TongTienDa
-                        };
+                            Ngay = hd.NgayTt,
+							TienVe = vxp.GiaVe
+						};
             var culture = System.Globalization.CultureInfo.InvariantCulture;
             if (!string.IsNullOrEmpty(fromDate) && DateTime.TryParseExact(fromDate, "dd/MM/yyyy", culture, System.Globalization.DateTimeStyles.None, out DateTime startDate))
             {
                 
-                query = query.Where(x => x.Ngay.HasValue && x.Ngay >= startDate);
+                query = query.Where(x =>  x.Ngay >= startDate.Date);
             }
             if (!string.IsNullOrEmpty(toDate) && DateTime.TryParseExact(toDate, "dd/MM/yyyy", culture, System.Globalization.DateTimeStyles.None, out DateTime endDate))
             {
                 
-                query = query.Where(x => x.Ngay.HasValue && x.Ngay <= endDate);
+                query = query.Where(x =>  x.Ngay <= endDate.Date);
             }
             var groupedResult = query
-                    .GroupBy(x  => x.Ngay)
+                    .GroupBy(x  => x.Ngay.Value.Date)
                     .Select(g => new
                     {
                         NgayTt = g.Key,
-                        //TienVe = g.Sum(y => y.TienVe),
-                        //TienDoAn = g.Sum(y => y.TienDoAn),
-                        //DoanhThu = g.Sum(y => y.TongHd)
-                    })
+						TongDoanhThu = g.Sum(y => y.TienVe)
+					})
                     .OrderBy(x => x.NgayTt)
                     .ToList();
             if (!groupedResult.Any())
@@ -59,13 +54,11 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                     ToDate = toDate
                 });
             }
-            // Format ngày sau khi lấy dữ liệu từ DB
+
             var result = groupedResult.Select(x => new
             {
                 Ngay = x.NgayTt,
-                //x.TienVe,
-                //x.TienDoAn,
-                //x.DoanhThu
+                x.TongDoanhThu,
             });
             return Ok(result);
         }
@@ -78,15 +71,14 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                         join vxp in _context.VeXemPhims on lc.MaLc equals vxp.MaLc
                         join hd in _context.HoaDons on vxp.MaHd equals hd.MaHd
                         join phim in _context.Phims on lc.MaPhim equals phim.MaPhim
+                        where hd.NgayTt.HasValue
                         select new
                         {
                             phim.TenPhim,
-                            //TienVe = hd.TongTienVe,
-                            //TienDoAn = hd.TongTienDa,
-                            //TongHd = hd.TongTienVe + hd.TongTienDa
-                        };
+							TienVe = vxp.GiaVe
+						};
 
-            var culture = System.Globalization.CultureInfo.InvariantCulture;
+            
 
 
             var groupedResult = query
@@ -94,19 +86,15 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                     .Select(g => new
                     {
                         TenPhim = g.Key,
-                        //TienVe = g.Sum(y => y.TienVe),
-                        //TienDoAn = g.Sum(y => y.TienDoAn),
-                        //DoanhThu = g.Sum(y => y.TongHd)
-                    })
+						TongDoanhThu = g.Sum(y => y.TienVe)
+					})
                     .OrderBy(x => x.TenPhim)
                     .ToList();
 
             var result = groupedResult.Select(x => new
             {
                 x.TenPhim,
-                //x.TienVe,
-                //x.TienDoAn,
-                //x.DoanhThu
+                x.TongDoanhThu
             });
 
             return Ok(result);
@@ -119,33 +107,28 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                         join vxp in _context.VeXemPhims on lc.MaLc equals vxp.MaLc
                         join hd in _context.HoaDons on vxp.MaHd equals hd.MaHd
                         join phong in _context.PhongChieus on lc.MaPc equals phong.MaPc
+                        where hd.NgayTt.HasValue
                         select new
                         {
                             TenPhongChieu = phong.TenPc,
-                            //TienVe = hd.TongTienVe,
-                            //TienDoAn = hd.TongTienDa,
-                            //TongHd = hd.TongTienVe + hd.TongTienDa
-                        };
+							TienVe = vxp.GiaVe
+						};
 
             var groupedResult = query
                     .GroupBy(x => x.TenPhongChieu)
                     .Select(g => new
                     {
                         TenPhongChieu = g.Key,
-                        //TienVe = g.Sum(y => y.TienVe),
-                        //TienDoAn = g.Sum(y => y.TienDoAn),
-                        //DoanhThu = g.Sum(y => y.TongHd)
-                    })
+						TongDoanhThu = g.Sum(y => y.TienVe)
+					})
                     .OrderBy(x => x.TenPhongChieu)
                     .ToList();
 
             var result = groupedResult.Select(x => new
             {
                 x.TenPhongChieu,
-                //x.TienVe,
-                //x.TienDoAn,
-                //x.DoanhThu
-            });
+				x.TongDoanhThu
+			});
 
             return Ok(result);
         }

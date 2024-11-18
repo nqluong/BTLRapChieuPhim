@@ -1,177 +1,168 @@
-﻿@{
-    ViewData["Title"] = "Phim thêm mới";
-    Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
+﻿﻿@{
+	ViewData["Title"] = "Phim thêm mới";
+	Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
 }
 
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 <!-- Modal -->
 <main class="main">
-<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="messageModalLabel">Thông Báo</h5>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			</div>
-			<div class="modal-body" id="messageContent">
-				<!-- Nội dung thông báo sẽ hiển thị ở đây -->
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+	<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="messageModalLabel">Thông Báo</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body" id="messageContent">
+					<!-- Nội dung thông báo sẽ hiển thị ở đây -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<div id="formThemPhim" class="container-fluid">
-	<div class="row">
-		<!-- main title -->
-		<div class="col-12">
-			<div class="main__title">
-				<h2>Thêm phim mới</h2>
+	<div id="formThemPhim" class="container-fluid">
+		<div class="row">
+			<!-- main title -->
+			<div class="col-12">
+				<div class="main__title">
+					<h2>Thêm phim mới</h2>
+				</div>
 			</div>
-		</div>
-		<!-- end main title -->
-		<!-- form -->
-		<div class="col-12">
-			<form action="#" class="sign__form sign__form--add">
-				<div class="row">
-					<div class="col-12 col-xl-7">
-						<div class="row">
-							<div class="col-12">
-								<div class="sign__group">
-									<input id="maPhim" type="text" class="sign__input" placeholder="Mã phim">
-								</div>
-							</div>
+			<!-- end main title -->
+			<!-- form -->
+			<div class="col-12">
+				<form action="#" class="sign__form sign__form--add">
+					<div class="row">
+						<div class="col-12 col-xl-7">
+							<div class="row">
 
-							<div class="col-12">
-								<div class="sign__group">
-									<input id="tenPhim" type="text" class="sign__input" placeholder="Tên phim">
+								<div class="col-12">
+									<div class="sign__group">
+										<input id="tenPhim" type="text" class="sign__input" placeholder="Tên phim">
+									</div>
 								</div>
-							</div>
 
-							<div class="col-12">
-								<div class="sign__group">
-									<textarea id="moTa" name="moTa" class="sign__textarea" placeholder="Mô tả"></textarea>
+								<div class="col-12">
+									<div class="sign__group">
+										<textarea id="moTa" name="moTa" class="sign__textarea" placeholder="Mô tả"></textarea>
+									</div>
 								</div>
-							</div>
 
-							<div class="col-12">
-								<div class="sign__group">
-									<input id="mahat" type="text" class="sign__input" placeholder="Mã hình ảnh trailer">
+
+
+								<div class="col-12 col-md-6">
+									<div class="sign__group">
+										<div class="sign__gallery">
+											<label id="gallery1" for="sign__gallery-upload">Đường dẫn ảnh</label>
+											<input data-name="#gallery1" id="sign__gallery-upload" name="gallery" class="sign__gallery-upload" type="file" accept=".png, .jpg, .jpeg" multiple="">
+										</div>
+									</div>
 								</div>
-							</div>
 
-							<div class="col-12 col-md-6">
-								<div class="sign__group">
-									<div class="sign__gallery">
-										<label id="gallery1" for="sign__gallery-upload">Đường dẫn ảnh</label>
-										<input data-name="#gallery1" id="sign__gallery-upload" name="gallery" class="sign__gallery-upload" type="file" accept=".png, .jpg, .jpeg" multiple="">
+							</div>
+						</div>
+
+						<div class="col-12 col-xl-5">
+							<div class="row">
+
+								<div class="col-12 col-md-6">
+									<div class="sign__group">
+										<input id="thoiLuong" type="text" class="sign__input" placeholder="Thời lượng">
+									</div>
+								</div>
+
+								<div class="col-12 col-md-6">
+									<div class="sign__group">
+										<input id="daoDien" type="text" class="sign__input" placeholder="Đạo diễn">
+									</div>
+								</div>
+
+								<div class="col-12 col-md-6">
+									<div class="sign__group">
+										<input id="doTuoi" type="text" class="sign__input" placeholder="Độ tuổi">
+									</div>
+								</div>
+
+								<div class="col-12 col-md-6">
+									<div class="sign__group">
+										<select class="sign__input sign__selectjs" id="maTl" name="maTl" required>
+											<option value="" selected>Chọn thể loại</option>
+											@foreach (var tl in ViewBag.lstTheLoai)
+											{
+												<option value="@tl.matl">@tl.tentl</option>
+											}
+										</select>
+									</div>
+								</div>
+
+								<div class="col-12 col-md-6">
+									<div class="sign__group">
+										<input id="nuocSx" type="text" class="sign__input" placeholder="Nước sản xuất">
 									</div>
 								</div>
 							</div>
-
 						</div>
-					</div>
 
-					<div class="col-12 col-xl-5">
-						<div class="row">
-
-							<div class="col-12 col-md-6">
-								<div class="sign__group">
-									<input id ="thoiLuong" type="text" class="sign__input" placeholder="Thời lượng">
-								</div>
-							</div>
-
-							<div class="col-12 col-md-6">
-								<div class="sign__group">
-									<input id = "daoDien" type="text" class="sign__input" placeholder="Đạo diễn">
-								</div>
-							</div>
-
-							<div class="col-12 col-md-6">
-								<div class="sign__group">
-									<input id ="doTuoi" type="text" class="sign__input" placeholder="Độ tuổi">
-								</div>
-							</div>
-
-                            <div class="col-12 col-md-6">
-                                <div class="sign__group">
-                                    <select class="sign__input sign__selectjs" id="maTl" name="maTl" required>
-                                        <option value="" selected>Chọn thể loại</option>
-                                        @foreach (var tl in ViewBag.lstTheLoai)
-                                        {
-                                            <option value="@tl.matl">@tl.tentl</option>
-                                        }
-                                    </select>
-                                </div>
-                            </div>
-
-							<div class="col-12 col-md-6">
-								<div class="sign__group">
-									<input id ="nuocSx" type="text" class="sign__input" placeholder="Nước sản xuất">
+						<div class="col-12">
+							<div class="collapse show multi-collapse">
+								<div class="sign__video">
+									<label id="movie1" for="sign__video-upload">Upload video</label>
+									<input data-name="#movie1" id="sign__video-upload" name="movie" class="sign__video-upload" type="file" accept="video/mp4,video/x-m4v,video/*">
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="col-12">
-						<div class="collapse show multi-collapse">
-							<div class="sign__video">
-								<label id="movie1" for="sign__video-upload">Upload video</label>
-								<input data-name="#movie1" id="sign__video-upload" name="movie" class="sign__video-upload" type="file" accept="video/mp4,video/x-m4v,video/*">
-							</div>
+						<div class="col-12">
+							<button type="submit" class="sign__btn sign__btn--small"><span>Thêm</span></button>
 						</div>
 					</div>
-
-					<div class="col-12">
-                        <button type="submit" class="sign__btn sign__btn--small"><span>Thêm</span></button>
-					</div>
-				</div>
-			</form>
+				</form>
+			</div>
+			<!-- end form -->
 		</div>
-		<!-- end form -->
 	</div>
-</div>
 </main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    $(document).ready(function () {
-        // Sự kiện submit form với AJAX
-        $('#formThemPhim').submit(function (event) {
-            event.preventDefault(); // Ngăn không cho form gửi lại trang
+	$(document).ready(function () {
+		// Sự kiện submit form với AJAX
+		$('#formThemPhim').submit(function (event) {
+			event.preventDefault(); // Ngăn không cho form gửi lại trang
 
-            const phim = {
-                MaPhim: $('#maPhim').val(),
-                TenPhim: $('#tenPhim').val(),
-                ThoiLuong: $('#thoiLuong').val(),
-                DaoDien: $('#daoDien').val(),
-                DoTuoi: $('#doTuoi').val(),
-                NuocSx: $('#nuocSx').val(),
-                MoTa: $('#moTa').val(),
-                MaTl: $('#maTl').val(),
-                MaHat: $('#mahat').val(),
+			const phim = {
+				
+				TenPhim: $('#tenPhim').val(),
+				ThoiLuong: $('#thoiLuong').val(),
+				DaoDien: $('#daoDien').val(),
+				DoTuoi: $('#doTuoi').val(),
+				NuocSx: $('#nuocSx').val(),
+				MoTa: $('#moTa').val(),
+				MaTl: $('#maTl').val(),
+				
 				DuongDanAnh: $('#sign__gallery-upload')[0].files[0] ? $('#sign__gallery-upload')[0].files[0].name : null,
 				DuongDanTrailer: $('#sign__video-upload')[0].files[0] ? $('#sign__video-upload')[0].files[0].name : null
-            };
+			};
 
-            $.ajax({
-                type: 'POST',
-                url: '/api/phimapi', // Đường dẫn đến API thêm phim
-                data: JSON.stringify(phim),
-                contentType: 'application/json',
-                success: function (response) {
+			$.ajax({
+				type: 'POST',
+				url: '/api/phimapi', // Đường dẫn đến API thêm phim
+				data: JSON.stringify(phim),
+				contentType: 'application/json',
+				success: function (response) {
 					showAlert(response.message, 'success');
-                    // Cập nhật danh sách phim mà không tải lại trang
+					// Cập nhật danh sách phim mà không tải lại trang
 					loadPage('/admin/phim');
-                },
-                error: function (xhr) {
+				},
+				error: function (xhr) {
 					const errorMessage = xhr.responseJSON?.message || 'Vui lòng nhập dữ liệu phim!';
 					showAlert(errorMessage, 'danger'); // Thông báo lỗi
-                }
-            });
-        });
-    });
+				}
+			});
+		});
+	});
 
 	function showAlert(message, type) {
 		// Đặt nội dung thông báo vào Modal

@@ -14,10 +14,10 @@ namespace BTLRapChieuPhim.Controllers
 	public class HomeController : Controller
 
     {
-        QuanLyRapPhimContext ql=new QuanLyRapPhimContext();
+        QuanLyRapPhimContext ql = new QuanLyRapPhimContext();
         private readonly ILogger<HomeController> _logger;
 
-        QuanLyRapPhimContext db=new QuanLyRapPhimContext();
+        QuanLyRapPhimContext db = new QuanLyRapPhimContext();
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -31,20 +31,22 @@ namespace BTLRapChieuPhim.Controllers
 			return View(hinhAnh);
 		}
         [Route("chitietphim")]
-        public IActionResult ChiTietPhim(int maphim)
+        public IActionResult ChiTietPhim(string maphim)
         {
             var phim = ql.Phims.SingleOrDefault(x => x.MaPhim == maphim);
-            var anhphim = ql.HinhAnhTrailers.Where(x=>x.MaPhim==maphim).ToList();
-			var theloai = ql.TheLoais.SingleOrDefault(x => x.MaTl == phim.MaTl);
-			ViewBag.anhphim=anhphim;
-            ViewBag.theloai=theloai;   
+            var anhphim = ql.HinhAnhTrailers.Where(x => x.MaPhim == maphim).ToList();
+            var theloai = ql.TheLoais.SingleOrDefault(x => x.MaTl == phim.MaTl);
+            ViewBag.anhphim = anhphim;
+            ViewBag.theloai = theloai;
             return View(phim);
         }
         [Route("thongtinrap")]
         public IActionResult Contact()
         {
-            var rap = ql.RapPhims.SingleOrDefault(x=>x.MaRp==1);
-            var quanly = ql.TaiKhoans.Where(x=>x.MaTk==1).ToList();
+
+            var rap = ql.RapPhims.SingleOrDefault(x=>x.MaRp=="RP1");
+            var quanly = ql.TaiKhoans.Where(x=>x.MaTk=="TK1").ToList();
+
             ViewBag.quanly = quanly;
             return View(rap);
         }
@@ -52,41 +54,49 @@ namespace BTLRapChieuPhim.Controllers
 
         [Route("Privacy")]
 
-        public IActionResult Privacy()
-		{
-            return View();
-        }
-        [Route("lichchieu")]
-        public IActionResult Lichchieu()
-        {
-            ViewBag.MaPhim = 1;
-			return View();
-        }
-        [Route("chonghe")]
-        public IActionResult ChonGhe(int malc,int maphim,string gio, string tgc) 
-        {
-			
-			ViewBag.MaLC = malc;
-            ViewBag.MaPhim = maphim;
-			ViewBag.Gio =gio;
-            ViewBag.Tgc = tgc;
-			return View();
-        }
-        [Route("checkout")]
-        public IActionResult Checkout(int malc, int maphim,string gio, string tgc) 
-        {
-			ViewBag.MaLC = malc;
-			ViewBag.MaPhim = maphim;
-			ViewBag.Gio = gio;
-			ViewBag.Tgc = tgc;
-			return View();
-		}
+            public IActionResult Privacy()
+            {
+                return View();
+            }
+            [Route("lichchieu")] 
+            public IActionResult Lichchieu(string maphim)
+            {	
+			    ViewBag.MaPhim = maphim;
+                return View();
+            }
+            [Route("chonghe")]
+            public IActionResult ChonGhe(string malc, string maphim, string gio, string tgc)
+            {
 
-        [Route("Error")]
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+                ViewBag.MaLC = malc;
+                ViewBag.MaPhim = maphim;
+                ViewBag.Gio = gio;
+                ViewBag.Tgc = tgc;
+			return View();
+            }
+            [Route("checkout")]
+            public IActionResult Checkout(string malc, string maphim, string gio, string tgc)
+            {
+            var matk = HttpContext.Session.GetInt32("MaTK");
+            var Ht = db.KhachHangs.Where(x => x.MaTk == matk.ToString()).Select(x => x.HoTen).FirstOrDefault();
+            ViewBag.MaLC = malc;
+                ViewBag.MaPhim = maphim;
+                ViewBag.Gio = gio;
+                ViewBag.Tgc = tgc;
+                //ViewBag.Hoten = Ht;
+                TempData["Maphim"] = maphim;
+                TempData["Tgc"] = tgc;
+                TempData["Gio"] = gio;
+				TempData["MaLc"] = malc; 
+			return View();
+            }
+
+            [Route("Error")]
+            [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+            public IActionResult Error()
+            {
+                return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            }
         }
     }
-}
+

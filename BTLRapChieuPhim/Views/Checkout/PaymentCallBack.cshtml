@@ -1,0 +1,65 @@
+﻿@using BTLRapChieuPhim.Models.MoMo
+@model MomoExecuteResponseModel
+@{
+    ViewData["title"] = "Kết quả thanh toán thành công";
+	Layout = "~/Views/Shared/_LayoutConfirmCheckout.cshtml";
+}
+<div class="row">
+	<div class="col-md-12">
+		<div class="st_bcc_heading_wrapper float_left">
+			<i class="fa fa-check-circle"></i>
+			<h3>Thanh Toán Thành Công</h3>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<div class="st_bcc_ticket_boxes_wrapper float_left">
+			<div class="st_bcc_tecket_top_hesder float_left">
+				<p>Your Booking is Confirmed!</p>	<span>Mã Giao Dịch : @Model.OrderId</span>
+			</div>
+			<div class="st_bcc_tecket_bottom_hesder float_left">
+				<div class="st_bcc_tecket_bottom_left_wrapper">
+					<div class="st_bcc_tecket_bottom_inner_left">
+						<div class="st_bcc_teckt_bot_inner_img">
+							<img src="../Template/AnhPhim/@TempData["Anh"]" alt="img" width="85" height="127">
+						</div>
+						<div class="st_bcc_teckt_bot_inner_img_cont">
+							<h4>@TempData["TenPhim"]</h4>
+							<h3>@ViewBag.NgayChieu | @TempData["Gio"]</h3>
+						</div>
+						<div class="st_purchase_img">
+							<img src="../Template/images/content/pur2.png" alt="img">
+						</div>
+					</div>
+					<div class="st_bcc_tecket_bottom_inner_right">
+						<i class="fas fa-chair"></i>
+						<h3>
+							@TempData["sove"] <br>
+							<span>@TempData["tenghe"]</span>
+						</h3>
+					</div>
+				</div>
+				<div class="st_bcc_tecket_bottom_right_wrapper">
+					<img src="../Template/images/content/qr.png" alt="img">
+					<h4>Booking ID<br>SSST0000310644</h4>
+				</div>
+				<div class="st_bcc_tecket_bottom_left_price_wrapper">
+					<h4>Tổng tiền</h4>
+					<h5>@Model.Amount</h5>
+				</div>
+			</div>
+		</div>
+		<div class="st_bcc_ticket_boxes_bottom_wrapper float_left">
+			<p>
+				You can access your ticket from your Profile. We will send you
+				<br>an e-Mail/SMS Confirmation with in 15 Minutes.
+			</p>
+			<ul>
+				<li>
+					<a asp-action="Index" asp-controller="Home">Về Trang chủ</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+

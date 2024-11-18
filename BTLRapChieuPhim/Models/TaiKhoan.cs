@@ -5,7 +5,8 @@ namespace BTLRapChieuPhim.Models;
 
 public partial class TaiKhoan
 {
-    public string MaTk { get; set; } = null!;
+
+    public string? MaTk { get; set; } 
 
     public string? Username { get; set; }
 

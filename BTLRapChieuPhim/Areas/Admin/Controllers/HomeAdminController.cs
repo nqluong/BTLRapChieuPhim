@@ -7,8 +7,8 @@ using BTLRapChieuPhim.Models.Authentication;
 namespace BTLRapChieuPhim.Areas.Admin.Controllers
 {
 
-    [Area("admin")]
-    [Route("admin")]
+	[Area("admin")]
+	[Route("admin")]
 	[Authentication(1)]
 
 	public class HomeAdminController : Controller
@@ -23,7 +23,7 @@ namespace BTLRapChieuPhim.Areas.Admin.Controllers
 		{
 			return View("~/Areas/Admin/Views/BaoCao/BaoCao.cshtml");
 
-        }
+		}
 
 		[Route("lichchieuphim")]
 		public IActionResult LichChieuPhim()
@@ -31,11 +31,11 @@ namespace BTLRapChieuPhim.Areas.Admin.Controllers
 			return View("~/Areas/Admin/Views/LichChieu/LichChieuPhim.cshtml");
 		}
 		[Route("lichchieuupdate")]
-		public IActionResult LichChieuUpdate(int maLc)
+		public IActionResult LichChieuUpdate(string maLc)
 		{
 			return View("~/Areas/Admin/Views/LichChieu/LichChieuUpdate.cshtml");
 
-        }
+		}
 		[Route("lichchieuadd")]
 		public IActionResult LichChieuAdd()
 		{
@@ -60,6 +60,7 @@ namespace BTLRapChieuPhim.Areas.Admin.Controllers
 			return View("~/Areas/Admin/Views/BaoCao/BaoCao.cshtml");
 		}
 
+
         [Route("phongchieu")]
         public IActionResult PhongChieu()
         {
@@ -67,16 +68,18 @@ namespace BTLRapChieuPhim.Areas.Admin.Controllers
         }
 
         [Route("phongchieuupdate")]
-        public IActionResult PhongChieuUpdate(int maPc)
+        public IActionResult PhongChieuUpdate(string maPc)
         {
             return View("~/Areas/Admin/Views/PhongChieu/PhongChieuUpdate.cshtml");
         }
 
-        [Route("phongchieuadd")]
-        public IActionResult PhongChieuAdd()
-        {
-            return View("~/Areas/Admin/Views/PhongChieu/PhongChieuAdd.cshtml");
-        }
+
+
+		[Route("phongchieuadd")]
+		public IActionResult PhongChieuAdd()
+		{
+			return View("~/Areas/Admin/Views/PhongChieu/PhongChieuAdd.cshtml");
+		}
 
 		[Route("phim")]
 		public IActionResult Phim()
@@ -84,29 +87,29 @@ namespace BTLRapChieuPhim.Areas.Admin.Controllers
 			return View("~/Areas/Admin/Views/Phim/Phim.cshtml");
 		}
 
-        [Route("phimupdate")]
-        public IActionResult PhimUpdate(int maPhim)
-        {
-            var lstTheLoai = db.TheLoais.Select(tl => new
-            {
-                matl = tl.MaTl,
-                tentl = tl.TenTheLoai,
-            }).ToList();
-            ViewBag.lstTheLoai = lstTheLoai;
-            return View("~/Areas/Admin/Views/Phim/PhimUpdate.cshtml");
-        }
+		[Route("phimupdate")]
+		public IActionResult PhimUpdate(string maPhim)
+		{
+			var lstTheLoai = db.TheLoais.Select(tl => new
+			{
+				matl = tl.MaTl,
+				tentl = tl.TenTheLoai,
+			}).ToList();
+			ViewBag.lstTheLoai = lstTheLoai;
+			return View("~/Areas/Admin/Views/Phim/PhimUpdate.cshtml");
+		}
 
-        [Route("phimadd")]
-        public IActionResult PhimAdd()
-        {
-            var lstTheLoai = db.TheLoais.Select(tl => new
-            {
-                matl = tl.MaTl,
-                tentl = tl.TenTheLoai,
-            }).ToList();
-            ViewBag.lstTheLoai = lstTheLoai;
+		[Route("phimadd")]
+		public IActionResult PhimAdd()
+		{
+			var lstTheLoai = db.TheLoais.Select(tl => new
+			{
+				matl = tl.MaTl,
+				tentl = tl.TenTheLoai,
+			}).ToList();
+			ViewBag.lstTheLoai = lstTheLoai;
 
-            return View("~/Areas/Admin/Views/Phim/PhimAdd.cshtml");
-        }
-    }
+			return View("~/Areas/Admin/Views/Phim/PhimAdd.cshtml");
+		}
+	}
 }

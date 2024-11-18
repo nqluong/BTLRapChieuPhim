@@ -40,11 +40,6 @@
 				<div class="row">
 					<div class="col-12 col-xl-7">
 						<div class="row">
-							<div class="col-12">
-								<div class="sign__group">
-                                    <input id="maPc" type="text" class="sign__input" placeholder="Mã phòng chiếu">
-								</div>
-							</div>
 
 							<div class="col-12">
 								<div class="sign__group">
@@ -77,8 +72,7 @@
         $('#formThemPhongChieu').submit(function(event) {
             event.preventDefault();
 
-            const phongChieu = {
-                MaPc: $('#maPc').val(),
+            const phongChieu = {        
                 TenPc: $('#tenPc').val(),
                 SucChua: $('#sucChua').val(),
                 MaRp: 1
@@ -95,7 +89,7 @@
                 },
                 error: function(xhr) {
                     const errorMessage = xhr.responseJSON?.message || 'Vui lòng nhập dữ liệu phòng chiếu!';
-                    showAlert(errorMessage, 'danger'); // Thông báo lỗi
+                    showAlert(errorMessage, 'danger'); 
                 }
             });
         });

@@ -29,7 +29,9 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                                       TenPhongChieu = pc.TenPc,
                                       SucChua = pc.SucChua,
                                       
-                                  }).ToList();
+                                  })
+								  .OrderByDescending(lc => lc.ThoiGianChieu)
+								  .ToList();
 
             var totalRecords = lichChieuQuery.Count();
             var lichChieu = lichChieuQuery
@@ -62,9 +64,9 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             {
                 return BadRequest(new { message = "Phim khong ton tai !" });
             }
-           // int maLc = GenerateMaLc();
+            string maLc = GenerateMaLc();
 
-            //lichChieu.MaLc = maLc;
+            lichChieu.MaLc = maLc;
 
             int thoiGian = phim.ThoiLuong ?? 0;
             var existingShowTimes = _context.LichChieus.Where(lc => lc.MaPc == lichChieu.MaPc && lc.MaLc != lichChieu.MaLc).ToList();
@@ -88,20 +90,60 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             {
                 _context.LichChieus.Add(lichChieu);
                 _context.SaveChanges();
-                return Ok(new { message = "Thêm lịch chiếu thành công!" });
+
+				var gheTrongPhong = _context.GheXemPhims.Where(g => g.MaPc == phongChieu.MaPc).ToList();
+				var veXemPhimList = new List<VeXemPhim>();
+				int currentMaxNumber = _context.VeXemPhims
+                    .Where(v => v.MaVxp.StartsWith("VXP"))
+					.AsEnumerable()
+					.Select(v => int.Parse(v.MaVxp.Substring(3)))
+                    .DefaultIfEmpty(0)
+                    .Max();
+				foreach (var ghe in gheTrongPhong)
+				{
+
+					var veXemPhim = new VeXemPhim
+					{
+						MaVxp = GenerateVeXemPhimId(ref currentMaxNumber),
+						MaLc = lichChieu.MaLc,
+						MaGxp = ghe.MaGxp, 
+						TrangThai = 0,
+						MaHd = null, 
+						GiaVe = 100000 // Gia vé đang để cố định
+					};
+					veXemPhimList.Add(veXemPhim);
+				}
+				_context.VeXemPhims.AddRange(veXemPhimList);
+				_context.SaveChanges();
+				return Ok(new { message = "Thêm lịch chiếu thành công!" });
             }
             return BadRequest(new { message = "Thêm lịch chiếu thất bại!" });
 
         }
-        //private int GenerateMaLc()
-        //{
+        private string GenerateMaLc()
+        {
 
-        //    var maxMaLc = _context.LichChieus.Max(lc => lc.MaLc);
+			var existingIds = _context.LichChieus
+				.Select(lc => lc.MaLc)
+				.Where(id => id.StartsWith("LC"))
+				.ToList();
 
-        //    return maxMaLc + 1;
-        //}
+			var numbers = existingIds
+				.Select(id => int.TryParse(id.Substring(2), out int num) ? num : 0)
+				.ToList();
+			int maxNumber = numbers.Any() ? numbers.Max() : 0;
+			int newNumber = maxNumber + 1;
 
-        [HttpGet("{maLc}")]
+			return "LC" + newNumber;
+		}
+
+		private string GenerateVeXemPhimId(ref int currentMaxNumber)
+		{
+			currentMaxNumber++; 
+            return "VXP" + currentMaxNumber;
+		}
+
+		[HttpGet("{maLc}")]
         public IActionResult GetLichChieuByMa(string maLc)
         {
             var lichChieuQuery = (from lc in _context.LichChieus
@@ -181,18 +223,24 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteLichChieu(int id)
+        public IActionResult DeleteLichChieu(string id)
         {
             var lichChieu = _context.LichChieus.Find(id);
             if (lichChieu == null)
             {
-                return NotFound();
+                return NotFound(new { message = "Không có lịch chiếu !"});
             }
+			var veXemPhims = _context.VeXemPhims.Where(v => v.MaLc == id).ToList();
 
-            _context.LichChieus.Remove(lichChieu);
+			
+			if (veXemPhims.Any())
+			{
+				_context.VeXemPhims.RemoveRange(veXemPhims);
+			}
+			_context.LichChieus.Remove(lichChieu);
             _context.SaveChanges();
 
-            return Ok(new { message = "Xóa lịch chiếu thành công!" });
+            return Ok(new { message = "Xóa lịch chiếu và các vé liên quan thành công!" });
         }
 
 

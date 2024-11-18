@@ -161,11 +161,20 @@
 			loadPhim();
 			$('.sign__btn--small').on('click', function () {
 
-				const lichChieu = {
+				const maPc = $('#sign__rooms').val()[0];
+				const maPhim = $('#sign__movies').val()[0];
+				const thoiGianChieu = $('#thoiGianChieu').val();
 
-					ThoiGianChieu: $('#thoiGianChieu').val(),
-					MaPc: parseInt($('#sign__rooms').val(), 10),
-					MaPhim: parseInt($('#sign__movies').val(), 10)
+				// Kiểm tra giá trị hợp lệ của MaPc và MaPhim
+				if (!maPc || !maPhim) {
+					$('#message').html('<span style="color: red;">Vui lòng chọn phòng và phim hợp lệ!</span>');
+					return;
+				}
+
+				const lichChieu = {
+					ThoiGianChieu: thoiGianChieu,
+					MaPc: maPc,  // Giữ nguyên dưới dạng chuỗi
+					MaPhim: maPhim  // Giữ nguyên dưới dạng chuỗi
 				};
 				console.log('Dữ liệu gửi đi:', lichChieu);
 				if (!lichChieu.ThoiGianChieu) {
@@ -182,7 +191,7 @@
 						$('#message').html('<span style="color: green;">Thêm lịch chiếu thành công!</span>');
 					},
 					error: function (xhr) {
-						$('#message').html(`<span style="color: red;">Lỗi: ${xhr.responseText || 'Không thể thêm lịch chiếu.'}</span>`);
+						$('#message').html(`<span style="color: red;">${xhr.responseText || 'Không thể thêm lịch chiếu.'}</span>`);
 					}
 				});
 			});

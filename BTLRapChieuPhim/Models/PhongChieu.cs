@@ -5,7 +5,7 @@ namespace BTLRapChieuPhim.Models;
 
 public partial class PhongChieu
 {
-    public string MaPc { get; set; } = null!;
+    public string? MaPc { get; set; } 
 
     public string? TenPc { get; set; }
 

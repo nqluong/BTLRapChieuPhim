@@ -5,7 +5,7 @@ namespace BTLRapChieuPhim.Models;
 
 public partial class LichChieu
 {
-    public string MaLc { get; set; } = null!;
+    public string? MaLc { get; set; }
 
     public DateTime? ThoiGianChieu { get; set; }
 

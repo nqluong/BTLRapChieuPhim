@@ -5,7 +5,8 @@ namespace BTLRapChieuPhim.Models;
 
 public partial class Phim
 {
-    public string MaPhim { get; set; } = null!;
+    public string? MaPhim { get; set; }
+
 
     public string? TenPhim { get; set; }
 
