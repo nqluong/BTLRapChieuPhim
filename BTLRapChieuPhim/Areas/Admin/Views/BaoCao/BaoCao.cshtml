@@ -58,8 +58,6 @@
 
         function drawChart(response){
             var labels = [];
-            var doanhThuVe = [];
-            var doanhThuDoAn = [];
             var doanhThuTong = [];
 
             response.forEach(function (item) {
@@ -70,32 +68,31 @@
                 } else if (item.tenPhongChieu) {
                     labels.push(item.tenPhongChieu); 
                 }
-                doanhThuVe.push(item.tienVe);
-                doanhThuDoAn.push(item.tienDoAn);
-                doanhThuTong.push(item.doanhThu);
+                doanhThuTong.push(item.doanhThuTong);
+                
             });
 
             var areaChartData = {
                 labels: labels,
                 datasets: [
                     {
-                        label: 'Doanh Thu Vé Bán',
+                        label: 'Doanh Thu ',
                         backgroundColor: 'rgba(60,141,188,0.9)',
                         borderColor: 'rgba(60,141,188,0.8)',
-                        data: doanhThuVe
-                    },
-                    {
-                        label: 'Doanh Thu Đồ Ăn',
-                        backgroundColor: 'rgba(210, 214, 222, 1)',
-                        borderColor: 'rgba(210, 214, 222, 1)',
-                        data: doanhThuDoAn
-                    },
-                    {
-                        label: 'Tổng Doanh Thu',
-                        backgroundColor: 'rgba(0, 255, 0, 0.9)',
-                        borderColor: 'rgba(0, 255, 0, 0.8)',
                         data: doanhThuTong
                     }
+                    // {
+                    //     label: 'Doanh Thu Đồ Ăn',
+                    //     backgroundColor: 'rgba(210, 214, 222, 1)',
+                    //     borderColor: 'rgba(210, 214, 222, 1)',
+                    //     data: doanhThuDoAn
+                    // },
+                    // {
+                    //     label: 'Tổng Doanh Thu',
+                    //     backgroundColor: 'rgba(0, 255, 0, 0.9)',
+                    //     borderColor: 'rgba(0, 255, 0, 0.8)',
+                    //     data: doanhThuTong
+                    // }
                 ]
             };
 

@@ -24,10 +24,8 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                         select new
                         {
                             Ngay =hd.NgayTt,
-                            //TienVe = hd.TongTienVe,
-                            //TienDoAn = hd.TongTienDa,
-                            //TongHd = hd.TongTienVe + hd.TongTienDa
-                        };
+							TienVe = (decimal?)hd.TienTt ?? 0
+						};
             var culture = System.Globalization.CultureInfo.InvariantCulture;
             if (!string.IsNullOrEmpty(fromDate) && DateTime.TryParseExact(fromDate, "dd/MM/yyyy", culture, System.Globalization.DateTimeStyles.None, out DateTime startDate))
             {
@@ -44,10 +42,8 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                     .Select(g => new
                     {
                         NgayTt = g.Key,
-                        //TienVe = g.Sum(y => y.TienVe),
-                        //TienDoAn = g.Sum(y => y.TienDoAn),
-                        //DoanhThu = g.Sum(y => y.TongHd)
-                    })
+						TongDoanhThu = g.Sum(y => y.TienVe)
+					})
                     .OrderBy(x => x.NgayTt)
                     .ToList();
             if (!groupedResult.Any())
@@ -63,9 +59,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             var result = groupedResult.Select(x => new
             {
                 Ngay = x.NgayTt,
-                //x.TienVe,
-                //x.TienDoAn,
-                //x.DoanhThu
+                TongDoanhThu = x.TongDoanhThu,
             });
             return Ok(result);
         }
@@ -81,10 +75,8 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                         select new
                         {
                             phim.TenPhim,
-                            //TienVe = hd.TongTienVe,
-                            //TienDoAn = hd.TongTienDa,
-                            //TongHd = hd.TongTienVe + hd.TongTienDa
-                        };
+							TienVe = (decimal?)hd.TienTt ?? 0
+						};
 
             var culture = System.Globalization.CultureInfo.InvariantCulture;
 
@@ -94,19 +86,15 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                     .Select(g => new
                     {
                         TenPhim = g.Key,
-                        //TienVe = g.Sum(y => y.TienVe),
-                        //TienDoAn = g.Sum(y => y.TienDoAn),
-                        //DoanhThu = g.Sum(y => y.TongHd)
-                    })
+						TongDoanhThu = g.Sum(y => y.TienVe)
+					})
                     .OrderBy(x => x.TenPhim)
                     .ToList();
 
             var result = groupedResult.Select(x => new
             {
                 x.TenPhim,
-                //x.TienVe,
-                //x.TienDoAn,
-                //x.DoanhThu
+                x.TongDoanhThu
             });
 
             return Ok(result);
@@ -122,29 +110,23 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                         select new
                         {
                             TenPhongChieu = phong.TenPc,
-                            //TienVe = hd.TongTienVe,
-                            //TienDoAn = hd.TongTienDa,
-                            //TongHd = hd.TongTienVe + hd.TongTienDa
-                        };
+							TienVe = (decimal?)hd.TienTt ?? 0
+						};
 
             var groupedResult = query
                     .GroupBy(x => x.TenPhongChieu)
                     .Select(g => new
                     {
                         TenPhongChieu = g.Key,
-                        //TienVe = g.Sum(y => y.TienVe),
-                        //TienDoAn = g.Sum(y => y.TienDoAn),
-                        //DoanhThu = g.Sum(y => y.TongHd)
-                    })
+						TongDoanhThu = g.Sum(y => y.TienVe)
+					})
                     .OrderBy(x => x.TenPhongChieu)
                     .ToList();
 
             var result = groupedResult.Select(x => new
             {
                 x.TenPhongChieu,
-                //x.TienVe,
-                //x.TienDoAn,
-                //x.DoanhThu
+                x.TongDoanhThu
             });
 
             return Ok(result);
