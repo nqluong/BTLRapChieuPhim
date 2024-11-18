@@ -88,7 +88,25 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             {
                 _context.LichChieus.Add(lichChieu);
                 _context.SaveChanges();
-                return Ok(new { message = "Thêm lịch chiếu thành công!" });
+
+				var gheTrongPhong = _context.GheXemPhims.Where(g => g.MaPc == phongChieu.MaPc).ToList();
+				var veXemPhimList = new List<VeXemPhim>();
+
+				foreach (var ghe in gheTrongPhong)
+				{
+					var veXemPhim = new VeXemPhim
+					{
+						MaVxp = GenerateVeXemPhimId(),
+						MaLc = lichChieu.MaLc,
+						MaGxp = ghe.MaGxp, 
+						TrangThai = 0,
+						MaHd = null, 
+						GiaVe = 100000 // Gia vé đang để cố định
+					};
+					veXemPhimList.Add(veXemPhim);
+				}
+
+				return Ok(new { message = "Thêm lịch chiếu thành công!" });
             }
             return BadRequest(new { message = "Thêm lịch chiếu thất bại!" });
 
@@ -206,18 +224,24 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteLichChieu(int id)
+        public IActionResult DeleteLichChieu(string id)
         {
             var lichChieu = _context.LichChieus.Find(id);
             if (lichChieu == null)
             {
-                return NotFound();
+                return NotFound(new { message = "Không có lịch chiếu !"});
             }
+			var veXemPhims = _context.VeXemPhims.Where(v => v.MaLc == id).ToList();
 
-            _context.LichChieus.Remove(lichChieu);
+			
+			if (veXemPhims.Any())
+			{
+				_context.VeXemPhims.RemoveRange(veXemPhims);
+			}
+			_context.LichChieus.Remove(lichChieu);
             _context.SaveChanges();
 
-            return Ok(new { message = "Xóa lịch chiếu thành công!" });
+            return Ok(new { message = "Xóa lịch chiếu và các vé liên quan thành công!" });
         }
 
 
