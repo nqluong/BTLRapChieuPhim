@@ -88,7 +88,7 @@
 				</li>
 
 				@await Component.InvokeAsync("TenMenu", new { menuType = "PhongChieu" })
-				@await Component.InvokeAsync("TenMenu", new { menuType = "Phim" })
+				@await Component.InvokeAsync("TenMenu", new { menuType = "Phim", page = 1, pageSize = 10 })
 
 				<li class="sidebar__nav-item">
 					<a href="/admin/LichChieuPhim" class="sidebar__nav-link "><i class="ti ti-star-half-filled"></i> <span>Lịch Chiếu Phim</span></a>

@@ -1,10 +1,10 @@
 ﻿<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
-    function showMovies() {
+    function showMovies(page = 1) {
         var contentHtml = '';
         $.ajax({
-            url: '/api/phimapi', // Đảm bảo đường dẫn API chính xác
+            url: `/api/phimapi?page=${page}`, // Đảm bảo đường dẫn API chính xác
             method: 'GET',
             dataType: 'json',
             success: function (data) {
@@ -41,8 +41,9 @@
                                 </thead>
                                 <tbody id="phimBody">`;
 
+                const movies = data.items;
                 // Lặp qua dữ liệu và hiển thị mỗi phim
-                data.forEach(function (phim) {
+                movies.forEach(function (phim) {
                     contentHtml += `
                         <tr>
                             <td><div class="catalog__text">${phim.maPhim}</div></td>
@@ -69,15 +70,77 @@
                             </tbody>
                         </table>
                     </div>
-                </div>`;
+                </div>
+                  <div class="col-12">
+                    <div class="main__paginator">
+                        <!-- amount -->
+                        <span id="paginationInfo" class="main__paginator-pages">10 of 169</span>
+                        <!-- end amount -->
+
+                        <ul class="main__paginator-list">
+                            <li id="prevPage">
+                                    <a href="javascript:void(0)" onclick="showMovies(currentPage - 1)">
+                                    <i class="ti ti-chevron-left"></i>
+                                    <span>Prev</span>
+                                </a>
+                            </li>
+                            <li id="nextPage">
+                                    <a href="javascript:void(0)" onclick="showMovies(currentPage + 1)">
+                                    <span>Next</span>
+                                    <i class="ti ti-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="paginator" id="paginationList"></ul>
+                    </div>
+                </div>
+                    `;
 
                 // Hiển thị danh sách phim
                 $('#renderBodyContent').html(contentHtml);
+                renderPagination(data.currentPage, data.totalPages);
             },
             error: function (xhr) {
                 alert("Lỗi khi tải danh sách phim: " + xhr.responseText);
             }
         });
+    }
+
+    function renderPagination(currentPage, totalPages) {
+        $('#paginationInfo').text(`${currentPage} of ${totalPages}`);
+        $('#paginationList').empty();
+
+        let paginationHtml = '';
+        paginationHtml += `<li class="paginator__item paginator__item--prev ${currentPage === 1 ? 'disabled' : ''}">
+                                <a href="javascript:void(0)" onclick="showMovies(${currentPage - 1})">
+                                <i class="ti ti-chevron-left"></i>
+                            </a>
+                        </li>`;
+        
+        for (let i = 1; i <= totalPages; i++) {
+            if (i === 1 || i === totalPages || (i >= currentPage - 1 && i <= currentPage + 1)) {
+                let liClass = i === currentPage ? 'paginator__item paginator__item--active' : 'paginator__item';
+                paginationHtml += `
+                            <li class="${liClass}">
+                                    <a href="javascript:void(0)" onclick="showMovies(${i})">${i}</a>
+                            </li>
+                        `;
+            } else if (i === currentPage - 2 || i === currentPage + 2) {
+                // Dấu "..."
+                paginationHtml += `
+                            <li class="paginator__item"><span>...</span></li>
+                        `;
+            }
+        }
+        paginationHtml +=`
+                    <li class="paginator__item paginator__item--next ${currentPage === totalPages ? 'disabled' : ''}">
+                            <a href="javascript:void(0)" onclick="showMovies(${currentPage + 1})">
+                            <i class="ti ti-chevron-right"></i>
+                        </a>
+                    </li>
+                `;
+        $('#paginationList').html(paginationHtml);
     }
 
     function showsearchMovies(maPhim) {
@@ -255,3 +318,4 @@
                 background-color: #f0f0f0;
             }
 </style>
+
