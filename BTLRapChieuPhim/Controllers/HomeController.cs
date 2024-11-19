@@ -84,7 +84,7 @@ namespace BTLRapChieuPhim.Controllers
             {
             if (string.IsNullOrEmpty(maphim))
             {
-                return BadRequest("Mã phim không h?p l?.");
+                return BadRequest("Mã phim không h?p l?");
             }
 
             ViewBag.MaPhim = maphim;
