@@ -65,6 +65,7 @@ namespace BTLRapChieuPhim.Controllers
 			// Kiểm tra kết quả giao dịch từ Momo
 			var matk = HttpContext.Session.GetString("MaTK");
 			var Ht = db.KhachHangs.Where(x => x.MaTk == matk).Select(x => x.HoTen).FirstOrDefault();
+			var makh = db.KhachHangs.Where(x => x.MaTk == matk).Select(x => x.MaKh).FirstOrDefault();
 			var maphim = TempData["Maphim"] as string;
 			var anh = db.HinhAnhTrailers.Where(x => x.MaPhim == maphim).Select(x => x.DuongDanAnh).FirstOrDefault();
 			TempData["Anh"] = anh;
@@ -81,6 +82,7 @@ namespace BTLRapChieuPhim.Controllers
 			}
 			var thanhToan = new HoaDon
 			{
+				MaKh = makh,
 				MaHd= GenerateMaHD(),
                 MaGd = requestquery["OrderId"],
 				HoTen = Ht,

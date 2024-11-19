@@ -13,8 +13,6 @@
 
         public string? MaRp { get; set; }
 
-        public string? HoTen { get; set; }
-
         public string? TenRp { get; set; }
     }
 }

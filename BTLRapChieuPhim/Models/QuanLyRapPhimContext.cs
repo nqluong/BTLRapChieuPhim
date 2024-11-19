@@ -51,6 +51,7 @@ public partial class QuanLyRapPhimContext : DbContext
 
 
 
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<DanhGium>(entity =>

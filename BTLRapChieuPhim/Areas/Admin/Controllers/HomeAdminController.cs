@@ -28,15 +28,9 @@ namespace BTLRapChieuPhim.Areas.Admin.Controllers
 		public IActionResult Index()
 
 		{
-            var userId = HttpContext.Session.GetString("MaTK");
-            if (!string.IsNullOrEmpty(userId))
-            {
-               
-                var hoTenQuanLy = _quanLyService.GetHoTenQuanLy(userId);
-
-                
-                ViewData["HoTen"] = hoTenQuanLy;
-            }
+            var matk = HttpContext.Session.GetString("MaTK");
+            var Ht = db.QuanLies.Where(x => x.MaTk == matk).Select(x => x.HoTen).FirstOrDefault();
+            ViewData["HoTen"] = Ht;
             return View("~/Areas/Admin/Views/BaoCao/BaoCao.cshtml");
 
 		}

@@ -123,8 +123,6 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                     return BadRequest(new { message = "Đường dẫn Trailer không được để trống!" });
                 }
 
-               
-
                 var phim = new Phim
                 {
                     MaPhim = phimadd.MaPhim,
@@ -185,40 +183,9 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
 			return "HAT" + newNumber;
 		}
 
-		[HttpGet("GetMa")]
-        public IActionResult GetMa()
-        {
-            string maxMaPhim = _context.Phims
-               .OrderByDescending(p => p.MaPhim)
-               .Select(p => p.MaPhim)
-               .FirstOrDefault() ?? "MP1"; // Nếu chưa có phim, bắt đầu từ MP000
-
-            int maxNumberMP = int.Parse(maxMaPhim.Substring(2)); // Bỏ "MP" và lấy phần số
-
-            string maxMaHat = _context.HinhAnhTrailers
-               .OrderByDescending(p => p.MaHat)
-               .Select(p => p.MaHat)
-               .FirstOrDefault() ?? "MaHAT1"; // Nếu chưa có phim, bắt đầu từ MP000
-
-            int maxNumberMaHAT = int.Parse(maxMaPhim.Substring(2)); // Bỏ "MP" và lấy phần số
-
-            var ma = new
-            {
-                NextMaPhim = maxMaPhim,
-                NextMaHat = maxMaHat
-            };
-            return Ok(ma);
-        }
-
-
         [HttpPut("{maPhim}")]
         public IActionResult UpdatePhim(string maPhim, [FromBody] PhimAPI phimUpdated)
         {
-            //if (phimUpdated == null || maPhim != phimUpdated.MaPhim)
-            //{
-            //    return BadRequest(new { message = "Không tìm thấy phim với mã này!" });
-            //}
-
             var phim = _context.Phims.Find(maPhim);
 			var hinhanhTrailer = _context.HinhAnhTrailers.FirstOrDefault(hat => hat.MaPhim == maPhim);
 			if (phim == null)
@@ -255,7 +222,6 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             phim.MaTl = phimUpdated.MaTl;
             phim.NuocSx = phimUpdated.NuocSx;
             phim.MoTa = phimUpdated.MoTa;
-			//hinhanhTrailer.MaHat = phimUpdated.MaHat;
 			if (hinhanhTrailer != null)
 			{
 				hinhanhTrailer.DuongDanAnh = phimUpdated.DuongDanAnh;
@@ -285,7 +251,26 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             var danhgias = _context.DanhGia.Where(dg => dg.MaPhim == maPhim).ToList();
             var hinhanhtrailers = _context.HinhAnhTrailers.Where(hat => hat.MaPhim == maPhim).ToList();
 
-            if (khuyenmais.Any())
+			var maLCs = _context.LichChieus
+				.Where(lc => lc.MaPhim == maPhim)
+				.Select(lc => lc.MaLc)
+				.ToList();
+
+			if (maLCs.Any())
+			{
+				// Lấy danh sách vé xem phim dựa trên danh sách maLC
+				var vexemphims = _context.VeXemPhims
+					.Where(vx => maLCs.Contains(vx.MaLc))
+					.ToList();
+
+				// Xóa danh sách vé xem phim
+				_context.VeXemPhims.RemoveRange(vexemphims);
+
+				// Xóa danh sách lịch chiếu
+				var lichchieus = _context.LichChieus.Where(lc => maLCs.Contains(lc.MaLc)).ToList();
+				_context.LichChieus.RemoveRange(lichchieus);
+			}
+			if (khuyenmais.Any())
             {
                 _context.KhuyenMais.RemoveRange(khuyenmais);
             }
