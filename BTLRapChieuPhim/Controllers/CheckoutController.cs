@@ -64,11 +64,12 @@ namespace BTLRapChieuPhim.Controllers
 			var requestquery = HttpContext.Request.Query;
 			// Kiểm tra kết quả giao dịch từ Momo
 			var matk = HttpContext.Session.GetString("MaTK");
+			var maKH = db.KhachHangs.Where(x => x.MaTk == matk).Select(x => x.MaKh).FirstOrDefault();
 			var Ht = db.KhachHangs.Where(x => x.MaTk == matk).Select(x => x.HoTen).FirstOrDefault();
 			var maphim = TempData["Maphim"] as string;
 			var anh = db.HinhAnhTrailers.Where(x => x.MaPhim == maphim).Select(x => x.DuongDanAnh).FirstOrDefault();
 			TempData["Anh"] = anh;
-			var ten = db.Phims.Where(x => x.MaPhim == maphim).Select(x => x.TenPhim).FirstOrDefault();
+			var ten = db.Phims.Where(x => x.MaPhim == maphim).Select(x => x.TenPhim).FirstOrDefault().ToList(); ;
 			TempData["TenPhim"]= ten;
 			var ngaychieu = TempData["Tgc"] as DateTime?;
 			if (ngaychieu != null)
@@ -81,6 +82,7 @@ namespace BTLRapChieuPhim.Controllers
 			}
 			var thanhToan = new HoaDon
 			{
+				MaKh = maKH,
 				MaHd= GenerateMaHD(),
                 MaGd = requestquery["OrderId"],
 				HoTen = Ht,
@@ -92,7 +94,6 @@ namespace BTLRapChieuPhim.Controllers
 				db.HoaDons.Add(thanhToan);
 				await db.SaveChangesAsync();
 				string maTTMoi = thanhToan.MaHd;
-				
 				if (TempData["MaLc"] is string malc && TempData["maghe"] is string[] selectedSeats)
 				{
 					foreach (var maghe in selectedSeats)
@@ -107,6 +108,7 @@ namespace BTLRapChieuPhim.Controllers
 					await db.SaveChangesAsync();
 				}
 			}
+
 
 			return View("PayMentCallBack",response); 
 		}

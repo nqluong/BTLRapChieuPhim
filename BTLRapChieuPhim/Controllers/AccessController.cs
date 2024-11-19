@@ -32,7 +32,7 @@ namespace BTLRapChieuPhim.Controllers
 				{
 					HttpContext.Session.SetString("UserName", u.Username.ToString());
 					HttpContext.Session.SetInt32("LoaiTK", u.LoaiTk.Value);
-
+					HttpContext.Session.SetString("MaTK", u.MaTk.ToString());
 
 					if (u.LoaiTk == 2)
 					{
