@@ -59,7 +59,7 @@ Author: Webstrot
 			</div>
 			<div class="prs_navi_left_main_wrapper">
 				<div class="prs_logo_main_wrapper">
-					<a href="index.html">
+					<a asp-action="Index">
 						<img src="../Template/images/header/logo.png" alt="logo" />
 					</a>
 				</div>
@@ -75,13 +75,7 @@ Author: Webstrot
 							<div class="clearfix"></div>
 							<ul class="dl-menu">
 								<li class="parent">
-									<a href="#">Home</a>
-									<ul class="lg-submenu">
-										<li><a href="index.html">Index-I</a></li>
-										<li><a href="index2.html">Index-II</a></li>
-										<li><a href="index3.html">Index-III</a></li>
-										<li><a href="index4.html">Index-IV</a></li>
-									</ul>
+									<a asp-action="Index">Home</a>
 								</li>
 								<li class="parent megamenu">
 									<a href="#">movie</a>
@@ -362,7 +356,7 @@ Author: Webstrot
 									</ul>
 								</li>
 								<li class="parent">
-									<a href="contact.html">contact</a>
+									<a asp-action="Contact">contact</a>
 								</li>
 							</ul>
 						</div>
@@ -380,7 +374,13 @@ Author: Webstrot
 					<div class="prs_animate_btn1">
 						<ul>
 							<li>
-								<a href="#" class="button button--tamaya" data-text="sign up" data-toggle="modal" data-target="#myModal"><span>sign up</span></a>
+								<a href="/Access/Login" class="button button--tamaya" data-text="Đăng nhập">
+									<span>Đăng nhập</span>
+								</a>
+
+								<a href="/Access/Logout" class="button button--tamaya" data-text="Đăng xuất">
+									<span>Đăng xuất</span>
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -539,7 +539,7 @@ Author: Webstrot
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="prs_heading_section_wrapper">
-						<h2>Our Patner’s</h2>
+						<h2>Đối tác</h2>
 					</div>
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -588,13 +588,13 @@ Author: Webstrot
 			<div class="row">
 				<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
 					<div class="prs_newsletter_text">
-						<h3>Get update sign up now !</h3>
+							<h3>Đăng ký ngay để nhận cập nhật</h3>
 					</div>
 				</div>
 				<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
 					<div class="prs_newsletter_field">
-						<input type="text" placeholder="Enter Your Email">
-						<button type="submit">Submit</button>
+                            <input type="text" placeholder="Nhập Email">
+						<button type="submit">Gửi</button>
 					</div>
 				</div>
 			</div>

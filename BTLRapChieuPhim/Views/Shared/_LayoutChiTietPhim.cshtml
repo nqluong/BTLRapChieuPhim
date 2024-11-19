@@ -59,7 +59,7 @@ Author: Webstrot
 			</div>
 			<div class="prs_navi_left_main_wrapper">
 				<div class="prs_logo_main_wrapper">
-					<a href="index.html">
+					<a asp-action="Index">
 						<img src="../Template/images/header/logo.png" alt="logo" />
 					</a>
 				</div>
@@ -356,7 +356,7 @@ Author: Webstrot
 									</ul>
 								</li>
 								<li class="parent">
-									<a href="contact.html">contact</a>
+									<a asp-action="Contact">contact</a>
 								</li>
 							</ul>
 						</div>
@@ -374,7 +374,13 @@ Author: Webstrot
 					<div class="prs_animate_btn1">
 						<ul>
 							<li>
-								<a href="#" class="button button--tamaya" data-text="sign up" data-toggle="modal" data-target="#myModal"><span>sign up</span></a>
+								<a href="/Access/Login" class="button button--tamaya" data-text="Đăng nhập">
+									<span>Đăng nhập</span>
+								</a>
+
+								<a href="/Access/Logout" class="button button--tamaya" data-text="Đăng xuất">
+									<span>Đăng xuất</span>
+								</a>
 							</li>
 						</ul>
 					</div>
