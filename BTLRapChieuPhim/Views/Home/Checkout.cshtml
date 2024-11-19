@@ -59,7 +59,7 @@
 											<input type="hidden" name="OrderId" id="inputOrderId" />
 											<input type="hidden" name="OrderInfomation" value="Thanh toán Momo cho đơn hàng"/>
 											<input type="hidden" name="FullName" id="inputFullName" />
-											<button  class="btn btn-danger" name="PayUrl" type="submit">PROCEED TO PAY </button>
+											<button  class="btn btn-danger" name="PayUrl" type="submit">THANH TOÁN </button>
 										</form>
 									</li>
 								</ul>
@@ -125,13 +125,13 @@
 					console.log(Hoten);
 					str += `
 						<li>
-							<span class="dtts1">Date</span> <span class="dtts2">${tgc}</span>
+							<span class="dtts1">Ngày Chiếu</span> <span class="dtts2">${tgc}</span>
 						</li>
 						<li>
-							<span class="dtts1">Time</span> <span class="dtts2">${gio}</span>
+							<span class="dtts1">Giờ Chiếu</span> <span class="dtts2">${gio}</span>
 						</li>
 						<li>
-							<span class="dtts1">Theater</span> <span class="dtts2">Ariesplex SL Cinemas</span>
+							<span class="dtts1">Phòng Chiếu</span> <span class="dtts2">@TempData["PC"]</span>
 						</li>`;
 
 					// Lấy danh sách ghế
