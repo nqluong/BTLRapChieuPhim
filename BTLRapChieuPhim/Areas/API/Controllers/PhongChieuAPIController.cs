@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using BTLRapChieuPhim.Models;
 using Microsoft.EntityFrameworkCore;
 using BTLRapChieuPhim.Areas.Admin.Models.PhongChieuModels;
+using BTLRapChieuPhim.Areas.Admin.Models.PhimModels;
 
 namespace BTLRapChieuPhim.Areas.API.Controllers
 {
@@ -18,10 +19,9 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         {
             var phongchieu = (from pc in _context.PhongChieus
                               join rp in _context.RapPhims on pc.MaRp equals rp.MaRp
-                              select new PhongChieuAPI
+							  select new PhongChieuAPI
                               {
-
-                                  MaRp = rp.MaRp,
+								  MaRp = rp.MaRp,
                                   MaPc = pc.MaPc,
                                   TenPc = pc.TenPc,
                                   SucChua = pc.SucChua,
@@ -50,13 +50,10 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         {
             var phongchieu = (from pc in _context.PhongChieus
                               join rp in _context.RapPhims on pc.MaRp equals rp.MaRp
-
                               where maPc == pc.MaPc
                               select new PhongChieuAPI
                               {
-
                                   MaRp = rp.MaRp,
-
                                   MaPc = pc.MaPc,
                                   TenPc = pc.TenPc,
                                   SucChua = pc.SucChua,
@@ -67,9 +64,9 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
 
 
         [HttpPost]
-
-        public IActionResult ThemPhongChieu([FromBody] PhongChieu phongChieu)
+        public IActionResult ThemPhongChieu([FromBody] PhongChieuAPI phongChieu)
         {
+            int maGXP = GenerateMaGhe();
             string maPhong = GenerateMaPhong();
             phongChieu.MaPc = maPhong;
             if (ModelState.IsValid)
@@ -81,13 +78,51 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                 if (isDuplicate)
                 {
                     return BadRequest(new { message = "Mã phòng chiếu hoặc tên phòng chiếu đã tồn tại!" });
-                }
+				}
 
+				var phongchieus = new PhongChieu
+				{
+					MaPc = phongChieu.MaPc, 
+                    TenPc = phongChieu.TenPc,
+                    MaRp = phongChieu.MaRp,
+                    SucChua = phongChieu.SucChua
+				};
 
-                // Nếu không trùng, thêm mới
-                _context.PhongChieus.Add(phongChieu);
+				// Tạo 10 ghế VIP
+				// Tạo danh sách chứa tất cả ghế
+				var gheList = new List<GheXemPhim>();
+
+				// Tạo ghế VIP (từ 1 đến 23)
+				for (int i = 1; i <= 23; i++)
+				{
+					gheList.Add(new GheXemPhim
+					{
+						MaGxp = "GXP" + maGXP + i + Guid.NewGuid().ToString().Substring(0, 8), // Đảm bảo MaGxp là duy nhất
+						MaPc = maPhong,
+						LoaiGhe = "Vip",
+						Ghe = i
+					});
+				}
+
+				// Tạo ghế Thường (từ 24 đến 69)
+				for (int i = 24; i <= 69; i++)
+				{
+					gheList.Add(new GheXemPhim
+					{
+						MaGxp = "GXP" + maGXP + i + Guid.NewGuid().ToString().Substring(0, 8), // Đảm bảo MaGxp là duy nhất
+						MaPc = maPhong,
+						LoaiGhe = "Thường",
+						Ghe = i
+					});
+				}
+
+				// Lưu toàn bộ danh sách ghế vào cơ sở dữ liệu
+				_context.GheXemPhims.AddRange(gheList);
+
+				// Nếu không trùng, thêm mới
+				_context.PhongChieus.Add(phongchieus);
                 _context.SaveChanges();
-                return Ok(new { message = "Thêm phòng chiếu thành công!" });
+				return Ok(new { message = "Thêm phòng chiếu thành công!" });
             }
             return BadRequest(new { message = "Thêm phòng chiếu thất bại!" });
         }
@@ -107,6 +142,23 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
 
 			return "PC" + newNumber;
 		}
+
+		private int GenerateMaGhe()
+		{
+
+			var existingIds = _context.GheXemPhims
+				.Select(p => p.MaGxp)
+				.Where(id => id.StartsWith("GXP"))
+				.ToList();
+
+			var numbers = existingIds
+				.Select(id => int.TryParse(id.Substring(3), out int num) ? num : 0)
+				.ToList();
+			int maxNumber = numbers.Any() ? numbers.Max() : 0;
+			int newNumber = maxNumber + 1;
+
+			return newNumber;
+		}
 		[HttpPut("{maPc}")]
         public IActionResult UpdatePhongChieu(string maPc, [FromBody] PhongChieuAPI phongChieuUpdated)
         {
@@ -121,7 +173,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
 
             if (existingPhongChieu != null)
             {
-                return Conflict("Tên phòng chiếu đã tồn tại."); // Trả về mã lỗi 409 nếu tên phòng chiếu bị trùng
+                return BadRequest(new { message = "Tên phòng chiếu đã tồn tại." });
             }
 
             if (string.IsNullOrWhiteSpace(phongChieuUpdated.TenPc) ||
@@ -169,6 +221,13 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
                 _context.LichChieus.RemoveRange(lichchieus);
             }
 
+            var ghexemPhim = _context.GheXemPhims
+                   .Where(gxp => maPc.Contains(gxp.MaPc))
+                   .ToList();
+            if (ghexemPhim != null)
+            {
+                _context.GheXemPhims.RemoveRange(ghexemPhim);
+            }
             // Xóa phòng chiếu
             var phongChieu = _context.PhongChieus.Find(maPc);
             if (phongChieu != null)
@@ -193,3 +252,6 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
         }
     }
 }
+
+
+
