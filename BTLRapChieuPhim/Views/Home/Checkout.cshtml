@@ -121,7 +121,7 @@
 					var tgc = data.storedSeats[0].tgc;
 					var gio = data.storedSeats[0].gio;
 					var tenPhim = data.storedSeats[0].tenPhim;
-					const Hoten = @Html.Raw(ViewBag.HotenJson);
+					const Hoten = @Html.Raw(ViewBag.HotenJson)
 					console.log(Hoten);
 					str += `
 						<li>
@@ -188,7 +188,7 @@
 					data: { selectedSeats: seatIdList,sove: ticketCount, tenghe:seatList},
 					traditional: true,
 					success: function (response) {
-						console.log('Seats data sent to controller successfully!');
+						console.log(selectedSeats);
 					},
 					error: function (xhr, status, error) {
 						console.error("Error sending seats data to controller:", error);

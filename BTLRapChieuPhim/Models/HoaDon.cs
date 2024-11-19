@@ -5,7 +5,7 @@ namespace BTLRapChieuPhim.Models;
 
 public partial class HoaDon
 {
-    public string MaHd { get; set; } = null!;
+    public string? MaHd { get; set; }
 
     public decimal? TienTt { get; set; }
 
