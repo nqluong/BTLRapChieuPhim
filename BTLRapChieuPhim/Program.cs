@@ -1,3 +1,4 @@
+using BTLRapChieuPhim.Areas.Admin.Service;
 using BTLRapChieuPhim.Models;
 using BTLRapChieuPhim.Models.MoMo;
 using BTLRapChieuPhim.Services.Momo;
@@ -12,7 +13,7 @@ builder.Services.AddDbContext<QuanLyRapPhimContext>(x => x.UseSqlServer(connecti
 // Cấu hình Momo API
 builder.Services.Configure<MomoOptionModel>(builder.Configuration.GetSection("MomoAPI"));
 builder.Services.AddScoped<IMomoService, MomoService>();
-
+builder.Services.AddScoped<QuanLyService>();
 // Thêm session
 builder.Services.AddSession();
 

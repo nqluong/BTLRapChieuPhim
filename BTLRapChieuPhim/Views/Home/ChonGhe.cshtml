@@ -194,9 +194,9 @@
 				const allSeats = [];
 				const rows = ['A', 'B']; // Hai hàng ghế
 				const totalSeatsPerRow = 23; // Số ghế mỗi hàng
-				const totalSeats = 46; // Tổng số ghế trong một phòng chiếu
+				const totalSeats = 69; // Tổng số ghế trong một phòng chiếu
 				let pc = parseInt(bookedSeats[0].maPc.replace('PC', ''), 10); // Lấy số phòng chiếu từ API
-				let startGxpId = (pc - 1) * totalSeats + 1; // Mã GXP bắt đầu cho phòng chiếu này
+				let startGxpId = (pc - 1) * totalSeats + 24; // Mã GXP bắt đầu cho phòng chiếu này
 				let seatIndex = startGxpId; // Khởi tạo mã GXP
 				let z = 24; // Khởi tạo số ghế từ 1 cho mỗi hàng
 

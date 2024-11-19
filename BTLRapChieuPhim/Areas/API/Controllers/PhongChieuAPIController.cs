@@ -46,26 +46,6 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
 
 
         [HttpGet("{maPc}")]
-
-        public IEnumerable<PhongChieuAPI> GetAllPhongChieu()
-        { 
-            var phongchieu = (from pc in _context.PhongChieus
-                              join rp in _context.RapPhims on pc.MaRp equals rp.MaRp
-
-                              where pc.MaRp == "1"
-                              select new PhongChieuAPI
-                              {
-
-                                  MaRp = rp.MaRp,
-                                  MaPc = pc.MaPc,
-                                  TenPc = pc.TenPc,
-                                  SucChua = pc.SucChua,
-                                  TenRp = rp.TenRp,
-                              }).ToList();
-            return phongchieu;
-        }
-
-        [HttpGet("{maPc}")]
         public IEnumerable<PhongChieuAPI> GetPhongChieu(string maPc)
         {
             var phongchieu = (from pc in _context.PhongChieus

@@ -2,7 +2,7 @@
 {
 	public class LichChieuApi
 	{
-		public string MaLc { get; set; }
+		public string? MaLc { get; set; }
 
 		public DateTime? ThoiGianChieu { get; set; }
 

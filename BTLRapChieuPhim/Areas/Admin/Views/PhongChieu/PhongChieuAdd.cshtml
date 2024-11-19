@@ -75,7 +75,7 @@
             const phongChieu = {        
                 TenPc: $('#tenPc').val(),
                 SucChua: $('#sucChua').val(),
-                MaRp: 1
+                MaRp: "RP1"
             };
             console.log(JSON.stringify(phongChieu));
             $.ajax({
@@ -84,10 +84,12 @@
                 data: JSON.stringify(phongChieu),
                 contentType: 'application/json',
                 success: function(response) {
+                    console.log('Thành công:', response);
                     showAlert(response.message, 'success');
                     loadPage('/admin/phongchieu');
                 },
                 error: function(xhr) {
+                    console.log('Response:', xhr.responseText);
                     const errorMessage = xhr.responseJSON?.message || 'Vui lòng nhập dữ liệu phòng chiếu!';
                     showAlert(errorMessage, 'danger'); 
                 }

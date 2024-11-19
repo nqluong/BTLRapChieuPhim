@@ -5,7 +5,7 @@ namespace BTLRapChieuPhim.Models;
 
 public partial class GheXemPhim
 {
-    public string MaGxp { get; set; } = null!;
+    public string? MaGxp { get; set; }
 
     public string? LoaiGhe { get; set; }
 

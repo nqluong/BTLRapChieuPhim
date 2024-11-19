@@ -29,7 +29,7 @@
 <!-- BAR CHART -->
 <div class="card card-success dashbox">
     <div class="card-header">
-        <h3 class="card-title dashbox__title">Thống Kê Doanh Thu</h3>
+        <h3 class="card-title dashbox__title customs-label">Thống Kê Doanh Thu</h3>
 
         <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -129,7 +129,7 @@
             loadDefaultReport();
             $('#filterType').on('change', function () {
                 var filterType = $(this).val();
-
+                $('#message').html('');
                 if (filterType === 'ngay') {
                     $('#fromDate').show();
                     $('#toDate').show();
@@ -146,7 +146,7 @@
                 var filterType = $('#filterType').val();
                 var url = '';
                 var data = {};
-
+                $('#message').html('');
                 if (filterType === 'ngay') {
                     var fromDate = $('#fromDate').val();
                     var toDate = $('#toDate').val();
@@ -191,7 +191,7 @@
 
             function formatDate(dateString) {
                 var parts = dateString.split('-');
-                return parts[2] + '-' + parts[1] + '-' + parts[0];
+                return parts[2] + '/' + parts[1] + '/' + parts[0];
             }
             function loadDefaultReport(){
                 var url = '/api/baocao/theo-phim';

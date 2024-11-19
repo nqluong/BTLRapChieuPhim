@@ -16,7 +16,7 @@
 
         public string? MoTa { get; set; }
 
-        public string MaTl { get; set; }
+        public string? MaTl { get; set; }
 
         public string? TenTheLoai { get; set; }
 
@@ -24,6 +24,6 @@
 
         public string? DuongDanTrailer { get; set; }
 
-        public string MaHat { get; set; }
+        public string? MaHat { get; set; }
     }
 }

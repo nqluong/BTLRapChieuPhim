@@ -5,7 +5,7 @@ namespace BTLRapChieuPhim.Models;
 
 public partial class HinhAnhTrailer
 {
-    public string MaHat { get; set; } = null!;
+    public string? MaHat { get; set; }
 
     public string? DuongDanAnh { get; set; }
 

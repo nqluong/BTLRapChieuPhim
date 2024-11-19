@@ -83,8 +83,8 @@
 				success: function (data) {
 					const thoiGianChieu = data.thoiGianChieu;
 
-					// Chuyển đổi về định dạng không có múi giờ, sử dụng .toISOString() để giữ định dạng chuẩn
-					const formattedDate = thoiGianChieu.slice(0, 16);  // Cắt phần múi giờ đi (YYYY-MM-DDTHH:mm)
+					
+					const formattedDate = thoiGianChieu.slice(0, 16);  
 
 					// Hiển thị đúng thời gian trong input
 					$('#thoiGianChieu').val(formattedDate);
@@ -135,7 +135,7 @@
 			var thoiGianChieu = $('#thoiGianChieu').val();
 			var selectedRooms = $('#sign__rooms').val();
 
-			var maPc = selectedRooms && selectedRooms.length > 0 ? parseInt(selectedRooms[0], 10) : maPhongBanDau;
+			var maPc = selectedRooms && selectedRooms.length > 0 ? selectedRooms[0] : maPhongBanDau;
 			$.ajax({
 				url: '/api/LichChieu/' + maLc,
 				method: 'PUT',

@@ -168,7 +168,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             return Ok(lichChieuQuery);
         }
         [HttpPut("{id}")]
-        public IActionResult UpdateLichChieu(int id, [FromBody] LichChieuApi lichChieuUpdated)
+        public IActionResult UpdateLichChieu(string id, [FromBody] LichChieuApi lichChieuUpdated)
         {
 
             var lichChieu = _context.LichChieus.Find(id);
@@ -189,7 +189,7 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             }
 
             int thoiGian = phim.ThoiLuong ?? 0;
-            var existingShowTimes = _context.LichChieus.Where(lc => lc.MaPc == lichChieuUpdated.MaPc && lc.MaLc != lichChieuUpdated.MaLc).ToList();
+            var existingShowTimes = _context.LichChieus.Where(lc => lc.MaPc == lichChieuUpdated.MaPc && lc.MaLc != id).ToList();
 
             DateTime newShowTimeEnd = lichChieuUpdated.ThoiGianChieu.Value.AddMinutes(thoiGian);
             foreach (var existingShowTime in existingShowTimes)

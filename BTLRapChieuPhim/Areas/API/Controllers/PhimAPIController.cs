@@ -220,8 +220,8 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             //}
 
             var phim = _context.Phims.Find(maPhim);
-            var hinhanhTrailer = _context.HinhAnhTrailers.Find(maPhim);
-            if (phim == null && hinhanhTrailer == null)
+			var hinhanhTrailer = _context.HinhAnhTrailers.FirstOrDefault(hat => hat.MaPhim == maPhim);
+			if (phim == null)
             {
                 return BadRequest(new { message = "Không tìm thấy phim với mã này!" });
             }
@@ -245,8 +245,9 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             {
                 return BadRequest(new { message = "Thời lượng phải lớn hơn 0!" });
             }
-            // Cập nhật các trường cần thiết
-            phim.MaPhim = phimUpdated.MaPhim;
+
+			// Cập nhật các trường cần thiết
+			phim.MaPhim = phimUpdated.MaPhim;
             phim.TenPhim = phimUpdated.TenPhim;
             phim.DaoDien = phimUpdated.DaoDien;
             phim.DoTuoi = phimUpdated.DoTuoi;
@@ -254,11 +255,18 @@ namespace BTLRapChieuPhim.Areas.API.Controllers
             phim.MaTl = phimUpdated.MaTl;
             phim.NuocSx = phimUpdated.NuocSx;
             phim.MoTa = phimUpdated.MoTa;
-            //hinhanhTrailer.MaHat = phimUpdated.MaHat;
-            hinhanhTrailer.DuongDanAnh = phimUpdated.DuongDanAnh;
-            hinhanhTrailer.DuongDanTrailer = phimUpdated.DuongDanTrailer;
+			//hinhanhTrailer.MaHat = phimUpdated.MaHat;
+			if (hinhanhTrailer != null)
+			{
+				hinhanhTrailer.DuongDanAnh = phimUpdated.DuongDanAnh;
+				hinhanhTrailer.DuongDanTrailer = phimUpdated.DuongDanTrailer;
+			}
+			else
+			{
+				return BadRequest(new { message = "Không tìm thấy hình ảnh trailer tương ứng với phim này!" });
+			}
 
-            _context.SaveChanges();
+			_context.SaveChanges();
 
             return NoContent();
         }

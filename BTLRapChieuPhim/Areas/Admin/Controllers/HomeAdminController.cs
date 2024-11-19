@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using BTLRapChieuPhim.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using BTLRapChieuPhim.Models.Authentication;
+using BTLRapChieuPhim.Areas.Admin.Service;
 
 namespace BTLRapChieuPhim.Areas.Admin.Controllers
 {
@@ -16,12 +17,27 @@ namespace BTLRapChieuPhim.Areas.Admin.Controllers
 
 
 		QuanLyRapPhimContext db = new QuanLyRapPhimContext();
+        private readonly QuanLyService _quanLyService;
+        public HomeAdminController(QuanLyService quanLyService)
+		{
+            _quanLyService = quanLyService;
+        }
 
 		[Route("")]
 
 		public IActionResult Index()
+
 		{
-			return View("~/Areas/Admin/Views/BaoCao/BaoCao.cshtml");
+            var userId = HttpContext.Session.GetString("MaTK");
+            if (!string.IsNullOrEmpty(userId))
+            {
+               
+                var hoTenQuanLy = _quanLyService.GetHoTenQuanLy(userId);
+
+                
+                ViewData["HoTen"] = hoTenQuanLy;
+            }
+            return View("~/Areas/Admin/Views/BaoCao/BaoCao.cshtml");
 
 		}
 
