@@ -86,13 +86,17 @@ namespace BTLRapChieuPhim.Controllers
             {
                 return BadRequest("Mã phim không h?p l?");
             }
-
+            var mapc=db.LichChieus.Where(x=>x.MaPhim==maphim).Select(x=>x.MaPc).FirstOrDefault();
+            var pc =db.PhongChieus.Where(x=>x.MaPc==mapc).Select(x=>x.TenPc).FirstOrDefault();
+            ViewBag.PhongChieu=pc;
             ViewBag.MaPhim = maphim;
             return View();
         }
             [Route("chonghe")]
             public IActionResult ChonGhe(string malc, string maphim, string gio, string tgc,string mapc)
             {
+            var pc=db.PhongChieus.Where(x=>x.MaPc==mapc).Select(x=>x.TenPc).FirstOrDefault();
+                TempData["PC"]=pc;
 			    ViewBag.MaPC = mapc;
                 ViewBag.MaLC = malc;
                 ViewBag.MaPhim = maphim;
@@ -114,7 +118,7 @@ namespace BTLRapChieuPhim.Controllers
                 TempData["Tgc"] = tgc;
                 TempData["Gio"] = gio;
 				TempData["MaLc"] = malc;
-			    var hotenJson = JsonConvert.SerializeObject(Ht);
+			var hotenJson = JsonConvert.SerializeObject(Ht);
 			ViewBag.HotenJson = hotenJson;
 			return View();
             }
