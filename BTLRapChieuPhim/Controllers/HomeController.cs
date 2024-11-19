@@ -118,7 +118,7 @@ namespace BTLRapChieuPhim.Controllers
                 TempData["Tgc"] = tgc;
                 TempData["Gio"] = gio;
 				TempData["MaLc"] = malc;
-			    var hotenJson = JsonConvert.SerializeObject(Ht);
+			var hotenJson = JsonConvert.SerializeObject(Ht);
 			ViewBag.HotenJson = hotenJson;
 			return View();
             }
