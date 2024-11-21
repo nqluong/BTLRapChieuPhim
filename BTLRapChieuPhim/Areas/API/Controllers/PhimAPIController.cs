@@ -1,0 +1,307 @@
+﻿using BTLRapChieuPhim.Areas.Admin.Models.PhimModels;
+using BTLRapChieuPhim.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using System.Drawing.Printing;
+
+namespace BTLRapChieuPhim.Areas.API.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class PhimAPIController : ControllerBase
+    {
+        QuanLyRapPhimContext _context = new QuanLyRapPhimContext();
+        [HttpGet]
+        public IActionResult GetAllPhim(string searchTerm = "", int page = 1, int pageSize = 10)
+        {
+            var phimQuery = (from p in _context.Phims
+                             join tl in _context.TheLoais on p.MaTl equals tl.MaTl
+                             join hat in _context.HinhAnhTrailers on p.MaPhim equals hat.MaPhim
+                             select new PhimAPI
+                             {
+                                 MaPhim = p.MaPhim,
+                                 TenPhim = p.TenPhim,
+                                 ThoiLuong = p.ThoiLuong,
+                                 DaoDien = p.DaoDien,
+                                 DoTuoi = p.DoTuoi,
+                                 NuocSx = p.NuocSx,
+                                 MoTa = p.MoTa,
+                                 MaTl = p.MaTl,
+                                 TenTheLoai = tl.TenTheLoai,
+                                 DuongDanAnh = hat.DuongDanAnh,
+                                 DuongDanTrailer = hat.DuongDanTrailer,
+                                 MaHat = hat.MaHat,
+                             }).ToList()
+							 .OrderBy(p => int.Parse(new string(p.MaPhim.Where(char.IsDigit).ToArray())))
+							 .ToList();
+            
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                phimQuery = phimQuery.Where(p => p.TenPhim.Contains(searchTerm)).ToList();
+            }
+            var totalRecords = phimQuery.Count();
+            var phim = phimQuery
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+            var result = new
+            {
+                TotalRecords = totalRecords,
+                Page = page,
+                PageSize = pageSize,
+                TotalPages = (int)Math.Ceiling((double)totalRecords / pageSize),
+                Data = phim
+            };
+            return Ok(result);
+        }
+
+        [HttpGet("{maPhim}")]
+        public IEnumerable<PhimAPI> GetPhim(string maPhim)
+        {
+            var phim = (from p in _context.Phims
+                        join tl in _context.TheLoais on p.MaTl equals tl.MaTl
+                        join hat in _context.HinhAnhTrailers on p.MaPhim equals hat.MaPhim
+                        where maPhim == p.MaPhim
+                        select new PhimAPI
+                        {
+                            MaPhim = p.MaPhim,
+                            TenPhim = p.TenPhim,
+                            ThoiLuong = p.ThoiLuong,
+                            DaoDien = p.DaoDien,
+                            DoTuoi = p.DoTuoi,
+                            NuocSx = p.NuocSx,
+                            MoTa = p.MoTa,
+                            MaTl = p.MaTl,
+                            TenTheLoai = tl.TenTheLoai,
+                            DuongDanAnh = hat.DuongDanAnh,
+                            DuongDanTrailer = hat.DuongDanTrailer,
+                            MaHat = hat.MaHat,
+                        }).ToList();
+            return phim;
+        }
+
+        [HttpPost]
+
+        public IActionResult ThemPhim([FromBody] PhimAPI phimadd)
+        {
+            string maPhim = GenerateMaPhim();
+            phimadd.MaPhim = maPhim;
+            string hat = GenerateMaHAT();
+            phimadd.MaHat = hat;
+            if (ModelState.IsValid)
+            {
+                var isDuplicate1 = _context.Phims.Any(p =>
+                   p.MaPhim == phimadd.MaPhim || p.TenPhim == phimadd.TenPhim);
+                var isDuplicate2 = _context.HinhAnhTrailers.Any(hat => hat.MaHat == phimadd.MaHat);
+                if (isDuplicate1)
+                {
+                    return BadRequest(new { message = "Mã phim hoặc tên phim đã tồn tại!" });
+                }
+
+                if (isDuplicate2)
+                {
+                    return BadRequest(new { message = "Mã hình ảnh Trailer đã tồn tại!" });
+                }
+
+                if (phimadd.DoTuoi < 0)
+                {
+                    return BadRequest(new { message = "Độ tuổi không hợp lệ!" });
+                }
+
+                if (phimadd.ThoiLuong <= 0)
+                {
+                    return BadRequest(new { message = "Thời lượng phải lớn hơn 0!" });
+                }
+
+                if (string.IsNullOrWhiteSpace(phimadd.DuongDanAnh))
+				{
+					return BadRequest(new { message = "Đường dẫn ảnh không được để trống!" });
+				}
+
+                if (string.IsNullOrWhiteSpace(phimadd.DuongDanTrailer))
+                {
+                    return BadRequest(new { message = "Đường dẫn Trailer không được để trống!" });
+                }
+
+                var phim = new Phim
+                {
+                    MaPhim = phimadd.MaPhim,
+                    TenPhim = phimadd.TenPhim,
+                    MaTl = phimadd.MaTl,
+                    ThoiLuong = phimadd.ThoiLuong,
+                    DaoDien = phimadd.DaoDien,
+                    DoTuoi = phimadd.DoTuoi,
+                    NuocSx = phimadd.NuocSx,
+                    MoTa = phimadd.MoTa,
+                };
+                var hinhanhTrailer = new HinhAnhTrailer
+                {
+                    DuongDanAnh = phimadd.DuongDanAnh,
+                    DuongDanTrailer = phimadd.DuongDanTrailer,
+                    MaPhim = phimadd.MaPhim,
+                    MaHat = phimadd.MaHat,
+                };
+                _context.Phims.Add(phim);
+                _context.HinhAnhTrailers.Add(hinhanhTrailer);
+                _context.SaveChanges();
+                return Ok(new { message = "Thêm phim thành công!" });
+            }
+            return BadRequest(new { message = "Thêm phim thất bại!" });
+        }
+
+        private string GenerateMaPhim()
+        {
+
+			var existingIds = _context.Phims
+				.Select(p => p.MaPhim)
+				.Where(id => id.StartsWith("MP"))
+				.ToList();
+
+			var numbers = existingIds
+				.Select(id => int.TryParse(id.Substring(2), out int num) ? num : 0)
+				.ToList();
+			int maxNumber = numbers.Any() ? numbers.Max() : 0;
+			int newNumber = maxNumber + 1;
+
+			return "MP" + newNumber;
+		}
+
+		private string GenerateMaHAT()
+		{
+
+			var existingIds = _context.HinhAnhTrailers
+				.Select(p => p.MaHat)
+				.Where(id => id.StartsWith("HAT"))
+				.ToList();
+
+			var numbers = existingIds
+				.Select(id => int.TryParse(id.Substring(3), out int num) ? num : 0)
+				.ToList();
+			int maxNumber = numbers.Any() ? numbers.Max() : 0;
+			int newNumber = maxNumber + 1;
+
+			return "HAT" + newNumber;
+		}
+
+        [HttpPut("{maPhim}")]
+        public IActionResult UpdatePhim(string maPhim, [FromBody] PhimAPI phimUpdated)
+        {
+            var phim = _context.Phims.Find(maPhim);
+			var hinhanhTrailer = _context.HinhAnhTrailers.FirstOrDefault(hat => hat.MaPhim == maPhim);
+			if (phim == null)
+            {
+                return BadRequest(new { message = "Không tìm thấy phim với mã này!" });
+            }
+
+            // Kiểm tra các trường quan trọng không được để trống
+            if (string.IsNullOrWhiteSpace(phimUpdated.TenPhim) ||
+                string.IsNullOrWhiteSpace(phimUpdated.MoTa) ||
+                string.IsNullOrWhiteSpace(phimUpdated.DaoDien) ||
+                string.IsNullOrWhiteSpace(phimUpdated.NuocSx) ||
+                phimUpdated.DoTuoi == null || phimUpdated.ThoiLuong == null)
+            {
+                return BadRequest(new { message = "Một hoặc nhiều dữ liệu phim quan trọng bị để trống!" });
+            }
+
+            if (phimUpdated.DoTuoi < 0)
+            {
+                return BadRequest(new { message = "Độ tuổi không hợp lệ!" });
+            }
+
+            if (phimUpdated.ThoiLuong <= 0)
+            {
+                return BadRequest(new { message = "Thời lượng phải lớn hơn 0!" });
+            }
+
+			// Cập nhật các trường cần thiết
+			phim.MaPhim = phimUpdated.MaPhim;
+            phim.TenPhim = phimUpdated.TenPhim;
+            phim.DaoDien = phimUpdated.DaoDien;
+            phim.DoTuoi = phimUpdated.DoTuoi;
+            phim.ThoiLuong = phimUpdated.ThoiLuong;
+            phim.MaTl = phimUpdated.MaTl;
+            phim.NuocSx = phimUpdated.NuocSx;
+            phim.MoTa = phimUpdated.MoTa;
+			if (hinhanhTrailer != null)
+			{
+				hinhanhTrailer.DuongDanAnh = phimUpdated.DuongDanAnh;
+				hinhanhTrailer.DuongDanTrailer = phimUpdated.DuongDanTrailer;
+			}
+			else
+			{
+				return BadRequest(new { message = "Không tìm thấy hình ảnh trailer tương ứng với phim này!" });
+			}
+
+			_context.SaveChanges();
+
+            return NoContent();
+        }
+
+        [HttpDelete("{maPhim}")]
+        public IActionResult DeletePhim(string maPhim)
+        {
+            var phim = _context.Phims.Find(maPhim);
+            if (phim == null)
+            {
+                return BadRequest(new { message = "Phim không tồn tại!" });
+            }
+
+            // Lấy tất cả các bản ghi liên quan đến maPhim
+            var khuyenmais = _context.KhuyenMais.Where(km => km.MaPhim == maPhim).ToList();
+            var danhgias = _context.DanhGia.Where(dg => dg.MaPhim == maPhim).ToList();
+            var hinhanhtrailers = _context.HinhAnhTrailers.Where(hat => hat.MaPhim == maPhim).ToList();
+
+			var maLCs = _context.LichChieus
+				.Where(lc => lc.MaPhim == maPhim)
+				.Select(lc => lc.MaLc)
+				.ToList();
+
+			if (maLCs.Any())
+			{
+				// Lấy danh sách vé xem phim dựa trên danh sách maLC
+				var vexemphims = _context.VeXemPhims
+					.Where(vx => maLCs.Contains(vx.MaLc))
+					.ToList();
+
+				// Xóa danh sách vé xem phim
+				_context.VeXemPhims.RemoveRange(vexemphims);
+
+				// Xóa danh sách lịch chiếu
+				var lichchieus = _context.LichChieus.Where(lc => maLCs.Contains(lc.MaLc)).ToList();
+				_context.LichChieus.RemoveRange(lichchieus);
+			}
+			if (khuyenmais.Any())
+            {
+                _context.KhuyenMais.RemoveRange(khuyenmais);
+            }
+            if (danhgias.Any())
+            {
+                _context.DanhGia.RemoveRange(danhgias);
+            }
+            if (hinhanhtrailers.Any())
+            {
+                _context.HinhAnhTrailers.RemoveRange(hinhanhtrailers);
+            }
+
+            // Xóa phim
+            _context.Phims.Remove(phim);
+
+            // Lưu thay đổi vào cơ sở dữ liệu
+            _context.SaveChanges();
+
+            return Ok(new { message = "Xóa phim thành công!" });
+        }
+
+        [HttpGet("phim")]
+        public IActionResult GetPhim()
+        {
+            var phim = (from p in _context.Phims
+                        select new
+                        {
+                            MaPhim = p.MaPhim,
+                            TenPhim = p.TenPhim
+                        }).ToList();
+            return Ok(phim);
+        }
+    }
+}

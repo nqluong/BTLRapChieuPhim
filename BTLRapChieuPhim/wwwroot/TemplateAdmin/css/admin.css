@@ -1,4 +1,4 @@
-/*----------------------------------------
+﻿/*----------------------------------------
 [Master Stylesheet]
 
 Project:	HotFlix
@@ -2523,4 +2523,77 @@ body::-webkit-scrollbar-thumb {
   height: 4px !important;
   border-radius: 4px !important;
   cursor: pointer;
+}
+
+
+/* Nền của modal */
+.modal-content {
+    background-color: #ffffff; /* Màu nền trắng cho modal */
+    border-radius: 12px; /* Bo góc mềm mại cho modal */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ cho modal */
+}
+
+/* Nền header của modal */
+.modal-header {
+    background-color: #28a745; /* Màu nền xanh lá */
+    color: #ffffff; /* Màu chữ trắng */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+    /* Nút đóng trong modal */
+    .modal-header .btn-close {
+        color: #ffffff; /* Màu của nút đóng */
+    }
+
+/* Nội dung của modal */
+.modal-body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000; /* Màu chữ đen */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+/* Footer của modal */
+.modal-footer {
+    border-top: 1px solid #ddd; /* Đường viền phân cách footer và nội dung */
+    text-align: center; /* Căn giữa nút OK */
+    padding: 10px 0;
+}
+
+    /* Nút OK */
+    .modal-footer .btn-primary {
+        background-color: #007bff; /* Màu nền xanh dương */
+        border-color: #007bff; /* Màu viền */
+        color: #ffffff; /* Chữ màu trắng */
+        width: 100px; /* Đặt chiều rộng cho nút */
+        margin: 0 auto; /* Căn giữa nút */
+    }
+
+        .modal-footer .btn-primary:hover {
+            background-color: #0056b3; /* Màu nền khi hover */
+            border-color: #004085; /* Màu viền khi hover */
+        }
+
+/* Thêm hiệu ứng fade cho modal */
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+}
+
+/* Đảm bảo modal căn giữa trên màn hình */
+.modal-dialog {
+    max-width: 400px; /* Giảm chiều rộng của modal */
+    margin: 100px auto; /* Căn giữa trên màn hình */
+}
+
+/* Thêm hiệu ứng bóng đổ nhẹ khi hover lên modal */
+.modal-content:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); /* Bóng đổ đậm hơn khi hover */
+}
+.customs-label {
+    font-size: 30px;
+    line-height: 100%;
+    color: #c0c0c0;
+    width: 100%;
+    margin-bottom: 15px;
 }

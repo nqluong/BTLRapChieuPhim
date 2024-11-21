@@ -5,8 +5,7 @@ namespace BTLRapChieuPhim.Models;
 
 public partial class TaiKhoan
 {
-    public int MaTk { get; set; }
-
+    public string? MaTk { get; set; } 
     public string? Username { get; set; }
 
     public string? Password { get; set; }
@@ -14,6 +13,8 @@ public partial class TaiKhoan
     public string? Email { get; set; }
 
     public string? Sdt { get; set; }
+
+    public int? LoaiTk { get; set; }
 
     public virtual ICollection<DanhGium> DanhGia { get; set; } = new List<DanhGium>();
 

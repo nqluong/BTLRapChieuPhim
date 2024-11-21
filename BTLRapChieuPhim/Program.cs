@@ -1,27 +1,45 @@
+using BTLRapChieuPhim.Areas.Admin.Service;
+using BTLRapChieuPhim.Models;
+using BTLRapChieuPhim.Models.MoMo;
+using BTLRapChieuPhim.Services.Momo;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Thêm DbContext cho SQL Server
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<QuanLyRapPhimContext>(x => x.UseSqlServer(connectionString));
+
+// Cấu hình Momo API
+builder.Services.Configure<MomoOptionModel>(builder.Configuration.GetSection("MomoAPI"));
+builder.Services.AddScoped<IMomoService, MomoService>();
+builder.Services.AddScoped<QuanLyService>();
+// Thêm session
+builder.Services.AddSession();
+
+// Thêm MVC Controllers và Views
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Cấu hình request pipeline
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+	app.UseExceptionHandler("/Home/Error");
+	app.UseHsts();
 }
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
 app.UseAuthorization();
+app.UseSession();
+
+app.MapControllers();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+	name: "default",
+	pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

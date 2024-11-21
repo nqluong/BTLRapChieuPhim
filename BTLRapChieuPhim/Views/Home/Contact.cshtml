@@ -1,0 +1,47 @@
+﻿@model BTLRapChieuPhim.Models.RapPhim
+
+@{
+    ViewData["Title"] = "Contact";
+    Layout = "~/Views/Shared/_LayoutContact.cshtml";
+}
+@foreach(var item in ViewBag.quanly)
+{
+	<div class="prs_contact_info_main_wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="prs_contact_info_box_wrapper">
+						<div class="prs_contact_info_smallbox">
+							<i class="flaticon-call-answer"></i>
+						</div>
+						<h3>Liên hệ</h3>
+						<p>
+							@item.Sdt
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="prs_contact_info_box_wrapper prs_contact_info_box_wrapper2">
+						<div class="prs_contact_info_smallbox">
+							<i class="flaticon-call-answer"></i>
+						</div>
+						<h3>Địa chỉ</h3>
+						<p>@Model.DiaChi</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="prs_contact_info_box_wrapper prs_contact_info_box_wrapper2">
+						<div class="prs_contact_info_smallbox">
+							<i class="flaticon-call-answer"></i>
+						</div>
+						<h3>Email</h3>
+						<p>
+							<a href="#">@item.Email</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+}
+

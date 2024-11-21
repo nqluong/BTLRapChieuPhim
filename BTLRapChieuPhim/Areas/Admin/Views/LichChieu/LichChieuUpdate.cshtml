@@ -1,0 +1,158 @@
+﻿@{
+    ViewData["Title"] = "Lịch Chiếu Update";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
+}
+<main class="main">
+<div class="container-fluid">
+	<div class="row">
+		<!-- main title -->
+		<div class="col-12">
+			<div class="main__title">
+				<h2>Thêm Mới Lịch Chiếu</h2>
+			</div>
+		</div>
+		<!-- end main title -->
+		<!-- form -->
+		<div class="col-12">
+			<form action="#" class="sign__form sign__form--add">
+				<div class="row">
+					<div class="col-12 ">
+						<div class="row">
+
+							<div class="col-12">
+								<div class="sign__group">
+									<label class="sign__label" for="genre">Thể Loại</label>
+									<input id="genre" type="text" name="genre" class="sign__input" placeholder="">
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="sign__group">
+									<label class="sign__label" for="movie">Tên phim</label>
+									<input id="movie" type="text" name="movie" class="sign__input" placeholder="">
+								</div>
+							</div>
+							<div class="col-12 ">
+								<div class="sign__group">
+									<label class="sign__label" for="genre">Thay đổi thời gian chiếu:</label>
+									<input type="datetime-local" class="sign__input" id="thoiGianChieu" placeholder="Thời gian bắt đầu">
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="sign__group">
+									<label class="sign__label" for="room">Phòng chiếu</label>
+									<input id="room" type="text" name="room" class="sign__input" placeholder="">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 ">
+						<div class="sign__group">
+							<label class="sign__label" for="rooms">Thay đổi phòng chiếu (có thể bỏ qua):</label>
+							<select class="sign__selectjs" id="sign__rooms" multiple>
+							</select>
+						</div>
+					</div>
+
+					<div class="col-12">
+						<button type="button" class="sign__btn sign__btn--small"><span>Xác Nhận</span></button>
+					</div>
+					<div id="message" style="margin-top: 20px;"></div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+</div>
+</main>
+
+@section scripts{
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			const urlParams = new URLSearchParams(window.location.search);
+			const maLc = urlParams.get('maLc');
+			let maPhongBanDau = null;
+
+
+			$.ajax({
+				url: '/api/LichChieu/' + maLc,
+				method: 'GET',
+				dataType: 'json',
+				success: function (data) {
+					const thoiGianChieu = data.thoiGianChieu;
+
+					
+					const formattedDate = thoiGianChieu.slice(0, 16);  
+
+					// Hiển thị đúng thời gian trong input
+					$('#thoiGianChieu').val(formattedDate);
+					$('#genre').val(data.theLoai);
+					$('#movie').val(data.tenPhim);
+					$('#room').val(data.tenPhongChieu);
+					maPhongBanDau = data.maPc;
+				},
+				error: function (error) {
+					alert('Lỗi khi tải thông tin lịch chiếu: ' + error.responseText);
+				}
+
+			});
+
+			$.ajax({
+				url: '/api/PhongChieuAPI/phongchieu',
+				method: 'GET',
+				dataType: 'json',
+				success: function (data) {
+					const selectElement = document.querySelector('#sign__rooms');
+					$(selectElement).empty();
+
+
+					data.forEach(item => {
+						$(selectElement).append(`<option value="${item.maPhong}">${item.tenPhong}</option>`);
+					});
+
+
+					if (selectElement.slim) {
+						selectElement.slim.setData(
+							data.map(item => ({ value: item.maPhong, text: item.tenPhong }))
+						);
+					}
+				},
+				error: function () {
+					console.error('Lỗi khi tải thể loại phim.');
+				}
+			});
+
+			$('.sign__btn--small').click(function () {
+				updateLichChieu(maLc, maPhongBanDau);
+			});
+
+		});
+
+		function updateLichChieu(maLc, maPhongBanDau) {
+
+			var thoiGianChieu = $('#thoiGianChieu').val();
+			var selectedRooms = $('#sign__rooms').val();
+
+			var maPc = selectedRooms && selectedRooms.length > 0 ? selectedRooms[0] : maPhongBanDau;
+			$.ajax({
+				url: '/api/LichChieu/' + maLc,
+				method: 'PUT',
+				contentType: 'application/json',
+				data: JSON.stringify({
+					thoiGianChieu: thoiGianChieu,
+					maPc: maPc
+				}),
+				success: function () {
+					alert('Cập nhật thành công!');
+					window.location.href = '/admin/LichChieuPhim';
+				},
+				error: function (xhr) {
+					$('#message').html(`<span style="color: red;">Lỗi: ${xhr.responseText || 'Không thể cập nhật lịch chiếu.'}</span>`);
+				}
+			});
+		}
+
+	</script>
+}

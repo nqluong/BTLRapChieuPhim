@@ -1,0 +1,325 @@
+﻿﻿@{
+    ViewData["Title"] = "Phim";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
+}
+<main class="main">
+<div class="col-12">
+    <div class="main__title">
+        <h2>Danh Sách Phim</h2>
+        <div class="main__title-wrap">
+            <a href="/admin/phimadd" class="main__title-link main__title-link--wrap">Thêm phim</a>
+            <form action="#" class="main__title-form">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm ..." autocomplete="off" oninput="searchMovies()">
+                <button type="button" onclick="searchMovies()">
+                    <i class="ti ti-search"></i>
+                </button>
+                <ul id="suggestions" style="display: none; list-style-type: none; padding-left: 0; margin-top: 5px;"></ul>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="catalog catalog--1" data-scrollbar="true" tabindex="-1" style="overflow: hidden; outline: none;">
+    <div class="scroll-content">
+        <table class="catalog__table">
+            <thead>
+                <tr>
+                    <th>MÃ PHIM</th>
+                    <th>TÊN PHIM</th>
+                    <th>THỜI LƯỢNG</th>
+                    <th>ĐẠO DIỄN</th>
+                    <th>ĐỘ TUỔI</th>
+                    <th>QUỐC GIA</th>
+                    <th>THỂ LOẠI</th>
+                    <th>HÀNH ĐỘNG</th>
+                </tr>
+            </thead>
+            <tbody id="phimBody">
+            </tbody>
+            </table>
+             <div class="col-12">
+                <div class="main__paginator">
+                    <!-- amount -->
+                    <span id="paginationInfo" class="main__paginator-pages">10 of 169</span>
+                    <!-- end amount -->
+
+                    <ul class="main__paginator-list">
+                        <li id="prevPage">
+                            <a href="javascript:void(0)" onclick="changePage(currentPage - 1)">
+                                <i class="ti ti-chevron-left"></i>
+                                <span>Prev</span>
+                            </a>
+                        </li>
+                        <li id="nextPage">
+                            <a href="javascript:void(0)" onclick="changePage(currentPage + 1)">
+                                <span>Next</span>
+                                <i class="ti ti-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="paginator" id="paginationList"></ul>
+                </div>
+        </div>
+    </div>
+</div>
+</main>
+@section scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var currentPage = 1;
+            var pageSize = 10;
+            var totalPages = 0;
+            function loadPhim(page, pageSize) {
+                $.ajax({
+                    url: '/api/phimapi',
+                    method: 'GET',
+                    dataType: 'json',
+                    data: {
+                        page: page,
+                        pageSize: pageSize
+                    },
+                    success: function (data) {
+
+                        $('#phimBody').empty();
+                        renderPhim(data);
+                        updatePaginationPhim(data);
+                    },
+                    error: function (error) {
+                        console.error('Lỗi khi gọi API Phim:', error);
+                    }
+                });
+            }
+
+
+            function updatePaginationPhim(data) {
+                totalPages = data.totalPages;
+                currentPage = data.page;
+                pageSize = data.pageSize;
+                totalRecords = data.totalRecords;
+
+
+                $('#paginationInfo').text(`${currentPage} of ${totalPages}`);
+
+
+                $('#paginationList').empty();
+
+                $('#paginationList').empty();
+
+                // Nút "Prev"
+                $('#paginationList').append(`
+                <li class="paginator__item paginator__item--prev ${currentPage === 1 ? 'disabled' : ''}">
+                    <a href="javascript:void(0)" onclick="changePage(${currentPage - 1})">
+                        <i class="ti ti-chevron-left"></i>
+                    </a>
+                </li>
+                `);
+
+                // Số trang
+                for (let i = 1; i <= totalPages; i++) {
+                    // Hiển thị giới hạn số trang, ví dụ: 1, 2, 3, ..., 29, 30
+                    if (i === 1 || i === totalPages || (i >= currentPage - 1 && i <= currentPage + 1)) {
+                        let liClass = i === currentPage ? 'paginator__item paginator__item--active' : 'paginator__item';
+                        $('#paginationList').append(`
+                        <li class="${liClass}">
+                            <a href="javascript:void(0)" onclick="changePage(${i})">${i}</a>
+                        </li>
+                    `);
+                    } else if (i === currentPage - 2 || i === currentPage + 2) {
+                        // Dấu "..."
+                        $('#paginationList').append(`
+                        <li class="paginator__item"><span>...</span></li>
+                    `);
+                    }
+                }
+
+                // Nút "Next"
+                $('#paginationList').append(`
+                <li class="paginator__item paginator__item--next ${currentPage === totalPages ? 'disabled' : ''}">
+                    <a href="javascript:void(0)" onclick="changePage(${currentPage + 1})">
+                        <i class="ti ti-chevron-right"></i>
+                    </a>
+                </li>
+            `);
+            }
+
+            window.changePage = function(page) {
+                if (page < 1 || page > totalPages) return;
+                currentPage = page;
+                loadPhim(page, pageSize);
+            }
+
+            function renderPhim(data) {
+                var phimArr = data.data;
+                if (!Array.isArray(phimArr)) {
+                    console.error('Dữ liệu không phải là một mảng:', phimArr);
+                    return;
+                }
+
+                    phimArr.forEach(function (phim) {
+                    var row = `<tr>
+                                        <td><div class="catalog__text">${phim.maPhim}</div></td>
+                                        <td><div class="catalog__text"><a href="#">${phim.tenPhim}</a></div></td>
+                                        <td><div class="catalog__text">${phim.thoiLuong} phút</div></td>
+                                        <td><div class="catalog__text">${phim.daoDien}</div></td>
+                                        <td><div class="catalog__text">${phim.doTuoi}+</div></td>
+                                        <td><div class="catalog__text">${phim.nuocSx}</div></td>
+                                        <td><div class="catalog__text">${phim.tenTheLoai}</div></td>
+                                        <td>
+                                            <div class="catalog__btns">
+                                                <button type="button" class="catalog__btn catalog__btn--edit" onclick="editMovie('${phim.maPhim}')">
+                                                    <i class="ti ti-edit"></i>
+                                                </button>
+                                                <button type="button" class="catalog__btn catalog__btn--delete" onclick="deleteMovie('${phim.maPhim}')">
+                                                    <i class="ti ti-trash"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>`;
+
+                    $('#phimBody').append(row);
+                });
+            }
+
+            loadPhim(currentPage, pageSize);
+        });
+
+        function showsearchMovies(maPhim) {
+            var contentHtml = '';
+            $.ajax({
+                url: '/api/phimapi/' + maPhim, // Đảm bảo đường dẫn API chính xác
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+
+                    data.forEach(function (phim) {
+                        contentHtml += `
+                                    <tr>
+                                        <td><div class="catalog__text">${phim.maPhim}</div></td>
+                                        <td><div class="catalog__text"><a href="#">${phim.tenPhim}</a></div></td>
+                                        <td><div class="catalog__text">${phim.thoiLuong} phút</div></td>
+                                        <td><div class="catalog__text">${phim.daoDien}</div></td>
+                                        <td><div class="catalog__text">${phim.doTuoi}+</div></td>
+                                        <td><div class="catalog__text">${phim.nuocSx}</div></td>
+                                        <td><div class="catalog__text">${phim.tenTheLoai}</div></td>
+                                        <td>
+                                            <div class="catalog__btns">
+                                                <button type="button" class="catalog__btn catalog__btn--edit" onclick="editMovie('${phim.maPhim}')">
+                                                    <i class="ti ti-edit"></i>
+                                                </button>
+                                                <button type="button" class="catalog__btn catalog__btn--delete" onclick="deleteMovie('${phim.maPhim}')">
+                                                    <i class="ti ti-trash"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>`;
+                    });
+
+
+
+                    // Hiển thị danh sách phim
+                    $('#phimBody').html(contentHtml);
+                },
+                error: function (xhr) {
+                    alert("Lỗi khi tải danh sách phim: " + xhr.responseText);
+                }
+            });
+        }
+
+        function searchMovies() {
+            let valueSearchInput = document.getElementById("searchInput").value.trim(); // Lấy giá trị từ ô tìm kiếm
+
+            // Nếu không có gì để tìm kiếm, ẩn gợi ý
+            if (valueSearchInput === "") {
+                document.getElementById("suggestions").style.display = 'none';
+                return;
+            }
+
+            $.ajax({
+                url: '/api/phimapi', // Đảm bảo đường dẫn API chính xác
+                method: 'GET',
+                dataType: 'json',
+                data: {
+                    searchTerm: valueSearchInput // Thêm tham số searchTerm
+                },
+                success: function (data) {
+                    if (Array.isArray(data.data) && data.data.length > 0) {
+                        let suggestionsList = document.getElementById("suggestions");
+                        suggestionsList.innerHTML = ''; // Xóa các gợi ý cũ
+
+                        // Lọc phim theo từ khóa
+                        let filteredMovies = data.data.filter(function (movie) {
+                            return movie.tenPhim.toLowerCase().includes(valueSearchInput.toLowerCase());
+                        });
+
+                        // Nếu có kết quả tìm kiếm, hiển thị gợi ý
+                        if (filteredMovies.length > 0) {
+                            filteredMovies.forEach(function (movie) {
+                                let li = document.createElement('li');
+                                li.textContent = movie.tenPhim;
+                                li.onclick = function () {
+                                    document.getElementById("searchInput").value = movie.tenPhim;
+                                    showsearchMovies(movie.maPhim);
+                                    suggestionsList.innerHTML = ''; // Ẩn gợi ý sau khi chọn
+                                    suggestionsList.style.display = 'none'; // Ẩn danh sách gợi ý
+                                };
+                                suggestionsList.appendChild(li);
+                            });
+                            suggestionsList.style.display = 'block'; // Hiển thị gợi ý
+                        } else {
+                            suggestionsList.style.display = 'none'; // Nếu không có kết quả, ẩn gợi ý
+                        }
+                    } else {
+                        document.getElementById("suggestions").style.display = 'none'; // Không có dữ liệu
+                    }
+                },
+                error: function () {
+                    console.error("Đã có lỗi xảy ra khi tìm kiếm.");
+                }
+            });
+        }
+
+        function editMovie(maPhim) {
+            window.location.href = `/admin/PhimUpdate?maPhim=${maPhim}`;
+        }
+
+        // Hàm để xử lý việc xóa phim
+        function deleteMovie(maPhim) {
+            if (confirm("Bạn có chắc chắn muốn xóa phim này?")) {
+                $.ajax({
+                    url: `/api/phimapi/${maPhim}`,
+                    method: 'DELETE',
+                    success: function (response) {
+                        alert(response.message);
+                        loadPage('/admin/phim');
+                    },
+                    error: function (error) {
+                        alert("Xóa phim thất bại!");
+                    }
+                });
+            }
+        }
+
+    </script>
+}
+<style>
+    #suggestions {
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        border: 1px solid #ccc;
+        max-height: 150px;
+        overflow-y: auto;
+        z-index: 1000;
+    }
+
+        #suggestions li {
+            padding: 8px;
+            cursor: pointer;
+        }
+
+            #suggestions li:hover {
+                background-color: #f0f0f0;
+            }
+</style>

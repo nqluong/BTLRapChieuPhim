@@ -1,0 +1,221 @@
+﻿@{
+    ViewData["Title"] = "ThongKe";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
+}
+<main class="main">
+<div class="row mb-3 col-12">
+    <div class="col-md-4 sign__group">
+        <label for="filterType" class="sign__label">Chọn báo cáo:</label>
+        <select id="filterType" class="form-control sign__input">
+            <option value="phim">Doanh Thu Theo Phim</option>
+            <option value="ngay" class="filter__select ss-main sign__selectjs">Doanh Thu Theo Ngày</option>
+            <option value="phongChieu">Doanh Thu Theo Phòng Chiếu</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label for="fromDate" class="sign__label" id="labelfromdate">Từ ngày:</label>
+        <input type="date" id="fromDate" class="form-control sign__input" />
+    </div>
+    <div class="col-md-4">
+        <label for="toDate" class="sign__label" id="labeltodate">Đến ngày:</label>
+        <input type="date" id="toDate" class="form-control sign__input" />
+    </div>
+</div>
+<div class="col-md-2 align-self-end">
+    <button id="filterButton" class="sign__btn btn-primary">Lọc</button>
+</div>
+<div id="message" style="margin-top: 20px;"></div>
+
+<!-- BAR CHART -->
+<div class="card card-success dashbox">
+    <div class="card-header">
+        <h3 class="card-title dashbox__title customs-label">Thống Kê Doanh Thu</h3>
+
+        <div class="card-tools">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                <i class="fas fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-tool" data-card-widget="remove">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="chart">
+            <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+        </div>
+    </div>
+    <!-- /.card-body -->
+</div>
+</main>
+<!-- /.card -->
+
+@section scripts{
+    <script src="/TemplateAdmin/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/TemplateAdmin/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/TemplateAdmin/js/chart.js/Chart.min.js"></script>
+    <script>
+
+        function drawChart(response){
+           
+            var labels = [];
+            var doanhThuTong = [];
+
+            response.forEach(function (item) {
+                
+
+                if (item.ngay) {
+                    var date = new Date(item.ngay);
+                    
+                    labels.push(date.toLocaleDateString("vi-VN")); 
+                } else if (item.tenPhim) {
+                    labels.push(item.tenPhim);
+                } else if (item.tenPhongChieu) {
+                    labels.push(item.tenPhongChieu);
+                }
+
+                doanhThuTong.push(item.tongDoanhThu);
+            });
+
+
+            var areaChartData = {
+                labels: labels,
+                datasets: [
+                    {
+                        label: 'Doanh Thu ',
+                        backgroundColor: 'rgba(60,141,188,0.9)',
+                        borderColor: 'rgba(60,141,188,0.8)',
+                        data: doanhThuTong
+                    }
+                    // {
+                    //     label: 'Doanh Thu Đồ Ăn',
+                    //     backgroundColor: 'rgba(210, 214, 222, 1)',
+                    //     borderColor: 'rgba(210, 214, 222, 1)',
+                    //     data: doanhThuDoAn
+                    // },
+                    // {
+                    //     label: 'Tổng Doanh Thu',
+                    //     backgroundColor: 'rgba(0, 255, 0, 0.9)',
+                    //     borderColor: 'rgba(0, 255, 0, 0.8)',
+                    //     data: doanhThuTong
+                    // }
+                ]
+            };
+
+            var barChartCanvas = $('#barChart').get(0).getContext('2d');
+
+            if (window.barChartInstance) {
+                window.barChartInstance.destroy();  // Hủy biểu đồ cũ
+            }
+
+
+            window.barChartInstance = new Chart(barChartCanvas, {
+                type: 'bar',
+                data: areaChartData,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    datasetFill: false
+                }
+            });
+        }
+
+        $(function () {
+            $('#fromDate').hide();
+            $('#toDate').hide();
+            $('#labelfromdate').hide();
+            $('#labeltodate').hide();
+            loadDefaultReport();
+            $('#filterType').on('change', function () {
+                var filterType = $(this).val();
+                $('#message').html('');
+                if (filterType === 'ngay') {
+                    $('#fromDate').show();
+                    $('#toDate').show();
+                    $('#labelfromdate').show();
+                    $('#labeltodate').show();
+                } else {
+                    $('#fromDate').hide();
+                    $('#toDate').hide();
+                    $('#labelfromdate').hide();
+                    $('#labeltodate').hide();
+                }
+            });
+            $('#filterButton').on('click', function () {
+                var filterType = $('#filterType').val();
+                var url = '';
+                var data = {};
+                $('#message').html('');
+                if (filterType === 'ngay') {
+                    var fromDate = $('#fromDate').val();
+                    var toDate = $('#toDate').val();
+
+                    if (!fromDate || !toDate) {
+                        $('#message').html('<span style="color: red;">Vui lòng chọn ngày bắt đầu và ngày kết thúc</span>');
+                        return;
+                    }
+                    fromDate = formatDate(fromDate); 
+                    toDate = formatDate(toDate);
+                    url = '/api/baocao/ngay';
+                    data = { fromDate: fromDate, toDate: toDate };
+                }
+                else if (filterType === 'phim') {
+                    url = '/api/baocao/theo-phim';
+                    data = {};
+                }
+                else if (filterType === 'phongChieu') {
+                    url = '/api/baocao/theo-phong-chieu';
+                    data = {};
+                }
+
+                $.ajax({
+                    url: url,
+                    type: 'GET',
+                    data: data,
+                    success: function (response) {
+                        if (response && Array.isArray(response) && response.length > 0) {
+                            drawChart(response);
+                        } else {
+                            $('#message').html('<span style="color: green;">Không có dữ liệu trong báo cáo</span>');
+                        }
+
+                    },
+                    error: function (xhr) {
+                        var response = JSON.parse(xhr.responseText);
+                        $('#message').html('<span style="color: red;">'+ response.message +'</span>');
+                    }
+                    
+                });
+            });
+
+            function formatDate(dateString) {
+                var parts = dateString.split('-');
+                return parts[2] + '/' + parts[1] + '/' + parts[0];
+            }
+            function loadDefaultReport(){
+                var url = '/api/baocao/theo-phim';
+                var data = {};
+                $.ajax({
+                    url: url,
+                    type: 'GET',
+                    data: data,
+                    success: function (response) {
+                        if (response && Array.isArray(response) && response.length > 0) {
+                            drawChart(response);
+                        } else {
+                            $('#message').html('<span style="color: green;">Không có dữ liệu trong báo cáo</span>');
+                        }
+
+                    },
+                    error: function (xhr) {
+                        var response = JSON.parse(xhr.responseText);
+                        $('#message').html('<span style="color: red;">' + response.message + '</span>');
+                    }
+
+                });
+            }
+        });
+
+    </script>
+}

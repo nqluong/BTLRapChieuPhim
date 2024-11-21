@@ -5,7 +5,7 @@ namespace BTLRapChieuPhim.Models;
 
 public partial class TheLoai
 {
-    public int MaTl { get; set; }
+    public string MaTl { get; set; } = null!;
 
     public string? TenTheLoai { get; set; }
 

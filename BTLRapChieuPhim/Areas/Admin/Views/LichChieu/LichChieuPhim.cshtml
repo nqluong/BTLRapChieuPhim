@@ -1,0 +1,218 @@
+﻿@{
+    ViewData["Title"] = "LichChieu";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
+}
+<main class="main">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="main__title">
+                <h2>LỊCH CHIẾU PHIM</h2>
+
+
+                <div class="main__title-wrap">
+                    <a href="/admin/LichChieuAdd" class="main__title-link main__title-link--wrap">Thêm Lịch Chiếu</a>       
+                    
+                </div>
+            </div>
+        </div>
+        <div class="catalog catalog--1" data-scrollbar="true" tabindex="-1" style="overflow: hidden; outline: none;">
+            <div class="scroll-content">
+                <table class="catalog__table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>TÊN PHIM</th>
+                            <th>TÊN PHÒNG CHIẾU</th>
+                            <th>THỜI GIAN BẮT ĐẦU</th>
+                            <th>THỜI GIAN KẾT THÚC</th>
+                            <th>SỨC CHỨA</th>
+                            <th>NGÀY CHIẾU</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="lichChieuBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="main__paginator">
+                <!-- amount -->
+                <span id="paginationInfo" class="main__paginator-pages">10 of 169</span>
+                <!-- end amount -->
+
+                <ul class="main__paginator-list">
+                    <li id="prevPage">
+                        <a href="javascript:void(0)" onclick="changePage(currentPage - 1)">
+                            <i class="ti ti-chevron-left"></i>
+                            <span>Prev</span>
+                        </a>
+                    </li>
+                    <li id="nextPage">
+                        <a href="javascript:void(0)" onclick="changePage(currentPage + 1)">
+                            <span>Next</span>
+                            <i class="ti ti-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="paginator" id="paginationList"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+@section scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var currentPage = 1;
+            var pageSize = 20;
+            var totalPages = 0;
+            function loadLichChieu(page, pageSize) {
+                $.ajax({
+                    url: '/api/LichChieu',
+                    method: 'GET',
+                    dataType: 'json',
+                    data: {
+                        page: page,
+                        pageSize: pageSize
+                    },
+                    success: function (data) {
+
+                        $('#lichChieuBody').empty();
+                        renderLichChieu(data);
+                        updatePagination(data);
+                    },
+                    error: function (error) {
+                        console.error('Lỗi khi gọi API LichChieu:', error);
+                    }
+                });
+            }
+
+
+            function updatePagination(data) {
+                totalPages = data.totalPages;
+                currentPage = data.page;
+                pageSize = data.pageSize;
+                totalRecords = data.totalRecords;
+
+
+                $('#paginationInfo').text(`${currentPage} of ${totalPages}`);
+
+
+                $('#paginationList').empty();
+
+                $('#paginationList').empty();
+
+                // Nút "Prev"
+                $('#paginationList').append(`
+                <li class="paginator__item paginator__item--prev ${currentPage === 1 ? 'disabled' : ''}">
+                    <a href="javascript:void(0)" onclick="changePage(${currentPage - 1})">
+                        <i class="ti ti-chevron-left"></i>
+                    </a>
+                </li>
+                `);
+
+                // Số trang
+                for (let i = 1; i <= totalPages; i++) {
+                    // Hiển thị giới hạn số trang, ví dụ: 1, 2, 3, ..., 29, 30
+                    if (i === 1 || i === totalPages || (i >= currentPage - 1 && i <= currentPage + 1)) {
+                        let liClass = i === currentPage ? 'paginator__item paginator__item--active' : 'paginator__item';
+                        $('#paginationList').append(`
+                        <li class="${liClass}">
+                            <a href="javascript:void(0)" onclick="changePage(${i})">${i}</a>
+                        </li>
+                    `);
+                    } else if (i === currentPage - 2 || i === currentPage + 2) {
+                        // Dấu "..."
+                        $('#paginationList').append(`
+                        <li class="paginator__item"><span>...</span></li>
+                    `);
+                    }
+                }
+
+                // Nút "Next"
+                $('#paginationList').append(`
+                <li class="paginator__item paginator__item--next ${currentPage === totalPages ? 'disabled' : ''}">
+                    <a href="javascript:void(0)" onclick="changePage(${currentPage + 1})">
+                        <i class="ti ti-chevron-right"></i>
+                    </a>
+                </li>
+            `);
+            }
+
+            window.changePage = function(page) {
+                if (page < 1 || page > totalPages) return;
+                currentPage = page;
+                loadLichChieu(page, pageSize);
+            }
+
+            function renderLichChieu(data) {
+                var lichChieuArr = data.data;
+                if (!Array.isArray(lichChieuArr)) {
+                    console.error('Dữ liệu không phải là một mảng:', lichChieuArray);
+                    return;
+                }
+
+                lichChieuArr.forEach(function (lichChieu) {
+                    var time = new Date(lichChieu.thoiGianChieu);
+                    var timeEnd = new Date(time);
+                    timeEnd.setMinutes(time.getMinutes() + lichChieu.thoiLuong);
+                    var formattedTime = time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                    var formattedTimeEnd = timeEnd.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                    var row = `<tr>
+                                    <td><div class="catalog__text">${lichChieu.maLc}</div></td>
+                                    <td><div class="catalog__text"><a href="#">${lichChieu.tenPhim}</a></div></td>
+                                    <td><div class="catalog__text">${lichChieu.tenPhongChieu}</div></td>
+                                    <td><div class="catalog__text">${formattedTime}</div></td>
+                                            <td><div class="catalog__text">${formattedTimeEnd}</div></td>
+                                    <td><div class="catalog__text ">${lichChieu.sucChua}</div></td>
+                                    <td><div class="catalog__text">${new Date(lichChieu.thoiGianChieu).toLocaleDateString()}</div></td>
+                                    <td>
+                                    <div class="catalog__btns">
+                                         <button type="button" class="catalog__btn catalog__btn--edit" onclick="editLichChieu('${lichChieu.maLc}')">
+                                         <i class="ti ti-edit"></i>
+                                         </button>
+                                         <button type="button" class="catalog__btn catalog__btn--delete" onclick="deleteLichChieu('${lichChieu.maLc}')"">
+                                         <i class="ti ti-trash"></i>
+                                         </button>
+                                     </div>
+                                    </td>
+                                </tr>`;
+
+                    $('#lichChieuBody').append(row);
+                });
+            }
+
+            loadLichChieu(currentPage, pageSize);
+        });
+
+        function editLichChieu(maLc) {
+
+            window.location.href = `/admin/LichChieuUpdate?maLc=${maLc}`;
+        }
+        function deleteLichChieu(maLc) {
+            if (confirm("Bạn có chắc chắn muốn xóa lịch chiếu này?")) {
+                $.ajax({
+                    url: `/api/LichChieu/${maLc}`, // Đường dẫn đến API xóa
+                    method: 'DELETE',
+                    success: function (response) {
+                        alert(response.message);
+                        // Gọi lại API để làm mới dữ liệu trong bảng
+                        location.reload();
+                    },
+                    error: function (error) {
+                        console.error('Lỗi khi gọi API xóa lịch chiếu:', error);
+                        alert("Xóa lịch chiếu thất bại!");
+                    }
+                });
+            }
+        }
+    </script>
+
+}
+
+

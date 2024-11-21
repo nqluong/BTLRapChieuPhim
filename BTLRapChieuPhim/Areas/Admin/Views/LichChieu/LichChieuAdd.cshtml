@@ -1,0 +1,204 @@
+﻿
+@{
+    ViewData["Title"] = "LichChieuAdd";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutTemplateAdmin.cshtml";
+}
+
+@model BTLRapChieuPhim.Models.LichChieu
+<main class="main">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12">
+			<div class="main__title">
+				<h2>Thêm Mới Lịch Chiếu</h2>
+			</div>
+		</div>
+		<div class="col-12">
+			<form action="#" class="sign__form sign__form--add">
+				<div class="row">
+					<div class="col-12 ">
+						<div class="row">
+							<div class="col-12 ">
+								<div class="sign__group">
+									<select class="sign__selectjs" id="sign__quality">
+										<option value="FullHD">FullHD</option>
+										<option value="HD">HD</option>
+									</select>
+								</div>
+							</div>
+
+
+							<div class="col-12">
+								<div class="sign__group">
+
+									<select class="sign__selectjs theLoai" id="sign__genre" multiple>
+									</select>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="sign__group">
+									<select class="sign__selectjs phim" id="sign__movies" multiple>
+									</select>
+								</div>
+							</div>
+							<div class="col-12 ">
+								<div class="sign__group">
+									
+									<input type="datetime-local" class="sign__input" id="thoiGianChieu" placeholder="Thời gian bắt đầu">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 ">
+						<div class="sign__group">
+							<select class="sign__selectjs phongChieu" id="sign__rooms" multiple>
+							</select>
+						</div>
+					</div>
+					<div id="message" style="margin-top: 20px;"></div>
+					<div class="col-12">
+						<button type="button" class="sign__btn sign__btn--small"><span>Xác Nhận</span></button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+</div>
+</main>
+<div id="message" style="margin-top: 20px;"></div>
+
+@section scripts{
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+
+			function loadTheLoai() {
+				$.ajax({
+					url: '/api/TheLoai',
+					method: 'GET',
+					dataType: 'json',
+					success: function (data) {
+						const selectElement = document.querySelector('#sign__genre');
+						$(selectElement).empty();
+
+						
+						data.forEach(item => {
+							$(selectElement).append(`<option value="${item.maTL}">${item.tenTL}</option>`);
+						});
+
+						
+						if (selectElement.slim) {
+							selectElement.slim.setData(
+								data.map(item => ({ value: item.maTL, text: item.tenTL }))
+							);
+						}
+
+					},
+					error: function () {
+						console.error('Lỗi khi tải thể loại phim.');
+					}
+				});
+			};
+
+			function loadPhongChieu() {
+				$.ajax({
+					url: '/api/PhongChieuAPI/phongchieu',
+					method: 'GET',
+					dataType: 'json',
+					success: function (data) {
+					const selectElement = document.querySelector('#sign__rooms');
+						$(selectElement).empty();
+
+
+						data.forEach(item => {
+							$(selectElement).append(`<option value="${item.maPhong}">${item.tenPhong}</option>`);
+						});
+
+
+						if (selectElement.slim) {
+							selectElement.slim.setData(
+								data.map(item => ({ value: item.maPhong, text: item.tenPhong }))
+							);
+						}
+					},
+					error: function () {
+						console.error('Lỗi khi tải thể loại phim.');
+					}
+				});
+			};
+
+			function loadPhim() {
+				$.ajax({
+					url: '/api/PhimAPI/phim',
+					method: 'GET',
+					dataType: 'json',
+					success: function (data) {
+						const selectElement = document.querySelector('#sign__movies');
+						$(selectElement).empty();
+
+
+						data.forEach(item => {
+							$(selectElement).append(`<option value="${item.maPhim}">${item.tenPhim}</option>`);
+						});
+
+
+						if (selectElement.slim) {
+							selectElement.slim.setData(
+								data.map(item => ({ value: item.maPhim, text: item.tenPhim }))
+							);
+						}
+					},
+					error: function () {
+						console.error('Lỗi khi tải thể loại phim.');
+					}
+				});
+			};
+
+			loadTheLoai();
+			loadPhongChieu();
+			loadPhim();
+			$('.sign__btn--small').on('click', function () {
+
+				const maPc = $('#sign__rooms').val()[0];
+				const maPhim = $('#sign__movies').val()[0];
+				const thoiGianChieu = $('#thoiGianChieu').val();
+
+				// Kiểm tra giá trị hợp lệ của MaPc và MaPhim
+				if (!maPc || !maPhim) {
+					$('#message').html('<span style="color: red;">Vui lòng chọn phòng và phim hợp lệ!</span>');
+					return;
+				}
+
+				const lichChieu = {
+					ThoiGianChieu: thoiGianChieu,
+					MaPc: maPc,  // Giữ nguyên dưới dạng chuỗi
+					MaPhim: maPhim  // Giữ nguyên dưới dạng chuỗi
+				};
+				console.log('Dữ liệu gửi đi:', lichChieu);
+				if (!lichChieu.ThoiGianChieu) {
+					$('#message').html('<span style="color: red;">Vui lòng nhập thời gian chiếu!</span>');
+					return;
+				}
+
+				$.ajax({
+					type: 'POST',
+					url: '/api/LichChieu', 
+					data: JSON.stringify(lichChieu),
+					contentType: 'application/json',
+					success: function (response) {
+						$('#message').html('<span style="color: green;">Thêm lịch chiếu thành công!</span>');
+						loadPage('/admin/lichchieuphim');
+					},
+					error: function (xhr) {
+						$('#message').html(`<span style="color: red;">${xhr.responseText || 'Không thể thêm lịch chiếu.'}</span>`);
+					}
+				});
+			});
+		});
+	</script>
+
+
+}
+

@@ -1,0 +1,449 @@
+﻿@using Newtonsoft.Json
+@{
+    ViewData["Title"] = "ChonGhe";
+    Layout = "_LayoutPhongChieu";
+}
+<div class="st_bt_top_header_wrapper float_left">
+	<div class="container container_seat">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="st_bt_top_back_btn st_bt_top_back_btn_seatl float_left">
+					<a id="backButton"><i class="fas fa-long-arrow-alt-left"></i> &nbsp;Back</a>
+				</div>
+				<div class="cc_ps_quantily_info cc_ps_quantily_info_tecket">
+					<p>Select Ticket</p>
+					<div class="select_number">
+						<button onclick="changeQty(1); return false;" class="increase">
+							<i class="fa fa-plus"></i>
+						</button>
+						<input type="text" name="quantity" value="1" size="2" id="input-quantity" class="form-control" />
+						<button onclick="changeQty(0); return false;" class="decrease">
+							<i class="fa fa-minus"></i>
+						</button>
+					</div>
+					<input type="hidden" name="product_id" />
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="st_bt_top_center_heading st_bt_top_center_heading_seat_book_page float_left" id="movie-info">
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="st_bt_top_close_btn st_bt_top_close_btn2 float_left">
+					<a href="#"><i class="fa fa-times"></i></a>
+				</div>
+				<div class="st_seatlay_btn float_left">
+					<a onclick="saveSelectedSeats()">Đặt Vé</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- st top header Start -->
+<!-- st seat Layout Start -->
+<div class="st_seatlayout_main_wrapper float_left">
+	<div class="container container_seat">
+		<div class="st_seat_lay_heading float_left">
+			<h3>Ariesplex SL Cinemas</h3>
+		</div>
+		<div class="st_seat_full_container">
+			<div class="st_seat_lay_economy_wrapper float_left">
+				<div class="screen">
+					<img src="../Template/images/content/screen.png">
+				</div>
+				<div class="st_seat_lay_economy_heading float_left">
+					<h3>VIP</h3>
+				</div>
+				<div class="st_seat_lay_row float_left">
+					<ul>
+						<li class="st_seat_heading_row">V</li>
+						<li class="seat_disable">
+							<input type="checkbox" id="c1" name="cb">
+							<label for="c1"></label>
+						</li>
+						<li class="seat_disable">
+							<input type="checkbox" id="c2" name="cb" placeholder="1">
+							<label for="c2"></label>
+						</li>
+						<li>
+							<span>Pay Rs.790.00</span>
+							<input type="checkbox" id="c3" name="cb">
+							<label for="c3"></label>
+						</li>
+						<li>
+							<span>
+								Pay Rs.790.00</span>
+								<input type="checkbox" id="c4" name="cb">
+								<label for="c4"></label>
+						</li>
+						<li class="seat_disable">
+							<input type="checkbox" id="c5" name="cb">
+							<label for="c5"></label>
+						</li>
+					</ul>
+					<ul class="st_eco_second_row">
+						<li>
+							<span>Pay Rs.790.00</span>
+							<input type="checkbox" id="c6" name="cb">
+							<label for="c6"></label>
+						</li>
+						<li>
+							<span>Pay Rs.790.00</span>
+							<input type="checkbox" id="c7" name="cb" placeholder="1">
+							<label for="c7"></label>
+						</li>
+						<li>
+							<span>Pay Rs.790.00</span>
+							<input type="checkbox" id="c8" name="cb">
+							<label for="c8"></label>
+						</li>
+						<li class="seat_disable">
+							<input type="checkbox" id="c9" name="cb">
+							<label for="c9"></label>
+						</li>
+						<li class="seat_disable">
+							<input type="checkbox" id="c10" name="cb">
+							<label for="c10"></label>
+						</li>
+						<li>
+							<span>Pay Rs.790.00</span>
+							<input type="checkbox" id="c11" name="cb">
+							<label for="c11"></label>
+						</li>
+						<li>
+							<span>Pay Rs.790.00</span>
+							<input type="checkbox" id="c12" name="cb">
+							<label for="c12"></label>
+						</li>
+						<li class="seat_disable">
+							<input type="checkbox" id="c13" name="cb">
+							<label for="c13"></label>
+						</li>
+						<li>
+							<span>Pay Rs.790.00</span>
+							<input type="checkbox" id="c14" name="cb">
+							<label for="c14"></label>
+						</li>
+						<li>
+							<span>Pay Rs.790.00</span>
+							<input type="checkbox" id="c15" name="cb">
+							<label for="c15"></label>
+						</li>
+						<li>
+							<span>Pay Rs.790.00</span>
+							<input type="checkbox" id="c16" name="cb">
+							<label for="c16"></label>
+						</li>
+						<li>
+							<span>Pay Rs.790.00</span>
+							<input type="checkbox" id="c17" name="cb">
+							<label for="c17"></label>
+						</li>
+						<li class="seat_disable">
+							<input type="checkbox" id="c18" name="cb">
+							<label for="c18"></label>
+						</li>
+					</ul>
+					<ul class="st_eco_second_row">
+						<li>
+							<span>Pay Rs.790.00</span>
+							<input type="checkbox" id="c19" name="cb">
+							<label for="c19"></label>
+						</li>
+						<li>
+							<span>Pay Rs.790.00</span>
+							<input type="checkbox" id="c20" name="cb" placeholder="1">
+							<label for="c20"></label>
+						</li>
+						<li>
+							<span>Pay Rs.790.00</span>
+							<input type="checkbox" id="c21" name="cb">
+							<label for="c21"></label>
+						</li>
+						<li class="seat_disable">
+							<input type="checkbox" id="c22" name="cb">
+							<label for="c22"></label>
+						</li>
+						<li class="seat_disable">
+							<input type="checkbox" id="c23" name="cb">
+							<label for="c23"></label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="st_seat_lay_economy_wrapper st_seat_lay_economy_wrapperexicutive float_left">
+				<div class="st_seat_lay_economy_heading float_left">
+					<h3>Normal</h3>
+				</div>
+				<div class="st_seat_lay_row float_left" id="seatContainer"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<link rel="stylesheet" type="text/css" href="../Template/js/plugin/rs_slider/layers.css" />
+<link rel="stylesheet" type="text/css" href="../Template/js/plugin/rs_slider/navigation.css" />
+<link rel="stylesheet" type="text/css" href="../Template/js/plugin/rs_slider/settings.css" />
+<div class="st_seat_lay_row float_left" id="seatContainer"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	function loadSeats(malc) {
+		$.ajax({
+			url: `/api/PhongChieuAPI/byLC/${malc}`,
+			type: 'GET',
+			success: function (bookedSeats) {
+				const allSeats = [];
+				const rows = ['A', 'B']; // Hai hàng ghế
+				const totalSeatsPerRow = 23; // Số ghế mỗi hàng
+				const totalSeats = 69; // Tổng số ghế trong một phòng chiếu
+				let pc = parseInt(bookedSeats[0].maPc.replace('PC', ''), 10); // Lấy số phòng chiếu từ API
+				let startGxpId = (pc - 1) * totalSeats + 24; // Mã GXP bắt đầu cho phòng chiếu này
+				let seatIndex = startGxpId; // Khởi tạo mã GXP
+				let z = 24; // Khởi tạo số ghế từ 1 cho mỗi hàng
+
+				// Tạo danh sách ghế
+				rows.forEach(row => {
+					for (let i = 1; i <= totalSeatsPerRow; i++) { // Lặp từ 1 đến 23 cho mỗi hàng
+						allSeats.push({
+							MaGxp: `GXP${seatIndex}`,
+							Ghe: z,
+							Row: row,
+							LoaiGhe: 'Thường',
+							TrangThai: 0
+						});
+						z++;
+						seatIndex++;
+					}
+				});
+
+				// Cập nhật trạng thái ghế từ API
+				if (bookedSeats && bookedSeats.length > 0) {
+					bookedSeats.forEach(bookedSeat => {
+						// Tìm ghế trong danh sách allSeats với MaGxp dưới dạng chuỗi
+						const seat = allSeats.find(seat => seat.MaGxp === bookedSeat.maGxp);
+						if (seat) {
+							console.log(`Updating seat ${seat.MaGxp} from ${seat.TrangThai} to ${bookedSeat.trangThai}`);
+							seat.TrangThai = bookedSeat.trangThai; // Cập nhật trạng thái ghế
+						} else {
+							console.log(`Seat with MaGxp ${bookedSeat.maGxp} not found in allSeats.`);
+						}
+					});
+				}
+
+				// Render lại danh sách ghế
+				renderSeats(allSeats);
+			},
+			error: function (xhr, status, error) {
+				console.error("Error fetching seats:", error);
+				$('#seatContainer').html('<p>Không tìm thấy ghế cho lịch chiếu này.</p>');
+			}
+		});
+	}
+
+
+	function renderSeats(seats) {
+		console.log('Rendering Seats:', seats);  // Kiểm tra dữ liệu ghế
+		const seatContainer = $('#seatContainer');
+		seatContainer.empty();
+
+		const groupedSeats = seats.reduce((acc, seat) => {
+			if (!acc[seat.Row]) acc[seat.Row] = [];
+			acc[seat.Row].push(seat);
+			return acc;
+		}, {});
+
+		Object.keys(groupedSeats).forEach(row => {
+			const rowList = $('<ul class="st_eco_second_row"></ul>');
+			const rowHeader = $(`<li class="st_seat_heading_row">${row}</li>`);
+			rowList.append(rowHeader);
+
+			groupedSeats[row].forEach(seat => {
+				const isDisabled = seat.TrangThai === 1;
+				console.log(`Seat: ${seat.Ghe}, Status: ${seat.TrangThai}, Disabled: ${isDisabled}`);
+				const seatItem = $(`
+					<li class="${isDisabled ? 'seat_disable' : ''}">
+						<input type="checkbox" id="c${seat.Ghe}" class="${row}" name="cb" ${isDisabled ? 'disabled' : ''}>
+						<label for="c${seat.Ghe}"></label>
+					</li>
+				`);
+				rowList.append(seatItem);
+			});
+
+			seatContainer.append(rowList);
+		});
+	}
+
+
+    $(document).ready(function () {
+		const maLc = '@ViewBag.MaLC';
+		const maPhim = '@ViewBag.MaPhim';
+		const tgc = '@ViewBag.Tgc';
+		loadShowTTByMovieId(maPhim);
+        loadSeats(maLc);
+    });
+	function protfolioIsotope() {
+		if ($('.st_fb_filter_left_box_wrapper').length) {
+			// Activate isotope in container
+			$(".protfoli_inner, .portfoli_inner").imagesLoaded(function () {
+				$(".protfoli_inner, .portfoli_inner").isotope({
+					layoutMode: 'masonry',
+				});
+			});
+
+			// Add isotope click function
+			$(".protfoli_filter li").on('click', function () {
+				$(".protfoli_filter li").removeClass("active");
+				$(this).addClass("active");
+				var selector = $(this).attr("data-filter");
+				$(".protfoli_inner, .portfoli_inner").isotope({
+					filter: selector,
+					animationOptions: {
+						duration: 450,
+						easing: "linear",
+						queue: false,
+					}
+				});
+				return false;
+			});
+		};
+	};
+	protfolioIsotope();
+
+	function changeQty(increase) {
+		var qty = parseInt($('.select_number').find("input").val());
+		if (!isNaN(qty)) {
+			qty = increase ? qty + 1 : (qty > 1 ? qty - 1 : 1);
+			$('.select_number').find("input").val(qty);
+		} else {
+			$('.select_number').find("input").val(1);
+		}
+	}
+    $(document).ready(function () {
+        const maxSeatsInput = $('#input-quantity');
+
+        function updateMaxSelectableSeats() {
+            return parseInt(maxSeatsInput.val()) || 1;
+        }
+
+        function checkSeatLimit() {
+            const selectedSeats = $('input[name="cb"]:checked').length;
+            const maxSeats = updateMaxSelectableSeats();
+            if (selectedSeats >= maxSeats) {
+                $('input[name="cb"]:not(:checked)').prop('disabled', true);
+            } else {
+                $('input[name="cb"]').prop('disabled', false);
+            }
+        }
+
+        // Cập nhật giới hạn chọn ghế khi thay đổi số lượng vé
+        maxSeatsInput.on('input change', function () {
+            checkSeatLimit();
+        });
+
+        // Sử dụng delegation để bắt sự kiện change cho các checkbox được thêm bằng Ajax
+        $('#seatContainer').on('change', 'input[name="cb"]', function () {
+            checkSeatLimit();
+        });
+
+        window.changeQty = function (increase) {
+            let qty = parseInt(maxSeatsInput.val()) || 1;
+            qty = increase ? qty + 1 : Math.max(1, qty - 1);
+            maxSeatsInput.val(qty);
+            checkSeatLimit();
+        };
+    });
+	function loadShowTTByMovieId(maPhim) {
+		$.get(`/api/lichchieuapi/ttphim/${maPhim}`, function (data) {
+			const movieInfoContainer = document.getElementById('movie-info');
+			movieInfoContainer.innerHTML = ''; // Xóa nội dung cũ
+
+			// Kiểm tra nếu có dữ liệu phim, thêm thông tin phim vào container
+			if (data && data.length > 0) {
+				const movie = data[0]; // Lấy phần tử đầu tiên trong mảng
+				movieInfoContainer.innerHTML = `
+					<h3>${movie.tenPhim} - ${movie.nuocSx} - ${movie.thoiLuong} mins</h3>
+					
+				`;
+			} else {
+				movieInfoContainer.innerHTML = `<h3>Không có thông tin cho phim này.</h3>`;
+			}
+		}).fail(function () {
+			alert("Không thể tải thông tin phim. Vui lòng thử lại sau.");
+		});
+	}
+	function saveSelectedSeats() {
+    let selectedSeats = [];
+
+    // Lấy giá trị từ ViewBag
+    const maLc = '@(ViewBag.MaLC)';
+    const maPhim = '@(ViewBag.MaPhim)';
+    const gio = '@(ViewBag.Gio)';
+    const tgc = '@(ViewBag.Tgc)';
+    const maPc = '@(ViewBag.MaPC)';
+		console.log(maPc);
+    if (!maLc || !maPhim || !maPc) {
+        alert("Thông tin không hợp lệ. Vui lòng kiểm tra lại.");
+        console.error("Thông tin thiếu:", { maLc, maPhim, maPc });
+        return;
+    }
+
+    // Gọi API để lấy thông tin phim
+    $.get(`/api/lichchieuapi/ttphim/${maPhim}`, function (ttphim) {
+        if (Array.isArray(ttphim) && ttphim.length > 0 && ttphim[0].tenPhim) {
+            const phim = ttphim[0]; // Lấy thông tin phim đầu tiên
+            // Duyệt qua danh sách ghế đã chọn
+            $('input[name="cb"]:checked').each(function () {
+    let seat = parseInt($(this).attr('id').replace('c', ''), 10); // Chỉnh sửa lại từ const thành let
+    const row = $(this).attr('class'); // Hàng ghế ('A' hoặc 'B')
+    let seatIndex = parseInt($(this).attr('id').replace('c', ''), 10); // Chỉnh sửa lại từ const thành let
+
+    if (row === 'A') seat -= 23;
+    else seat -= 46;
+
+     gxpIndex = (parseInt(maPc.replace('PC', ''), 10) - 1) * 69 + seatIndex;
+    const maGxp = `GXP${gxpIndex}`;
+
+    // Thêm ghế vào danh sách ghế đã chọn
+    selectedSeats.push({
+        MaLc: maLc,
+        MaPhim: maPhim,
+        TenPhim: phim.tenPhim,
+        MaGxp: maGxp,
+        Ghe: row + seat,
+        GiaVe: 100000,
+        Gio: gio,
+        Tgc: tgc,
+    });
+});
+
+            if (selectedSeats.length === 0) {
+                alert("Vui lòng chọn ít nhất một ghế!");
+                return;
+            }
+
+            // Gửi dữ liệu ghế đã chọn đến API
+            $.ajax({
+                url: `https://localhost:7199/api/veapi/TTve/${maLc}`,
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(selectedSeats),
+                success: function () {
+                    window.location.href = `/Home/Checkout?maLC=${maLc}&maPhim=${maPhim}&tgc=${tgc}&gio=${gio}&maPC=${maPc}`;
+                },
+                error: function (xhr, status, error) {
+                    console.error("Lỗi khi lưu ghế đã chọn:", error);
+                    console.error("Chi tiết lỗi:", xhr.responseText || xhr.responseJSON || "Không có chi tiết.");
+                    alert("Có lỗi xảy ra khi lưu ghế đã chọn. Vui lòng thử lại.");
+                },
+            });
+        } 
+    })
+}
+
+
+	document.getElementById('backButton').addEventListener('click', function (event) {
+		const maPhim = '@ViewBag.MaPhim';
+		window.location.href = `/Home/LichChieu?maPhim=${maPhim}`;
+		
+	});
+
+</script>
