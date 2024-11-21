@@ -92,7 +92,8 @@ namespace BTLRapChieuPhim.Controllers
             ViewBag.MaPhim = maphim;
             return View();
         }
-            [Route("chonghe")]
+        [Authentication(2)]
+        [Route("chonghe")]
             public IActionResult ChonGhe(string malc, string maphim, string gio, string tgc,string mapc)
             {
             var pc=db.PhongChieus.Where(x=>x.MaPc==mapc).Select(x=>x.TenPc).FirstOrDefault();
@@ -104,7 +105,8 @@ namespace BTLRapChieuPhim.Controllers
                 ViewBag.Tgc = tgc;
 			return View();
             }
-            [Route("checkout")]
+       // [Authentication(2)]
+        [Route("checkout")]
             public IActionResult Checkout(string malc, string maphim, string gio, string tgc,string mapc)
             {
             var matk = HttpContext.Session.GetString("MaTK");

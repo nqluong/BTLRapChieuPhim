@@ -189,6 +189,7 @@
 					contentType: 'application/json',
 					success: function (response) {
 						$('#message').html('<span style="color: green;">Thêm lịch chiếu thành công!</span>');
+						loadPage('/admin/lichchieuphim');
 					},
 					error: function (xhr) {
 						$('#message').html(`<span style="color: red;">${xhr.responseText || 'Không thể thêm lịch chiếu.'}</span>`);

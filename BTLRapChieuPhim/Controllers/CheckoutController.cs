@@ -89,7 +89,7 @@ namespace BTLRapChieuPhim.Controllers
 				TienTt = decimal.Parse(requestquery["Amount"]),
 				NgayTt = DateTime.Now
 			};
-			if (requestquery["ResultCode"] != "0")
+			if (requestquery["ResultCode"] == "0")
 			{
 				db.HoaDons.Add(thanhToan);
 				await db.SaveChangesAsync();
@@ -108,9 +108,12 @@ namespace BTLRapChieuPhim.Controllers
 					}
 					await db.SaveChangesAsync();
 				}
+				return View("PayMentCallBack", response);
 			}
 
-			return View("PayMentCallBack",response); 
+			return RedirectToAction("Index", "Home");
+
+			
 		}
 	}
 }

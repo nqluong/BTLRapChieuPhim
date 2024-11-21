@@ -24,8 +24,8 @@ namespace BTLRapChieuPhim.Models.Authentication
 			{
 				context.Result = new RedirectToRouteResult(new RouteValueDictionary
 				{
-					{"Controller", "Home"},
-					{"Action", "Index"}
+					{"Controller", "Access"},
+					{"Action", "Login"}
 				});
 				return;
 			}
@@ -36,7 +36,7 @@ namespace BTLRapChieuPhim.Models.Authentication
 				context.Result = new RedirectToRouteResult(new RouteValueDictionary
 				{
 					{"Controller", "Access"},
-					{"Action", "Unauthorized"} // Tạo trang báo lỗi quyền truy cập
+					{"Action", "Login"} // Tạo trang báo lỗi quyền truy cập
                 });
 				return;
 			}
